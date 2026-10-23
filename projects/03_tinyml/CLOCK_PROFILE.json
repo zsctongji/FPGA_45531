@@ -1,0 +1,10 @@
+{
+  "i_sysclk_mhz": 225,
+  "previous_i_sysclk_mhz": 300,
+  "scope": "Sapphire CPU and TinyML accelerator; memory/peripheral/CLINT clocks remain 100 MHz",
+  "pll_change": "i_sysclk output divider 9 -> 12; feedback and other divider values unchanged",
+  "sdc_change": "i_sysclk period 3.333 -> 4.444 ns; no false/multicycle paths added",
+  "ddr_phy_mhz": 400,
+  "physical_pin_changes": false,
+  "board_tested": false
+}

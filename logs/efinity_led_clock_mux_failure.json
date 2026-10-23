@@ -1,0 +1,18 @@
+﻿{
+    "status":  "FAIL",
+    "project":  "led",
+    "flow":  "compile",
+    "file":  "D:\\FPGA_2026_T3_P3\\projects\\01_led\\LED_8bit_Test.xml",
+    "started":  "2026-10-18T13:53:00.0458958+08:00",
+    "stage":  "validate_results",
+    "scope":  "tool_flow_only",
+    "physical_board_programmed":  false,
+    "board_test_passed":  false,
+    "efinity_version":  "2026.1.132",
+    "preflight_log":  "D:\\FPGA_2026_T3_P3\\logs\\efinity_led_interface_preflight.log",
+    "preflight_exit_code":  0,
+    "exit_code":  0,
+    "design_log":  "D:\\FPGA_2026_T3_P3\\projects\\01_led\\outflow\\LED_8bit_Test.log",
+    "error":  "Timing violations reported; full compilation is not verified. See D:\\FPGA_2026_T3_P3\\projects\\01_led\\outflow\\LED_8bit_Test.log",
+    "finished":  "2026-10-18T13:53:59.0510746+08:00"
+}

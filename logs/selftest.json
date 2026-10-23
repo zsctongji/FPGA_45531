@@ -1,0 +1,155 @@
+﻿{
+    "suite_status":  "PASS",
+    "scope":  "Portable RTL functional simulation only; no Efinity build or board measurement",
+    "started_at":  "2026-10-19T13:14:10.3121408+08:00",
+    "backend":  "icarus",
+    "selected_suite":  "all",
+    "simulator_bin":  "D:\\FPGA_2026_T3_P3\\tools\\iverilog\\bin",
+    "tests":  [
+                  {
+                      "name":  "tb_pixel_ops",
+                      "status":  "PASS",
+                      "evidence":  [
+                                       "PASS tb_pixel_ops: gray=3077, binary=3076, thresholds=0/127/128/255, valid_gaps=2334, reset_and_markers=checked"
+                                   ],
+                      "testbench_sha256":  "B7508EECEEAF2CF535A140F2DD7741127EEFBE31CB73986785C3DE4804404F94"
+                  },
+                  {
+                      "name":  "tb_vision_stream",
+                      "status":  "PASS",
+                      "evidence":  [
+                                       "PASS tb_vision_stream: gray=516, binary=515, Sobel=280, frames=8, lines=40, valid_gaps=386, zero/intermediate/saturated=97/73/110",
+                                       "PASS stream coverage: continuous_frames, random_valid_gaps, input_border_suppression, regenerated_markers, reset_midframe, stale_line_memory_recovery"
+                                   ],
+                      "testbench_sha256":  "030B9FF920BF8BCE53E94169D7940D81D389FC76C4E2738FF0D11B050A4FF97A"
+                  },
+                  {
+                      "name":  "tb_sobel_3x3",
+                      "status":  "PASS",
+                      "evidence":  [
+                                       "PASS tb_sobel_3x3: minimum_size=3x3, consecutive_frames=2, one_pixel_per_output_frame, all_markers, saturation, threshold_255_equality, valid_gaps"
+                                   ],
+                      "testbench_sha256":  "1DA0612955EB7F177A3D0B267BB5C65CA0F168FEFB66D7EF37D3B83EE4895A47"
+                  },
+                  {
+                      "name":  "tb_sobel_720p",
+                      "status":  "PASS",
+                      "evidence":  [
+                                       "PASS tb_sobel_720p: size=1280x720, frames=2, gray=1843200, binary=1843200, Sobel=1835208, lines=1436, gradient_pixels=3992, valid_gaps=119",
+                                       "PASS 720p functional coverage: vertical_step, horizontal_step, consecutive_frames, cropped_border, frame_and_line_markers; no hardware_fps_claim"
+                                   ],
+                      "testbench_sha256":  "F59C5065F1B0B84A1AE9AAE5BF38C4B5EBC2068F1D9BF3C57EF7178EDDCD1809"
+                  },
+                  {
+                      "name":  "tb_sensor_smooth",
+                      "status":  "PASS",
+                      "evidence":  [
+                                       "PASS tb_sensor_smooth checks=27 plus consecutive cases"
+                                   ],
+                      "testbench_sha256":  "A7D1DA7FD1E8B7E0B5FFDC574B7AC9C9F30B0FFA110B815B3774F10B4F072AF6"
+                  },
+                  {
+                      "name":  "tb_sensor_frame_align",
+                      "status":  "PASS",
+                      "evidence":  [
+                                       "PASS tb_sensor_frame_align checks=2026 accepted=518 rejected=502 resets=17 seeded_random_cycles=2000"
+                                   ],
+                      "testbench_sha256":  "4CFBAF6E1BEE2785FC226068B1F346B4695C03951D2A1D5A0C3A10DAE7736CAE"
+                  },
+                  {
+                      "name":  "tb_video_display_preprocess",
+                      "status":  "PASS",
+                      "evidence":  [
+                                       "PASS tb_video_display_preprocess cycles=1507 active=975 blanks=532 resets=2 modes=RGB/gray/binary control_latency=2"
+                                   ],
+                      "testbench_sha256":  "9E374BE25316BF3D6D95BA509481C88B7DD5CC698EE1092A7C8E3765E6627AFF"
+                  },
+                  {
+                      "name":  "tb_frame_motion_stats",
+                      "status":  "PASS",
+                      "evidence":  [
+                                       "PASS tb_frame_motion_stats frames=77 malformed=4 random_frames=64 threshold_edges bbox gaps reset back_to_back"
+                                   ],
+                      "testbench_sha256":  "2782AD3C46B2B594B6C53F66D7843BAF12178B46BB375683CD6B00E1F85CA11A"
+                  },
+                  {
+                      "name":  "tb_multimodal_alarm",
+                      "status":  "PASS",
+                      "evidence":  [
+                                       "PASS tb_multimodal_alarm checks=45 events=7 weighted_score freshness future missing duplicate order rollover confirm hold ack disarm"
+                                   ],
+                      "testbench_sha256":  "5F126CF2B22ACBEBD395AB0044A666622AA40DBD65B1C6EC356C2C3D5922C33E"
+                  },
+                  {
+                      "name":  "tb_video_motion_display",
+                      "status":  "PASS",
+                      "evidence":  [
+                                       "PASS tb_video_motion_display cycles=903 complete_frames=9 format_errors=12 red_pixels=103 sampled_grid=4x3 invalid_width/extra_row/missing_row marker_alignment hold_frames=2"
+                                   ],
+                      "testbench_sha256":  "E35A9C2F6B6DD09516C56C5E4E9F2BA6E26BCC3355E8FFE505837F446A7DA0FA"
+                  },
+                  {
+                      "name":  "tb_motion_minimum",
+                      "status":  "PASS",
+                      "evidence":  [
+                                       "PASS tb_motion_minimum grid=1x1 first_frame_invalid threshold_equal static SOF_EOF_same_sample"
+                                   ],
+                      "testbench_sha256":  "FB0E955BBC8C09CA5F43CDF7FB7ADFE434591C653212A4B49C007F931FED98EF"
+                  },
+                  {
+                      "name":  "tb_motion_1080p",
+                      "status":  "PASS",
+                      "evidence":  [
+                                       "PASS tb_motion_1080p frames=2 input_pixels=4147200 grid_samples=10368 grid=96x54 changed=32 diff_sum=768 bbox=0/0/95/53 ignored_non_grid_pixels"
+                                   ],
+                      "testbench_sha256":  "971C035BD31E24C7C423198C0E87D2549776E8036181BF799D54A2E5E921E42E"
+                  }
+              ],
+    "rtl_sources":  [
+                        {
+                            "file":  "D:\\FPGA_2026_T3_P3\\rtl\\frame_motion_stats.v",
+                            "sha256":  "459AF3342402DAD67069F26913B5BC0508D6B7B7D280AD763BEDC9C454C8A212"
+                        },
+                        {
+                            "file":  "D:\\FPGA_2026_T3_P3\\rtl\\gray_threshold.v",
+                            "sha256":  "E81590EE2B06987F20383D3790B39253A4E0635FA0CCE1486696A67AFE3C5F03"
+                        },
+                        {
+                            "file":  "D:\\FPGA_2026_T3_P3\\rtl\\multimodal_alarm.v",
+                            "sha256":  "56FEF2FAFA7C87CB8C7E860B28EA1D48DDA6F46F7EF62537E8EA22AEBA62D246"
+                        },
+                        {
+                            "file":  "D:\\FPGA_2026_T3_P3\\rtl\\portable_vision_core.v",
+                            "sha256":  "13D93A135159CE2E0D0C1DC35ACDAACED2F60E3572EC5AB0D1A09B636C5F14F0"
+                        },
+                        {
+                            "file":  "D:\\FPGA_2026_T3_P3\\rtl\\rgb888_to_gray.v",
+                            "sha256":  "3448B6F55ED3DD3703D005418576790A68C7FDD11CB8948FEF3FD0520A76F4A9"
+                        },
+                        {
+                            "file":  "D:\\FPGA_2026_T3_P3\\rtl\\sensor_frame_align.v",
+                            "sha256":  "5328CF0D365E66B670B6D9706A3EC87BDE62C08CE2CFA7CEDF2AB03976D8952D"
+                        },
+                        {
+                            "file":  "D:\\FPGA_2026_T3_P3\\rtl\\sensor_smooth.v",
+                            "sha256":  "FAE9999C375D8CB643CA55F22E09D84F675D0D6BB216D769A5A40C996258C2FE"
+                        },
+                        {
+                            "file":  "D:\\FPGA_2026_T3_P3\\rtl\\sobel_stream.v",
+                            "sha256":  "D8467EBD242574C6E36E7C55B992B2641C4E3CEDC9F2B840A9DB3B414241A39C"
+                        },
+                        {
+                            "file":  "D:\\FPGA_2026_T3_P3\\rtl\\video_display_preprocess.v",
+                            "sha256":  "AC36194104FF1F02FC97121D865EA549A80202F85BCBD76792E56198626C7B33"
+                        },
+                        {
+                            "file":  "D:\\FPGA_2026_T3_P3\\rtl\\video_grid_sampler.v",
+                            "sha256":  "9BD066F70FF8778CAA7F4F18CFA4709A949B1C61CEB648CD79D015E00D57DB84"
+                        },
+                        {
+                            "file":  "D:\\FPGA_2026_T3_P3\\rtl\\video_motion_display.v",
+                            "sha256":  "5D80A84B91FB9CAE7810F1B64AF349A2D3B789660C64BE66299C5350BCFE50FF"
+                        }
+                    ],
+    "finished_at":  "2026-10-19T13:15:09.4044301+08:00"
+}

@@ -1,0 +1,33 @@
+历史问题：Efinity 2026.1.132 初期直接导入 Interface Designer 被 Windows 拒绝
+
+状态更新（2026-10-18）：通过本项目 .cmd 的普通 Windows 启动入口，组件预检和完整
+Interface Designer 流程已实际通过，LED 配置文件已生成。未更改 Windows 安全设置。
+此文件保留初期诊断，不代表目前所有启动方式仍然失败；实际结果以最新 logs 为准。
+
+场景：炫览科技 Ti60F225 免费比赛板，2026 易灵思多模态 AI 智能终端。
+软件包：efinity-2026.1.132-windows-x64.tar.gz，由用户下载提供。
+包大小：1,106,750,295 字节。
+SHA-256：0289e5c33a8b1b4787cdce31acde63073c051bdcb83d5f0264e833d2a6ed75b2。
+解压位置：D:\FPGA_2026_T3_P3\tools\efinity\2026.1，自带 Python 3.11.10。
+
+官方 efx_run.py 导入 efx_run_pt_unified，经 qtpy.QtGui 加载 PyQt6.QtGui 时失败：
+ImportError: DLL load failed while importing QtGui: 应用程序控制策略已阻止此文件。
+
+Windows Code Integrity/Operational，2026-10-17 21:42:07，事件 3033 和 3077：
+被拒绝文件：D:\FPGA_2026_T3_P3\tools\efinity\2026.1\python311\Lib\site-packages\PyQt6\QtGui.pyd。
+系统记录：未满足 Enterprise signing level requirements 或违反 code integrity policy。
+模块 Authenticode 状态为 NotSigned。未据此推定电脑一定由单位管理。
+
+影响：CLI 捕获 ImportError 并跳过 Interface Designer，随后显示 map/pnr/pgm PASS、退出 0，
+但完整日志明确记录 Missing Interface Designer LPF constraint file, no programming file will be generated。
+实际没有可烧录 HEX。首轮记录已审计为 FAIL。
+
+已按官方 setup.bat 在当前进程设置环境，正常运行环境重复组件导入仍失败。
+综合器可以执行：摄像头预处理和 TinyML Hello World 的独立 Ti60 综合通过。
+新增预检失败时停止完整编译。未修改原厂 Qt 模块、关闭或规避 Windows 策略，未操作板卡。
+
+请技术支持确认此发行包的 PyQt6 签名/兼容性，并提供符合当前系统策略的受支持安装包或运行环境。
+日志：logs\efinity_led_interface_preflight.log、logs\efinity_led_compile_initial_audit.json、
+projects\01_led\outflow\LED_8bit_Test.log。
+
+这是本地问题记录，未代用户发送消息或邮件。

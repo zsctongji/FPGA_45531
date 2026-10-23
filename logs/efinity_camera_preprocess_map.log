@@ -1,0 +1,3 @@
+WARNING: cannot find correct IV value
+Running: efx_run_map.py ti60f225_oob --family Titanium --device Ti60F225 --project_xml D:\FPGA_2026_T3_P3\projects\04_camera_preprocess\ti60f225_oob.xml --output_dir outflow --work_dir work_syn --timeout 1800 --opt root=ti60f225_oob_top --opt veri_options=verilog_mode=sv_09,vhdl_mode=vhdl_2008 work-dir=work_syn write_efx_verilog=on --opt write-premap-module=ti60f225_oob.elab.vdb
+   map :	PASS 

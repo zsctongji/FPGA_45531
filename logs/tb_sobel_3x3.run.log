@@ -1,0 +1,3 @@
+﻿PASS tb_sobel_3x3: minimum_size=3x3, consecutive_frames=2, one_pixel_per_output_frame, all_markers, saturation, threshold_255_equality, valid_gaps
+D:\FPGA_2026_T3_P3\sim\tb_sobel_3x3.sv:59: $finish called at 310000 (1ps)
+

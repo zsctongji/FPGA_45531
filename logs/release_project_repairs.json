@@ -1,0 +1,9 @@
+{
+  "camera_auto_logic_analyzer_insertion": "off; existing explicit debug RTL retained",
+  "tinyml_removed_unused_internal_user_jtag": "jtag_inst2 / JTAG_USER2",
+  "tinyml_sapphire_debug_tap_retained": "jtag_inst1 / JTAG_USER1",
+  "external_pin_assignments_changed": false,
+  "physical_board_tested": false,
+  "tinyml_peripheral_sha256": "69b07111c6321db1986917d2c27848de804ea06e75d2f1435d08a4fe5729e05c",
+  "tinyml_top_sha256": "174a8eadd8da0fbd78d249c3ac0db4c17914ed14718b1eb95412a7683a91a5cd"
+}

@@ -1,0 +1,20 @@
+INFO     : Elitestek FPGA Synthesis.
+INFO     : Version: 2026.1.132
+INFO     : Compiled: May 29 2026.
+INFO     : 
+INFO     : Copyright (C) 2013 - 2026 Efinix, Inc. All rights reserved.
+
+INFO     : Reading project database "D:\FPGA_2026_T3_P3\projects\04_camera_preprocess\ti60f225_oob.xml" [FlowMsg::ProjectDatabaseReading]
+ERROR    : Failed to parse the project XML file "D:\FPGA_2026_T3_P3\projects\04_camera_preprocess\ti60f225_oob.xml". The file format is unexpected [FlowMsg::ProjectDatabaseParseFailed]
+ERROR    : [Internal] Assertion: 'ret_bool == true' failed
+ERROR    : ******** STACK TRACE BEGIN ********
+ERROR    :       7ff90c0d7ff6: in libefx.dll + 0000000000037ff6
+ERROR    :       7ff6fe35da54: in efx_map.exe + 000000000088da54
+ERROR    :       7ff6fdaeae3a: in efx_map.exe + 000000000001ae3a
+ERROR    :       7ff6fdad86a2: in efx_map.exe + 00000000000086a2
+ERROR    :       7ff6fe408788: in efx_map.exe + 0000000000938788
+ERROR    :       7ff6fdad1340: in efx_map.exe + 0000000000001340
+ERROR    :       7ff6fdad1146: in efx_map.exe + 0000000000001146
+ERROR    :       7ffa771fdda7: in KERNEL32.DLL + 000000000002dda7
+ERROR    :       7ffa786fee4c: in ntdll.dll + 000000000007ee4c
+ERROR    : ********* STACK TRACE END *********

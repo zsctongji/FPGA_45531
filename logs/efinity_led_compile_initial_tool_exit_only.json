@@ -1,0 +1,10 @@
+﻿{
+    "status":  "PASS",
+    "project":  "led",
+    "flow":  "compile",
+    "file":  "D:\\FPGA_2026_T3_P3\\projects\\01_led\\LED_8bit_Test.xml",
+    "started":  "2026-10-17T21:36:37.5140650+08:00",
+    "physical_board_programmed":  false,
+    "exit_code":  0,
+    "finished":  "2026-10-17T21:38:12.6420749+08:00"
+}

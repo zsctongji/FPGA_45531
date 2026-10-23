@@ -1,0 +1,3 @@
+﻿PASS tb_video_display_preprocess cycles=1507 active=975 blanks=532 resets=2 modes=RGB/gray/binary control_latency=2
+D:\FPGA_2026_T3_P3\sim\tb_video_display_preprocess.sv:74: $finish called at 15120000 (1ps)
+

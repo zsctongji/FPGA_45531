@@ -1,0 +1,162 @@
+﻿{
+    "schema_version":  1,
+    "checked_at_utc":  "2026-10-18T06:32:42.6397934+00:00",
+    "checked_at_asia_shanghai":  "2026-10-18 14:32:42 +08:00",
+    "project_root":  "D:\\FPGA_2026_T3_P3",
+    "detection_mode":  "read_only_file_presence_and_serial_port_names",
+    "powershell_version":  "5.1.26100.9711",
+    "competition":  {
+                        "track":  "易灵思赛道",
+                        "topic":  "多模态 AI 智能终端",
+                        "platform":  "基于易灵思 FPGA 芯片的自制开发板",
+                        "track_status":  "confirmed_by_user_registration_screenshot",
+                        "user_selected":  "赛题三、平台三"
+                    },
+    "hardware":  {
+                     "user_reported_chip_model":  "Ti60F225",
+                     "chip_model_source":  "user_provided",
+                     "board_manufacturer":  "待确认",
+                     "board_revision":  "待确认",
+                     "camera_model":  "待确认",
+                     "connection_status":  "用户表示已有设备，尚未连接；本脚本未核实或连接硬件",
+                     "serial_port_names":  [
+                                               "COM3",
+                                               "COM4",
+                                               "COM5",
+                                               "COM6",
+                                               "COM7",
+                                               "COM8"
+                                           ],
+                     "serial_detection_status":  "read_only_success",
+                     "serial_detection_error":  null,
+                     "serial_note":  "仅列出串口名称，未打开端口；串口存在不能证明 FPGA 已连接。"
+                 },
+    "tools":  {
+                  "td":  {
+                             "status":  "files_found_not_run",
+                             "path":  "C:\\Anlogic\\TD_Release_2026.1_SP2.200.067\\bin\\td.exe",
+                             "matches":  [
+                                             {
+                                                 "Path":  "C:\\Anlogic\\TD_Release_2026.1_SP2.200.067\\bin\\td.exe",
+                                                 "Source":  "PATH",
+                                                 "Root":  "C:\\Anlogic\\TD_Release_2026.1_SP2.200.067\\bin"
+                                             }
+                                         ],
+                             "searched_roots":  [
+                                                    "C:\\Anlogic",
+                                                    "D:\\Anlogic",
+                                                    "C:\\TD",
+                                                    "D:\\TD",
+                                                    "C:\\Program Files\\Anlogic",
+                                                    "C:\\Program Files (x86)\\Anlogic",
+                                                    "C:\\Anlogic\\TD_Release_2026.1_SP2.200.067"
+                                                ],
+                             "path_commands_checked":  [
+                                                           "td.exe",
+                                                           "td_console.exe"
+                                                       ],
+                             "supports_user_chip":  false,
+                             "note":  "安路 TD 不支持易灵思 Ti60，不能用于本板卡的综合、布局布线或生成下载文件。"
+                         },
+                  "efinity":  {
+                                  "status":  "files_found_not_run",
+                                  "path":  "D:\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1\\bin\\efinity.exe",
+                                  "matches":  [
+                                                  {
+                                                      "Path":  "D:\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1\\bin\\efinity.exe",
+                                                      "Source":  "installation_directory",
+                                                      "Root":  "D:\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1\\bin"
+                                                  },
+                                                  {
+                                                      "Path":  "D:\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1\\scripts\\efx_run.py",
+                                                      "Source":  "installation_directory",
+                                                      "Root":  "D:\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1\\scripts"
+                                                  }
+                                              ],
+                                  "searched_roots":  [
+                                                         "D:\\FPGA_2026_T3_P3\\tools\\efinity",
+                                                         "C:\\Efinity",
+                                                         "D:\\Efinity",
+                                                         "C:\\Efinix",
+                                                         "D:\\Efinix",
+                                                         "C:\\Program Files\\Efinix",
+                                                         "C:\\Program Files (x86)\\Efinix",
+                                                         "D:\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1",
+                                                         "D:\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1\\arch",
+                                                         "D:\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1\\bin",
+                                                         "D:\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1\\debugger",
+                                                         "D:\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1\\doc",
+                                                         "D:\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1\\efxpylibs",
+                                                         "D:\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1\\examples",
+                                                         "D:\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1\\ipm",
+                                                         "D:\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1\\lib",
+                                                         "D:\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1\\pgm",
+                                                         "D:\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1\\project",
+                                                         "D:\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1\\pt",
+                                                         "D:\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1\\python311",
+                                                         "D:\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1\\scripts",
+                                                         "D:\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1\\security",
+                                                         "D:\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1\\sim_models",
+                                                         "D:\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1\\tcl_packages"
+                                                     ],
+                                  "path_commands_checked":  [
+                                                                "efinity.exe",
+                                                                "efx_run.py"
+                                                            ],
+                                  "installation_verified":  false,
+                                  "license_status":  "not_checked",
+                                  "note":  "找到 Efinity 文件候选；未启动，版本、器件支持和许可仍需实际验证。"
+                              },
+                  "vivado2018_3":  {
+                                       "status":  "files_found_not_run",
+                                       "required_release":  "2018.3",
+                                       "version_evidence":  "2018.3 in installation folder path",
+                                       "xsim_path":  "D:\\Xilinx\\Vivado\\2018.3\\bin\\xsim.bat",
+                                       "matches":  [
+                                                       {
+                                                           "Path":  "D:\\Xilinx\\Vivado\\2018.3\\bin\\unwrapped\\win64.o\\xsim.exe",
+                                                           "Source":  "installation_directory",
+                                                           "Root":  "D:\\Xilinx\\Vivado\\2018.3"
+                                                       },
+                                                       {
+                                                           "Path":  "D:\\Xilinx\\Vivado\\2018.3\\bin\\xsim.bat",
+                                                           "Source":  "installation_directory",
+                                                           "Root":  "D:\\Xilinx\\Vivado\\2018.3"
+                                                       }
+                                                   ],
+                                       "searched_roots":  [
+                                                              "C:\\Xilinx\\Vivado",
+                                                              "D:\\Xilinx\\Vivado",
+                                                              "C:\\Program Files\\Xilinx\\Vivado",
+                                                              "C:\\Program Files (x86)\\Xilinx\\Vivado",
+                                                              "D:\\Xilinx\\Vivado\\2018.3"
+                                                          ],
+                                       "path_commands_checked":  [
+                                                                     "xsim.bat",
+                                                                     "xsim.exe"
+                                                                 ],
+                                       "generic_rtl_simulation_verified":  false,
+                                       "supports_user_chip_bitstream":  false,
+                                       "note":  "XSim 可用于通用 RTL 仿真；本检测只确认文件存在，未运行仿真。Vivado 不能生成 Ti60 下载文件。"
+                                   }
+              },
+    "readiness":  {
+                      "board_build_ready":  false,
+                      "board_programming_ready":  false,
+                      "hardware_debug_complete":  false,
+                      "blockers":  [
+                                       "Efinity 版本、器件支持和许可尚未验证",
+                                       "缺少具体板卡厂商、版本、原理图与官方引脚约束确认",
+                                       "摄像头型号与接口待确认",
+                                       "设备未连接，尚未执行板级下载与实际调试"
+                                   ]
+                  },
+    "safeguards":  [
+                       "未安装或下载软件",
+                       "未启动 FPGA 软件或执行下载",
+                       "未打开串口或连接板卡",
+                       "未读取许可文件或许可内容",
+                       "仅检测指定路径、工具环境变量、PATH 和固定厂家目录",
+                       "仅在本项目 logs 目录写入检测报告"
+                   ]
+}

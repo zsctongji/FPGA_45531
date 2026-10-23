@@ -1,0 +1,41 @@
+﻿{
+    "status":  "PASS",
+    "project":  "tinyml",
+    "flow":  "compile",
+    "file":  "D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\Ti60F225_tinyml_helloworld.xml",
+    "started":  "2026-10-18T14:13:42.1033523+08:00",
+    "stage":  "finished",
+    "scope":  "tool_flow_only",
+    "physical_board_programmed":  false,
+    "board_test_passed":  false,
+    "efinity_version":  "2026.1.132",
+    "preflight_log":  "D:\\FPGA_2026_T3_P3\\logs\\efinity_tinyml_interface_preflight.log",
+    "preflight_exit_code":  0,
+    "exit_code":  0,
+    "design_log":  "D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\outflow\\Ti60F225_tinyml_helloworld.log",
+    "final_sta":  {
+                      "scope":  "Declared vendor constraints only; physical board not measured",
+                      "minimum_hold_slack_ns":  0.026,
+                      "minimum_setup_slack_ns":  0.144,
+                      "report":  "D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\outflow\\Ti60F225_tinyml_helloworld.timing.rpt"
+                  },
+    "artifacts":  [
+                      {
+                          "sha256":  "FFF148F729F66062BC257CABEF4EEF4F9BA3E05D49CC9E79B3F515E4DA2E17FE",
+                          "path":  "D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\outflow\\Ti60F225_tinyml_helloworld.map.v"
+                      },
+                      {
+                          "sha256":  "CA199480DCFCAE16DE3F66345CCDAD4A14C08B6B760A14B46677CDD543E4E7E1",
+                          "path":  "D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\outflow\\Ti60F225_tinyml_helloworld.map.rpt"
+                      },
+                      {
+                          "sha256":  "611418C7046A8A93A59C2A3CE999646F0BBC39EC6DAD36F9AB5143F1C89BA42D",
+                          "path":  "D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\outflow\\Ti60F225_tinyml_helloworld.lpf"
+                      },
+                      {
+                          "sha256":  "CEC861A1816C12E1BDBD5CBFC6CD726B7EEB995A98E3E54B09EA50EDE5249C29",
+                          "path":  "D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\outflow\\Ti60F225_tinyml_helloworld.hex"
+                      }
+                  ],
+    "finished":  "2026-10-18T14:17:36.7814646+08:00"
+}

@@ -1,0 +1,41 @@
+﻿{
+    "status":  "PASS",
+    "project":  "camera",
+    "flow":  "compile",
+    "file":  "D:\\FPGA_2026_T3_P3\\projects\\02_camera\\ti60f225_oob.xml",
+    "started":  "2026-10-18T14:23:19.1931305+08:00",
+    "stage":  "finished",
+    "scope":  "tool_flow_only",
+    "physical_board_programmed":  false,
+    "board_test_passed":  false,
+    "efinity_version":  "2026.1.132",
+    "preflight_log":  "D:\\FPGA_2026_T3_P3\\logs\\efinity_camera_interface_preflight.log",
+    "preflight_exit_code":  0,
+    "exit_code":  0,
+    "design_log":  "D:\\FPGA_2026_T3_P3\\projects\\02_camera\\outflow\\ti60f225_oob.log",
+    "final_sta":  {
+                      "scope":  "Declared vendor constraints only; physical board not measured",
+                      "minimum_hold_slack_ns":  0.026,
+                      "minimum_setup_slack_ns":  0.448,
+                      "report":  "D:\\FPGA_2026_T3_P3\\projects\\02_camera\\outflow\\ti60f225_oob.timing.rpt"
+                  },
+    "artifacts":  [
+                      {
+                          "sha256":  "9D902C8843068286773F69A4EC290AA4C684344AE49685574697A51794A26D37",
+                          "path":  "D:\\FPGA_2026_T3_P3\\projects\\02_camera\\outflow\\ti60f225_oob.map.v"
+                      },
+                      {
+                          "sha256":  "B5C6140671514AC1159B06D73AE938FEE1C89B0C023E2E6E25A7694D48E8EF9C",
+                          "path":  "D:\\FPGA_2026_T3_P3\\projects\\02_camera\\outflow\\ti60f225_oob.map.rpt"
+                      },
+                      {
+                          "sha256":  "EE27E9AB6AB8718B3D357466B80FBE8F175F21AEB63ECE4C2F37318EE36431C5",
+                          "path":  "D:\\FPGA_2026_T3_P3\\projects\\02_camera\\outflow\\ti60f225_oob.lpf"
+                      },
+                      {
+                          "sha256":  "9DED26955A7B7EAC674996FED337226FE7CBEE52384B085B92D0D8D74ADB7D6D",
+                          "path":  "D:\\FPGA_2026_T3_P3\\projects\\02_camera\\outflow\\ti60f225_oob.hex"
+                      }
+                  ],
+    "finished":  "2026-10-18T14:26:18.8491049+08:00"
+}

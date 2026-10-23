@@ -1,0 +1,54 @@
+﻿{
+    "suite_status":  "PASS",
+    "scope":  "Portable RTL functional simulation only; no Efinity build or board measurement",
+    "started_at":  "2026-10-17T21:07:23.1184123+08:00",
+    "backend":  "xsim",
+    "simulator_bin":  "D:\\Xilinx\\Vivado\\2018.3\\bin",
+    "tests":  [
+                  {
+                      "name":  "tb_pixel_ops",
+                      "status":  "PASS",
+                      "evidence":  [
+                                       "PASS tb_pixel_ops: gray=3077, binary=3076, thresholds=0/127/128/255, valid_gaps=2334, reset_and_markers=checked"
+                                   ]
+                  },
+                  {
+                      "name":  "tb_vision_stream",
+                      "status":  "PASS",
+                      "evidence":  [
+                                       "PASS tb_vision_stream: gray=516, binary=515, Sobel=280, frames=8, lines=40, valid_gaps=386, zero/intermediate/saturated=97/73/110",
+                                       "PASS stream coverage: continuous_frames, random_valid_gaps, input_border_suppression, regenerated_markers, reset_midframe, stale_line_memory_recovery"
+                                   ]
+                  },
+                  {
+                      "name":  "tb_sobel_3x3",
+                      "status":  "PASS",
+                      "evidence":  [
+                                       "PASS tb_sobel_3x3: minimum_size=3x3, consecutive_frames=2, one_pixel_per_output_frame, all_markers, saturation, threshold_255_equality, valid_gaps"
+                                   ]
+                  },
+                  {
+                      "name":  "tb_sobel_720p",
+                      "status":  "PASS",
+                      "evidence":  [
+                                       "PASS tb_sobel_720p: size=1280x720, frames=2, gray=1843200, binary=1843200, Sobel=1835208, lines=1436, gradient_pixels=3992, valid_gaps=119",
+                                       "PASS 720p functional coverage: vertical_step, horizontal_step, consecutive_frames, cropped_border, frame_and_line_markers; no hardware_fps_claim"
+                                   ]
+                  },
+                  {
+                      "name":  "tb_sensor_smooth",
+                      "status":  "PASS",
+                      "evidence":  [
+                                       "PASS tb_sensor_smooth checks=27 plus consecutive cases"
+                                   ]
+                  },
+                  {
+                      "name":  "tb_sensor_frame_align",
+                      "status":  "PASS",
+                      "evidence":  [
+                                       "PASS tb_sensor_frame_align checks=2026 accepted=518 rejected=502 resets=17 seeded_random_cycles=2000"
+                                   ]
+                  }
+              ],
+    "finished_at":  "2026-10-17T21:09:09.4464920+08:00"
+}

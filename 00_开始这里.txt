@@ -1,0 +1,25 @@
+工作目录：D:\FPGA_2026_T3_P3
+比赛：2026 FPGA 创新设计比赛，易灵思，赛题三“多模态 AI 智能终端”。
+平台：基于易灵思 FPGA 芯片的自制开发板；已确认免费申请板，芯片 Ti60F225。
+
+截至 2026-10-19：
+1. Efinity 2026.1.132、RISC-V 工具链、厂家资料均在 D 盘。
+2. LED、彩色摄像头、灰度摄像头、运动红框、TinyML 225 MHz 共五个独立 FPGA 工程完整编译及最终时序检查通过。
+3. 十二项通用 RTL 自检通过，包括两帧 720p 和两帧 1080p；另有 LED 按键自检通过。
+4. 三模态融合报警状态机已通过仿真，真实传感器和实时 AI 尚未接入。
+5. 静态图片人体检测 CPU 固件和 4 MiB 引导 ROM 已构建，尚无板上推理结果。
+
+可双击的入口：
+01_check_environment.cmd：工具检测。
+02_run_selftest.cmd：全部十二项自检。
+03_compile_led.cmd / 04_compile_camera.cmd / 05_compile_tinyml.cmd / 06_compile_camera_preprocess.cmd：原四个工程编译。
+07_build_person_detect.cmd：重建 CPU 静态人体检测固件。
+08_test_led_key.cmd：按键自检。
+09_test_motion_fusion.cmd：五项新增运动/融合自检。
+10_build_camera_motion.cmd：重建运动红框工程。
+
+FPGA 配置文件在 fpga_bitstreams；CPU 程序在 firmware\static_person_detect，两者用途不同。
+请从 D 盘运行，聊天输出目录只是代码、说明、修改和结果备份，不含大型开发工具及厂家工程。
+当前入口不执行板卡下载。电脑仍未识别到 FTDI/JTAG 下载器，实际 PCB、摄像头、红外和温湿度传感器型号待核对。
+三模态整机、实体采集/AI/显示/报警、两项拓展和比赛实测材料尚未完成。
+最新状态：docs\current_status.md；新增功能说明：docs\motion_fusion.md。

@@ -1,0 +1,3 @@
+﻿PASS tb_motion_1080p frames=2 input_pixels=4147200 grid_samples=10368 grid=96x54 changed=32 diff_sum=768 bbox=0/0/95/53 ignored_non_grid_pixels
+D:\FPGA_2026_T3_P3\sim\tb_motion_1080p.sv:55: $finish called at 41558690000 (1ps)
+

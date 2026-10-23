@@ -1,0 +1,3 @@
+﻿PASS tb_multimodal_alarm checks=45 events=7 weighted_score freshness future missing duplicate order rollover confirm hold ack disarm
+D:\FPGA_2026_T3_P3\sim\tb_multimodal_alarm.sv:84: $finish called at 460000 (1ps)
+

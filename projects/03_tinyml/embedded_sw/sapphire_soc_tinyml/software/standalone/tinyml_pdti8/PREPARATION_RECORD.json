@@ -1,0 +1,34 @@
+{
+  "vendor_archive_unmodified": true,
+  "flatbuffers_source": "D:\\FPGA_2026_T3_P3\\vendor_projects\\TinyML\\tinyml-main\\tinyml_hello_world\\Ti60F225_tinyml_helloworld\\embedded_sw\\sapphire_soc_tinyml\\software\\standalone\\tinyml_ypd\\src\\tensorflow\\third_party\\flatbuffers",
+  "matching_tensorflow_schema_checked": true,
+  "restored_headers_this_run": [
+    "lite/kernels/internal/reference/integer_ops/add.h",
+    "lite/kernels/internal/reference/integer_ops/conv.h",
+    "lite/kernels/internal/reference/integer_ops/depthwise_conv.h",
+    "lite/kernels/internal/reference/integer_ops/fully_connected.h",
+    "lite/kernels/internal/reference/integer_ops/l2normalization.h",
+    "lite/kernels/internal/reference/integer_ops/logistic.h",
+    "lite/kernels/internal/reference/integer_ops/mean.h",
+    "lite/kernels/internal/reference/integer_ops/mul.h",
+    "lite/kernels/internal/reference/integer_ops/pooling.h",
+    "lite/kernels/internal/reference/integer_ops/tanh.h",
+    "lite/kernels/internal/reference/integer_ops/transpose_conv.h",
+    "lite/micro/examples/hello_world/riscv32_mcu/Makefile.inc",
+    "lite/micro/examples/magic_wand/riscv32_mcu/Makefile.inc",
+    "lite/micro/examples/magic_wand/zephyr_riscv/Makefile.inc",
+    "lite/micro/examples/micro_speech/arc_emsdp/Makefile.inc",
+    "lite/micro/examples/micro_speech/spresense/Makefile.inc"
+  ],
+  "flatbuffers_sha256": "b3c48069acc8dec9a3a1e9e35b3780fc8480cb0ff007b640329b6ea5921a2294",
+  "makefile_sha256": "99214bb5f1a6a8e613ffefb451a2b52961b23059bc1e45df5133376e87b95ccb",
+  "main_sha256": "3b6aaeeb2ae89034a79e9721ce1a04001501592797c49a8b3f21dad8610c5151",
+  "changes": [
+    "Restore pdti8 FlatBuffers headers from ypd in the same supplied archive",
+    "Filter -ffreestanding from CXXFLAGS for GCC 13 C++ standard-library availability; C retains freestanding flags; -fno-builtin, nosys, custom startup unchanged",
+    "Use standard int main(void) and return 0; vendor bare-metal startup still loops after main returns"
+  ],
+  "model_unchanged": true,
+  "static_images_unchanged": true,
+  "physical_inference_executed": false
+}

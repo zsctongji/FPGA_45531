@@ -1,0 +1,3 @@
+﻿PASS tb_pixel_ops: gray=3077, binary=3076, thresholds=0/127/128/255, valid_gaps=2334, reset_and_markers=checked
+D:\FPGA_2026_T3_P3\sim\tb_pixel_ops.sv:156: $finish called at 54160000 (1ps)
+

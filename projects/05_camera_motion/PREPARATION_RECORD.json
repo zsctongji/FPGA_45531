@@ -1,0 +1,32 @@
+{
+  "source_project": "D:\\FPGA_2026_T3_P3\\projects\\04_camera_preprocess",
+  "working_project": "D:\\FPGA_2026_T3_P3\\projects\\05_camera_motion",
+  "display_mode": "grayscale plus motion-only red border",
+  "video_dimensions": [
+    1920,
+    1080
+  ],
+  "grid_dimensions": [
+    96,
+    54
+  ],
+  "difference_threshold": 24,
+  "minimum_changed_samples": 32,
+  "hold_frames": 15,
+  "border_pixels": 4,
+  "additional_display_latency_registers": 1,
+  "source_top_sha256": "c61c4d7cbb966a5ed4f5d11ab043236e3dc2b09521037c679a3cb3ef797baffc",
+  "modified_top_sha256": "e96df1b49ddaee470f2d915c881af522b6e14798bef90b8b36cad88c6f29a6d1",
+  "source_files_present": true,
+  "peripheral_file_identical": true,
+  "peripheral_sha256": "884225e0ea6554eba62192ca03d49f8265121e069830fa09ee41694980148605",
+  "live_ai_connected": false,
+  "thermal_environment_connected": false,
+  "board_test_passed": false,
+  "motion_rtl_sha256": {
+    "frame_motion_stats.v": "459af3342402dad67069f26913b5bc0508d6b7b7d280ad763bedc9c454c8a212",
+    "video_grid_sampler.v": "9bd066f70ff8778caa7f4f18cfa4709a949b1c61ceb648cd79d015e00d57db84",
+    "video_motion_display.v": "5d80a84b91fb9cae7810f1b64af349a2d3b789660c64be66299c5350bcfe50ff"
+  },
+  "source_hash_audit_after_compile": true
+}

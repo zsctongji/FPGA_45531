@@ -1,0 +1,4 @@
+﻿PASS tb_sobel_720p: size=1280x720, frames=2, gray=1843200, binary=1843200, Sobel=1835208, lines=1436, gradient_pixels=3992, valid_gaps=119
+PASS 720p functional coverage: vertical_step, horizontal_step, consecutive_frames, cropped_border, frame_and_line_markers; no hardware_fps_claim
+D:\FPGA_2026_T3_P3\sim\tb_sobel_720p.sv:123: $finish called at 18433220000 (1ps)
+

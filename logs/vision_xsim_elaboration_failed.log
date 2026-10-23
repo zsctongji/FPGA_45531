@@ -1,0 +1,48 @@
+xbip_dsp48_acc_v3_0_5=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xbip_dsp48_acc_v3_0_5
+xbip_dsp48_addsub_v3_0_5=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xbip_dsp48_addsub_v3_0_5
+xbip_dsp48_macro_v3_0_16=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xbip_dsp48_macro_v3_0_16
+xbip_dsp48_mult_v3_0_5=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xbip_dsp48_mult_v3_0_5
+xbip_dsp48_multacc_v3_0_5=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xbip_dsp48_multacc_v3_0_5
+xbip_dsp48_multadd_v3_0_5=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xbip_dsp48_multadd_v3_0_5
+xbip_dsp48_wrapper_v3_0_4=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xbip_dsp48_wrapper_v3_0_4
+xbip_multadd_v3_0_13=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xbip_multadd_v3_0_13
+xbip_pipe_v3_0_5=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xbip_pipe_v3_0_5
+xbip_utils_v3_0_9=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xbip_utils_v3_0_9
+xdma_v4_1_2=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xdma_v4_1_2
+xfft_v7_2_8=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xfft_v7_2_8
+xfft_v9_0_16=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xfft_v9_0_16
+xfft_v9_1_1=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xfft_v9_1_1
+xhmc_v1_0_8=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xhmc_v1_0_8
+xilinx_vip=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xilinx_vip
+xlconcat_v2_1_1=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xlconcat_v2_1_1
+xlconstant_v1_1_5=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xlconstant_v1_1_5
+xlslice_v1_0_1=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xlslice_v1_0_1
+xpm=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xpm
+xsdbm_v2_0_0=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xsdbm_v2_0_0
+xsdbm_v3_0_0=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xsdbm_v3_0_0
+xsdbs_v1_0_2=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xsdbs_v1_0_2
+xtlm=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xtlm
+xtlm_simple_interconnect_v1_0=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xtlm_simple_interconnect_v1_0
+xxv_ethernet_v2_4_2=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xxv_ethernet_v2_4_2
+xxv_ethernet_v2_5_0=D:\Xilinx\Vivado\2018.3\data/xsim/ip/xxv_ethernet_v2_5_0
+zynq_ultra_ps_e_v3_2_2=D:\Xilinx\Vivado\2018.3\data/xsim/ip/zynq_ultra_ps_e_v3_2_2
+zynq_ultra_ps_e_vip_v1_0_4=D:\Xilinx\Vivado\2018.3\data/xsim/ip/zynq_ultra_ps_e_vip_v1_0_4
+-- Done dumping library mapping
+Starting static elaboration
+INFO: [VRFC 10-3232] compiling module 'tb_pixel_ops' [C:/Users/zkr/Documents/Codex/2026-10-17/wo-x/outputs/FPGA_2026_T3_P3/sim/tb_pixel_ops.sv:3]
+Completed static elaboration
+INFO: [VRFC 10-173] Declaration of multiple ports on the same line is valid but can affect code readability
+INFO: [VRFC 10-173] Declaration of multiple ports on the same line is valid but can affect code readability
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+SDG Object Count: 674, SDG Object Memory Usage: 80 KB.
+Time Resolution for simulation is 1ps
+Compiling module work.rgb888_to_gray
+Compiling module work.gray_threshold(THRESHOLD=0)
+Compiling module work.gray_threshold(THRESHOLD=127)
+Compiling module work.gray_threshold
+Compiling module work.gray_threshold(THRESHOLD=255)
+Compiling module work.tb_pixel_ops
+D:\Xilinx\Vivado\2018.3\data\..\tps\mingw\6.2.0\win64.o\nt\bin\gcc.exe  -fPIC -c -Wa,-W  -I"D:\Xilinx\Vivado\2018.3\data/xsim/include" "xsim.dir/tb_pixel_ops_snapshot/obj/xsim_1.c" -O  -o "xsim.dir/tb_pixel_ops_snapshot/obj/xsim_1.win64.obj" -DXILINX_SIMULATOR
+ERROR: [XSIM 43-3409] Failed to compile generated C file xsim.dir/tb_pixel_ops_snapshot/obj/xsim_1.c.
+ERROR: [XSIM 43-3915] Encountered a fatal error. Cannot continue. Exiting... 

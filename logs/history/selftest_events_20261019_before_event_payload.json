@@ -1,0 +1,46 @@
+﻿{
+    "suite_status":  "PASS",
+    "scope":  "Portable RTL functional simulation only; no Efinity build or board measurement",
+    "started_at":  "2026-10-19T13:12:29.5927187+08:00",
+    "backend":  "icarus",
+    "selected_suite":  "events",
+    "simulator_bin":  "D:\\FPGA_2026_T3_P3\\tools\\iverilog\\bin",
+    "tests":  [
+                  {
+                      "name":  "tb_frame_motion_stats",
+                      "status":  "PASS",
+                      "evidence":  [
+                                       "PASS tb_frame_motion_stats frames=77 malformed=4 random_frames=64 threshold_edges bbox gaps reset back_to_back"
+                                   ]
+                  },
+                  {
+                      "name":  "tb_multimodal_alarm",
+                      "status":  "PASS",
+                      "evidence":  [
+                                       "PASS tb_multimodal_alarm checks=44 events=7 weighted_score freshness future missing duplicate order rollover confirm hold ack disarm"
+                                   ]
+                  },
+                  {
+                      "name":  "tb_video_motion_display",
+                      "status":  "PASS",
+                      "evidence":  [
+                                       "PASS tb_video_motion_display cycles=903 complete_frames=9 format_errors=12 red_pixels=103 sampled_grid=4x3 invalid_width/extra_row/missing_row marker_alignment hold_frames=2"
+                                   ]
+                  },
+                  {
+                      "name":  "tb_motion_minimum",
+                      "status":  "PASS",
+                      "evidence":  [
+                                       "PASS tb_motion_minimum grid=1x1 first_frame_invalid threshold_equal static SOF_EOF_same_sample"
+                                   ]
+                  },
+                  {
+                      "name":  "tb_motion_1080p",
+                      "status":  "PASS",
+                      "evidence":  [
+                                       "PASS tb_motion_1080p frames=2 input_pixels=4147200 grid_samples=10368 grid=96x54 changed=32 diff_sum=768 bbox=0/0/95/53 ignored_non_grid_pixels"
+                                   ]
+                  }
+              ],
+    "finished_at":  "2026-10-19T13:12:56.5057181+08:00"
+}

@@ -1,0 +1,13 @@
+﻿FPGA 参赛项目环境检测（只读）
+检测时间（北京时间）：2026-10-18 14:32:42 +08:00
+已确认：易灵思赛道 / 多模态 AI 智能终端 / 自制开发板
+用户提供芯片：Ti60F225；具体板卡版本及摄像头仍待确认。
+安路 TD：C:\Anlogic\TD_Release_2026.1_SP2.200.067\bin\td.exe
+注意：安路 TD 不支持 Ti60，本项目板级构建需要易灵思 Efinity。
+Efinity：D:\FPGA_2026_T3_P3\tools\efinity\2026.1\bin\efinity.exe（只确认文件存在）
+Vivado 2018.3 XSim：D:\Xilinx\Vivado\2018.3\bin\xsim.bat（只确认文件存在）
+串口名称（未打开）：COM3, COM4, COM5, COM6, COM7, COM8
+独立工程编译结果：请查看 logs/efinity_*_compile.json；本检测只确认软件路径。
+实体板下载与运行结果：尚未验证。
+本次未运行软件、未读取许可文件、未安装软件、未连接板卡。
+完整报告：D:\FPGA_2026_T3_P3\logs\environment.json

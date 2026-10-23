@@ -1,0 +1,4 @@
+﻿PASS tb_vision_stream: gray=516, binary=515, Sobel=280, frames=8, lines=40, valid_gaps=386, zero/intermediate/saturated=97/73/110
+PASS stream coverage: continuous_frames, random_valid_gaps, input_border_suppression, regenerated_markers, reset_midframe, stale_line_memory_recovery
+D:\FPGA_2026_T3_P3\sim\tb_vision_stream.sv:189: $finish called at 9070000 (1ps)
+

@@ -1,0 +1,17 @@
+﻿{
+    "status":  "FAIL",
+    "project":  "camera_preprocess",
+    "flow":  "compile",
+    "file":  "D:\\FPGA_2026_T3_P3\\projects\\04_camera_preprocess\\ti60f225_oob.xml",
+    "started":  "2026-10-18T13:57:42.8017004+08:00",
+    "stage":  "run_tool",
+    "scope":  "tool_flow_only",
+    "physical_board_programmed":  false,
+    "board_test_passed":  false,
+    "efinity_version":  "2026.1.132",
+    "preflight_log":  "D:\\FPGA_2026_T3_P3\\logs\\efinity_camera_preprocess_interface_preflight.log",
+    "preflight_exit_code":  0,
+    "exit_code":  1,
+    "error":  "Efinity failed (exit=1). See D:\\FPGA_2026_T3_P3\\logs\\efinity_camera_preprocess_compile.log",
+    "finished":  "2026-10-18T13:59:05.0273237+08:00"
+}

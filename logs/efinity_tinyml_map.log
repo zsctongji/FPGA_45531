@@ -1,0 +1,4 @@
+WARNING: cannot find correct IV value
+Creating D:\FPGA_2026_T3_P3\projects\03_tinyml\outflow
+Running: efx_run_map.py Ti60F225_tinyml_helloworld --family Titanium --device Ti60F225 --project_xml D:\FPGA_2026_T3_P3\projects\03_tinyml\Ti60F225_tinyml_helloworld.xml --dir D:\FPGA_2026_T3_P3\projects\03_tinyml\ip\sapphire_soc --output_dir outflow --work_dir work_syn --timeout 1800 --opt root=tinyml_soc_top --opt veri_options=verilog_mode=sv_09,vhdl_mode=vhdl_2008 work-dir=work_syn write_efx_verilog=on I=ip/sapphire_soc
+   map :	PASS 

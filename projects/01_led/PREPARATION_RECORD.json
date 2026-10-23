@@ -1,0 +1,19 @@
+{
+  "source_top_before_sha256": "cfb6841cd9c41654fe1838f2bcb11700e1398a88982687c9e36bee4cdc3d15dd",
+  "modified_top_sha256": "8a8d89246504280165d6a14b7e04c40c8187ec47ead2ef4815a01367673fa585",
+  "key_detect_sha256": "9c4e8bfaf0502532bbcecd633b548b540584833bca774e8b65c4f6cb87cf6460",
+  "changes": [
+    "Use one clock for key1 debounce and LED1; remove live fabric clock mux",
+    "Async reset assertion and synchronized release in each domain",
+    "Synchronize/debounce button inputs; correct 15 ms units and domain frequencies",
+    "Drive all 8 LEDs; preserve vendor peripheral pin configuration",
+    "Use the four generated fabric clock constraints without unused placeholders"
+  ],
+  "physical_board_tested": false,
+  "clock_constraints": [
+    "create_clock -period 12.500 -name osc_clk [get_ports {osc_clk}]",
+    "create_clock -waveform {10.000 20.000} -period 20.000 -name clk_50m [get_ports {clk_50m}]",
+    "create_clock -period 40.000 -name clk_25m_x2 [get_ports {clk_25m_x2}]",
+    "create_clock -waveform {9.260 18.519} -period 18.519 -name clk_54m [get_ports {clk_54m}]"
+  ]
+}

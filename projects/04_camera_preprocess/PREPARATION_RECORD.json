@@ -1,0 +1,14 @@
+{
+  "source_project": "D:\\FPGA_2026_T3_P3\\projects\\02_camera",
+  "working_project": "D:\\FPGA_2026_T3_P3\\projects\\04_camera_preprocess",
+  "display_mode": 1,
+  "threshold": 128,
+  "pipeline_latency_registers": 2,
+  "vendor_resolution": "1920x1080 (unchanged; not physically measured)",
+  "source_top_sha256": "d22074352d6f895056852b66b8f2dee77b9bc45d39d4bcffa4bfd3876a2f0141",
+  "modified_top_sha256": "c61c4d7cbb966a5ed4f5d11ab043236e3dc2b09521037c679a3cb3ef797baffc",
+  "peripheral_file_identical": true,
+  "peripheral_sha256": "884225e0ea6554eba62192ca03d49f8265121e069830fa09ee41694980148605",
+  "source_files_present": true,
+  "board_test_passed": false
+}

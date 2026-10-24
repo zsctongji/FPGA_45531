@@ -1,0 +1,379 @@
+`timescale 1ns/1ps
+module tb_c2_image;
+localparam N=3;
+reg clk=0,vclk=0,rst_n=0,inject_b_error=0,inject_r_error=0;
+always #5 clk=~clk;always #7 vclk=~vclk;
+reg [N*1-1:0] s_awvalid=0;
+wire [N*1-1:0] s_awready;
+reg [N*32-1:0] s_awaddr=0;
+reg [N*8-1:0] s_awlen=0;
+reg [N*1-1:0] s_wvalid=0;
+wire [N*1-1:0] s_wready;
+reg [N*128-1:0] s_wdata=0;
+reg [N*16-1:0] s_wstrb=0;
+reg [N*1-1:0] s_wlast=0;
+wire [N*1-1:0] s_bvalid;
+reg [N*1-1:0] s_bready=0;
+wire [N*2-1:0] s_bresp;
+reg [N*1-1:0] s_arvalid=0;
+wire [N*1-1:0] s_arready;
+reg [N*32-1:0] s_araddr=0;
+reg [N*8-1:0] s_arlen=0;
+wire [N*1-1:0] s_rvalid;
+reg [N*1-1:0] s_rready=0;
+wire [N*128-1:0] s_rdata;
+wire [N*1-1:0] s_rlast;
+wire [N*2-1:0] s_rresp;
+wire [0:0] m_awvalid;
+wire [0:0] m_awready;
+wire [31:0] m_awaddr;
+wire [7:0] m_awlen;
+wire [2:0] m_awsize;
+wire [1:0] m_awburst;
+wire [0:0] m_wvalid;
+wire [0:0] m_wready;
+wire [127:0] m_wdata;
+wire [15:0] m_wstrb;
+wire [0:0] m_wlast;
+wire [0:0] m_bvalid;
+wire [0:0] m_bready;
+wire [1:0] m_bresp;
+wire [0:0] m_arvalid;
+wire [0:0] m_arready;
+wire [31:0] m_araddr;
+wire [7:0] m_arlen;
+wire [2:0] m_arsize;
+wire [1:0] m_arburst;
+wire [0:0] m_rvalid;
+wire [0:0] m_rready;
+wire [127:0] m_rdata;
+wire [0:0] m_rlast;
+wire [1:0] m_rresp;
+wire protocol_error;
+wire [31:0] completed_writes,completed_reads;
+reg req_valid=0,event_ready=0;
+reg [543:0] req_payload=0;
+wire req_ready,frame_valid,frame_ready;
+wire [543:0] frame_payload;
+wire result_valid,result_ready,result_slot;
+wire [2:0] result_status;
+wire [31:0] result_generation;
+wire [511:0] result_descriptor;
+wire delivered_valid;
+wire [547:0] delivered;
+wire image_start_valid,image_start_ready,image_ready,image_done_valid,image_done_ready,image_error;
+wire [31:0] image_address,image_checksum;
+reg image_valid=0;
+reg [127:0] image_words=0;
+reg ctl_valid=0,ctl_rsp_ready=0,ctl_slot=0;
+reg [2:0] ctl_cmd=0;
+reg [31:0] ctl_generation=0;
+wire ctl_ready,ctl_rsp_valid;
+wire [1:0] ctl_status;
+wire [511:0] ctl_descriptor;
+wire [3:0] states;
+wire [31:0] dropped;
+c2_cdc_mailbox #(.WIDTH(544)) requests(.arst_n(rst_n),.s_clk(vclk),
+ .s_valid(req_valid),.s_ready(req_ready),.s_data(req_payload),.d_clk(clk),
+ .d_valid(frame_valid),.d_ready(frame_ready),.d_data(frame_payload));
+c2_cdc_mailbox #(.WIDTH(548)) events(.arst_n(rst_n),.s_clk(clk),
+ .s_valid(result_valid),.s_ready(result_ready),
+ .s_data({result_status,result_slot,result_generation,result_descriptor}),.d_clk(vclk),
+ .d_valid(delivered_valid),.d_ready(event_ready),.d_data(delivered));
+c2_frame_publisher publisher(.clk(clk),.rst_n(rst_n),
+ .frame_valid(frame_valid),.frame_ready(frame_ready),
+ .frame_descriptor(frame_payload[511:0]),.shared_base(frame_payload[543:512]),
+ .write_start_valid(image_start_valid),.write_start_ready(image_start_ready),.write_address(image_address),
+ .write_done_valid(image_done_valid),.write_done_ready(image_done_ready),
+ .write_done_error(image_error),.write_checksum(image_checksum),
+ .event_valid(result_valid),.event_ready(result_ready),.event_status(result_status),
+ .event_slot(result_slot),.event_generation(result_generation),.event_descriptor(result_descriptor),
+ .cpu_valid(ctl_valid),.cpu_ready(ctl_ready),.cpu_cmd(ctl_cmd),.cpu_slot(ctl_slot),
+ .cpu_generation(ctl_generation),.cpu_rsp_valid(ctl_rsp_valid),.cpu_rsp_ready(ctl_rsp_ready),
+ .cpu_rsp_status(ctl_status),.cpu_descriptor(ctl_descriptor),.slot_states(states),.dropped(dropped));
+c2_memory_hub hub(.clk(clk),.rst_n(rst_n),
+.s_awvalid(s_awvalid),
+.s_awready(s_awready),
+.s_awaddr(s_awaddr),
+.s_awlen(s_awlen),
+.s_wvalid(s_wvalid),
+.s_wready(s_wready),
+.s_wdata(s_wdata),
+.s_wstrb(s_wstrb),
+.s_wlast(s_wlast),
+.s_bvalid(s_bvalid),
+.s_bready(s_bready),
+.s_bresp(s_bresp),
+.s_arvalid(s_arvalid),
+.s_arready(s_arready),
+.s_araddr(s_araddr),
+.s_arlen(s_arlen),
+.s_rvalid(s_rvalid),
+.s_rready(s_rready),
+.s_rdata(s_rdata),
+.s_rlast(s_rlast),
+.s_rresp(s_rresp),
+.m_awvalid(m_awvalid),
+.m_awready(m_awready),
+.m_awaddr(m_awaddr),
+.m_awlen(m_awlen),
+.m_awsize(m_awsize),
+.m_awburst(m_awburst),
+.m_wvalid(m_wvalid),
+.m_wready(m_wready),
+.m_wdata(m_wdata),
+.m_wstrb(m_wstrb),
+.m_wlast(m_wlast),
+.m_bvalid(m_bvalid),
+.m_bready(m_bready),
+.m_bresp(m_bresp),
+.m_arvalid(m_arvalid),
+.m_arready(m_arready),
+.m_araddr(m_araddr),
+.m_arlen(m_arlen),
+.m_arsize(m_arsize),
+.m_arburst(m_arburst),
+.m_rvalid(m_rvalid),
+.m_rready(m_rready),
+.m_rdata(m_rdata),
+.m_rlast(m_rlast),
+.m_rresp(m_rresp),
+.image_start_valid(image_start_valid),.image_start_ready(image_start_ready),.image_address(image_address),
+.image_words(image_words),.image_valid(image_valid),.image_ready(image_ready),
+.image_done_valid(image_done_valid),.image_done_ready(image_done_ready),.image_error(image_error),
+.image_checksum(image_checksum),.protocol_error(protocol_error));
+c2_ddr_model memory_model(.clk(clk),.rst_n(rst_n),.inject_b_error(inject_b_error),.inject_r_error(inject_r_error),
+.awvalid(m_awvalid),
+.awready(m_awready),
+.awaddr(m_awaddr),
+.awlen(m_awlen),
+.awsize(m_awsize),
+.awburst(m_awburst),
+.wvalid(m_wvalid),
+.wready(m_wready),
+.wdata(m_wdata),
+.wstrb(m_wstrb),
+.wlast(m_wlast),
+.bvalid(m_bvalid),
+.bready(m_bready),
+.bresp(m_bresp),
+.arvalid(m_arvalid),
+.arready(m_arready),
+.araddr(m_araddr),
+.arlen(m_arlen),
+.arsize(m_arsize),
+.arburst(m_arburst),
+.rvalid(m_rvalid),
+.rready(m_rready),
+.rdata(m_rdata),
+.rlast(m_rlast),
+.rresp(m_rresp),
+.completed_writes(completed_writes),
+.completed_reads(completed_reads));
+integer checks=0,write_transactions=0,read_transactions=0;
+function [127:0] pattern(input integer tag,input integer beat);
+ integer lane;begin for(lane=0;lane<4;lane=lane+1) pattern[lane*32+:32]=tag*65536+beat*4+lane;end
+endfunction
+function [127:0] masked_pattern(input integer tag,input integer beat);
+ reg [127:0] p;reg [15:0] mask;integer b;
+ begin
+   p=pattern(tag,beat);mask=16'hffff<<(beat%4);
+   for(b=0;b<16;b=b+1) if(!mask[b]) p[b*8+:8]=0;
+   masked_pattern=p;
+ end
+endfunction
+task automatic write_burst(input integer p,input integer addr,input integer count,
+                           input integer tag,input [1:0] response);
+ integer b;
+ begin
+   @(negedge clk);s_awvalid[p]=1;s_awaddr[p*32+:32]=addr;s_awlen[p*8+:8]=count-1;
+   do @(posedge clk);while(!s_awready[p]);
+   @(negedge clk);s_awvalid[p]=0;
+   for(b=0;b<count;b=b+1) begin
+     repeat((b+p)%3) @(negedge clk);
+     s_wvalid[p]=1;s_wdata[p*128+:128]=pattern(tag,b);
+     s_wstrb[p*16+:16]=16'hffff<<(b%4);s_wlast[p]=(b==count-1);
+     do @(posedge clk);while(!s_wready[p]);
+     @(negedge clk);s_wvalid[p]=0;s_wlast[p]=0;
+   end
+   repeat(p+2) @(negedge clk);
+   s_bready[p]=1;
+   do @(posedge clk);while(!s_bvalid[p]);
+   if(s_bresp[p*2+:2]!==response) $fatal(1,"B response misrouted p=%d",p);
+   checks=checks+1;write_transactions=write_transactions+1;
+   @(negedge clk);s_bready[p]=0;
+ end
+endtask
+task automatic read_burst(input integer p,input integer addr,input integer count,
+                          input integer tag,input [1:0] response);
+ integer b;
+ begin
+   @(negedge clk);s_arvalid[p]=1;s_araddr[p*32+:32]=addr;s_arlen[p*8+:8]=count-1;
+   do @(posedge clk);while(!s_arready[p]);
+   @(negedge clk);s_arvalid[p]=0;
+   for(b=0;b<count;b=b+1) begin
+     repeat((b+2*p)%4) @(negedge clk);
+     s_rready[p]=1;
+     do @(posedge clk);while(!s_rvalid[p]);
+     if(s_rresp[p*2+:2]!==response || s_rlast[p]!=(b==count-1) ||
+        s_rdata[p*128+:128]!==masked_pattern(tag,b))
+        $fatal(1,"Read mismatch p=%d beat=%d got=%h expected=%h",p,b,s_rdata[p*128+:128],masked_pattern(tag,b));
+     checks=checks+1;
+     @(negedge clk);s_rready[p]=0;
+   end
+   read_transactions=read_transactions+1;
+ end
+endtask
+integer word_index=0,active_frame=0,frame_w=0,frame_b=0;
+integer images_ok=0,images_error=0,t0,t1,t2,ctrl_calls=0;
+reg active=0,consumed=0,fence_seen=0;
+reg [31:0] random_bits=32'h613acb27;
+function [127:0] image_pattern(input integer frame,input integer word_index);
+ integer b;begin for(b=0;b<16;b=b+1) image_pattern[b*8+:8]=(word_index*16+b)*17+frame;end
+endfunction
+function [31:0] checksum(input integer frame);
+ reg [31:0] value;integer n;
+ begin value=32'd2166136261;
+   for(n=0;n<9216;n=n+1) value=(value^((n*17+frame)&255))*32'd16777619;
+   checksum=value;
+ end
+endfunction
+always @(posedge clk or negedge rst_n) begin
+ if(!rst_n) begin active<=0;word_index<=0;active_frame<=0;consumed<=0;
+   frame_w<=0;frame_b<=0;fence_seen<=0;
+ end else begin
+   consumed<=image_valid && image_ready;
+   if(frame_valid && frame_ready) fence_seen<=0;
+   if(image_start_valid && image_start_ready) begin
+     active<=1;word_index<=0;active_frame<=result_descriptor[63:32];frame_w<=0;frame_b<=0;
+   end
+   if(image_valid && image_ready) begin
+     word_index<=word_index+1;
+     if(word_index==575) active<=0;
+   end
+   if(hub.f_wvalid[3] && hub.f_wready[3]) frame_w<=frame_w+1;
+   if(hub.f_bvalid[3] && hub.f_bready[3]) frame_b<=frame_b+1;
+   if(image_done_valid && image_done_ready && !image_error) begin
+     if(frame_w!=576 || frame_b!=36) $fatal(1,"Writer completion before all 576 beats/36 responses");
+     fence_seen<=1;
+   end
+   if(publisher.choose_internal && publisher.manager_ready && publisher.internal_cmd==1 && !fence_seen)
+      $fatal(1,"COMMIT before final write response");
+ end
+end
+always @(negedge clk) begin
+ if(!rst_n) begin image_valid=0;image_words=0;end
+ else begin
+   random_bits={random_bits[30:0],random_bits[31]^random_bits[21]^random_bits[1]^random_bits[0]};
+   if(consumed) image_valid=0;
+   if(!image_valid && active && random_bits[0]) begin
+     image_valid=1;image_words=image_pattern(active_frame,word_index);
+   end
+ end
+end
+task send_frame(input integer seq,input bit bad_descriptor);
+ reg [511:0] f;
+ begin
+   f=0;f[31:0]=32'h10000;f[63:32]=seq;f[95:64]=seq*33;f[319:288]=1;
+   if(bad_descriptor) f[511:480]=1;
+   @(negedge vclk);req_payload={32'b0,f};req_valid=1;
+   do @(posedge vclk);while(!req_ready);
+   @(negedge vclk);req_valid=0;
+ end
+endtask
+task collect(input integer seq,input [2:0] expected,
+             output reg id,output reg [31:0] gen);
+ reg [547:0] saved;reg [31:0] addr;
+ reg [7:0] observed;integer n;
+ begin
+   event_ready=0;
+   while(!delivered_valid) @(negedge vclk);
+   saved=delivered;
+   repeat(7) begin @(negedge vclk);
+     if(!delivered_valid || delivered!==saved) $fatal(1,"Event payload not held");
+   end
+   if(delivered[547:545]!==expected || delivered[63:32]!=seq)
+      $fatal(1,"Image event seq=%d status=%d expected=%d",seq,delivered[547:545],expected);
+   id=delivered[544];gen=delivered[543:512];
+   if(expected==0) begin
+     if(delivered[287:256]!==checksum(seq)) $fatal(1,"Image FNV mismatch");
+     addr=delivered[159:128];
+     for(n=0;n<9216;n=n+1) begin
+       observed=memory_model.memory[(addr+n)/16][((addr+n)%16)*8+:8];
+       if(observed!==((n*17+seq)&255)) $fatal(1,"Image byte corrupted %d",n);
+     end
+     images_ok=images_ok+1;
+   end else images_error=images_error+1;
+   event_ready=1;@(negedge vclk);event_ready=0;
+ end
+endtask
+task control(input [2:0] op,input bit id,input [31:0] gen,input [1:0] expected);
+ begin
+   @(negedge clk);ctl_valid=1;ctl_cmd=op;ctl_slot=id;ctl_generation=gen;ctl_rsp_ready=0;
+   do @(posedge clk);while(!ctl_ready);
+   @(negedge clk);ctl_valid=0;
+   while(!ctl_rsp_valid) @(negedge clk);
+   if(ctl_status!==expected) $fatal(1,"CPU ownership response error");
+   repeat(3) @(negedge clk);
+   ctl_rsp_ready=1;@(negedge clk);ctl_rsp_ready=0;ctrl_calls=ctrl_calls+1;
+ end
+endtask
+task read_image(input integer seq,input integer addr);
+ integer burst,b,n;reg [127:0] expected;
+ begin
+   for(burst=0;burst<36;burst=burst+1) begin
+     @(negedge clk);s_arvalid[0]=1;s_araddr[31:0]=addr+burst*256;s_arlen[7:0]=15;
+     do @(posedge clk);while(!s_arready[0]);
+     @(negedge clk);s_arvalid[0]=0;
+     for(b=0;b<16;b=b+1) begin
+       repeat(b%3) @(negedge clk);s_rready[0]=1;
+       do @(posedge clk);while(!s_rvalid[0]);
+       expected=image_pattern(seq,burst*16+b);
+       if(s_rdata[127:0]!==expected || s_rresp[1:0]!=0 || s_rlast[0]!=(b==15))
+         $fatal(1,"CPU shared-image read mismatch");
+       checks=checks+1;
+       @(negedge clk);s_rready[0]=0;
+     end
+   end
+ end
+endtask
+reg a,b,tmp;reg [31:0] ga,gb,old_ga,tmpgen;
+initial begin
+ #23;rst_n=1;
+ fork
+   begin for(t0=0;t0<30;t0=t0+1) begin write_burst(0,32'h10000+t0*256,4,t0,0);read_burst(0,32'h10000+t0*256,4,t0,0);end end
+   begin for(t1=0;t1<30;t1=t1+1) begin write_burst(1,32'h18000+t1*256,4,100+t1,0);read_burst(1,32'h18000+t1*256,4,100+t1,0);end end
+   begin for(t2=0;t2<30;t2=t2+1) begin write_burst(2,32'h20000+t2*256,4,200+t2,0);read_burst(2,32'h20000+t2*256,4,200+t2,0);end end
+   begin
+     send_frame(1,0);collect(1,0,a,ga);old_ga=ga;
+     send_frame(2,0);collect(2,0,b,gb);
+     if(a==b || states!==4'b1010) $fatal(1,"Two images did not occupy separate READY slots");
+     send_frame(3,0);collect(3,1,tmp,tmpgen);
+   end
+ join
+ control(3,a,ga+1,2);control(3,a,ga,0);
+ send_frame(4,0);collect(4,1,tmp,tmpgen);
+ read_image(1,a?32'h4000:32'h1000);
+ control(4,a,ga+1,2);control(4,a,ga,0);
+ send_frame(5,0);collect(5,0,a,ga);
+ if(ga==old_ga) $fatal(1,"Slot generation did not advance");
+ control(3,a,old_ga,2);
+ control(3,b,gb,0);control(4,b,gb,0);
+ inject_b_error=1;send_frame(6,0);collect(6,4,tmp,tmpgen);inject_b_error=0;
+ if(states[3:2]!=0) $fatal(1,"Failed write leaked WRITING/READY slot");
+ send_frame(7,1);collect(7,3,tmp,tmpgen);
+ if(states[3:2]!=0) $fatal(1,"Rejected descriptor leaked slot");
+ send_frame(8,0);
+ wait(active && word_index>100);
+ @(negedge clk);rst_n=0;
+ repeat(4) @(negedge clk);rst_n=1;
+ repeat(12) @(negedge vclk);
+ if(delivered_valid || states!=0) $fatal(1,"Ghost state/event after shared reset");
+ send_frame(9,0);collect(9,0,tmp,tmpgen);
+ if(protocol_error) $fatal(1,"Unexpected fabric protocol error");
+ $display("PASS tb_c2_image bytes=9216 success=%0d rejected=%0d cpu_controls=%0d background_writes=%0d background_reads=%0d checks=%0d final_B_fence FNV CPU_readback CDC busy_drop errors reset",images_ok,images_error,ctrl_calls,write_transactions,read_transactions,checks);
+ $finish;
+end
+initial begin #10000000;$fatal(1,"Image hub timeout");end
+endmodule
+

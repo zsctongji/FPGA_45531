@@ -1,0 +1,1 @@
+{"status": "PASS", "reference_samples": 6, "static_label_matches": 6, "c4_real_inference_replays": 24, "model_sha256": "808cfdfc0cf3a6fa6f6fa26bfa379ea97c16d5db7334637766e39c3408502e9d"}

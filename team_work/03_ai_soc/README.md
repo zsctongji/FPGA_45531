@@ -1,5 +1,19 @@
 # C：RISC-V/TinyML、统一工程、融合与预测
 
+## 2026-10-24 开发入口
+
+- C2第二阶段入口 [C2_VENDOR_APB_CACHE.md](C2_VENDOR_APB_CACHE.md)：厂家S0/S1接口适配、APB寄存器/CDC、CPU只读缓存接收驱动已实现；`13_test_c2.cmd`现运行34次RTL回归及主机/RV32检查。`15_synth_c2_native.cmd`用于独立厂家SoC接入副本的逻辑综合，板上视频/缓存/时序仍待验证。
+
+- C2 第一阶段已新增共享内存功能边界：`projects/06_soc_c2`；18次RTL回归及Efinity逻辑综合PASS。交接详见 [C2_INTEGRATION.md](C2_INTEGRATION.md)，运行根目录 `13_test_c2.cmd`（仿真）/`14_synth_c2.cmd`（仅综合）。包含跨时钟图像传输、四源仲裁、完整帧写响应屏障及双槽管理；真实 SoC/IP、APB、缓存与上板验证仍待接入。
+
+- 电脑端下一步已完成：C4_PC_RUNBOOK.md、PROGRESS_20261024_PC_NEXT.md；一键入口12_test_c4_pc.cmd。桌面模型兼容副本与原模型严格区分，补边策略已发现样图翻转，仍待A/C确认。
+
+- 本轮主目录：C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3；旧 D 盘路径仅作为历史日志保留。
+- C1 诊断源码 c1/main.cc、上板说明 C1_RUNBOOK.md；构建入口为根目录 11_build_c1.cmd。
+- C2/C3 交接入口 C2_C3_HANDOFF.md；共享接口 ../shared/interface_contract_v1.md 和 include/cooperation_v1.h。
+- C3 实现 c3_hal/：已绑定现有 CLINT 时间源，I2C/GPIO 需真实后端，当前明确返回 ENOTSUP。
+- 板卡暂时不在手边。本轮只做电脑端构建和测试，不声称已完成 C1 上板或 C2/C3 物理接入。
+
 ## 从哪里开始
 
 - `projects/03_tinyml` 为已完整编译通过的 225 MHz 独立 SoC。

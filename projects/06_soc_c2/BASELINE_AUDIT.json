@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "generated": "2026-10-24T04:48:59.850873+00:00",
+  "checks": [
+    "TinyML single DDR instance identified",
+    "Vendor interconnect has three source slots",
+    "axi_inter_s1_awvalid has no top-level producer connection",
+    "axi_inter_s1_arvalid has no top-level producer connection",
+    "axi_inter_s1_awaddr has no top-level producer connection",
+    "CPU linker starts 0x1000 and spans 128 MiB",
+    "Video frame-buffer parameter I_VID_WIDTH=32",
+    "Video frame-buffer parameter O_VID_WIDTH=16",
+    "Video frame-buffer parameter BURST_LEN=127",
+    "Video frame-buffer parameter FB_NUM=3",
+    "Video frame-buffer parameter MAX_VID_WIDTH=960",
+    "Video frame-buffer parameter MAX_VID_HIGHT=1080",
+    "Video default DDR base is zero (CPU overlap risk)",
+    "DDR AXI is 128 bits",
+    "RTL ABI constant matches COOP_ABI_VERSION",
+    "RTL ABI constant matches COOP_IMAGE_W",
+    "RTL ABI constant matches COOP_IMAGE_H",
+    "RTL ABI constant matches COOP_IMAGE0_OFFSET",
+    "RTL ABI constant matches COOP_IMAGE1_OFFSET",
+    "RTL ABI constant matches COOP_FORMAT_GRAY8",
+    "All sixteen ABI words match RTL bit positions",
+    "Reference DDR geometry computes to 256 MiB; physical device unconfirmed",
+    "Candidate regions do not overlap",
+    "Candidate regions do not overlap",
+    "Candidate regions fit reference geometry"
+  ],
+  "geometry": {
+    "ROW_WIDTH": 14,
+    "COL_WIDTH": 10,
+    "BANK_WIDTH": 3,
+    "RANKS": 1,
+    "DQ_WIDTH": 16,
+    "AXI_ID_WIDTH": 4,
+    "CK_RATIO": 4,
+    "ASYN_AXI_CLK": 0
+  },
+  "reference_capacity_bytes": 268435456,
+  "physical_capacity_verified": false,
+  "address_translation_verified": false,
+  "files": {
+    "tinyml_top": {
+      "path": "projects/03_tinyml/src/tinyml_soc_top.v",
+      "sha256": "174a8eadd8da0fbd78d249c3ac0db4c17914ed14718b1eb95412a7683a91a5cd"
+    },
+    "ddr_parameters": {
+      "path": "projects/03_tinyml/src/ddr3_controller/ddr3_parameter.vh",
+      "sha256": "2c4c19966ecb897a477dcd7374dacc543c8cf54c9b128faf1a69685cb34f1d75"
+    },
+    "vendor_interconnect": {
+      "path": "projects/03_tinyml/src/axi/axi_interconnect_beta/axi_interconnect_beta.sv",
+      "sha256": "f0dd43346ff0f937621f56450abafc4e79e0bf893b4be041993b3c7a8d81bd88"
+    },
+    "video_top": {
+      "path": "projects/05_camera_motion/rtl/ti60f225_oob_top.v",
+      "sha256": "e96df1b49ddaee470f2d915c881af522b6e14798bef90b8b36cad88c6f29a6d1"
+    },
+    "linker": {
+      "path": "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/bsp/efinix/EfxSapphireSoc/linker/default.ld",
+      "sha256": "dada0be72927c20f78817a6e256072ea966e52cd1a7da03fc2706dc50e2ceff2"
+    },
+    "soc_header": {
+      "path": "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/bsp/efinix/EfxSapphireSoc/include/soc.h",
+      "sha256": "650185170e5f200d5672fd9bca1252d8420e452b8b453288d7f48b3619afae66"
+    },
+    "software_abi": {
+      "path": "team_work/shared/include/cooperation_v1.h",
+      "sha256": "6cd2c16ddc551304afa4a5b92d78c1a2a6faf3898afc0e3cea1509f1e2e53452"
+    }
+  },
+  "risks": [
+    "S1 is reserved but not a connected video/DMA path",
+    "Video START_ADDR=0 overlaps CPU allocation; relocation and translation proof required",
+    "Top-level interconnect IDs are 8 bits while DDR parameter AXI_ID_WIDTH is 4; adapter review required",
+    "APB control-page wiring and cache policy remain unimplemented",
+    "Portable arbiter is ID-less and globally serialized; vendor CPU/TinyML compatibility unproven"
+  ]
+}

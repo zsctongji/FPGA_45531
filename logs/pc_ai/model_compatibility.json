@@ -1,0 +1,108 @@
+{
+  "source_model_sha256": "808cfdfc0cf3a6fa6f6fa26bfa379ea97c16d5db7334637766e39c3408502e9d",
+  "runtime_model_sha256": "77cac99d46416295fc3ec9cf752dec8e0c8aafd9421475da6c86439aee22e1c4",
+  "transform": "desktop_only_bias_quantized_dimension_3_to_0",
+  "patches": [
+    {
+      "tensor": 33,
+      "name": "MobilenetV1/MobilenetV1/Conv2d_0/Conv2D_bias",
+      "offset": 263264,
+      "before": 3,
+      "after": 0
+    },
+    {
+      "tensor": 36,
+      "name": "MobilenetV1/MobilenetV1/Conv2d_10_depthwise/depthwise_bias",
+      "offset": 261296,
+      "before": 3,
+      "after": 0
+    },
+    {
+      "tensor": 40,
+      "name": "MobilenetV1/MobilenetV1/Conv2d_11_depthwise/depthwise_bias",
+      "offset": 257664,
+      "before": 3,
+      "after": 0
+    },
+    {
+      "tensor": 44,
+      "name": "MobilenetV1/MobilenetV1/Conv2d_12_depthwise/depthwise_bias",
+      "offset": 254032,
+      "before": 3,
+      "after": 0
+    },
+    {
+      "tensor": 48,
+      "name": "MobilenetV1/MobilenetV1/Conv2d_13_depthwise/depthwise_bias",
+      "offset": 247328,
+      "before": 3,
+      "after": 0
+    },
+    {
+      "tensor": 52,
+      "name": "MobilenetV1/MobilenetV1/Conv2d_1_depthwise/depthwise_bias",
+      "offset": 243600,
+      "before": 3,
+      "after": 0
+    },
+    {
+      "tensor": 56,
+      "name": "MobilenetV1/MobilenetV1/Conv2d_2_depthwise/depthwise_bias",
+      "offset": 242656,
+      "before": 3,
+      "after": 0
+    },
+    {
+      "tensor": 60,
+      "name": "MobilenetV1/MobilenetV1/Conv2d_3_depthwise/depthwise_bias",
+      "offset": 241328,
+      "before": 3,
+      "after": 0
+    },
+    {
+      "tensor": 64,
+      "name": "MobilenetV1/MobilenetV1/Conv2d_4_depthwise/depthwise_bias",
+      "offset": 240000,
+      "before": 3,
+      "after": 0
+    },
+    {
+      "tensor": 68,
+      "name": "MobilenetV1/MobilenetV1/Conv2d_5_depthwise/depthwise_bias",
+      "offset": 237904,
+      "before": 3,
+      "after": 0
+    },
+    {
+      "tensor": 72,
+      "name": "MobilenetV1/MobilenetV1/Conv2d_6_depthwise/depthwise_bias",
+      "offset": 235808,
+      "before": 3,
+      "after": 0
+    },
+    {
+      "tensor": 76,
+      "name": "MobilenetV1/MobilenetV1/Conv2d_7_depthwise/depthwise_bias",
+      "offset": 232176,
+      "before": 3,
+      "after": 0
+    },
+    {
+      "tensor": 80,
+      "name": "MobilenetV1/MobilenetV1/Conv2d_8_depthwise/depthwise_bias",
+      "offset": 228544,
+      "before": 3,
+      "after": 0
+    },
+    {
+      "tensor": 84,
+      "name": "MobilenetV1/MobilenetV1/Conv2d_9_depthwise/depthwise_bias",
+      "offset": 224912,
+      "before": 3,
+      "after": 0
+    }
+  ],
+  "all_model_data_buffers_unchanged": true,
+  "board_model_modified": false,
+  "board_equivalence_measured": false
+}

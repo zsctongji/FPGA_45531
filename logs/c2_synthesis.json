@@ -1,0 +1,87 @@
+﻿{
+    "status":  "PASS",
+    "started":  "2026-10-24T12:16:23.7559208+08:00",
+    "scope":  "C2 boundary logic synthesis only",
+    "project":  "projects/06_soc_c2/c2_boundary.xml",
+    "top":  "c2_system_boundary",
+    "device":  "Ti60F225",
+    "physical_board_programmed":  false,
+    "board_test_passed":  false,
+    "full_soc_integrated":  false,
+    "timing_or_cdc_signoff":  false,
+    "artifacts":  [
+                      {
+                          "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\outflow\\c2_boundary.map.rpt",
+                          "sha256":  "0505d634784218f4315bbae18008ef7ec682d8a7e9b5681c4b1f84259db71061",
+                          "bytes":  10501
+                      },
+                      {
+                          "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\outflow\\c2_boundary.map.v",
+                          "sha256":  "5d3a9affeefecaa9f830ed6cbb648b87c14968706b684e9c9fd1141f8c230392",
+                          "bytes":  5842861
+                      },
+                      {
+                          "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\outflow\\debug_profile.mark_debug.json",
+                          "sha256":  "6450f0a1375d61ad41bad408aaa342d51720691bc301c9ab3a2d3473fbf936a5",
+                          "bytes":  333
+                      }
+                  ],
+    "sources":  [
+                    {
+                        "sha256":  "cfb8a80252129469a37a919d4a48e760240c067ead068be0c8053161572efbc9",
+                        "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\c2_boundary.xml"
+                    },
+                    {
+                        "sha256":  "91d7dd66779d10552c23048734da6c6baaf6267d553eaf3567a2446e02ba9d77",
+                        "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_async_fifo.sv"
+                    },
+                    {
+                        "sha256":  "b36413ca9feea3c8e4a714a41340980148e2eb2db2177e5da53f3d46876ebbde",
+                        "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_axi_arbiter.sv"
+                    },
+                    {
+                        "sha256":  "df19575e73d2f0011d8aa2241d598a5c9f16d34ec37d2990fd07145e776ba2ea",
+                        "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_buffer_manager.sv"
+                    },
+                    {
+                        "sha256":  "04550a55a2e5fbb824c9d0733f9b07378b0b041222eb3fbc9c6170043e57e7d4",
+                        "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_cdc_mailbox.sv"
+                    },
+                    {
+                        "sha256":  "e07dc4798af6f03ab18ef16fd9faebe6306c19325685990e1586c66c3200910d",
+                        "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_frame_publisher.sv"
+                    },
+                    {
+                        "sha256":  "f5b0945a88dff6803313b1aa2e8fcf1ba19a3755d967a2c5a6c13f7fcb5448c2",
+                        "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_image_writer.sv"
+                    },
+                    {
+                        "sha256":  "2b2c604fabcba80453d61596b933eb040ee6c3ee88a521751568727f11393b61",
+                        "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_memory_hub.sv"
+                    },
+                    {
+                        "sha256":  "d8fe7ab80f5e66d46a39ade3e1a9dc63282d7d337df8c7e2220bca569f7ca473",
+                        "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_system_boundary.sv"
+                    }
+                ],
+    "exit_code":  0,
+    "warnings":  [
+                     "[EFX-0200 WARNING] Removing redundant signal : i[31:0]. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_buffer_manager.sv:20)",
+                     "[EFX-0200 WARNING] Removing redundant signal : next_burst[4:0]. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_image_writer.sv:25)",
+                     "[EFX-0200 WARNING] Removing redundant signal : next_burst.rem_words[9:0]. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_image_writer.sv:25)",
+                     "[EFX-0200 WARNING] Removing redundant signal : next_burst.addr[31:0]. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_image_writer.sv:25)",
+                     "[EFX-0200 WARNING] Removing redundant signal : next_burst.page_words[31:0]. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_image_writer.sv:26)",
+                     "[EFX-0200 WARNING] Removing redundant signal : next_burst.n[31:0]. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_image_writer.sv:26)",
+                     "[EFX-0200 WARNING] Removing redundant signal : k[31:0]. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_axi_arbiter.sv:33)",
+                     "[EFX-0657 WARNING] Mapping into logic memory block \u0027gen\u0027 (64 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_buffer_manager.sv:18) because size is too small (\u003c=64)",
+                     "[EFX-0657 WARNING] Mapping into logic memory block \u0027publisher/manager/meta\u0027 (1024 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_buffer_manager.sv:19) because it has async writer.",
+                     "[EFX-0657 WARNING] Mapping into logic memory block \u0027pixels/memory\u0027 (2048 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_async_fifo.sv:8) because read port is not synchronous."
+                 ],
+    "resources":  {
+                      "EFX_FF":  4993,
+                      "EFX_DSP48":  2,
+                      "EFX_ADD":  100,
+                      "EFX_LUT4":  4550
+                  },
+    "finished":  "2026-10-24T12:16:44.3527483+08:00"
+}

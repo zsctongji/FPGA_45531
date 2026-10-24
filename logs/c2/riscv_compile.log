@@ -1,0 +1,1 @@
+PASS C2 RV32: 3 objects; exact fence/invalidate/fence sequence verified; not executed on board.

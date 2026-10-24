@@ -1,0 +1,185 @@
+{
+  "status": "PASS",
+  "scope": "Actual PC CPU reference inference with audited metadata compatibility copy; not FPGA execution or accuracy evaluation",
+  "runtime": "ai-edge-litert",
+  "runtime_version": "2.3.0",
+  "resolver": "BUILTIN_REF",
+  "num_threads": 1,
+  "numpy_version": "2.4.6",
+  "python": "3.11.3",
+  "model_sha256": "808cfdfc0cf3a6fa6f6fa26bfa379ea97c16d5db7334637766e39c3408502e9d",
+  "runtime_model_sha256": "77cac99d46416295fc3ec9cf752dec8e0c8aafd9421475da6c86439aee22e1c4",
+  "compatibility": {
+    "source_model_sha256": "808cfdfc0cf3a6fa6f6fa26bfa379ea97c16d5db7334637766e39c3408502e9d",
+    "runtime_model_sha256": "77cac99d46416295fc3ec9cf752dec8e0c8aafd9421475da6c86439aee22e1c4",
+    "transform": "desktop_only_bias_quantized_dimension_3_to_0",
+    "patches": [
+      {
+        "tensor": 33,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_0/Conv2D_bias",
+        "offset": 263264,
+        "before": 3,
+        "after": 0
+      },
+      {
+        "tensor": 36,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_10_depthwise/depthwise_bias",
+        "offset": 261296,
+        "before": 3,
+        "after": 0
+      },
+      {
+        "tensor": 40,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_11_depthwise/depthwise_bias",
+        "offset": 257664,
+        "before": 3,
+        "after": 0
+      },
+      {
+        "tensor": 44,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_12_depthwise/depthwise_bias",
+        "offset": 254032,
+        "before": 3,
+        "after": 0
+      },
+      {
+        "tensor": 48,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_13_depthwise/depthwise_bias",
+        "offset": 247328,
+        "before": 3,
+        "after": 0
+      },
+      {
+        "tensor": 52,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_1_depthwise/depthwise_bias",
+        "offset": 243600,
+        "before": 3,
+        "after": 0
+      },
+      {
+        "tensor": 56,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_2_depthwise/depthwise_bias",
+        "offset": 242656,
+        "before": 3,
+        "after": 0
+      },
+      {
+        "tensor": 60,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_3_depthwise/depthwise_bias",
+        "offset": 241328,
+        "before": 3,
+        "after": 0
+      },
+      {
+        "tensor": 64,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_4_depthwise/depthwise_bias",
+        "offset": 240000,
+        "before": 3,
+        "after": 0
+      },
+      {
+        "tensor": 68,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_5_depthwise/depthwise_bias",
+        "offset": 237904,
+        "before": 3,
+        "after": 0
+      },
+      {
+        "tensor": 72,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_6_depthwise/depthwise_bias",
+        "offset": 235808,
+        "before": 3,
+        "after": 0
+      },
+      {
+        "tensor": 76,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_7_depthwise/depthwise_bias",
+        "offset": 232176,
+        "before": 3,
+        "after": 0
+      },
+      {
+        "tensor": 80,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_8_depthwise/depthwise_bias",
+        "offset": 228544,
+        "before": 3,
+        "after": 0
+      },
+      {
+        "tensor": 84,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_9_depthwise/depthwise_bias",
+        "offset": 224912,
+        "before": 3,
+        "after": 0
+      }
+    ],
+    "all_model_data_buffers_unchanged": true,
+    "board_model_modified": false,
+    "board_equivalence_measured": false
+  },
+  "c1_version": "c1-02a568e5375cc27b",
+  "samples": [
+    {
+      "sample": "person",
+      "tensor_sha256": "d4ebdafe351a7b7851c3d087fb7ec798c739badcd7e248dcb81fa92dd572aaed",
+      "input_fnv": "cb135e41",
+      "no_person": -113,
+      "person": 113,
+      "predicted": 1,
+      "expected": 1,
+      "host_invoke_ns": 5458300
+    },
+    {
+      "sample": "no_person",
+      "tensor_sha256": "3ae1db95928b1ec82fa0d056cb094742e36b66fb03f75f41c6667b8ed52a6b16",
+      "input_fnv": "916b7468",
+      "no_person": 57,
+      "person": -57,
+      "predicted": 0,
+      "expected": 0,
+      "host_invoke_ns": 5721200
+    },
+    {
+      "sample": "people1",
+      "tensor_sha256": "6706de0096336c01869157d929d9a9bd07a94cd91b2cb70c2201f10903627222",
+      "input_fnv": "cef5a9d4",
+      "no_person": -93,
+      "person": 93,
+      "predicted": 1,
+      "expected": 1,
+      "host_invoke_ns": 5394500
+    },
+    {
+      "sample": "people2",
+      "tensor_sha256": "71f7760b95cb9f4ccc62b2e6921c664382769e0f9b16bce782ea5510708dabc3",
+      "input_fnv": "5ea03219",
+      "no_person": -57,
+      "person": 57,
+      "predicted": 1,
+      "expected": 1,
+      "host_invoke_ns": 5294000
+    },
+    {
+      "sample": "no_people1",
+      "tensor_sha256": "74f5c2e9857ec78e0fc75058d30a39d81e5a94fba76e8939ff5a626a815274c8",
+      "input_fnv": "ef59b607",
+      "no_person": 51,
+      "person": -51,
+      "predicted": 0,
+      "expected": 0,
+      "host_invoke_ns": 5212200
+    },
+    {
+      "sample": "no_people2",
+      "tensor_sha256": "330b6bed9f716b5820f9054456ce0e14c5efd6b9b657ec7d102fd93bdbd2e8e1",
+      "input_fnv": "33bccdf4",
+      "no_person": 111,
+      "person": -111,
+      "predicted": 0,
+      "expected": 0,
+      "host_invoke_ns": 5334000
+    }
+  ],
+  "static_label_matches": 6,
+  "board_compared": false
+}

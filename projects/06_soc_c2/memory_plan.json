@@ -1,0 +1,47 @@
+{
+  "status": "PROPOSAL_ONLY",
+  "enabled_in_firmware_or_baselines": false,
+  "address_domain": "candidate common linear byte map; CPU-to-DDR translation NOT established",
+  "reference_capacity_bytes": 268435456,
+  "physical_capacity_verified": false,
+  "regions": [
+    {
+      "name": "cpu_linker",
+      "start": 4096,
+      "size": 134217728,
+      "end_exclusive": 134221824,
+      "start_hex": "0x1000",
+      "end_exclusive_hex": "0x8001000"
+    },
+    {
+      "name": "video_candidate",
+      "start": 134283264,
+      "size": 16777216,
+      "end_exclusive": 151060480,
+      "start_hex": "0x8010000",
+      "end_exclusive_hex": "0x9010000"
+    },
+    {
+      "name": "shared_candidate",
+      "start": 151060480,
+      "size": 65536,
+      "end_exclusive": 151126016,
+      "start_hex": "0x9010000",
+      "end_exclusive_hex": "0x9020000"
+    }
+  ],
+  "video_reference_bytes": 12441600,
+  "image_offsets": [
+    4096,
+    16384
+  ],
+  "image_bytes": 9216,
+  "simulation_shared_base": 0,
+  "required_before_enable": [
+    "physical DDR capacity",
+    "CPU/DDRx address translation and alias test",
+    "video frame-buffer address-unit and stride audit",
+    "CPU cache maintenance or verified uncached region",
+    "APB control service and DMA release/acquire barriers"
+  ]
+}

@@ -1,0 +1,2 @@
+PASS tb_c2_fifo words=2048 depth=4 pointer_wrap full empty async_clocks stable_stall common_reset
+C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\projects\06_soc_c2\sim\tb_c2_fifo.sv:48: $finish called at 183788000 (1ps)

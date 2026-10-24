@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "scope": "Local file/build/model/ROM consistency only",
+  "version": "c1-02a568e5375cc27b",
+  "checks": 527,
+  "artifacts": [
+    {
+      "path": "firmware\\c1_static_person_detect\\tinyml_c1.elf",
+      "sha256": "02f3b495c37727a1540d8a10c6a9f1b5c68adde426aae82a78195d5a8d50ff4e",
+      "bytes": 2216456
+    },
+    {
+      "path": "firmware\\c1_static_person_detect\\tinyml_c1.hex",
+      "sha256": "fdd3e5e493735d0680bc16a12e1e89ff265b0ab3b0cf02d06fb232d8b9cdcad0",
+      "bytes": 3985246
+    },
+    {
+      "path": "firmware\\c1_static_person_detect\\tinyml_c1.bin",
+      "sha256": "73401bb622454d06fd9fdc57ea799a0191cbd852574ccec9442f19006346307e",
+      "bytes": 1416824
+    },
+    {
+      "path": "firmware\\c1_static_person_detect\\tinyml_c1.map",
+      "sha256": "95600e9c8d5e42da785f99c4d005ea3e3161894131dd70cd1150e81a7e21108b",
+      "bytes": 1093519
+    },
+    {
+      "path": "fpga_bitstreams\\tinyml_225mhz\\Ti60F225_tinyml_helloworld.hex",
+      "sha256": "cec861a1816c12e1bdbd5cbfc6cd726b7eeb995a98e3e54b09ea50ede5249c29",
+      "bytes": 2508210
+    },
+    {
+      "path": "fpga_bitstreams\\tinyml_225mhz\\Ti60F225_tinyml_helloworld.bit",
+      "sha256": "06ac9b287c841358e3da1dd05f33e0d2d3741fd20f4a051e8791798ee318b8b1",
+      "bytes": 2508150
+    }
+  ],
+  "flash_offset": "0x00380000",
+  "ram_entry": "0x00001000",
+  "boot_copy_bytes": 4194304,
+  "physical_flash_verified": false,
+  "board_inference_passed": false,
+  "pc_golden_inference_compared": false,
+  "live_camera_inference_passed": false
+}

@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Vendor APB address is 16 bits",
+    "BSP APB0 aperture is 0xf8100000",
+    "Pinned D-cache line size is 64 bytes",
+    "Vendor SDK documents the whole-cache custom instruction",
+    "Generated CPU decodes the custom cache instruction",
+    "CPU instruction stalls until cache flush ready",
+    "APB aperture belongs to the generated CPU IO/cache-bypass range",
+    "Actual cache tag format contains address/error/valid; tested flusher clears valid bits",
+    "C backend uses volatile assembly and compiler memory clobber",
+    "Overlay declares APB address/data widths explicitly",
+    "Overlay contains one DDR controller",
+    "DDR ID width explicitly matches vendor beta output width",
+    "CPU response IDs restored by serializer",
+    "CPU write errors are connected rather than discarded",
+    "S1 has an actual producer in the separate overlay",
+    "APB offset matches C header: ID",
+    "APB offset matches C header: VERSION",
+    "APB offset matches C header: STATUS",
+    "APB offset matches C header: COMMAND",
+    "APB offset matches C header: GENERATION",
+    "APB offset matches C header: ACK",
+    "APB offset matches C header: RESPONSE",
+    "APB offset matches C header: RESPONSE_GENERATION",
+    "APB offset matches C header: STATES",
+    "APB offset matches C header: DROPPED",
+    "APB offset matches C header: PROTOCOL_ERROR",
+    "APB offset matches C header: MAP_ENABLED",
+    "APB offset matches C header: SHARED_BASE",
+    "APB offset matches C header: SHARED_BYTES",
+    "APB offset matches C header: VIDEO_BASE",
+    "APB offset matches C header: VIDEO_BYTES",
+    "APB offset matches C header: DESCRIPTOR",
+    "Original TinyML top identity unchanged after overlay generation"
+  ],
+  "board_verified": false,
+  "CPU_instruction_execution_simulated": false,
+  "cache_scope": "RX-only DMA image slots; global invalidate on pinned core; no generic clean implementation",
+  "files": {
+    "soc": {
+      "path": "projects/03_tinyml/ip/sapphire_soc/sapphire_soc.v",
+      "sha256": "87c00873d2efc6b5bbb5336c1a1046eb0a21cf89c9d971f6c7cf703e0d2e6733"
+    },
+    "header": {
+      "path": "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/bsp/efinix/EfxSapphireSoc/include/soc.h",
+      "sha256": "650185170e5f200d5672fd9bca1252d8420e452b8b453288d7f48b3619afae66"
+    },
+    "vendor_cache_api": {
+      "path": "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/vexriscv.h",
+      "sha256": "e2cfa34325a44f3fc84dc208d94beafe5693f0ad8eb2e5fc1a2abbbee6fa95fa"
+    },
+    "original_top": {
+      "path": "projects/03_tinyml/src/tinyml_soc_top.v",
+      "sha256": "174a8eadd8da0fbd78d249c3ac0db4c17914ed14718b1eb95412a7683a91a5cd"
+    },
+    "overlay": {
+      "path": "projects/06_soc_c2/integration/c2_tinyml_soc_top.v",
+      "sha256": "bac91e0eacd6cdc10a316ac542959e9ca5a1086bbf8a9d6f03314e3c34f63744"
+    },
+    "backend": {
+      "path": "team_work/03_ai_soc/c2/c2_sapphire.c",
+      "sha256": "6bca6d86412d45287533209c41845486355928515fd252c6bc38e4f1ae777b77"
+    },
+    "driver_header": {
+      "path": "team_work/03_ai_soc/c2/c2_driver.h",
+      "sha256": "65811a6d80f23b320b495d5f6073ed39dc094fd239d595e433c297e46fd676cf"
+    },
+    "apb": {
+      "path": "projects/06_soc_c2/rtl/c2_apb_control.sv",
+      "sha256": "0c0999fab5816f5e2d65026a0de93c2845ebfc6e065584844d381a48b04c8082"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "started": "2026-10-24T04:49:04.427280+00:00",
+  "scope": "RV32 object compilation and instruction inspection; no firmware execution",
+  "board_test_passed": false,
+  "linked_firmware": false,
+  "objects": [
+    {
+      "source": "team_work/shared/src/cooperation_v1.c",
+      "source_sha256": "713607d064c072f55069ec63d2f2890f0d6aec66b83f50ac187a35256b4b0a9b",
+      "object": "build/c2/riscv/cooperation_v1.o",
+      "sha256": "d73d5f9e0a903347301c3eae5466ba0a9ea8980acb95f3d91687f4ff800becb3"
+    },
+    {
+      "source": "team_work/03_ai_soc/c2/c2_driver.c",
+      "source_sha256": "c1a561ef635bd51e9837f1f63f75ffbaffd912454faf8ff8520cf0a65361798c",
+      "object": "build/c2/riscv/c2_driver.o",
+      "sha256": "70869ea2ddd4ad2e87af9b67dfde98aecc5c2bcd40109f1b672256884f438a08"
+    },
+    {
+      "source": "team_work/03_ai_soc/c2/c2_sapphire.c",
+      "source_sha256": "6bca6d86412d45287533209c41845486355928515fd252c6bc38e4f1ae777b77",
+      "object": "build/c2/riscv/c2_sapphire.o",
+      "sha256": "5dc38bcffcacf04365e32caafaa82abf1ad48b66c52491d5b95b7935827f56eb"
+    }
+  ],
+  "cache_sequence": "fence iorw,iorw; .word 0x0000500f; fence iorw,iorw",
+  "finished": "2026-10-24T04:49:04.807849+00:00"
+}

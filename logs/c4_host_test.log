@@ -1,0 +1,12 @@
+cooperation_v1.c
+c4_bridge.c
+c3_hal.c
+c3_replay.c
+test_c4.c
+正在生成代码...
+  正在创建库 build\c4\test_c4.lib 和对象 build\c4\test_c4.exp
+PASS C4/replay: 1235652 checks, 132 mock inference calls; no board data
+cooperation_v1.c
+c4_bridge.c
+正在生成代码...
+  正在创建库 build\c4\c4_bridge.lib 和对象 build\c4\c4_bridge.exp

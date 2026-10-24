@@ -1,0 +1,7 @@
+{
+  "model_sha256": "808cfdfc0cf3a6fa6f6fa26bfa379ea97c16d5db7334637766e39c3408502e9d",
+  "schema_version": 3,
+  "input": {"type": 9, "shape": [1,96,96,1], "scale_bits": "3c008081", "zero": -1},
+  "output": {"type": 9, "shape": [1,2], "scale_bits": "3b800000", "zero": -128},
+  "evidence": "logs/c1_model_structure.json, MSVC host FlatBuffers structural inspection; no inference"
+}

@@ -1,0 +1,153 @@
+{
+  "scope": "Six static sample policy comparison, not camera accuracy",
+  "policies": [
+    {
+      "sample": "person",
+      "original_static_expected": 1,
+      "scores": {
+        "full": {
+          "person": 113,
+          "predicted": 1
+        },
+        "padded": {
+          "person": 17,
+          "predicted": 1
+        },
+        "stretch": {
+          "person": 105,
+          "predicted": 1
+        },
+        "crop": {
+          "person": 104,
+          "predicted": 1
+        }
+      },
+      "policies_differing_from_full": []
+    },
+    {
+      "sample": "no_person",
+      "original_static_expected": 0,
+      "scores": {
+        "full": {
+          "person": -57,
+          "predicted": 0
+        },
+        "padded": {
+          "person": -6,
+          "predicted": 0
+        },
+        "stretch": {
+          "person": -69,
+          "predicted": 0
+        },
+        "crop": {
+          "person": -30,
+          "predicted": 0
+        }
+      },
+      "policies_differing_from_full": []
+    },
+    {
+      "sample": "people1",
+      "original_static_expected": 1,
+      "scores": {
+        "full": {
+          "person": 93,
+          "predicted": 1
+        },
+        "padded": {
+          "person": 56,
+          "predicted": 1
+        },
+        "stretch": {
+          "person": 69,
+          "predicted": 1
+        },
+        "crop": {
+          "person": -69,
+          "predicted": 0
+        }
+      },
+      "policies_differing_from_full": [
+        "crop"
+      ]
+    },
+    {
+      "sample": "people2",
+      "original_static_expected": 1,
+      "scores": {
+        "full": {
+          "person": 57,
+          "predicted": 1
+        },
+        "padded": {
+          "person": -65,
+          "predicted": 0
+        },
+        "stretch": {
+          "person": 108,
+          "predicted": 1
+        },
+        "crop": {
+          "person": -6,
+          "predicted": 0
+        }
+      },
+      "policies_differing_from_full": [
+        "padded",
+        "crop"
+      ]
+    },
+    {
+      "sample": "no_people1",
+      "original_static_expected": 0,
+      "scores": {
+        "full": {
+          "person": -51,
+          "predicted": 0
+        },
+        "padded": {
+          "person": -43,
+          "predicted": 0
+        },
+        "stretch": {
+          "person": 21,
+          "predicted": 1
+        },
+        "crop": {
+          "person": -12,
+          "predicted": 0
+        }
+      },
+      "policies_differing_from_full": [
+        "stretch"
+      ]
+    },
+    {
+      "sample": "no_people2",
+      "original_static_expected": 0,
+      "scores": {
+        "full": {
+          "person": -111,
+          "predicted": 0
+        },
+        "padded": {
+          "person": -81,
+          "predicted": 0
+        },
+        "stretch": {
+          "person": -105,
+          "predicted": 0
+        },
+        "crop": {
+          "person": 14,
+          "predicted": 1
+        }
+      },
+      "policies_differing_from_full": [
+        "crop"
+      ]
+    }
+  ],
+  "camera_policy_approved": false
+}

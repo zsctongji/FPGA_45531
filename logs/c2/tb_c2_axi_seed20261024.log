@@ -1,0 +1,2 @@
+PASS tb_c2_axi masters=4 writes=84 reads=84 checks=827 max_request_wait=107 full128_INCR strobes stalls error_routing reset
+C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\projects\06_soc_c2\sim\tb_c2_axi.sv:144: $finish called at 62210000 (1ps)

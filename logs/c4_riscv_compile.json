@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "scope": "RV32 C4/C3 adapter object compilation only; not linked firmware or board execution",
+  "artifacts": [
+    {
+      "bytes": 3064,
+      "sha256": "D73D5F9E0A903347301C3EAE5466BA0A9EA8980ACB95F3D91687F4FF800BECB3",
+      "source_sha256": "713607D064C072F55069EC63D2F2890F0D6AEC66B83F50AC187A35256B4B0A9B",
+      "source": "team_work\\shared\\src\\cooperation_v1.c",
+      "object": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c4\\riscv\\cooperation_v1.o"
+    },
+    {
+      "bytes": 4364,
+      "sha256": "B32D7595A8F74D41C5117103314FB6775CF2D4466BBCF4482844CC47721AF4DF",
+      "source_sha256": "3212821365AFBBE678FAC48871C8C49788331CE0D17D76E045D752EF9C469EA5",
+      "source": "team_work\\03_ai_soc\\c4\\c4_bridge.c",
+      "object": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c4\\riscv\\c4_bridge.o"
+    },
+    {
+      "bytes": 1616,
+      "sha256": "878D4B5652EF1387E2AF0F199F2CC71FABEEDB1C40EC2528F78E9E01B6CB4533",
+      "source_sha256": "A173820BA739D99F65E4B2D125B774397C05EF06E9388798037F55BFA58A3CBE",
+      "source": "team_work\\03_ai_soc\\c3_hal\\c3_hal.c",
+      "object": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c4\\riscv\\c3_hal.o"
+    },
+    {
+      "bytes": 1856,
+      "sha256": "B97BEA8119202A48BE2D92AC813535CD8E3315659098330A5DF229CEE3CA11E4",
+      "source_sha256": "4C259CEC02BBAFDAB1B8F85D1E1B178F9B0D8C8FFE1B2F06DF3872A7035447B5",
+      "source": "team_work\\03_ai_soc\\c3_hal\\c3_replay.c",
+      "object": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c4\\riscv\\c3_replay.o"
+    },
+    {
+      "bytes": 3848,
+      "sha256": "4AF0A74FFA4254522CE0F2033412C7C812BFF3BE0CDBE74B5220EFC99D302F22",
+      "source_sha256": "EA1CF2351D48AA80FD2CCDD977ED5D036A74F4BCC57BF5F414C45347EDE818E3",
+      "source": "team_work\\03_ai_soc\\c4\\c4_tflm_adapter.cc",
+      "object": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c4\\riscv\\c4_tflm_adapter.o"
+    }
+  ],
+  "board_inference_passed": false
+}

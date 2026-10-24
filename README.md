@@ -6,6 +6,8 @@
 
 ## 先打开哪些文件
 
+2026-10-24 C组更新：主开发位置为 `C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3`。C2共享DDR、厂家接口、APB及RX缓存后端已实现；34次RTL回归、主机/RV32检查及独立厂家SoC接入副本逻辑综合PASS，真实视频/物理映射/板上缓存/时序仍待验收。入口 `13_test_c2.cmd`、`15_synth_c2_native.cmd`；交接见 `team_work/03_ai_soc/C2_VENDOR_APB_CACHE.md`，最新记录见 `team_work/03_ai_soc/PROGRESS_20261024_C2.md`。C1诊断构建和C4桌面回放入口分别为 `11_build_c1.cmd`、`12_test_c4_pc.cmd`。下文五个工程的完整编译结果属于原有独立基线。
+
 1. 双击 `01_check_environment.cmd`，查看开发工具检测结果。报告保存到 `logs/environment_summary.txt` 和 `logs/environment.json`。
 2. 双击 `02_run_selftest.cmd`，运行全部基础模块自检。看到 `ALL PORTABLE RTL TESTS PASSED` 代表功能仿真通过；结果保存在 `logs/selftest.json` 与各个 `.run.log`。
 3. 阅读 `docs/requirements.md`，它对应具体赛题任务并明确当前覆盖范围。

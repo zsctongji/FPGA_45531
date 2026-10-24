@@ -1,0 +1,2 @@
+PASS tb_c2_pool commands=514 dual_slots generation ownership response_backpressure reset
+C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\projects\06_soc_c2\sim\tb_c2_pool.sv:61: $finish called at 30910000 (1ps)

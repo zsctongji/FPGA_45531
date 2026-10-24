@@ -1,0 +1,10 @@
+cooperation_v1.c
+c3_hal.c
+test_interfaces.c
+正在生成代码...
+PASS interface reference tests: 16036 checks; host simulation only
+...........
+----------------------------------------------------------------------
+Ran 11 tests in 0.002s
+
+OK

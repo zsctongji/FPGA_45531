@@ -1,5 +1,7 @@
 # 当前工程状态
 
+2026-10-24 C组增量：当前主开发目录为 `C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3`。C2共享内存、厂家ID/窄访问适配、APB/CDC和CPU RX只读缓存后端已实现；34次RTL回归、1923项主机断言及3个RV32对象检查PASS。独立厂家CPU/TinyML/单DDR接入副本Efinity map PASS，32692 LUT4/29351 FF/49 DSP48；真实视频、物理映射、完整固件、板上缓存与最终时序尚未验收。证据为 `logs/c2_selftest.json`、`logs/c2_native_synthesis.json`、`logs/c2_native_warning_review.json`，交接见 `team_work/03_ai_soc/C2_VENDOR_APB_CACHE.md`。厂家存量告警保持开放。C1包527项检查仍PASS；C4桌面结果详见 `team_work/03_ai_soc/C4_PC_RUNBOOK.md`。以下保留2026-10-19独立工程历史结果及原路径，不能视为C2整机结果。
+
 更新日期：2026-10-19（北京时间）。实际工作目录为 `D:\FPGA_2026_T3_P3`；聊天输出目录保留算法、说明和日志副本，大型厂家包及 Efinity 仅在 D 盘。
 
 | 项目 | 实际结果 | 待完成 |

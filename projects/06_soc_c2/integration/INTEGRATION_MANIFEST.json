@@ -6,7 +6,7 @@
   "ddr_instances": 1,
   "sources": {
     "projects/03_tinyml/debug_top.v": "9e46c35b561b07a675302be235d98bd3c23bbc7ef89506025c633b0a2cf51c3a",
-    "projects/06_soc_c2/integration/c2_tinyml_soc_top.v": "bac91e0eacd6cdc10a316ac542959e9ca5a1086bbf8a9d6f03314e3c34f63744",
+    "projects/06_soc_c2/integration/c2_tinyml_soc_top.v": "3c595241879da2d1ecf431c4d1e6c39f3a1200ae4ca157ac1ded5750f89e29cb",
     "projects/03_tinyml/src/ddr3_controller/ddr3_parameter.vh": "2c4c19966ecb897a477dcd7374dacc543c8cf54c9b128faf1a69685cb34f1d75",
     "projects/03_tinyml/src/ddr3_controller/ddr3_top.v": "71b53e8a0861705fa7e2d8b38e684e0f0a9235db64a63f29046b2371963617e6",
     "projects/03_tinyml/src/ddr3_controller/memory_bus_ctl/memory_bus_ctl.v": "9fbcf768f4fbd5d6a21333ecdf9bea55b302a2b124a1da641fb79080bc9b6934",
@@ -51,16 +51,23 @@
     "projects/03_tinyml/src/tinyml/tinyml_accelerator.v": "fd9119386c5fdca03a010a04c9d38eb8bfc7fa73daf3559441530bdef5016ba1",
     "projects/03_tinyml/src/tinyml/tinyml_top.v": "c1fac3d2349f05d3452a229ba1a22cd8042d8614e914bea9717f40cc5279bcd7",
     "projects/03_tinyml/ip/sapphire_soc/sapphire_soc.v": "87c00873d2efc6b5bbb5336c1a1046eb0a21cf89c9d971f6c7cf703e0d2e6733",
-    "projects/06_soc_c2/rtl/c2_apb_control.sv": "0c0999fab5816f5e2d65026a0de93c2845ebfc6e065584844d381a48b04c8082",
+    "projects/06_soc_c2/rtl/c2_a_image_source.sv": "ca4ecba6a595851a28c2bc93b580212e68ac79481b1133767ef8f41c34538134",
+    "projects/06_soc_c2/rtl/c2_a_mailbox_bridge.sv": "37d25577032e7fa78f4dc5616a1899d15feb565e3063d8e8d38b3963bfcf1f7c",
+    "projects/06_soc_c2/rtl/c2_apb_control.sv": "1ed8730e7bfd5c04a00e79218d4e1c21d7ff2ba85866b2adf6e34bd87e2cc317",
     "projects/06_soc_c2/rtl/c2_async_fifo.sv": "91d7dd66779d10552c23048734da6c6baaf6267d553eaf3567a2446e02ba9d77",
     "projects/06_soc_c2/rtl/c2_axi_arbiter.sv": "b36413ca9feea3c8e4a714a41340980148e2eb2db2177e5da53f3d46876ebbde",
     "projects/06_soc_c2/rtl/c2_axi_to_vendor.sv": "c16fb2252e6315f21bbc229faf2db046fe18ceb81c4471cc11f91d384e744da0",
     "projects/06_soc_c2/rtl/c2_buffer_manager.sv": "df19575e73d2f0011d8aa2241d598a5c9f16d34ec37d2990fd07145e776ba2ea",
     "projects/06_soc_c2/rtl/c2_cdc_mailbox.sv": "04550a55a2e5fbb824c9d0733f9b07378b0b041222eb3fbc9c6170043e57e7d4",
     "projects/06_soc_c2/rtl/c2_frame_publisher.sv": "e07dc4798af6f03ab18ef16fd9faebe6306c19325685990e1586c66c3200910d",
-    "projects/06_soc_c2/rtl/c2_image_writer.sv": "f5b0945a88dff6803313b1aa2e8fcf1ba19a3755d967a2c5a6c13f7fcb5448c2",
+    "projects/06_soc_c2/rtl/c2_image_writer.sv": "53780b55dd93ce2987dfc45fb33b6c7be78f6a32f6b36343b5ffb4794d06b827",
     "projects/06_soc_c2/rtl/c2_memory_hub.sv": "2b2c604fabcba80453d61596b933eb040ee6c3ee88a521751568727f11393b61",
-    "projects/06_soc_c2/rtl/c2_system_boundary.sv": "d8fe7ab80f5e66d46a39ade3e1a9dc63282d7d337df8c7e2220bca569f7ca473",
-    "projects/06_soc_c2/rtl/c2_vendor_attachment.sv": "0db5038e44a4f32a658853095547a0a25660a263a573b75764513ba32dc7e895"
+    "projects/06_soc_c2/rtl/c2_shared_time.sv": "0465e815fd8d3d98f23ca136abf848e1a9514a56246b9b8d9b9bd2503647486a",
+    "projects/06_soc_c2/rtl/c2_source_fence.sv": "1e865d73c3371428753db54562cfd6ef383ecba378e11e164bb2bc0c3a7f5482",
+    "projects/06_soc_c2/rtl/c2_system_boundary.sv": "bf55c29bef46b953d7cfd152883f267464fbd3e97478b6f51362bdfdef3330ac",
+    "projects/06_soc_c2/rtl/c2_vendor_attachment.sv": "6fc6de89b7e8e0e334e2d12fbfd99a01d2f1c3e1c91ccc5ebf0bae55789a753c",
+    "projects/06_soc_c2/a_side/ai_frame_mailbox.v": "be2a19b07be3b228001b64fc32a1fde2ed12ae12475dec29eeba989c9c2bb099",
+    "projects/06_soc_c2/a_side/video_a_capture.v": "6fd4ba3f87ebc42e7ca4e90292da10d1233d8b6cd2b26311cc05cb818e673d57",
+    "projects/06_soc_c2/a_side/video_grid_sampler.v": "9bd066f70ff8778caa7f4f18cfa4709a949b1c61ceb648cd79d015e00d57db84"
   }
 }

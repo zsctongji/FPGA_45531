@@ -1,5 +1,9 @@
 # 当前工程状态
 
+2026-10-25 时间与验收增量：公共时间在100MHz APB域产生，CPU/C3读取同一计数并经快照CDC送入视频域；native以sample_sof锁存时间，真实相机SOF定义仍待A/C确认。APB v2.2（0x00020002），C24现场路径改用公共时间。42次RTL回归、新增23项时间后端检查、38个C24日志测试及native map PASS。当前资源33664 LUT4/30351 FF/51 DSP48，未做PNR或板上测试。入口 `team_work/03_ai_soc/TIME_AND_C24_ACCEPTANCE.md`；以下v2.1/39次为前阶段记录。
+
+2026-10-25增量：已接A BRAM租约→C2打包/源校验→DDR→CPU私有图像→TFLM的离线链路，39次RTL回归、桌面读回对照、联合固件构建和新版native综合PASS。当前资源33882 LUT4/30222 FF/51 DSP48，范围不含真实MIPI/HDMI整合；APB版本0x00020001。详情及证据在 `team_work/03_ai_soc/C24_AC_BRIDGE_RUNBOOK.md`。联合固件默认合成自检/关闭现场MMIO，实际共享时间、地址/缓存、最终时序和板上推理仍待验收；没有生成新的可下载整机FPGA文件。
+
 2026-10-24 C组增量：当前主开发目录为 `C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3`。C2共享内存、厂家ID/窄访问适配、APB/CDC和CPU RX只读缓存后端已实现；34次RTL回归、1923项主机断言及3个RV32对象检查PASS。独立厂家CPU/TinyML/单DDR接入副本Efinity map PASS，32692 LUT4/29351 FF/49 DSP48；真实视频、物理映射、完整固件、板上缓存与最终时序尚未验收。证据为 `logs/c2_selftest.json`、`logs/c2_native_synthesis.json`、`logs/c2_native_warning_review.json`，交接见 `team_work/03_ai_soc/C2_VENDOR_APB_CACHE.md`。厂家存量告警保持开放。C1包527项检查仍PASS；C4桌面结果详见 `team_work/03_ai_soc/C4_PC_RUNBOOK.md`。以下保留2026-10-19独立工程历史结果及原路径，不能视为C2整机结果。
 
 更新日期：2026-10-19（北京时间）。实际工作目录为 `D:\FPGA_2026_T3_P3`；聊天输出目录保留算法、说明和日志副本，大型厂家包及 Efinity 仅在 D 盘。

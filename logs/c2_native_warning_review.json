@@ -1,24 +1,18 @@
 {
   "status": "REVIEWED_WITH_OPEN_VENDOR_WARNINGS",
   "native_synthesis_status": "PASS",
-  "native_new_logic_driver_or_width_errors": 0,
+  "new_logic_width_driver_or_latch_errors": 0,
   "inherited_vendor_warnings_resolved": false,
   "categories": {
-    "EFX-0011": 251,
+    "EFX-0011": 252,
     "EFX-0201": 10,
     "EFX-0200": 20,
-    "EFX-0657": 7
+    "EFX-0657": 8
   },
-  "new_overlay_warnings": [
-    "[EFX-0011 VERI-WARNING] Input/inout port axi_clk is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:100)",
-    "[EFX-0011 VERI-WARNING] Input/inout port i_fb_clk is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:110)",
-    "[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_DRCK is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:124)",
-    "[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_RESET is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:125)",
-    "[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_RUNTEST is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:126)",
-    "[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_TMS is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:131)",
-    "[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_UPDATE is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:132)"
+  "A_snapshot_warnings": [
+    "[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 13 (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\a_side\\ai_frame_mailbox.v:29)"
   ],
-  "open_vendor_latch_warnings": [
+  "open_vendor_latches": [
     "[EFX-0011 VERI-WARNING] latch inferred for net '**' (VERI-2580) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:14593)",
     "[EFX-0011 VERI-WARNING] latch inferred for net '**' (VERI-2580) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:10868)",
     "[EFX-0011 VERI-WARNING] latch inferred for net '**' (VERI-2580) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:12541)",
@@ -62,6 +56,6 @@
     "[EFX-0011 VERI-WARNING] net 'CsrPlugin_mtvec_mode[1]' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:10649)",
     "[EFX-0011 VERI-WARNING] net 'one_hot_mem' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\round_robin_priority_arbiter.v:47)"
   ],
-  "scope": "Map only. Existing vendor latches/undriven implementation nets remain open; CPU fence/cache behavior requires instruction-level or board validation.",
-  "synthesis_report_sha256": "6fc929fdad8f5cf6272421086d26c9c31b862f6e21df26eefc5b8f8a1358143a"
+  "scope": "Native logic map only; inherited vendor/A warnings retained; physical CDC, timing and board checks remain open",
+  "synthesis_report_sha256": "615fca22cd2d92062bef95c0c50e8b5d97767f14b2d2684f1f0c2408d18423bb"
 }

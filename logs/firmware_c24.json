@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "started": "2026-10-25T06:42:40.390488+00:00",
+  "scope": "Linked C2/C4 firmware; synthetic self-test enabled; live MMIO disabled",
+  "board_programmed": false,
+  "board_inference_passed": false,
+  "live_mmio_enabled": false,
+  "artifacts": [
+    {
+      "path": "firmware/c24_frame_person_detect/tinyml_c24.elf",
+      "bytes": 2187904,
+      "sha256": "97ef9e679a7d225452a74e5f9a7dbc84f8cf49e9217d377fa9c70ff2a2eb6b77"
+    },
+    {
+      "path": "firmware/c24_frame_person_detect/tinyml_c24.bin",
+      "bytes": 1386864,
+      "sha256": "0de10f9d8af6c33eb643eb999cd3ed012f5a75f064dfef7b05cff2f145890b4b"
+    },
+    {
+      "path": "firmware/c24_frame_person_detect/tinyml_c24.hex",
+      "bytes": 3900985,
+      "sha256": "293b8529ccb7889c1a65aa34c7f0cda78d6a5899f9d2a07f1cd62a4093f29a32"
+    },
+    {
+      "path": "firmware/c24_frame_person_detect/tinyml_c24.map",
+      "bytes": 1101582,
+      "sha256": "fb212b067be11306d1078cd88f8133ffb99e97e70c27b269cda1548d2e83c34d"
+    }
+  ],
+  "version": "c24-d1fc40db3541b41f",
+  "native_compile_units": 119,
+  "linked_entrypoints": [
+    "c24_process_next",
+    "c2_poll_copy",
+    "c2_sapphire_bind",
+    "c4_tflm_infer",
+    "c3_shared_time_bind",
+    "c3_shared_now_ms"
+  ],
+  "finished": "2026-10-25T06:43:26.049492+00:00"
+}

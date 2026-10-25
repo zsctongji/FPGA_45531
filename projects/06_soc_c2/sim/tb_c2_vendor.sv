@@ -104,6 +104,7 @@ wire [5:0] u_rresp;
 c2_vendor_attachment #(.SHARED_BASE(0),.VIDEO_BASE(32'h20000),.VIDEO_BYTES(32'h10000)) dut(
 .arst_n(rst_n),.mem_clk(clk),.video_clk(vclk),.pclk(pclk),.map_enable(1'b1),
 .external_protocol_error(cpu_adapter_error || cpu_rejected),
+.v_source_valid(1'b0),.v_source_ready(),.v_source_error(1'b0),.v_source_frame_id(32'b0),.v_source_fnv(32'b0),
 .paddr(paddr),.psel(psel),.penable(penable),.pwrite(pwrite),.pwdata(pwdata),
 .pready(pready),.prdata(prdata),.pslverror(pslverror),.irq(irq),
 .v_frame_valid(req_valid),.v_frame_ready(req_ready),.v_descriptor(req_payload[511:0]),

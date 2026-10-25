@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "board_inference_passed": false,
+  "scope": "Synthetic C24 parser/CLI fixtures, actual vendor formatter, PowerShell syntax and pre-open capture guard; no serial or board execution",
+  "steps": [
+    {
+      "name": "parser_fixtures",
+      "status": "PASS"
+    },
+    {
+      "name": "actual_vendor_formatter",
+      "status": "PASS"
+    },
+    {
+      "name": "capture_syntax",
+      "status": "PASS"
+    },
+    {
+      "name": "capture_pre_open_guard",
+      "status": "PASS"
+    }
+  ],
+  "source_sha256": {
+    "tools/check_c24_uart.py": "66c697746cdfe1608a29388f20c8cf9ea479450e8a204aaa3b06241050d883a7",
+    "tools/capture_c24_uart.ps1": "20da46afa704f4a9cda9982936a7dc5232471413acedca7ab649ee458985dcfb",
+    "tools/test_c24_acceptance.py": "f39763eb970df40a532b59713379579152802c0c7206a134a3b999f7859e03e6",
+    "team_work/03_ai_soc/tests/test_c24_parser.py": "bc87e6134e69c449732e0e29125d1e234c9d1b08bcf67299a7866adac52fed49",
+    "tools/test_c24_format.cmd": "0dffb02d81085296961f1180a0fb8e8eff5cdf9600ae53b2bde3f40a412486f3",
+    "team_work/03_ai_soc/tests/test_c24_uart_format.cc": "3712bf00856192ecdec91688234ac234c0c9323dd66f8a4b3f19e28a3d687a9a",
+    "team_work/03_ai_soc/c24/c24_log_format.h": "7adb697e2af4935073add7a2ef554c8200400cc56f8c964e1b14b8e3234f538d",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/tinyml_pdti8/src/tensorflow/lite/micro/micro_string.cc": "e289896e42a3b3ea4f047014e07fec3f0ecbcf2f61455bda4ab02794fdc14a34"
+  }
+}

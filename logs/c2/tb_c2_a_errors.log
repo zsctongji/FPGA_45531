@@ -1,0 +1,2 @@
+PASS tb_c2_a_errors modes=7 read_error timeout bad_padding bad_sum wrong_grant busy drain576 stable_word release
+C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\projects\06_soc_c2\sim\tb_c2_a_errors.sv:68: $finish called at 1455620000 (1ps)

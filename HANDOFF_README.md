@@ -24,3 +24,18 @@ See HANDOFF_MANIFEST.json for copied source paths, sizes and SHA-256 hashes. Exi
 - C4: 12_test_c4_pc.cmd; desktop model replay and compatibility-copy audit. The original board model is preserved; camera preprocessing policy is still pending A/C validation.
 
 Generated tool installations, build caches, synthesis netlists and private SSH configuration are excluded. Logs/manifests describe the original development run, not a fresh GitHub checkout. Historical absolute paths and Git line-ending conversion can affect recorded hashes; install the required local tools and regenerate/rebuild from this checkout before treating it as a new verification run. The C2 preparation script regenerates its absolute-path integration overlay.
+
+## 2026-10-25 C2/C3/C24 update
+
+Current APB transport is v2.2 (0x00020002); firmware and hardware versions must match.
+A mailbox -> C2 source/DDR completion fence, common APB time, checked C3 time API,
+C24 firmware and UART acceptance tools are included. Start with
+team_work/03_ai_soc/TIME_AND_C24_ACCEPTANCE.md and 18_test_time_c24.cmd.
+
+The source machine recorded 42 RTL runs, 38 parser/CLI tests, vendor formatter checks
+and 666 package identity checks PASS; no board/camera execution or physical timing
+signoff is asserted. Default firmware disables live MMIO. Generated native map
+outputs and tool installations are excluded; historical reports retain original
+absolute paths. Rebuild reports on the receiving machine before claiming a local
+verification. Primary C24 sources are included; tools/prepare_c24.py recreates its
+generated SDK application from the existing vendor baseline.

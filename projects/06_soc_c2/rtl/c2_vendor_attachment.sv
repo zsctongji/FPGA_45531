@@ -1,10 +1,12 @@
 `timescale 1ns/1ps
 // Attachment to vendor interconnect S1, not a replacement for CPU/TinyML S0/S2.
 module c2_vendor_attachment #(
- parameter VIDEO_ID_WIDTH=4,
+ parameter VIDEO_ID_WIDTH=4,REQUIRE_SOURCE_COMPLETION=0,
+ parameter integer TIME_CLOCK_HZ=100000000,
  parameter [31:0] SHARED_BASE=32'h09010000,VIDEO_BASE=32'h08010000,VIDEO_BYTES=32'h01000000
 )(
 input wire arst_n,mem_clk,video_clk,pclk,map_enable,external_protocol_error,
+output wire [31:0] shared_video_ms,output wire shared_video_valid,
 input wire [15:0] paddr,input wire psel,penable,pwrite,input wire [31:0] pwdata,
 output wire pready,output wire [31:0] prdata,output wire pslverror,irq,
 input wire video_awvalid,
@@ -41,6 +43,8 @@ output wire [VIDEO_ID_WIDTH-1:0] video_rid,
 input wire v_frame_valid,output wire v_frame_ready,input wire [511:0] v_descriptor,
 output wire v_grant_valid,input wire v_grant_ready,output wire [31:0] v_grant_frame_id,
 input wire v_word_valid,output wire v_word_ready,input wire [127:0] v_word_data,
+input wire v_source_valid,output wire v_source_ready,input wire v_source_error,
+input wire [31:0] v_source_frame_id,v_source_fnv,
 output wire v_event_valid,input wire v_event_ready,output wire [2:0] v_event_status,
 output wire v_event_slot,output wire [31:0] v_event_generation,output wire [511:0] v_event_descriptor,
 output wire m_awvalid,
@@ -157,8 +161,9 @@ c2_axi_to_vendor #(.ID_WIDTH(VIDEO_ID_WIDTH),.ALLOW_NARROW(0),
 .m_rlast(q_rlast),
 .m_rresp(q_rresp),
 .rejected(video_rejected),.protocol_error(video_error));
-c2_apb_control #(.SHARED_BASE(SHARED_BASE),.VIDEO_BASE(VIDEO_BASE),.VIDEO_BYTES(VIDEO_BYTES)) control(
-.arst_n(arst_n),.pclk(pclk),.mem_clk(mem_clk),.map_enable(map_enable),
+c2_apb_control #(.TIME_CLOCK_HZ(TIME_CLOCK_HZ),.REQUIRE_SOURCE_COMPLETION(REQUIRE_SOURCE_COMPLETION),.SHARED_BASE(SHARED_BASE),.VIDEO_BASE(VIDEO_BASE),.VIDEO_BYTES(VIDEO_BYTES)) control(
+.arst_n(arst_n),.pclk(pclk),.mem_clk(mem_clk),.video_clk(video_clk),.map_enable(map_enable),
+.shared_video_ms(shared_video_ms),.shared_video_valid(shared_video_valid),
 .paddr(paddr),.psel(psel),.penable(penable),.pwrite(pwrite),.pwdata(pwdata),
 .pready(pready),.prdata(prdata),.pslverror(pslverror),.irq(irq),
 .cpu_valid(cpu_valid),
@@ -191,7 +196,9 @@ wire [2:0] c_rlast;
 assign q_rlast=c_rlast[0:0];
 wire [5:0] c_rresp;
 assign q_rresp=c_rresp[1:0];
-c2_system_boundary core(.arst_n(arst_n),.mem_clk(mem_clk),.video_clk(video_clk),
+c2_system_boundary #(.REQUIRE_SOURCE_COMPLETION(REQUIRE_SOURCE_COMPLETION)) core(.arst_n(arst_n),.mem_clk(mem_clk),.video_clk(video_clk),
+.v_source_valid(v_source_valid),.v_source_ready(v_source_ready),.v_source_error(v_source_error),
+.v_source_frame_id(v_source_frame_id),.v_source_fnv(v_source_fnv),
 .s_awvalid({2'b0,q_awvalid}),
 .s_awready(c_awready),
 .s_awaddr({64'b0,q_awaddr}),

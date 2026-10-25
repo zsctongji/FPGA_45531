@@ -1,10 +1,14 @@
 # 易灵思赛题三：多模态 AI 智能终端
 
+2026-10-25 后续更新：C2/C3 公共 APB 毫秒计数器、视频快照CDC和C24验收工具已实现；42次RTL回归及新版native综合PASS。APB升级至v2.2（0x00020002），旧固件不得混用。当前入口18_test_time_c24.cmd，说明见 `team_work/03_ai_soc/TIME_AND_C24_ACCEPTANCE.md`。物理时间/地址/视频和上板仍待验收。下方39次及v2.1为前阶段记录。
+
 报名截图已确认：2026 FPGA 创新设计赛道，易灵思，赛题三“多模态 AI 智能终端”，平台“基于易灵思 FPGA 芯片的自制开发板”。用户提供芯片型号 Ti60F225，设备已有但尚未连接。
 
 **当前已有五个独立 FPGA 调试工程和十二项通过的通用 RTL 自检，整机尚未完成。** LED、彩色摄像头、灰度摄像头、运动红框和 TinyML 225 MHz 均完整编译及最终时序检查通过，配置文件在 `fpga_bitstreams`。独立融合报警状态机已通过仿真；静态图片人体检测 CPU 固件及 4 MiB 引导 ROM 构建通过。尚无实体板实测，当前状态见 `docs/current_status.md`。
 
 ## 先打开哪些文件
+
+2026-10-25：A→C2搬运桥及C2/TinyML联合固件已完成电脑端接入和验证，39次RTL回归、桌面读回推理对照、native逻辑综合PASS；联合ELF/BIN已构建，默认合成自检且现场MMIO关闭。入口16_build_c24.cmd、17_test_a_c2_pc.cmd，说明见 `team_work/03_ai_soc/C24_AC_BRIDGE_RUNBOOK.md`。APB需配套v2.1，实际视频/时间/地址/上板验收仍待完成。下文旧日期记录保留为历史结果。
 
 2026-10-24 C组更新：主开发位置为 `C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3`。C2共享DDR、厂家接口、APB及RX缓存后端已实现；34次RTL回归、主机/RV32检查及独立厂家SoC接入副本逻辑综合PASS，真实视频/物理映射/板上缓存/时序仍待验收。入口 `13_test_c2.cmd`、`15_synth_c2_native.cmd`；交接见 `team_work/03_ai_soc/C2_VENDOR_APB_CACHE.md`，最新记录见 `team_work/03_ai_soc/PROGRESS_20261024_C2.md`。C1诊断构建和C4桌面回放入口分别为 `11_build_c1.cmd`、`12_test_c4_pc.cmd`。下文五个工程的完整编译结果属于原有独立基线。
 

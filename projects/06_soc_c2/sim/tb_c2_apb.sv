@@ -14,7 +14,7 @@ module tb_c2_apb #(parameter P_HALF=7);
  assign rv=response_permit && !manual && mrsp;
  assign status=mrstatus;assign rs=mrslot;assign rg=mrgen;assign descriptor=mrdesc;
  assign final_rsp_ready=manual?1'b1:(rr && response_permit);
- c2_apb_control dut(.arst_n(arst_n),.pclk(pclk),.mem_clk(mem_clk),
+ c2_apb_control dut(.arst_n(arst_n),.pclk(pclk),.mem_clk(mem_clk),.video_clk(mem_clk),.shared_video_ms(),.shared_video_valid(),
  .paddr(paddr),.psel(psel),.penable(penable),.pwrite(pwrite),.pwdata(pwdata),
  .pready(pready),.prdata(prdata),.pslverror(pslverror),.irq(irq),.map_enable(map_enable),
  .cpu_valid(cv),.cpu_ready(cr),.cpu_cmd(cc),.cpu_slot(cs),.cpu_generation(cg),
@@ -67,7 +67,7 @@ module tb_c2_apb #(parameter P_HALF=7);
    md[191:160]=9216;md[223:192]=1;md[255:224]=96;md[319:288]=1;
    manual_command(0,0);manual_command(1,1);
    apb(0,0,0,0);if(value!=32'h43325332) $fatal(1,"Wrong identity");
-   apb(0,4,0,0);if(value!=32'h20000) $fatal(1,"Wrong version");
+   apb(0,4,0,0);if(value!=32'h20002) $fatal(1,"Wrong version");
    apb(0,16'h30,0,0);if(value!=32'h09010000) $fatal(1,"Wrong static map");
    apb(1,16'h14,1,1);apb(1,16'h0c,0,1);
    apb(0,16'h1000,0,1);apb(0,2,0,1);apb(1,16'h40,0,1);

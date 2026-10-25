@@ -6,7 +6,7 @@ extern "C" {
 #endif
 /* Byte offsets in the 16-bit APB3 aperture, transport ABI 2 (image ABI stays 1). */
 #define C2_ID 0x43325332u
-#define C2_VERSION 0x00020000u
+#define C2_VERSION 0x00020002u
 #define C2_REG_ID 0x00u
 #define C2_REG_VERSION 0x04u
 #define C2_REG_STATUS 0x08u
@@ -24,6 +24,15 @@ extern "C" {
 #define C2_REG_VIDEO_BASE 0x38u
 #define C2_REG_VIDEO_BYTES 0x3cu
 #define C2_REG_DESCRIPTOR 0x40u
+#define C2_REG_CAPABILITIES 0x80u
+#define C2_REG_TIME_MS 0x84u
+#define C2_REG_TIME_STATUS 0x88u
+#define C2_REG_TIME_HZ 0x8cu
+#define C2_REG_TIME_KIND 0x90u
+#define C2_TIME_KIND_APB_MS 1u
+#define C2_CAP_SHARED_TIME 4u
+#define C2_CAP_RX_READONLY 1u
+#define C2_CAP_SOURCE_COMPLETION 2u
 #define C2_CMD_ACQUIRE 3u
 #define C2_CMD_RELEASE 4u
 #define C2_CMD_QUERY 5u

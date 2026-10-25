@@ -1,4 +1,5 @@
 #include "c2_driver.h"
+#include "c24_pipeline.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -82,6 +83,16 @@ static int copy_rx(void *context,uint32_t offset,uint8_t *dst,uint32_t bytes) {
     memcpy(dst,p->cache+offset,bytes);return COOP_OK;
 }
 static c2_io_t io={&f,rd,wr,sync_rx,copy_rx,barrier};
+static uint32_t clock_ms,infer_calls,infer_fail,infer_backwards;
+static int clock_fail;
+static int now_ms(void *context,uint32_t *ms) {(void)context;if(clock_fail)return clock_fail;*ms=clock_ms;return 0;}
+static int infer(void *context,const int8_t *tensor,uint32_t bytes,int8_t scores[2]) {
+    uint32_t n;(void)context;
+    CHECK(f.pool.slots[0].state==COOP_FREE && f.pool.slots[1].state==COOP_FREE);
+    CHECK(bytes==9216);for(n=0;n<bytes;n++)CHECK((uint8_t)tensor[n]==(uint8_t)(output[n]-128u));
+    infer_calls++;clock_ms+=infer_backwards?(0u-10u):10u;scores[0]=-50;scores[1]=49;
+    return infer_fail?COOP_EIO:0;
+}
 static void reset_fixture(void) {memset(&f,0,sizeof(f));f.enabled=1;}
 static uint32_t publish(uint32_t seq) {
     uint32_t id,gen,n,offset;coop_frame_t frame;
@@ -136,6 +147,32 @@ int main(void) {
     reset_fixture();f.enabled=0;CHECK(c2_driver_init(&driver,&io,32)==COOP_ENOTSUP);
     CHECK(driver.poisoned);reset_fixture();
     {c2_io_t missing=io;missing.sync_for_cpu=0;CHECK(c2_driver_init(&driver,&missing,32)==COOP_EINVAL);}
-    printf("PASS c2_driver checks=%u frames=102 both_slots RX_readonly stale_cache_negative invalidate_copy_release failure_cleanup timeout_poison\n",checks);
+    {static int8_t tensor[COOP_IMAGE_BYTES];c4_consumer_t consumer={0};c24_result_t result;
+     reset_fixture();CHECK(c2_driver_init(&driver,&io,32)==0);
+     id=publish(10);clock_ms=335;
+     CHECK(c24_process_next(&driver,&consumer,id,output,sizeof(output),tensor,sizeof(tensor),now_ms,0,infer,0,&result)==0);
+     CHECK(result.ai.valid && result.ai.frame_id==10 && result.person_u8==177 && result.ai.person==49 && infer_calls==1);
+     CHECK(result.infer_end_ms-result.infer_start_ms==10 && consumer.accepted==1);
+     id=publish(10);clock_ms=335;
+     CHECK(c24_process_next(&driver,&consumer,id,output,sizeof(output),tensor,sizeof(tensor),now_ms,0,infer,0,&result)==C4_EORDER);
+     CHECK(infer_calls==1 && f.pool.slots[id].state==COOP_FREE);
+     id=publish(11);clock_ms=2000;
+     CHECK(c24_process_next(&driver,&consumer,id,output,sizeof(output),tensor,sizeof(tensor),now_ms,0,infer,0,&result)==C4_ESTALE);
+     CHECK(infer_calls==1 && f.pool.slots[id].state==COOP_FREE);
+     id=publish(12);clock_ms=400;infer_fail=1;
+     CHECK(c24_process_next(&driver,&consumer,id,output,sizeof(output),tensor,sizeof(tensor),now_ms,0,infer,0,&result)==COOP_EIO);
+     CHECK(!result.ai.valid && f.pool.slots[id].state==COOP_FREE);infer_fail=0;
+     id=publish(13);clock_ms=435;clock_fail=COOP_EIO;
+     CHECK(c24_process_next(&driver,&consumer,id,output,sizeof(output),tensor,sizeof(tensor),now_ms,0,infer,0,&result)==COOP_EIO);
+     CHECK(f.pool.slots[id].state==COOP_FREE);clock_fail=0;
+     id=publish(14);clock_ms=470;clock_fail=COOP_EBUSY;
+     CHECK(c24_process_next(&driver,&consumer,id,output,sizeof(output),tensor,sizeof(tensor),now_ms,0,infer,0,&result)==COOP_EBUSY);
+     CHECK(result.copied && !result.ai.valid && result.ai.status==COOP_EBUSY && f.pool.slots[id].state==COOP_FREE);clock_fail=0;
+     CHECK(c24_process_next(&driver,&consumer,id,output,sizeof(output),tensor,sizeof(tensor),now_ms,0,infer,0,&result)==COOP_EBUSY && !result.copied);
+     id=publish(15);clock_ms=515;infer_backwards=1;
+     CHECK(c24_process_next(&driver,&consumer,id,output,sizeof(output),tensor,sizeof(tensor),now_ms,0,infer,0,&result)==C4_ESTALE);
+     CHECK(result.copied && !result.ai.valid && f.pool.slots[id].state==COOP_FREE);infer_backwards=0;
+    }
+    printf("PASS c2_driver checks=%u frames=102 both_slots RX_readonly stale_cache_negative invalidate_copy_release failure_cleanup timeout_poison C24_release_before_infer stale order score_mapping\n",checks);
     return 0;
 }

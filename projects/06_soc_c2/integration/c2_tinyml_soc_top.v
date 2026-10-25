@@ -50,6 +50,12 @@ input wire system_spi_0_io_data_2_read,
 output wire system_spi_0_io_data_2_write,system_spi_0_io_data_2_writeEnable,
 input wire system_spi_0_io_data_3_read,
 output wire system_spi_0_io_data_3_write,system_spi_0_io_data_3_writeEnable,
+input wire c2_sample_valid,c2_sample_sof,c2_sample_eof,c2_sample_abort,
+input wire [7:0] c2_sample_gray,
+input wire [31:0] c2_sample_frame_id,
+output wire [31:0] c2_shared_video_ms,
+output wire c2_shared_video_valid,
+output wire [31:0] c2_a_completed,c2_a_rejected,c2_a_source_faults,
 input wire  c2_video_awvalid,
 output wire  c2_video_awready,
 input wire [31:0] c2_video_awaddr,
@@ -81,21 +87,6 @@ input wire [1:0] c2_video_arburst,
 input wire  c2_video_arlock,
 output wire [4-1:0] c2_video_bid,
 output wire [4-1:0] c2_video_rid,
-input wire  c2_v_frame_valid,
-output wire  c2_v_frame_ready,
-input wire [511:0] c2_v_descriptor,
-output wire  c2_v_grant_valid,
-input wire  c2_v_grant_ready,
-output wire [31:0] c2_v_grant_frame_id,
-input wire  c2_v_word_valid,
-output wire  c2_v_word_ready,
-input wire [127:0] c2_v_word_data,
-output wire  c2_v_event_valid,
-input wire  c2_v_event_ready,
-output wire [2:0] c2_v_event_status,
-output wire  c2_v_event_slot,
-output wire [31:0] c2_v_event_generation,
-output wire [511:0] c2_v_event_descriptor,
    // Clock and reset ports
    input                              axi_clk,      
    input                              core_clk,     // CORE CLK @ 100MHz
@@ -724,6 +715,26 @@ wire [0:0] c2_cpu_rready;
 wire [127:0] c2_cpu_rdata;
 wire [0:0] c2_cpu_rlast;
 wire [1:0] c2_cpu_rresp;
+wire  c2_v_frame_valid;
+wire  c2_v_frame_ready;
+wire [511:0] c2_v_descriptor;
+wire  c2_v_grant_valid;
+wire  c2_v_grant_ready;
+wire [31:0] c2_v_grant_frame_id;
+wire  c2_v_word_valid;
+wire  c2_v_word_ready;
+wire [127:0] c2_v_word_data;
+wire  c2_v_source_valid;
+wire  c2_v_source_ready;
+wire  c2_v_source_error;
+wire [31:0] c2_v_source_frame_id;
+wire  c2_v_event_valid;
+wire  c2_v_event_ready;
+wire [2:0] c2_v_event_status;
+wire  c2_v_event_slot;
+wire [31:0] c2_v_event_generation;
+wire [511:0] c2_v_event_descriptor;
+wire [31:0] c2_v_source_fnv;
 axi_interconnect_beta #(
     .S_COUNT                            (3                                                 ),
     .SLAVE_ASYN_ARRAY                   ({1'b0,1'b0,1'b0}                                  ),
@@ -853,9 +864,10 @@ c2_axi_to_vendor #(.ALLOW_NARROW(1),.SOURCE_BASE(32'h1000),
 .m_rlast(c2_cpu_rlast),
 .m_rresp(c2_cpu_rresp),
 .rejected(c2_cpu_rejected),.protocol_error(c2_cpu_protocol_error));
-c2_vendor_attachment c2_attachment(
+c2_vendor_attachment #(.REQUIRE_SOURCE_COMPLETION(1)) c2_attachment(
 .arst_n(!io_systemReset),.mem_clk(io_memoryClk),.video_clk(c2_video_clk),.pclk(i_peripheralClk),.map_enable(c2_map_enable),
 .external_protocol_error(c2_cpu_rejected || c2_cpu_protocol_error),
+.shared_video_ms(c2_shared_video_ms),.shared_video_valid(c2_shared_video_valid),
 .paddr(apb_paddr),.psel(apb_psel),.penable(apb_penable),.pwrite(apb_pwrite),.pwdata(apb_pwdata),
 .pready(apb_pready),.prdata(apb_prdata),.pslverror(apb_pslverror),.irq(c2_irq),
 .video_awvalid(c2_video_awvalid),
@@ -898,12 +910,17 @@ c2_vendor_attachment c2_attachment(
 .v_word_valid(c2_v_word_valid),
 .v_word_ready(c2_v_word_ready),
 .v_word_data(c2_v_word_data),
+.v_source_valid(c2_v_source_valid),
+.v_source_ready(c2_v_source_ready),
+.v_source_error(c2_v_source_error),
+.v_source_frame_id(c2_v_source_frame_id),
 .v_event_valid(c2_v_event_valid),
 .v_event_ready(c2_v_event_ready),
 .v_event_status(c2_v_event_status),
 .v_event_slot(c2_v_event_slot),
 .v_event_generation(c2_v_event_generation),
 .v_event_descriptor(c2_v_event_descriptor),
+.v_source_fnv(c2_v_source_fnv),
 .m_awvalid(axi_inter_s1_awvalid),
 .m_awready(axi_inter_s1_awready),
 .m_awaddr(axi_inter_s1_awaddr),
@@ -930,4 +947,28 @@ c2_vendor_attachment c2_attachment(
 .m_rlast(axi_inter_s1_rlast),
 .m_rresp(axi_inter_s1_rresp),
 .protocol_error(c2_protocol_error));
+c2_a_image_source c2_image_source(
+.arst_n(!io_systemReset),.video_clk(c2_video_clk),.enable(c2_map_enable),
+.sample_valid(c2_sample_valid && c2_shared_video_valid),.sample_sof(c2_sample_sof),.sample_eof(c2_sample_eof),.sample_abort(c2_sample_abort || !c2_shared_video_valid),
+.sample_gray(c2_sample_gray),.sample_frame_id(c2_sample_frame_id),.sample_timestamp_ms(c2_shared_video_ms),
+.v_frame_valid(c2_v_frame_valid),
+.v_frame_ready(c2_v_frame_ready),
+.v_descriptor(c2_v_descriptor),
+.v_grant_valid(c2_v_grant_valid),
+.v_grant_ready(c2_v_grant_ready),
+.v_grant_frame_id(c2_v_grant_frame_id),
+.v_word_valid(c2_v_word_valid),
+.v_word_ready(c2_v_word_ready),
+.v_word_data(c2_v_word_data),
+.v_source_valid(c2_v_source_valid),
+.v_source_ready(c2_v_source_ready),
+.v_source_error(c2_v_source_error),
+.v_source_frame_id(c2_v_source_frame_id),
+.v_source_fnv(c2_v_source_fnv),
+.v_event_valid(c2_v_event_valid),
+.v_event_ready(c2_v_event_ready),
+.v_event_status(c2_v_event_status),
+.v_event_descriptor(c2_v_event_descriptor),
+.completed(c2_a_completed),.rejected(c2_a_rejected),.source_faults(c2_a_source_faults),
+.source_commits(),.source_drops(),.source_malformed(),.last_frame_id(),.last_sum32(),.last_fnv(),.last_status());
 endmodule

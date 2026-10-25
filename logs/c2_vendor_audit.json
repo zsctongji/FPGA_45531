@@ -33,6 +33,11 @@
     "APB offset matches C header: VIDEO_BASE",
     "APB offset matches C header: VIDEO_BYTES",
     "APB offset matches C header: DESCRIPTOR",
+    "APB offset matches C header: CAPABILITIES",
+    "APB offset matches C header: TIME_MS",
+    "APB offset matches C header: TIME_STATUS",
+    "APB offset matches C header: TIME_HZ",
+    "APB offset matches C header: TIME_KIND",
     "Original TinyML top identity unchanged after overlay generation"
   ],
   "board_verified": false,
@@ -57,7 +62,7 @@
     },
     "overlay": {
       "path": "projects/06_soc_c2/integration/c2_tinyml_soc_top.v",
-      "sha256": "bac91e0eacd6cdc10a316ac542959e9ca5a1086bbf8a9d6f03314e3c34f63744"
+      "sha256": "3c595241879da2d1ecf431c4d1e6c39f3a1200ae4ca157ac1ded5750f89e29cb"
     },
     "backend": {
       "path": "team_work/03_ai_soc/c2/c2_sapphire.c",
@@ -65,11 +70,11 @@
     },
     "driver_header": {
       "path": "team_work/03_ai_soc/c2/c2_driver.h",
-      "sha256": "65811a6d80f23b320b495d5f6073ed39dc094fd239d595e433c297e46fd676cf"
+      "sha256": "70e30ebfb5b6fd39122aba49eccde4668199aeff8f306fba45f4a6a2d490d761"
     },
     "apb": {
       "path": "projects/06_soc_c2/rtl/c2_apb_control.sv",
-      "sha256": "0c0999fab5816f5e2d65026a0de93c2845ebfc6e065584844d381a48b04c8082"
+      "sha256": "1ed8730e7bfd5c04a00e79218d4e1c21d7ff2ba85866b2adf6e34bd87e2cc317"
     }
   }
 }

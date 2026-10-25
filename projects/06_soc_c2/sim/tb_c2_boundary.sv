@@ -76,6 +76,7 @@ wire [31:0] dropped;
 wire ctl_rsp_slot;wire [31:0] ctl_rsp_generation;
 wire grant_valid,grant_ready;wire [31:0] grant_frame_id;
 c2_system_boundary dut(.arst_n(rst_n),.mem_clk(clk),.video_clk(vclk),
+.v_source_valid(1'b0),.v_source_ready(),.v_source_error(1'b0),.v_source_frame_id(32'b0),.v_source_fnv(32'b0),
 .v_frame_valid(req_valid),.v_frame_ready(req_ready),.v_descriptor(req_payload[511:0]),.shared_base(req_payload[543:512]),
 .v_grant_valid(grant_valid),.v_grant_ready(grant_ready),.v_grant_frame_id(grant_frame_id),
 .v_word_valid(image_valid),.v_word_ready(image_ready),.v_word_data(image_words),

@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "started": "2026-10-24T04:47:45.179393+00:00",
+  "started": "2026-10-25T06:42:40.336240+00:00",
   "scope": "portable RTL functional simulation with synthetic masters and DDR model",
   "board_test_passed": false,
   "vendor_ddr_simulated": false,
@@ -164,6 +164,120 @@
       ]
     },
     {
+      "name": "tb_c2_source_fence",
+      "status": "PASS",
+      "parameters": {},
+      "ddr_seed": null,
+      "compiler_log": "logs/c2/tb_c2_source_fence_compile.log",
+      "exit_code": 0,
+      "log": "logs/c2/tb_c2_source_fence.log",
+      "evidence": [
+        "PASS tb_c2_source_fence cases=8 both_orders delayed_verdict frame_id FNV errors stable_response common_reset"
+      ]
+    },
+    {
+      "name": "tb_c2_a_errors",
+      "status": "PASS",
+      "parameters": {},
+      "ddr_seed": null,
+      "compiler_log": "logs/c2/tb_c2_a_errors_compile.log",
+      "exit_code": 0,
+      "log": "logs/c2/tb_c2_a_errors.log",
+      "evidence": [
+        "PASS tb_c2_a_errors modes=7 read_error timeout bad_padding bad_sum wrong_grant busy drain576 stable_word release"
+      ]
+    },
+    {
+      "name": "tb_c2_time_p_half5_video_half7",
+      "status": "PASS",
+      "parameters": {
+        "P_HALF": 5,
+        "VIDEO_HALF": 7
+      },
+      "ddr_seed": null,
+      "compiler_log": "logs/c2/tb_c2_time_p_half5_video_half7_compile.log",
+      "exit_code": 0,
+      "log": "logs/c2/tb_c2_time_p_half5_video_half7.log",
+      "evidence": [
+        "PASS tb_c2_time checks=384 video_snapshots=266 wraps=2 epochs=2 APB_single_clock coherent_CDC readonly rollover common_reset"
+      ]
+    },
+    {
+      "name": "tb_c2_time_p_half7_video_half3",
+      "status": "PASS",
+      "parameters": {
+        "P_HALF": 7,
+        "VIDEO_HALF": 3
+      },
+      "ddr_seed": null,
+      "compiler_log": "logs/c2/tb_c2_time_p_half7_video_half3_compile.log",
+      "exit_code": 0,
+      "log": "logs/c2/tb_c2_time_p_half7_video_half3.log",
+      "evidence": [
+        "PASS tb_c2_time checks=182 video_snapshots=407 wraps=2 epochs=2 APB_single_clock coherent_CDC readonly rollover common_reset"
+      ]
+    },
+    {
+      "name": "tb_c2_time_p_half5_video_half131",
+      "status": "PASS",
+      "parameters": {
+        "P_HALF": 5,
+        "VIDEO_HALF": 131
+      },
+      "ddr_seed": null,
+      "compiler_log": "logs/c2/tb_c2_time_p_half5_video_half131_compile.log",
+      "exit_code": 0,
+      "log": "logs/c2/tb_c2_time_p_half5_video_half131.log",
+      "evidence": [
+        "PASS tb_c2_time checks=5527 video_snapshots=207 wraps=2 epochs=2 APB_single_clock coherent_CDC readonly rollover common_reset"
+      ]
+    },
+    {
+      "name": "tb_c2_a_bridge_mem_half5_video_half7_seed12345",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 5,
+        "VIDEO_HALF": 7
+      },
+      "ddr_seed": 12345,
+      "compiler_log": "logs/c2/tb_c2_a_bridge_mem_half5_video_half7_compile.log",
+      "exit_code": 0,
+      "log": "logs/c2/tb_c2_a_bridge_mem_half5_video_half7_seed12345.log",
+      "evidence": [
+        "PASS tb_c2_a_bridge bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=0 final_B_fence FNV CPU_readback A_BRAM lease pack128 SUM32 source_verdict FNV APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ]
+    },
+    {
+      "name": "tb_c2_a_bridge_mem_half7_video_half3_seed12345",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 7,
+        "VIDEO_HALF": 3
+      },
+      "ddr_seed": 12345,
+      "compiler_log": "logs/c2/tb_c2_a_bridge_mem_half7_video_half3_compile.log",
+      "exit_code": 0,
+      "log": "logs/c2/tb_c2_a_bridge_mem_half7_video_half3_seed12345.log",
+      "evidence": [
+        "PASS tb_c2_a_bridge bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=0 final_B_fence FNV CPU_readback A_BRAM lease pack128 SUM32 source_verdict FNV APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ]
+    },
+    {
+      "name": "tb_c2_a_bridge_mem_half5_video_half19_seed12345",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 5,
+        "VIDEO_HALF": 19
+      },
+      "ddr_seed": 12345,
+      "compiler_log": "logs/c2/tb_c2_a_bridge_mem_half5_video_half19_compile.log",
+      "exit_code": 0,
+      "log": "logs/c2/tb_c2_a_bridge_mem_half5_video_half19_seed12345.log",
+      "evidence": [
+        "PASS tb_c2_a_bridge bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=0 final_B_fence FNV CPU_readback A_BRAM lease pack128 SUM32 source_verdict FNV APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ]
+    },
+    {
       "name": "tb_c2_apb_p_half3",
       "status": "PASS",
       "parameters": {
@@ -217,7 +331,7 @@
       "exit_code": 0,
       "log": "logs/c2/tb_c2_boundary_mem_half5_video_half7_seed12345.log",
       "evidence": [
-        "PASS tb_c2_boundary bytes=9216 success=5 rejected=4 cpu_controls=11 background_writes=90 background_reads=90 checks=1026 source_stalls=44100 final_B_fence FNV CPU_readback async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+        "PASS tb_c2_boundary bytes=9216 success=5 rejected=4 cpu_controls=11 background_writes=90 background_reads=90 checks=1026 source_stalls=41455 final_B_fence FNV CPU_readback async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
       ]
     },
     {
@@ -232,7 +346,7 @@
       "exit_code": 0,
       "log": "logs/c2/tb_c2_boundary_mem_half5_video_half7_seed67891.log",
       "evidence": [
-        "PASS tb_c2_boundary bytes=9216 success=5 rejected=4 cpu_controls=11 background_writes=90 background_reads=90 checks=1026 source_stalls=43955 final_B_fence FNV CPU_readback async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+        "PASS tb_c2_boundary bytes=9216 success=5 rejected=4 cpu_controls=11 background_writes=90 background_reads=90 checks=1026 source_stalls=41349 final_B_fence FNV CPU_readback async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
       ]
     },
     {
@@ -247,7 +361,7 @@
       "exit_code": 0,
       "log": "logs/c2/tb_c2_boundary_mem_half5_video_half7_seed20261024.log",
       "evidence": [
-        "PASS tb_c2_boundary bytes=9216 success=5 rejected=4 cpu_controls=11 background_writes=90 background_reads=90 checks=1026 source_stalls=44048 final_B_fence FNV CPU_readback async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+        "PASS tb_c2_boundary bytes=9216 success=5 rejected=4 cpu_controls=11 background_writes=90 background_reads=90 checks=1026 source_stalls=41570 final_B_fence FNV CPU_readback async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
       ]
     },
     {
@@ -262,7 +376,7 @@
       "exit_code": 0,
       "log": "logs/c2/tb_c2_vendor_mem_half5_video_half7_seed12345.log",
       "evidence": [
-        "PASS tb_c2_vendor bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=44174 final_B_fence FNV CPU_readback APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+        "PASS tb_c2_vendor bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=41861 final_B_fence FNV CPU_readback APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
       ]
     },
     {
@@ -277,7 +391,7 @@
       "exit_code": 0,
       "log": "logs/c2/tb_c2_vendor_mem_half5_video_half7_seed67891.log",
       "evidence": [
-        "PASS tb_c2_vendor bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=44086 final_B_fence FNV CPU_readback APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+        "PASS tb_c2_vendor bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=41606 final_B_fence FNV CPU_readback APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
       ]
     },
     {
@@ -292,7 +406,7 @@
       "exit_code": 0,
       "log": "logs/c2/tb_c2_vendor_mem_half5_video_half7_seed20261024.log",
       "evidence": [
-        "PASS tb_c2_vendor bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=43961 final_B_fence FNV CPU_readback APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+        "PASS tb_c2_vendor bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=41857 final_B_fence FNV CPU_readback APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
       ]
     },
     {
@@ -307,7 +421,7 @@
       "exit_code": 0,
       "log": "logs/c2/tb_c2_boundary_mem_half7_video_half3_seed12345.log",
       "evidence": [
-        "PASS tb_c2_boundary bytes=9216 success=5 rejected=4 cpu_controls=11 background_writes=90 background_reads=90 checks=1026 source_stalls=160393 final_B_fence FNV CPU_readback async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+        "PASS tb_c2_boundary bytes=9216 success=5 rejected=4 cpu_controls=11 background_writes=90 background_reads=90 checks=1026 source_stalls=152018 final_B_fence FNV CPU_readback async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
       ]
     },
     {
@@ -322,7 +436,7 @@
       "exit_code": 0,
       "log": "logs/c2/tb_c2_boundary_mem_half7_video_half3_seed67891.log",
       "evidence": [
-        "PASS tb_c2_boundary bytes=9216 success=5 rejected=4 cpu_controls=11 background_writes=90 background_reads=90 checks=1026 source_stalls=160075 final_B_fence FNV CPU_readback async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+        "PASS tb_c2_boundary bytes=9216 success=5 rejected=4 cpu_controls=11 background_writes=90 background_reads=90 checks=1026 source_stalls=151840 final_B_fence FNV CPU_readback async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
       ]
     },
     {
@@ -337,7 +451,7 @@
       "exit_code": 0,
       "log": "logs/c2/tb_c2_boundary_mem_half7_video_half3_seed20261024.log",
       "evidence": [
-        "PASS tb_c2_boundary bytes=9216 success=5 rejected=4 cpu_controls=11 background_writes=90 background_reads=90 checks=1026 source_stalls=160428 final_B_fence FNV CPU_readback async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+        "PASS tb_c2_boundary bytes=9216 success=5 rejected=4 cpu_controls=11 background_writes=90 background_reads=90 checks=1026 source_stalls=151582 final_B_fence FNV CPU_readback async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
       ]
     },
     {
@@ -352,7 +466,7 @@
       "exit_code": 0,
       "log": "logs/c2/tb_c2_vendor_mem_half7_video_half3_seed12345.log",
       "evidence": [
-        "PASS tb_c2_vendor bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=160774 final_B_fence FNV CPU_readback APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+        "PASS tb_c2_vendor bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=153302 final_B_fence FNV CPU_readback APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
       ]
     },
     {
@@ -367,7 +481,7 @@
       "exit_code": 0,
       "log": "logs/c2/tb_c2_vendor_mem_half7_video_half3_seed67891.log",
       "evidence": [
-        "PASS tb_c2_vendor bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=160383 final_B_fence FNV CPU_readback APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+        "PASS tb_c2_vendor bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=153234 final_B_fence FNV CPU_readback APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
       ]
     },
     {
@@ -382,7 +496,7 @@
       "exit_code": 0,
       "log": "logs/c2/tb_c2_vendor_mem_half7_video_half3_seed20261024.log",
       "evidence": [
-        "PASS tb_c2_vendor bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=160655 final_B_fence FNV CPU_readback APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+        "PASS tb_c2_vendor bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=152752 final_B_fence FNV CPU_readback APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
       ]
     },
     {
@@ -477,41 +591,60 @@
     }
   ],
   "source_sha256": {
-    "projects/06_soc_c2/rtl/c2_apb_control.sv": "0c0999fab5816f5e2d65026a0de93c2845ebfc6e065584844d381a48b04c8082",
+    "projects/06_soc_c2/rtl/c2_a_image_source.sv": "ca4ecba6a595851a28c2bc93b580212e68ac79481b1133767ef8f41c34538134",
+    "projects/06_soc_c2/rtl/c2_a_mailbox_bridge.sv": "37d25577032e7fa78f4dc5616a1899d15feb565e3063d8e8d38b3963bfcf1f7c",
+    "projects/06_soc_c2/rtl/c2_apb_control.sv": "1ed8730e7bfd5c04a00e79218d4e1c21d7ff2ba85866b2adf6e34bd87e2cc317",
     "projects/06_soc_c2/rtl/c2_async_fifo.sv": "91d7dd66779d10552c23048734da6c6baaf6267d553eaf3567a2446e02ba9d77",
     "projects/06_soc_c2/rtl/c2_axi_arbiter.sv": "b36413ca9feea3c8e4a714a41340980148e2eb2db2177e5da53f3d46876ebbde",
     "projects/06_soc_c2/rtl/c2_axi_to_vendor.sv": "c16fb2252e6315f21bbc229faf2db046fe18ceb81c4471cc11f91d384e744da0",
     "projects/06_soc_c2/rtl/c2_buffer_manager.sv": "df19575e73d2f0011d8aa2241d598a5c9f16d34ec37d2990fd07145e776ba2ea",
     "projects/06_soc_c2/rtl/c2_cdc_mailbox.sv": "04550a55a2e5fbb824c9d0733f9b07378b0b041222eb3fbc9c6170043e57e7d4",
     "projects/06_soc_c2/rtl/c2_frame_publisher.sv": "e07dc4798af6f03ab18ef16fd9faebe6306c19325685990e1586c66c3200910d",
-    "projects/06_soc_c2/rtl/c2_image_writer.sv": "f5b0945a88dff6803313b1aa2e8fcf1ba19a3755d967a2c5a6c13f7fcb5448c2",
+    "projects/06_soc_c2/rtl/c2_image_writer.sv": "53780b55dd93ce2987dfc45fb33b6c7be78f6a32f6b36343b5ffb4794d06b827",
     "projects/06_soc_c2/rtl/c2_memory_hub.sv": "2b2c604fabcba80453d61596b933eb040ee6c3ee88a521751568727f11393b61",
-    "projects/06_soc_c2/rtl/c2_system_boundary.sv": "d8fe7ab80f5e66d46a39ade3e1a9dc63282d7d337df8c7e2220bca569f7ca473",
-    "projects/06_soc_c2/rtl/c2_vendor_attachment.sv": "0db5038e44a4f32a658853095547a0a25660a263a573b75764513ba32dc7e895",
+    "projects/06_soc_c2/rtl/c2_shared_time.sv": "0465e815fd8d3d98f23ca136abf848e1a9514a56246b9b8d9b9bd2503647486a",
+    "projects/06_soc_c2/rtl/c2_source_fence.sv": "1e865d73c3371428753db54562cfd6ef383ecba378e11e164bb2bc0c3a7f5482",
+    "projects/06_soc_c2/rtl/c2_system_boundary.sv": "bf55c29bef46b953d7cfd152883f267464fbd3e97478b6f51362bdfdef3330ac",
+    "projects/06_soc_c2/rtl/c2_vendor_attachment.sv": "6fc6de89b7e8e0e334e2d12fbfd99a01d2f1c3e1c91ccc5ebf0bae55789a753c",
+    "projects/06_soc_c2/a_side/ai_frame_mailbox.v": "be2a19b07be3b228001b64fc32a1fde2ed12ae12475dec29eeba989c9c2bb099",
+    "projects/06_soc_c2/a_side/video_a_capture.v": "6fd4ba3f87ebc42e7ca4e90292da10d1233d8b6cd2b26311cc05cb818e673d57",
+    "projects/06_soc_c2/a_side/video_grid_sampler.v": "9bd066f70ff8778caa7f4f18cfa4709a949b1c61ceb648cd79d015e00d57db84",
     "projects/06_soc_c2/sim/c2_bus_fixture.sv": "b045a2970eb0f43410b75e1a19dbaa2f187226013dab390c3b677937af7d43d8",
     "projects/06_soc_c2/sim/c2_ddr_model.sv": "9ebf8fdb842841c3e7ce3ba33e5a2ceec2dc5858ab1d2d15dbd68a21cd6527e0",
+    "projects/06_soc_c2/sim/tb_c2_a_bridge.sv": "46b222e642e646d4b41b67c44d8108387fb6072fa079eaa13e3900c6f8a81437",
+    "projects/06_soc_c2/sim/tb_c2_a_errors.sv": "b0d1bba8f7036eb0c7ba03ed7bcd2ea52c649c23425cdfc51eb020c62256d1df",
     "projects/06_soc_c2/sim/tb_c2_adapter.sv": "625c98196338cd27c1d4c1515bbd4a58a3aca7bd80cd20ce0ceeceed5c028922",
-    "projects/06_soc_c2/sim/tb_c2_apb.sv": "abdb860bd2f3ca2f44cd81821cef1f480e5617426edb43f851ce33e14c504b75",
+    "projects/06_soc_c2/sim/tb_c2_apb.sv": "e5976980f79012644428a75a97a084cc72c342f4ca18791a30c77cb163f21842",
     "projects/06_soc_c2/sim/tb_c2_axi.sv": "ccc6e7d9c9b80109930ad7bdd142f073dcf90a74eacbe559b5a3e2171b8dc28d",
-    "projects/06_soc_c2/sim/tb_c2_boundary.sv": "5216632b09c62045ee612816425e705a6ac84e29f3ecfc776af0caa0bfadb09e",
+    "projects/06_soc_c2/sim/tb_c2_boundary.sv": "44887f0f3033aafbb75a79f7396ba9047dc4b5b9d44c3cd8727ec7d6896d1e41",
     "projects/06_soc_c2/sim/tb_c2_cache.sv": "0bb318b7010d783ddc1f8b80ed8bce44d88219b8bb5fae92300c38197c2deca7",
     "projects/06_soc_c2/sim/tb_c2_cdc.sv": "087380d2becdb566b6336902e6644dc5ee6bd1521708cb31bfc150880cc72cfb",
     "projects/06_soc_c2/sim/tb_c2_fifo.sv": "3e6c2e748d503d44842a724c6e9b63468214451525a290a6ffaff67b54afbd2f",
     "projects/06_soc_c2/sim/tb_c2_image.sv": "32b7a952382258b4db7229ea7260d9c8e26a3f755e4f2429a39e3ae39747a164",
     "projects/06_soc_c2/sim/tb_c2_pool.sv": "f000a41da07a229c83d1c207247a82980891517449b8a85829abe4a898c42d6e",
-    "projects/06_soc_c2/sim/tb_c2_vendor.sv": "51298656a9532d4e52b76bf457e21eeabd1c114b340450bce4e49723d15e3e67",
+    "projects/06_soc_c2/sim/tb_c2_source_fence.sv": "f377fe0720b78e985bd41d60cf6890d312ba7e393f8ecfa126c9d35776a0b9cc",
+    "projects/06_soc_c2/sim/tb_c2_time.sv": "2da94c8d75d2dff164c045a26b1c3abab5a1566e5b68bbc345cc244b37c04dd1",
+    "projects/06_soc_c2/sim/tb_c2_vendor.sv": "ad12476ef0259ceeca28bc1a38ee4f1fa95dea9089c8c19fd03fd2110f7096a0",
     "team_work/03_ai_soc/c2/c2_driver.c": "c1a561ef635bd51e9837f1f63f75ffbaffd912454faf8ff8520cf0a65361798c",
-    "team_work/03_ai_soc/c2/c2_driver.h": "65811a6d80f23b320b495d5f6073ed39dc094fd239d595e433c297e46fd676cf",
+    "team_work/03_ai_soc/c2/c2_driver.h": "70e30ebfb5b6fd39122aba49eccde4668199aeff8f306fba45f4a6a2d490d761",
     "team_work/03_ai_soc/c2/c2_sapphire.c": "6bca6d86412d45287533209c41845486355928515fd252c6bc38e4f1ae777b77",
     "team_work/03_ai_soc/c2/c2_sapphire.h": "972bf7ce236f9f39816d7115f05edd9419c35ea773471c8b4b35becf92868a7c",
-    "team_work/03_ai_soc/tests/test_c2_driver.c": "951e9466282abc9f77f9ece2d052619764755d5fde725aecde4d27f4ed1056b9",
-    "tools/prepare_c2_vendor.py": "9b14fb8a521f6a72947bed876186df8262e8d3280582155d2502905e0bc4c18b",
+    "team_work/03_ai_soc/c24/c24_log_format.h": "7adb697e2af4935073add7a2ef554c8200400cc56f8c964e1b14b8e3234f538d",
+    "team_work/03_ai_soc/c24/c24_pipeline.c": "5ea3859b8c881e78d4c54d45328b82cc5d6464b8f32469633ee48a28f2400f94",
+    "team_work/03_ai_soc/c24/c24_pipeline.h": "bed6fa3c9c8a1faf669da514aaf7ad9bc9aedff7b2b76f8fc0e1716a68435802",
+    "team_work/03_ai_soc/c3_hal/c3_shared_time.c": "7b28e7794f6d91796a1ed6d1f9c1603477136308a5e9c092480d57d11d167ae7",
+    "team_work/03_ai_soc/c3_hal/c3_shared_time.h": "e7cba2798597114b10fcd0a9e4c46acf0f6814210e05a9c9f759ca88e2b54448",
+    "team_work/03_ai_soc/tests/test_c3_shared_time.c": "d8397dbf84a3a0416ca32cfa090f3798b98bc29b7515e969482c196e4187b48c",
+    "tools/prepare_a_c2.py": "6a8c3f4db74d211f11354d6739f592bd9e10159f2cdcef4cc5d53c9bd4f38949",
+    "projects/06_soc_c2/a_side/SOURCE_MANIFEST.json": "1815c287b2e5244ee84b7f1791299d7deac977e9e457dc768f21b7cacc67d8ae",
+    "team_work/03_ai_soc/tests/test_c2_driver.c": "76e50758262f5e140b815b8f2ba646f914ded661e077ea391daf7c4bdd7a6ed4",
+    "tools/prepare_c2_vendor.py": "e7a10606f53102fb19ab487129172c6187e903e3f6c706d1ea098295ca8e555a",
     "tools/audit_c2_vendor.py": "8006b8fc256acbda26525cb2d76fd6f6b653253c5bad027106f8eb305ca97724",
-    "tools/check_c2_riscv.py": "af96f5056966e6a100154911fcc3141fd77fa51d25359e0f6b229654d89161ab",
-    "tools/build_c2_host.cmd": "594d214841ee5a7bac3e277b162530a303e7b926b4293fccf7e20d1336ae0744",
+    "tools/check_c2_riscv.py": "87b381d3df774a60a2cb005d65704f99de771b93e345c7bffa8c354605db8619",
+    "tools/build_c2_host.cmd": "3410e984d7f4bb3841f568edcb51cad3558454ee01823e725e78873ab5dd54a6",
     "projects/03_tinyml/ip/sapphire_soc/sapphire_soc.v": "87c00873d2efc6b5bbb5336c1a1046eb0a21cf89c9d971f6c7cf703e0d2e6733",
     "build/c2/vendor_datacache.v": "a7f4b4df28d3c191c999cf08e74dca2cf68383b375f7a5a368b0bf752326f432",
-    "tools/run_c2_selftest.py": "ba602c01705a66c968a34cdb9e80c29b9dc944b95ecd4f0c34130d98e32bf3e7",
+    "tools/run_c2_selftest.py": "d5478b06f55028df18f9d2b6c28edfc9e4b21deb141e9ba5576556777ee06828",
     "tools/audit_c2_baselines.py": "32aa7449101bd0d932fb29212989e10739c58b42f17ec3ac959a1a5435760cff"
   },
   "host_driver_test": "PASS",
@@ -519,6 +652,6 @@
   "iverilog_version": "Icarus Verilog version 12.0 (devel) (s20150603-1539-g2693dd32b)",
   "baseline_audit": "projects/06_soc_c2/BASELINE_AUDIT.json",
   "vendor_audit": "PASS",
-  "passed": 34,
-  "finished": "2026-10-24T04:49:04.874716+00:00"
+  "passed": 42,
+  "finished": "2026-10-25T06:44:50.391532+00:00"
 }

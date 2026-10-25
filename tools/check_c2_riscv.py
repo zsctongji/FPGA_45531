@@ -21,9 +21,9 @@ def main():
     env=os.environ.copy()
     env['PATH']=';'.join(str(gcc/p) for p in ['bin','libexec/gcc/riscv-none-elf/13.4.0','riscv-none-elf/bin'])+';'+env.get('PATH','')
     sources=['team_work/shared/src/cooperation_v1.c','team_work/03_ai_soc/c2/c2_driver.c',
-             'team_work/03_ai_soc/c2/c2_sapphire.c']
+             'team_work/03_ai_soc/c2/c2_sapphire.c','team_work/03_ai_soc/c3_hal/c3_shared_time.c']
     bsp=ROOT/'projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/bsp/efinix/EfxSapphireSoc/include'
-    includes=['-I'+str(ROOT/'team_work/shared/include'),'-I'+str(ROOT/'team_work/03_ai_soc/c2'),'-I'+str(bsp)]
+    includes=['-I'+str(ROOT/'team_work/shared/include'),'-I'+str(ROOT/'team_work/03_ai_soc/c2'),'-I'+str(ROOT/'team_work/03_ai_soc/c3_hal'),'-I'+str(bsp)]
     try:
         report.write_text(json.dumps(record,indent=2)+'\n',encoding='utf-8')
         with log.open('w',encoding='utf-8') as stream:
@@ -45,7 +45,7 @@ def main():
                 raise RuntimeError('Missing fence / vendor whole-D-cache invalidate / fence sequence')
         record['cache_sequence']='fence iorw,iorw; .word 0x0000500f; fence iorw,iorw'
         record['status']='PASS'
-        print('PASS C2 RV32: 3 objects; exact fence/invalidate/fence sequence verified; not executed on board.')
+        print('PASS C2/C3 RV32: 4 objects; exact fence/invalidate/fence sequence verified; not executed on board.')
     except Exception as exc:
         record['status']='FAIL';record['error']=str(exc);print(str(exc))
     record['finished']=datetime.now(timezone.utc).isoformat()

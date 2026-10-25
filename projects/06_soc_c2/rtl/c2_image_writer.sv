@@ -1,8 +1,9 @@
 `timescale 1ns/1ps
 // Memory-domain image writer: 9216 GRAY8 bytes in 576 full 128-bit words.
 // One burst at a time (<=16 beats and never crosses 4 KiB). FNV is computed one
-// byte per clock, intentionally sacrificing thumbnail throughput for a short
-// combinational path. done_valid occurs only after the final write response.
+// byte per clock before issuing AW. A complete burst is staged first so a slow
+// byte producer does not reserve DDR while waiting for pixels/FNV computation.
+// done_valid occurs only after the final write response.
 module c2_image_writer(
  input wire clk,rst_n,
  input wire start_valid,output wire start_ready,input wire [31:0] start_address,
@@ -19,7 +20,8 @@ module c2_image_writer(
  reg [2:0] state;
  reg [31:0] address,hash;
  reg [9:0] remaining;
- reg [4:0] burst_beats,beat;
+ reg [4:0] burst_beats,beat,fill_index;
+ reg [127:0] buffer[0:15];
  reg [3:0] hash_byte;
  reg [127:0] held;
  function [4:0] next_burst(input [9:0] rem_words,input [31:0] addr);
@@ -34,29 +36,34 @@ module c2_image_writer(
  assign start_ready=(state==IDLE);
  assign pixel_ready=(state==CAPTURE || state==DRAIN);
  assign awvalid=(state==AW);assign awaddr=address;assign awlen={3'b0,burst_beats}-8'd1;
- assign wvalid=(state==WRITE);assign wdata=held;assign wstrb=16'hffff;
+ assign wvalid=(state==WRITE);assign wdata=buffer[beat[3:0]];assign wstrb=16'hffff;
  assign wlast=(beat==burst_beats-1);assign bready=(state==RESPONSE);
  always @(posedge clk or negedge rst_n) begin
    if(!rst_n) begin
      state<=IDLE;address<=0;hash<=0;remaining<=0;burst_beats<=0;
-     beat<=0;hash_byte<=0;held<=0;done_valid<=0;done_error<=0;done_checksum<=0;
+     beat<=0;fill_index<=0;hash_byte<=0;held<=0;done_valid<=0;done_error<=0;done_checksum<=0;
    end else case(state)
      IDLE: if(start_valid && start_ready) begin
        hash<=32'd2166136261;remaining<=576;address<=start_address;
-       burst_beats<=next_burst(576,start_address);beat<=0;done_error<=0;
+       burst_beats<=next_burst(576,start_address);beat<=0;fill_index<=0;done_error<=0;
        if(start_address[3:0]!=0 || start_address>32'hffffdc00) begin
          done_error<=1;done_checksum<=0;state<=DRAIN;
-       end else state<=AW;
+       end else state<=CAPTURE;
      end
-     AW: if(awvalid && awready) state<=CAPTURE;
-     CAPTURE: if(pixel_valid && pixel_ready) begin held<=pixel_words;hash_byte<=0;state<=HASH;end
+     AW: if(awvalid && awready) state<=WRITE;
+     CAPTURE: if(pixel_valid && pixel_ready) begin
+       held<=pixel_words;buffer[fill_index[3:0]]<=pixel_words;hash_byte<=0;state<=HASH;
+     end
      HASH: begin
        hash<=(hash^{24'b0,held[hash_byte*8+:8]})*32'd16777619;
-       if(hash_byte==15) state<=WRITE;else hash_byte<=hash_byte+4'd1;
+       if(hash_byte==15) begin
+         if(fill_index==burst_beats-1) begin beat<=0;state<=AW;end
+         else begin fill_index<=fill_index+5'd1;state<=CAPTURE;end
+       end else hash_byte<=hash_byte+4'd1;
      end
      WRITE: if(wvalid && wready) begin
        remaining<=remaining-10'd1;
-       if(wlast) state<=RESPONSE;else begin beat<=beat+5'd1;state<=CAPTURE;end
+       if(wlast) state<=RESPONSE;else beat<=beat+5'd1;
      end
      RESPONSE: if(bvalid && bready) begin
        if(bresp!=0 && remaining!=0) begin
@@ -68,7 +75,7 @@ module c2_image_writer(
          done_error<=(bresp!=0);done_checksum<=hash;done_valid<=1;state<=DONE;
        end else begin
          address<=address+burst_beats*16;
-         burst_beats<=next_burst(remaining,address+burst_beats*16);beat<=0;state<=AW;
+         burst_beats<=next_burst(remaining,address+burst_beats*16);beat<=0;fill_index<=0;state<=CAPTURE;
        end
      end
      DRAIN: if(pixel_valid && pixel_ready) begin

@@ -25,6 +25,7 @@ wire [7:0] cpu_bid,cpu_rid;
     code+='c2_vendor_attachment #(.SHARED_BASE(0),.VIDEO_BASE(32\'h20000),.VIDEO_BYTES(32\'h10000)) dut(\n'
     code+='''.arst_n(rst_n),.mem_clk(clk),.video_clk(vclk),.pclk(pclk),.map_enable(1'b1),
 .external_protocol_error(cpu_adapter_error || cpu_rejected),
+.v_source_valid(1'b0),.v_source_ready(),.v_source_error(1'b0),.v_source_frame_id(32'b0),.v_source_fnv(32'b0),
 .paddr(paddr),.psel(psel),.penable(penable),.pwrite(pwrite),.pwdata(pwdata),
 .pready(pready),.prdata(prdata),.pslverror(pslverror),.irq(irq),
 .v_frame_valid(req_valid),.v_frame_ready(req_ready),.v_descriptor(req_payload[511:0]),
@@ -162,11 +163,20 @@ def generate_overlay():
     for direction,width,name in re.findall(r'(input|output)\s+wire\s*(\[[^]]+\])?\s*(\w+)',attachment):
         if name.startswith('video_') or name.startswith('v_'):
             ports.append((direction,width.replace('VIDEO_ID_WIDTH','4'),name))
+    # The source completion pair shares one input declaration in the HDL.
+    if 'v_source_frame_id' in {n for d,w,n in ports} and 'v_source_fnv' not in {n for d,w,n in ports}:
+        ports.append(('input','[31:0]','v_source_fnv'))
     spi_ports=['output wire system_spi_0_io_sclk_write,system_spi_0_io_ss']
     for lane in range(4):
         spi_ports.append(f'input wire system_spi_0_io_data_{lane}_read')
         spi_ports.append(f'output wire system_spi_0_io_data_{lane}_write,system_spi_0_io_data_{lane}_writeEnable')
-    declarations=['input wire c2_video_clk,c2_map_enable',*spi_ports]+[d+' wire '+w+' c2_'+n for d,w,n in ports]
+    sample_ports=['input wire c2_sample_valid,c2_sample_sof,c2_sample_eof,c2_sample_abort',
+                  'input wire [7:0] c2_sample_gray',
+                  'input wire [31:0] c2_sample_frame_id',
+                  'output wire [31:0] c2_shared_video_ms',
+                  'output wire c2_shared_video_valid',
+                  'output wire [31:0] c2_a_completed,c2_a_rejected,c2_a_source_faults']
+    declarations=['input wire c2_video_clk,c2_map_enable',*spi_ports,*sample_ports]+[d+' wire '+w+' c2_'+n for d,w,n in ports if n.startswith('video_')]
     text=text.replace('   // Clock and reset ports',',\n'.join(declarations)+',\n   // Clock and reset ports',1)
     # Match vendor beta's 8-bit DDR IDs explicitly; no implicit 8-to-4 truncation.
     text=re.sub(r'ddr3_top\s+u_ddr3_top',"ddr3_top #(.AXI_ID_WIDTH(8)) u_ddr3_top",text,count=1)
@@ -198,6 +208,7 @@ assign userInterruptB=c2_irq;
         vendor=re.sub(r'\baxi_inter_s0_'+name+r'\b','c2_cpu_'+name,vendor)
     text=text[:a]+vendor
     wires='\n'.join(f'wire [{w-1}:0] c2_cpu_{n};' for n,d,w in SP)
+    wires+='\n'+'\n'.join('wire '+w+' c2_'+n+';' for d,w,n in ports if n.startswith('v_'))
     cpu='''c2_axi_to_vendor #(.ALLOW_NARROW(1),.SOURCE_BASE(32'h1000),
  .TARGET_BASE(32'h1000),.WINDOW_BYTES(32'he0000000)) c2_cpu_adapter(
 .clk(io_memoryClk),.rst_n(c2_mem_release[1]),.enable(1'b1),
@@ -205,17 +216,31 @@ assign userInterruptB=c2_irq;
     cpu+=',\n'.join(f'.s_{n}(axi_inter_s0_{n})' for n,d,w in SP)+',\n'
     cpu+=',\n'.join(f'.s_{n}(axi_inter_s0_{n})' for n in ['awid','arid','bid','rid','awsize','arsize','awburst','arburst','awlock','arlock'])+',\n'
     cpu+=',\n'.join(f'.m_{n}(c2_cpu_{n})' for n,d,w in SP)+',\n.rejected(c2_cpu_rejected),.protocol_error(c2_cpu_protocol_error));\n'
-    block='''c2_vendor_attachment c2_attachment(
+    block='''c2_vendor_attachment #(.REQUIRE_SOURCE_COMPLETION(1)) c2_attachment(
 .arst_n(!io_systemReset),.mem_clk(io_memoryClk),.video_clk(c2_video_clk),.pclk(i_peripheralClk),.map_enable(c2_map_enable),
 .external_protocol_error(c2_cpu_rejected || c2_cpu_protocol_error),
+.shared_video_ms(c2_shared_video_ms),.shared_video_valid(c2_shared_video_valid),
 .paddr(apb_paddr),.psel(apb_psel),.penable(apb_penable),.pwrite(apb_pwrite),.pwdata(apb_pwdata),
 .pready(apb_pready),.prdata(apb_prdata),.pslverror(apb_pslverror),.irq(c2_irq),
 '''+',\n'.join('.'+n+'(c2_'+n+')' for d,w,n in ports)+',\n'
     block+=',\n'.join(f'.m_{n}(axi_inter_s1_{n})' if n in {x[0] for x in SP} else f'.m_{n}()' for n,d,w in MP)
     block+=',\n.protocol_error(c2_protocol_error));\n'
+    image_source='''c2_a_image_source c2_image_source(
+.arst_n(!io_systemReset),.video_clk(c2_video_clk),.enable(c2_map_enable),
+.sample_valid(c2_sample_valid && c2_shared_video_valid),.sample_sof(c2_sample_sof),.sample_eof(c2_sample_eof),.sample_abort(c2_sample_abort || !c2_shared_video_valid),
+.sample_gray(c2_sample_gray),.sample_frame_id(c2_sample_frame_id),.sample_timestamp_ms(c2_shared_video_ms),
+'''
+    source_names=['frame_valid','frame_ready','descriptor','grant_valid','grant_ready','grant_frame_id',
+                  'word_valid','word_ready','word_data','source_valid','source_ready','source_error','source_frame_id','source_fnv',
+                  'event_valid','event_ready','event_status','event_descriptor']
+    image_source+=',\n'.join('.v_'+n+'(c2_v_'+n+')' for n in source_names)
+    image_source+=''',
+.completed(c2_a_completed),.rejected(c2_a_rejected),.source_faults(c2_a_source_faults),
+.source_commits(),.source_drops(),.source_malformed(),.last_frame_id(),.last_sum32(),.last_fnv(),.last_status());
+'''
     # Declarations precede instances so implicit-net warnings cannot hide widths.
     text=text.replace('axi_interconnect_beta #(',wires+'\naxi_interconnect_beta #(',1)
-    text=text.rsplit('endmodule',1)[0]+cpu+block+'endmodule\n'
+    text=text.rsplit('endmodule',1)[0]+cpu+block+image_source+'endmodule\n'
     (out/'c2_tinyml_soc_top.v').write_text(text)
     ns='http://www.efinixinc.com/enf_proj';ET.register_namespace('efx',ns)
     ET.register_namespace('xsi','http://www.w3.org/2001/XMLSchema-instance')
@@ -233,6 +258,7 @@ assign userInterruptB=c2_irq;
             sources.extend(base/'src'/line.strip() for line in (base/name).read_text(encoding='utf-8-sig').splitlines() if line.strip())
         else:sources.append(base/name)
     sources.append(base/'ip/sapphire_soc/sapphire_soc.v');sources.extend(sorted((P/'rtl').glob('*.sv')))
+    sources.extend(sorted((P/'a_side').glob('*.v')))
     for path in dict.fromkeys(sources):
         assert path.is_file(),path
         ET.SubElement(design,n('design_file'),name=path.as_posix(),version='default',library='default')

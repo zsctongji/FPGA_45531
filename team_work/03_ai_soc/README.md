@@ -1,5 +1,13 @@
 # C：RISC-V/TinyML、统一工程、融合与预测
 
+## 2026-10-25 统一时间与验收工具
+
+当前接口为APB v2.2（0x00020002）；公共APB时间已接CPU/C3和视频快照CDC，C24新增串口采集/自检及现场窗口检查。42次RTL回归、时间后端测试、36个日志测试、新固件链接和native map PASS；没有实物执行。最新入口 [TIME_AND_C24_ACCEPTANCE.md](TIME_AND_C24_ACCEPTANCE.md)、18_test_time_c24.cmd。下方v2.1/39次为前阶段结果。
+
+## 2026-10-25 联合链路
+
+A缓存→C2桥、源端/DDR双完成、突发预取及C2→TFLM联合程序已有实现。39次RTL测试、主机联合流程、桌面回放及含A桥的native综合PASS；联合CPU固件ELF/BIN已构建，默认合成自检、现场MMIO关闭。入口 [C24_AC_BRIDGE_RUNBOOK.md](C24_AC_BRIDGE_RUNBOOK.md)、16_build_c24.cmd、17_test_a_c2_pc.cmd。新版APB v2.1（0x00020001）须配套使用，实际视频/共享时间/地址和上板验收仍待完成。
+
 ## 2026-10-24 开发入口
 
 - C2第二阶段入口 [C2_VENDOR_APB_CACHE.md](C2_VENDOR_APB_CACHE.md)：厂家S0/S1接口适配、APB寄存器/CDC、CPU只读缓存接收驱动已实现；`13_test_c2.cmd`现运行34次RTL回归及主机/RV32检查。`15_synth_c2_native.cmd`用于独立厂家SoC接入副本的逻辑综合，板上视频/缓存/时序仍待验证。

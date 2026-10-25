@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "started": "2026-10-24T04:49:04.427280+00:00",
+  "started": "2026-10-25T06:44:49.461178+00:00",
   "scope": "RV32 object compilation and instruction inspection; no firmware execution",
   "board_test_passed": false,
   "linked_firmware": false,
@@ -15,15 +15,21 @@
       "source": "team_work/03_ai_soc/c2/c2_driver.c",
       "source_sha256": "c1a561ef635bd51e9837f1f63f75ffbaffd912454faf8ff8520cf0a65361798c",
       "object": "build/c2/riscv/c2_driver.o",
-      "sha256": "70869ea2ddd4ad2e87af9b67dfde98aecc5c2bcd40109f1b672256884f438a08"
+      "sha256": "d3eca6a1e44bddebf1bb8da53052312cd9c38c4a2053eb85cae43327aa6c8914"
     },
     {
       "source": "team_work/03_ai_soc/c2/c2_sapphire.c",
       "source_sha256": "6bca6d86412d45287533209c41845486355928515fd252c6bc38e4f1ae777b77",
       "object": "build/c2/riscv/c2_sapphire.o",
       "sha256": "5dc38bcffcacf04365e32caafaa82abf1ad48b66c52491d5b95b7935827f56eb"
+    },
+    {
+      "source": "team_work/03_ai_soc/c3_hal/c3_shared_time.c",
+      "source_sha256": "7b28e7794f6d91796a1ed6d1f9c1603477136308a5e9c092480d57d11d167ae7",
+      "object": "build/c2/riscv/c3_shared_time.o",
+      "sha256": "e448905aa13c9bdf6395dff92cdbfe99d469818537dcc17734232770bfefa30c"
     }
   ],
   "cache_sequence": "fence iorw,iorw; .word 0x0000500f; fence iorw,iorw",
-  "finished": "2026-10-24T04:49:04.807849+00:00"
+  "finished": "2026-10-25T06:44:50.305777+00:00"
 }

@@ -1,5 +1,9 @@
 # C2：共享 DDR 功能边界与离线验证
 
+最新时间接口：APB v2.2（0x00020002），0x84~0x90为只读公共时间。视频使用完整快照CDC，native在sample_sof锁存；42次回归PASS。详见 `team_work/03_ai_soc/TIME_AND_C24_ACCEPTANCE.md`，下方v2.1结果保留为历史。
+
+2026-10-25更新：A mailbox→C2搬运桥、双完成校验屏障和联合TinyML固件已实现；当前39次RTL回归PASS，新native副本含A桥并综合PASS。APB版本为0x00020001，新增0x80能力寄存器。最新说明见 [C24_AC_BRIDGE_RUNBOOK.md](../../team_work/03_ai_soc/C24_AC_BRIDGE_RUNBOOK.md)，下文保留前阶段记录。
+
 2026-10-24。主开发目录为 `C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3`。
 
 本目录已实现可独立仿真的共享内存逻辑。`c2_system_boundary` 把三个内存域访问端口、AI 灰度图写入、跨时钟握手和双槽所有权汇合为**一个 DDR 事务出口**。测试使用合成的 CPU/TinyML/视频主设备和 DDR 行为模型，没有实例化真实 CPU、TinyML 加速器、MIPI、DDR 控制器或 PHY。因此它是 C2 第一阶段的交接成果，尚不构成统一整机工程或可下载配置文件。五个原始 FPGA 工程继续保留。

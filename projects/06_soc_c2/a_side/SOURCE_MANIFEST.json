@@ -1,0 +1,10 @@
+{
+  "origin": "https://github.com/zsctongji/FPGA_cooperation",
+  "A_last_commit": "06908f4",
+  "policy": "96x54 + 21 black rows on each side; transport candidate, model-quality approval pending",
+  "files": {
+    "ai_frame_mailbox.v": "be2a19b07be3b228001b64fc32a1fde2ed12ae12475dec29eeba989c9c2bb099",
+    "video_a_capture.v": "6fd4ba3f87ebc42e7ca4e90292da10d1233d8b6cd2b26311cc05cb818e673d57",
+    "video_grid_sampler.v": "9bd066f70ff8778caa7f4f18cfa4709a949b1c61ceb648cd79d015e00d57db84"
+  }
+}

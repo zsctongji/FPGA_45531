@@ -40,23 +40,35 @@ def main():
         for binary in (ivl, vvp):
             if not binary.is_file():
                 raise FileNotFoundError(binary)
-        prepared=subprocess.run([sys.executable,str(ROOT/'tools/prepare_c2_vendor.py')],capture_output=True,text=True,timeout=30)
+        prepared=subprocess.run([sys.executable,str(ROOT/'tools/prepare_c2_vendor.py')],capture_output=True,text=True,encoding="utf-8",errors="replace",timeout=30)
         (LOGS/'prepare_vendor.log').write_text(prepared.stdout+prepared.stderr,encoding='utf-8')
         if prepared.returncode:raise RuntimeError(prepared.stdout+prepared.stderr)
+        prepared=subprocess.run([sys.executable,str(ROOT/'tools/prepare_a_c2.py')],capture_output=True,text=True,encoding="utf-8",errors="replace",timeout=30)
+        if prepared.returncode:raise RuntimeError(prepared.stdout+prepared.stderr)
         rtl = sorted((PROJECT / 'rtl').glob('*.sv'))
+        rtl += sorted((PROJECT / 'a_side').glob('*.v'))
         sim = sorted((PROJECT / 'sim').glob('*.sv'))
         extra=[*sorted((ROOT/'team_work/03_ai_soc/c2').glob('*.[ch]')),
+               *sorted((ROOT/'team_work/03_ai_soc/c24').glob('*.[ch]')),
+               ROOT/'team_work/03_ai_soc/c3_hal/c3_shared_time.c',ROOT/'team_work/03_ai_soc/c3_hal/c3_shared_time.h',
+               ROOT/'team_work/03_ai_soc/tests/test_c3_shared_time.c',
+               ROOT/'tools/prepare_a_c2.py',ROOT/'projects/06_soc_c2/a_side/SOURCE_MANIFEST.json',
                ROOT/'team_work/03_ai_soc/tests/test_c2_driver.c',ROOT/'tools/prepare_c2_vendor.py',
                ROOT/'tools/audit_c2_vendor.py',ROOT/'tools/check_c2_riscv.py',ROOT/'tools/build_c2_host.cmd',
                ROOT/'projects/03_tinyml/ip/sapphire_soc/sapphire_soc.v',ROOT/'build/c2/vendor_datacache.v']
         for p in [*rtl, *sim, *extra, Path(__file__), ROOT / 'tools/audit_c2_baselines.py']:
             record['source_sha256'][p.relative_to(ROOT).as_posix()] = sha(p)
-        version = subprocess.run([str(ivl), '-V'], capture_output=True, text=True, timeout=15)
+        version = subprocess.run([str(ivl), '-V'], capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=15)
         record['iverilog_version'] = version.stdout.splitlines()[0]
         matrix = [('cdc', {}, [None]), ('fifo', {}, [None]), ('pool', {}, [None]),
                   ('axi', {}, [12345, 67891, 20261024]),
                   ('image', {}, [12345, 67891, 20261024]),
                   ('adapter', {}, [12345,67891,20261024]),('cache',{},[None])]
+        matrix += [('source_fence',{},[None]),('a_errors',{},[None])]
+        for p,v in [(5,7),(7,3),(5,131)]:
+            matrix.append(('time',{'P_HALF':p,'VIDEO_HALF':v},[None]))
+        for mem,video in [(5,7),(7,3),(5,19)]:
+            matrix.append(('a_bridge',{'MEM_HALF':mem,'VIDEO_HALF':video},[12345]))
         for half in [3,7,131]:matrix.append(('apb',{'P_HALF':half},[None]))
         for mem, video in [(5, 7), (7, 3), (5, 131)]:
             matrix.append(('boundary', {'MEM_HALF': mem, 'VIDEO_HALF': video},
@@ -71,7 +83,7 @@ def main():
             args += [f'-P{top}.{k}={v}' for k, v in params.items()]
             args += [str(p) for p in [*rtl, *sim]]
             if name=='cache':args.append(str(ROOT/'build/c2/vendor_datacache.v'))
-            compiled = subprocess.run(args, capture_output=True, text=True, timeout=60)
+            compiled = subprocess.run(args, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=60)
             compiler_log = LOGS / (top + suffix + '_compile.log')
             compiler_log.write_text(compiled.stdout + compiled.stderr, encoding='utf-8')
             if compiled.returncode or re.search(r'\bwarning\b|\berror\b', compiled.stderr, re.I):
@@ -83,7 +95,7 @@ def main():
                 record['tests'].append(case)
                 save()
                 command = [str(vvp), str(executable)] + ([f'+SEED={seed}'] if seed is not None else [])
-                result = subprocess.run(command, capture_output=True, text=True, timeout=60)
+                result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=90,cwd=BUILD)
                 output = result.stdout + result.stderr
                 logfile = LOGS / (key + '.log')
                 logfile.write_text(output, encoding='utf-8')
@@ -96,7 +108,7 @@ def main():
                 if not passed:
                     raise RuntimeError(output)
         audited = subprocess.run([sys.executable, str(ROOT / 'tools/audit_c2_baselines.py')],
-                                 capture_output=True, text=True, timeout=30)
+                                 capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=30)
         (LOGS / 'baseline_audit.log').write_text(audited.stdout + audited.stderr, encoding='utf-8')
         if audited.returncode:
             raise RuntimeError(audited.stdout + audited.stderr)
@@ -105,7 +117,7 @@ def main():
             ('vendor_audit',[sys.executable,str(ROOT/'tools/audit_c2_vendor.py')],30),
             ('host_driver_test',['cmd','/c',str(ROOT/'tools/build_c2_host.cmd')],60),
             ('riscv_compile',[sys.executable,str(ROOT/'tools/check_c2_riscv.py')],180)]:
-            checked=subprocess.run(command,capture_output=True,text=True,timeout=timeout,cwd=ROOT)
+            checked=subprocess.run(command,capture_output=True,text=True,encoding="utf-8",errors="replace",timeout=timeout,cwd=ROOT)
             (LOGS/(label+'.log')).write_text(checked.stdout+checked.stderr,encoding='utf-8')
             record[label]='PASS' if checked.returncode==0 else 'FAIL'
             if checked.returncode:raise RuntimeError(checked.stdout+checked.stderr)

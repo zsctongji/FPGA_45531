@@ -1,6 +1,6 @@
 ﻿{
     "status":  "PASS",
-    "started":  "2026-10-24T12:48:11.1922661+08:00",
+    "started":  "2026-10-25T14:30:42.4261331+08:00",
     "scope":  "C2 boundary logic synthesis only",
     "project":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_native.xml",
     "top":  "c2_tinyml_soc_top",
@@ -13,13 +13,13 @@
     "artifacts":  [
                       {
                           "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\outflow\\c2_native.map.rpt",
-                          "sha256":  "b4e8219855747a161082c716b7b1b299f5915490cb6412623e694481e8d56521",
-                          "bytes":  531651
+                          "sha256":  "c0d1fb1ecd431ee5d98b86ad1c137e3cd79104b6123b709a583eeff364233fb1",
+                          "bytes":  637055
                       },
                       {
                           "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\outflow\\c2_native.map.v",
-                          "sha256":  "84cc4f1182218e9a8991594777f2b3a84ca706806b38dee957f14abe775c81bd",
-                          "bytes":  111663517
+                          "sha256":  "61b56bb155c7a61923d771c954cb817fa1416cc058885427465c3233cbb48a79",
+                          "bytes":  113318394
                       },
                       {
                           "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\outflow\\debug_profile.mark_debug.json",
@@ -209,12 +209,24 @@
                         "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_top.v"
                     },
                     {
-                        "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_native.xml",
-                        "sha256":  "ec309d0987c08391aff783d7d7d8d5eecf2036c1d55076c1ed65c51477ab9dad",
-                        "post_tool_sha256":  "01122778a57c257845c436286973dc2f10fec2d90578c240b21e313c678e0d38"
+                        "sha256":  "be2a19b07be3b228001b64fc32a1fde2ed12ae12475dec29eeba989c9c2bb099",
+                        "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\a_side\\ai_frame_mailbox.v"
                     },
                     {
-                        "sha256":  "bac91e0eacd6cdc10a316ac542959e9ca5a1086bbf8a9d6f03314e3c34f63744",
+                        "sha256":  "6fd4ba3f87ebc42e7ca4e90292da10d1233d8b6cd2b26311cc05cb818e673d57",
+                        "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\a_side\\video_a_capture.v"
+                    },
+                    {
+                        "sha256":  "9bd066f70ff8778caa7f4f18cfa4709a949b1c61ceb648cd79d015e00d57db84",
+                        "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\a_side\\video_grid_sampler.v"
+                    },
+                    {
+                        "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_native.xml",
+                        "sha256":  "2f987a3c617ca27c182526446978ca71089717eac03be7325372a80fe2322687",
+                        "post_tool_sha256":  "db41fcfbc88dfa8c15be36db604a91e6a9324eaa8bcd3984ac8aa2139380a652"
+                    },
+                    {
+                        "sha256":  "3c595241879da2d1ecf431c4d1e6c39f3a1200ae4ca157ac1ded5750f89e29cb",
                         "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v"
                     },
                     {
@@ -234,7 +246,15 @@
                         "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol3.bin"
                     },
                     {
-                        "sha256":  "0c0999fab5816f5e2d65026a0de93c2845ebfc6e065584844d381a48b04c8082",
+                        "sha256":  "ca4ecba6a595851a28c2bc93b580212e68ac79481b1133767ef8f41c34538134",
+                        "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_a_image_source.sv"
+                    },
+                    {
+                        "sha256":  "37d25577032e7fa78f4dc5616a1899d15feb565e3063d8e8d38b3963bfcf1f7c",
+                        "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_a_mailbox_bridge.sv"
+                    },
+                    {
+                        "sha256":  "1ed8730e7bfd5c04a00e79218d4e1c21d7ff2ba85866b2adf6e34bd87e2cc317",
                         "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_apb_control.sv"
                     },
                     {
@@ -262,7 +282,7 @@
                         "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_frame_publisher.sv"
                     },
                     {
-                        "sha256":  "f5b0945a88dff6803313b1aa2e8fcf1ba19a3755d967a2c5a6c13f7fcb5448c2",
+                        "sha256":  "53780b55dd93ce2987dfc45fb33b6c7be78f6a32f6b36343b5ffb4794d06b827",
                         "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_image_writer.sv"
                     },
                     {
@@ -270,11 +290,19 @@
                         "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_memory_hub.sv"
                     },
                     {
-                        "sha256":  "d8fe7ab80f5e66d46a39ade3e1a9dc63282d7d337df8c7e2220bca569f7ca473",
+                        "sha256":  "0465e815fd8d3d98f23ca136abf848e1a9514a56246b9b8d9b9bd2503647486a",
+                        "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_shared_time.sv"
+                    },
+                    {
+                        "sha256":  "1e865d73c3371428753db54562cfd6ef383ecba378e11e164bb2bc0c3a7f5482",
+                        "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_source_fence.sv"
+                    },
+                    {
+                        "sha256":  "bf55c29bef46b953d7cfd152883f267464fbd3e97478b6f51362bdfdef3330ac",
                         "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_system_boundary.sv"
                     },
                     {
-                        "sha256":  "0db5038e44a4f32a658853095547a0a25660a263a573b75764513ba32dc7e895",
+                        "sha256":  "6fc6de89b7e8e0e334e2d12fbfd99a01d2f1c3e1c91ccc5ebf0bae55789a753c",
                         "path":  "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_vendor_attachment.sv"
                     }
                 ],
@@ -515,6 +543,7 @@
                      "[EFX-0011 VERI-WARNING] port \u0027**\u0027 is not connected on this instance (VERI-2435) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\master_coupler.v:880)",
                      "[EFX-0011 VERI-WARNING] input port \u0027**\u0027 is not connected on this instance (VDB-1013) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\master_coupler.v:880)",
                      "[EFX-0011 VERI-WARNING] actual bit length ** differs from formal bit length *** for port \u0027**\u0027 (VERI-1330) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\axi_interconnect_beta.sv:582)",
+                     "[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 13 (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\a_side\\ai_frame_mailbox.v:29)",
                      "[EFX-0201 WARNING] Re-wiring to GND non-driven net/port \u0027pi_calib_done_r1\u0027 in module \u0027ddr_calibration_ini(tCK=2500,CLK_PERIOD=10000,DQ_WIDTH=16,DQS_WIDTH=2,nCL=6,tRFC=350000,RTT_WR=\"120\")\u0027. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:1521)",
                      "[EFX-0200 WARNING] Removing redundant signal : wrcal_sanity_chk_done. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:83)",
                      "[EFX-0200 WARNING] Removing redundant signal : read_calib. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:97)",
@@ -551,14 +580,15 @@
                      "[EFX-0657 WARNING] Mapping into logic memory block \u0027u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/Cache.u_tinyml_common_s_axi4addr8_to_m_axi4addrx/u1_fifo_32w8d_0dly/u_efx_fifo_top/xefx_fifo_ram/ram\u0027 (256 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:801) because \u0027syn_ram_style\u0027 directive is \u0027register\u0027 or \u0027logic\u0027.",
                      "[EFX-0657 WARNING] Mapping into logic memory block \u0027u_ddr3_top/u_memory_bus_ctl/col_mach/fifo_ram[1].RAM32M0/memory\u0027 (256 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169) because \u0027syn_ram_style\u0027 directive is \u0027register\u0027 or \u0027logic\u0027.",
                      "[EFX-0657 WARNING] Mapping into logic memory block \u0027c2_attachment/core/publisher/manager/meta\u0027 (1024 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_buffer_manager.sv:19) because it has async writer.",
+                     "[EFX-0657 WARNING] Mapping into logic memory block \u0027c2_attachment/core/hub/writer/buffer\u0027 (2048 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_image_writer.sv:24) because read port is not synchronous.",
                      "[EFX-0657 WARNING] Mapping into logic memory block \u0027c2_attachment/core/pixels/memory\u0027 (2048 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_async_fifo.sv:8) because read port is not synchronous.",
-                     "[EFX-0011 VERI-WARNING] Input/inout port axi_clk is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:100)",
-                     "[EFX-0011 VERI-WARNING] Input/inout port i_fb_clk is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:110)",
-                     "[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_DRCK is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:124)",
-                     "[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_RESET is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:125)",
-                     "[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_RUNTEST is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:126)",
-                     "[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_TMS is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:131)",
-                     "[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_UPDATE is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:132)",
+                     "[EFX-0011 VERI-WARNING] Input/inout port axi_clk is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:91)",
+                     "[EFX-0011 VERI-WARNING] Input/inout port i_fb_clk is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:101)",
+                     "[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_DRCK is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:115)",
+                     "[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_RESET is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:116)",
+                     "[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_RUNTEST is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:117)",
+                     "[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_TMS is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:122)",
+                     "[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_UPDATE is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:123)",
                      "[EFX-0011 VERI-WARNING] Net u_sapphire_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[0] is dangling. (VDB-8009)",
                      "[EFX-0011 VERI-WARNING] Net u_sapphire_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[5] is dangling. (VDB-8009)",
                      "[EFX-0011 VERI-WARNING] Net u_sapphire_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[4] is dangling. (VDB-8009)",
@@ -571,10 +601,10 @@
                  ],
     "warning_scope":  "Full native warnings retained; portable C2 warnings checked strictly; inherited vendor warnings require review",
     "resources":  {
-                      "EFX_FF":  29351,
-                      "EFX_DSP48":  49,
-                      "EFX_ADD":  5799,
-                      "EFX_LUT4":  32692
+                      "EFX_FF":  30351,
+                      "EFX_DSP48":  51,
+                      "EFX_ADD":  5947,
+                      "EFX_LUT4":  33664
                   },
-    "finished":  "2026-10-24T12:50:25.6045888+08:00"
+    "finished":  "2026-10-25T14:33:06.3126706+08:00"
 }

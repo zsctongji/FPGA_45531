@@ -1,6 +1,10 @@
 # C2 第二阶段：厂家接口、APB 与 CPU 接收缓存
 
+当前传输ABI已升级至v2.2（0x00020002），增加公共时间；最新内容见 [TIME_AND_C24_ACCEPTANCE.md](TIME_AND_C24_ACCEPTANCE.md)。下文v2.0/v2.1信息为历史。
+
 日期：2026-10-24。主目录 `C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3`。本文件补充并更新 `C2_INTEGRATION.md` 中“厂家接口/APB/缓存尚未实现”的状态。图像 ABI 仍为 v1，新增控制传输 ABI 为 v2。
+
+2026-10-25后续版本见 [C24_AC_BRIDGE_RUNBOOK.md](C24_AC_BRIDGE_RUNBOOK.md)：A搬运桥和联合固件已接入；APB升级至0x00020001，0x80新增能力寄存器，native副本启用源端完成确认。下文0x00020000寄存器/资源数据为前阶段记录。
 
 本轮完成可综合适配器、APB控制服务、RX只读驱动和独立厂家SoC接入副本。真实视频IP、物理引脚/时钟约束、DDR地址别名和板上缓存效果尚未验证。默认没有新的可下载配置或配套CPU BIN；RV32检查只编译对象并检查指令。
 

@@ -1,0 +1,7 @@
+# Keep C24 release payloads and pinned A snapshots byte-identical to their SHA256 manifests.
+/firmware/c24_frame_person_detect/** -text whitespace=cr-at-eol
+/firmware/c24_frame_person_detect/*.bin binary
+/firmware/c24_frame_person_detect/*.elf binary
+/firmware/c24_frame_person_detect/*.hex binary
+/firmware/c24_frame_person_detect/*.map binary
+/projects/06_soc_c2/a_side/** -text whitespace=cr-at-eol

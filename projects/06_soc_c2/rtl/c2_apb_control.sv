@@ -1,10 +1,12 @@
 `timescale 1ns/1ps
 // APB3 (16-bit byte address, 32-bit data), posted doorbell + explicit ACK.
 // One outstanding command; complete response snapshot crosses via mailbox.
-module c2_apb_control #(
+module c2_apb_control #(parameter REQUIRE_SOURCE_COMPLETION=0,
+ parameter integer TIME_CLOCK_HZ=100000000, parameter [31:0] TIME_INITIAL_MS=0,
  parameter [31:0] SHARED_BASE=32'h09010000,VIDEO_BASE=32'h08010000,VIDEO_BYTES=32'h01000000
 )(
- input wire arst_n,pclk,mem_clk,
+ input wire arst_n,pclk,mem_clk,video_clk,
+ output wire [31:0] shared_video_ms,output wire shared_video_valid,
  input wire [15:0] paddr,input wire psel,penable,pwrite,input wire [31:0] pwdata,
  output wire pready,output reg [31:0] prdata,output reg pslverror,output wire irq,
  input wire map_enable,
@@ -14,6 +16,10 @@ module c2_apb_control #(
  input wire cpu_rsp_slot,input wire [31:0] cpu_rsp_generation,input wire [511:0] cpu_descriptor,
  input wire [3:0] slot_states,input wire [31:0] dropped,input wire protocol_error
 );
+ wire [31:0] shared_ms;wire shared_valid;
+ c2_shared_time #(.CLOCK_HZ(TIME_CLOCK_HZ),.INITIAL_MS(TIME_INITIAL_MS)) clock_service(
+ .arst_n(arst_n),.pclk(pclk),.video_clk(video_clk),.cpu_ms(shared_ms),.cpu_valid(shared_valid),
+ .video_ms(shared_video_ms),.video_valid(shared_video_valid));
  reg [1:0] released;
  reg busy,done,request_valid;
  reg [31:0] generation;
@@ -46,7 +52,7 @@ module c2_apb_control #(
    endcase
    else case(paddr)
      16'h0000: prdata=32'h43325332;
-     16'h0004: prdata=32'h00020000;
+     16'h0004: prdata=32'h00020002;
      16'h0008: prdata={30'b0,done,busy};
      16'h0010: prdata=generation;
      16'h0018: prdata={23'b0,saved[514],6'b0,saved[513:512]};
@@ -59,6 +65,11 @@ module c2_apb_control #(
      16'h0034: prdata=32'h00010000;
      16'h0038: prdata=VIDEO_BASE;
      16'h003c: prdata=VIDEO_BYTES;
+     16'h0080: prdata=REQUIRE_SOURCE_COMPLETION?32'd7:32'd5;
+     16'h0084: prdata=shared_ms;
+     16'h0088: prdata={31'b0,shared_valid};
+     16'h008c: prdata=32'(TIME_CLOCK_HZ);
+     16'h0090: prdata=32'd1;
      default: if(paddr>=16'h0040 && paddr<=16'h007c) prdata=saved[(paddr[5:2])*32+:32];
               else pslverror=1;
    endcase

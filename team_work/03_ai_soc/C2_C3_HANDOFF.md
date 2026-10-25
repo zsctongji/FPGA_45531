@@ -1,5 +1,7 @@
 # 给 A/B 的 C2/C3 交接入口
 
+当前增量：统一时间RTL和C3可报错的APB时间后端已实现；APB已为v2.2，旧版固件不得混用。B的整机时间调用 `c3_shared_time_bind/c3_shared_now_ms`；原CLINT回调仅保留独立基线。最新说明为 [TIME_AND_C24_ACCEPTANCE.md](TIME_AND_C24_ACCEPTANCE.md)，下方为之前交接记录，真实I2C/GPIO仍未实现。
+
 日期：2026-10-24；当前文件夹为主开发来源，不是已经接线的整机。
 
 本轮 C2 实现与测试已更新到 [C2_INTEGRATION.md](C2_INTEGRATION.md) 和 `projects/06_soc_c2`，运行 `13_test_c2.cmd`。已有单 DDR 事务出口、CDC/FIFO、图像写入及所有权服务的功能仿真；尚未接真实 SoC/IP、APB 和 CPU 缓存。

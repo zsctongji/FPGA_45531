@@ -1,0 +1,55 @@
+tb_c2_cdc: PASS
+tb_c2_fifo: PASS
+tb_c2_pool: PASS
+tb_c2_axi_seed12345: PASS
+tb_c2_axi_seed67891: PASS
+tb_c2_axi_seed20261024: PASS
+tb_c2_image_seed12345: PASS
+tb_c2_image_seed67891: PASS
+tb_c2_image_seed20261024: PASS
+tb_c2_adapter_seed12345: PASS
+tb_c2_adapter_seed67891: PASS
+tb_c2_adapter_seed20261024: PASS
+tb_c2_cache: PASS
+tb_c2_source_fence: PASS
+tb_c2_a_errors: PASS
+tb_c2_video_config: PASS
+tb_c2_video_extended0_seed12345: PASS
+tb_c2_video_mem_half7_video_half3_frame_width384_frame_height216_step_x4_step_y4_seed12345: PASS
+tb_c2_video_mem_half5_video_half19_frame_width384_frame_height216_step_x4_step_y4_seed12345: PASS
+tb_c2_framebuffer_frame_width1920_frame_height1080_step_x20_step_y20_extended0_seed12345: PASS
+tb_c2_framebuffer_seed12345: PASS
+tb_c2_framebuffer_mem_half7_video_half11_frame_width383_seed67891: PASS
+tb_c2_time_p_half5_video_half7: PASS
+tb_c2_time_p_half7_video_half3: PASS
+tb_c2_time_p_half5_video_half131: PASS
+tb_c2_a_bridge_mem_half5_video_half7_seed12345: PASS
+tb_c2_a_bridge_mem_half7_video_half3_seed12345: PASS
+tb_c2_a_bridge_mem_half5_video_half19_seed12345: PASS
+tb_c2_apb_p_half3: PASS
+tb_c2_apb_p_half7: PASS
+tb_c2_apb_p_half131: PASS
+tb_c2_boundary_mem_half5_video_half7_seed12345: PASS
+tb_c2_boundary_mem_half5_video_half7_seed67891: PASS
+tb_c2_boundary_mem_half5_video_half7_seed20261024: PASS
+tb_c2_vendor_mem_half5_video_half7_seed12345: PASS
+tb_c2_vendor_mem_half5_video_half7_seed67891: PASS
+tb_c2_vendor_mem_half5_video_half7_seed20261024: PASS
+tb_c2_boundary_mem_half7_video_half3_seed12345: PASS
+tb_c2_boundary_mem_half7_video_half3_seed67891: PASS
+tb_c2_boundary_mem_half7_video_half3_seed20261024: PASS
+tb_c2_vendor_mem_half7_video_half3_seed12345: PASS
+tb_c2_vendor_mem_half7_video_half3_seed67891: PASS
+tb_c2_vendor_mem_half7_video_half3_seed20261024: PASS
+tb_c2_boundary_mem_half5_video_half131_seed12345: PASS
+tb_c2_boundary_mem_half5_video_half131_seed67891: PASS
+tb_c2_boundary_mem_half5_video_half131_seed20261024: PASS
+tb_c2_vendor_mem_half5_video_half131_seed12345: PASS
+tb_c2_vendor_mem_half5_video_half131_seed67891: PASS
+tb_c2_vendor_mem_half5_video_half131_seed20261024: PASS
+vendor_audit: PASS
+host_driver_test: PASS
+RISC-V compile failed: team_work/shared/src/cooperation_v1.c
+
+POSTCHECK RETRY: identical RV32 compiler inputs PASS; all source identities unchanged.
+PASS C2 regression: 49 RTL runs, vendor audit, host driver and RV32 compile. See postcheck_recovery in c2_selftest.json.

@@ -1,0 +1,2 @@
+PASS tb_c2_video_tail words=6 AWLEN=5 ARLEN=5 writes=1 scans=2 checked_bytes=192 final_B_fence display_backpressure repeat
+projects/06_soc_c2/sim/tb_c2_video_tail.sv:85: $finish called at 1750000 (1ps)

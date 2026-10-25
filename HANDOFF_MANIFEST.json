@@ -1,7 +1,7 @@
 {
   "source": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3",
-  "updated": "2026-10-25T13:16:39.288198+00:00",
-  "scope": "A/B/C handoff; source-pixel capture and first-DE time, C2/C3 APB v2.2, C24; remote additions preserved",
+  "updated": "2026-10-25T14:02:54.975525+00:00",
+  "scope": "A/B/C handoff; C2 full-frame GRAY8 triple buffer/scanout, source first-DE time, C2/C3 APB v2.2, C24; A/B remote changes preserved",
   "remote_archives_not_materialized": [
     "FPGA_sources_20261024_part1.zip",
     "FPGA_sources_20261024_part2.zip"
@@ -10,8 +10,8 @@
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 402,
-      "sha256": "9dda4eda15b9679c80660154d7419bbecc3afefdc2174319b54256613e0b05a2",
+      "bytes": 1583,
+      "sha256": "76b5ef739aac458d002e1ba6c72bda9b2bfb162506c31f7e7737bed44a57f863",
       "origin": "handoff_or_remote_preserved"
     },
     {
@@ -171,6 +171,12 @@
       "origin": "local_project"
     },
     {
+      "path": "20_test_video_framebuffer.cmd",
+      "bytes": 244,
+      "sha256": "7e5f1023dc3eaa0828ace3e0a46f686305548a808e78752660218fdcb9de89c4",
+      "origin": "local_project"
+    },
+    {
       "path": "A_UPLOAD_20261025.md",
       "bytes": 1239,
       "sha256": "ca88632731a0cce764799e9eb0cb2949ff6f51db575d81f0ed73c5f74c55388f",
@@ -202,8 +208,8 @@
     },
     {
       "path": "docs/current_status.md",
-      "bytes": 8641,
-      "sha256": "0e364527a4a102fa56bb3fc6cccfae313ba19304ba3c64c630881645834a7922",
+      "bytes": 9034,
+      "sha256": "eca3c648a0b1bca99a96eddb3c53b96cfbe1d4c6a01c97815811d6fdb9f86dc0",
       "origin": "local_project"
     },
     {
@@ -538,8 +544,8 @@
     },
     {
       "path": "HANDOFF_README.md",
-      "bytes": 4605,
-      "sha256": "27bd8bd93cb1b982a39b3d0412b9d5b3f70390fe27bedb232c753043f5ecf45f",
+      "bytes": 5398,
+      "sha256": "b7294d1026a6aa878a58f282c06ad727fc472e618bd776265cab6efd6b9d9eb9",
       "origin": "handoff_or_remote_preserved"
     },
     {
@@ -550,8 +556,8 @@
     },
     {
       "path": "logs/a_c2_video_pc_inference.json",
-      "bytes": 4616,
-      "sha256": "336c028ecc573efa6f863c83263587aee7692c16ff788a2698f8a784acb99d15",
+      "bytes": 4615,
+      "sha256": "e322b468a36161bc7a18446a21c7061fb8c972d193e51977699a4e32ced8a85a",
       "origin": "local_project"
     },
     {
@@ -610,8 +616,8 @@
     },
     {
       "path": "logs/c2/riscv_compile.log",
-      "bytes": 100,
-      "sha256": "a2094ca1ad2c2e0372cc3e0e1f7a29347a87a99bb85622b8a71f81d8a4e9dd3d",
+      "bytes": 113,
+      "sha256": "0a9998b52ef5b186123fea3f3c1f8eb2266baf2544215fb88bac223cc70f32ae",
       "origin": "local_project"
     },
     {
@@ -861,6 +867,42 @@
       "origin": "local_project"
     },
     {
+      "path": "logs/c2/tb_c2_framebuffer_compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "local_project"
+    },
+    {
+      "path": "logs/c2/tb_c2_framebuffer_frame_width1920_frame_height1080_step_x20_step_y20_extended0_compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "local_project"
+    },
+    {
+      "path": "logs/c2/tb_c2_framebuffer_frame_width1920_frame_height1080_step_x20_step_y20_extended0_seed12345.log",
+      "bytes": 390,
+      "sha256": "92998108e9540125c735f25dd090e45e8aa28066c89e6cca538b927fd38712cb",
+      "origin": "local_project"
+    },
+    {
+      "path": "logs/c2/tb_c2_framebuffer_mem_half7_video_half11_frame_width383_compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "local_project"
+    },
+    {
+      "path": "logs/c2/tb_c2_framebuffer_mem_half7_video_half11_frame_width383_seed67891.log",
+      "bytes": 694,
+      "sha256": "c51fdd69231248682008cd66fca8e2d141a7672fd0df85bd82eece831ff7b5a1",
+      "origin": "local_project"
+    },
+    {
+      "path": "logs/c2/tb_c2_framebuffer_seed12345.log",
+      "bytes": 694,
+      "sha256": "6c7d74484720aed42356b1a33b1ee024219ff7b9d54fdc6d0eb45879c7c97c7e",
+      "origin": "local_project"
+    },
+    {
       "path": "logs/c2/tb_c2_image_compile.log",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -1065,9 +1107,15 @@
       "origin": "local_project"
     },
     {
+      "path": "logs/c2/tb_c2_video_tail.log",
+      "bytes": 204,
+      "sha256": "4a48cf3477741dcc1da1bf8f965988854dac5b48d50090c32838b7e24885de7e",
+      "origin": "local_project"
+    },
+    {
       "path": "logs/c2/vendor_audit.log",
       "bytes": 91,
-      "sha256": "1dcf0a16879425ad603b36eda60be290004f12e5f2cca9b688e2874c50c9f404",
+      "sha256": "45bb305f249f4f1a9d45209517689225d389f73e4f6fbcedff5f8bb6ff1df634",
       "origin": "local_project"
     },
     {
@@ -1084,14 +1132,20 @@
     },
     {
       "path": "logs/c24_package_check.json",
-      "bytes": 885,
-      "sha256": "0daad7af9b95b35ebe6200c45792d468d7cfb8d900f1bdddf95cbffbe4d5101d",
+      "bytes": 985,
+      "sha256": "2034eb7888d8d74487487bd8879f6556f05c4e06be3173b4febee9162f6b39d4",
+      "origin": "local_project"
+    },
+    {
+      "path": "logs/c2_native_console.txt",
+      "bytes": 589,
+      "sha256": "04dfa90841c38593522044889e6800f6ea9e4c43159e81613fe2d4a234342bb5",
       "origin": "local_project"
     },
     {
       "path": "logs/c2_native_synthesis.json",
-      "bytes": 98843,
-      "sha256": "cfa3f8a11b639471906a46b1e468dfd432335d3d943505dbac8141b5b5f881bf",
+      "bytes": 102027,
+      "sha256": "6092573be59c87df17a6228c31b72f61b03c6ae148e3572109d12a13a29b1118",
       "origin": "local_project"
     },
     {
@@ -1102,14 +1156,20 @@
     },
     {
       "path": "logs/c2_native_warning_review.json",
-      "bytes": 9391,
-      "sha256": "744d2aaea3961f8389286e3c4e66c3d4da6083854a566ec3e903b5f69875aacb",
+      "bytes": 12380,
+      "sha256": "85db0fd4cfc3e60a13c5e8756071285d185441805c2cbf2b195ffe488b3aef64",
+      "origin": "local_project"
+    },
+    {
+      "path": "logs/c2_regression_console.txt",
+      "bytes": 2514,
+      "sha256": "4fd6a4a777c37bb5bb2f475605ed6a97bc123aee48579e73d59dd3eba0e2105b",
       "origin": "local_project"
     },
     {
       "path": "logs/c2_riscv_compile.json",
       "bytes": 1570,
-      "sha256": "f764a57b583fcb89cb888fcf33d49c15cd69890f6220ece0f8a2db7d9a4cba89",
+      "sha256": "5707ac9ef64601314f30c25d5253124c4262b522b95cbf821bbc4152feb64602",
       "origin": "local_project"
     },
     {
@@ -1120,8 +1180,8 @@
     },
     {
       "path": "logs/c2_selftest.json",
-      "bytes": 34380,
-      "sha256": "1aa396222932a24874cdc7e5b77700cd354c134840348d2e172b5b54461868a0",
+      "bytes": 38210,
+      "sha256": "a6414872f174775e7bdac3e22faf6a5b907bfa0f04df1223fd023f8ab46591dc",
       "origin": "local_project"
     },
     {
@@ -1138,8 +1198,8 @@
     },
     {
       "path": "logs/c2_vendor_audit.json",
-      "bytes": 3905,
-      "sha256": "7a26e214e63c8509305b51fef39cca586ff74785731adc71fed6c6b2e5e2cc66",
+      "bytes": 4129,
+      "sha256": "83f82d05e92b2dd9e29391acd9d652c26ebab990c18ca9c16b93c9614b21ba08",
       "origin": "local_project"
     },
     {
@@ -1152,6 +1212,12 @@
       "path": "logs/c2_vendor_synthesis.log",
       "bytes": 808,
       "sha256": "ec0fef6fbd4eca97b59ccce66488b0aec83bca635cdff026a1692664896c19e1",
+      "origin": "local_project"
+    },
+    {
+      "path": "logs/c2_video_tail.json",
+      "bytes": 1019,
+      "sha256": "acd4004ec8a4f46959df669ad1c9e65698295d9cae8935432b1e9d70f3b58715",
       "origin": "local_project"
     },
     {
@@ -35687,7 +35753,7 @@
     {
       "path": "projects/06_soc_c2/BASELINE_AUDIT.json",
       "bytes": 3567,
-      "sha256": "f96e8cd0a4a41899a19d69aea68e105eb37a4c7eeeb5c882bf1b9695e51fc903",
+      "sha256": "d6d9c069869d25bddb20ac1fbb8b645b0890e409c38d6c06338b231140441a67",
       "origin": "local_project"
     },
     {
@@ -35704,14 +35770,14 @@
     },
     {
       "path": "projects/06_soc_c2/integration/c2_native.xml",
-      "bytes": 18586,
-      "sha256": "cd7ef70eb3248d7d77edd892a7912b79b04f7d539bf0ed9f7301be4f0eedfef2",
+      "bytes": 19287,
+      "sha256": "50666e2a49009d2e568ea65f3fef47db002550ceb07b4911ce25acee73be47c4",
       "origin": "local_project"
     },
     {
       "path": "projects/06_soc_c2/integration/c2_tinyml_soc_top.v",
-      "bytes": 47345,
-      "sha256": "5ace3d2f0b35b134c638adfed0b3c812c51391302c5729c9034bd0193d754d79",
+      "bytes": 49948,
+      "sha256": "6e38b7b8ac9116ab1a7d637bddc373b774127aef4f3cbc100df33e226745b0f5",
       "origin": "local_project"
     },
     {
@@ -35740,20 +35806,20 @@
     },
     {
       "path": "projects/06_soc_c2/integration/INTEGRATION_MANIFEST.json",
-      "bytes": 9078,
-      "sha256": "ac4ea76752d346136d5a3a23c51980122c8d3e9aa04df5a6b7c53ba0e0bec622",
+      "bytes": 10121,
+      "sha256": "c9188ae5f05ded389c0704345de5b8fa4fd681d57ffa957038e14b8d443228b8",
       "origin": "local_project"
     },
     {
       "path": "projects/06_soc_c2/memory_plan.json",
-      "bytes": 1332,
-      "sha256": "1faff21b3e3e8dbc2c35c624715cb6ef13c26f9009848874665a636b0388a429",
+      "bytes": 1921,
+      "sha256": "5e6a5a7b1c26947d2a07803cd644da3dc750045432e20c9eda50fad3daee5b30",
       "origin": "local_project"
     },
     {
       "path": "projects/06_soc_c2/README.md",
-      "bytes": 6121,
-      "sha256": "3a96a8c43c532b8914a426f18e6a9b9732b4a8ad72050718a8b55480469088c0",
+      "bytes": 6463,
+      "sha256": "e8e6dfd9898148b6916f11600366de6d2c562686baac47ff7ead72c2528797f8",
       "origin": "local_project"
     },
     {
@@ -35853,6 +35919,30 @@
       "origin": "local_project"
     },
     {
+      "path": "projects/06_soc_c2/rtl/c2_video_framebuffer.sv",
+      "bytes": 8531,
+      "sha256": "9439050a47097f948e61bf3e086adca74f2c3c949d7fa3443f1fb340631cf366",
+      "origin": "local_project"
+    },
+    {
+      "path": "projects/06_soc_c2/rtl/c2_video_ingress.sv",
+      "bytes": 2687,
+      "sha256": "b6610ec71c5501f2799526be74d012dca075e87afabf3ce2d82d5849f300d762",
+      "origin": "local_project"
+    },
+    {
+      "path": "projects/06_soc_c2/rtl/c2_video_pipeline.sv",
+      "bytes": 3459,
+      "sha256": "9401308c63689b25baef2143c44de297e467fd0b4ed9b9525efe66d815f1405a",
+      "origin": "local_project"
+    },
+    {
+      "path": "projects/06_soc_c2/rtl/c2_video_scanout.sv",
+      "bytes": 2803,
+      "sha256": "711450de1c1494f02d963c686799da7892463449d59d8537ece57bdb9ff3da9d",
+      "origin": "local_project"
+    },
+    {
       "path": "projects/06_soc_c2/sim/c2_bus_fixture.sv",
       "bytes": 4129,
       "sha256": "b045a2970eb0f43410b75e1a19dbaa2f187226013dab390c3b677937af7d43d8",
@@ -35919,6 +36009,12 @@
       "origin": "local_project"
     },
     {
+      "path": "projects/06_soc_c2/sim/tb_c2_framebuffer.sv",
+      "bytes": 38775,
+      "sha256": "6fb2dda6b554589df0e79da28292bb087fc2217b798197bb63f99f8813b6f9e2",
+      "origin": "local_project"
+    },
+    {
       "path": "projects/06_soc_c2/sim/tb_c2_image.sv",
       "bytes": 14055,
       "sha256": "32b7a952382258b4db7229ea7260d9c8e26a3f755e4f2429a39e3ae39747a164",
@@ -35961,9 +36057,15 @@
       "origin": "local_project"
     },
     {
+      "path": "projects/06_soc_c2/sim/tb_c2_video_tail.sv",
+      "bytes": 4154,
+      "sha256": "0d76272bf7a5a87561367333938f2ed5b05997c298a77baa9e6e71649bf0edb2",
+      "origin": "local_project"
+    },
+    {
       "path": "README.md",
-      "bytes": 7964,
-      "sha256": "ddb81f52391462148bf80bca6c9f3aa652af27fd91a24f7fdc21c40786d4fcf0",
+      "bytes": 8577,
+      "sha256": "903a1228b02528034e4d07fbc00c74b2b30ae2a15af08e6471b8948133e3cd0e",
       "origin": "local_project"
     },
     {
@@ -36204,7 +36306,7 @@
       "path": "team_work/01_video/README.md",
       "bytes": 1965,
       "sha256": "6326b3fa39d5478baf76928625bb88f659b01b228e6740c084498733ef4c633c",
-      "origin": "local_project"
+      "origin": "handoff_or_remote_preserved"
     },
     {
       "path": "team_work/01_video/本人报告章节_A.md",
@@ -36219,6 +36321,48 @@
       "origin": "handoff_or_remote_preserved"
     },
     {
+      "path": "team_work/02_sensors_alarm/B_离线工程与接线教程_20261025.zip",
+      "bytes": 2093406,
+      "sha256": "817eec47dfc49f66b722004601dbba5417d83a522f5c74a4ac9ca92156cf7573",
+      "origin": "handoff_or_remote_preserved"
+    },
+    {
+      "path": "team_work/02_sensors_alarm/docs/B_厂家资料核对_20261025.md",
+      "bytes": 8443,
+      "sha256": "610cdcefefb1e604309051975c47ff0dc4ea41f30c6562d4e269db362d2222e6",
+      "origin": "handoff_or_remote_preserved"
+    },
+    {
+      "path": "team_work/02_sensors_alarm/docs/B_实物核对_20261025.md",
+      "bytes": 7020,
+      "sha256": "67c511b07745c02b82b0aaf19981fb56f9f1876f47e57617f0e18812fdcdefe9",
+      "origin": "handoff_or_remote_preserved"
+    },
+    {
+      "path": "team_work/02_sensors_alarm/docs/B_接入说明.md",
+      "bytes": 6780,
+      "sha256": "36c79b3f7bd8077a453a2d2e053af7bff725e24cbb2c8bd493608acc72dfa09b",
+      "origin": "handoff_or_remote_preserved"
+    },
+    {
+      "path": "team_work/02_sensors_alarm/docs/B_接线教程_20261025.docx",
+      "bytes": 373747,
+      "sha256": "f75ff51253be42cbac758bcf815732b51924f8665ba972b5fbb8675cdd62b279",
+      "origin": "handoff_or_remote_preserved"
+    },
+    {
+      "path": "team_work/02_sensors_alarm/docs/B_接线教程_20261025.md",
+      "bytes": 12863,
+      "sha256": "5f1c7b50f12451c3dbbab1781236031dc826aa8f68eaff0e6d5739a1b7ad21d3",
+      "origin": "handoff_or_remote_preserved"
+    },
+    {
+      "path": "team_work/02_sensors_alarm/docs/source_provenance_public.json",
+      "bytes": 4936,
+      "sha256": "33ab8d4bf2276387fc64196d1c6f184440c9ad803913c395fa0953ba62d2aa1e",
+      "origin": "handoff_or_remote_preserved"
+    },
+    {
       "path": "team_work/02_sensors_alarm/docs/wiring_images/j28_photo.jpg",
       "bytes": 262062,
       "sha256": "f51891bc902363e58a093531600859454225e64dc4e300d73cc65da906f43831",
@@ -36228,6 +36372,18 @@
       "path": "team_work/02_sensors_alarm/docs/wiring_images/j28_pinmap.png",
       "bytes": 72448,
       "sha256": "649b0b0f8811042ac4a49fdd0c45c453ff4fe878effaaa19add11fbd6380c199",
+      "origin": "handoff_or_remote_preserved"
+    },
+    {
+      "path": "team_work/02_sensors_alarm/docs/待核对接线表.csv",
+      "bytes": 4558,
+      "sha256": "4f127fec7780bd2cb118920296902232038b57846410adf8a09d82319755d72a",
+      "origin": "handoff_or_remote_preserved"
+    },
+    {
+      "path": "team_work/02_sensors_alarm/host_tests_20261025.log",
+      "bytes": 574,
+      "sha256": "786d8cddb52918abaf67c8eaaee14a0742b85e6e9f025379307cc5ab34e18b2f",
       "origin": "handoff_or_remote_preserved"
     },
     {
@@ -36250,9 +36406,9 @@
     },
     {
       "path": "team_work/02_sensors_alarm/README.md",
-      "bytes": 1951,
-      "sha256": "7f7eaedcdbc35526f962b9e14a944bc28a10b193a73af02c9682d66b53817894",
-      "origin": "local_project"
+      "bytes": 3877,
+      "sha256": "4bc8bb777b2329921ab95cc4eda96740333c2d8c737fee5fa5face12c1722781",
+      "origin": "handoff_or_remote_preserved"
     },
     {
       "path": "team_work/02_sensors_alarm/src/b_alarm.c",
@@ -36460,14 +36616,14 @@
     },
     {
       "path": "team_work/03_ai_soc/README.md",
-      "bytes": 5193,
-      "sha256": "65cb99bcc0a0785531a20c38e86eb971e798635ecd5ac44707e4f19ae2452d49",
+      "bytes": 5544,
+      "sha256": "cd12359050426b9994c949cb9ee86cbc8eebe6f99aabde4022b2e3459a73368d",
       "origin": "local_project"
     },
     {
       "path": "team_work/03_ai_soc/SOURCE_VIDEO_CAPTURE.md",
-      "bytes": 7249,
-      "sha256": "6c556e1c00b649e3aaf5d26f3109be5a56be0d9c9dffed3d5cf6481651cb56f3",
+      "bytes": 7548,
+      "sha256": "33022f4cb112e30e0be5ca70820d887a23f42ba89796ad4874f115244212c668",
       "origin": "local_project"
     },
     {
@@ -36531,6 +36687,12 @@
       "origin": "local_project"
     },
     {
+      "path": "team_work/03_ai_soc/VIDEO_FRAMEBUFFER_HANDOFF.md",
+      "bytes": 9943,
+      "sha256": "ce725803ab32025e390498b2108b0ffa9242d1fa85ea45bc26fa6e0554a809ee",
+      "origin": "local_project"
+    },
+    {
       "path": "team_work/README.md",
       "bytes": 620,
       "sha256": "0dfa5120218fb2a7c627b9344df9e369df241690905c3aba656cd5a9d68e281b",
@@ -36562,8 +36724,8 @@
     },
     {
       "path": "team_work/shared/interface_contract_v1.md",
-      "bytes": 10504,
-      "sha256": "2f38fe34e1742fdbe46f1c37f91e61971c77524be3a2f583e475435442df4b51",
+      "bytes": 10873,
+      "sha256": "c8318cff2f33d4bb46a2a2a68dc45c71ce2915d31ec1f56d328e61641d21be80",
       "origin": "local_project"
     },
     {
@@ -36622,14 +36784,14 @@
     },
     {
       "path": "tools/audit_c2_baselines.py",
-      "bytes": 6811,
-      "sha256": "32aa7449101bd0d932fb29212989e10739c58b42f17ec3ac959a1a5435760cff",
+      "bytes": 7474,
+      "sha256": "e8aac50a3e82978c65872ddb4315576aed14b925ce88a9a590b67c82c0f87c2d",
       "origin": "local_project"
     },
     {
       "path": "tools/audit_c2_vendor.py",
-      "bytes": 4948,
-      "sha256": "cee1a61bb28556bd8ab4b06b302ab336ff054a9d326a3a951833910d7b2a3c9d",
+      "bytes": 5554,
+      "sha256": "8bbcadd4e0468d2d180b40f9ac14e8a2b2cf8b5ea0e22fbad0bf8de0d01334c4",
       "origin": "local_project"
     },
     {
@@ -36717,6 +36879,12 @@
       "origin": "local_project"
     },
     {
+      "path": "tools/check_c2_video_tail.py",
+      "bytes": 1673,
+      "sha256": "597e8e3b937d4bd73fa5562d90363bb125fb103757f1f75cafbcbe5036a281bc",
+      "origin": "local_project"
+    },
+    {
       "path": "tools/check_c4_riscv.ps1",
       "bytes": 2713,
       "sha256": "e1687e5af34863b3ff293019c926f77936a786588eccf2b09a3cadd99012613a",
@@ -36801,9 +36969,15 @@
       "origin": "local_project"
     },
     {
+      "path": "tools/prepare_c2_framebuffer.py",
+      "bytes": 17033,
+      "sha256": "e19bc8a35a64c5c802895968329f1be8f080f2f790e90e9d7a7f21ec2fd0fe68",
+      "origin": "local_project"
+    },
+    {
       "path": "tools/prepare_c2_vendor.py",
-      "bytes": 20074,
-      "sha256": "7c4a6e2597207c56d7d4486809238a6aa993ef129239539a056b8614ef3bd59d",
+      "bytes": 23135,
+      "sha256": "5438521ee0fd26e2afa51a1240a6b8ffb43768d9c9e5627276a4e58aff4e37d8",
       "origin": "local_project"
     },
     {
@@ -36868,8 +37042,8 @@
     },
     {
       "path": "tools/run_c2_selftest.py",
-      "bytes": 9524,
-      "sha256": "161926fdbeb43bb9dcf4da2c7a387211d8238483d502e45efd002655e8357137",
+      "bytes": 10347,
+      "sha256": "53aa8886e287c505ca1735b1748fc112687a8728501620855778296278383c82",
       "origin": "local_project"
     },
     {
@@ -36934,8 +37108,8 @@
     },
     {
       "path": "tools/verify_c24_package.py",
-      "bytes": 5306,
-      "sha256": "b4aa04647254db0c649534332191e5f47d56913d25165151dd127349bbc91370",
+      "bytes": 6084,
+      "sha256": "8c9bbe41f73c73c86fd6e6c121a3893042d68f487322597b41b8af9881f8cb33",
       "origin": "local_project"
     }
   ],

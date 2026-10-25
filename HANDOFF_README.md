@@ -48,3 +48,15 @@ then preserved through delayed EOF and DDR descriptors. APB remains v2.2.
 See team_work/03_ai_soc/SOURCE_VIDEO_CAPTURE.md and 19_test_video_capture.cmd.
 The source machine passed 46 RTL runs, native map and 678 package identity checks;
 physical MIPI/HDMI, DDR mapping, PNR and board acceptance remain pending.
+
+## Full-frame video update
+
+The native top internally connects a GRAY8 triple framebuffer writer and raster
+scanout to C2's video AXI port. CPU S0, C2 S1 and TinyML S2 share one DDR controller.
+See team_work/03_ai_soc/VIDEO_FRAMEBUFFER_HANDOFF.md and 20_test_video_framebuffer.cmd
+for byte addresses, stride, first-DE timestamps, final BRESP fences and frame roles.
+The source machine passed 49 RTL runs including full-HD read/write/display and
+concurrent video/AI/CPU/TinyML fault/recovery tests. CPU/TinyML traffic in functional
+tests is synthetic; native map includes real CPU/accelerator logic. Board execution,
+physical MIPI/HDMI, legacy two-pixel adaptation, PNR, CDC and bandwidth remain open.
+Default live MMIO stays disabled; inherited vendor warnings remain documented.

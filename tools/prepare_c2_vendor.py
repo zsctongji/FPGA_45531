@@ -180,7 +180,15 @@ def generate_overlay():
                   'output wire [31:0] c2_shared_video_ms',
                   'output wire c2_shared_video_valid',
                   'output wire [31:0] c2_a_completed,c2_a_rejected,c2_a_source_faults']
-    declarations=['input wire c2_video_clk,c2_map_enable',*spi_ports,*sample_ports]+[d+' wire '+w+' c2_'+n for d,w,n in ports if n.startswith('video_')]
+    display_ports=['input wire c2_display_clk,c2_display_vs,c2_display_de,c2_display_hs',
+                   'output wire [23:0] c2_display_rgb',
+                   'output wire c2_out_vs,c2_out_de,c2_out_hs,c2_display_busy,c2_display_available,c2_display_failed',
+                   'output wire [31:0] c2_display_frame_id,c2_display_timestamp_ms',
+                   'output wire [31:0] c2_video_published,c2_video_dropped,c2_video_overflow_frames',
+                   'output wire [31:0] c2_video_write_errors,c2_video_read_errors,c2_video_underflows',
+                   'output wire [31:0] c2_video_repeated,c2_video_empty_scans,c2_video_missed_scans,c2_video_completed_scans',
+                   'output wire [31:0] c2_video_max_aw_wait,c2_video_max_ar_wait']
+    declarations=['input wire c2_video_clk,c2_map_enable',*spi_ports,*sample_ports,*display_ports]
     text=text.replace('   // Clock and reset ports',',\n'.join(declarations)+',\n   // Clock and reset ports',1)
     # Match vendor beta's 8-bit DDR IDs explicitly; no implicit 8-to-4 truncation.
     text=re.sub(r'ddr3_top\s+u_ddr3_top',"ddr3_top #(.AXI_ID_WIDTH(8)) u_ddr3_top",text,count=1)
@@ -213,6 +221,7 @@ assign userInterruptB=c2_irq;
     text=text[:a]+vendor
     wires='\n'.join(f'wire [{w-1}:0] c2_cpu_{n};' for n,d,w in SP)
     wires+='\n'+'\n'.join('wire '+w+' c2_'+n+';' for d,w,n in ports if n.startswith('v_'))
+    wires+='\n'+'\n'.join('wire '+w+' c2_'+n+';' for d,w,n in ports if n.startswith('video_'))
     cpu='''c2_axi_to_vendor #(.ALLOW_NARROW(1),.SOURCE_BASE(32'h1000),
  .TARGET_BASE(32'h1000),.WINDOW_BYTES(32'he0000000)) c2_cpu_adapter(
 .clk(io_memoryClk),.rst_n(c2_mem_release[1]),.enable(1'b1),
@@ -250,13 +259,34 @@ assign userInterruptB=c2_irq;
 '''
     # Declarations precede instances so implicit-net warnings cannot hide widths.
     text=text.replace('axi_interconnect_beta #(',wires+'\naxi_interconnect_beta #(',1)
-    text=text.rsplit('endmodule',1)[0]+cpu+block+image_source+'endmodule\n'
+    video_pipeline='''c2_video_pipeline #(.WIDTH(C2_FRAME_WIDTH),.HEIGHT(C2_FRAME_HEIGHT)) c2_full_video(
+.arst_n(!io_systemReset),.mem_clk(io_memoryClk),.video_clk(c2_video_clk),.display_clk(c2_display_clk),
+.enable(c2_map_enable),.time_valid(c2_shared_video_valid && c2_capture_config_valid),
+.pixel_vs(c2_pixel_vs),.pixel_de(c2_pixel_de),.pixel_gray(c2_pixel_gray),
+.now_ms(c2_shared_video_ms),.source_frames(c2_capture_source_frames),
+.record_valid(c2_capture_record_valid),.record_complete(c2_capture_record_complete),
+.record_id(c2_capture_record_frame_id),.record_ms(c2_capture_record_timestamp_ms),
+.display_vs(c2_display_vs),.display_de(c2_display_de),.display_hs(c2_display_hs),
+.display_rgb(c2_display_rgb),.out_vs(c2_out_vs),.out_de(c2_out_de),.out_hs(c2_out_hs),
+.display_busy(c2_display_busy),.display_available(c2_display_available),.display_failed(c2_display_failed),
+.display_frame_id(c2_display_frame_id),.display_timestamp_ms(c2_display_timestamp_ms),
+'''
+    stats=['published','dropped','overflow_frames','write_errors','read_errors','repeated','empty_scans',
+           'underflows','missed_scans','completed_scans','max_aw_wait','max_ar_wait']
+    video_pipeline+=',\n'.join('.'+n+'(c2_video_'+n+')' for n in stats)+',\n'
+    video_pipeline+=',\n'.join('.'+n+'(c2_video_'+n+')' for n,d,w in SP)+');\n'
+    video_pipeline+="""assign c2_video_awid=4'he;assign c2_video_arid=4'h7;
+assign c2_video_awsize=3'd4;assign c2_video_arsize=3'd4;
+assign c2_video_awburst=2'b01;assign c2_video_arburst=2'b01;
+assign c2_video_awlock=1'b0;assign c2_video_arlock=1'b0;
+"""
+    text=text.rsplit('endmodule',1)[0]+cpu+block+image_source+video_pipeline+'endmodule\n'
     (out/'c2_tinyml_soc_top.v').write_text(text)
     ns='http://www.efinixinc.com/enf_proj';ET.register_namespace('efx',ns)
     ET.register_namespace('xsi','http://www.w3.org/2001/XMLSchema-instance')
     n=lambda x:'{'+ns+'}'+x
     tree=ET.parse(base/'Ti60F225_tinyml_helloworld.xml');project=tree.getroot()
-    project.set('name','c2_native');project.set('description','Map-only native SoC/DDR overlay; external video ports; no physical integration')
+    project.set('name','c2_native');project.set('description','Map-only SoC with GRAY8 triple framebuffer and raster scanout; physical pins/timing absent')
     design=project.find(n('design_info'));design.find(n('top_module')).set('name','c2_tinyml_soc_top')
     architecture=design.find(n('top_vhdl_arch'))
     if architecture is not None:design.remove(architecture)
@@ -280,10 +310,16 @@ assign userInterruptB=c2_irq;
         if setting.get('name')=='include':setting.set('value',(base/'ip/sapphire_soc').as_posix())
     ET.indent(tree,space='    ');tree.write(out/'c2_native.xml',encoding='utf-8',xml_declaration=True)
     for file in (base/'ip/sapphire_soc').glob('*.bin'):shutil.copyfile(file,out/file.name)
-    manifest={'scope':'native SoC/DDR map-only with pinned A source-pixel capture; physical MIPI/HDMI and constraints absent',
+    manifest={'scope':'native SoC/DDR map-only with pinned A capture, GRAY8 triple framebuffer and raster scanout; physical MIPI/HDMI constraints absent',
               'video_input_contract':'GRAY8_1PPC_VS_HIGH_DE_v1',
               'timestamp_latch':'first source DE pixel; preserved through grid EOF and DDR descriptor',
               'capture_default':{'width':1920,'height':1080,'step_x':20,'step_y':20},
+              'framebuffer':{'format':'GRAY8','byte_order':'leftmost pixel in lowest byte','stride':1920,
+                             'frame_bytes':2073600,'bank_pitch':2076672,'banks':3,
+                             'relative_bank_bases':[0,2076672,4153344],
+                             'candidate_physical_base':'0x08010000','physical_map_verified':False,
+                             'publish_fence':'complete A source verdict and all AXI BRESP OKAY',
+                             'selection':'oldest READY at display VS; otherwise repeat DISPLAY; drop new source if no FREE'},
               'baseline_top_sha256':original_sha,'baseline_modified':False,'candidate_map_requires_external_enable':True,
               'ddr_instances':len(re.findall(r'ddr3_top\s*#',text)),
               'sources':{str(path.relative_to(ROOT)).replace('\\','/'):hashlib.sha256(path.read_bytes()).hexdigest() for path in sources}}

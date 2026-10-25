@@ -1,5 +1,9 @@
 # 易灵思赛题三：多模态 AI 智能终端
 
+2026-10-25 完整视频帧缓存增量：C2已接入GRAY8三缓冲写入与RGB/光栅显示读出，唯一DDR出口与AI DMA共享；首DE时间、stride、最终BRESP发布屏障和帧切换见 `team_work/03_ai_soc/VIDEO_FRAMEBUFFER_HANDOFF.md`。入口20_test_video_framebuffer.cmd；最终结果以logs/c2_selftest.json和logs/c2_native_synthesis.json为准。下面46次/678项是源像素阶段记录。
+
+本阶段最终结果：49次RTL回归、独立短突发专项、native map、桌面输入对照和697项包身份检查PASS。未做物理MIPI/HDMI适配、PNR、时序/CDC签核或板上测试。
+
 2026-10-25 源视频采样增量：native顶层已接A的video_a_capture，输入改为单像素GRAY8/VS/DE，公共时间在首个有效DE像素锁存并保留到DDR描述符；不再用网格SOF改写时间。46次RTL回归、全帧桌面对照、新native综合和678项配套检查PASS。最新说明见 `team_work/03_ai_soc/SOURCE_VIDEO_CAPTURE.md`，入口19_test_video_capture.cmd。真实MIPI/HDMI、物理约束和上板仍待验收。
 
 2026-10-25 后续更新：C2/C3 公共 APB 毫秒计数器、视频快照CDC和C24验收工具已实现；42次RTL回归及新版native综合PASS。APB升级至v2.2（0x00020002），旧固件不得混用。当前入口18_test_time_c24.cmd，说明见 `team_work/03_ai_soc/TIME_AND_C24_ACCEPTANCE.md`。物理时间/地址/视频和上板仍待验收。下方39次及v2.1为前阶段记录。

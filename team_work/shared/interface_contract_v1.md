@@ -1,5 +1,7 @@
 # C 发布的接口 v1：软件 ABI 已实现，物理接入待验证
 
+2026-10-25 视频增量：源像素使用GRAY8/VS/DE，首DE锁存公共时间；完整视频三缓冲与显示读出已在C2 native逻辑内部相连。缓存字节地址、stride、最终B响应屏障、显示1像素/拍RGB/光栅边界与A旧双像素适配事项见 `../03_ai_soc/VIDEO_FRAMEBUFFER_HANDOFF.md`。本软件ABI不新增视频bank的CPU所有权。
+
 日期：2026-10-24。替代 v0 中尚未确定的软件字段。本文是 C 的可编译交接版本，不代表 A/B 已评审，也不代表整机总线/DDR 已连接。头文件为 include/cooperation_v1.h；缓存参考实现为 src/cooperation_v1.c；B 的调用接口为 ../03_ai_soc/c3_hal/c3_hal.h。
 
 ## 已固定的软件边界

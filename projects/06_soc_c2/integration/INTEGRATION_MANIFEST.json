@@ -1,5 +1,5 @@
 {
-  "scope": "native SoC/DDR map-only with pinned A source-pixel capture; physical MIPI/HDMI and constraints absent",
+  "scope": "native SoC/DDR map-only with pinned A capture, GRAY8 triple framebuffer and raster scanout; physical MIPI/HDMI constraints absent",
   "video_input_contract": "GRAY8_1PPC_VS_HIGH_DE_v1",
   "timestamp_latch": "first source DE pixel; preserved through grid EOF and DDR descriptor",
   "capture_default": {
@@ -8,13 +8,30 @@
     "step_x": 20,
     "step_y": 20
   },
+  "framebuffer": {
+    "format": "GRAY8",
+    "byte_order": "leftmost pixel in lowest byte",
+    "stride": 1920,
+    "frame_bytes": 2073600,
+    "bank_pitch": 2076672,
+    "banks": 3,
+    "relative_bank_bases": [
+      0,
+      2076672,
+      4153344
+    ],
+    "candidate_physical_base": "0x08010000",
+    "physical_map_verified": false,
+    "publish_fence": "complete A source verdict and all AXI BRESP OKAY",
+    "selection": "oldest READY at display VS; otherwise repeat DISPLAY; drop new source if no FREE"
+  },
   "baseline_top_sha256": "174a8eadd8da0fbd78d249c3ac0db4c17914ed14718b1eb95412a7683a91a5cd",
   "baseline_modified": false,
   "candidate_map_requires_external_enable": true,
   "ddr_instances": 1,
   "sources": {
     "projects/03_tinyml/debug_top.v": "9e46c35b561b07a675302be235d98bd3c23bbc7ef89506025c633b0a2cf51c3a",
-    "projects/06_soc_c2/integration/c2_tinyml_soc_top.v": "5ace3d2f0b35b134c638adfed0b3c812c51391302c5729c9034bd0193d754d79",
+    "projects/06_soc_c2/integration/c2_tinyml_soc_top.v": "6e38b7b8ac9116ab1a7d637bddc373b774127aef4f3cbc100df33e226745b0f5",
     "projects/03_tinyml/src/ddr3_controller/ddr3_parameter.vh": "2c4c19966ecb897a477dcd7374dacc543c8cf54c9b128faf1a69685cb34f1d75",
     "projects/03_tinyml/src/ddr3_controller/ddr3_top.v": "71b53e8a0861705fa7e2d8b38e684e0f0a9235db64a63f29046b2371963617e6",
     "projects/03_tinyml/src/ddr3_controller/memory_bus_ctl/memory_bus_ctl.v": "9fbcf768f4fbd5d6a21333ecdf9bea55b302a2b124a1da641fb79080bc9b6934",
@@ -75,6 +92,10 @@
     "projects/06_soc_c2/rtl/c2_source_fence.sv": "1e865d73c3371428753db54562cfd6ef383ecba378e11e164bb2bc0c3a7f5482",
     "projects/06_soc_c2/rtl/c2_system_boundary.sv": "bf55c29bef46b953d7cfd152883f267464fbd3e97478b6f51362bdfdef3330ac",
     "projects/06_soc_c2/rtl/c2_vendor_attachment.sv": "8e0e455bd8715f9cfd0790ec08ae68942b0ea2f88d4e0ce8745d725a0e75277e",
+    "projects/06_soc_c2/rtl/c2_video_framebuffer.sv": "9439050a47097f948e61bf3e086adca74f2c3c949d7fa3443f1fb340631cf366",
+    "projects/06_soc_c2/rtl/c2_video_ingress.sv": "b6610ec71c5501f2799526be74d012dca075e87afabf3ce2d82d5849f300d762",
+    "projects/06_soc_c2/rtl/c2_video_pipeline.sv": "9401308c63689b25baef2143c44de297e467fd0b4ed9b9525efe66d815f1405a",
+    "projects/06_soc_c2/rtl/c2_video_scanout.sv": "711450de1c1494f02d963c686799da7892463449d59d8537ece57bdb9ff3da9d",
     "projects/06_soc_c2/a_side/ai_frame_mailbox.v": "be2a19b07be3b228001b64fc32a1fde2ed12ae12475dec29eeba989c9c2bb099",
     "projects/06_soc_c2/a_side/video_a_capture.v": "6fd4ba3f87ebc42e7ca4e90292da10d1233d8b6cd2b26311cc05cb818e673d57",
     "projects/06_soc_c2/a_side/video_grid_sampler.v": "9bd066f70ff8778caa7f4f18cfa4709a949b1c61ceb648cd79d015e00d57db84"

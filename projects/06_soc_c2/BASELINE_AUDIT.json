@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "generated": "2026-10-25T12:58:06.479500+00:00",
+  "generated": "2026-10-25T14:00:10.252266+00:00",
   "checks": [
     "TinyML single DDR instance identified",
     "Vendor interconnect has three source slots",

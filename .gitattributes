@@ -5,3 +5,21 @@
 /firmware/c24_frame_person_detect/*.hex binary
 /firmware/c24_frame_person_detect/*.map binary
 /projects/06_soc_c2/a_side/** -text whitespace=cr-at-eol
+/projects/06_soc_c2/integration/c2_tinyml_soc_top.v -text whitespace=cr-at-eol
+/projects/06_soc_c2/rtl/c2_a_video_source.sv -text whitespace=cr-at-eol
+/projects/06_soc_c2/rtl/c2_video_framebuffer.sv -text whitespace=cr-at-eol
+/projects/06_soc_c2/rtl/c2_video_ingress.sv -text whitespace=cr-at-eol
+/projects/06_soc_c2/rtl/c2_video_pipeline.sv -text whitespace=cr-at-eol
+/projects/06_soc_c2/rtl/c2_video_scanout.sv -text whitespace=cr-at-eol
+/projects/06_soc_c2/sim/tb_c2_framebuffer.sv -text whitespace=cr-at-eol
+/projects/06_soc_c2/sim/tb_c2_video_config.sv -text whitespace=cr-at-eol
+/projects/06_soc_c2/sim/tb_c2_video_tail.sv -text whitespace=cr-at-eol
+/tools/audit_c2_baselines.py -text whitespace=cr-at-eol
+/tools/audit_c2_vendor.py -text whitespace=cr-at-eol
+/tools/check_a_c2_pc.py -text whitespace=cr-at-eol
+/tools/check_c2_video_tail.py -text whitespace=cr-at-eol
+/tools/prepare_c2_framebuffer.py -text whitespace=cr-at-eol
+/tools/prepare_c2_vendor.py -text whitespace=cr-at-eol
+/tools/prepare_c2_video_test.py -text whitespace=cr-at-eol
+/tools/run_c2_selftest.py -text whitespace=cr-at-eol
+/tools/verify_c24_package.py -text whitespace=cr-at-eol

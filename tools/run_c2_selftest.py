@@ -47,6 +47,8 @@ def main():
         if prepared.returncode:raise RuntimeError(prepared.stdout+prepared.stderr)
         prepared=subprocess.run([sys.executable,str(ROOT/'tools/prepare_c2_video_test.py')],capture_output=True,text=True,encoding="utf-8",errors="replace",timeout=30)
         if prepared.returncode:raise RuntimeError(prepared.stdout+prepared.stderr)
+        prepared=subprocess.run([sys.executable,str(ROOT/'tools/prepare_c2_framebuffer.py')],capture_output=True,text=True,encoding="utf-8",errors="replace",timeout=30)
+        if prepared.returncode:raise RuntimeError(prepared.stdout+prepared.stderr)
         for name in ['a_c2_video_frame0.gray','a_c2_video_frame0.json']:
             (BUILD/name).unlink(missing_ok=True)
         rtl = sorted((PROJECT / 'rtl').glob('*.sv'))
@@ -58,6 +60,7 @@ def main():
                ROOT/'team_work/03_ai_soc/tests/test_c3_shared_time.c',
                ROOT/'tools/prepare_a_c2.py',ROOT/'projects/06_soc_c2/a_side/SOURCE_MANIFEST.json',
                ROOT/'tools/prepare_c2_video_test.py',ROOT/'team_work/shared/a_interface_v1.md',
+               ROOT/'tools/prepare_c2_framebuffer.py',
                ROOT/'team_work/03_ai_soc/tests/test_c2_driver.c',ROOT/'tools/prepare_c2_vendor.py',
                ROOT/'tools/audit_c2_vendor.py',ROOT/'tools/check_c2_riscv.py',ROOT/'tools/build_c2_host.cmd',
                ROOT/'projects/03_tinyml/ip/sapphire_soc/sapphire_soc.v',ROOT/'build/c2/vendor_datacache.v']
@@ -75,6 +78,12 @@ def main():
         for mem,video in [(7,3),(5,19)]:
             matrix.append(('video',{'MEM_HALF':mem,'VIDEO_HALF':video,'FRAME_WIDTH':384,
                                    'FRAME_HEIGHT':216,'STEP_X':4,'STEP_Y':4},[12345]))
+        # Real full-frame video writer/scanout share C2 with AI DMA and synthetic
+        # CPU/TinyML masters. Padded width383 also checks per-line stride bytes.
+        matrix.append(('framebuffer',{'FRAME_WIDTH':1920,'FRAME_HEIGHT':1080,
+                                      'STEP_X':20,'STEP_Y':20,'EXTENDED':0},[12345]))
+        matrix.append(('framebuffer',{},[12345]))
+        matrix.append(('framebuffer',{'MEM_HALF':7,'VIDEO_HALF':11,'FRAME_WIDTH':383},[67891]))
         for p,v in [(5,7),(7,3),(5,131)]:
             matrix.append(('time',{'P_HALF':p,'VIDEO_HALF':v},[None]))
         for mem,video in [(5,7),(7,3),(5,19)]:
@@ -107,7 +116,7 @@ def main():
                 record['tests'].append(case)
                 save()
                 command = [str(vvp), str(executable)] + ([f'+SEED={seed}'] if seed is not None else [])
-                result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=300 if name=='video' else 90,cwd=BUILD)
+                result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=900 if name=='framebuffer' else (300 if name=='video' else 90),cwd=BUILD)
                 output = result.stdout + result.stderr
                 logfile = LOGS / (key + '.log')
                 logfile.write_text(output, encoding='utf-8')

@@ -7,7 +7,8 @@
     "EFX-0011": 252,
     "EFX-0201": 10,
     "EFX-0200": 20,
-    "EFX-0657": 8
+    "EFX-0657": 14,
+    "EFX-0666": 2
   },
   "A_snapshot_warnings": [
     "[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 13 (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\a_side\\ai_frame_mailbox.v:29)"
@@ -56,6 +57,26 @@
     "[EFX-0011 VERI-WARNING] net 'CsrPlugin_mtvec_mode[1]' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:10649)",
     "[EFX-0011 VERI-WARNING] net 'one_hot_mem' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\round_robin_priority_arbiter.v:47)"
   ],
-  "scope": "Native map with pinned A source-pixel capture; inherited warnings retained; physical CDC, PNR and board checks remain open",
-  "synthesis_report_sha256": "cfa3f8a11b639471906a46b1e468dfd432335d3d943505dbac8141b5b5f881bf"
+  "video_logic_memory_warnings": [
+    "[EFX-0657 WARNING] Mapping into logic memory block 'gen' (64 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_buffer_manager.sv:18) because size is too small (<=64)",
+    "[EFX-0666 WARNING] Mapping into logic multiplier 'mult_30'. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_video_framebuffer.sv:59)",
+    "[EFX-0666 WARNING] Mapping into logic multiplier 'mult_54'. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_video_framebuffer.sv:62)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'c2_attachment/core/publisher/manager/meta' (1024 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_buffer_manager.sv:19) because it has async writer.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'c2_attachment/core/hub/writer/buffer' (2048 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_image_writer.sv:24) because read port is not synchronous.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'c2_attachment/core/pixels/memory' (2048 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_async_fifo.sv:8) because read port is not synchronous.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'c2_full_video/framebuffer/stamps' (96 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_video_framebuffer.sv:28) because it has async writer.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'c2_full_video/framebuffer/ids' (96 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_video_framebuffer.sv:28) because it has async writer.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'c2_full_video/framebuffer/output_cdc/memory' (8320 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_async_fifo.sv:8) because read port is not synchronous.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'c2_full_video/framebuffer/rbuf' (2048 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_video_framebuffer.sv:34) because read port is not synchronous.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'c2_full_video/framebuffer/wbuf' (2048 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_video_framebuffer.sv:34) because read port is not synchronous.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'c2_full_video/ingress/crossing/memory' (8320 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_async_fifo.sv:8) because read port is not synchronous."
+  ],
+  "resources": {
+    "EFX_FF": 53312,
+    "EFX_DSP48": 51,
+    "EFX_ADD": 6705,
+    "EFX_LUT4": 52802
+  },
+  "scope": "Native map with GRAY8 triple framebuffer and raster scanout; FIFOs currently map to logic; physical CDC, BRAM optimization, PNR and board checks remain open",
+  "synthesis_report_sha256": "6092573be59c87df17a6228c31b72f61b03c6ae148e3572109d12a13a29b1118"
 }

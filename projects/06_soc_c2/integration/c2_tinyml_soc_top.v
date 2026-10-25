@@ -60,37 +60,14 @@ output wire [31:0] c2_capture_source_frames,c2_capture_format_errors,
 output wire [31:0] c2_shared_video_ms,
 output wire c2_shared_video_valid,
 output wire [31:0] c2_a_completed,c2_a_rejected,c2_a_source_faults,
-input wire  c2_video_awvalid,
-output wire  c2_video_awready,
-input wire [31:0] c2_video_awaddr,
-input wire [7:0] c2_video_awlen,
-input wire  c2_video_wvalid,
-output wire  c2_video_wready,
-input wire [127:0] c2_video_wdata,
-input wire [15:0] c2_video_wstrb,
-input wire  c2_video_wlast,
-output wire  c2_video_bvalid,
-input wire  c2_video_bready,
-output wire [1:0] c2_video_bresp,
-input wire  c2_video_arvalid,
-output wire  c2_video_arready,
-input wire [31:0] c2_video_araddr,
-input wire [7:0] c2_video_arlen,
-output wire  c2_video_rvalid,
-input wire  c2_video_rready,
-output wire [127:0] c2_video_rdata,
-output wire  c2_video_rlast,
-output wire [1:0] c2_video_rresp,
-input wire [4-1:0] c2_video_awid,
-input wire [2:0] c2_video_awsize,
-input wire [1:0] c2_video_awburst,
-input wire  c2_video_awlock,
-input wire [4-1:0] c2_video_arid,
-input wire [2:0] c2_video_arsize,
-input wire [1:0] c2_video_arburst,
-input wire  c2_video_arlock,
-output wire [4-1:0] c2_video_bid,
-output wire [4-1:0] c2_video_rid,
+input wire c2_display_clk,c2_display_vs,c2_display_de,c2_display_hs,
+output wire [23:0] c2_display_rgb,
+output wire c2_out_vs,c2_out_de,c2_out_hs,c2_display_busy,c2_display_available,c2_display_failed,
+output wire [31:0] c2_display_frame_id,c2_display_timestamp_ms,
+output wire [31:0] c2_video_published,c2_video_dropped,c2_video_overflow_frames,
+output wire [31:0] c2_video_write_errors,c2_video_read_errors,c2_video_underflows,
+output wire [31:0] c2_video_repeated,c2_video_empty_scans,c2_video_missed_scans,c2_video_completed_scans,
+output wire [31:0] c2_video_max_aw_wait,c2_video_max_ar_wait,
    // Clock and reset ports
    input                              axi_clk,      
    input                              core_clk,     // CORE CLK @ 100MHz
@@ -739,6 +716,37 @@ wire  c2_v_event_slot;
 wire [31:0] c2_v_event_generation;
 wire [511:0] c2_v_event_descriptor;
 wire [31:0] c2_v_source_fnv;
+wire  c2_video_awvalid;
+wire  c2_video_awready;
+wire [31:0] c2_video_awaddr;
+wire [7:0] c2_video_awlen;
+wire  c2_video_wvalid;
+wire  c2_video_wready;
+wire [127:0] c2_video_wdata;
+wire [15:0] c2_video_wstrb;
+wire  c2_video_wlast;
+wire  c2_video_bvalid;
+wire  c2_video_bready;
+wire [1:0] c2_video_bresp;
+wire  c2_video_arvalid;
+wire  c2_video_arready;
+wire [31:0] c2_video_araddr;
+wire [7:0] c2_video_arlen;
+wire  c2_video_rvalid;
+wire  c2_video_rready;
+wire [127:0] c2_video_rdata;
+wire  c2_video_rlast;
+wire [1:0] c2_video_rresp;
+wire [4-1:0] c2_video_awid;
+wire [2:0] c2_video_awsize;
+wire [1:0] c2_video_awburst;
+wire  c2_video_awlock;
+wire [4-1:0] c2_video_arid;
+wire [2:0] c2_video_arsize;
+wire [1:0] c2_video_arburst;
+wire  c2_video_arlock;
+wire [4-1:0] c2_video_bid;
+wire [4-1:0] c2_video_rid;
 axi_interconnect_beta #(
     .S_COUNT                            (3                                                 ),
     .SLAVE_ASYN_ARRAY                   ({1'b0,1'b0,1'b0}                                  ),
@@ -981,4 +989,52 @@ c2_a_video_source #(.FRAME_WIDTH(C2_FRAME_WIDTH),.FRAME_HEIGHT(C2_FRAME_HEIGHT),
 .v_event_descriptor(c2_v_event_descriptor),
 .completed(c2_a_completed),.rejected(c2_a_rejected),.source_faults(c2_a_source_faults),
 .source_commits(),.source_drops(),.source_malformed(),.last_frame_id(),.last_sum32(),.last_fnv(),.last_status());
+c2_video_pipeline #(.WIDTH(C2_FRAME_WIDTH),.HEIGHT(C2_FRAME_HEIGHT)) c2_full_video(
+.arst_n(!io_systemReset),.mem_clk(io_memoryClk),.video_clk(c2_video_clk),.display_clk(c2_display_clk),
+.enable(c2_map_enable),.time_valid(c2_shared_video_valid && c2_capture_config_valid),
+.pixel_vs(c2_pixel_vs),.pixel_de(c2_pixel_de),.pixel_gray(c2_pixel_gray),
+.now_ms(c2_shared_video_ms),.source_frames(c2_capture_source_frames),
+.record_valid(c2_capture_record_valid),.record_complete(c2_capture_record_complete),
+.record_id(c2_capture_record_frame_id),.record_ms(c2_capture_record_timestamp_ms),
+.display_vs(c2_display_vs),.display_de(c2_display_de),.display_hs(c2_display_hs),
+.display_rgb(c2_display_rgb),.out_vs(c2_out_vs),.out_de(c2_out_de),.out_hs(c2_out_hs),
+.display_busy(c2_display_busy),.display_available(c2_display_available),.display_failed(c2_display_failed),
+.display_frame_id(c2_display_frame_id),.display_timestamp_ms(c2_display_timestamp_ms),
+.published(c2_video_published),
+.dropped(c2_video_dropped),
+.overflow_frames(c2_video_overflow_frames),
+.write_errors(c2_video_write_errors),
+.read_errors(c2_video_read_errors),
+.repeated(c2_video_repeated),
+.empty_scans(c2_video_empty_scans),
+.underflows(c2_video_underflows),
+.missed_scans(c2_video_missed_scans),
+.completed_scans(c2_video_completed_scans),
+.max_aw_wait(c2_video_max_aw_wait),
+.max_ar_wait(c2_video_max_ar_wait),
+.awvalid(c2_video_awvalid),
+.awready(c2_video_awready),
+.awaddr(c2_video_awaddr),
+.awlen(c2_video_awlen),
+.wvalid(c2_video_wvalid),
+.wready(c2_video_wready),
+.wdata(c2_video_wdata),
+.wstrb(c2_video_wstrb),
+.wlast(c2_video_wlast),
+.bvalid(c2_video_bvalid),
+.bready(c2_video_bready),
+.bresp(c2_video_bresp),
+.arvalid(c2_video_arvalid),
+.arready(c2_video_arready),
+.araddr(c2_video_araddr),
+.arlen(c2_video_arlen),
+.rvalid(c2_video_rvalid),
+.rready(c2_video_rready),
+.rdata(c2_video_rdata),
+.rlast(c2_video_rlast),
+.rresp(c2_video_rresp));
+assign c2_video_awid=4'he;assign c2_video_arid=4'h7;
+assign c2_video_awsize=3'd4;assign c2_video_arsize=3'd4;
+assign c2_video_awburst=2'b01;assign c2_video_arburst=2'b01;
+assign c2_video_awlock=1'b0;assign c2_video_arlock=1'b0;
 endmodule

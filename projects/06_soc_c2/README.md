@@ -1,5 +1,7 @@
 # C2：共享 DDR 功能边界与离线验证
 
+当前完整视频入口见 `team_work/03_ai_soc/VIDEO_FRAMEBUFFER_HANDOFF.md`：native已内接GRAY8三缓冲及显示读出，外部video AXI入口改为内部。输入/输出均1像素/拍；A旧双像素/RAW路径需要物理接入适配。49次回归入口20_test_video_framebuffer.cmd，测试结果以logs/c2_selftest.json为准。
+
 当前native输入已从网格样本改为源像素GRAY8/VS/DE，实例化A采样器并在首个DE锁存公共时间。请先看 `team_work/03_ai_soc/SOURCE_VIDEO_CAPTURE.md`。下方网格SOF锁存及旧资源数字为前阶段记录。
 
 最新时间接口：APB v2.2（0x00020002），0x84~0x90为只读公共时间。视频使用完整快照CDC，native在sample_sof锁存；42次回归PASS。详见 `team_work/03_ai_soc/TIME_AND_C24_ACCEPTANCE.md`，下方v2.1结果保留为历史。

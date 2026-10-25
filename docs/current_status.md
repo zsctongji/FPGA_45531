@@ -1,5 +1,7 @@
 # 当前工程状态
 
+2026-10-25 完整视频增量：请先读 `team_work/03_ai_soc/VIDEO_FRAMEBUFFER_HANDOFF.md`。native内接GRAY8完整帧写入、三缓冲、显示RGB/光栅读出；保留一个DDR控制器，APB和CPU固件不变。新并发/故障回归结果以logs/c2_selftest.json为准；旧资源和46次记录属于前阶段。物理MIPI/双像素HDMI适配、PNR、时序和上板仍待验收。
+
 2026-10-25 源像素接入增量：新增c2_a_video_source，接入原样保留的A采样器；native输入改为GRAY8/VS/DE，首DE时间随延迟EOF传到C2/APB，控制接口保持v2.2。46次RTL回归、全帧DDR桌面对照、native综合与678项配套检查PASS；最新资源34160 LUT4/30789 FF/51 DSP48。入口为 `team_work/03_ai_soc/SOURCE_VIDEO_CAPTURE.md`；下方sample_sof锁存描述是前阶段记录。
 
 2026-10-25 时间与验收增量：公共时间在100MHz APB域产生，CPU/C3读取同一计数并经快照CDC送入视频域；native以sample_sof锁存时间，真实相机SOF定义仍待A/C确认。APB v2.2（0x00020002），C24现场路径改用公共时间。42次RTL回归、新增23项时间后端检查、38个C24日志测试及native map PASS。当前资源33664 LUT4/30351 FF/51 DSP48，未做PNR或板上测试。入口 `team_work/03_ai_soc/TIME_AND_C24_ACCEPTANCE.md`；以下v2.1/39次为前阶段记录。

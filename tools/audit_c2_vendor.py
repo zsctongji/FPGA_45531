@@ -47,11 +47,18 @@ def main():
             'Native top connects source pixels to pinned A capture and shared video time')
     require('c2_sample_valid' not in text['overlay'] and 'c2_sample_timestamp_ms' not in text['overlay'],
             'No external grid/timestamp override bypasses source capture')
+    require('c2_video_pipeline #(' in text['overlay'] and '.awvalid(c2_video_awvalid)' in text['overlay'],
+            'Native full-frame writer and scan reader connect to the C2 video AXI port')
+    require('input wire  c2_video_awvalid' not in text['overlay'] and
+            '.display_rgb(c2_display_rgb)' in text['overlay'],
+            'Video master is internal and display RGB/raster is exposed at the A boundary')
     for name,offset in re.findall(r'#define C2_REG_(\w+) (0x[0-9a-f]+)u',text['driver_header']):
         require(f"16'h{int(offset,16):04x}" in text['apb'],f'APB offset matches C header: {name}')
     manifest=json.loads((ROOT/'projects/06_soc_c2/integration/INTEGRATION_MANIFEST.json').read_text())
     require(manifest['video_input_contract']=='GRAY8_1PPC_VS_HIGH_DE_v1' and
             manifest['timestamp_latch'].startswith('first source DE'), 'Native input/timestamp contract recorded')
+    require(manifest['framebuffer']['bank_pitch']*3<=0x1000000 and
+            not manifest['framebuffer']['physical_map_verified'], 'Three GRAY8 banks fit provisional video aperture')
     require(hashlib.sha256((ROOT/files['original_top']).read_bytes()).hexdigest()==manifest['baseline_top_sha256'],
             'Original TinyML top identity unchanged after overlay generation')
     record={'status':'PASS','checks':checks,'board_verified':False,'CPU_instruction_execution_simulated':False,

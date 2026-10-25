@@ -1,1 +1,1 @@
-PASS C2/C3 RV32: 4 objects; exact fence/invalidate/fence sequence verified; not executed on board.
+PASS C2/C3 RV32: 4 objects; exact fence/invalidate/fence sequence verified; postcheck retry, no source changes.

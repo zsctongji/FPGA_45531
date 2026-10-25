@@ -23,7 +23,7 @@ def main():
     require(inputs['version'].encode() in elf,'Linked build identifier')
     require((ROOT/'firmware/c24_frame_person_detect/tinyml_c24.bin').stat().st_size<=4194304,'Fits existing 4 MiB boot-copy limit')
     tests=read(ROOT/'logs/c2_selftest.json')
-    require(tests['status']=='PASS' and tests['passed']==46,'46 C2/source-pixel/shared-time RTL runs PASS')
+    require(tests['status']=='PASS' and tests['passed']==49,'49 C2/source-pixel/framebuffer/shared-time RTL runs PASS')
     for name,digest in tests['source_sha256'].items():require(sha(ROOT/name)==digest,'RTL/driver test identity '+name)
     native=read(ROOT/'logs/c2_native_synthesis.json')
     require(native['status']=='PASS','Current native overlay logic synthesis PASS')
@@ -58,10 +58,18 @@ def main():
             video['capture_metadata']['timestamp_origin']=='first_source_DE','Source timestamp metadata identity')
     require('c2_a_video_source #(' in (ROOT/'projects/06_soc_c2/integration/c2_tinyml_soc_top.v').read_text(),
             'Native overlay instantiates full source-pixel A capture')
+    require('c2_video_pipeline #(' in (ROOT/'projects/06_soc_c2/integration/c2_tinyml_soc_top.v').read_text(),
+            'Native overlay instantiates full-frame video writer and raster scanout')
+    fb_cases=[t for t in tests['tests'] if t['name'].startswith('tb_c2_framebuffer')]
+    require(len(fb_cases)==3 and all(t['status']=='PASS' for t in fb_cases),
+            '1080p video DDR read/write and two concurrent fault/recovery cases PASS')
+    tail=read(ROOT/'logs/c2_video_tail.json')
+    require(tail['status']=='PASS' and not tail['board_test_passed'],'Independent short video burst and scan backpressure PASS')
+    for name,digest in tail['source_sha256'].items():require(sha(ROOT/name)==digest,'Short video burst source '+name)
     result={'status':'PASS','checks':len(checks),'version':inputs['version'],'board_executed':False,
             'source': 'synthetic full GRAY8 source frames, pinned A capture/BRAM and C2 RTL, DDR model, PC inference; no physical camera',
             'reports':{name:sha(ROOT/name) for name in ['logs/c2_selftest.json','logs/c2_native_synthesis.json',
-                       'logs/firmware_c24.json','logs/a_c2_pc_inference.json','logs/a_c2_video_pc_inference.json','logs/c24_acceptance_tests.json']}}
+                       'logs/firmware_c24.json','logs/a_c2_pc_inference.json','logs/a_c2_video_pc_inference.json','logs/c24_acceptance_tests.json','logs/c2_video_tail.json']}}
     (ROOT/'logs/c24_package_check.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(result))
 if __name__=='__main__':main()

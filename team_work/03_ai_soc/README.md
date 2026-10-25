@@ -1,5 +1,7 @@
 # C：RISC-V/TinyML、统一工程、融合与预测
 
+完整视频帧缓存与并发验收说明见 [VIDEO_FRAMEBUFFER_HANDOFF.md](VIDEO_FRAMEBUFFER_HANDOFF.md)。native内接GRAY8视频写入/显示读出与AI共用DDR，三缓冲按最终BRESP和A物理源帧记录发布。20_test_video_framebuffer.cmd运行49次回归；完整视频的逻辑接入不代表物理HDMI或板级时序已经完成。
+
 当前源视频接入说明见 [SOURCE_VIDEO_CAPTURE.md](SOURCE_VIDEO_CAPTURE.md)：A采样器已接入native，时间在首DE锁存。控制接口保持APB v2.2，入口19_test_video_capture.cmd；下面sample_sof锁存方式保留为前阶段记录。
 
 ## 2026-10-25 统一时间与验收工具

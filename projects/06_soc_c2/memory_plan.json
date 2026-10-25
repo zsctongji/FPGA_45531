@@ -30,7 +30,26 @@
       "end_exclusive_hex": "0x9020000"
     }
   ],
-  "video_reference_bytes": 12441600,
+  "legacy_A_RAW_reference_bytes": 12441600,
+  "video_reference_bytes": 6230016,
+  "integrated_video": {
+    "format": "GRAY8",
+    "width": 1920,
+    "height": 1080,
+    "stride": 1920,
+    "frame_bytes": 2073600,
+    "bank_pitch": 2076672,
+    "banks": 3,
+    "relative_bank_bases": [
+      0,
+      2076672,
+      4153344
+    ],
+    "display_format": "RGB888, gray replicated to R/G/B",
+    "selection": "oldest READY on display VS; else repeat DISPLAY",
+    "drop_policy": "no FREE bank: drain and drop whole new source frame",
+    "completion": "A next-VS verdict and all AXI write responses OKAY"
+  },
   "image_offsets": [
     4096,
     16384

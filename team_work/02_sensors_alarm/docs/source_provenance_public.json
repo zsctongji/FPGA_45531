@@ -1,0 +1,116 @@
+{
+  "snapshot_source": {
+    "repository": "https://github.com/zsctongji/FPGA_cooperation",
+    "branch": "codex/team-handoff",
+    "retrieved_local_date": "2026-10-25",
+    "method": "Authenticated GitHub read-only source DOM; byte count and FNV1a verified against saved strings",
+    "commit": "Branch snapshot only; repository commit not pinned",
+    "current_hal_header_verified_at_commit": "0e25156154df787aa28060a1e2ac7bde89d16106",
+    "verification": "c3_hal.h unchanged: 1408 bytes, FNV1a c8727149; other snapshots are host-test references, not a second ABI for integration"
+  },
+  "libraries": [
+    {
+      "repository": "https://github.com/melexis/mlx90640-library",
+      "commit": "f6be7ca1d4a55146b705f3d347f84b773b29cc86",
+      "license": "Apache-2.0; retained third_party/mlx90640/LICENSE"
+    },
+    {
+      "repository": "https://github.com/Sensirion/embedded-i2c-sht3x",
+      "commit": "4026a907aa9045ffc2a2813302e8ee5e69c96846",
+      "license": "BSD-3-Clause; retained original copyright/license files"
+    },
+    {
+      "repository": "https://github.com/DFRobot/DFRobot_SHT3x",
+      "commit": "f5fc122192f39ba6745f374fea06ab34a744359b",
+      "purpose": "Read-only board/model/address reference, not linked into B firmware; original notices retained"
+    }
+  ],
+  "snapshot_files": [
+    {
+      "path": "upstream_snapshot/c3_hal.h",
+      "bytes": 1408,
+      "sha256": "8fa8fb9843f90a4a0f54ae8517f59d7ce9a57edfffe9d8c48a36b6fcf36e5286"
+    },
+    {
+      "path": "upstream_snapshot/c3_hal.c",
+      "bytes": 1164,
+      "sha256": "a6615a58cf39518e993b34093312c747507cb5d2d05c94ee07b24d02795615ad"
+    },
+    {
+      "path": "upstream_snapshot/cooperation_v1.h",
+      "bytes": 3351,
+      "sha256": "440d7fdd09887dd5fdf1a9761430226c95af795a1507cbbb7d76505bc473b80c"
+    }
+  ],
+  "hardware_reference_files": [
+    {
+      "path": "evidence/SEN0330_schematics_v1.pdf",
+      "bytes": 201617,
+      "sha256": "eaee4caa991e7aaf893b4cab255acc61a944a27f7aaa74fa5e717678ac24ae24"
+    },
+    {
+      "path": "evidence/MLX90640_Thermal_Camera_SchDoc.pdf",
+      "bytes": 28321,
+      "sha256": "ae87fa4ab0b6d303802ac10aff9c1f514595aced968300559bd2e76dfab13086"
+    },
+    {
+      "path": "evidence/seeed_buzzer.html",
+      "bytes": 142633,
+      "sha256": "79b893b8c1f7168ea5cc81e8887dbe925caafecd73d2b82c2ec7f36984d3db97"
+    },
+    {
+      "path": "evidence/dfrobot_sht30_wiki.html",
+      "bytes": 118882,
+      "sha256": "54d3068494c296c9e55128778181ac90a48dfdb83ee5cab6d8a437723c181594"
+    },
+    {
+      "path": "evidence/waveshare_mlx90640.html",
+      "bytes": 61967,
+      "sha256": "48e1aa67bc73e8ddcc3c821001985d7689c0b756342a64e93cc7cb92d2a7a794"
+    }
+  ],
+  "user_supplied_board_documents": {
+    "review_date": "2026-10-25",
+    "archive": {
+      "name": "Ti60F225_DemoBoard_v4完整资料包-0927更新.zip",
+      "bytes": 1134244849,
+      "entries": 5512
+    },
+    "archive_verification": "Directory read; selected 29 file reads validated ZIP entry CRC; full archive CRC not performed; no installer or example executed",
+    "original_pdfs": [
+      {
+        "name": "TI60F225I3-V4_SCH-20261012（原理图）.pdf",
+        "bytes": 549578,
+        "sha256": "8cf636e4253848cf2bb8a612031bd0fd7e4183a8c59ae7be71b1008aaf669b41",
+        "pages": 14,
+        "saved_path": "evidence/vendor_review/user_documents/TI60F225I3-V4_SCH-20261012（原理图）.pdf"
+      },
+      {
+        "name": "TI60F225I3-V4 DEMO板软硬件设计说明-260920.pdf",
+        "bytes": 9756637,
+        "sha256": "426a577cc3a544546f2bf1ad60a1f233541b7d6361764794e48b11ada0c2e4f2",
+        "pages": 110,
+        "saved_path": "evidence/vendor_review/user_documents/TI60F225I3-V4 DEMO板软硬件设计说明-260920.pdf"
+      },
+      {
+        "name": "摄像头SC431HAI_数据手册_V1.1.pdf",
+        "bytes": 1693340,
+        "sha256": "e3187cec241fc1fc53983ba31d27c28e2bda4341e3c89fdf811ca8ed1fd5f8ae",
+        "pages": 42,
+        "saved_path": "evidence/vendor_review/user_documents/摄像头SC431HAI_数据手册_V1.1.pdf"
+      }
+    ],
+    "selected_extraction_manifest": "evidence/vendor_review/extracted_manifest.json",
+    "review_report": "docs/B_厂家资料核对_20261025.md",
+    "model_screenshot": {
+      "saved_path": "evidence/vendor_review/user_documents/MLX90640-D55_用户购买页.jpg",
+      "bytes": 1693851,
+      "sha256": "23632a062dd24a20b4c74cfa027ce0947c3b526575c7382fed56ebae4db75955",
+      "evidence_type": "User supplied purchase-page screenshot, not hardware readout",
+      "visible_model": "MLX90640-D55",
+      "visible_fov": "55 x 35 degrees"
+    },
+    "hardware_tested": false
+  },
+  "publication_scope": "No raw vendor archives, personal paths, purchase screenshots or hardware-test claim; exact library sources and licenses included in compact bundle"
+}

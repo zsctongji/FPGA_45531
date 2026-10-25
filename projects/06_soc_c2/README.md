@@ -1,5 +1,7 @@
 # C2：共享 DDR 功能边界与离线验证
 
+当前native输入已从网格样本改为源像素GRAY8/VS/DE，实例化A采样器并在首个DE锁存公共时间。请先看 `team_work/03_ai_soc/SOURCE_VIDEO_CAPTURE.md`。下方网格SOF锁存及旧资源数字为前阶段记录。
+
 最新时间接口：APB v2.2（0x00020002），0x84~0x90为只读公共时间。视频使用完整快照CDC，native在sample_sof锁存；42次回归PASS。详见 `team_work/03_ai_soc/TIME_AND_C24_ACCEPTANCE.md`，下方v2.1结果保留为历史。
 
 2026-10-25更新：A mailbox→C2搬运桥、双完成校验屏障和联合TinyML固件已实现；当前39次RTL回归PASS，新native副本含A桥并综合PASS。APB版本为0x00020001，新增0x80能力寄存器。最新说明见 [C24_AC_BRIDGE_RUNBOOK.md](../../team_work/03_ai_soc/C24_AC_BRIDGE_RUNBOOK.md)，下文保留前阶段记录。

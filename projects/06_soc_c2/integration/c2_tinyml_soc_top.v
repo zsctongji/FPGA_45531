@@ -15,6 +15,7 @@
 `include "C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/tinyml/defines.v"
 module c2_tinyml_soc_top #
 (
+parameter integer C2_FRAME_WIDTH=1920,C2_FRAME_HEIGHT=1080,C2_STEP_X=20,C2_STEP_Y=20,
 parameter                       RANK_RATIO         = 1,       // # of unique CS outputs per rank
 parameter                       CK_RATIO           = `CK_RATIO, 
 parameter                       ASYN_AXI_CLK       = `ASYN_AXI_CLK, 
@@ -50,9 +51,12 @@ input wire system_spi_0_io_data_2_read,
 output wire system_spi_0_io_data_2_write,system_spi_0_io_data_2_writeEnable,
 input wire system_spi_0_io_data_3_read,
 output wire system_spi_0_io_data_3_write,system_spi_0_io_data_3_writeEnable,
-input wire c2_sample_valid,c2_sample_sof,c2_sample_eof,c2_sample_abort,
-input wire [7:0] c2_sample_gray,
-input wire [31:0] c2_sample_frame_id,
+input wire c2_pixel_vs,c2_pixel_de,
+input wire [7:0] c2_pixel_gray,
+output wire c2_capture_config_valid,c2_capture_record_valid,c2_capture_record_complete,
+output wire [31:0] c2_capture_record_frame_id,c2_capture_record_timestamp_ms,
+output wire [15:0] c2_capture_record_width,c2_capture_record_height,
+output wire [31:0] c2_capture_source_frames,c2_capture_format_errors,
 output wire [31:0] c2_shared_video_ms,
 output wire c2_shared_video_valid,
 output wire [31:0] c2_a_completed,c2_a_rejected,c2_a_source_faults,
@@ -947,10 +951,16 @@ c2_vendor_attachment #(.REQUIRE_SOURCE_COMPLETION(1)) c2_attachment(
 .m_rlast(axi_inter_s1_rlast),
 .m_rresp(axi_inter_s1_rresp),
 .protocol_error(c2_protocol_error));
-c2_a_image_source c2_image_source(
+c2_a_video_source #(.FRAME_WIDTH(C2_FRAME_WIDTH),.FRAME_HEIGHT(C2_FRAME_HEIGHT),
+.STEP_X(C2_STEP_X),.STEP_Y(C2_STEP_Y)) c2_video_source(
 .arst_n(!io_systemReset),.video_clk(c2_video_clk),.enable(c2_map_enable),
-.sample_valid(c2_sample_valid && c2_shared_video_valid),.sample_sof(c2_sample_sof),.sample_eof(c2_sample_eof),.sample_abort(c2_sample_abort || !c2_shared_video_valid),
-.sample_gray(c2_sample_gray),.sample_frame_id(c2_sample_frame_id),.sample_timestamp_ms(c2_shared_video_ms),
+.pixel_vs(c2_pixel_vs),.pixel_de(c2_pixel_de),.pixel_gray(c2_pixel_gray),
+.shared_now_ms(c2_shared_video_ms),.shared_time_valid(c2_shared_video_valid),
+.capture_config_valid(c2_capture_config_valid),
+.capture_record_valid(c2_capture_record_valid),.capture_record_complete(c2_capture_record_complete),
+.capture_record_frame_id(c2_capture_record_frame_id),.capture_record_timestamp_ms(c2_capture_record_timestamp_ms),
+.capture_record_width(c2_capture_record_width),.capture_record_height(c2_capture_record_height),
+.capture_source_frames(c2_capture_source_frames),.capture_format_errors(c2_capture_format_errors),
 .v_frame_valid(c2_v_frame_valid),
 .v_frame_ready(c2_v_frame_ready),
 .v_descriptor(c2_v_descriptor),

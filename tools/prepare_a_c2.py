@@ -117,6 +117,9 @@ endfunction
     s=s.replace('if(delivered[287:256]!==checksum(seq))', 'if(delivered[95:64]!==expected_stamp[seq]) $fatal(1,"Shared SOF timestamp lost");\n     if(delivered[287:256]!==checksum(seq))')
     (P/'sim/tb_c2_a_bridge.sv').write_text(s,encoding='utf-8')
     manifest={'origin':'https://github.com/zsctongji/FPGA_cooperation','A_last_commit':'06908f4',
+              'interface_commit':'0e8a5d73ee96e3e4753ef6087442e923f2e4413e',
+              'interface_path':'team_work/shared/a_interface_v1.md',
+              'interface_sha256':hashlib.sha256((ROOT/'team_work/shared/a_interface_v1.md').read_bytes()).hexdigest(),
               'policy':'96x54 + 21 black rows on each side; transport candidate, model-quality approval pending',
               'files':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted((P/'a_side').glob('*.v'))}}
     (P/'a_side/SOURCE_MANIFEST.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')

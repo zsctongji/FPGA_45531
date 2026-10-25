@@ -45,6 +45,10 @@ def main():
         if prepared.returncode:raise RuntimeError(prepared.stdout+prepared.stderr)
         prepared=subprocess.run([sys.executable,str(ROOT/'tools/prepare_a_c2.py')],capture_output=True,text=True,encoding="utf-8",errors="replace",timeout=30)
         if prepared.returncode:raise RuntimeError(prepared.stdout+prepared.stderr)
+        prepared=subprocess.run([sys.executable,str(ROOT/'tools/prepare_c2_video_test.py')],capture_output=True,text=True,encoding="utf-8",errors="replace",timeout=30)
+        if prepared.returncode:raise RuntimeError(prepared.stdout+prepared.stderr)
+        for name in ['a_c2_video_frame0.gray','a_c2_video_frame0.json']:
+            (BUILD/name).unlink(missing_ok=True)
         rtl = sorted((PROJECT / 'rtl').glob('*.sv'))
         rtl += sorted((PROJECT / 'a_side').glob('*.v'))
         sim = sorted((PROJECT / 'sim').glob('*.sv'))
@@ -53,6 +57,7 @@ def main():
                ROOT/'team_work/03_ai_soc/c3_hal/c3_shared_time.c',ROOT/'team_work/03_ai_soc/c3_hal/c3_shared_time.h',
                ROOT/'team_work/03_ai_soc/tests/test_c3_shared_time.c',
                ROOT/'tools/prepare_a_c2.py',ROOT/'projects/06_soc_c2/a_side/SOURCE_MANIFEST.json',
+               ROOT/'tools/prepare_c2_video_test.py',ROOT/'team_work/shared/a_interface_v1.md',
                ROOT/'team_work/03_ai_soc/tests/test_c2_driver.c',ROOT/'tools/prepare_c2_vendor.py',
                ROOT/'tools/audit_c2_vendor.py',ROOT/'tools/check_c2_riscv.py',ROOT/'tools/build_c2_host.cmd',
                ROOT/'projects/03_tinyml/ip/sapphire_soc/sapphire_soc.v',ROOT/'build/c2/vendor_datacache.v']
@@ -65,6 +70,11 @@ def main():
                   ('image', {}, [12345, 67891, 20261024]),
                   ('adapter', {}, [12345,67891,20261024]),('cache',{},[None])]
         matrix += [('source_fence',{},[None]),('a_errors',{},[None])]
+        matrix += [('video_config',{},[None])]
+        matrix += [('video',{'EXTENDED':0},[12345])]
+        for mem,video in [(7,3),(5,19)]:
+            matrix.append(('video',{'MEM_HALF':mem,'VIDEO_HALF':video,'FRAME_WIDTH':384,
+                                   'FRAME_HEIGHT':216,'STEP_X':4,'STEP_Y':4},[12345]))
         for p,v in [(5,7),(7,3),(5,131)]:
             matrix.append(('time',{'P_HALF':p,'VIDEO_HALF':v},[None]))
         for mem,video in [(5,7),(7,3),(5,19)]:
@@ -81,9 +91,11 @@ def main():
             executable = BUILD / (top + suffix + '.vvp')
             args = [str(ivl), '-g2012', '-Wall', '-s', top, '-o', str(executable)]
             args += [f'-P{top}.{k}={v}' for k, v in params.items()]
-            args += [str(p) for p in [*rtl, *sim]]
-            if name=='cache':args.append(str(ROOT/'build/c2/vendor_datacache.v'))
-            compiled = subprocess.run(args, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=60)
+            # Icarus spawns a Windows command internally. Relative source names
+            # keep it below cmd.exe's 8191-character limit as the suite grows.
+            args += [str(p.relative_to(ROOT)) for p in [*rtl, *sim]]
+            if name=='cache':args.append('build/c2/vendor_datacache.v')
+            compiled = subprocess.run(args, cwd=ROOT, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=60)
             compiler_log = LOGS / (top + suffix + '_compile.log')
             compiler_log.write_text(compiled.stdout + compiled.stderr, encoding='utf-8')
             if compiled.returncode or re.search(r'\bwarning\b|\berror\b', compiled.stderr, re.I):
@@ -95,7 +107,7 @@ def main():
                 record['tests'].append(case)
                 save()
                 command = [str(vvp), str(executable)] + ([f'+SEED={seed}'] if seed is not None else [])
-                result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=90,cwd=BUILD)
+                result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=300 if name=='video' else 90,cwd=BUILD)
                 output = result.stdout + result.stderr
                 logfile = LOGS / (key + '.log')
                 logfile.write_text(output, encoding='utf-8')

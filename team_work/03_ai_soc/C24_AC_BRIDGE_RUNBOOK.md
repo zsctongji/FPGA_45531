@@ -1,5 +1,7 @@
 # A→C2→TinyML 联调交接（2026-10-25）
 
+后续源像素接入见 [SOURCE_VIDEO_CAPTURE.md](SOURCE_VIDEO_CAPTURE.md)：当前native输入为GRAY8/VS/DE，A采样器及首DE时间已经接入；下文网格输入为前阶段记录。
+
 后续更新：统一APB时间、视频快照CDC、C3时间后端和C24验收工具已完成；当前为APB v2.2，42次RTL回归。请先读 [TIME_AND_C24_ACCEPTANCE.md](TIME_AND_C24_ACCEPTANCE.md)。下面v2.1、39次及旧timestamp传递方式是本轮前阶段记录，当前native以公共时间在sample_sof锁存；尚未替代真实相机SOF验收。
 
 主工程：`C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3`。本轮复用GitHub中A的代码（最近A提交06908f4），没有改写A的原模块、五个基线或C1固件。A源码副本及SHA位于 `projects/06_soc_c2/a_side/SOURCE_MANIFEST.json`。

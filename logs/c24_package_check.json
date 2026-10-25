@@ -1,14 +1,15 @@
 {
   "status": "PASS",
-  "checks": 666,
+  "checks": 678,
   "version": "c24-d1fc40db3541b41f",
   "board_executed": false,
-  "source": "synthetic A samples, actual A BRAM and C2 RTL, DDR model, PC inference; no physical camera",
+  "source": "synthetic full GRAY8 source frames, pinned A capture/BRAM and C2 RTL, DDR model, PC inference; no physical camera",
   "reports": {
-    "logs/c2_selftest.json": "8ac450257281b9cf76a4d98244ec556b221db53f5d64ec1c8349bac1db36ca5b",
-    "logs/c2_native_synthesis.json": "615fca22cd2d92062bef95c0c50e8b5d97767f14b2d2684f1f0c2408d18423bb",
+    "logs/c2_selftest.json": "1aa396222932a24874cdc7e5b77700cd354c134840348d2e172b5b54461868a0",
+    "logs/c2_native_synthesis.json": "cfa3f8a11b639471906a46b1e468dfd432335d3d943505dbac8141b5b5f881bf",
     "logs/firmware_c24.json": "96faf31205618829c50f3c08e95feab06b1ae2f3eb0215df70b4d3465c0a661a",
     "logs/a_c2_pc_inference.json": "475d4a359a7008d181cef8984b091d4fea10e51ca95ccef67a79c4277237a04f",
+    "logs/a_c2_video_pc_inference.json": "336c028ecc573efa6f863c83263587aee7692c16ff788a2698f8a784acb99d15",
     "logs/c24_acceptance_tests.json": "bd725bab6ca440c020ef107c94b6da7695cf3daaec0bbfed6e4a8bf4286eddfc"
   }
 }

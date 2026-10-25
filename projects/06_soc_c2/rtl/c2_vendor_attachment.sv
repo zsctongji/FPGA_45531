@@ -2,7 +2,7 @@
 // Attachment to vendor interconnect S1, not a replacement for CPU/TinyML S0/S2.
 module c2_vendor_attachment #(
  parameter VIDEO_ID_WIDTH=4,REQUIRE_SOURCE_COMPLETION=0,
- parameter integer TIME_CLOCK_HZ=100000000,
+ parameter integer TIME_CLOCK_HZ=100000000,parameter [31:0] TIME_INITIAL_MS=0,
  parameter [31:0] SHARED_BASE=32'h09010000,VIDEO_BASE=32'h08010000,VIDEO_BYTES=32'h01000000
 )(
 input wire arst_n,mem_clk,video_clk,pclk,map_enable,external_protocol_error,
@@ -161,7 +161,7 @@ c2_axi_to_vendor #(.ID_WIDTH(VIDEO_ID_WIDTH),.ALLOW_NARROW(0),
 .m_rlast(q_rlast),
 .m_rresp(q_rresp),
 .rejected(video_rejected),.protocol_error(video_error));
-c2_apb_control #(.TIME_CLOCK_HZ(TIME_CLOCK_HZ),.REQUIRE_SOURCE_COMPLETION(REQUIRE_SOURCE_COMPLETION),.SHARED_BASE(SHARED_BASE),.VIDEO_BASE(VIDEO_BASE),.VIDEO_BYTES(VIDEO_BYTES)) control(
+c2_apb_control #(.TIME_CLOCK_HZ(TIME_CLOCK_HZ),.TIME_INITIAL_MS(TIME_INITIAL_MS),.REQUIRE_SOURCE_COMPLETION(REQUIRE_SOURCE_COMPLETION),.SHARED_BASE(SHARED_BASE),.VIDEO_BASE(VIDEO_BASE),.VIDEO_BYTES(VIDEO_BYTES)) control(
 .arst_n(arst_n),.pclk(pclk),.mem_clk(mem_clk),.video_clk(video_clk),.map_enable(map_enable),
 .shared_video_ms(shared_video_ms),.shared_video_valid(shared_video_valid),
 .paddr(paddr),.psel(psel),.penable(penable),.pwrite(pwrite),.pwdata(pwdata),

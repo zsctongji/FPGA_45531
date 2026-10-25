@@ -1,6 +1,9 @@
 {
   "origin": "https://github.com/zsctongji/FPGA_cooperation",
   "A_last_commit": "06908f4",
+  "interface_commit": "0e8a5d73ee96e3e4753ef6087442e923f2e4413e",
+  "interface_path": "team_work/shared/a_interface_v1.md",
+  "interface_sha256": "3eaeb919689ad9398e4144ad0e9ba3bb7744e179c4d5a639208365b5415ea4ee",
   "policy": "96x54 + 21 black rows on each side; transport candidate, model-quality approval pending",
   "files": {
     "ai_frame_mailbox.v": "be2a19b07be3b228001b64fc32a1fde2ed12ae12475dec29eeba989c9c2bb099",

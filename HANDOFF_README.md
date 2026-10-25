@@ -39,3 +39,12 @@ outputs and tool installations are excluded; historical reports retain original
 absolute paths. Rebuild reports on the receiving machine before claiming a local
 verification. Primary C24 sources are included; tools/prepare_c24.py recreates its
 generated SDK application from the existing vendor baseline.
+
+## Source-pixel capture update
+
+The native top now accepts one-pixel GRAY8/VS/DE and instantiates A's unchanged
+capture/sampler. The common timestamp is latched at the first source DE pixel,
+then preserved through delayed EOF and DDR descriptors. APB remains v2.2.
+See team_work/03_ai_soc/SOURCE_VIDEO_CAPTURE.md and 19_test_video_capture.cmd.
+The source machine passed 46 RTL runs, native map and 678 package identity checks;
+physical MIPI/HDMI, DDR mapping, PNR and board acceptance remain pending.

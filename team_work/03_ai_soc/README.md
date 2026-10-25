@@ -1,5 +1,7 @@
 # C：RISC-V/TinyML、统一工程、融合与预测
 
+当前源视频接入说明见 [SOURCE_VIDEO_CAPTURE.md](SOURCE_VIDEO_CAPTURE.md)：A采样器已接入native，时间在首DE锁存。控制接口保持APB v2.2，入口19_test_video_capture.cmd；下面sample_sof锁存方式保留为前阶段记录。
+
 ## 2026-10-25 统一时间与验收工具
 
 当前接口为APB v2.2（0x00020002）；公共APB时间已接CPU/C3和视频快照CDC，C24新增串口采集/自检及现场窗口检查。42次RTL回归、时间后端测试、36个日志测试、新固件链接和native map PASS；没有实物执行。最新入口 [TIME_AND_C24_ACCEPTANCE.md](TIME_AND_C24_ACCEPTANCE.md)、18_test_time_c24.cmd。下方v2.1/39次为前阶段结果。

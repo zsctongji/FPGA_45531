@@ -1,5 +1,7 @@
 # C2/C3 统一时间与 C24 验收工具
 
+后续接入更新见 [SOURCE_VIDEO_CAPTURE.md](SOURCE_VIDEO_CAPTURE.md)：native已经接A的video_a_capture，在源首个有效DE像素锁存公共时间并保留到DDR描述符，替换下面前阶段的sample_sof锁存方式。公共APB时间和CPU接口仍为v2.2。
+
 2026-10-25。主工程为 `C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3`。本次只完成电脑端实现、仿真、构建及逻辑综合，没有打开板卡串口或下载固件。
 
 ## 单一时间来源

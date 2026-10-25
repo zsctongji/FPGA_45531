@@ -1,2 +1,2 @@
 PASS tb_c2_boundary bytes=9216 success=5 rejected=4 cpu_controls=11 background_writes=90 background_reads=90 checks=1026 source_stalls=41455 final_B_fence FNV CPU_readback async_pixel_FIFO grant error_drain CDC busy_drop errors reset
-C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\projects\06_soc_c2\sim\tb_c2_boundary.sv:392: $finish called at 745290000 (1ps)
+projects\06_soc_c2\sim\tb_c2_boundary.sv:392: $finish called at 745290000 (1ps)

@@ -1,5 +1,7 @@
 # 给 A/B 的 C2/C3 交接入口
 
+最新源像素接入见 [SOURCE_VIDEO_CAPTURE.md](SOURCE_VIDEO_CAPTURE.md)。当前native接A采样器，公共时间在首DE锁存；下文为历史交接。
+
 当前增量：统一时间RTL和C3可报错的APB时间后端已实现；APB已为v2.2，旧版固件不得混用。B的整机时间调用 `c3_shared_time_bind/c3_shared_now_ms`；原CLINT回调仅保留独立基线。最新说明为 [TIME_AND_C24_ACCEPTANCE.md](TIME_AND_C24_ACCEPTANCE.md)，下方为之前交接记录，真实I2C/GPIO仍未实现。
 
 日期：2026-10-24；当前文件夹为主开发来源，不是已经接线的整机。

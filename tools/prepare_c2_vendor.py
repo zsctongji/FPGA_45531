@@ -155,6 +155,7 @@ def generate_overlay():
     original_sha=hashlib.sha256(source.read_bytes()).hexdigest()
     # Keep the original five projects read-only. This is a separate generated top.
     text=text.replace('module tinyml_soc_top #','module c2_tinyml_soc_top #',1)
+    text=text.replace('parameter                       RANK_RATIO', 'parameter integer C2_FRAME_WIDTH=1920,C2_FRAME_HEIGHT=1080,C2_STEP_X=20,C2_STEP_Y=20,\nparameter                       RANK_RATIO',1)
     for name,path in [('ddr3_controller/ddr3_parameter.vh',base/'src/ddr3_controller/ddr3_parameter.vh'),
                       ('define.v',base/'src/define.v'),('src/tinyml/defines.v',base/'src/tinyml/defines.v')]:
         text=text.replace('"'+name+'"','"'+path.as_posix()+'"',1)
@@ -170,9 +171,12 @@ def generate_overlay():
     for lane in range(4):
         spi_ports.append(f'input wire system_spi_0_io_data_{lane}_read')
         spi_ports.append(f'output wire system_spi_0_io_data_{lane}_write,system_spi_0_io_data_{lane}_writeEnable')
-    sample_ports=['input wire c2_sample_valid,c2_sample_sof,c2_sample_eof,c2_sample_abort',
-                  'input wire [7:0] c2_sample_gray',
-                  'input wire [31:0] c2_sample_frame_id',
+    sample_ports=['input wire c2_pixel_vs,c2_pixel_de',
+                  'input wire [7:0] c2_pixel_gray',
+                  'output wire c2_capture_config_valid,c2_capture_record_valid,c2_capture_record_complete',
+                  'output wire [31:0] c2_capture_record_frame_id,c2_capture_record_timestamp_ms',
+                  'output wire [15:0] c2_capture_record_width,c2_capture_record_height',
+                  'output wire [31:0] c2_capture_source_frames,c2_capture_format_errors',
                   'output wire [31:0] c2_shared_video_ms',
                   'output wire c2_shared_video_valid',
                   'output wire [31:0] c2_a_completed,c2_a_rejected,c2_a_source_faults']
@@ -225,10 +229,16 @@ assign userInterruptB=c2_irq;
 '''+',\n'.join('.'+n+'(c2_'+n+')' for d,w,n in ports)+',\n'
     block+=',\n'.join(f'.m_{n}(axi_inter_s1_{n})' if n in {x[0] for x in SP} else f'.m_{n}()' for n,d,w in MP)
     block+=',\n.protocol_error(c2_protocol_error));\n'
-    image_source='''c2_a_image_source c2_image_source(
+    image_source='''c2_a_video_source #(.FRAME_WIDTH(C2_FRAME_WIDTH),.FRAME_HEIGHT(C2_FRAME_HEIGHT),
+.STEP_X(C2_STEP_X),.STEP_Y(C2_STEP_Y)) c2_video_source(
 .arst_n(!io_systemReset),.video_clk(c2_video_clk),.enable(c2_map_enable),
-.sample_valid(c2_sample_valid && c2_shared_video_valid),.sample_sof(c2_sample_sof),.sample_eof(c2_sample_eof),.sample_abort(c2_sample_abort || !c2_shared_video_valid),
-.sample_gray(c2_sample_gray),.sample_frame_id(c2_sample_frame_id),.sample_timestamp_ms(c2_shared_video_ms),
+.pixel_vs(c2_pixel_vs),.pixel_de(c2_pixel_de),.pixel_gray(c2_pixel_gray),
+.shared_now_ms(c2_shared_video_ms),.shared_time_valid(c2_shared_video_valid),
+.capture_config_valid(c2_capture_config_valid),
+.capture_record_valid(c2_capture_record_valid),.capture_record_complete(c2_capture_record_complete),
+.capture_record_frame_id(c2_capture_record_frame_id),.capture_record_timestamp_ms(c2_capture_record_timestamp_ms),
+.capture_record_width(c2_capture_record_width),.capture_record_height(c2_capture_record_height),
+.capture_source_frames(c2_capture_source_frames),.capture_format_errors(c2_capture_format_errors),
 '''
     source_names=['frame_valid','frame_ready','descriptor','grant_valid','grant_ready','grant_frame_id',
                   'word_valid','word_ready','word_data','source_valid','source_ready','source_error','source_frame_id','source_fnv',
@@ -270,7 +280,10 @@ assign userInterruptB=c2_irq;
         if setting.get('name')=='include':setting.set('value',(base/'ip/sapphire_soc').as_posix())
     ET.indent(tree,space='    ');tree.write(out/'c2_native.xml',encoding='utf-8',xml_declaration=True)
     for file in (base/'ip/sapphire_soc').glob('*.bin'):shutil.copyfile(file,out/file.name)
-    manifest={'scope':'generated native SoC/DDR map-only overlay; video IP and physical integration absent',
+    manifest={'scope':'native SoC/DDR map-only with pinned A source-pixel capture; physical MIPI/HDMI and constraints absent',
+              'video_input_contract':'GRAY8_1PPC_VS_HIGH_DE_v1',
+              'timestamp_latch':'first source DE pixel; preserved through grid EOF and DDR descriptor',
+              'capture_default':{'width':1920,'height':1080,'step_x':20,'step_y':20},
               'baseline_top_sha256':original_sha,'baseline_modified':False,'candidate_map_requires_external_enable':True,
               'ddr_instances':len(re.findall(r'ddr3_top\s*#',text)),
               'sources':{str(path.relative_to(ROOT)).replace('\\','/'):hashlib.sha256(path.read_bytes()).hexdigest() for path in sources}}

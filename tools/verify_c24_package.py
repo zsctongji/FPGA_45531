@@ -23,7 +23,7 @@ def main():
     require(inputs['version'].encode() in elf,'Linked build identifier')
     require((ROOT/'firmware/c24_frame_person_detect/tinyml_c24.bin').stat().st_size<=4194304,'Fits existing 4 MiB boot-copy limit')
     tests=read(ROOT/'logs/c2_selftest.json')
-    require(tests['status']=='PASS' and tests['passed']==42,'42 C2/A-source/shared-time RTL runs PASS')
+    require(tests['status']=='PASS' and tests['passed']==46,'46 C2/source-pixel/shared-time RTL runs PASS')
     for name,digest in tests['source_sha256'].items():require(sha(ROOT/name)==digest,'RTL/driver test identity '+name)
     native=read(ROOT/'logs/c2_native_synthesis.json')
     require(native['status']=='PASS','Current native overlay logic synthesis PASS')
@@ -47,10 +47,21 @@ def main():
     acceptance=read(ROOT/'logs/c24_acceptance_tests.json')
     require(acceptance['status']=='PASS' and not acceptance['board_inference_passed'],'Offline C24 acceptance-tool tests PASS')
     for name,digest in acceptance['source_sha256'].items():require(sha(ROOT/name)==digest,'Acceptance source '+name)
+    video=read(ROOT/'logs/a_c2_video_pc_inference.json')
+    require(video['status']=='PASS' and not video['live_camera'] and video['firmware_selftest_input_equal'],
+            'Full source pixels -> A capture -> C2 DDR readback -> desktop reference PASS')
+    require(video['rtl_report_sha256']==sha(ROOT/'logs/c2_selftest.json'),'Full-video desktop report bound to current RTL run')
+    require(video['source_sha256']==sha(ROOT/'tools/check_a_c2_pc.py'),'Full-video desktop checker identity')
+    require(video['raw_sha256']==sha(ROOT/'build/c2/a_c2_video_frame0.gray')==inputs['selftest_sha256'],
+            'Full-video DDR image equals pinned firmware self-test bytes')
+    require(video['capture_metadata_sha256']==sha(ROOT/'build/c2/a_c2_video_frame0.json') and
+            video['capture_metadata']['timestamp_origin']=='first_source_DE','Source timestamp metadata identity')
+    require('c2_a_video_source #(' in (ROOT/'projects/06_soc_c2/integration/c2_tinyml_soc_top.v').read_text(),
+            'Native overlay instantiates full source-pixel A capture')
     result={'status':'PASS','checks':len(checks),'version':inputs['version'],'board_executed':False,
-            'source': 'synthetic A samples, actual A BRAM and C2 RTL, DDR model, PC inference; no physical camera',
+            'source': 'synthetic full GRAY8 source frames, pinned A capture/BRAM and C2 RTL, DDR model, PC inference; no physical camera',
             'reports':{name:sha(ROOT/name) for name in ['logs/c2_selftest.json','logs/c2_native_synthesis.json',
-                       'logs/firmware_c24.json','logs/a_c2_pc_inference.json','logs/c24_acceptance_tests.json']}}
+                       'logs/firmware_c24.json','logs/a_c2_pc_inference.json','logs/a_c2_video_pc_inference.json','logs/c24_acceptance_tests.json']}}
     (ROOT/'logs/c24_package_check.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(result))
 if __name__=='__main__':main()

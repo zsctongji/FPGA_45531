@@ -1,5 +1,7 @@
 # 易灵思赛题三：多模态 AI 智能终端
 
+2026-10-25 源视频采样增量：native顶层已接A的video_a_capture，输入改为单像素GRAY8/VS/DE，公共时间在首个有效DE像素锁存并保留到DDR描述符；不再用网格SOF改写时间。46次RTL回归、全帧桌面对照、新native综合和678项配套检查PASS。最新说明见 `team_work/03_ai_soc/SOURCE_VIDEO_CAPTURE.md`，入口19_test_video_capture.cmd。真实MIPI/HDMI、物理约束和上板仍待验收。
+
 2026-10-25 后续更新：C2/C3 公共 APB 毫秒计数器、视频快照CDC和C24验收工具已实现；42次RTL回归及新版native综合PASS。APB升级至v2.2（0x00020002），旧固件不得混用。当前入口18_test_time_c24.cmd，说明见 `team_work/03_ai_soc/TIME_AND_C24_ACCEPTANCE.md`。物理时间/地址/视频和上板仍待验收。下方39次及v2.1为前阶段记录。
 
 报名截图已确认：2026 FPGA 创新设计赛道，易灵思，赛题三“多模态 AI 智能终端”，平台“基于易灵思 FPGA 芯片的自制开发板”。用户提供芯片型号 Ti60F225，设备已有但尚未连接。

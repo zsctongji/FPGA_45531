@@ -56,6 +56,6 @@
     "[EFX-0011 VERI-WARNING] net 'CsrPlugin_mtvec_mode[1]' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:10649)",
     "[EFX-0011 VERI-WARNING] net 'one_hot_mem' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\round_robin_priority_arbiter.v:47)"
   ],
-  "scope": "Native logic map only; inherited vendor/A warnings retained; physical CDC, timing and board checks remain open",
-  "synthesis_report_sha256": "615fca22cd2d92062bef95c0c50e8b5d97767f14b2d2684f1f0c2408d18423bb"
+  "scope": "Native map with pinned A source-pixel capture; inherited warnings retained; physical CDC, PNR and board checks remain open",
+  "synthesis_report_sha256": "cfa3f8a11b639471906a46b1e468dfd432335d3d943505dbac8141b5b5f881bf"
 }

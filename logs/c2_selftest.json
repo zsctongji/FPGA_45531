@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "started": "2026-10-25T06:42:40.336240+00:00",
+  "started": "2026-10-25T12:52:53.381604+00:00",
   "scope": "portable RTL functional simulation with synthetic masters and DDR model",
   "board_test_passed": false,
   "vendor_ddr_simulated": false,
@@ -185,6 +185,70 @@
       "log": "logs/c2/tb_c2_a_errors.log",
       "evidence": [
         "PASS tb_c2_a_errors modes=7 read_error timeout bad_padding bad_sum wrong_grant busy drain576 stable_word release"
+      ]
+    },
+    {
+      "name": "tb_c2_video_config",
+      "status": "PASS",
+      "parameters": {},
+      "ddr_seed": null,
+      "compiler_log": "logs/c2/tb_c2_video_config_compile.log",
+      "exit_code": 0,
+      "log": "logs/c2/tb_c2_video_config.log",
+      "evidence": [
+        "PASS tb_c2_video_config unsupported_geometry_held_in_reset no_false_frame_or_DDR_request"
+      ]
+    },
+    {
+      "name": "tb_c2_video_extended0_seed12345",
+      "status": "PASS",
+      "parameters": {
+        "EXTENDED": 0
+      },
+      "ddr_seed": 12345,
+      "compiler_log": "logs/c2/tb_c2_video_extended0_compile.log",
+      "exit_code": 0,
+      "log": "logs/c2/tb_c2_video_extended0_seed12345.log",
+      "evidence": [
+        "PASS tb_c2_video geometry=1920x1080 step=20x20 bytes=9216 full_HD=1 success=1 records=1 delayed_eof=1 first_DE_edges=1 time_wraps=1 checks=576 first_source_DE_timestamp A_capture sampler mailbox C2_DDR CPU_AXI APB synthetic_pixels_no_camera"
+      ]
+    },
+    {
+      "name": "tb_c2_video_mem_half7_video_half3_frame_width384_frame_height216_step_x4_step_y4_seed12345",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 7,
+        "VIDEO_HALF": 3,
+        "FRAME_WIDTH": 384,
+        "FRAME_HEIGHT": 216,
+        "STEP_X": 4,
+        "STEP_Y": 4
+      },
+      "ddr_seed": 12345,
+      "compiler_log": "logs/c2/tb_c2_video_mem_half7_video_half3_frame_width384_frame_height216_step_x4_step_y4_compile.log",
+      "exit_code": 0,
+      "log": "logs/c2/tb_c2_video_mem_half7_video_half3_frame_width384_frame_height216_step_x4_step_y4_seed12345.log",
+      "evidence": [
+        "PASS tb_c2_video geometry=384x216 step=4x4 bytes=9216 success=5 busy=1 malformed=3 records=9 delayed_eof=6 first_DE_edges=2 time_wraps=2 concurrent_requests=62 checks=2754 first_source_DE_timestamp A_capture sampler mailbox C2_DDR CPU_AXI APB common_reset synthetic_pixels_no_camera"
+      ]
+    },
+    {
+      "name": "tb_c2_video_mem_half5_video_half19_frame_width384_frame_height216_step_x4_step_y4_seed12345",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 5,
+        "VIDEO_HALF": 19,
+        "FRAME_WIDTH": 384,
+        "FRAME_HEIGHT": 216,
+        "STEP_X": 4,
+        "STEP_Y": 4
+      },
+      "ddr_seed": 12345,
+      "compiler_log": "logs/c2/tb_c2_video_mem_half5_video_half19_frame_width384_frame_height216_step_x4_step_y4_compile.log",
+      "exit_code": 0,
+      "log": "logs/c2/tb_c2_video_mem_half5_video_half19_frame_width384_frame_height216_step_x4_step_y4_seed12345.log",
+      "evidence": [
+        "PASS tb_c2_video geometry=384x216 step=4x4 bytes=9216 success=5 busy=1 malformed=3 records=9 delayed_eof=6 first_DE_edges=2 time_wraps=2 concurrent_requests=174 checks=2754 first_source_DE_timestamp A_capture sampler mailbox C2_DDR CPU_AXI APB common_reset synthetic_pixels_no_camera"
       ]
     },
     {
@@ -593,6 +657,7 @@
   "source_sha256": {
     "projects/06_soc_c2/rtl/c2_a_image_source.sv": "ca4ecba6a595851a28c2bc93b580212e68ac79481b1133767ef8f41c34538134",
     "projects/06_soc_c2/rtl/c2_a_mailbox_bridge.sv": "37d25577032e7fa78f4dc5616a1899d15feb565e3063d8e8d38b3963bfcf1f7c",
+    "projects/06_soc_c2/rtl/c2_a_video_source.sv": "c43cd8a52c778d6883698d802ada9aaadcbcedfdba01e20dce48a4224b79be40",
     "projects/06_soc_c2/rtl/c2_apb_control.sv": "1ed8730e7bfd5c04a00e79218d4e1c21d7ff2ba85866b2adf6e34bd87e2cc317",
     "projects/06_soc_c2/rtl/c2_async_fifo.sv": "91d7dd66779d10552c23048734da6c6baaf6267d553eaf3567a2446e02ba9d77",
     "projects/06_soc_c2/rtl/c2_axi_arbiter.sv": "b36413ca9feea3c8e4a714a41340980148e2eb2db2177e5da53f3d46876ebbde",
@@ -605,7 +670,7 @@
     "projects/06_soc_c2/rtl/c2_shared_time.sv": "0465e815fd8d3d98f23ca136abf848e1a9514a56246b9b8d9b9bd2503647486a",
     "projects/06_soc_c2/rtl/c2_source_fence.sv": "1e865d73c3371428753db54562cfd6ef383ecba378e11e164bb2bc0c3a7f5482",
     "projects/06_soc_c2/rtl/c2_system_boundary.sv": "bf55c29bef46b953d7cfd152883f267464fbd3e97478b6f51362bdfdef3330ac",
-    "projects/06_soc_c2/rtl/c2_vendor_attachment.sv": "6fc6de89b7e8e0e334e2d12fbfd99a01d2f1c3e1c91ccc5ebf0bae55789a753c",
+    "projects/06_soc_c2/rtl/c2_vendor_attachment.sv": "8e0e455bd8715f9cfd0790ec08ae68942b0ea2f88d4e0ce8745d725a0e75277e",
     "projects/06_soc_c2/a_side/ai_frame_mailbox.v": "be2a19b07be3b228001b64fc32a1fde2ed12ae12475dec29eeba989c9c2bb099",
     "projects/06_soc_c2/a_side/video_a_capture.v": "6fd4ba3f87ebc42e7ca4e90292da10d1233d8b6cd2b26311cc05cb818e673d57",
     "projects/06_soc_c2/a_side/video_grid_sampler.v": "9bd066f70ff8778caa7f4f18cfa4709a949b1c61ceb648cd79d015e00d57db84",
@@ -625,6 +690,8 @@
     "projects/06_soc_c2/sim/tb_c2_source_fence.sv": "f377fe0720b78e985bd41d60cf6890d312ba7e393f8ecfa126c9d35776a0b9cc",
     "projects/06_soc_c2/sim/tb_c2_time.sv": "2da94c8d75d2dff164c045a26b1c3abab5a1566e5b68bbc345cc244b37c04dd1",
     "projects/06_soc_c2/sim/tb_c2_vendor.sv": "ad12476ef0259ceeca28bc1a38ee4f1fa95dea9089c8c19fd03fd2110f7096a0",
+    "projects/06_soc_c2/sim/tb_c2_video.sv": "9dc83586cd4b9e98707f08366e0e36b0b5fe8f59944a03d9cb55938a988d8377",
+    "projects/06_soc_c2/sim/tb_c2_video_config.sv": "dab207d9eea0d2871f4dd5c5fb2f93e3f160e4825faa6a9eab3b356d0018a416",
     "team_work/03_ai_soc/c2/c2_driver.c": "c1a561ef635bd51e9837f1f63f75ffbaffd912454faf8ff8520cf0a65361798c",
     "team_work/03_ai_soc/c2/c2_driver.h": "70e30ebfb5b6fd39122aba49eccde4668199aeff8f306fba45f4a6a2d490d761",
     "team_work/03_ai_soc/c2/c2_sapphire.c": "6bca6d86412d45287533209c41845486355928515fd252c6bc38e4f1ae777b77",
@@ -635,16 +702,18 @@
     "team_work/03_ai_soc/c3_hal/c3_shared_time.c": "7b28e7794f6d91796a1ed6d1f9c1603477136308a5e9c092480d57d11d167ae7",
     "team_work/03_ai_soc/c3_hal/c3_shared_time.h": "e7cba2798597114b10fcd0a9e4c46acf0f6814210e05a9c9f759ca88e2b54448",
     "team_work/03_ai_soc/tests/test_c3_shared_time.c": "d8397dbf84a3a0416ca32cfa090f3798b98bc29b7515e969482c196e4187b48c",
-    "tools/prepare_a_c2.py": "6a8c3f4db74d211f11354d6739f592bd9e10159f2cdcef4cc5d53c9bd4f38949",
-    "projects/06_soc_c2/a_side/SOURCE_MANIFEST.json": "1815c287b2e5244ee84b7f1791299d7deac977e9e457dc768f21b7cacc67d8ae",
+    "tools/prepare_a_c2.py": "7bd124ad9e9e07ff9a3982ea171779483ddb10f92af9c321c01c2685ee9f129e",
+    "projects/06_soc_c2/a_side/SOURCE_MANIFEST.json": "6fb2ba360dbf3fa9e36ec1036ef1b075ab1d5508186391b3e95f53594445dcf1",
+    "tools/prepare_c2_video_test.py": "811323dfbf262de49956f46cd9194d85d873c17f54ce81d14806e7f7847963f8",
+    "team_work/shared/a_interface_v1.md": "3eaeb919689ad9398e4144ad0e9ba3bb7744e179c4d5a639208365b5415ea4ee",
     "team_work/03_ai_soc/tests/test_c2_driver.c": "76e50758262f5e140b815b8f2ba646f914ded661e077ea391daf7c4bdd7a6ed4",
-    "tools/prepare_c2_vendor.py": "e7a10606f53102fb19ab487129172c6187e903e3f6c706d1ea098295ca8e555a",
-    "tools/audit_c2_vendor.py": "8006b8fc256acbda26525cb2d76fd6f6b653253c5bad027106f8eb305ca97724",
+    "tools/prepare_c2_vendor.py": "7c4a6e2597207c56d7d4486809238a6aa993ef129239539a056b8614ef3bd59d",
+    "tools/audit_c2_vendor.py": "cee1a61bb28556bd8ab4b06b302ab336ff054a9d326a3a951833910d7b2a3c9d",
     "tools/check_c2_riscv.py": "87b381d3df774a60a2cb005d65704f99de771b93e345c7bffa8c354605db8619",
     "tools/build_c2_host.cmd": "3410e984d7f4bb3841f568edcb51cad3558454ee01823e725e78873ab5dd54a6",
     "projects/03_tinyml/ip/sapphire_soc/sapphire_soc.v": "87c00873d2efc6b5bbb5336c1a1046eb0a21cf89c9d971f6c7cf703e0d2e6733",
     "build/c2/vendor_datacache.v": "a7f4b4df28d3c191c999cf08e74dca2cf68383b375f7a5a368b0bf752326f432",
-    "tools/run_c2_selftest.py": "d5478b06f55028df18f9d2b6c28edfc9e4b21deb141e9ba5576556777ee06828",
+    "tools/run_c2_selftest.py": "161926fdbeb43bb9dcf4da2c7a387211d8238483d502e45efd002655e8357137",
     "tools/audit_c2_baselines.py": "32aa7449101bd0d932fb29212989e10739c58b42f17ec3ac959a1a5435760cff"
   },
   "host_driver_test": "PASS",
@@ -652,6 +721,6 @@
   "iverilog_version": "Icarus Verilog version 12.0 (devel) (s20150603-1539-g2693dd32b)",
   "baseline_audit": "projects/06_soc_c2/BASELINE_AUDIT.json",
   "vendor_audit": "PASS",
-  "passed": 42,
-  "finished": "2026-10-25T06:44:50.391532+00:00"
+  "passed": 46,
+  "finished": "2026-10-25T12:58:13.319718+00:00"
 }

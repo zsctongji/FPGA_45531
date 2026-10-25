@@ -42,9 +42,16 @@ def main():
     require(bool(re.search(r'\.io_ddrA_b_payload_resp\s*\(axi_inter_s0_bresp\)',text['overlay'])),
             'CPU write errors are connected rather than discarded')
     require('.m_awvalid(axi_inter_s1_awvalid)' in text['overlay'],'S1 has an actual producer in the separate overlay')
+    require('c2_a_video_source #(' in text['overlay'] and '.pixel_vs(c2_pixel_vs)' in text['overlay'] and
+            '.shared_now_ms(c2_shared_video_ms)' in text['overlay'],
+            'Native top connects source pixels to pinned A capture and shared video time')
+    require('c2_sample_valid' not in text['overlay'] and 'c2_sample_timestamp_ms' not in text['overlay'],
+            'No external grid/timestamp override bypasses source capture')
     for name,offset in re.findall(r'#define C2_REG_(\w+) (0x[0-9a-f]+)u',text['driver_header']):
         require(f"16'h{int(offset,16):04x}" in text['apb'],f'APB offset matches C header: {name}')
     manifest=json.loads((ROOT/'projects/06_soc_c2/integration/INTEGRATION_MANIFEST.json').read_text())
+    require(manifest['video_input_contract']=='GRAY8_1PPC_VS_HIGH_DE_v1' and
+            manifest['timestamp_latch'].startswith('first source DE'), 'Native input/timestamp contract recorded')
     require(hashlib.sha256((ROOT/files['original_top']).read_bytes()).hexdigest()==manifest['baseline_top_sha256'],
             'Original TinyML top identity unchanged after overlay generation')
     record={'status':'PASS','checks':checks,'board_verified':False,'CPU_instruction_execution_simulated':False,

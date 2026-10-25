@@ -1,4 +1,3 @@
-<?xml version='1.0' encoding='utf-8'?>
 <efx:project xmlns:efx="http://www.efinixinc.com/enf_proj" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="c2_native" description="Map-only native SoC/DDR overlay; external video ports; no physical integration" last_change="1751875948" sw_version="2026.1.132" xsi:schemaLocation="http://www.efinixinc.com/enf_proj enf_proj.xsd">
     <efx:device_info>
         <efx:family name="Titanium" />
@@ -55,6 +54,7 @@
         <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/ip/sapphire_soc/sapphire_soc.v" version="default" library="default" />
         <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_a_image_source.sv" version="default" library="default" />
         <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_a_mailbox_bridge.sv" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_a_video_source.sv" version="default" library="default" />
         <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_apb_control.sv" version="default" library="default" />
         <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_async_fifo.sv" version="default" library="default" />
         <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_axi_arbiter.sv" version="default" library="default" />

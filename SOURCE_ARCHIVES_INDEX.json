@@ -1,0 +1,19 @@
+{
+  "source_files": 5218,
+  "archive_members": 5219,
+  "format": "Independent ZIP archives; extract ALL parts into the SAME directory",
+  "parts": [
+    {
+      "file": "FPGA_sources_20261024_part1.zip",
+      "bytes": 19426350,
+      "sha256": "2e05985132f5ea9c4d6504191f41cb25d5dcebc0de6ce8327696696778b59792",
+      "files": 3822
+    },
+    {
+      "file": "FPGA_sources_20261024_part2.zip",
+      "bytes": 15967023,
+      "sha256": "44eaaed25cd1e7992fac014fa2f17cc21436e0b15c6a051557a2f2c91c4e10e0",
+      "files": 1397
+    }
+  ]
+}

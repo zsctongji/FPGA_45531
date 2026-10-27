@@ -1,0 +1,53 @@
+{
+  "review_date": "2026-10-27",
+  "scope": "series specifications rechecked; physical board not measured; prior FBGA mapping retained without a new decode",
+  "sources": [
+    {
+      "publisher": "Winbond",
+      "title": "W25Q64JW product page",
+      "url": "https://www.winbond.com/hq/product/code-storage-flash-memory/serial-nor-flash/?__locale=en&partNo=W25Q64JW",
+      "supports": [
+        "64Mbit",
+        "1.7V to 1.95V"
+      ],
+      "does_not_prove": [
+        "exact installed ordering suffix",
+        "measured board voltage"
+      ]
+    },
+    {
+      "publisher": "Winbond",
+      "title": "W25Q64JW data sheet, Revision F, 2017-05-18",
+      "url": "https://www.winbond.com/resource-files/w25q64jw%20revf%2005182017.pdf",
+      "supports": [
+        "series electrical and identification specifications"
+      ]
+    },
+    {
+      "publisher": "Micron",
+      "title": "MT41K128M16JT-125:K product page",
+      "url": "https://www.micron.com/products/memory/dram-components/ddr3-sdram/part-catalog/part-detail/mt41k128m16jt-125-k",
+      "supports": [
+        "2Gb",
+        "x16",
+        "128M x 16",
+        "256MiB calculated from 2Gb"
+      ],
+      "does_not_prove": [
+        "new D9PTK lookup in this session",
+        "measured board capacity",
+        "measured board voltage"
+      ]
+    }
+  ],
+  "prior_mapping": {
+    "top_mark": "D9PTK",
+    "part_number": "MT41K128M16JT-125:K",
+    "status": "retained from previous session FBGA lookup record"
+  },
+  "code_reference": {
+    "abi_version": "0x00010000",
+    "path": "upstream_snapshot/cooperation_v1.h",
+    "status": "local snapshot; must compare with team current interface"
+  }
+}

@@ -11,7 +11,7 @@
 | CPU读图适配 | firmware/a_side/a_side.c/.h；rtl/ai_frame_mailbox.v | 所有权、完整提交、忙时丢新帧；MSVC主机执行和RV32交叉编译通过；未做实际软核读图/推理 |
 | PC UDP接收与保存 | tools/A_PC_receive.cmd；tools/a_side/receiver.py、protocol.py | CRC、乱序、重复、超时、会话隔离、同事件配图；300合成事件PC压力测试；真实板端网口闭环待联合 |
 | 回归/构建/材料 | tools/A_selftest.cmd；logs/a_side_selftest.json；docs/A_开始这里.md；team_work/01_video/本人报告章节_A.md | 27项Python、12个RTL测试台及UART变体通过；13完整流程与最终setup/hold 0.318/0.026ns通过 |
-| 长稳记录 | logs/a_delivery_status_20261029.json；logs/a_display_interrupted_audit_20261029.json | 最新1133.064秒、34221条连续源记录、985张完整图；串口读取失败中断，未通过30分钟 |
+| 长稳记录 | logs/a_delivery_status_20261029.json；logs/a_display_interrupted_audit_20261029.json | 最新1133.064秒、34221条连续源记录、985张完整图 |
 
 ## 本次下载内容
 

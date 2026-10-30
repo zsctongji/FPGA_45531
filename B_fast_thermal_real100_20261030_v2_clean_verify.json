@@ -1,0 +1,21 @@
+{
+  "status": "CLEAN_EXTRACTION_HASH_TESTS_AND_REAL100_AUDIT_PASSED",
+  "at": "2026-10-30T18:59:13.400963+08:00",
+  "verification_accessed_hardware": false,
+  "archive": "D:\\ADC&DAC\\Ti60_B_BoardReady_20261028\\artifacts\\B_fast_thermal_real100_20261030_v2.zip",
+  "archive_bytes": 2660635,
+  "archive_sha256": "336dc31bbd202c2ba96e9014c167f69a4c4658a1030b43dae36f429d54b8fbd2",
+  "package_files_checked": 865,
+  "host_tests": 32,
+  "new_primary_real_thermal_pairs": 100,
+  "raw_record_hashes_checked": 612,
+  "uart_transactions_checked": 12959,
+  "temperatures_independently_recalculated": 100,
+  "configuration_restored": "VERIFIED_0x1901",
+  "wrote_flash": false,
+  "buzzer_on_commands_sent": 0,
+  "clean_directory": "D:\\ADC&DAC\\Ti60_B_BoardReady_20261028\\artifacts\\B_fast_thermal_real100_20261030_v2_clean_185831_622494",
+  "log": "D:\\ADC&DAC\\Ti60_B_BoardReady_20261028\\records\\B_fast_thermal_real100_20261030_v2_clean_verify.log",
+  "final_soc_shared_clock_and_fall_detection": "NOT_VALIDATED",
+  "github_upload": "PENDING_PUSH"
+}

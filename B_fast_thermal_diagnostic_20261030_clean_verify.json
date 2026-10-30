@@ -1,0 +1,17 @@
+{
+  "status": "CLEAN_EXTRACTION_OFFLINE_VERIFIED",
+  "hardware_accessed": false,
+  "archive": "D:\\ADC&DAC\\Ti60_B_BoardReady_20261028\\artifacts\\B_fast_thermal_diagnostic_20261030.zip",
+  "archive_bytes": 497018,
+  "archive_sha256": "60e520417883885a0b9f168da6a1b7b5ebb9b95ed8ae972fb5019c10a6225e6a",
+  "manifest_files": 43,
+  "host_tests": 30,
+  "rtl_simulations": 2,
+  "clean_verifier_returncode": 0,
+  "clean_directory": "D:\\ADC&DAC\\Ti60_B_BoardReady_20261028\\artifacts\\B_fast_thermal_diagnostic_20261030_clean_162829_970013",
+  "clean_log": "D:\\ADC&DAC\\Ti60_B_BoardReady_20261028\\records\\B_fast_thermal_diagnostic_20261030_clean_verify.log",
+  "new_real_measurement_groups": 0,
+  "board_speed_acceptance": "PENDING_HARDWARE",
+  "github_upload": "NOT_UPLOADED_AUTHENTICATION_UNAVAILABLE",
+  "final_release": "BLOCKED_BY_EVIDENCE"
+}

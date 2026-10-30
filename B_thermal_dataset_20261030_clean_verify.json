@@ -1,0 +1,25 @@
+{
+  "status": "CLEAN_BUNDLE_DATASET_AND_ORIGINAL_C_ABI_PASS",
+  "at": "2026-10-30T19:44:12.205266+08:00",
+  "archive": "B_thermal_dataset_20261030.zip",
+  "archive_bytes": 3546029,
+  "archive_sha256": "3fea1eeae8d124859ad1655ec68a81738d6f5cd26237210a1a0bd9d3aaf30c0c",
+  "verification": {
+    "status": "PASS",
+    "scope": "OFFLINE_REAL100_DATASET_AND_C_ABI_VERIFICATION",
+    "hardware_accessed": false,
+    "new_board_measurements": 0,
+    "manifest_files_verified": 888,
+    "targeted_tests": 6,
+    "pairs_recalculated": 100,
+    "output_hashes_reproduced": true,
+    "c_abi_replay": "C_ABI_REPLAY_PASS records=100 sizeof_thermal=1652 record_bytes=1656",
+    "c_rejects_truncated_record": true,
+    "c_rejects_changed_bad_pixel_mask": true,
+    "hardware_drivers_imported": [],
+    "full_system_release_allowed": false
+  },
+  "preserves_original_evidence_archive_sha256": "336dc31bbd202c2ba96e9014c167f69a4c4658a1030b43dae36f429d54b8fbd2",
+  "new_board_measurements": 0,
+  "hardware_accessed": false
+}

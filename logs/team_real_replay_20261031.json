@@ -1,0 +1,600 @@
+{
+  "status": "PASS",
+  "started": "2026-10-31T02:52:58.851184+00:00",
+  "source_sha256": {
+    "tools/replay_team_real_data.py": "50bcb87cdc18b44a99d4e10e8269303961832bd2c03f17918186f24b00d60299",
+    "projects/06_soc_c2/sim/tb_c2_a_bridge.sv": "46b222e642e646d4b41b67c44d8108387fb6072fa079eaa13e3900c6f8a81437",
+    "projects/06_soc_c2/rtl/c2_a_image_source.sv": "ca4ecba6a595851a28c2bc93b580212e68ac79481b1133767ef8f41c34538134",
+    "projects/06_soc_c2/rtl/c2_a_mailbox_bridge.sv": "37d25577032e7fa78f4dc5616a1899d15feb565e3063d8e8d38b3963bfcf1f7c",
+    "projects/06_soc_c2/rtl/c2_a_video_source.sv": "c43cd8a52c778d6883698d802ada9aaadcbcedfdba01e20dce48a4224b79be40",
+    "projects/06_soc_c2/rtl/c2_apb_control.sv": "1ed8730e7bfd5c04a00e79218d4e1c21d7ff2ba85866b2adf6e34bd87e2cc317",
+    "projects/06_soc_c2/rtl/c2_async_fifo.sv": "91d7dd66779d10552c23048734da6c6baaf6267d553eaf3567a2446e02ba9d77",
+    "projects/06_soc_c2/rtl/c2_axi_arbiter.sv": "b36413ca9feea3c8e4a714a41340980148e2eb2db2177e5da53f3d46876ebbde",
+    "projects/06_soc_c2/rtl/c2_axi_to_vendor.sv": "c16fb2252e6315f21bbc229faf2db046fe18ceb81c4471cc11f91d384e744da0",
+    "projects/06_soc_c2/rtl/c2_buffer_manager.sv": "df19575e73d2f0011d8aa2241d598a5c9f16d34ec37d2990fd07145e776ba2ea",
+    "projects/06_soc_c2/rtl/c2_cdc_mailbox.sv": "04550a55a2e5fbb824c9d0733f9b07378b0b041222eb3fbc9c6170043e57e7d4",
+    "projects/06_soc_c2/rtl/c2_frame_publisher.sv": "e07dc4798af6f03ab18ef16fd9faebe6306c19325685990e1586c66c3200910d",
+    "projects/06_soc_c2/rtl/c2_image_writer.sv": "53780b55dd93ce2987dfc45fb33b6c7be78f6a32f6b36343b5ffb4794d06b827",
+    "projects/06_soc_c2/rtl/c2_memory_hub.sv": "2b2c604fabcba80453d61596b933eb040ee6c3ee88a521751568727f11393b61",
+    "projects/06_soc_c2/rtl/c2_shared_time.sv": "0465e815fd8d3d98f23ca136abf848e1a9514a56246b9b8d9b9bd2503647486a",
+    "projects/06_soc_c2/rtl/c2_source_fence.sv": "1e865d73c3371428753db54562cfd6ef383ecba378e11e164bb2bc0c3a7f5482",
+    "projects/06_soc_c2/rtl/c2_system_boundary.sv": "bf55c29bef46b953d7cfd152883f267464fbd3e97478b6f51362bdfdef3330ac",
+    "projects/06_soc_c2/rtl/c2_vendor_attachment.sv": "8e0e455bd8715f9cfd0790ec08ae68942b0ea2f88d4e0ce8745d725a0e75277e",
+    "projects/06_soc_c2/rtl/c2_video_framebuffer.sv": "9439050a47097f948e61bf3e086adca74f2c3c949d7fa3443f1fb340631cf366",
+    "projects/06_soc_c2/rtl/c2_video_ingress.sv": "b6610ec71c5501f2799526be74d012dca075e87afabf3ce2d82d5849f300d762",
+    "projects/06_soc_c2/rtl/c2_video_pipeline.sv": "9401308c63689b25baef2143c44de297e467fd0b4ed9b9525efe66d815f1405a",
+    "projects/06_soc_c2/rtl/c2_video_scanout.sv": "711450de1c1494f02d963c686799da7892463449d59d8537ece57bdb9ff3da9d",
+    "projects/06_soc_c2/a_side/ai_frame_mailbox.v": "be2a19b07be3b228001b64fc32a1fde2ed12ae12475dec29eeba989c9c2bb099",
+    "projects/06_soc_c2/a_side/video_a_capture.v": "6fd4ba3f87ebc42e7ca4e90292da10d1233d8b6cd2b26311cc05cb818e673d57",
+    "projects/06_soc_c2/a_side/video_grid_sampler.v": "9bd066f70ff8778caa7f4f18cfa4709a949b1c61ceb648cd79d015e00d57db84",
+    "projects/06_soc_c2/sim/c2_ddr_model.sv": "9ebf8fdb842841c3e7ce3ba33e5a2ceec2dc5858ab1d2d15dbd68a21cd6527e0",
+    "build/team_real_20261031/tb_c2_real_a.sv": "2b1d5747b9a7177b9b7dcf73721ceb152db78e49c1645bbe57c8530835e3eaaf",
+    "build/team_real_20261031/b_policy/b4_publish_gate.c": "62dbc46858718397d183537a7b57cf99f2cc4439497f2df3442547335d5b4161",
+    "build/team_real_20261031/b_policy/b4_publish_gate.h": "99b76a8f05b29daee39b665a9d32764c45b3b327f5e5b92e6d4926dbac2e773b",
+    "build/team_real_20261031/b_policy/b4_quality_policy.c": "850ef7cc249163db4db2b185e4e60ff19f33b0d0c0525a5d6f3e52352151d556",
+    "build/team_real_20261031/b_policy/b4_quality_policy.h": "97a1bdb5d53a093cdc4c0fafe1749fa09fe1c672d71b4209cc0f8e7c3b504447",
+    "build/team_real_20261031/b_policy/b4_temporal_policy.c": "62ede716fe2e764ee261a2cfeb944df6f1a7ceb1fccb5a4794823b63912e50ca",
+    "build/team_real_20261031/b_policy/b4_temporal_policy.h": "f500b200836cfe58759c631e6ee304ce7ed034de8c6175069ceeb54398b1e4ae",
+    "build/team_real_20261031/b_policy/b_sensors.h": "6d00fcbf43cf7f562644f98eb66dbdbe14c692dbc97634b26fc06d21096806fe",
+    "build/team_real_20261031/b_policy/b_thermal.c": "fdd669547cbfb754b6ea2bb0f5261fd106823bca7867eafbc10b0bddbd9fe70c",
+    "team_work/03_ai_soc/replay/thermal_replay.c": "88efad44c3e9ce6da78b50fb0e9f78ad9d09382c237029cd577b974a0a762c8b",
+    "team_work/03_ai_soc/c3_hal/c3_hal.c": "a173820ba739d99f65e4b2d125b774397c05ef06e9388798037f55bfa58a3cbe",
+    "team_work/shared/src/cooperation_v1.c": "713607d064c072f55069ec63d2f2890f0d6aec66b83f50ac187a35256b4b0a9b",
+    "team_work/shared/include/cooperation_v1.h": "6cd2c16ddc551304afa4a5b92d78c1a2a6faf3898afc0e3cea1509f1e2e53452",
+    "team_work/03_ai_soc/c3_hal/c3_hal.h": "5d33243733bfe848e6b984cbb2bfa48d02f198825d7da7987008162dcd827939"
+  },
+  "archives": {
+    "A": {
+      "name": "A_video_source_20261029.zip",
+      "sha256": "46fa61dcf79d6146f073ff8dc5b0095b6eb62b2691923e922ede3008290a1dfd",
+      "source_commit": "af3982298932c1a921e6bc2840e5866d3e6ae3a2"
+    },
+    "B": {
+      "name": "B_thermal_dataset_20261030.zip",
+      "sha256": "3fea1eeae8d124859ad1655ec68a81738d6f5cd26237210a1a0bd9d3aaf30c0c",
+      "source_commit": "c75a4ac"
+    }
+  },
+  "hardware_accessed": false,
+  "new_board_measurements": 0,
+  "full_system_acceptance": false,
+  "A_B_same_session": false,
+  "shared_time_verified_on_board": false,
+  "A_manifest": {
+    "created_utc": "2026-10-29T12:24:04.347409+00:00",
+    "evidence": "actual_FPGA_UART_gray",
+    "human_action": "user confirmed palm movement/removal and patterned object placed in front of camera",
+    "visible_object_reviewed_display_frame": 71760,
+    "source_frame_mapping": false,
+    "shared_soc_time": false,
+    "cpu_inference": false,
+    "intended_use": "C model preprocessing/letterbox/input integrity; not an accuracy dataset",
+    "samples": [
+      {
+        "label": "still_before",
+        "original": "logs/a_side/headless/20261029_first_capture/frame_0000001248",
+        "display_frame_id": 1248,
+        "display_timestamp_ms": 20800,
+        "checksum": 404005,
+        "changed_count": 0,
+        "bbox_grid": null,
+        "files": {
+          "still_before.gray": "b3fc347944d55fa42bd1b4661b15f9bffaa1cae33c458848ad7b9fc787d68a3d",
+          "still_before.json": "302ed2d2280a834787cff0e9d11227e49e545b0d50a271ecb53aabd695460942",
+          "still_before.pgm": "482dff7a4ce4f665d40d397206727bf4a4a2a9ed2b530903043697e3b8d2088c",
+          "still_before.bmp": "a69496ce7ce92106fdbc3611d63d82ccd6d4bb77d48cfb80ad45a664ce765630"
+        }
+      },
+      {
+        "label": "hand_response_1",
+        "original": "logs/a_side/headless/20261029_stability_30min/frame_0000037884",
+        "display_frame_id": 37884,
+        "display_timestamp_ms": 631400,
+        "checksum": 329104,
+        "changed_count": 951,
+        "bbox_grid": [
+          1,
+          0,
+          78,
+          32
+        ],
+        "files": {
+          "hand_response_1.gray": "4455b8a12d70365260fe6f0b47f9568b13cbb25890b20f6a5e2ab9ea62b6b1fd",
+          "hand_response_1.json": "2e26e11cd5f6b80561e472bb7b0274260bfcabd0e7b2755b7e2311bb0bcd9ca3",
+          "hand_response_1.pgm": "494cf1f44255ecc511c8b0ca3c7f4def555936f1095e76d3fae583a6c38ee51c",
+          "hand_response_1.bmp": "eade85aaf745470c8261180bc0609397d75b26ec5c322ca519babfab79cabe2f"
+        }
+      },
+      {
+        "label": "hand_response_2",
+        "original": "logs/a_side/headless/20261029_stability_30min/frame_0000038091",
+        "display_frame_id": 38091,
+        "display_timestamp_ms": 634850,
+        "checksum": 396308,
+        "changed_count": 253,
+        "bbox_grid": [
+          1,
+          0,
+          93,
+          36
+        ],
+        "files": {
+          "hand_response_2.gray": "f73bad6902bdccc9fbcbf068742f97e3b2023fefbf61803ca16c2ee42fc21343",
+          "hand_response_2.json": "7e2cbbbd8d713ce92694622aac325087ea15253f367040760912c740195e98eb",
+          "hand_response_2.pgm": "35e877bfa7676d4fefbe3325a6c3dc832d425057800b0c61cc80cc4b1a5a1fd4",
+          "hand_response_2.bmp": "1f455dfa1a124178a578056541a5709d9df600fb9d4df7c64d94ad2ee46fd5bd"
+        }
+      },
+      {
+        "label": "object_pattern",
+        "original": "logs/a_side/headless/20261029_stability_30min/frame_0000071760",
+        "display_frame_id": 71760,
+        "display_timestamp_ms": 1196000,
+        "checksum": 479120,
+        "changed_count": 0,
+        "bbox_grid": null,
+        "files": {
+          "object_pattern.gray": "dea7da058e873c457ef99c09f623b4603a67667053f3e4392fecd127c2a73d41",
+          "object_pattern.json": "e8bfc7475b8a380c39c4758063fcb8e10ef2ef0eb40ed808ac72b93ff6859962",
+          "object_pattern.pgm": "4ac15c54b399e5ac43d93e4c1aa12bc47e64a19e132af8a2d4525b6564fa31b4",
+          "object_pattern.bmp": "f1a6af746c4a7b1d64974703a43acd5b1fbe50733a20249ee6d89d1866576e24"
+        }
+      },
+      {
+        "label": "still_after",
+        "original": "logs/a_side/headless/20261029_stability_30min/frame_0000038229",
+        "display_frame_id": 38229,
+        "display_timestamp_ms": 637150,
+        "checksum": 408907,
+        "changed_count": 0,
+        "bbox_grid": null,
+        "files": {
+          "still_after.gray": "cf6efb9b384a9be9d8ddb51ce9e9b8573dd09403b915d188fac94ac7f8b94c23",
+          "still_after.json": "2b6338d76e3c9417ab939b5a5eff2731e199890a17d265dd112b2095d86b31f3",
+          "still_after.pgm": "d814b700fedba0139d022e55c807885764a4f18205a8be441ac7eea3f85fd5c6",
+          "still_after.bmp": "f27f5fd3f058b487d2ddadad292859c901648f9b051d48f01cdf1cc5ba7437ed"
+        }
+      }
+    ]
+  },
+  "A_samples": [
+    {
+      "label": "still_before",
+      "source_metadata": {
+        "frame_id": 1248,
+        "timestamp_ms": 20800,
+        "checksum": 404005,
+        "evidence": "hardware",
+        "tap": "display_gray_after_DDR_before_motion_overlay",
+        "source_frame_id": null,
+        "clock": "local_148500000Hz_display_ms",
+        "shared_soc_time": false,
+        "width": 96,
+        "height": 96,
+        "active_width": 96,
+        "active_height": 54,
+        "pad_top": 21,
+        "pad_bottom": 21,
+        "comparison_valid": true,
+        "motion": false,
+        "bbox_valid": false,
+        "changed_count": 0,
+        "absolute_difference_sum": 4403,
+        "bbox_grid": null,
+        "transport": "USB_UART_not_Ethernet",
+        "cpu_read": false,
+        "physical_scene_reviewed": false,
+        "gray_min": 0,
+        "gray_max": 254,
+        "gray_mean": 77.93306327160494,
+        "nonzero_active": 5130
+      },
+      "raw_sha256": "b3fc347944d55fa42bd1b4661b15f9bffaa1cae33c458848ad7b9fc787d68a3d",
+      "raw_sum32": 404005,
+      "raw_fnv1a": "82de7956",
+      "tensor_fnv1a": "991d2656",
+      "ddr_sha256": "b3fc347944d55fa42bd1b4661b15f9bffaa1cae33c458848ad7b9fc787d68a3d",
+      "CPU_AXI_readback_sha256": "b3fc347944d55fa42bd1b4661b15f9bffaa1cae33c458848ad7b9fc787d68a3d",
+      "desktop_scores": [
+        54,
+        -54
+      ],
+      "transport_equals_direct_inference": true,
+      "simulation_evidence": [
+        "PASS tb_c2_real_a bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=0 final_B_fence FNV CPU_readback A_BRAM lease pack128 SUM32 source_verdict FNV APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ],
+      "replay_ids_and_time": "synthetic bench frame IDs/shared time; original display metadata retained separately",
+      "scene_accuracy_assessed": false
+    },
+    {
+      "label": "hand_response_1",
+      "source_metadata": {
+        "frame_id": 37884,
+        "timestamp_ms": 631400,
+        "checksum": 329104,
+        "evidence": "hardware",
+        "tap": "display_gray_after_DDR_before_motion_overlay",
+        "source_frame_id": null,
+        "clock": "local_148500000Hz_display_ms",
+        "shared_soc_time": false,
+        "width": 96,
+        "height": 96,
+        "active_width": 96,
+        "active_height": 54,
+        "pad_top": 21,
+        "pad_bottom": 21,
+        "comparison_valid": true,
+        "motion": true,
+        "bbox_valid": true,
+        "changed_count": 951,
+        "absolute_difference_sum": 96557,
+        "bbox_grid": [
+          1,
+          0,
+          78,
+          32
+        ],
+        "transport": "USB_UART_not_Ethernet",
+        "cpu_read": false,
+        "physical_scene_reviewed": false,
+        "gray_min": 0,
+        "gray_max": 254,
+        "gray_mean": 63.48456790123457,
+        "nonzero_active": 5130
+      },
+      "raw_sha256": "4455b8a12d70365260fe6f0b47f9568b13cbb25890b20f6a5e2ab9ea62b6b1fd",
+      "raw_sum32": 329104,
+      "raw_fnv1a": "2483b6a9",
+      "tensor_fnv1a": "f13142a9",
+      "ddr_sha256": "4455b8a12d70365260fe6f0b47f9568b13cbb25890b20f6a5e2ab9ea62b6b1fd",
+      "CPU_AXI_readback_sha256": "4455b8a12d70365260fe6f0b47f9568b13cbb25890b20f6a5e2ab9ea62b6b1fd",
+      "desktop_scores": [
+        48,
+        -48
+      ],
+      "transport_equals_direct_inference": true,
+      "simulation_evidence": [
+        "PASS tb_c2_real_a bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=0 final_B_fence FNV CPU_readback A_BRAM lease pack128 SUM32 source_verdict FNV APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ],
+      "replay_ids_and_time": "synthetic bench frame IDs/shared time; original display metadata retained separately",
+      "scene_accuracy_assessed": false
+    },
+    {
+      "label": "hand_response_2",
+      "source_metadata": {
+        "frame_id": 38091,
+        "timestamp_ms": 634850,
+        "checksum": 396308,
+        "evidence": "hardware",
+        "tap": "display_gray_after_DDR_before_motion_overlay",
+        "source_frame_id": null,
+        "clock": "local_148500000Hz_display_ms",
+        "shared_soc_time": false,
+        "width": 96,
+        "height": 96,
+        "active_width": 96,
+        "active_height": 54,
+        "pad_top": 21,
+        "pad_bottom": 21,
+        "comparison_valid": true,
+        "motion": true,
+        "bbox_valid": true,
+        "changed_count": 253,
+        "absolute_difference_sum": 24275,
+        "bbox_grid": [
+          1,
+          0,
+          93,
+          36
+        ],
+        "transport": "USB_UART_not_Ethernet",
+        "cpu_read": false,
+        "physical_scene_reviewed": false,
+        "gray_min": 0,
+        "gray_max": 254,
+        "gray_mean": 76.4483024691358,
+        "nonzero_active": 5130
+      },
+      "raw_sha256": "f73bad6902bdccc9fbcbf068742f97e3b2023fefbf61803ca16c2ee42fc21343",
+      "raw_sum32": 396308,
+      "raw_fnv1a": "e73e614f",
+      "tensor_fnv1a": "447e704f",
+      "ddr_sha256": "f73bad6902bdccc9fbcbf068742f97e3b2023fefbf61803ca16c2ee42fc21343",
+      "CPU_AXI_readback_sha256": "f73bad6902bdccc9fbcbf068742f97e3b2023fefbf61803ca16c2ee42fc21343",
+      "desktop_scores": [
+        83,
+        -83
+      ],
+      "transport_equals_direct_inference": true,
+      "simulation_evidence": [
+        "PASS tb_c2_real_a bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=0 final_B_fence FNV CPU_readback A_BRAM lease pack128 SUM32 source_verdict FNV APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ],
+      "replay_ids_and_time": "synthetic bench frame IDs/shared time; original display metadata retained separately",
+      "scene_accuracy_assessed": false
+    },
+    {
+      "label": "object_pattern",
+      "source_metadata": {
+        "frame_id": 71760,
+        "timestamp_ms": 1196000,
+        "checksum": 479120,
+        "evidence": "hardware",
+        "tap": "display_gray_after_DDR_before_motion_overlay",
+        "source_frame_id": null,
+        "clock": "local_148500000Hz_display_ms",
+        "shared_soc_time": false,
+        "width": 96,
+        "height": 96,
+        "active_width": 96,
+        "active_height": 54,
+        "pad_top": 21,
+        "pad_bottom": 21,
+        "comparison_valid": true,
+        "motion": false,
+        "bbox_valid": false,
+        "changed_count": 0,
+        "absolute_difference_sum": 0,
+        "bbox_grid": null,
+        "transport": "USB_UART_not_Ethernet",
+        "cpu_read": false,
+        "physical_scene_reviewed": false,
+        "gray_min": 0,
+        "gray_max": 147,
+        "gray_mean": 92.42283950617283,
+        "nonzero_active": 5130
+      },
+      "raw_sha256": "dea7da058e873c457ef99c09f623b4603a67667053f3e4392fecd127c2a73d41",
+      "raw_sum32": 479120,
+      "raw_fnv1a": "67daaef5",
+      "tensor_fnv1a": "ad1fcff5",
+      "ddr_sha256": "dea7da058e873c457ef99c09f623b4603a67667053f3e4392fecd127c2a73d41",
+      "CPU_AXI_readback_sha256": "dea7da058e873c457ef99c09f623b4603a67667053f3e4392fecd127c2a73d41",
+      "desktop_scores": [
+        -48,
+        48
+      ],
+      "transport_equals_direct_inference": true,
+      "simulation_evidence": [
+        "PASS tb_c2_real_a bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=0 final_B_fence FNV CPU_readback A_BRAM lease pack128 SUM32 source_verdict FNV APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ],
+      "replay_ids_and_time": "synthetic bench frame IDs/shared time; original display metadata retained separately",
+      "scene_accuracy_assessed": false
+    },
+    {
+      "label": "still_after",
+      "source_metadata": {
+        "frame_id": 38229,
+        "timestamp_ms": 637150,
+        "checksum": 408907,
+        "evidence": "hardware",
+        "tap": "display_gray_after_DDR_before_motion_overlay",
+        "source_frame_id": null,
+        "clock": "local_148500000Hz_display_ms",
+        "shared_soc_time": false,
+        "width": 96,
+        "height": 96,
+        "active_width": 96,
+        "active_height": 54,
+        "pad_top": 21,
+        "pad_bottom": 21,
+        "comparison_valid": true,
+        "motion": false,
+        "bbox_valid": false,
+        "changed_count": 0,
+        "absolute_difference_sum": 0,
+        "bbox_grid": null,
+        "transport": "USB_UART_not_Ethernet",
+        "cpu_read": false,
+        "physical_scene_reviewed": false,
+        "gray_min": 0,
+        "gray_max": 254,
+        "gray_mean": 78.87866512345678,
+        "nonzero_active": 5130
+      },
+      "raw_sha256": "cf6efb9b384a9be9d8ddb51ce9e9b8573dd09403b915d188fac94ac7f8b94c23",
+      "raw_sum32": 408907,
+      "raw_fnv1a": "de01b7da",
+      "tensor_fnv1a": "468b41da",
+      "ddr_sha256": "cf6efb9b384a9be9d8ddb51ce9e9b8573dd09403b915d188fac94ac7f8b94c23",
+      "CPU_AXI_readback_sha256": "cf6efb9b384a9be9d8ddb51ce9e9b8573dd09403b915d188fac94ac7f8b94c23",
+      "desktop_scores": [
+        90,
+        -90
+      ],
+      "transport_equals_direct_inference": true,
+      "simulation_evidence": [
+        "PASS tb_c2_real_a bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=0 final_B_fence FNV CPU_readback A_BRAM lease pack128 SUM32 source_verdict FNV APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ],
+      "replay_ids_and_time": "synthetic bench frame IDs/shared time; original display metadata retained separately",
+      "scene_accuracy_assessed": false
+    }
+  ],
+  "desktop_model_compatibility": {
+    "source_model_sha256": "808cfdfc0cf3a6fa6f6fa26bfa379ea97c16d5db7334637766e39c3408502e9d",
+    "runtime_model_sha256": "77cac99d46416295fc3ec9cf752dec8e0c8aafd9421475da6c86439aee22e1c4",
+    "transform": "desktop_only_bias_quantized_dimension_3_to_0",
+    "patches": [
+      {
+        "tensor": 33,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_0/Conv2D_bias",
+        "offset": 263264,
+        "before": 3,
+        "after": 0
+      },
+      {
+        "tensor": 36,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_10_depthwise/depthwise_bias",
+        "offset": 261296,
+        "before": 3,
+        "after": 0
+      },
+      {
+        "tensor": 40,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_11_depthwise/depthwise_bias",
+        "offset": 257664,
+        "before": 3,
+        "after": 0
+      },
+      {
+        "tensor": 44,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_12_depthwise/depthwise_bias",
+        "offset": 254032,
+        "before": 3,
+        "after": 0
+      },
+      {
+        "tensor": 48,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_13_depthwise/depthwise_bias",
+        "offset": 247328,
+        "before": 3,
+        "after": 0
+      },
+      {
+        "tensor": 52,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_1_depthwise/depthwise_bias",
+        "offset": 243600,
+        "before": 3,
+        "after": 0
+      },
+      {
+        "tensor": 56,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_2_depthwise/depthwise_bias",
+        "offset": 242656,
+        "before": 3,
+        "after": 0
+      },
+      {
+        "tensor": 60,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_3_depthwise/depthwise_bias",
+        "offset": 241328,
+        "before": 3,
+        "after": 0
+      },
+      {
+        "tensor": 64,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_4_depthwise/depthwise_bias",
+        "offset": 240000,
+        "before": 3,
+        "after": 0
+      },
+      {
+        "tensor": 68,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_5_depthwise/depthwise_bias",
+        "offset": 237904,
+        "before": 3,
+        "after": 0
+      },
+      {
+        "tensor": 72,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_6_depthwise/depthwise_bias",
+        "offset": 235808,
+        "before": 3,
+        "after": 0
+      },
+      {
+        "tensor": 76,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_7_depthwise/depthwise_bias",
+        "offset": 232176,
+        "before": 3,
+        "after": 0
+      },
+      {
+        "tensor": 80,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_8_depthwise/depthwise_bias",
+        "offset": 228544,
+        "before": 3,
+        "after": 0
+      },
+      {
+        "tensor": 84,
+        "name": "MobilenetV1/MobilenetV1/Conv2d_9_depthwise/depthwise_bias",
+        "offset": 224912,
+        "before": 3,
+        "after": 0
+      }
+    ],
+    "all_model_data_buffers_unchanged": true,
+    "board_model_modified": false,
+    "board_equivalence_measured": false
+  },
+  "B_dataset_report": {
+    "schema": "B_THERMAL_DATASET_REPORT_V1",
+    "execution_status": "PASS",
+    "hardware_accessed": false,
+    "new_board_measurements": 0,
+    "capture_id": "mlx90640:real_fast_20261030_184934_752153:38c87b5ba7557bee",
+    "source_summary_sha256": "38c87b5ba7557bee1e31ad971644ef8d045f01380af93472d9513ae84fef521d",
+    "source_files_verified": 612,
+    "temperature_pairs_recalculated": 100,
+    "unique_measured_subpages": 200,
+    "warmup_exported": 0,
+    "valid_pixels_per_pair": 767,
+    "invalid_index_zero_based": 620,
+    "observed_pair_age_ms": {
+      "min": 358,
+      "max": 447,
+      "mean": 366.72
+    },
+    "remaining_budget_ms_at_saved_final_check": {
+      "min": 53,
+      "max": 142
+    },
+    "host_c_gate_accepted_at_saved_final_check": 100,
+    "host_c_gate_accepts_at_500ms": 100,
+    "host_c_gate_rejects_at_501ms": 100,
+    "host_c_gate_rejects_future_sample": 100,
+    "c_policy_build": {
+      "compiler": "gcc.exe (tdm64-1) 9.2.0",
+      "flags": [
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-pedantic"
+      ],
+      "source_set_sha256": "0478b13acac6fe1a1c7fff3dbfb234c72f997ddd387025da64503a80fb0d4ecb",
+      "source_mode": "UNMODIFIED_BUNDLED_B4_C_POLICIES"
+    },
+    "reconstructed_abi_flags": 3,
+    "reconstructed_abi_errors": 64,
+    "binary": {
+      "format": "offline <u32 now_ms> + little-endian coop_thermal_t",
+      "record_bytes": 1656,
+      "records": 100,
+      "not_a_network_protocol": true,
+      "invalid_slots": "zero placeholder with mask bit 0; never a temperature estimate",
+      "rounding": "Python round ties-to-even to centi-C"
+    },
+    "full_system_release_allowed": false,
+    "remaining_joint_evidence": [
+      "final SoC I2C and deadlines",
+      "same-session real video",
+      "final shared clock",
+      "sensor/video spatial orientation",
+      "real event/network/alarm integration"
+    ],
+    "features": "exploratory temperature regions; no person/fall labels or classifier validation",
+    "output_files_sha256": {
+      "thermal_records.jsonl": "2042afc7ddf0888a2fbcf0b40756b5cd223ea5d7dfb2e87708549ab59a905700",
+      "thermal_metrics.csv": "3a56a510ef5bd8288e3bbeb0f5f1939829738b03592b0199f481dd079e2d91c4",
+      "thermal_probe_records.bin": "ca09d6cc85d2d429d1e0e698269589b57dca36d27a4316f90463facb8a555455"
+    }
+  },
+  "B_binary_sha256": "ca09d6cc85d2d429d1e0e698269589b57dca36d27a4316f90463facb8a555455",
+  "B_C_ABI_policies": {
+    "records": 100,
+    "strict_rejected": 100,
+    "B4_masked_accepted": 100,
+    "valid_pixels": 767,
+    "invalid_index": 620,
+    "age_500_accept": 100,
+    "age_501_reject": 100,
+    "future_reject": 100
+  },
+  "B_negative_tests": {
+    "truncated_rejected": true,
+    "changed_bad_pixel_mask_rejected": true
+  },
+  "finished": "2026-10-31T02:53:54.514732+00:00"
+}

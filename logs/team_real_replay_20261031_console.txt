@@ -1,0 +1,7 @@
+PASS A still_before
+PASS A hand_response_1
+PASS A hand_response_2
+PASS A object_pattern
+PASS A still_after
+PASS B: current ABI; strict reject vs B4 masked accept; age boundaries and corruption tests
+PASS C real-data offline integration. No synchronized/board inference claim.

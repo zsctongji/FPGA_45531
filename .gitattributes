@@ -23,3 +23,8 @@
 /tools/prepare_c2_video_test.py -text whitespace=cr-at-eol
 /tools/run_c2_selftest.py -text whitespace=cr-at-eol
 /tools/verify_c24_package.py -text whitespace=cr-at-eol
+
+# Preserve exact real-data replay sources and report hashes.
+/tools/replay_team_real_data.py -text whitespace=cr-at-eol
+/team_work/03_ai_soc/replay/thermal_replay.c -text whitespace=cr-at-eol
+/logs/team_real_replay_20261031.json -text whitespace=cr-at-eol

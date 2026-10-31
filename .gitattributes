@@ -63,3 +63,34 @@
 /tools/package_c3_backend.py -text whitespace=cr-at-eol
 /tools/prepare_c24.py -text whitespace=cr-at-eol
 /tools/verify_c1_package.py -text whitespace=cr-at-eol
+/projects/06_soc_c2/rtl/c2_bram_async_fifo.sv -text whitespace=cr-at-eol
+/projects/06_soc_c2/sim/tb_c2_bram_fifo.sv -text whitespace=cr-at-eol
+/tools/run_c2_synthesis.ps1 -text whitespace=cr-at-eol
+/tools/audit_bram_usage.py -text whitespace=cr-at-eol
+/tools/audit_pin_ownership.py -text whitespace=cr-at-eol
+/25_audit_bram_pins.cmd -text whitespace=cr-at-eol
+
+# Keep this BRAM/pin increment and its evidence hashes byte-identical.
+/logs/c2_selftest.json -text whitespace=cr-at-eol
+/logs/c2_native_synthesis.json -text whitespace=cr-at-eol
+/logs/c2_native_warning_review.json -text whitespace=cr-at-eol
+/logs/c2_video_tail.json -text whitespace=cr-at-eol
+/logs/c2_bram_baseline_20261031.json -text whitespace=cr-at-eol
+/logs/c2_bram_optimization_20261031.json -text whitespace=cr-at-eol
+/logs/pin_ownership_audit_20261031.json -text whitespace=cr-at-eol
+/logs/a_c2_pc_inference.json -text whitespace=cr-at-eol
+/logs/a_c2_video_pc_inference.json -text whitespace=cr-at-eol
+/logs/c24_package_check.json -text whitespace=cr-at-eol
+/projects/06_soc_c2/integration/c2_native.xml -text whitespace=cr-at-eol
+/projects/06_soc_c2/integration/INTEGRATION_MANIFEST.json -text whitespace=cr-at-eol
+/projects/06_soc_c2/BASELINE_AUDIT.json -text whitespace=cr-at-eol
+/logs/c2_riscv_compile.json -text whitespace=cr-at-eol
+
+# Generated tool output retains original whitespace verbatim.
+/logs/c2_native_synthesis.log -text -whitespace
+/logs/c2/tb_c2_bram_fifo_s_half11_d_half3.log -text whitespace=cr-at-eol
+/logs/c2/tb_c2_bram_fifo_s_half11_d_half3_compile.log -text whitespace=cr-at-eol
+/logs/c2/tb_c2_bram_fifo_s_half3_d_half11.log -text whitespace=cr-at-eol
+/logs/c2/tb_c2_bram_fifo_s_half3_d_half11_compile.log -text whitespace=cr-at-eol
+/logs/c2/tb_c2_bram_fifo_s_half5_d_half5.log -text whitespace=cr-at-eol
+/logs/c2/tb_c2_bram_fifo_s_half5_d_half5_compile.log -text whitespace=cr-at-eol

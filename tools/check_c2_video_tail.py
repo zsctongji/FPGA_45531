@@ -4,7 +4,7 @@ import hashlib,json,subprocess
 ROOT=Path(__file__).resolve().parents[1]
 def main():
     files=['projects/06_soc_c2/rtl/c2_video_framebuffer.sv',
-           'projects/06_soc_c2/rtl/c2_async_fifo.sv','projects/06_soc_c2/rtl/c2_cdc_mailbox.sv',
+           'projects/06_soc_c2/rtl/c2_async_fifo.sv','projects/06_soc_c2/rtl/c2_bram_async_fifo.sv','projects/06_soc_c2/rtl/c2_cdc_mailbox.sv',
            'projects/06_soc_c2/sim/c2_ddr_model.sv','projects/06_soc_c2/sim/tb_c2_video_tail.sv',
            'tools/check_c2_video_tail.py']
     record={'status':'RUNNING','board_test_passed':False,

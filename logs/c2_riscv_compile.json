@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "started": "2026-10-31T03:40:19.076902+00:00",
+  "started": "2026-10-31T04:17:31.271262+00:00",
   "scope": "RV32 object compilation and instruction inspection; no firmware execution",
   "board_test_passed": false,
   "linked_firmware": false,
@@ -55,5 +55,5 @@
     }
   ],
   "cache_sequence": "fence iorw,iorw; .word 0x0000500f; fence iorw,iorw",
-  "finished": "2026-10-31T03:40:20.899007+00:00"
+  "finished": "2026-10-31T04:17:33.164964+00:00"
 }

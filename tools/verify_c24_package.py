@@ -23,7 +23,7 @@ def main():
     require(inputs['version'].encode() in elf,'Linked build identifier')
     require((ROOT/'firmware/c24_frame_person_detect/tinyml_c24.bin').stat().st_size<=4194304,'Fits existing 4 MiB boot-copy limit')
     tests=read(ROOT/'logs/c2_selftest.json')
-    require(tests['status']=='PASS' and tests['passed']==50,'50 C2/C3/source-pixel/framebuffer/shared-time RTL runs PASS')
+    require(tests['status']=='PASS' and tests['passed']==53,'53 C2/C3/BRAM/source-pixel/framebuffer/shared-time RTL runs PASS')
     for name,digest in tests['source_sha256'].items():require(sha(ROOT/name)==digest,'RTL/driver test identity '+name)
     native=read(ROOT/'logs/c2_native_synthesis.json')
     require(native['status']=='PASS','Current native overlay logic synthesis PASS')
@@ -36,6 +36,19 @@ def main():
         if path.suffix=='.xml':allowed.add(item['sha256'])
         require(sha(path) in allowed,'Native source '+item['path'])
     for item in native['artifacts']:require(sha(Path(item['path']))==item['sha256'],'Native artifact '+item['path'])
+    bram=read(ROOT/'logs/c2_bram_optimization_20261031.json')
+    require(bram['status']=='PASS' and bram['rtl_runs']==53 and not bram['pnr_passed'],
+            'BRAM map and 53-run RTL audit PASS, physical signoff remains separate')
+    for name,digest in bram['source_sha256'].items():require(sha(ROOT/name)==digest,'BRAM audit source '+name)
+    for name,digest in bram['report_sha256'].items():require(sha(ROOT/name)==digest,'BRAM audit evidence '+name)
+    pins=read(ROOT/'logs/pin_ownership_audit_20261031.json')
+    require(pins['audit_execution']=='PASS' and not pins['physical_constraints_ready'] and not pins['board_programmed'],
+            'Offline pin ownership audit complete; unresolved physical merge explicitly retained')
+    for name,digest in pins['source_sha256'].items():
+        # Nested XML bytes are covered by the pinned whole-archive SHA below.
+        if name.startswith(('A_20261029:','B_20261030:')):continue
+        path=Path(name)
+        require(sha(path if path.is_absolute() else ROOT/path)==digest,'Pin ownership input '+name)
     inference=read(ROOT/'logs/a_c2_pc_inference.json')
     require(inference['status']=='PASS' and inference['firmware_selftest_input_equal'],
             'A -> C2 DDR readback equals firmware self-test input and desktop reference')
@@ -76,7 +89,8 @@ def main():
     result={'status':'PASS','checks':len(checks),'version':inputs['version'],'board_executed':False,
             'source': 'synthetic full GRAY8 source frames, pinned A capture/BRAM and C2 RTL, DDR model, PC inference; no physical camera',
             'reports':{name:sha(ROOT/name) for name in ['logs/c2_selftest.json','logs/c2_native_synthesis.json',
-                       'logs/firmware_c24.json','logs/a_c2_pc_inference.json','logs/a_c2_video_pc_inference.json','logs/c24_acceptance_tests.json','logs/c2_video_tail.json','logs/c3_backend_check.json','logs/c3_backend_library.json']}}
+                       'logs/firmware_c24.json','logs/a_c2_pc_inference.json','logs/a_c2_video_pc_inference.json','logs/c24_acceptance_tests.json','logs/c2_video_tail.json','logs/c3_backend_check.json','logs/c3_backend_library.json',
+                       'logs/c2_bram_optimization_20261031.json','logs/pin_ownership_audit_20261031.json']}}
     (ROOT/'logs/c24_package_check.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(result))
 if __name__=='__main__':main()

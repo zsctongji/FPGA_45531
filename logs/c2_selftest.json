@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "started": "2026-10-31T03:20:26.577757+00:00",
+  "started": "2026-10-31T03:57:46.366555+00:00",
   "scope": "portable RTL functional simulation with synthetic masters and DDR model",
   "board_test_passed": false,
   "vendor_ddr_simulated": false,
@@ -161,6 +161,51 @@
       "log": "logs/c2/tb_c2_cache.log",
       "evidence": [
         "PASS tb_c2_cache vendor_DataCache ways=2 sets=32 rounds=3 invalidate_all_tags CPU_instruction_execution_not_simulated"
+      ]
+    },
+    {
+      "name": "tb_c2_bram_fifo_s_half3_d_half11",
+      "status": "PASS",
+      "parameters": {
+        "S_HALF": 3,
+        "D_HALF": 11
+      },
+      "ddr_seed": null,
+      "compiler_log": "logs/c2/tb_c2_bram_fifo_s_half3_d_half11_compile.log",
+      "exit_code": 0,
+      "log": "logs/c2/tb_c2_bram_fifo_s_half3_d_half11.log",
+      "evidence": [
+        "PASS tb_c2_bram_fifo depth=64 words=4096 checks=16472 cycle_equivalent exact_capacity pointer_wrap stable_stall common_reset synchronous_RAM"
+      ]
+    },
+    {
+      "name": "tb_c2_bram_fifo_s_half11_d_half3",
+      "status": "PASS",
+      "parameters": {
+        "S_HALF": 11,
+        "D_HALF": 3
+      },
+      "ddr_seed": null,
+      "compiler_log": "logs/c2/tb_c2_bram_fifo_s_half11_d_half3_compile.log",
+      "exit_code": 0,
+      "log": "logs/c2/tb_c2_bram_fifo_s_half11_d_half3.log",
+      "evidence": [
+        "PASS tb_c2_bram_fifo depth=64 words=4096 checks=30609 cycle_equivalent exact_capacity pointer_wrap stable_stall common_reset synchronous_RAM"
+      ]
+    },
+    {
+      "name": "tb_c2_bram_fifo_s_half5_d_half5",
+      "status": "PASS",
+      "parameters": {
+        "S_HALF": 5,
+        "D_HALF": 5
+      },
+      "ddr_seed": null,
+      "compiler_log": "logs/c2/tb_c2_bram_fifo_s_half5_d_half5_compile.log",
+      "exit_code": 0,
+      "log": "logs/c2/tb_c2_bram_fifo_s_half5_d_half5.log",
+      "evidence": [
+        "PASS tb_c2_bram_fifo depth=64 words=4096 checks=16547 cycle_equivalent exact_capacity pointer_wrap stable_stall common_reset synchronous_RAM"
       ]
     },
     {
@@ -720,6 +765,7 @@
     "projects/06_soc_c2/rtl/c2_async_fifo.sv": "91d7dd66779d10552c23048734da6c6baaf6267d553eaf3567a2446e02ba9d77",
     "projects/06_soc_c2/rtl/c2_axi_arbiter.sv": "b36413ca9feea3c8e4a714a41340980148e2eb2db2177e5da53f3d46876ebbde",
     "projects/06_soc_c2/rtl/c2_axi_to_vendor.sv": "c16fb2252e6315f21bbc229faf2db046fe18ceb81c4471cc11f91d384e744da0",
+    "projects/06_soc_c2/rtl/c2_bram_async_fifo.sv": "5f993727ca3e48e89d10740c98c06d001b12b8a08d176d2eadb46c966413682d",
     "projects/06_soc_c2/rtl/c2_buffer_manager.sv": "df19575e73d2f0011d8aa2241d598a5c9f16d34ec37d2990fd07145e776ba2ea",
     "projects/06_soc_c2/rtl/c2_cdc_mailbox.sv": "04550a55a2e5fbb824c9d0733f9b07378b0b041222eb3fbc9c6170043e57e7d4",
     "projects/06_soc_c2/rtl/c2_frame_publisher.sv": "e07dc4798af6f03ab18ef16fd9faebe6306c19325685990e1586c66c3200910d",
@@ -729,8 +775,8 @@
     "projects/06_soc_c2/rtl/c2_source_fence.sv": "1e865d73c3371428753db54562cfd6ef383ecba378e11e164bb2bc0c3a7f5482",
     "projects/06_soc_c2/rtl/c2_system_boundary.sv": "bf55c29bef46b953d7cfd152883f267464fbd3e97478b6f51362bdfdef3330ac",
     "projects/06_soc_c2/rtl/c2_vendor_attachment.sv": "38ef3fe766c953f2036eeef30b308c5656abe69d167f2fee638971ecd407674d",
-    "projects/06_soc_c2/rtl/c2_video_framebuffer.sv": "9439050a47097f948e61bf3e086adca74f2c3c949d7fa3443f1fb340631cf366",
-    "projects/06_soc_c2/rtl/c2_video_ingress.sv": "b6610ec71c5501f2799526be74d012dca075e87afabf3ce2d82d5849f300d762",
+    "projects/06_soc_c2/rtl/c2_video_framebuffer.sv": "f942962793c0f2778750fea248f0259efca27928ae7f1488f0f2f491153d5c96",
+    "projects/06_soc_c2/rtl/c2_video_ingress.sv": "5b855d68d50bcf2cfc2ea99d2f2b1512451bf2f4ab3850f480833c685de7cc88",
     "projects/06_soc_c2/rtl/c2_video_pipeline.sv": "9401308c63689b25baef2143c44de297e467fd0b4ed9b9525efe66d815f1405a",
     "projects/06_soc_c2/rtl/c2_video_scanout.sv": "711450de1c1494f02d963c686799da7892463449d59d8537ece57bdb9ff3da9d",
     "projects/06_soc_c2/rtl/c3_apb_peripheral.sv": "a521559e95ab39b1bd0b29a8eb1aade3ce5dfe5d8433b89cb420b65ff03c060e",
@@ -745,6 +791,7 @@
     "projects/06_soc_c2/sim/tb_c2_apb.sv": "e5976980f79012644428a75a97a084cc72c342f4ca18791a30c77cb163f21842",
     "projects/06_soc_c2/sim/tb_c2_axi.sv": "ccc6e7d9c9b80109930ad7bdd142f073dcf90a74eacbe559b5a3e2171b8dc28d",
     "projects/06_soc_c2/sim/tb_c2_boundary.sv": "44887f0f3033aafbb75a79f7396ba9047dc4b5b9d44c3cd8727ec7d6896d1e41",
+    "projects/06_soc_c2/sim/tb_c2_bram_fifo.sv": "57fbf42b90ed793659276cfaa751d1afbccd07febd0ebcb9503398a6e90b6a45",
     "projects/06_soc_c2/sim/tb_c2_cache.sv": "0bb318b7010d783ddc1f8b80ed8bce44d88219b8bb5fae92300c38197c2deca7",
     "projects/06_soc_c2/sim/tb_c2_cdc.sv": "087380d2becdb566b6336902e6644dc5ee6bd1521708cb31bfc150880cc72cfb",
     "projects/06_soc_c2/sim/tb_c2_fifo.sv": "3e6c2e748d503d44842a724c6e9b63468214451525a290a6ffaff67b54afbd2f",
@@ -758,6 +805,7 @@
     "projects/06_soc_c2/sim/tb_c2_video_config.sv": "dab207d9eea0d2871f4dd5c5fb2f93e3f160e4825faa6a9eab3b356d0018a416",
     "projects/06_soc_c2/sim/tb_c2_video_tail.sv": "0d76272bf7a5a87561367333938f2ed5b05997c298a77baa9e6e71649bf0edb2",
     "projects/06_soc_c2/sim/tb_c3_peripheral.sv": "80966ffa98a93b9fc5050f7617e0199ec7ae673ad7ac87af3cbfa7389f31e63e",
+    "projects/06_soc_c2/sim/tb_c3_shared_epoch.sv": "32c3660718582ae71c0a0e2dbb54b6959328f8481f77d1323973eab50cd5d264",
     "projects/06_soc_c2/sim/tb_c3_timing.sv": "dc4af9286bd8e3326c9621cc756b7e32067ef86b6855c050c4582b2ac4085848",
     "team_work/03_ai_soc/c2/c2_driver.c": "c1a561ef635bd51e9837f1f63f75ffbaffd912454faf8ff8520cf0a65361798c",
     "team_work/03_ai_soc/c2/c2_driver.h": "70e30ebfb5b6fd39122aba49eccde4668199aeff8f306fba45f4a6a2d490d761",
@@ -794,7 +842,7 @@
     "tools/build_c2_host.cmd": "3410e984d7f4bb3841f568edcb51cad3558454ee01823e725e78873ab5dd54a6",
     "projects/03_tinyml/ip/sapphire_soc/sapphire_soc.v": "87c00873d2efc6b5bbb5336c1a1046eb0a21cf89c9d971f6c7cf703e0d2e6733",
     "build/c2/vendor_datacache.v": "a7f4b4df28d3c191c999cf08e74dca2cf68383b375f7a5a368b0bf752326f432",
-    "tools/run_c2_selftest.py": "5e88711f30e40ec1a6e0a439bfe1f51280e613cb869b69eb0d5391b74ae5f104",
+    "tools/run_c2_selftest.py": "229b229bf220186d34331c745963336d1b6e435a31eb083dfb6e38f487649876",
     "tools/audit_c2_baselines.py": "e8aac50a3e82978c65872ddb4315576aed14b925ce88a9a590b67c82c0f87c2d"
   },
   "host_driver_test": "PASS",
@@ -803,6 +851,6 @@
   "baseline_audit": "projects/06_soc_c2/BASELINE_AUDIT.json",
   "vendor_audit": "PASS",
   "c3_host_driver_test": "PASS",
-  "passed": 50,
-  "finished": "2026-10-31T03:40:20.983603+00:00"
+  "passed": 53,
+  "finished": "2026-10-31T04:17:33.265646+00:00"
 }

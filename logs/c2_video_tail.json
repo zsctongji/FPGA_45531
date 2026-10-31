@@ -2,12 +2,13 @@
   "status": "PASS",
   "board_test_passed": false,
   "source_sha256": {
-    "projects/06_soc_c2/rtl/c2_video_framebuffer.sv": "9439050a47097f948e61bf3e086adca74f2c3c949d7fa3443f1fb340631cf366",
+    "projects/06_soc_c2/rtl/c2_video_framebuffer.sv": "f942962793c0f2778750fea248f0259efca27928ae7f1488f0f2f491153d5c96",
     "projects/06_soc_c2/rtl/c2_async_fifo.sv": "91d7dd66779d10552c23048734da6c6baaf6267d553eaf3567a2446e02ba9d77",
+    "projects/06_soc_c2/rtl/c2_bram_async_fifo.sv": "5f993727ca3e48e89d10740c98c06d001b12b8a08d176d2eadb46c966413682d",
     "projects/06_soc_c2/rtl/c2_cdc_mailbox.sv": "04550a55a2e5fbb824c9d0733f9b07378b0b041222eb3fbc9c6170043e57e7d4",
     "projects/06_soc_c2/sim/c2_ddr_model.sv": "9ebf8fdb842841c3e7ce3ba33e5a2ceec2dc5858ab1d2d15dbd68a21cd6527e0",
     "projects/06_soc_c2/sim/tb_c2_video_tail.sv": "0d76272bf7a5a87561367333938f2ed5b05997c298a77baa9e6e71649bf0edb2",
-    "tools/check_c2_video_tail.py": "597e8e3b937d4bd73fa5562d90363bb125fb103757f1f75cafbcbe5036a281bc"
+    "tools/check_c2_video_tail.py": "4b1556e185213fc8a126db0a61fd6c8cb1e110d37014c2866a9d52cae571e29e"
   },
   "evidence": [
     "PASS tb_c2_video_tail words=6 AWLEN=5 ARLEN=5 writes=1 scans=2 checked_bytes=192 final_B_fence display_backpressure repeat",

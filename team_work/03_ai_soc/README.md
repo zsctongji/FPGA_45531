@@ -1,5 +1,7 @@
 # C：RISC-V/TinyML、统一工程、融合与预测
 
+2026-10-31 BRAM 优化与引脚审计：见 [BRAM_OPTIMIZATION_20261031.md](BRAM_OPTIMIZATION_20261031.md) 和 [PIN_OWNERSHIP_20261031.md](PIN_OWNERSHIP_20261031.md)。native map 为 39,656 LUT4 / 36,902 FF / 174 RAM10；53 次 RTL 与 781 项包检查 PASS。25_audit_bram_pins.cmd 复核综合证据与管脚所有权，物理约束仍为 REVIEW_REQUIRED。下文 49/50 次与旧资源数字是历史阶段记录。
+
 2026-10-31 C3真实外设与发布策略见 [C3_REAL_BACKEND_20261031.md](C3_REAL_BACKEND_20261031.md)。native新增I²C/GPIO APB页、公共时间直连及显式620号坏点策略；50次RTL、C3专项、RV32与756项包检查PASS，物理管脚/P&R/上板未验收。C HAL rev2须重编译，默认MMIO关闭。
 
 2026-10-31 真实历史数据接入：见 [REAL_DATA_REPLAY_20261031.md](REAL_DATA_REPLAY_20261031.md)。5张A真图已通过C2/DDR/CPU AXI回放和桌面对照，100条B热图已通过当前ABI及严格/B4策略对照；不是整机同步或上板推理。入口21_replay_real_team_data.cmd。

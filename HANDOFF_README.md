@@ -77,3 +77,21 @@ are unchanged; exact original HAL snapshots preserve their release verification.
 See team_work/03_ai_soc/C3_REAL_BACKEND_20261031.md and 22_test_c3_backend.cmd.
 Physical pad constraints, electrical/CDC/timing/PNR and board acceptance remain
 open. Reports retain source-machine paths; rebuild on the receiving machine.
+
+
+## BRAM and pin ownership audit 2026-10-31
+
+Two full-video 130x64 CDC FIFOs now use synchronous-read dual-clock RAM while
+retaining exact capacity and cycle-level valid/ready behavior. Native map:
+39,656 LUT4 / 36,902 FF / 174 RAM10 (before: 53,027 / 53,539 / 160).
+The source machine passed 53 RTL runs, host/RV32 checks, short-burst and PC
+input comparisons, saved A/B replay and 781 C24 package identity checks.
+CPU firmware remains c24-ddfd364d754dce06; default live MMIO stays disabled.
+
+See team_work/03_ai_soc/BRAM_OPTIMIZATION_20261031.md and
+team_work/03_ai_soc/PIN_OWNERSHIP_20261031.md; 25_audit_bram_pins.cmd audits
+current local evidence after rebuilding the native map/regression and providing
+the pinned A/B archives. Pin audit covered nine alternative project images;
+final native physical constraints are still REVIEW_REQUIRED. LCD/sensor, P13
+LED/reset, PLL and bank-default merges need explicit closure before PNR/board
+acceptance. No new board configuration or hardware test is asserted.

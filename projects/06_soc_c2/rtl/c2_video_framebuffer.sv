@@ -51,7 +51,7 @@ module c2_video_framebuffer #(
  wire raw_valid;wire [129:0] raw_data;
  assign out_valid=raw_valid && (raw_data[129:128]!=2 || done_ready);
  assign out_data=raw_data;
- c2_async_fifo #(.WIDTH(130),.ADDR_BITS(OUT_FIFO_BITS)) output_cdc(
+ c2_bram_async_fifo #(.WIDTH(130),.ADDR_BITS(OUT_FIFO_BITS)) output_cdc(
   .arst_n(arst_n),.s_clk(clk),.s_valid(fifo_valid),.s_ready(fifo_ready),.s_data(fifo_data),
   .d_clk(display_clk),.d_valid(raw_valid),.d_ready(out_ready && (raw_data[129:128]!=2 || done_ready)),.d_data(raw_data));
  assign req_ready=rs==R_IDLE && enable;

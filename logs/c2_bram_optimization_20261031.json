@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "scope": "Efinity native map resource comparison and RAM hierarchy audit, plus RTL cycle equivalence/full concurrent regression; no post-map simulation or physical signoff.",
+  "board_test_passed": false,
+  "pnr_passed": false,
+  "cdc_signoff": false,
+  "resources": {
+    "EFX_LUT4": {
+      "before": 53027,
+      "after": 39656,
+      "change": -13371,
+      "reduction_percent": 25.215
+    },
+    "EFX_FF": {
+      "before": 53539,
+      "after": 36902,
+      "change": -16637,
+      "reduction_percent": 31.075
+    },
+    "EFX_RAM10": {
+      "before": 160,
+      "after": 174,
+      "change": 14,
+      "reduction_percent": -8.75
+    },
+    "EFX_DSP48": {
+      "before": 51,
+      "after": 51,
+      "change": 0,
+      "reduction_percent": 0.0
+    },
+    "EFX_ADD": {
+      "before": 6715,
+      "after": 6715,
+      "change": 0,
+      "reduction_percent": 0.0
+    }
+  },
+  "ram_instances": {
+    "c2_full_video/ingress/crossing/memory": [
+      "c2_full_video/ingress/crossing/memory__D$f1",
+      "c2_full_video/ingress/crossing/memory__D$2",
+      "c2_full_video/ingress/crossing/memory__D$12",
+      "c2_full_video/ingress/crossing/memory__D$e12",
+      "c2_full_video/ingress/crossing/memory__D$d12",
+      "c2_full_video/ingress/crossing/memory__D$c12",
+      "c2_full_video/ingress/crossing/memory__D$b12"
+    ],
+    "c2_full_video/framebuffer/output_cdc/memory": [
+      "c2_full_video/framebuffer/output_cdc/memory__D$f1",
+      "c2_full_video/framebuffer/output_cdc/memory__D$2",
+      "c2_full_video/framebuffer/output_cdc/memory__D$12",
+      "c2_full_video/framebuffer/output_cdc/memory__D$e12",
+      "c2_full_video/framebuffer/output_cdc/memory__D$d12",
+      "c2_full_video/framebuffer/output_cdc/memory__D$c12",
+      "c2_full_video/framebuffer/output_cdc/memory__D$b12"
+    ]
+  },
+  "capacity_per_fifo": {
+    "width_bits": 130,
+    "depth": 64,
+    "payload_bits": 8320,
+    "extra_queue_slots": 0,
+    "ram10_blocks": 7
+  },
+  "rtl_runs": 53,
+  "fifo_equivalence_cases": [
+    "tb_c2_bram_fifo_s_half3_d_half11",
+    "tb_c2_bram_fifo_s_half11_d_half3",
+    "tb_c2_bram_fifo_s_half5_d_half5"
+  ],
+  "remaining_logic_buffers": [
+    "c2_attachment/core/pixels/memory",
+    "c2_attachment/core/hub/writer/buffer",
+    "c2_full_video/framebuffer/wbuf",
+    "c2_full_video/framebuffer/rbuf"
+  ],
+  "source_sha256": {
+    "tools/audit_bram_usage.py": "03058b66a8ec9540a448991ef682ed339d69afb625a192de96a77c6054c0e48b"
+  },
+  "report_sha256": {
+    "logs/c2_bram_baseline_20261031.json": "3aa7ad7900456d643f8a24afb7111585eaa3b3da936a27a66cc6e9891284a02c",
+    "logs/c2_native_synthesis.json": "392246cf1c395fedbd8e382d9a16a014f9660062440c7704028124c28ac4cbf6",
+    "logs/c2_selftest.json": "1851112dfb921766d95d14260cd05e5510c18f8d639d60c317fcb68163d50d28",
+    "projects/06_soc_c2/integration/outflow/c2_native.map.rpt": "6ffe02d66ae3987eb617df4e73076b2678434950664b191a83023d844f1fa049",
+    "projects/06_soc_c2/integration/outflow/c2_native.map.v": "2ebae98d17f2d97b3d46f67f36d3a877b890da5d0932e9898eb0b8407282da8b"
+  }
+}

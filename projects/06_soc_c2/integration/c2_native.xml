@@ -59,6 +59,7 @@
         <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_async_fifo.sv" version="default" library="default" />
         <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_axi_arbiter.sv" version="default" library="default" />
         <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_axi_to_vendor.sv" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_bram_async_fifo.sv" version="default" library="default" />
         <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_buffer_manager.sv" version="default" library="default" />
         <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_cdc_mailbox.sv" version="default" library="default" />
         <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_frame_publisher.sv" version="default" library="default" />

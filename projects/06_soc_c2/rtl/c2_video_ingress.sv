@@ -17,7 +17,7 @@ module c2_video_ingress #(
  reg [129:0] queued,end_token;
  wire room;
  wire slot=!pending || room;
- c2_async_fifo #(.WIDTH(130),.ADDR_BITS(FIFO_BITS)) crossing(
+ c2_bram_async_fifo #(.WIDTH(130),.ADDR_BITS(FIFO_BITS)) crossing(
   .arst_n(arst_n),.s_clk(video_clk),.s_valid(pending),.s_ready(room),.s_data(queued),
   .d_clk(mem_clk),.d_valid(valid),.d_ready(ready),.d_data(data));
  always @(posedge video_clk or negedge arst_n) begin

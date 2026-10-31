@@ -74,6 +74,7 @@ def main():
                   ('axi', {}, [12345, 67891, 20261024]),
                   ('image', {}, [12345, 67891, 20261024]),
                   ('adapter', {}, [12345,67891,20261024]),('cache',{},[None])]
+        matrix += [('bram_fifo',{'S_HALF':s,'D_HALF':d},[None]) for s,d in [(3,11),(11,3),(5,5)]]
         matrix += [('source_fence',{},[None]),('a_errors',{},[None])]
         matrix += [('c3_peripheral',{},[None])]
         matrix += [('video_config',{},[None])]

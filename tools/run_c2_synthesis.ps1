@@ -86,7 +86,7 @@ try {
     }
     $resourceText=Get-Content -LiteralPath (Join-Path $projectDir "outflow\$buildName.map.rpt") -Raw
     $record.resources=@{}
-    foreach($kind in @('EFX_LUT4','EFX_FF','EFX_DSP48','EFX_ADD')) {
+    foreach($kind in @('EFX_LUT4','EFX_FF','EFX_DSP48','EFX_ADD','EFX_RAM10')) {
         $matches=[regex]::Matches($resourceText,"$kind\s*:\s*(\d+)")
         if($matches.Count) {$record.resources[$kind]=[int]$matches[$matches.Count-1].Groups[1].Value}
     }

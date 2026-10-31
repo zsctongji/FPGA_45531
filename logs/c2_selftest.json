@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "started": "2026-10-25T13:41:28.029134+00:00",
+  "started": "2026-10-31T03:20:26.577757+00:00",
   "scope": "portable RTL functional simulation with synthetic masters and DDR model",
   "board_test_passed": false,
   "vendor_ddr_simulated": false,
@@ -185,6 +185,18 @@
       "log": "logs/c2/tb_c2_a_errors.log",
       "evidence": [
         "PASS tb_c2_a_errors modes=7 read_error timeout bad_padding bad_sum wrong_grant busy drain576 stable_word release"
+      ]
+    },
+    {
+      "name": "tb_c3_peripheral",
+      "status": "PASS",
+      "parameters": {},
+      "ddr_seed": null,
+      "compiler_log": "logs/c2/tb_c3_peripheral_compile.log",
+      "exit_code": 0,
+      "log": "logs/c2/tb_c3_peripheral.log",
+      "evidence": [
+        "PASS tb_c3_peripheral checks=6060 repeated_START READ WRITE ACK NACK stretch arbitration timeout abort nine_pulse_recovery GPIO_watchdog shared_time_wrap clock_fault reset open_drain"
       ]
     },
     {
@@ -704,7 +716,7 @@
     "projects/06_soc_c2/rtl/c2_a_image_source.sv": "ca4ecba6a595851a28c2bc93b580212e68ac79481b1133767ef8f41c34538134",
     "projects/06_soc_c2/rtl/c2_a_mailbox_bridge.sv": "37d25577032e7fa78f4dc5616a1899d15feb565e3063d8e8d38b3963bfcf1f7c",
     "projects/06_soc_c2/rtl/c2_a_video_source.sv": "c43cd8a52c778d6883698d802ada9aaadcbcedfdba01e20dce48a4224b79be40",
-    "projects/06_soc_c2/rtl/c2_apb_control.sv": "1ed8730e7bfd5c04a00e79218d4e1c21d7ff2ba85866b2adf6e34bd87e2cc317",
+    "projects/06_soc_c2/rtl/c2_apb_control.sv": "0be84c12bb8376f94ecff2de24bfbef85cbb3389a4eefa6e116bb9800bf5eb7d",
     "projects/06_soc_c2/rtl/c2_async_fifo.sv": "91d7dd66779d10552c23048734da6c6baaf6267d553eaf3567a2446e02ba9d77",
     "projects/06_soc_c2/rtl/c2_axi_arbiter.sv": "b36413ca9feea3c8e4a714a41340980148e2eb2db2177e5da53f3d46876ebbde",
     "projects/06_soc_c2/rtl/c2_axi_to_vendor.sv": "c16fb2252e6315f21bbc229faf2db046fe18ceb81c4471cc11f91d384e744da0",
@@ -716,11 +728,12 @@
     "projects/06_soc_c2/rtl/c2_shared_time.sv": "0465e815fd8d3d98f23ca136abf848e1a9514a56246b9b8d9b9bd2503647486a",
     "projects/06_soc_c2/rtl/c2_source_fence.sv": "1e865d73c3371428753db54562cfd6ef383ecba378e11e164bb2bc0c3a7f5482",
     "projects/06_soc_c2/rtl/c2_system_boundary.sv": "bf55c29bef46b953d7cfd152883f267464fbd3e97478b6f51362bdfdef3330ac",
-    "projects/06_soc_c2/rtl/c2_vendor_attachment.sv": "8e0e455bd8715f9cfd0790ec08ae68942b0ea2f88d4e0ce8745d725a0e75277e",
+    "projects/06_soc_c2/rtl/c2_vendor_attachment.sv": "38ef3fe766c953f2036eeef30b308c5656abe69d167f2fee638971ecd407674d",
     "projects/06_soc_c2/rtl/c2_video_framebuffer.sv": "9439050a47097f948e61bf3e086adca74f2c3c949d7fa3443f1fb340631cf366",
     "projects/06_soc_c2/rtl/c2_video_ingress.sv": "b6610ec71c5501f2799526be74d012dca075e87afabf3ce2d82d5849f300d762",
     "projects/06_soc_c2/rtl/c2_video_pipeline.sv": "9401308c63689b25baef2143c44de297e467fd0b4ed9b9525efe66d815f1405a",
     "projects/06_soc_c2/rtl/c2_video_scanout.sv": "711450de1c1494f02d963c686799da7892463449d59d8537ece57bdb9ff3da9d",
+    "projects/06_soc_c2/rtl/c3_apb_peripheral.sv": "a521559e95ab39b1bd0b29a8eb1aade3ce5dfe5d8433b89cb420b65ff03c060e",
     "projects/06_soc_c2/a_side/ai_frame_mailbox.v": "be2a19b07be3b228001b64fc32a1fde2ed12ae12475dec29eeba989c9c2bb099",
     "projects/06_soc_c2/a_side/video_a_capture.v": "6fd4ba3f87ebc42e7ca4e90292da10d1233d8b6cd2b26311cc05cb818e673d57",
     "projects/06_soc_c2/a_side/video_grid_sampler.v": "9bd066f70ff8778caa7f4f18cfa4709a949b1c61ceb648cd79d015e00d57db84",
@@ -743,6 +756,9 @@
     "projects/06_soc_c2/sim/tb_c2_vendor.sv": "ad12476ef0259ceeca28bc1a38ee4f1fa95dea9089c8c19fd03fd2110f7096a0",
     "projects/06_soc_c2/sim/tb_c2_video.sv": "9dc83586cd4b9e98707f08366e0e36b0b5fe8f59944a03d9cb55938a988d8377",
     "projects/06_soc_c2/sim/tb_c2_video_config.sv": "dab207d9eea0d2871f4dd5c5fb2f93e3f160e4825faa6a9eab3b356d0018a416",
+    "projects/06_soc_c2/sim/tb_c2_video_tail.sv": "0d76272bf7a5a87561367333938f2ed5b05997c298a77baa9e6e71649bf0edb2",
+    "projects/06_soc_c2/sim/tb_c3_peripheral.sv": "80966ffa98a93b9fc5050f7617e0199ec7ae673ad7ac87af3cbfa7389f31e63e",
+    "projects/06_soc_c2/sim/tb_c3_timing.sv": "dc4af9286bd8e3326c9621cc756b7e32067ef86b6855c050c4582b2ac4085848",
     "team_work/03_ai_soc/c2/c2_driver.c": "c1a561ef635bd51e9837f1f63f75ffbaffd912454faf8ff8520cf0a65361798c",
     "team_work/03_ai_soc/c2/c2_driver.h": "70e30ebfb5b6fd39122aba49eccde4668199aeff8f306fba45f4a6a2d490d761",
     "team_work/03_ai_soc/c2/c2_sapphire.c": "6bca6d86412d45287533209c41845486355928515fd252c6bc38e4f1ae777b77",
@@ -758,14 +774,27 @@
     "tools/prepare_c2_video_test.py": "811323dfbf262de49956f46cd9194d85d873c17f54ce81d14806e7f7847963f8",
     "team_work/shared/a_interface_v1.md": "3eaeb919689ad9398e4144ad0e9ba3bb7744e179c4d5a639208365b5415ea4ee",
     "tools/prepare_c2_framebuffer.py": "e19bc8a35a64c5c802895968329f1be8f080f2f790e90e9d7a7f21ec2fd0fe68",
+    "team_work/03_ai_soc/c3_hal/c3_hal.c": "b13be6fb846314a8ef76f5d62ad887caaf25568b573f4ecf5a6796ffbef06221",
+    "team_work/03_ai_soc/c3_hal/c3_hal.h": "0696a22e038c4bb1398ea2fc0619fd876ccee8b2f5f9fde0db797f8ebb37b8c8",
+    "team_work/03_ai_soc/c3_hal/c3_peripheral.c": "5ee209938ef334acca4fb1d37f885a45bc429ab82aa2605c450441885cc8f193",
+    "team_work/03_ai_soc/c3_hal/c3_peripheral.h": "35cd983168c6e1257c747aae9577a23cb1c8cd2632e5aaaffaac2a6ea6bff04a",
+    "team_work/03_ai_soc/c3_hal/c3_replay.c": "7abca1af0990b062d8f8ce4e54cc15aa672da18d0a08140c3ec7ecbd30e839e6",
+    "team_work/03_ai_soc/c3_hal/c3_replay.h": "a91b314183ae947d6479f6fc7ca3e0dcfcd69f713fc83646f09fecb6fa308f33",
+    "team_work/03_ai_soc/c3_hal/c3_sapphire_peripheral.c": "7c043dc3dd4fece7579f73b04bb0f726685918aad6797bdc8f17cc367dce6e1b",
+    "team_work/03_ai_soc/c3_hal/c3_sapphire_peripheral.h": "f71182542b7d74ae9b596b5538a61cac5a88f9b17f72b9ee9414ebb760aff2b0",
+    "team_work/03_ai_soc/c3_hal/c3_sapphire_time.c": "54dfb89f47a20ebd9cd56093e3a8c0676ca846575db1267c1ba35c4815624634",
+    "team_work/03_ai_soc/c3_hal/c3_thermal_publish.c": "81a19eb297973f11db46aa2ef4d0a79da8870ca9c305c05072a63a81451d7941",
+    "team_work/03_ai_soc/c3_hal/c3_thermal_publish.h": "6a906a39bc3261f5bdcba74f71e997e5e71a55fedf009de339419758529ad321",
+    "team_work/03_ai_soc/tests/test_c3_peripheral.c": "7a9ea78834342c7a07fb821790e12ad2b0cf62b53c817a1de4f9bca9bc2d90b9",
+    "tools/build_c3_host.cmd": "e2cf7bd10bbe7492981663276b0357d8e393ad86dcab3da2b6a3d92ff32d4c3f",
     "team_work/03_ai_soc/tests/test_c2_driver.c": "76e50758262f5e140b815b8f2ba646f914ded661e077ea391daf7c4bdd7a6ed4",
-    "tools/prepare_c2_vendor.py": "5438521ee0fd26e2afa51a1240a6b8ffb43768d9c9e5627276a4e58aff4e37d8",
-    "tools/audit_c2_vendor.py": "8bbcadd4e0468d2d180b40f9ac14e8a2b2cf8b5ea0e22fbad0bf8de0d01334c4",
-    "tools/check_c2_riscv.py": "87b381d3df774a60a2cb005d65704f99de771b93e345c7bffa8c354605db8619",
+    "tools/prepare_c2_vendor.py": "f0c9fa059a55bec0f7e42db8b0359aef94ab5c92d73c375a9bf1644fa22d4a89",
+    "tools/audit_c2_vendor.py": "6b214d96c1c1b71a15efad24ab90002c65307685c0938483f179f0bebcd85fca",
+    "tools/check_c2_riscv.py": "f1bb530409560daaa99261035c0096341c8a2240f8d5928338de2c4a5563032a",
     "tools/build_c2_host.cmd": "3410e984d7f4bb3841f568edcb51cad3558454ee01823e725e78873ab5dd54a6",
     "projects/03_tinyml/ip/sapphire_soc/sapphire_soc.v": "87c00873d2efc6b5bbb5336c1a1046eb0a21cf89c9d971f6c7cf703e0d2e6733",
     "build/c2/vendor_datacache.v": "a7f4b4df28d3c191c999cf08e74dca2cf68383b375f7a5a368b0bf752326f432",
-    "tools/run_c2_selftest.py": "53aa8886e287c505ca1735b1748fc112687a8728501620855778296278383c82",
+    "tools/run_c2_selftest.py": "5e88711f30e40ec1a6e0a439bfe1f51280e613cb869b69eb0d5391b74ae5f104",
     "tools/audit_c2_baselines.py": "e8aac50a3e82978c65872ddb4315576aed14b925ce88a9a590b67c82c0f87c2d"
   },
   "host_driver_test": "PASS",
@@ -773,16 +802,7 @@
   "iverilog_version": "Icarus Verilog version 12.0 (devel) (s20150603-1539-g2693dd32b)",
   "baseline_audit": "projects/06_soc_c2/BASELINE_AUDIT.json",
   "vendor_audit": "PASS",
-  "finished": "2026-10-25T14:01:50.762299+00:00",
-  "postcheck_recovery": {
-    "previous_status": "FAIL",
-    "previous_error": "RISC-V compile failed: team_work/shared/src/cooperation_v1.c\n",
-    "previous_finished": "2026-10-25T14:00:17.105802+00:00",
-    "diagnostic": "GCC cc1.exe CreateProcess failed once; identical toolchain succeeded on immediate retry without source or environment changes",
-    "retry_command": "python -X utf8 tools/check_c2_riscv.py",
-    "retry_started": "2026-10-25T14:01:00.487851+00:00",
-    "retry_finished": "2026-10-25T14:01:01.527543+00:00",
-    "source_identity_rechecked": true
-  },
-  "passed": 49
+  "c3_host_driver_test": "PASS",
+  "passed": 50,
+  "finished": "2026-10-31T03:40:20.983603+00:00"
 }

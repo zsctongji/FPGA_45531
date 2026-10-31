@@ -68,6 +68,8 @@ output wire [31:0] c2_video_published,c2_video_dropped,c2_video_overflow_frames,
 output wire [31:0] c2_video_write_errors,c2_video_read_errors,c2_video_underflows,
 output wire [31:0] c2_video_repeated,c2_video_empty_scans,c2_video_missed_scans,c2_video_completed_scans,
 output wire [31:0] c2_video_max_aw_wait,c2_video_max_ar_wait,
+input wire c3_io_enable,c3_sensor_scl_read,c3_sensor_sda_read,
+output wire c3_sensor_scl_drive_low,c3_sensor_sda_drive_low,c3_buzzer,c3_alarm_led,
    // Clock and reset ports
    input                              axi_clk,      
    input                              core_clk,     // CORE CLK @ 100MHz
@@ -504,6 +506,12 @@ always @(posedge io_memoryClk or posedge io_systemReset)
  if(io_systemReset) c2_mem_release<=0;else c2_mem_release<={c2_mem_release[0],1'b1};
 wire userInterruptB;
 assign userInterruptB=c2_irq;
+wire c3_page=apb_paddr[15:8]==8'h10;
+wire [31:0] c2_apb_prdata,c3_apb_prdata,c3_shared_ms;
+wire c2_apb_ready,c3_apb_ready,c2_apb_error,c3_apb_error,c3_shared_valid;
+assign apb_prdata=c3_page?c3_apb_prdata:c2_apb_prdata;
+assign apb_pready=c3_page?c3_apb_ready:c2_apb_ready;
+assign apb_pslverror=c3_page?c3_apb_error:c2_apb_error;
 
 assign axi_inter_m_awqos=4'b0;
 assign axi_inter_m_arqos=4'b0;
@@ -880,8 +888,9 @@ c2_vendor_attachment #(.REQUIRE_SOURCE_COMPLETION(1)) c2_attachment(
 .arst_n(!io_systemReset),.mem_clk(io_memoryClk),.video_clk(c2_video_clk),.pclk(i_peripheralClk),.map_enable(c2_map_enable),
 .external_protocol_error(c2_cpu_rejected || c2_cpu_protocol_error),
 .shared_video_ms(c2_shared_video_ms),.shared_video_valid(c2_shared_video_valid),
-.paddr(apb_paddr),.psel(apb_psel),.penable(apb_penable),.pwrite(apb_pwrite),.pwdata(apb_pwdata),
-.pready(apb_pready),.prdata(apb_prdata),.pslverror(apb_pslverror),.irq(c2_irq),
+.shared_cpu_ms(c3_shared_ms),.shared_cpu_valid(c3_shared_valid),
+.paddr(apb_paddr),.psel(apb_psel && !c3_page),.penable(apb_penable),.pwrite(apb_pwrite),.pwdata(apb_pwdata),
+.pready(c2_apb_ready),.prdata(c2_apb_prdata),.pslverror(c2_apb_error),.irq(c2_irq),
 .video_awvalid(c2_video_awvalid),
 .video_awready(c2_video_awready),
 .video_awaddr(c2_video_awaddr),
@@ -959,6 +968,14 @@ c2_vendor_attachment #(.REQUIRE_SOURCE_COMPLETION(1)) c2_attachment(
 .m_rlast(axi_inter_s1_rlast),
 .m_rresp(axi_inter_s1_rresp),
 .protocol_error(c2_protocol_error));
+c3_apb_peripheral c3_peripheral(
+.arst_n(!io_systemReset),.pclk(i_peripheralClk),.io_enable(c3_io_enable),
+.shared_ms(c3_shared_ms),.shared_valid(c3_shared_valid),
+.scl_i(c3_sensor_scl_read),.sda_i(c3_sensor_sda_read),
+.scl_drive_low(c3_sensor_scl_drive_low),.sda_drive_low(c3_sensor_sda_drive_low),
+.buzzer(c3_buzzer),.alarm_led(c3_alarm_led),
+.paddr(apb_paddr[7:0]),.psel(apb_psel && c3_page),.penable(apb_penable),.pwrite(apb_pwrite),.pwdata(apb_pwdata),
+.pready(c3_apb_ready),.prdata(c3_apb_prdata),.pslverror(c3_apb_error));
 c2_a_video_source #(.FRAME_WIDTH(C2_FRAME_WIDTH),.FRAME_HEIGHT(C2_FRAME_HEIGHT),
 .STEP_X(C2_STEP_X),.STEP_Y(C2_STEP_Y)) c2_video_source(
 .arst_n(!io_systemReset),.video_clk(c2_video_clk),.enable(c2_map_enable),

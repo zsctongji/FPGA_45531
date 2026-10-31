@@ -7,6 +7,7 @@ module c2_apb_control #(parameter REQUIRE_SOURCE_COMPLETION=0,
 )(
  input wire arst_n,pclk,mem_clk,video_clk,
  output wire [31:0] shared_video_ms,output wire shared_video_valid,
+ output wire [31:0] shared_cpu_ms,output wire shared_cpu_valid,
  input wire [15:0] paddr,input wire psel,penable,pwrite,input wire [31:0] pwdata,
  output wire pready,output reg [31:0] prdata,output reg pslverror,output wire irq,
  input wire map_enable,
@@ -17,6 +18,7 @@ module c2_apb_control #(parameter REQUIRE_SOURCE_COMPLETION=0,
  input wire [3:0] slot_states,input wire [31:0] dropped,input wire protocol_error
 );
  wire [31:0] shared_ms;wire shared_valid;
+ assign shared_cpu_ms=shared_ms;assign shared_cpu_valid=shared_valid;
  c2_shared_time #(.CLOCK_HZ(TIME_CLOCK_HZ),.INITIAL_MS(TIME_INITIAL_MS)) clock_service(
  .arst_n(arst_n),.pclk(pclk),.video_clk(video_clk),.cpu_ms(shared_ms),.cpu_valid(shared_valid),
  .video_ms(shared_video_ms),.video_valid(shared_video_valid));

@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "started": "2026-10-25T14:01:00.487851+00:00",
+  "started": "2026-10-31T03:40:19.076902+00:00",
   "scope": "RV32 object compilation and instruction inspection; no firmware execution",
   "board_test_passed": false,
   "linked_firmware": false,
@@ -28,8 +28,32 @@
       "source_sha256": "7b28e7794f6d91796a1ed6d1f9c1603477136308a5e9c092480d57d11d167ae7",
       "object": "build/c2/riscv/c3_shared_time.o",
       "sha256": "e448905aa13c9bdf6395dff92cdbfe99d469818537dcc17734232770bfefa30c"
+    },
+    {
+      "source": "team_work/03_ai_soc/c3_hal/c3_hal.c",
+      "source_sha256": "b13be6fb846314a8ef76f5d62ad887caaf25568b573f4ecf5a6796ffbef06221",
+      "object": "build/c2/riscv/c3_hal.o",
+      "sha256": "8d08c04babde86e12297deaa2ff320e327a503c102d4afa167b1d637e9d22d59"
+    },
+    {
+      "source": "team_work/03_ai_soc/c3_hal/c3_peripheral.c",
+      "source_sha256": "5ee209938ef334acca4fb1d37f885a45bc429ab82aa2605c450441885cc8f193",
+      "object": "build/c2/riscv/c3_peripheral.o",
+      "sha256": "e4cd7a03df8dc9420d3bc69809a8eab849271d8fdd2569fe0495363838013c86"
+    },
+    {
+      "source": "team_work/03_ai_soc/c3_hal/c3_sapphire_peripheral.c",
+      "source_sha256": "7c043dc3dd4fece7579f73b04bb0f726685918aad6797bdc8f17cc367dce6e1b",
+      "object": "build/c2/riscv/c3_sapphire_peripheral.o",
+      "sha256": "27de599f2b28e928395040052500b43b4f12d93dc4a0eadfd719b348e0a38b60"
+    },
+    {
+      "source": "team_work/03_ai_soc/c3_hal/c3_thermal_publish.c",
+      "source_sha256": "81a19eb297973f11db46aa2ef4d0a79da8870ca9c305c05072a63a81451d7941",
+      "object": "build/c2/riscv/c3_thermal_publish.o",
+      "sha256": "b22a22382aec9ea15b8a835fe5f849a7a2f70527ec01a4a3979a7ff197c54973"
     }
   ],
   "cache_sequence": "fence iorw,iorw; .word 0x0000500f; fence iorw,iorw",
-  "finished": "2026-10-25T14:01:01.527543+00:00"
+  "finished": "2026-10-31T03:40:20.899007+00:00"
 }

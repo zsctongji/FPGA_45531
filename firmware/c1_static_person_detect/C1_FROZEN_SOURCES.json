@@ -1,0 +1,18 @@
+{
+  "version": "c1-02a568e5375cc27b",
+  "scope": "Original C1 release source snapshot, not current C3 HAL rev2; original ELF/BIN/FPGA unchanged",
+  "files": {
+    "team_work/03_ai_soc/c3_hal/c3_hal.h": {
+      "path": "firmware/c1_static_person_detect/frozen_c3_hal/c3_hal.h",
+      "sha256": "5d33243733bfe848e6b984cbb2bfa48d02f198825d7da7987008162dcd827939"
+    },
+    "team_work/03_ai_soc/c3_hal/c3_hal.c": {
+      "path": "firmware/c1_static_person_detect/frozen_c3_hal/c3_hal.c",
+      "sha256": "a173820ba739d99f65e4b2d125b774397c05ef06e9388798037f55bfa58a3cbe"
+    },
+    "team_work/03_ai_soc/c3_hal/c3_sapphire_time.c": {
+      "path": "firmware/c1_static_person_detect/frozen_c3_hal/c3_sapphire_time.c",
+      "sha256": "dbbe638e1c4abe6d1494dace1dfcfd43415168d50f49df05c9b371e985089139"
+    }
+  }
+}

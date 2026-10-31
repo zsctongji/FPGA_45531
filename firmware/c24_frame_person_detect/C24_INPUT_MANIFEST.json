@@ -1,5 +1,5 @@
 {
-  "version": "c24-d1fc40db3541b41f",
+  "version": "c24-ddfd364d754dce06",
   "app": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\embedded_sw\\sapphire_soc_tinyml\\software\\standalone\\tinyml_c24",
   "source_hashes": {
     "team_work/03_ai_soc/c24/main.cc": "3454149baf799fb2108da71ba42168a57da962f41b811a58e6c4df805578aa50",
@@ -12,11 +12,17 @@
     "team_work/03_ai_soc/c24/c24_pipeline.c": "5ea3859b8c881e78d4c54d45328b82cc5d6464b8f32469633ee48a28f2400f94",
     "team_work/03_ai_soc/c24/c24_pipeline.h": "bed6fa3c9c8a1faf669da514aaf7ad9bc9aedff7b2b76f8fc0e1716a68435802",
     "team_work/03_ai_soc/c24/c24_log_format.h": "7adb697e2af4935073add7a2ef554c8200400cc56f8c964e1b14b8e3234f538d",
-    "team_work/03_ai_soc/c3_hal/c3_hal.c": "a173820ba739d99f65e4b2d125b774397c05ef06e9388798037f55bfa58a3cbe",
-    "team_work/03_ai_soc/c3_hal/c3_hal.h": "5d33243733bfe848e6b984cbb2bfa48d02f198825d7da7987008162dcd827939",
-    "team_work/03_ai_soc/c3_hal/c3_sapphire_time.c": "dbbe638e1c4abe6d1494dace1dfcfd43415168d50f49df05c9b371e985089139",
+    "team_work/03_ai_soc/c3_hal/c3_hal.c": "b13be6fb846314a8ef76f5d62ad887caaf25568b573f4ecf5a6796ffbef06221",
+    "team_work/03_ai_soc/c3_hal/c3_hal.h": "0696a22e038c4bb1398ea2fc0619fd876ccee8b2f5f9fde0db797f8ebb37b8c8",
+    "team_work/03_ai_soc/c3_hal/c3_sapphire_time.c": "54dfb89f47a20ebd9cd56093e3a8c0676ca846575db1267c1ba35c4815624634",
     "team_work/03_ai_soc/c3_hal/c3_shared_time.c": "7b28e7794f6d91796a1ed6d1f9c1603477136308a5e9c092480d57d11d167ae7",
     "team_work/03_ai_soc/c3_hal/c3_shared_time.h": "e7cba2798597114b10fcd0a9e4c46acf0f6814210e05a9c9f759ca88e2b54448",
+    "team_work/03_ai_soc/c3_hal/c3_peripheral.c": "5ee209938ef334acca4fb1d37f885a45bc429ab82aa2605c450441885cc8f193",
+    "team_work/03_ai_soc/c3_hal/c3_peripheral.h": "35cd983168c6e1257c747aae9577a23cb1c8cd2632e5aaaffaac2a6ea6bff04a",
+    "team_work/03_ai_soc/c3_hal/c3_sapphire_peripheral.c": "7c043dc3dd4fece7579f73b04bb0f726685918aad6797bdc8f17cc367dce6e1b",
+    "team_work/03_ai_soc/c3_hal/c3_sapphire_peripheral.h": "f71182542b7d74ae9b596b5538a61cac5a88f9b17f72b9ee9414ebb760aff2b0",
+    "team_work/03_ai_soc/c3_hal/c3_thermal_publish.c": "81a19eb297973f11db46aa2ef4d0a79da8870ca9c305c05072a63a81451d7941",
+    "team_work/03_ai_soc/c3_hal/c3_thermal_publish.h": "6a906a39bc3261f5bdcba74f71e997e5e71a55fedf009de339419758529ad321",
     "team_work/03_ai_soc/c4/c4_bridge.c": "3212821365afbbe678fac48871c8c49788331ce0d17d76e045d752ef9c469ea5",
     "team_work/03_ai_soc/c4/c4_bridge.h": "58b5233f1c0b8494ac68435725d0df18d973200651aa129ac509d5db241a9664",
     "team_work/03_ai_soc/c4/c4_tflm_adapter.cc": "ea1cf2351d48aa80fd2ccdd977ed5d036a74f4bcc57bf5f414c45347ede818e3",
@@ -515,7 +521,7 @@
     "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/tinyml_pdti8/src/tensorflow/third_party/internal/unpack.h": "ba0950714b543a75fb597696ea01afa4db8f9bae1136e7fce25e37e6a3f439b0",
     "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/tinyml_pdti8/src/tensorflow/third_party/ruy/ruy/profiler/instrumentation.h": "6c5b1469b1ee43ad6de59899b3f022f459d01a0840e531a54fb363980152de59",
     "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/common/tinyml_lib.a": "3aa3093e0efee3a18a6c82e341da6baaa52ae8e88c2a1dfc01d762220a50fb1e",
-    "tools/prepare_c24.py": "55be1dd0f4431785077bd831ff55a7f60b133b666535e3ceff58288628b5314b"
+    "tools/prepare_c24.py": "e62ffc7a3de4b7ba7aa2a17df16f8451fe92bdece5a952e7d37186d3ecdcd623"
   },
   "config": {
     "enable_live": false,

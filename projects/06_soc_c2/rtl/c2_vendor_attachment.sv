@@ -7,6 +7,7 @@ module c2_vendor_attachment #(
 )(
 input wire arst_n,mem_clk,video_clk,pclk,map_enable,external_protocol_error,
 output wire [31:0] shared_video_ms,output wire shared_video_valid,
+output wire [31:0] shared_cpu_ms,output wire shared_cpu_valid,
 input wire [15:0] paddr,input wire psel,penable,pwrite,input wire [31:0] pwdata,
 output wire pready,output wire [31:0] prdata,output wire pslverror,irq,
 input wire video_awvalid,
@@ -164,6 +165,7 @@ c2_axi_to_vendor #(.ID_WIDTH(VIDEO_ID_WIDTH),.ALLOW_NARROW(0),
 c2_apb_control #(.TIME_CLOCK_HZ(TIME_CLOCK_HZ),.TIME_INITIAL_MS(TIME_INITIAL_MS),.REQUIRE_SOURCE_COMPLETION(REQUIRE_SOURCE_COMPLETION),.SHARED_BASE(SHARED_BASE),.VIDEO_BASE(VIDEO_BASE),.VIDEO_BYTES(VIDEO_BYTES)) control(
 .arst_n(arst_n),.pclk(pclk),.mem_clk(mem_clk),.video_clk(video_clk),.map_enable(map_enable),
 .shared_video_ms(shared_video_ms),.shared_video_valid(shared_video_valid),
+.shared_cpu_ms(shared_cpu_ms),.shared_cpu_valid(shared_cpu_valid),
 .paddr(paddr),.psel(psel),.penable(penable),.pwrite(pwrite),.pwdata(pwdata),
 .pready(pready),.prdata(prdata),.pslverror(pslverror),.irq(irq),
 .cpu_valid(cpu_valid),

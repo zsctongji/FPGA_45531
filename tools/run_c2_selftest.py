@@ -61,6 +61,8 @@ def main():
                ROOT/'tools/prepare_a_c2.py',ROOT/'projects/06_soc_c2/a_side/SOURCE_MANIFEST.json',
                ROOT/'tools/prepare_c2_video_test.py',ROOT/'team_work/shared/a_interface_v1.md',
                ROOT/'tools/prepare_c2_framebuffer.py',
+               *sorted((ROOT/'team_work/03_ai_soc/c3_hal').glob('*.[ch]')),
+               ROOT/'team_work/03_ai_soc/tests/test_c3_peripheral.c',ROOT/'tools/build_c3_host.cmd',
                ROOT/'team_work/03_ai_soc/tests/test_c2_driver.c',ROOT/'tools/prepare_c2_vendor.py',
                ROOT/'tools/audit_c2_vendor.py',ROOT/'tools/check_c2_riscv.py',ROOT/'tools/build_c2_host.cmd',
                ROOT/'projects/03_tinyml/ip/sapphire_soc/sapphire_soc.v',ROOT/'build/c2/vendor_datacache.v']
@@ -73,6 +75,7 @@ def main():
                   ('image', {}, [12345, 67891, 20261024]),
                   ('adapter', {}, [12345,67891,20261024]),('cache',{},[None])]
         matrix += [('source_fence',{},[None]),('a_errors',{},[None])]
+        matrix += [('c3_peripheral',{},[None])]
         matrix += [('video_config',{},[None])]
         matrix += [('video',{'EXTENDED':0},[12345])]
         for mem,video in [(7,3),(5,19)]:
@@ -95,7 +98,7 @@ def main():
             matrix.append(('vendor', {'MEM_HALF': mem, 'VIDEO_HALF': video},
                            [12345, 67891, 20261024]))
         for name, params, seeds in matrix:
-            top = 'tb_c2_' + name
+            top = 'tb_c3_peripheral' if name=='c3_peripheral' else 'tb_c2_' + name
             suffix = ''.join('_' + k.lower() + str(v) for k, v in params.items())
             executable = BUILD / (top + suffix + '.vvp')
             args = [str(ivl), '-g2012', '-Wall', '-s', top, '-o', str(executable)]
@@ -137,6 +140,7 @@ def main():
         for label,command,timeout in [
             ('vendor_audit',[sys.executable,str(ROOT/'tools/audit_c2_vendor.py')],30),
             ('host_driver_test',['cmd','/c',str(ROOT/'tools/build_c2_host.cmd')],60),
+            ('c3_host_driver_test',['cmd','/c',str(ROOT/'tools/build_c3_host.cmd')],60),
             ('riscv_compile',[sys.executable,str(ROOT/'tools/check_c2_riscv.py')],180)]:
             checked=subprocess.run(command,capture_output=True,text=True,encoding="utf-8",errors="replace",timeout=timeout,cwd=ROOT)
             (LOGS/(label+'.log')).write_text(checked.stdout+checked.stderr,encoding='utf-8')

@@ -60,3 +60,20 @@ concurrent video/AI/CPU/TinyML fault/recovery tests. CPU/TinyML traffic in funct
 tests is synthetic; native map includes real CPU/accelerator logic. Board execution,
 physical MIPI/HDMI, legacy two-pixel adaptation, PNR, CDC and bandwidth remain open.
 Default live MMIO stays disabled; inherited vendor warnings remain documented.
+
+
+## C3 peripheral backend 2026-10-31
+
+C3 APB page 0x1000 now contains real open-drain I2C and bounded alarm GPIO RTL,
+with a matching RV32 MMIO backend. C3 uses the same C2 APB millisecond epoch.
+C HAL interface rev2 adds checked time: recompile callers and zero-initialize HAL.
+Serialized ABI v1 and C2 APB v2.2 remain unchanged. The explicit masked thermal
+policy preserves pixel620 invalid, flags=3/errors=64; it never promotes quality.
+
+50 RTL runs, C3 digital timing/host/RV32 and real thermal replay, native map and
+756 package identity checks PASS on the source machine. C24 is now
+c24-ddfd364d754dce06; default live MMIO remains disabled. Original C1 binaries
+are unchanged; exact original HAL snapshots preserve their release verification.
+See team_work/03_ai_soc/C3_REAL_BACKEND_20261031.md and 22_test_c3_backend.cmd.
+Physical pad constraints, electrical/CDC/timing/PNR and board acceptance remain
+open. Reports retain source-machine paths; rebuild on the receiving machine.

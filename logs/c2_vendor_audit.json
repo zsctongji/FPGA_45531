@@ -19,6 +19,8 @@
     "Native top connects source pixels to pinned A capture and shared video time",
     "No external grid/timestamp override bypasses source capture",
     "Native full-frame writer and scan reader connect to the C2 video AXI port",
+    "Native C3 page decoded separately and wired to the same C2 APB clock epoch",
+    "Native C3 pad interface exports open-drain OE rather than driven high data",
     "Video master is internal and display RGB/raster is exposed at the A boundary",
     "APB offset matches C header: ID",
     "APB offset matches C header: VERSION",
@@ -68,7 +70,7 @@
     },
     "overlay": {
       "path": "projects/06_soc_c2/integration/c2_tinyml_soc_top.v",
-      "sha256": "6e38b7b8ac9116ab1a7d637bddc373b774127aef4f3cbc100df33e226745b0f5"
+      "sha256": "3e842a10829f50e3d6c650fa61031f4d91b1be014cf575243d26c705be0403cc"
     },
     "backend": {
       "path": "team_work/03_ai_soc/c2/c2_sapphire.c",
@@ -80,7 +82,7 @@
     },
     "apb": {
       "path": "projects/06_soc_c2/rtl/c2_apb_control.sv",
-      "sha256": "1ed8730e7bfd5c04a00e79218d4e1c21d7ff2ba85866b2adf6e34bd87e2cc317"
+      "sha256": "0be84c12bb8376f94ecff2de24bfbef85cbb3389a4eefa6e116bb9800bf5eb7d"
     }
   }
 }

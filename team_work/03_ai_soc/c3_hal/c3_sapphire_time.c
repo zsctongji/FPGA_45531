@@ -13,5 +13,6 @@ void c3_bind_sapphire_time(c3_hal_t *h) {
     h->now_ms = now;
     h->i2c_write_read = 0;
     h->gpio_write = 0;
+    h->checked_now_ms = 0;
 }
 

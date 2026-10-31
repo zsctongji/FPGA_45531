@@ -1,5 +1,7 @@
 # C：RISC-V/TinyML、统一工程、融合与预测
 
+2026-10-31 C3真实外设与发布策略见 [C3_REAL_BACKEND_20261031.md](C3_REAL_BACKEND_20261031.md)。native新增I²C/GPIO APB页、公共时间直连及显式620号坏点策略；50次RTL、C3专项、RV32与756项包检查PASS，物理管脚/P&R/上板未验收。C HAL rev2须重编译，默认MMIO关闭。
+
 2026-10-31 真实历史数据接入：见 [REAL_DATA_REPLAY_20261031.md](REAL_DATA_REPLAY_20261031.md)。5张A真图已通过C2/DDR/CPU AXI回放和桌面对照，100条B热图已通过当前ABI及严格/B4策略对照；不是整机同步或上板推理。入口21_replay_real_team_data.cmd。
 
 完整视频帧缓存与并发验收说明见 [VIDEO_FRAMEBUFFER_HANDOFF.md](VIDEO_FRAMEBUFFER_HANDOFF.md)。native内接GRAY8视频写入/显示读出与AI共用DDR，三缓冲按最终BRESP和A物理源帧记录发布。20_test_video_framebuffer.cmd运行49次回归；完整视频的逻辑接入不代表物理HDMI或板级时序已经完成。

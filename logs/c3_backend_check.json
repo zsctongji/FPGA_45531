@@ -1,0 +1,218 @@
+{
+  "status": "PASS",
+  "started": "2026-10-31T03:35:40.349531+00:00",
+  "board_verified": false,
+  "physical_pins_frozen": false,
+  "electrical_signoff": false,
+  "steps": [
+    {
+      "name": "tb_c3_peripheral_compile",
+      "status": "PASS",
+      "evidence": []
+    },
+    {
+      "name": "tb_c3_peripheral",
+      "status": "PASS",
+      "evidence": [
+        "PASS tb_c3_peripheral checks=6060 repeated_START READ WRITE ACK NACK stretch arbitration timeout abort nine_pulse_recovery GPIO_watchdog shared_time_wrap clock_fault reset open_drain",
+        "projects/06_soc_c2/sim/tb_c3_peripheral.sv:127: $finish called at 188700000 (1ps)"
+      ]
+    },
+    {
+      "name": "tb_c3_shared_epoch_compile",
+      "status": "PASS",
+      "evidence": []
+    },
+    {
+      "name": "tb_c3_shared_epoch",
+      "status": "PASS",
+      "evidence": [
+        "PASS tb_c3_shared_epoch checks=10 C2_C3_same_counter APB_page_decode wrap_GPIO_expiry common_reset no_CLINT",
+        "projects/06_soc_c2/sim/tb_c3_shared_epoch.sv:42: $finish called at 3250000 (1ps)"
+      ]
+    },
+    {
+      "name": "tb_c3_timing_100000_compile",
+      "status": "PASS",
+      "evidence": []
+    },
+    {
+      "name": "tb_c3_timing_100000",
+      "status": "PASS",
+      "evidence": [
+        "PASS tb_c3_timing rate=100000 checks=61 tLOW tHIGH tHD_STA tSU_STA tSU_STO tBUF period ideal_pad_only",
+        "projects/06_soc_c2/sim/tb_c3_timing.sv:59: $finish called at 342570000 (1ps)"
+      ]
+    },
+    {
+      "name": "tb_c3_timing_400000_compile",
+      "status": "PASS",
+      "evidence": []
+    },
+    {
+      "name": "tb_c3_timing_400000",
+      "status": "PASS",
+      "evidence": [
+        "PASS tb_c3_timing rate=400000 checks=61 tLOW tHIGH tHD_STA tSU_STA tSU_STO tBUF period ideal_pad_only",
+        "projects/06_soc_c2/sim/tb_c3_timing.sv:59: $finish called at 86070000 (1ps)"
+      ]
+    },
+    {
+      "name": "tb_c3_timing_1000000_compile",
+      "status": "PASS",
+      "evidence": []
+    },
+    {
+      "name": "tb_c3_timing_1000000",
+      "status": "PASS",
+      "evidence": [
+        "PASS tb_c3_timing rate=1000000 checks=61 tLOW tHIGH tHD_STA tSU_STA tSU_STO tBUF period ideal_pad_only",
+        "projects/06_soc_c2/sim/tb_c3_timing.sv:59: $finish called at 34770000 (1ps)"
+      ]
+    },
+    {
+      "name": "host_driver",
+      "status": "PASS",
+      "evidence": [
+        "c3_peripheral.c",
+        "c3_thermal_publish.c",
+        "test_c3_peripheral.c",
+        "正在生成代码...",
+        "PASS C3 peripheral host checks=49 checked_time byte_commands repeated_START staged_RX failure_cleanup watchdog_rearm thermal_mask_policy deadlines"
+      ]
+    },
+    {
+      "name": "RV32_objects",
+      "status": "PASS",
+      "evidence": [
+        "PASS C2/C3 RV32: 8 objects; checked clock, I2C/GPIO and thermal policy; exact fence/invalidate/fence sequence verified; not executed on board."
+      ]
+    }
+  ],
+  "source_sha256": {
+    "team_work/03_ai_soc/c3_hal/c3_hal.c": "b13be6fb846314a8ef76f5d62ad887caaf25568b573f4ecf5a6796ffbef06221",
+    "team_work/03_ai_soc/c3_hal/c3_hal.h": "0696a22e038c4bb1398ea2fc0619fd876ccee8b2f5f9fde0db797f8ebb37b8c8",
+    "team_work/03_ai_soc/c3_hal/c3_peripheral.c": "5ee209938ef334acca4fb1d37f885a45bc429ab82aa2605c450441885cc8f193",
+    "team_work/03_ai_soc/c3_hal/c3_peripheral.h": "35cd983168c6e1257c747aae9577a23cb1c8cd2632e5aaaffaac2a6ea6bff04a",
+    "team_work/03_ai_soc/c3_hal/c3_replay.c": "7abca1af0990b062d8f8ce4e54cc15aa672da18d0a08140c3ec7ecbd30e839e6",
+    "team_work/03_ai_soc/c3_hal/c3_replay.h": "a91b314183ae947d6479f6fc7ca3e0dcfcd69f713fc83646f09fecb6fa308f33",
+    "team_work/03_ai_soc/c3_hal/c3_sapphire_peripheral.c": "7c043dc3dd4fece7579f73b04bb0f726685918aad6797bdc8f17cc367dce6e1b",
+    "team_work/03_ai_soc/c3_hal/c3_sapphire_peripheral.h": "f71182542b7d74ae9b596b5538a61cac5a88f9b17f72b9ee9414ebb760aff2b0",
+    "team_work/03_ai_soc/c3_hal/c3_sapphire_time.c": "54dfb89f47a20ebd9cd56093e3a8c0676ca846575db1267c1ba35c4815624634",
+    "team_work/03_ai_soc/c3_hal/c3_shared_time.c": "7b28e7794f6d91796a1ed6d1f9c1603477136308a5e9c092480d57d11d167ae7",
+    "team_work/03_ai_soc/c3_hal/c3_shared_time.h": "e7cba2798597114b10fcd0a9e4c46acf0f6814210e05a9c9f759ca88e2b54448",
+    "team_work/03_ai_soc/c3_hal/c3_thermal_publish.c": "81a19eb297973f11db46aa2ef4d0a79da8870ca9c305c05072a63a81451d7941",
+    "team_work/03_ai_soc/c3_hal/c3_thermal_publish.h": "6a906a39bc3261f5bdcba74f71e997e5e71a55fedf009de339419758529ad321",
+    "team_work/03_ai_soc/tests/test_c3_peripheral.c": "7a9ea78834342c7a07fb821790e12ad2b0cf62b53c817a1de4f9bca9bc2d90b9",
+    "projects/06_soc_c2/rtl/c3_apb_peripheral.sv": "a521559e95ab39b1bd0b29a8eb1aade3ce5dfe5d8433b89cb420b65ff03c060e",
+    "projects/06_soc_c2/sim/tb_c3_peripheral.sv": "80966ffa98a93b9fc5050f7617e0199ec7ae673ad7ac87af3cbfa7389f31e63e",
+    "projects/06_soc_c2/sim/tb_c3_timing.sv": "dc4af9286bd8e3326c9621cc756b7e32067ef86b6855c050c4582b2ac4085848",
+    "projects/06_soc_c2/sim/tb_c3_shared_epoch.sv": "32c3660718582ae71c0a0e2dbb54b6959328f8481f77d1323973eab50cd5d264",
+    "projects/06_soc_c2/rtl/c2_apb_control.sv": "0be84c12bb8376f94ecff2de24bfbef85cbb3389a4eefa6e116bb9800bf5eb7d",
+    "projects/06_soc_c2/rtl/c2_shared_time.sv": "0465e815fd8d3d98f23ca136abf848e1a9514a56246b9b8d9b9bd2503647486a",
+    "projects/06_soc_c2/rtl/c2_cdc_mailbox.sv": "04550a55a2e5fbb824c9d0733f9b07378b0b041222eb3fbc9c6170043e57e7d4",
+    "tools/build_c3_host.cmd": "e2cf7bd10bbe7492981663276b0357d8e393ad86dcab3da2b6a3d92ff32d4c3f",
+    "tools/check_c2_riscv.py": "f1bb530409560daaa99261035c0096341c8a2240f8d5928338de2c4a5563032a",
+    "tools/check_c3_backend.py": "5d7af9322234a641fb937f3bc03177f275c963e68eef870874c41308fb6ee07d"
+  },
+  "thermal": {
+    "source_sha256": {
+      "build/team_real_20261031/b_policy/b4_publish_gate.c": "62dbc46858718397d183537a7b57cf99f2cc4439497f2df3442547335d5b4161",
+      "build/team_real_20261031/b_policy/b4_publish_gate.h": "99b76a8f05b29daee39b665a9d32764c45b3b327f5e5b92e6d4926dbac2e773b",
+      "build/team_real_20261031/b_policy/b4_quality_policy.c": "850ef7cc249163db4db2b185e4e60ff19f33b0d0c0525a5d6f3e52352151d556",
+      "build/team_real_20261031/b_policy/b4_quality_policy.h": "97a1bdb5d53a093cdc4c0fafe1749fa09fe1c672d71b4209cc0f8e7c3b504447",
+      "build/team_real_20261031/b_policy/b4_temporal_policy.c": "62ede716fe2e764ee261a2cfeb944df6f1a7ceb1fccb5a4794823b63912e50ca",
+      "build/team_real_20261031/b_policy/b4_temporal_policy.h": "f500b200836cfe58759c631e6ee304ce7ed034de8c6175069ceeb54398b1e4ae",
+      "build/team_real_20261031/b_policy/b_sensors.h": "6d00fcbf43cf7f562644f98eb66dbdbe14c692dbc97634b26fc06d21096806fe",
+      "build/team_real_20261031/b_policy/b_thermal.c": "fdd669547cbfb754b6ea2bb0f5261fd106823bca7867eafbc10b0bddbd9fe70c",
+      "team_work/03_ai_soc/replay/thermal_replay.c": "cca6a2d65af717cd94a71b8bc21f3c006bd78c8759186d5e03eb77689c2ec206",
+      "team_work/03_ai_soc/c3_hal/c3_hal.c": "b13be6fb846314a8ef76f5d62ad887caaf25568b573f4ecf5a6796ffbef06221",
+      "team_work/03_ai_soc/c3_hal/c3_thermal_publish.c": "81a19eb297973f11db46aa2ef4d0a79da8870ca9c305c05072a63a81451d7941",
+      "team_work/shared/src/cooperation_v1.c": "713607d064c072f55069ec63d2f2890f0d6aec66b83f50ac187a35256b4b0a9b",
+      "team_work/shared/include/cooperation_v1.h": "6cd2c16ddc551304afa4a5b92d78c1a2a6faf3898afc0e3cea1509f1e2e53452",
+      "team_work/03_ai_soc/c3_hal/c3_hal.h": "0696a22e038c4bb1398ea2fc0619fd876ccee8b2f5f9fde0db797f8ebb37b8c8",
+      "team_work/03_ai_soc/c3_hal/c3_thermal_publish.h": "6a906a39bc3261f5bdcba74f71e997e5e71a55fedf009de339419758529ad321"
+    },
+    "B_dataset_report": {
+      "schema": "B_THERMAL_DATASET_REPORT_V1",
+      "execution_status": "PASS",
+      "hardware_accessed": false,
+      "new_board_measurements": 0,
+      "capture_id": "mlx90640:real_fast_20261030_184934_752153:38c87b5ba7557bee",
+      "source_summary_sha256": "38c87b5ba7557bee1e31ad971644ef8d045f01380af93472d9513ae84fef521d",
+      "source_files_verified": 612,
+      "temperature_pairs_recalculated": 100,
+      "unique_measured_subpages": 200,
+      "warmup_exported": 0,
+      "valid_pixels_per_pair": 767,
+      "invalid_index_zero_based": 620,
+      "observed_pair_age_ms": {
+        "min": 358,
+        "max": 447,
+        "mean": 366.72
+      },
+      "remaining_budget_ms_at_saved_final_check": {
+        "min": 53,
+        "max": 142
+      },
+      "host_c_gate_accepted_at_saved_final_check": 100,
+      "host_c_gate_accepts_at_500ms": 100,
+      "host_c_gate_rejects_at_501ms": 100,
+      "host_c_gate_rejects_future_sample": 100,
+      "c_policy_build": {
+        "compiler": "gcc.exe (tdm64-1) 9.2.0",
+        "flags": [
+          "-std=c11",
+          "-O2",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-pedantic"
+        ],
+        "source_set_sha256": "0478b13acac6fe1a1c7fff3dbfb234c72f997ddd387025da64503a80fb0d4ecb",
+        "source_mode": "UNMODIFIED_BUNDLED_B4_C_POLICIES"
+      },
+      "reconstructed_abi_flags": 3,
+      "reconstructed_abi_errors": 64,
+      "binary": {
+        "format": "offline <u32 now_ms> + little-endian coop_thermal_t",
+        "record_bytes": 1656,
+        "records": 100,
+        "not_a_network_protocol": true,
+        "invalid_slots": "zero placeholder with mask bit 0; never a temperature estimate",
+        "rounding": "Python round ties-to-even to centi-C"
+      },
+      "full_system_release_allowed": false,
+      "remaining_joint_evidence": [
+        "final SoC I2C and deadlines",
+        "same-session real video",
+        "final shared clock",
+        "sensor/video spatial orientation",
+        "real event/network/alarm integration"
+      ],
+      "features": "exploratory temperature regions; no person/fall labels or classifier validation",
+      "output_files_sha256": {
+        "thermal_records.jsonl": "2042afc7ddf0888a2fbcf0b40756b5cd223ea5d7dfb2e87708549ab59a905700",
+        "thermal_metrics.csv": "3a56a510ef5bd8288e3bbeb0f5f1939829738b03592b0199f481dd079e2d91c4",
+        "thermal_probe_records.bin": "ca09d6cc85d2d429d1e0e698269589b57dca36d27a4316f90463facb8a555455"
+      }
+    },
+    "B_binary_sha256": "ca09d6cc85d2d429d1e0e698269589b57dca36d27a4316f90463facb8a555455",
+    "B_C_ABI_policies": {
+      "records": 100,
+      "strict_rejected": 100,
+      "B4_masked_accepted": 100,
+      "C_masked_accepted": 100,
+      "valid_pixels": 767,
+      "invalid_index": 620,
+      "age_500_accept": 100,
+      "age_501_reject": 100,
+      "future_reject": 100
+    },
+    "B_negative_tests": {
+      "truncated_rejected": true,
+      "changed_bad_pixel_mask_rejected": true
+    }
+  },
+  "finished": "2026-10-31T03:35:52.585867+00:00"
+}

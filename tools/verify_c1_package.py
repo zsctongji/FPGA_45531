@@ -25,8 +25,20 @@ def main():
     require(elf[:6]==b"\x7fELF\x01\x01" and struct.unpack_from("<H",elf,18)[0]==243 and
             struct.unpack_from("<I",elf,24)[0]==0x1000,"ELF32 little-endian RISC-V entry 0x1000")
     require((fw/"tinyml_c1.bin").stat().st_size<=4194304,"BIN within boot copy capacity")
-    for name,digest in inputs["source_hashes"].items():
-        require(sha(ROOT/name)==digest,"Source identity "+name)
+    hashes={n.replace('\\','/'):d for n,d in inputs['source_hashes'].items()}
+    selected={};frozen=fw/'C1_FROZEN_SOURCES.json'
+    release=read(frozen) if frozen.is_file() else {'files':{}}
+    for name,digest in hashes.items():
+        original=ROOT/name;resolved=original
+        if sha(original)!=digest:
+            allowed={"team_work/03_ai_soc/c3_hal/"+n for n in ["c3_hal.h","c3_hal.c","c3_sapphire_time.c"]}
+            item=release.get('files',{}).get(name)
+            if name not in allowed or not item or release.get('version')!=inputs['version'] or item['sha256']!=digest:
+                raise ValueError('No matching release source: '+name)
+            resolved=(ROOT/item['path']).resolve()
+            if not resolved.is_relative_to((fw/'frozen_c3_hal').resolve()):raise ValueError('Snapshot path escapes C1 release')
+        require(sha(resolved)==digest,"Release source identity "+name)
+        selected[name]=resolved
     # Critical generated overlay must match its primary source.
     app=Path(inputs["app"])
     for original,dest in {
@@ -35,7 +47,7 @@ def main():
         ROOT/"team_work/shared/src/cooperation_v1.c":"cooperation_v1.c",
         **{ROOT/"team_work/03_ai_soc/c3_hal"/name:name for name in ["c3_hal.h","c3_hal.c","c3_sapphire_time.c"]}
     }.items():
-        require(sha(original)==sha(app/"src"/dest),"Overlay "+dest)
+        require(sha(selected[original.relative_to(ROOT).as_posix()])==sha(app/"src"/dest),"Release overlay "+dest)
     require(inputs["version"] in (app/"src/c1_build_id.h").read_text(),"Generated build version")
     structure=read(ROOT/"logs/c1_model_structure.json")
     for key in ["schema_version","input","output"]:
@@ -54,6 +66,7 @@ def main():
             boot["application_copy_capacity"]==4194304,"Recorded boot layout")
     result={"status":"PASS","scope":"Local file/build/model/ROM consistency only",
             "version":inputs["version"],"checks":len(checks),"artifacts":artifacts,
+            "release_source_snapshots":{n:p.relative_to(ROOT).as_posix() for n,p in selected.items() if p!=ROOT/n},
             "flash_offset":"0x00380000","ram_entry":"0x00001000","boot_copy_bytes":4194304,
             "physical_flash_verified":False,"board_inference_passed":False,
             "pc_golden_inference_compared":False,"live_camera_inference_passed":False}

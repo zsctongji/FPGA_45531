@@ -5,8 +5,10 @@
 extern "C" {
 #endif
 #define C3_CAP_TIME 1u
+#define C3_HAL_INTERFACE_REV 2u
 #define C3_CAP_I2C 2u
 #define C3_CAP_GPIO 4u
+#define C3_CAP_CHECKED_TIME 8u
 #define C3_I2C_SENSOR_BUS 0u
 #define C3_GPIO_ALARM_LED 0u
 #define C3_GPIO_BUZZER_ENABLE 1u
@@ -21,6 +23,10 @@ typedef struct {
                          uint8_t *rx, uint32_t rx_bytes, uint32_t timeout_ms);
     /* Logical active 0/1, physical pin/polarity/PWM policy belongs to backend. */
     int (*gpio_write)(void *, uint32_t channel, uint32_t active);
+    /* Optional checked clock; preferred over legacy now_ms. New binders must
+     * initialize the whole struct. This is a C interface extension, not a
+     * serialized coop_* ABI change. Errors leave the caller's result intact. */
+    int (*checked_now_ms)(void *, uint32_t *);
 } c3_hal_t;
 uint32_t c3_capabilities(const c3_hal_t *hal);
 int c3_now_ms(const c3_hal_t *hal, uint32_t *result);

@@ -1,4 +1,3 @@
-<?xml version='1.0' encoding='utf-8'?>
 <efx:project xmlns:efx="http://www.efinixinc.com/enf_proj" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="c2_native" description="Map-only SoC with GRAY8 triple framebuffer and raster scanout; physical pins/timing absent" last_change="1751875948" sw_version="2026.1.132" xsi:schemaLocation="http://www.efinixinc.com/enf_proj enf_proj.xsd">
     <efx:device_info>
         <efx:family name="Titanium" />
@@ -73,6 +72,7 @@
         <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_video_ingress.sv" version="default" library="default" />
         <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_video_pipeline.sv" version="default" library="default" />
         <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_video_scanout.sv" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c3_apb_peripheral.sv" version="default" library="default" />
         <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/a_side/ai_frame_mailbox.v" version="default" library="default" />
         <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/a_side/video_a_capture.v" version="default" library="default" />
         <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/a_side/video_grid_sampler.v" version="default" library="default" />

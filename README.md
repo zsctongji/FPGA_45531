@@ -1,5 +1,7 @@
 # 易灵思赛题三：多模态 AI 智能终端
 
+2026-10-31 C3增量：真实I²C/GPIO APB外设与RV32 MMIO后端、C2/C3公共时间、显式620号坏点策略已实现。50次RTL回归、C3专项及756项包检查PASS；详见 `team_work/03_ai_soc/C3_REAL_BACKEND_20261031.md`，入口22_test_c3_backend.cmd。物理管脚/电气/P&R/上板仍未验收，默认MMIO关闭。下方旧固件与检查数字为历史阶段。
+
 2026-10-25 完整视频帧缓存增量：C2已接入GRAY8三缓冲写入与RGB/光栅显示读出，唯一DDR出口与AI DMA共享；首DE时间、stride、最终BRESP发布屏障和帧切换见 `team_work/03_ai_soc/VIDEO_FRAMEBUFFER_HANDOFF.md`。入口20_test_video_framebuffer.cmd；最终结果以logs/c2_selftest.json和logs/c2_native_synthesis.json为准。下面46次/678项是源像素阶段记录。
 
 本阶段最终结果：49次RTL回归、独立短突发专项、native map、桌面输入对照和697项包身份检查PASS。未做物理MIPI/HDMI适配、PNR、时序/CDC签核或板上测试。

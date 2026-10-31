@@ -25,6 +25,6 @@ static int gpio(void *p,uint32_t channel,uint32_t active) {
     r->gpio_active[channel]=active; return COOP_OK;
 }
 void c3_bind_replay(c3_hal_t *h,c3_replay_t *r) {
-    h->context=r; h->now_ms=tick; h->i2c_write_read=transfer; h->gpio_write=gpio;
+    h->context=r; h->now_ms=tick; h->i2c_write_read=transfer; h->gpio_write=gpio; h->checked_now_ms=0;
 }
 

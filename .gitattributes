@@ -28,3 +28,38 @@
 /tools/replay_team_real_data.py -text whitespace=cr-at-eol
 /team_work/03_ai_soc/replay/thermal_replay.c -text whitespace=cr-at-eol
 /logs/team_real_replay_20261031.json -text whitespace=cr-at-eol
+/firmware/c1_static_person_detect/C1_FROZEN_SOURCES.json -text whitespace=cr-at-eol
+/firmware/c1_static_person_detect/C1_PACKAGE.json -text whitespace=cr-at-eol
+/firmware/c1_static_person_detect/frozen_c3_hal/c3_hal.c -text whitespace=cr-at-eol
+/firmware/c1_static_person_detect/frozen_c3_hal/c3_hal.h -text whitespace=cr-at-eol
+/firmware/c1_static_person_detect/frozen_c3_hal/c3_sapphire_time.c -text whitespace=cr-at-eol
+/firmware/c24_frame_person_detect/C24_INPUT_MANIFEST.json -text whitespace=cr-at-eol
+/firmware/c24_frame_person_detect/tinyml_c24.bin binary
+/firmware/c24_frame_person_detect/tinyml_c24.elf binary
+/firmware/c24_frame_person_detect/tinyml_c24.hex -text whitespace=cr-at-eol
+/firmware/c24_frame_person_detect/tinyml_c24.map -text whitespace=cr-at-eol
+/firmware/c3_peripheral_backend/MANIFEST.json -text whitespace=cr-at-eol
+/firmware/c3_peripheral_backend/libc3_peripheral_rv32.a binary
+/projects/06_soc_c2/rtl/c2_apb_control.sv -text whitespace=cr-at-eol
+/projects/06_soc_c2/rtl/c2_vendor_attachment.sv -text whitespace=cr-at-eol
+/projects/06_soc_c2/rtl/c3_apb_peripheral.sv -text whitespace=cr-at-eol
+/projects/06_soc_c2/sim/tb_c3_peripheral.sv -text whitespace=cr-at-eol
+/projects/06_soc_c2/sim/tb_c3_shared_epoch.sv -text whitespace=cr-at-eol
+/projects/06_soc_c2/sim/tb_c3_timing.sv -text whitespace=cr-at-eol
+/team_work/03_ai_soc/c3_hal/c3_hal.c -text whitespace=cr-at-eol
+/team_work/03_ai_soc/c3_hal/c3_hal.h -text whitespace=cr-at-eol
+/team_work/03_ai_soc/c3_hal/c3_peripheral.c -text whitespace=cr-at-eol
+/team_work/03_ai_soc/c3_hal/c3_peripheral.h -text whitespace=cr-at-eol
+/team_work/03_ai_soc/c3_hal/c3_replay.c -text whitespace=cr-at-eol
+/team_work/03_ai_soc/c3_hal/c3_sapphire_peripheral.c -text whitespace=cr-at-eol
+/team_work/03_ai_soc/c3_hal/c3_sapphire_peripheral.h -text whitespace=cr-at-eol
+/team_work/03_ai_soc/c3_hal/c3_sapphire_time.c -text whitespace=cr-at-eol
+/team_work/03_ai_soc/c3_hal/c3_thermal_publish.c -text whitespace=cr-at-eol
+/team_work/03_ai_soc/c3_hal/c3_thermal_publish.h -text whitespace=cr-at-eol
+/team_work/03_ai_soc/tests/test_c3_peripheral.c -text whitespace=cr-at-eol
+/tools/build_c24.py -text whitespace=cr-at-eol
+/tools/check_c2_riscv.py -text whitespace=cr-at-eol
+/tools/check_c3_backend.py -text whitespace=cr-at-eol
+/tools/package_c3_backend.py -text whitespace=cr-at-eol
+/tools/prepare_c24.py -text whitespace=cr-at-eol
+/tools/verify_c1_package.py -text whitespace=cr-at-eol

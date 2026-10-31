@@ -23,7 +23,7 @@ def main():
     require(inputs['version'].encode() in elf,'Linked build identifier')
     require((ROOT/'firmware/c24_frame_person_detect/tinyml_c24.bin').stat().st_size<=4194304,'Fits existing 4 MiB boot-copy limit')
     tests=read(ROOT/'logs/c2_selftest.json')
-    require(tests['status']=='PASS' and tests['passed']==49,'49 C2/source-pixel/framebuffer/shared-time RTL runs PASS')
+    require(tests['status']=='PASS' and tests['passed']==50,'50 C2/C3/source-pixel/framebuffer/shared-time RTL runs PASS')
     for name,digest in tests['source_sha256'].items():require(sha(ROOT/name)==digest,'RTL/driver test identity '+name)
     native=read(ROOT/'logs/c2_native_synthesis.json')
     require(native['status']=='PASS','Current native overlay logic synthesis PASS')
@@ -66,10 +66,17 @@ def main():
     tail=read(ROOT/'logs/c2_video_tail.json')
     require(tail['status']=='PASS' and not tail['board_test_passed'],'Independent short video burst and scan backpressure PASS')
     for name,digest in tail['source_sha256'].items():require(sha(ROOT/name)==digest,'Short video burst source '+name)
+    c3=read(ROOT/'logs/c3_backend_check.json')
+    require(c3['status']=='PASS' and not c3['board_verified'],'C3 actual peripheral RTL/host/RV32 and thermal checks PASS')
+    for name,digest in c3['source_sha256'].items():require(sha(ROOT/name)==digest,'C3 backend source '+name)
+    require(c3['thermal']['B_C_ABI_policies']['C_masked_accepted']==100,'C3 known-bad-pixel policy accepts 100 saved real B records')
+    lib=read(ROOT/'logs/c3_backend_library.json')
+    require(lib['status']=='PASS' and sha(ROOT/lib['artifact']['path'])==lib['artifact']['sha256'],'RV32 C3 link library identity')
+    for name,digest in lib['header_sha256'].items():require(sha(ROOT/name)==digest,'C3 library header '+name)
     result={'status':'PASS','checks':len(checks),'version':inputs['version'],'board_executed':False,
             'source': 'synthetic full GRAY8 source frames, pinned A capture/BRAM and C2 RTL, DDR model, PC inference; no physical camera',
             'reports':{name:sha(ROOT/name) for name in ['logs/c2_selftest.json','logs/c2_native_synthesis.json',
-                       'logs/firmware_c24.json','logs/a_c2_pc_inference.json','logs/a_c2_video_pc_inference.json','logs/c24_acceptance_tests.json','logs/c2_video_tail.json']}}
+                       'logs/firmware_c24.json','logs/a_c2_pc_inference.json','logs/a_c2_video_pc_inference.json','logs/c24_acceptance_tests.json','logs/c2_video_tail.json','logs/c3_backend_check.json','logs/c3_backend_library.json']}}
     (ROOT/'logs/c24_package_check.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(result))
 if __name__=='__main__':main()

@@ -22,7 +22,13 @@ def main():
     def run(command,timeout=120):
         argv=[str(v) for v in command]
         if argv[0].startswith(str(GCC).replace('\\','/')) and not argv[0].endswith('.exe'):argv[0]+='.exe'
-        return subprocess.run(argv,cwd=APP,env=env,capture_output=True,text=True,encoding='utf-8',errors='replace',timeout=timeout)
+        result=subprocess.run(argv,cwd=APP,env=env,capture_output=True,text=True,encoding='utf-8',errors='replace',timeout=timeout)
+        if result.returncode and 'cannot execute' in result.stderr and 'CreateProcess' in result.stderr and any(x in result.stderr for x in ['cc1.exe','cc1plus.exe','collect2.exe']):
+            diagnostic=result.stderr
+            record.setdefault('compiler_spawn_retries',[]).append({'command':argv,'diagnostic':diagnostic})
+            result=subprocess.run(argv,cwd=APP,env=env,capture_output=True,text=True,encoding='utf-8',errors='replace',timeout=timeout)
+            result.stderr='RETRY unchanged command after compiler spawn failure:\n'+diagnostic+result.stderr
+        return result
     def save():report.write_text(json.dumps(record,indent=2)+'\n',encoding='utf-8')
     save()
     try:

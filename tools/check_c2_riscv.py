@@ -21,7 +21,9 @@ def main():
     env=os.environ.copy()
     env['PATH']=';'.join(str(gcc/p) for p in ['bin','libexec/gcc/riscv-none-elf/13.4.0','riscv-none-elf/bin'])+';'+env.get('PATH','')
     sources=['team_work/shared/src/cooperation_v1.c','team_work/03_ai_soc/c2/c2_driver.c',
-             'team_work/03_ai_soc/c2/c2_sapphire.c','team_work/03_ai_soc/c3_hal/c3_shared_time.c']
+             'team_work/03_ai_soc/c2/c2_sapphire.c','team_work/03_ai_soc/c3_hal/c3_shared_time.c',
+             'team_work/03_ai_soc/c3_hal/c3_hal.c','team_work/03_ai_soc/c3_hal/c3_peripheral.c',
+             'team_work/03_ai_soc/c3_hal/c3_sapphire_peripheral.c','team_work/03_ai_soc/c3_hal/c3_thermal_publish.c']
     bsp=ROOT/'projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/bsp/efinix/EfxSapphireSoc/include'
     includes=['-I'+str(ROOT/'team_work/shared/include'),'-I'+str(ROOT/'team_work/03_ai_soc/c2'),'-I'+str(ROOT/'team_work/03_ai_soc/c3_hal'),'-I'+str(bsp)]
     try:
@@ -33,6 +35,13 @@ def main():
                          '-Wall','-Wextra','-Werror','-march=rv32im_zicsr_zifencei','-mabi=ilp32',*includes,
                          str(path),'-o',str(obj)]
                 result=subprocess.run(command,env=env,capture_output=True,text=True,timeout=60)
+                # This bundled Windows GCC occasionally fails the first cc1
+                # CreateProcess. Retry only that exact spawn failure, retaining
+                # its diagnostic; compilation diagnostics never trigger retry.
+                if result.returncode and 'cc1.exe' in result.stderr and 'CreateProcess' in result.stderr and 'cannot execute' in result.stderr:
+                    stream.write('RETRY unchanged compiler command after cc1 spawn failure:\n'+result.stderr)
+                    record.setdefault('spawn_retries',[]).append(source)
+                    result=subprocess.run(command,env=env,capture_output=True,text=True,timeout=60)
                 stream.write(result.stdout+result.stderr)
                 if result.returncode:raise RuntimeError('RISC-V compile failed: '+source)
                 record['objects'].append({'source':source,'source_sha256':hashlib.sha256(path.read_bytes()).hexdigest(),
@@ -45,7 +54,7 @@ def main():
                 raise RuntimeError('Missing fence / vendor whole-D-cache invalidate / fence sequence')
         record['cache_sequence']='fence iorw,iorw; .word 0x0000500f; fence iorw,iorw'
         record['status']='PASS'
-        print('PASS C2/C3 RV32: 4 objects; exact fence/invalidate/fence sequence verified; not executed on board.')
+        print('PASS C2/C3 RV32: 8 objects; checked clock, I2C/GPIO and thermal policy; exact fence/invalidate/fence sequence verified; not executed on board.')
     except Exception as exc:
         record['status']='FAIL';record['error']=str(exc);print(str(exc))
     record['finished']=datetime.now(timezone.utc).isoformat()

@@ -1,13 +1,20 @@
 #include "c3_hal.h"
 uint32_t c3_capabilities(const c3_hal_t *h) {
     if (!h) return 0;
-    return (h->now_ms ? C3_CAP_TIME : 0u) |
+    return ((h->now_ms || h->checked_now_ms) ? C3_CAP_TIME : 0u) |
+           (h->checked_now_ms ? C3_CAP_CHECKED_TIME : 0u) |
            (h->i2c_write_read ? C3_CAP_I2C : 0u) |
            (h->gpio_write ? C3_CAP_GPIO : 0u);
 }
 int c3_now_ms(const c3_hal_t *h, uint32_t *result) {
     if (!result) return COOP_EINVAL;
-    if (!h || !h->now_ms) return COOP_ENOTSUP;
+    if (!h) return COOP_ENOTSUP;
+    if (h->checked_now_ms) {
+        uint32_t value; int rc=h->checked_now_ms(h->context,&value);
+        if(rc) return rc>0?COOP_EIO:rc;
+        *result=value;return COOP_OK;
+    }
+    if (!h->now_ms) return COOP_ENOTSUP;
     *result = h->now_ms(h->context); return COOP_OK;
 }
 int c3_i2c_write_read(const c3_hal_t *h, uint32_t bus, uint8_t address,

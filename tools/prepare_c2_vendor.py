@@ -188,7 +188,9 @@ def generate_overlay():
                    'output wire [31:0] c2_video_write_errors,c2_video_read_errors,c2_video_underflows',
                    'output wire [31:0] c2_video_repeated,c2_video_empty_scans,c2_video_missed_scans,c2_video_completed_scans',
                    'output wire [31:0] c2_video_max_aw_wait,c2_video_max_ar_wait']
-    declarations=['input wire c2_video_clk,c2_map_enable',*spi_ports,*sample_ports,*display_ports]
+    c3_ports=['input wire c3_io_enable,c3_sensor_scl_read,c3_sensor_sda_read',
+              'output wire c3_sensor_scl_drive_low,c3_sensor_sda_drive_low,c3_buzzer,c3_alarm_led']
+    declarations=['input wire c2_video_clk,c2_map_enable',*spi_ports,*sample_ports,*display_ports,*c3_ports]
     text=text.replace('   // Clock and reset ports',',\n'.join(declarations)+',\n   // Clock and reset ports',1)
     # Match vendor beta's 8-bit DDR IDs explicitly; no implicit 8-to-4 truncation.
     text=re.sub(r'ddr3_top\s+u_ddr3_top',"ddr3_top #(.AXI_ID_WIDTH(8)) u_ddr3_top",text,count=1)
@@ -202,6 +204,12 @@ always @(posedge io_memoryClk or posedge io_systemReset)
  if(io_systemReset) c2_mem_release<=0;else c2_mem_release<={c2_mem_release[0],1'b1};
 wire userInterruptB;
 assign userInterruptB=c2_irq;
+wire c3_page=apb_paddr[15:8]==8'h10;
+wire [31:0] c2_apb_prdata,c3_apb_prdata,c3_shared_ms;
+wire c2_apb_ready,c3_apb_ready,c2_apb_error,c3_apb_error,c3_shared_valid;
+assign apb_prdata=c3_page?c3_apb_prdata:c2_apb_prdata;
+assign apb_pready=c3_page?c3_apb_ready:c2_apb_ready;
+assign apb_pslverror=c3_page?c3_apb_error:c2_apb_error;
 '''
     text=text.replace('wire io_systemReset;',declarations+'\nwire io_systemReset;',1)
     text=text.replace('parameter FREQ = 200;','localparam FREQ = 200;',1)
@@ -233,11 +241,21 @@ assign userInterruptB=c2_irq;
 .arst_n(!io_systemReset),.mem_clk(io_memoryClk),.video_clk(c2_video_clk),.pclk(i_peripheralClk),.map_enable(c2_map_enable),
 .external_protocol_error(c2_cpu_rejected || c2_cpu_protocol_error),
 .shared_video_ms(c2_shared_video_ms),.shared_video_valid(c2_shared_video_valid),
-.paddr(apb_paddr),.psel(apb_psel),.penable(apb_penable),.pwrite(apb_pwrite),.pwdata(apb_pwdata),
-.pready(apb_pready),.prdata(apb_prdata),.pslverror(apb_pslverror),.irq(c2_irq),
+.shared_cpu_ms(c3_shared_ms),.shared_cpu_valid(c3_shared_valid),
+.paddr(apb_paddr),.psel(apb_psel && !c3_page),.penable(apb_penable),.pwrite(apb_pwrite),.pwdata(apb_pwdata),
+.pready(c2_apb_ready),.prdata(c2_apb_prdata),.pslverror(c2_apb_error),.irq(c2_irq),
 '''+',\n'.join('.'+n+'(c2_'+n+')' for d,w,n in ports)+',\n'
     block+=',\n'.join(f'.m_{n}(axi_inter_s1_{n})' if n in {x[0] for x in SP} else f'.m_{n}()' for n,d,w in MP)
     block+=',\n.protocol_error(c2_protocol_error));\n'
+    block+='''c3_apb_peripheral c3_peripheral(
+.arst_n(!io_systemReset),.pclk(i_peripheralClk),.io_enable(c3_io_enable),
+.shared_ms(c3_shared_ms),.shared_valid(c3_shared_valid),
+.scl_i(c3_sensor_scl_read),.sda_i(c3_sensor_sda_read),
+.scl_drive_low(c3_sensor_scl_drive_low),.sda_drive_low(c3_sensor_sda_drive_low),
+.buzzer(c3_buzzer),.alarm_led(c3_alarm_led),
+.paddr(apb_paddr[7:0]),.psel(apb_psel && c3_page),.penable(apb_penable),.pwrite(apb_pwrite),.pwdata(apb_pwdata),
+.pready(c3_apb_ready),.prdata(c3_apb_prdata),.pslverror(c3_apb_error));
+'''
     image_source='''c2_a_video_source #(.FRAME_WIDTH(C2_FRAME_WIDTH),.FRAME_HEIGHT(C2_FRAME_HEIGHT),
 .STEP_X(C2_STEP_X),.STEP_Y(C2_STEP_Y)) c2_video_source(
 .arst_n(!io_systemReset),.video_clk(c2_video_clk),.enable(c2_map_enable),
@@ -314,6 +332,11 @@ assign c2_video_awlock=1'b0;assign c2_video_arlock=1'b0;
               'video_input_contract':'GRAY8_1PPC_VS_HIGH_DE_v1',
               'timestamp_latch':'first source DE pixel; preserved through grid EOF and DDR descriptor',
               'capture_default':{'width':1920,'height':1080,'step_x':20,'step_y':20},
+              'c3_peripheral':{'apb_offset':'0x1000','candidate_cpu_base':'0xf8101000',
+                               'clock':'same C2 APB millisecond epoch','open_drain':True,
+                               'pad_enable':'external c3_io_enable, only after physical verification',
+                               'pin_candidates':{'scl':'B3/J28.37','sda':'C3/J28.39','buzzer':'B5/J28.38','alarm_led':'not assigned'},
+                               'physical_pins_frozen':False,'board_verified':False},
               'framebuffer':{'format':'GRAY8','byte_order':'leftmost pixel in lowest byte','stride':1920,
                              'frame_bytes':2073600,'bank_pitch':2076672,'banks':3,
                              'relative_bank_bases':[0,2076672,4153344],

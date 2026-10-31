@@ -49,6 +49,13 @@ def main():
             'No external grid/timestamp override bypasses source capture')
     require('c2_video_pipeline #(' in text['overlay'] and '.awvalid(c2_video_awvalid)' in text['overlay'],
             'Native full-frame writer and scan reader connect to the C2 video AXI port')
+    require('c3_apb_peripheral c3_peripheral(' in text['overlay'] and
+            "wire c3_page=apb_paddr[15:8]==8'h10" in text['overlay'] and
+            '.shared_ms(c3_shared_ms),.shared_valid(c3_shared_valid)' in text['overlay'],
+            'Native C3 page decoded separately and wired to the same C2 APB clock epoch')
+    require('.scl_drive_low(c3_sensor_scl_drive_low)' in text['overlay'] and
+            '.sda_drive_low(c3_sensor_sda_drive_low)' in text['overlay'],
+            'Native C3 pad interface exports open-drain OE rather than driven high data')
     require('input wire  c2_video_awvalid' not in text['overlay'] and
             '.display_rgb(c2_display_rgb)' in text['overlay'],
             'Video master is internal and display RGB/raster is exposed at the A boundary')

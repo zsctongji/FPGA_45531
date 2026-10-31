@@ -35,6 +35,11 @@
       "bytes": 2508150
     }
   ],
+  "release_source_snapshots": {
+    "team_work/03_ai_soc/c3_hal/c3_hal.h": "firmware/c1_static_person_detect/frozen_c3_hal/c3_hal.h",
+    "team_work/03_ai_soc/c3_hal/c3_hal.c": "firmware/c1_static_person_detect/frozen_c3_hal/c3_hal.c",
+    "team_work/03_ai_soc/c3_hal/c3_sapphire_time.c": "firmware/c1_static_person_detect/frozen_c3_hal/c3_sapphire_time.c"
+  },
   "flash_offset": "0x00380000",
   "ram_entry": "0x00001000",
   "boot_copy_bytes": 4194304,

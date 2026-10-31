@@ -1,0 +1,2 @@
+PASS tb_c3_peripheral checks=6060 repeated_START READ WRITE ACK NACK stretch arbitration timeout abort nine_pulse_recovery GPIO_watchdog shared_time_wrap clock_fault reset open_drain
+projects\06_soc_c2\sim\tb_c3_peripheral.sv:127: $finish called at 188700000 (1ps)

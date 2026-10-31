@@ -25,7 +25,9 @@ def main():
              ROOT/'team_work/shared/src/cooperation_v1.c':'cooperation_v1.c'}
     for folder,names in {'c2':['c2_driver.c','c2_driver.h','c2_sapphire.c','c2_sapphire.h'],
                          'c24':['c24_pipeline.c','c24_pipeline.h','c24_log_format.h'],
-                         'c3_hal':['c3_hal.c','c3_hal.h','c3_sapphire_time.c','c3_shared_time.c','c3_shared_time.h'],
+                         'c3_hal':['c3_hal.c','c3_hal.h','c3_sapphire_time.c','c3_shared_time.c','c3_shared_time.h',
+                                   'c3_peripheral.c','c3_peripheral.h','c3_sapphire_peripheral.c','c3_sapphire_peripheral.h',
+                                   'c3_thermal_publish.c','c3_thermal_publish.h'],
                          'c4':['c4_bridge.c','c4_bridge.h','c4_tflm_adapter.cc','c4_tflm_adapter.h']}.items():
         for name in names:overlay[ROOT/'team_work/03_ai_soc'/folder/name]=name
     for src,name in overlay.items():shutil.copy2(src,TARGET/'src'/name)

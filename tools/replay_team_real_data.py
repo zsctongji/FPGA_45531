@@ -110,10 +110,10 @@ def thermal(report,archive,repo):
         source=repo/f'team_work/02_sensors_alarm/{folder}/{name}'
         p=vendor/name;p.write_bytes(source.read_bytes());bind(report,p)
     sources=[ROOT/'team_work/03_ai_soc/replay/thermal_replay.c',vendor/'b_thermal.c',
-             ROOT/'team_work/03_ai_soc/c3_hal/c3_hal.c',ROOT/'team_work/shared/src/cooperation_v1.c',
+             ROOT/'team_work/03_ai_soc/c3_hal/c3_hal.c',ROOT/'team_work/03_ai_soc/c3_hal/c3_thermal_publish.c',ROOT/'team_work/shared/src/cooperation_v1.c',
              *[vendor/(n+'.c') for n in ['b4_publish_gate','b4_quality_policy','b4_temporal_policy']]]
     for p in sources:bind(report,p)
-    for p in [ROOT/'team_work/shared/include/cooperation_v1.h',ROOT/'team_work/03_ai_soc/c3_hal/c3_hal.h']:bind(report,p)
+    for p in [ROOT/'team_work/shared/include/cooperation_v1.h',ROOT/'team_work/03_ai_soc/c3_hal/c3_hal.h',ROOT/'team_work/03_ai_soc/c3_hal/c3_thermal_publish.h']:bind(report,p)
     vc=Path('C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Auxiliary/Build/vcvars64.bat')
     exe=BUILD/'thermal_replay.exe';cmd=BUILD/'compile_thermal.cmd'
     flags=['cl','/nologo','/std:c11','/W4','/WX','/TC',f'/I"{vendor}"',

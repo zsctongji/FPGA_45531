@@ -1,0 +1,49 @@
+{
+  "status": "PASS_PACKAGE_AND_EXTRACTED_SELFTEST",
+  "output": "D:\\FPGA_2026_T3_P3\\team_work\\handoff\\A_upload_20261104",
+  "code_files": 1178,
+  "evidence_files": 180,
+  "video_candidates": 5,
+  "python_tests": 40,
+  "rtl_simulations": 15,
+  "hardware_accessed": false,
+  "rar_matches_zip": true,
+  "artifacts": [
+    {
+      "name": "A_code_20261104.rar",
+      "bytes": 38609686,
+      "sha256": "3ad839b46ab1930df5bdb48ccf30159d9dac4e502289b0d90d7ac0de0f37d958"
+    },
+    {
+      "name": "A_code_20261104.zip",
+      "bytes": 41052853,
+      "sha256": "c1b3f9c753e5354c501216613b597d5bf47f3fe073e9e3d9dcfd97fcc5c31268"
+    },
+    {
+      "name": "A_evidence_20261104.zip",
+      "bytes": 546490,
+      "sha256": "d66a3e9ba1297263e35107e45a39430cb4949c8de58a85a07d99104399fe2fef"
+    }
+  ],
+  "github_web_parts": [
+    {
+      "file": "A_current_sources_20261104.zip",
+      "bytes": 16256582,
+      "files": 660,
+      "readback_verified": true
+    },
+    {
+      "file": "A_legacy_sources_20261104.zip",
+      "bytes": 15361681,
+      "files": 449,
+      "readback_verified": true
+    },
+    {
+      "file": "A_test_tools_20261104.zip",
+      "bytes": 9466173,
+      "files": 69,
+      "readback_verified": true
+    }
+  ],
+  "github_parts_union_matches_full_zip": true
+}

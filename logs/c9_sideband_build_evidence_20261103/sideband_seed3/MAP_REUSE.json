@@ -1,0 +1,517 @@
+{
+  "status": "PASS_IDENTICAL_LOGIC_MAP_REUSE",
+  "controlled_change": "PNR seed 2 to 3 and source directory paths only. No resynthesis claimed.",
+  "compiled_source_pairs": [
+    [
+      "team_work/03_ai_soc/c9_live/camera_geometry/c9_sideband_probe_small.sv",
+      "team_work/03_ai_soc/c9_live/camera_geometry/c9_sideband_probe_small.sv"
+    ],
+    [
+      "team_work/03_ai_soc/c9_live/camera_geometry/c9_capture_geometry.sv",
+      "team_work/03_ai_soc/c9_live/camera_geometry/c9_capture_geometry.sv"
+    ],
+    [
+      "projects/03_tinyml/debug_top.v",
+      "projects/03_tinyml/debug_top.v"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/physical_soc_core.v",
+      "build/c9_sideband_seed3_image_20261103/physical_soc_core.v"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/overrides/ddr3_parameter.vh",
+      "build/c9_sideband_seed3_image_20261103/overrides/ddr3_parameter.vh"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/overrides/ddr3_top.v",
+      "build/c9_sideband_seed3_image_20261103/overrides/ddr3_top.v"
+    ],
+    [
+      "projects/03_tinyml/src/ddr3_controller/memory_bus_ctl/memory_bus_ctl.v",
+      "projects/03_tinyml/src/ddr3_controller/memory_bus_ctl/memory_bus_ctl.v"
+    ],
+    [
+      "projects/03_tinyml/src/ddr3_controller/local_bus_ctl/local_bus_ctl.v",
+      "projects/03_tinyml/src/ddr3_controller/local_bus_ctl/local_bus_ctl.v"
+    ],
+    [
+      "projects/03_tinyml/src/ddr3_controller/axi4_bus_ctl/axi4_bus_ctl.v",
+      "projects/03_tinyml/src/ddr3_controller/axi4_bus_ctl/axi4_bus_ctl.v"
+    ],
+    [
+      "projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_mpr_rdlvl.v",
+      "projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_mpr_rdlvl.v"
+    ],
+    [
+      "projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_phy_if.v",
+      "projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_phy_if.v"
+    ],
+    [
+      "projects/03_tinyml/src/ddr3_controller/phy_ctl/phy_ctl.v",
+      "projects/03_tinyml/src/ddr3_controller/phy_ctl/phy_ctl.v"
+    ],
+    [
+      "projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_phy_wrcal.v",
+      "projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_phy_wrcal.v"
+    ],
+    [
+      "projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_phy_rdlvl_dqs.v",
+      "projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_phy_rdlvl_dqs.v"
+    ],
+    [
+      "projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_calibration_ini.v",
+      "projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_calibration_ini.v"
+    ],
+    [
+      "projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_phy_wrlvl.v",
+      "projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_phy_wrlvl.v"
+    ],
+    [
+      "projects/03_tinyml/src/ddr3_controller/lb2_axi_clk.v",
+      "projects/03_tinyml/src/ddr3_controller/lb2_axi_clk.v"
+    ],
+    [
+      "projects/03_tinyml/src/ddr3_controller/common/efx_fifo_v2.3/efx_fifo_wrapper.v",
+      "projects/03_tinyml/src/ddr3_controller/common/efx_fifo_v2.3/efx_fifo_wrapper.v"
+    ],
+    [
+      "projects/03_tinyml/src/common/simple_dual_port_ram.v",
+      "projects/03_tinyml/src/common/simple_dual_port_ram.v"
+    ],
+    [
+      "projects/03_tinyml/ip/dma/dma.v",
+      "projects/03_tinyml/ip/dma/dma.v"
+    ],
+    [
+      "projects/03_tinyml/ip/hw_accel_dma_out_fifo/hw_accel_dma_out_fifo.v",
+      "projects/03_tinyml/ip/hw_accel_dma_out_fifo/hw_accel_dma_out_fifo.v"
+    ],
+    [
+      "projects/03_tinyml/ip/hw_accel_dma_in_fifo/hw_accel_dma_in_fifo.v",
+      "projects/03_tinyml/ip/hw_accel_dma_in_fifo/hw_accel_dma_in_fifo.v"
+    ],
+    [
+      "projects/03_tinyml/src/axi/axi_full_to_half_duplex.v",
+      "projects/03_tinyml/src/axi/axi_full_to_half_duplex.v"
+    ],
+    [
+      "projects/03_tinyml/src/axi/axi_interconnect_beta/arbiter.v",
+      "projects/03_tinyml/src/axi/axi_interconnect_beta/arbiter.v"
+    ],
+    [
+      "projects/03_tinyml/src/axi/axi_interconnect_beta/axi_interconnect_beta.sv",
+      "projects/03_tinyml/src/axi/axi_interconnect_beta/axi_interconnect_beta.sv"
+    ],
+    [
+      "projects/03_tinyml/src/axi/axi_interconnect_beta/axi_rdata_sfifo.v",
+      "projects/03_tinyml/src/axi/axi_interconnect_beta/axi_rdata_sfifo.v"
+    ],
+    [
+      "projects/03_tinyml/src/axi/axi_interconnect_beta/axi_wdata_sfifo.v",
+      "projects/03_tinyml/src/axi/axi_interconnect_beta/axi_wdata_sfifo.v"
+    ],
+    [
+      "projects/03_tinyml/src/axi/axi_interconnect_beta/crossbar.v",
+      "projects/03_tinyml/src/axi/axi_interconnect_beta/crossbar.v"
+    ],
+    [
+      "projects/03_tinyml/src/axi/axi_interconnect_beta/fixed_priority_arbiter.v",
+      "projects/03_tinyml/src/axi/axi_interconnect_beta/fixed_priority_arbiter.v"
+    ],
+    [
+      "projects/03_tinyml/src/axi/axi_interconnect_beta/lb_to_axi.v",
+      "projects/03_tinyml/src/axi/axi_interconnect_beta/lb_to_axi.v"
+    ],
+    [
+      "projects/03_tinyml/src/axi/axi_interconnect_beta/master_coupler.v",
+      "projects/03_tinyml/src/axi/axi_interconnect_beta/master_coupler.v"
+    ],
+    [
+      "projects/03_tinyml/src/axi/axi_interconnect_beta/round_robin_priority_arbiter.v",
+      "projects/03_tinyml/src/axi/axi_interconnect_beta/round_robin_priority_arbiter.v"
+    ],
+    [
+      "projects/03_tinyml/src/axi/axi_interconnect_beta/slave_coupler.v",
+      "projects/03_tinyml/src/axi/axi_interconnect_beta/slave_coupler.v"
+    ],
+    [
+      "projects/03_tinyml/src/axi/axi_interconnect_beta/slave_coupler_wrapper.v",
+      "projects/03_tinyml/src/axi/axi_interconnect_beta/slave_coupler_wrapper.v"
+    ],
+    [
+      "projects/03_tinyml/src/common/common_efx_fifo_wrapper.v",
+      "projects/03_tinyml/src/common/common_efx_fifo_wrapper.v"
+    ],
+    [
+      "projects/03_tinyml/src/common/common_reset_ctrl.v",
+      "projects/03_tinyml/src/common/common_reset_ctrl.v"
+    ],
+    [
+      "projects/03_tinyml/src/common/common_simple_dual_port_ram.v",
+      "projects/03_tinyml/src/common/common_simple_dual_port_ram.v"
+    ],
+    [
+      "projects/03_tinyml/src/common/common_true_dual_port_ram.v",
+      "projects/03_tinyml/src/common/common_true_dual_port_ram.v"
+    ],
+    [
+      "projects/03_tinyml/src/hw_accel/hw_accel.v",
+      "projects/03_tinyml/src/hw_accel/hw_accel.v"
+    ],
+    [
+      "projects/03_tinyml/src/hw_accel/hw_accel_axi4.v",
+      "projects/03_tinyml/src/hw_accel/hw_accel_axi4.v"
+    ],
+    [
+      "projects/03_tinyml/src/hw_accel/hw_accel_nearest_neighbor_downscale.v",
+      "projects/03_tinyml/src/hw_accel/hw_accel_nearest_neighbor_downscale.v"
+    ],
+    [
+      "projects/03_tinyml/src/hw_accel/hw_accel_pack_rgb_gray.v",
+      "projects/03_tinyml/src/hw_accel/hw_accel_pack_rgb_gray.v"
+    ],
+    [
+      "projects/03_tinyml/src/hw_accel/hw_accel_rgb2gray.v",
+      "projects/03_tinyml/src/hw_accel/hw_accel_rgb2gray.v"
+    ],
+    [
+      "projects/03_tinyml/src/hw_accel/hw_accel_wrapper.v",
+      "projects/03_tinyml/src/hw_accel/hw_accel_wrapper.v"
+    ],
+    [
+      "projects/03_tinyml/src/tinyml/defines.v",
+      "projects/03_tinyml/src/tinyml/defines.v"
+    ],
+    [
+      "projects/03_tinyml/src/tinyml/tinyml_accelerator.v",
+      "projects/03_tinyml/src/tinyml/tinyml_accelerator.v"
+    ],
+    [
+      "projects/03_tinyml/src/tinyml/tinyml_top.v",
+      "projects/03_tinyml/src/tinyml/tinyml_top.v"
+    ],
+    [
+      "projects/03_tinyml/ip/sapphire_soc/sapphire_soc.v",
+      "projects/03_tinyml/ip/sapphire_soc/sapphire_soc.v"
+    ],
+    [
+      "projects/06_soc_c2/rtl/c2_a_image_source.sv",
+      "projects/06_soc_c2/rtl/c2_a_image_source.sv"
+    ],
+    [
+      "projects/06_soc_c2/rtl/c2_a_mailbox_bridge.sv",
+      "projects/06_soc_c2/rtl/c2_a_mailbox_bridge.sv"
+    ],
+    [
+      "projects/06_soc_c2/rtl/c2_a_video_source.sv",
+      "projects/06_soc_c2/rtl/c2_a_video_source.sv"
+    ],
+    [
+      "projects/06_soc_c2/rtl/c2_apb_control.sv",
+      "projects/06_soc_c2/rtl/c2_apb_control.sv"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/overrides/c2_async_fifo.sv",
+      "build/c9_sideband_seed3_image_20261103/overrides/c2_async_fifo.sv"
+    ],
+    [
+      "projects/06_soc_c2/rtl/c2_axi_arbiter.sv",
+      "projects/06_soc_c2/rtl/c2_axi_arbiter.sv"
+    ],
+    [
+      "projects/06_soc_c2/rtl/c2_axi_to_vendor.sv",
+      "projects/06_soc_c2/rtl/c2_axi_to_vendor.sv"
+    ],
+    [
+      "projects/06_soc_c2/rtl/c2_bram_async_fifo.sv",
+      "projects/06_soc_c2/rtl/c2_bram_async_fifo.sv"
+    ],
+    [
+      "projects/06_soc_c2/rtl/c2_buffer_manager.sv",
+      "projects/06_soc_c2/rtl/c2_buffer_manager.sv"
+    ],
+    [
+      "projects/06_soc_c2/rtl/c2_cdc_mailbox.sv",
+      "projects/06_soc_c2/rtl/c2_cdc_mailbox.sv"
+    ],
+    [
+      "projects/06_soc_c2/rtl/c2_frame_publisher.sv",
+      "projects/06_soc_c2/rtl/c2_frame_publisher.sv"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/overrides/c2_image_writer.sv",
+      "build/c9_sideband_seed3_image_20261103/overrides/c2_image_writer.sv"
+    ],
+    [
+      "projects/06_soc_c2/rtl/c2_memory_hub.sv",
+      "projects/06_soc_c2/rtl/c2_memory_hub.sv"
+    ],
+    [
+      "projects/06_soc_c2/rtl/c2_shared_time.sv",
+      "projects/06_soc_c2/rtl/c2_shared_time.sv"
+    ],
+    [
+      "projects/06_soc_c2/rtl/c2_source_fence.sv",
+      "projects/06_soc_c2/rtl/c2_source_fence.sv"
+    ],
+    [
+      "projects/06_soc_c2/rtl/c2_system_boundary.sv",
+      "projects/06_soc_c2/rtl/c2_system_boundary.sv"
+    ],
+    [
+      "projects/06_soc_c2/rtl/c2_vendor_attachment.sv",
+      "projects/06_soc_c2/rtl/c2_vendor_attachment.sv"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/overrides/c2_video_framebuffer.sv",
+      "build/c9_sideband_seed3_image_20261103/overrides/c2_video_framebuffer.sv"
+    ],
+    [
+      "projects/06_soc_c2/rtl/c2_video_ingress.sv",
+      "projects/06_soc_c2/rtl/c2_video_ingress.sv"
+    ],
+    [
+      "projects/06_soc_c2/rtl/c2_video_pipeline.sv",
+      "projects/06_soc_c2/rtl/c2_video_pipeline.sv"
+    ],
+    [
+      "team_work/03_ai_soc/c9_live/display_fix/c2_video_scanout.sv",
+      "team_work/03_ai_soc/c9_live/display_fix/c2_video_scanout.sv"
+    ],
+    [
+      "projects/06_soc_c2/rtl/c3_apb_peripheral.sv",
+      "projects/06_soc_c2/rtl/c3_apb_peripheral.sv"
+    ],
+    [
+      "projects/06_soc_c2/a_side/ai_frame_mailbox.v",
+      "projects/06_soc_c2/a_side/ai_frame_mailbox.v"
+    ],
+    [
+      "projects/06_soc_c2/a_side/video_a_capture.v",
+      "projects/06_soc_c2/a_side/video_a_capture.v"
+    ],
+    [
+      "projects/06_soc_c2/a_side/video_grid_sampler.v",
+      "projects/06_soc_c2/a_side/video_grid_sampler.v"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/soc_physical_top.sv",
+      "build/c9_sideband_seed3_image_20261103/soc_physical_top.sv"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/rtl/physical_video.sv",
+      "build/c9_sideband_seed3_image_20261103/rtl/physical_video.sv"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/rtl/c7_cpu_axi_address.sv",
+      "build/c9_sideband_seed3_image_20261103/rtl/c7_cpu_axi_address.sv"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/csi_rx_controller.sv",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/csi_rx_controller.sv"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/debayer/debayer_top_2to1.v",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/debayer/debayer_top_2to1.v"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/debayer/line_buffer.v",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/debayer/line_buffer.v"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/debayer/raw_to_rgb.v",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/debayer/raw_to_rgb.v"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/debayer/rgb_gain_v1.v",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/debayer/rgb_gain_v1.v"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/debayer/true_dual_port_ram.v",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/debayer/true_dual_port_ram.v"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/cam_i2c_ctrl/i2c/i2c_16addr_8data.v",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/cam_i2c_ctrl/i2c/i2c_16addr_8data.v"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/cam_i2c_ctrl/i2c/i2c_8addr_8data.v",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/cam_i2c_ctrl/i2c/i2c_8addr_8data.v"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/cam_i2c_ctrl/i2c/i2c_master_ctrl_top.v",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/cam_i2c_ctrl/i2c/i2c_master_ctrl_top.v"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/cam_i2c_ctrl/i2c/i2c_master_reg_rom.v",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/cam_i2c_ctrl/i2c/i2c_master_reg_rom.v"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/cam_i2c_ctrl/i2c/i2c_master_reg_set.v",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/cam_i2c_ctrl/i2c/i2c_master_reg_set.v"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/cam_i2c_ctrl/i2c_master/i2c_master_byte_ctrl.v",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/cam_i2c_ctrl/i2c_master/i2c_master_byte_ctrl.v"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/cam_i2c_ctrl/i2c_master/i2c_master_top.v",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/cam_i2c_ctrl/i2c_master/i2c_master_top.v"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/cam_i2c_ctrl/i2c_master/i2c_master_bit_ctrl.v",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/cam_i2c_ctrl/i2c_master/i2c_master_bit_ctrl.v"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/cam_i2c_ctrl/i2c_master/oc_i2c_master.v",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/cam_i2c_ctrl/i2c_master/oc_i2c_master.v"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/cam_i2c_ctrl/i2c_master/i2c_master_defines.v",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/cam_i2c_ctrl/i2c_master/i2c_master_defines.v"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/cam_i2c_ctrl/i2c_master/timescale.v",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/cam_i2c_ctrl/i2c_master/timescale.v"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/dvi_tx/ecc_calc_v1.v",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/dvi_tx/ecc_calc_v1.v"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/dvi_tx/audio_clock_regeneration_packet.sv",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/dvi_tx/audio_clock_regeneration_packet.sv"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/dvi_tx/audio_packet.sv",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/dvi_tx/audio_packet.sv"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/dvi_tx/auxiliary_video_information_info_frame.sv",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/dvi_tx/auxiliary_video_information_info_frame.sv"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/dvi_tx/audio_infoframe_packet.sv",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/dvi_tx/audio_infoframe_packet.sv"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/dvi_tx/efx_fifo.v",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/dvi_tx/efx_fifo.v"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/dvi_tx/Sc_Fifo_Slr8.v",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/dvi_tx/Sc_Fifo_Slr8.v"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/dvi_tx/packet_assembler.sv",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/dvi_tx/packet_assembler.sv"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/dvi_tx/encode.v_encrypted.v",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/dvi_tx/encode.v_encrypted.v"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/dvi_tx/tx_aux.v_encrypted.v",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/dvi_tx/tx_aux.v_encrypted.v"
+    ],
+    [
+      "build/c9_sideband_raw10_image_20261103/vendor_a/rtl/dvi_tx/dvi_encoder.v_encrypted.v",
+      "build/c9_sideband_seed3_image_20261103/vendor_a/rtl/dvi_tx/dvi_encoder.v_encrypted.v"
+    ],
+    [
+      "team_work/03_ai_soc/c9_live/rtl/c9_live_control.sv",
+      "team_work/03_ai_soc/c9_live/rtl/c9_live_control.sv"
+    ],
+    [
+      "team_work/03_ai_soc/c9_live/rtl/c9_pattern_source.sv",
+      "team_work/03_ai_soc/c9_live/rtl/c9_pattern_source.sv"
+    ],
+    [
+      "team_work/03_ai_soc/c9_live/rtl/c9_snapshot_group.sv",
+      "team_work/03_ai_soc/c9_live/rtl/c9_snapshot_group.sv"
+    ],
+    [
+      "team_work/03_ai_soc/c9_live/debug/c9_ddr_probe.sv",
+      "team_work/03_ai_soc/c9_live/debug/c9_ddr_probe.sv"
+    ]
+  ],
+  "copied_files": [
+    "soc_physical.map.v",
+    "soc_physical.map.rpt",
+    "soc_physical.map.out",
+    "soc_physical.map.rdb",
+    "soc_physical.vdb",
+    "soc_physical.raminfo.pb",
+    "soc_physical.interface.csv",
+    "soc_physical.peri.cdo",
+    "soc_physical.peri.csi",
+    "soc_physical.peri.pbn",
+    "soc_physical.peri.qdelay",
+    "soc_physical.pinout.csv",
+    "soc_physical.pinout.rpt",
+    "soc_physical.pt.sdc",
+    "soc_physical.pt.rpt",
+    "soc_physical.pt.rpt.xml",
+    "soc_physical.pt_routing_hints",
+    "soc_physical.pt_timing.rpt",
+    "soc_physical.res.csv",
+    "soc_physical.rs",
+    "soc_physical.proj_state.ini",
+    "debug_profile.mark_debug.json",
+    "soc_physical_or.ini"
+  ],
+  "evidence_sha256": {
+    "build/c9_sideband_raw10_image_20261103/SIDEBAND_MANIFEST.json": "bee340da43fe04b25c115b6bdf02cae1c2bafc781788076783e0fbe65e7e594e",
+    "tools/reuse_c9_sideband_map.py": "3bc52894cc5e4d893f9224ac1ebf363dad46f2cfcb7a474d736d0f72ca502683",
+    "build/c9_sideband_raw10_image_20261103/outflow/soc_physical.map.v": "f8640dedf08e676d54cdbd087839c0397f1e8ea804dd11dc110975d88e188aed",
+    "build/c9_sideband_seed3_image_20261103/outflow/soc_physical.map.v": "f8640dedf08e676d54cdbd087839c0397f1e8ea804dd11dc110975d88e188aed",
+    "build/c9_sideband_raw10_image_20261103/outflow/soc_physical.map.rpt": "52c0ea20aa2bd11ab42f85a582dd5f4eed54cbc0061f410317b5d6e63244a5a9",
+    "build/c9_sideband_seed3_image_20261103/outflow/soc_physical.map.rpt": "52c0ea20aa2bd11ab42f85a582dd5f4eed54cbc0061f410317b5d6e63244a5a9",
+    "build/c9_sideband_raw10_image_20261103/outflow/soc_physical.map.out": "81261e0980981ce3848bc24280492e3cd29dea8a1ed7dd49a78554957d7791af",
+    "build/c9_sideband_seed3_image_20261103/outflow/soc_physical.map.out": "81261e0980981ce3848bc24280492e3cd29dea8a1ed7dd49a78554957d7791af",
+    "build/c9_sideband_raw10_image_20261103/outflow/soc_physical.map.rdb": "7c852f6ee3ead54eccd1869fed313b4dd27907bc415e4b16038d8ee97face41b",
+    "build/c9_sideband_seed3_image_20261103/outflow/soc_physical.map.rdb": "7c852f6ee3ead54eccd1869fed313b4dd27907bc415e4b16038d8ee97face41b",
+    "build/c9_sideband_raw10_image_20261103/outflow/soc_physical.vdb": "6b457010a6687f8f11de9bf2d79736a1bed299ac0cfc0ff5c7395b1f4a2713c7",
+    "build/c9_sideband_seed3_image_20261103/outflow/soc_physical.vdb": "6b457010a6687f8f11de9bf2d79736a1bed299ac0cfc0ff5c7395b1f4a2713c7",
+    "build/c9_sideband_raw10_image_20261103/outflow/soc_physical.raminfo.pb": "8ce88cd5a045e33995350d2d61156ffd93d5ca6bebfe19597bbe3aae83b53239",
+    "build/c9_sideband_seed3_image_20261103/outflow/soc_physical.raminfo.pb": "8ce88cd5a045e33995350d2d61156ffd93d5ca6bebfe19597bbe3aae83b53239",
+    "build/c9_sideband_raw10_image_20261103/outflow/soc_physical.interface.csv": "68eaf293cc8fa0f9134279e9cc526780ae55f4134cd0d421c36125308f6fb9b2",
+    "build/c9_sideband_seed3_image_20261103/outflow/soc_physical.interface.csv": "68eaf293cc8fa0f9134279e9cc526780ae55f4134cd0d421c36125308f6fb9b2",
+    "build/c9_sideband_raw10_image_20261103/outflow/soc_physical.peri.cdo": "8fa204ae2c820c03bb3f171102f882e169ddba12a19cb4a298524c864f574d39",
+    "build/c9_sideband_seed3_image_20261103/outflow/soc_physical.peri.cdo": "8fa204ae2c820c03bb3f171102f882e169ddba12a19cb4a298524c864f574d39",
+    "build/c9_sideband_raw10_image_20261103/outflow/soc_physical.peri.csi": "6d540a7c8e84b3e9c416c957bf2f98271c7e615ad3d8b5b20600bf81636ec9fd",
+    "build/c9_sideband_seed3_image_20261103/outflow/soc_physical.peri.csi": "6d540a7c8e84b3e9c416c957bf2f98271c7e615ad3d8b5b20600bf81636ec9fd",
+    "build/c9_sideband_raw10_image_20261103/outflow/soc_physical.peri.pbn": "08677fa619d2b1ce0672cc7cd2826890e524a471528286fb6487cac211e3b54c",
+    "build/c9_sideband_seed3_image_20261103/outflow/soc_physical.peri.pbn": "08677fa619d2b1ce0672cc7cd2826890e524a471528286fb6487cac211e3b54c",
+    "build/c9_sideband_raw10_image_20261103/outflow/soc_physical.peri.qdelay": "3448f342aac9ca2bb791db350d178ebe9b6f64363cac6732635e04a3d2f2e188",
+    "build/c9_sideband_seed3_image_20261103/outflow/soc_physical.peri.qdelay": "3448f342aac9ca2bb791db350d178ebe9b6f64363cac6732635e04a3d2f2e188",
+    "build/c9_sideband_raw10_image_20261103/outflow/soc_physical.pinout.csv": "ce8732e63f8009c01ee083a6756467d012bfe6b6bf04ee36c7cbae794d6cfb7d",
+    "build/c9_sideband_seed3_image_20261103/outflow/soc_physical.pinout.csv": "ce8732e63f8009c01ee083a6756467d012bfe6b6bf04ee36c7cbae794d6cfb7d",
+    "build/c9_sideband_raw10_image_20261103/outflow/soc_physical.pinout.rpt": "d2a11939b92a694943fa8d940ac5fe0db29a6a62ab98a1546a3ff2fc50e39b34",
+    "build/c9_sideband_seed3_image_20261103/outflow/soc_physical.pinout.rpt": "d2a11939b92a694943fa8d940ac5fe0db29a6a62ab98a1546a3ff2fc50e39b34",
+    "build/c9_sideband_raw10_image_20261103/outflow/soc_physical.pt.sdc": "e20c777b71e016066af36321a8237f663edf6750c540841e845bbe3415364fa7",
+    "build/c9_sideband_seed3_image_20261103/outflow/soc_physical.pt.sdc": "e20c777b71e016066af36321a8237f663edf6750c540841e845bbe3415364fa7",
+    "build/c9_sideband_raw10_image_20261103/outflow/soc_physical.pt.rpt": "f52de5a44a515c572e6d183454383e6ac052aaad481209a8bbf5b9cd098108f2",
+    "build/c9_sideband_seed3_image_20261103/outflow/soc_physical.pt.rpt": "f52de5a44a515c572e6d183454383e6ac052aaad481209a8bbf5b9cd098108f2",
+    "build/c9_sideband_raw10_image_20261103/outflow/soc_physical.pt.rpt.xml": "c5be1037ea4233e1aff6499edd99ee9ff65d3e6db03a0bcac23f79de81b45c52",
+    "build/c9_sideband_seed3_image_20261103/outflow/soc_physical.pt.rpt.xml": "c5be1037ea4233e1aff6499edd99ee9ff65d3e6db03a0bcac23f79de81b45c52",
+    "build/c9_sideband_raw10_image_20261103/outflow/soc_physical.pt_routing_hints": "1455b2c825ffc339410fb47ac2a2bebad20524a90e80a1725b07188be5287db6",
+    "build/c9_sideband_seed3_image_20261103/outflow/soc_physical.pt_routing_hints": "1455b2c825ffc339410fb47ac2a2bebad20524a90e80a1725b07188be5287db6",
+    "build/c9_sideband_raw10_image_20261103/outflow/soc_physical.pt_timing.rpt": "1db230226cf360035f4b26ba4e8bd03536a7faccb496691b810845844248543e",
+    "build/c9_sideband_seed3_image_20261103/outflow/soc_physical.pt_timing.rpt": "1db230226cf360035f4b26ba4e8bd03536a7faccb496691b810845844248543e",
+    "build/c9_sideband_raw10_image_20261103/outflow/soc_physical.res.csv": "73a1aa88ee15883da23246d70f17a8daef3314e0b2bb357c81db4186b446d469",
+    "build/c9_sideband_seed3_image_20261103/outflow/soc_physical.res.csv": "73a1aa88ee15883da23246d70f17a8daef3314e0b2bb357c81db4186b446d469",
+    "build/c9_sideband_raw10_image_20261103/outflow/soc_physical.rs": "55b924c0aa550fae362fe7806534a0224e413522cc20f806d01003fa2ceeb342",
+    "build/c9_sideband_seed3_image_20261103/outflow/soc_physical.rs": "55b924c0aa550fae362fe7806534a0224e413522cc20f806d01003fa2ceeb342",
+    "build/c9_sideband_raw10_image_20261103/outflow/soc_physical.proj_state.ini": "0324abf5e24578c0c9aa55ca815bcf6d437525948bb8eb58b7a6fce8d28cb6b2",
+    "build/c9_sideband_seed3_image_20261103/outflow/soc_physical.proj_state.ini": "0324abf5e24578c0c9aa55ca815bcf6d437525948bb8eb58b7a6fce8d28cb6b2",
+    "build/c9_sideband_raw10_image_20261103/outflow/debug_profile.mark_debug.json": "f1f0554e547595f73d20db7583d86dd7ec43f6fb4262293e31add027328919e3",
+    "build/c9_sideband_seed3_image_20261103/outflow/debug_profile.mark_debug.json": "f1f0554e547595f73d20db7583d86dd7ec43f6fb4262293e31add027328919e3",
+    "build/c9_sideband_raw10_image_20261103/outflow/soc_physical_or.ini": "32c579b9201f94f844056c51156b4d2d9bf09070f48a47a9213488fd76382b6e",
+    "build/c9_sideband_seed3_image_20261103/outflow/soc_physical_or.ini": "32c579b9201f94f844056c51156b4d2d9bf09070f48a47a9213488fd76382b6e",
+    "build/c9_sideband_raw10_image_20261103/interface.log": "61047c872dfed4c34e3618ce335baa3965dcd4396fb0133b4b72213b29f12986",
+    "build/c9_sideband_seed3_image_20261103/interface.log": "61047c872dfed4c34e3618ce335baa3965dcd4396fb0133b4b72213b29f12986",
+    "build/c9_sideband_raw10_image_20261103/map.log": "6be45df2116f383d46233f7d73a0683e43e3fed6efd2247d1d0df1cd4eee3669",
+    "build/c9_sideband_seed3_image_20261103/map.log": "6be45df2116f383d46233f7d73a0683e43e3fed6efd2247d1d0df1cd4eee3669"
+  }
+}

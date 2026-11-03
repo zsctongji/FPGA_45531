@@ -1,0 +1,349 @@
+{
+  "status": "CAPTURED_STAGE_STATUS_ONLY",
+  "flash_written": false,
+  "board_acceptance_passed": false,
+  "real_camera_verified": false,
+  "runner_sha256": "2ffc424e11d37bdd13d0cb4e99828d39fe3605b87003a085501201ea871fbad2",
+  "ddr_status": {
+    "attempt": "logs/c9_ddr_probe_20261101/20261103_160133/attempt.json",
+    "result": {
+      "status": "PASS_CALIBRATION_ONLY",
+      "calibration_verified": true,
+      "failures": [],
+      "observed": {
+        "cal_done": true,
+        "system_reset": false,
+        "controller_reset_released": true,
+        "root_reset_released": true,
+        "pll_locks": 15,
+        "sys_rst": true,
+        "init_state": 22,
+        "wrlvl_check": 254,
+        "read_level_check": 254,
+        "init_delay_counter": 300000,
+        "rdlvl_shift": 4,
+        "wrlvl_shift": 5,
+        "mpr_rdlvl_dly": true,
+        "idelay_ld": false,
+        "ddr_debug_port_hex": "70f0b000d",
+        "status0_last8_identical": true,
+        "status1_last8_identical": true,
+        "clock_activity_observed": {
+          "core_clk": true,
+          "i_sysclk": true,
+          "tx_cal_clk": true,
+          "rx_cal_clk": true
+        },
+        "atomic_snapshot": false,
+        "clock_frequency_verified": false
+      },
+      "cpu_execution_verified": false,
+      "full_capacity_verified": false,
+      "clock_frequency_verified": false,
+      "atomic_snapshot": false,
+      "hardware_accessed": false,
+      "c10_restore_passed": true,
+      "fpga_image_sha256": "0179b3e7d9a60655cf668c4828f670efe2e4927194cd7ded9fbd7a10e2b1f048",
+      "attempt_sha256": "fc5a588a9c611528e7895401f149036a89fb3fe2fe1f06d7705e2606574d6f40",
+      "samples_sha256": "1135b04e193c4d0692fb6da6f4090a3e643f15c39ce7bde1a82bc0a46272e798",
+      "audit_sha256": "35383a485d714c161fe95f75c37c4731fc2a378ab3fcc6b33bc43dcd4db2021a",
+      "checker_sha256": "7bdf796ccca43832d5a832cddb5da18d38d37f0d77c9e6c5616a63f098f5cd09"
+    }
+  },
+  "camera_attempt": "logs/ram_diagnostic_20261101/20261103_160215/attempt.json",
+  "observation": {
+    "status": "CAPTURED_STAGE_STATUS_ONLY",
+    "tinyml_accelerator_present": false,
+    "real_camera_verified": false,
+    "board_acceptance_passed": false,
+    "flash_written": false,
+    "before": {
+      "stages": {
+        "raw_2ppc": {
+          "maximum_contiguous_cycles": 0,
+          "maximum_at_least": false,
+          "segments": 0,
+          "segments_at_least": false
+        },
+        "rgb_de": {
+          "maximum_contiguous_cycles": 0,
+          "maximum_at_least": false,
+          "segments": 0,
+          "segments_at_least": false
+        },
+        "rgb_valid": {
+          "maximum_contiguous_cycles": 0,
+          "maximum_at_least": false,
+          "segments": 0,
+          "segments_at_least": false
+        },
+        "rgb_joint": {
+          "maximum_contiguous_cycles": 0,
+          "maximum_at_least": false,
+          "segments": 0,
+          "segments_at_least": false
+        },
+        "gray_2ppc": {
+          "maximum_contiguous_cycles": 0,
+          "maximum_at_least": false,
+          "segments": 0,
+          "segments_at_least": false
+        },
+        "native_4ppc": {
+          "maximum_contiguous_cycles": 0,
+          "maximum_at_least": false,
+          "segments": 0,
+          "segments_at_least": false
+        },
+        "pixel_1ppc": {
+          "maximum_contiguous_cycles": 0,
+          "maximum_at_least": false
+        },
+        "source_1ppc": {
+          "maximum_contiguous_cycles": 0,
+          "maximum_at_least": false
+        }
+      },
+      "native": {
+        "run": false,
+        "vs_seen": false,
+        "hs_seen": false,
+        "image_seen": false,
+        "image_valid_outside_hs": false,
+        "non4_image_ppc_seen": false,
+        "other_enabled_payload_seen": false,
+        "raw_overflow_seen": false,
+        "last_image_wc": 0
+      },
+      "isp": {
+        "run": false,
+        "raw_vs_seen": false,
+        "rgb_vs_seen": false,
+        "gray_vs_seen": false,
+        "rgb_de_without_valid_seen": false,
+        "rgb_valid_without_de_seen": false,
+        "raw_overflow_seen": false,
+        "raw_de_seen": false
+      },
+      "video": {
+        "run": false,
+        "pattern_mode": false,
+        "fault_gate": false,
+        "config_valid": true,
+        "time_valid": true,
+        "pixel_vs_seen": false,
+        "source_vs_seen": false,
+        "source_de_seen": false
+      }
+    },
+    "after": {
+      "stages": {
+        "raw_2ppc": {
+          "maximum_contiguous_cycles": 36,
+          "maximum_at_least": false,
+          "segments": 4095,
+          "segments_at_least": true
+        },
+        "rgb_de": {
+          "maximum_contiguous_cycles": 36,
+          "maximum_at_least": false,
+          "segments": 4095,
+          "segments_at_least": true
+        },
+        "rgb_valid": {
+          "maximum_contiguous_cycles": 36,
+          "maximum_at_least": false,
+          "segments": 4095,
+          "segments_at_least": true
+        },
+        "rgb_joint": {
+          "maximum_contiguous_cycles": 36,
+          "maximum_at_least": false,
+          "segments": 4095,
+          "segments_at_least": true
+        },
+        "gray_2ppc": {
+          "maximum_contiguous_cycles": 36,
+          "maximum_at_least": false,
+          "segments": 4095,
+          "segments_at_least": true
+        },
+        "native_4ppc": {
+          "maximum_contiguous_cycles": 18,
+          "maximum_at_least": false,
+          "segments": 4095,
+          "segments_at_least": true
+        },
+        "pixel_1ppc": {
+          "maximum_contiguous_cycles": 72,
+          "maximum_at_least": false
+        },
+        "source_1ppc": {
+          "maximum_contiguous_cycles": 72,
+          "maximum_at_least": false
+        }
+      },
+      "native": {
+        "run": true,
+        "vs_seen": true,
+        "hs_seen": true,
+        "image_seen": true,
+        "image_valid_outside_hs": false,
+        "non4_image_ppc_seen": false,
+        "other_enabled_payload_seen": false,
+        "raw_overflow_seen": false,
+        "last_image_wc": 2400
+      },
+      "isp": {
+        "run": true,
+        "raw_vs_seen": true,
+        "rgb_vs_seen": true,
+        "gray_vs_seen": true,
+        "rgb_de_without_valid_seen": false,
+        "rgb_valid_without_de_seen": false,
+        "raw_overflow_seen": false,
+        "raw_de_seen": true
+      },
+      "video": {
+        "run": true,
+        "pattern_mode": false,
+        "fault_gate": false,
+        "config_valid": true,
+        "time_valid": true,
+        "pixel_vs_seen": true,
+        "source_vs_seen": true,
+        "source_de_seen": true
+      }
+    },
+    "source_frames": 252,
+    "format_errors": 251,
+    "overflow_frames": 0,
+    "a_completed": 0,
+    "width": 72,
+    "segments": 4095,
+    "segments_at_least": true,
+    "record_seen": true,
+    "record_complete": false,
+    "uart_sha256": "6df63cd5a98a23e9f5e951ef3f40b59de4b478d331f12767fd9e6db2c3bce779",
+    "attempt_sha256": "7487b3e97598cceb72e8a5fb81c78a311d7f8c2970df1226f1b18f863c89bbb8",
+    "image_sha256": "0179b3e7d9a60655cf668c4828f670efe2e4927194cd7ded9fbd7a10e2b1f048",
+    "snapshots": {
+      "before": {
+        "start": 883,
+        "end": 1023,
+        "words": {
+          "0": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            57,
+            0,
+            0
+          ],
+          "1": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2248146944,
+            0
+          ],
+          "2": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            0,
+            0,
+            0,
+            3387035649,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            0,
+            3774873600,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "after": {
+        "start": 11033,
+        "end": 11164,
+        "words": {
+          "0": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            665,
+            0,
+            0
+          ],
+          "1": [
+            252,
+            251,
+            0,
+            0,
+            0,
+            0,
+            3192012872,
+            76545944
+          ],
+          "2": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            4278341631,
+            1342112335,
+            38797058,
+            3338817535,
+            3387035649,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            77823,
+            3783723360,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "scope": "Pack40 diagnostic, maxima/segments since synchronized RUN, not physical HS rows or a frame trace. Stages, domains and snapshot pairs are not atomic together. camera bank now uses pixel2_clk, not I2C registers. Geometry firmware upper-flags word unchanged; pattern count word repurposed. Error debug remains disabled; no CRC conclusion."
+  },
+  "c10_restore_passed": true,
+  "restore_attempt": "logs/c10_warm_boot_20261101/20261103_160237/attempt.json",
+  "finished": "2026-11-03T16:02:57.167202+08:00"
+}

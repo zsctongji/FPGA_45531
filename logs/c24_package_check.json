@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "checks": 781,
+  "version": "c24-ddfd364d754dce06",
+  "board_executed": false,
+  "source": "synthetic full GRAY8 source frames, pinned A capture/BRAM and C2 RTL, DDR model, PC inference; no physical camera",
+  "reports": {
+    "logs/c2_selftest.json": "1851112dfb921766d95d14260cd05e5510c18f8d639d60c317fcb68163d50d28",
+    "logs/c2_native_synthesis.json": "392246cf1c395fedbd8e382d9a16a014f9660062440c7704028124c28ac4cbf6",
+    "logs/firmware_c24.json": "b09ec93286ebd59b97b5ca2a59f20575627c89b30ffcde1646f263da0701361c",
+    "logs/a_c2_pc_inference.json": "475d4a359a7008d181cef8984b091d4fea10e51ca95ccef67a79c4277237a04f",
+    "logs/a_c2_video_pc_inference.json": "f823203bfe4ddc6546ba56e2ff7d61278da16e6728876c93010e8d8b4c49c771",
+    "logs/c24_acceptance_tests.json": "bd725bab6ca440c020ef107c94b6da7695cf3daaec0bbfed6e4a8bf4286eddfc",
+    "logs/c2_video_tail.json": "7997b228c1a1bfefbc78770b387db7129ef767bda1389b4128a770137e971ec8",
+    "logs/c3_backend_check.json": "af0a48419bd9473b15e37053e3b09af4a9de88ffcbd9c55f24e8168e303bbcb8",
+    "logs/c3_backend_library.json": "961d65c0c8fff7439ca870d7b0cc3da7cfd032be2e4f48eea56c914479790806",
+    "logs/c2_bram_optimization_20261031.json": "15cfb1d421d8a3bb0310450becd60555fe60e3688d35d7103ac1917bb84ffffa",
+    "logs/pin_ownership_audit_20261031.json": "6fe8ee93ffba15e90d84fff4dc019b2c2b0afb04b023124a55bafd108417753a"
+  }
+}

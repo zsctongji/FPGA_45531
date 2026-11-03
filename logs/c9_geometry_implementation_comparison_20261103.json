@@ -1,0 +1,18 @@
+{
+  "status": "PASS_STATIC_EQUIVALENCE_CHECKS_ONLY",
+  "hardware_accessed": false,
+  "checks": {
+    "interface_configuration_equal": true,
+    "generated_pinout_equal": true,
+    "primary_constraints_equal": true,
+    "rtl/physical_video.sv_equal": true,
+    "physical_soc_core.v_equal": true,
+    "overrides/ddr3_parameter.vh_equal": true,
+    "overrides/ddr3_top.v_equal": true,
+    "generated_clock_declarations_equal": true,
+    "vendor_a_compiled_source_copy_equal": true
+  },
+  "limitation": "Equal source, pin and declared clock configuration does not prove equal placed/routed behavior or startup state. It does not establish video correctness.",
+  "first_image_sha256": "0f6285a20a6f1352ea578b09ec37d588c62af3e3c52737c47fd34b33064c3293",
+  "second_image_sha256": "da4d195aa3181ff382b043f5c32f68482352a8f187a2da89965e012880ad73b4"
+}

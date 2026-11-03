@@ -1,0 +1,9 @@
+{
+  "name": "test_c9_stage_chain",
+  "returncode": 0,
+  "reports": [
+    "logs/c9_pc_acceptance_20261103_204335/test_c9_stage_chain/c9_stage_chain_tests_20261103.json"
+  ],
+  "script_sha256": "9a3f9fc1234906e23377c51e4f4d49ac1abc9117396c35db9a8ebc6bc820f4dc",
+  "hardware_accessed": false
+}

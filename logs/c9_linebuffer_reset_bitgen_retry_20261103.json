@@ -1,0 +1,8 @@
+{
+  "status": "RETRY_PGM_ONLY",
+  "recorded_at": "2026-11-03T17:47:30.588328+08:00",
+  "initial_process_stalled_before_output": true,
+  "windows_dialog_found": false,
+  "full_pnr_sta_preserved": true,
+  "flash_written": false
+}

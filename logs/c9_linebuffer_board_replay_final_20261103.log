@@ -1,0 +1,89 @@
+{
+  "status": "STAGE_DIAGNOSTIC_VIDEO_ACCEPTANCE_PENDING",
+  "trials": [
+    {
+      "result": "logs/c9_linebuffer_board_20261103/20261103_164726/result.json",
+      "after": {
+        "stages": {
+          "raw_2ppc": {
+            "maximum_contiguous_cycles": 0,
+            "maximum_at_least": false,
+            "segments": 0,
+            "segments_at_least": false
+          },
+          "rgb_de": {
+            "maximum_contiguous_cycles": 0,
+            "maximum_at_least": false,
+            "segments": 0,
+            "segments_at_least": false
+          },
+          "rgb_valid": {
+            "maximum_contiguous_cycles": 0,
+            "maximum_at_least": false,
+            "segments": 0,
+            "segments_at_least": false
+          },
+          "rgb_joint": {
+            "maximum_contiguous_cycles": 0,
+            "maximum_at_least": false,
+            "segments": 0,
+            "segments_at_least": false
+          },
+          "gray_2ppc": {
+            "maximum_contiguous_cycles": 0,
+            "maximum_at_least": false,
+            "segments": 0,
+            "segments_at_least": false
+          },
+          "pixel_1ppc": {
+            "maximum_contiguous_cycles": 0,
+            "maximum_at_least": false
+          },
+          "source_1ppc": {
+            "maximum_contiguous_cycles": 0,
+            "maximum_at_least": false
+          }
+        },
+        "normalizer": {
+          "run": true,
+          "armed": false,
+          "fault": true,
+          "error_flags_hex": "10",
+          "error_names": [
+            "transport"
+          ],
+          "last_frame_beats": 0,
+          "input_frames_mod4": 0,
+          "debug_seen_hex": "0029c41a",
+          "init_done_seen": true,
+          "transport_error_bits_hex": "00014418",
+          "pixel_fifo_empty_seen": true
+        },
+        "isp": {
+          "run": true,
+          "raw_vs_seen": false,
+          "rgb_vs_seen": false,
+          "gray_vs_seen": false,
+          "rgb_de_without_valid_seen": false,
+          "rgb_valid_without_de_seen": false,
+          "raw_overflow_seen": false,
+          "raw_de_seen": false
+        },
+        "video": {
+          "run": true,
+          "pattern_mode": false,
+          "fault_gate": false,
+          "config_valid": true,
+          "time_valid": true,
+          "pixel_vs_seen": false,
+          "source_vs_seen": false,
+          "source_de_seen": false
+        }
+      },
+      "width": 0,
+      "source_frames": 0,
+      "format_errors": 0
+    }
+  ],
+  "final_restore": "logs/c10_warm_boot_20261101/20261103_164833/attempt.json"
+}

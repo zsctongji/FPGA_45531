@@ -1,0 +1,16 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/zkr/Documents/Codex/2026-10-17/wo-x/outputs/FPGA_2026_T3_P3/rtl/rgb888_to_gray.v" into library work
+INFO: [VRFC 10-311] analyzing module rgb888_to_gray
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/zkr/Documents/Codex/2026-10-17/wo-x/outputs/FPGA_2026_T3_P3/rtl/gray_threshold.v" into library work
+INFO: [VRFC 10-311] analyzing module gray_threshold
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/zkr/Documents/Codex/2026-10-17/wo-x/outputs/FPGA_2026_T3_P3/rtl/sobel_stream.v" into library work
+INFO: [VRFC 10-311] analyzing module sobel_stream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/zkr/Documents/Codex/2026-10-17/wo-x/outputs/FPGA_2026_T3_P3/rtl/portable_vision_core.v" into library work
+INFO: [VRFC 10-311] analyzing module portable_vision_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/zkr/Documents/Codex/2026-10-17/wo-x/outputs/FPGA_2026_T3_P3/sim/tb_pixel_ops.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_pixel_ops
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/zkr/Documents/Codex/2026-10-17/wo-x/outputs/FPGA_2026_T3_P3/sim/tb_vision_stream.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_vision_stream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/zkr/Documents/Codex/2026-10-17/wo-x/outputs/FPGA_2026_T3_P3/sim/tb_sobel_3x3.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_sobel_3x3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/zkr/Documents/Codex/2026-10-17/wo-x/outputs/FPGA_2026_T3_P3/sim/tb_sobel_720p.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_sobel_720p

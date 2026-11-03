@@ -1,0 +1,32 @@
+[
+  {
+    "name": "01_led",
+    "source": "D:\\FPGA_2026_T3_P3\\vendor_projects\\Ti60_V4\\01_Ti60F225_Key_led_osc_demo\\01_Ti60F225_key_demo",
+    "project": "D:\\FPGA_2026_T3_P3\\projects\\01_led\\LED_8bit_Test.xml",
+    "vendor_version": "2025.2.288.3.8",
+    "design_file_count": 3,
+    "missing_design_files": [],
+    "compiled_by_us": false,
+    "vendor_outflow_copied": false
+  },
+  {
+    "name": "02_camera",
+    "source": "D:\\FPGA_2026_T3_P3\\vendor_projects\\camera_v7\\Ti60f225_sc431hai2hdmi_v7",
+    "project": "D:\\FPGA_2026_T3_P3\\projects\\02_camera\\ti60f225_oob.xml",
+    "vendor_version": "2026.1.132.1.2",
+    "design_file_count": 62,
+    "missing_design_files": [],
+    "compiled_by_us": false,
+    "vendor_outflow_copied": false
+  },
+  {
+    "name": "03_tinyml",
+    "source": "D:\\FPGA_2026_T3_P3\\vendor_projects\\TinyML\\tinyml-main\\tinyml_hello_world\\Ti60F225_tinyml_helloworld",
+    "project": "D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\Ti60F225_tinyml_helloworld.xml",
+    "vendor_version": "2025.1.110.1.5",
+    "design_file_count": 22,
+    "missing_design_files": [],
+    "compiled_by_us": false,
+    "vendor_outflow_copied": false
+  }
+]

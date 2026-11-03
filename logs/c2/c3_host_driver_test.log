@@ -1,0 +1,8 @@
+cooperation_v1.c
+c3_hal.c
+c3_shared_time.c
+c3_peripheral.c
+c3_thermal_publish.c
+test_c3_peripheral.c
+正在生成代码...
+PASS C3 peripheral host checks=49 checked_time byte_commands repeated_START staged_RX failure_cleanup watchdog_rearm thermal_mask_policy deadlines

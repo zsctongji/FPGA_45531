@@ -1,0 +1,67 @@
+INFO     : ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO     : Router Setup
+INFO     : ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO     : High utilization design detected; tuning for routability.
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_axi_interconnect/MUL_MASTER.u_crossbar/u_arbiter/ROUND_ROBIN.u_round_robin_priority_arbiter/dlatchrs_72/i1:in[0] to soc/u_axi_interconnect/MUL_MASTER.u_crossbar/u_arbiter/ROUND_ROBIN.u_round_robin_priority_arbiter/dlatchrs_72/i1:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_axi_interconnect/MUL_MASTER.u_crossbar/u_arbiter/ROUND_ROBIN.u_round_robin_priority_arbiter/dlatchrs_72/i1:in[0] to soc/u_axi_interconnect/MUL_MASTER.u_crossbar/u_arbiter/ROUND_ROBIN.u_round_robin_priority_arbiter/dlatchrs_72/i1:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_axi_interconnect/MUL_MASTER.u_crossbar/u_arbiter/ROUND_ROBIN.u_round_robin_priority_arbiter/dlatchrs_72/i2:in[0] to soc/u_axi_interconnect/MUL_MASTER.u_crossbar/u_arbiter/ROUND_ROBIN.u_round_robin_priority_arbiter/dlatchrs_72/i2:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_axi_interconnect/MUL_MASTER.u_crossbar/u_arbiter/ROUND_ROBIN.u_round_robin_priority_arbiter/dlatchrs_72/i2:in[0] to soc/u_axi_interconnect/MUL_MASTER.u_crossbar/u_arbiter/ROUND_ROBIN.u_round_robin_priority_arbiter/dlatchrs_72/i2:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/FC.u_tinyml_fc_op/fc_standard.u_tinyml_fc_standard/tinyml_fc_standard_dma_ctr_inst/tinyml_fc_standard_dma_ctr_aw_inst/dlatchrs_134/i1:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/FC.u_tinyml_fc_op/fc_standard.u_tinyml_fc_standard/tinyml_fc_standard_dma_ctr_inst/tinyml_fc_standard_dma_ctr_aw_inst/dlatchrs_134/i1:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/FC.u_tinyml_fc_op/fc_standard.u_tinyml_fc_standard/tinyml_fc_standard_dma_ctr_inst/tinyml_fc_standard_dma_ctr_aw_inst/dlatchrs_134/i1:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/FC.u_tinyml_fc_op/fc_standard.u_tinyml_fc_standard/tinyml_fc_standard_dma_ctr_inst/tinyml_fc_standard_dma_ctr_aw_inst/dlatchrs_134/i1:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/FC.u_tinyml_fc_op/fc_standard.u_tinyml_fc_standard/tinyml_fc_standard_dma_ctr_inst/tinyml_fc_standard_dma_ctr_aw_inst/dlatchrs_134/i2:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/FC.u_tinyml_fc_op/fc_standard.u_tinyml_fc_standard/tinyml_fc_standard_dma_ctr_inst/tinyml_fc_standard_dma_ctr_aw_inst/dlatchrs_134/i2:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/FC.u_tinyml_fc_op/fc_standard.u_tinyml_fc_standard/tinyml_fc_standard_dma_ctr_inst/tinyml_fc_standard_dma_ctr_aw_inst/dlatchrs_134/i2:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/FC.u_tinyml_fc_op/fc_standard.u_tinyml_fc_standard/tinyml_fc_standard_dma_ctr_inst/tinyml_fc_standard_dma_ctr_aw_inst/dlatchrs_134/i2:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/LR.u_tinyml_lr_op/lr_standard.u_tinyml_lr_standard/tinyml_lr_standard_dma_ctr_inst/tinyml_lr_standard_dma_ctr_aw_inst/dlatchrs_104/i1:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/LR.u_tinyml_lr_op/lr_standard.u_tinyml_lr_standard/tinyml_lr_standard_dma_ctr_inst/tinyml_lr_standard_dma_ctr_aw_inst/dlatchrs_104/i1:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/LR.u_tinyml_lr_op/lr_standard.u_tinyml_lr_standard/tinyml_lr_standard_dma_ctr_inst/tinyml_lr_standard_dma_ctr_aw_inst/dlatchrs_104/i1:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/LR.u_tinyml_lr_op/lr_standard.u_tinyml_lr_standard/tinyml_lr_standard_dma_ctr_inst/tinyml_lr_standard_dma_ctr_aw_inst/dlatchrs_104/i1:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/LR.u_tinyml_lr_op/lr_standard.u_tinyml_lr_standard/tinyml_lr_standard_dma_ctr_inst/tinyml_lr_standard_dma_ctr_aw_inst/dlatchrs_104/i2:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/LR.u_tinyml_lr_op/lr_standard.u_tinyml_lr_standard/tinyml_lr_standard_dma_ctr_inst/tinyml_lr_standard_dma_ctr_aw_inst/dlatchrs_104/i2:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/LR.u_tinyml_lr_op/lr_standard.u_tinyml_lr_standard/tinyml_lr_standard_dma_ctr_inst/tinyml_lr_standard_dma_ctr_aw_inst/dlatchrs_104/i2:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/LR.u_tinyml_lr_op/lr_standard.u_tinyml_lr_standard/tinyml_lr_standard_dma_ctr_inst/tinyml_lr_standard_dma_ctr_aw_inst/dlatchrs_104/i2:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/MUL.u_tinyml_mul_op/mul_standard.u_tinyml_mul_standard/tinyml_mul_standard_dma_ctr_inst/tinyml_mul_standard_dma_ctr_aw_inst/dlatchrs_121/i1:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/MUL.u_tinyml_mul_op/mul_standard.u_tinyml_mul_standard/tinyml_mul_standard_dma_ctr_inst/tinyml_mul_standard_dma_ctr_aw_inst/dlatchrs_121/i1:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/MUL.u_tinyml_mul_op/mul_standard.u_tinyml_mul_standard/tinyml_mul_standard_dma_ctr_inst/tinyml_mul_standard_dma_ctr_aw_inst/dlatchrs_121/i1:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/MUL.u_tinyml_mul_op/mul_standard.u_tinyml_mul_standard/tinyml_mul_standard_dma_ctr_inst/tinyml_mul_standard_dma_ctr_aw_inst/dlatchrs_121/i1:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/MUL.u_tinyml_mul_op/mul_standard.u_tinyml_mul_standard/tinyml_mul_standard_dma_ctr_inst/tinyml_mul_standard_dma_ctr_aw_inst/dlatchrs_121/i2:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/MUL.u_tinyml_mul_op/mul_standard.u_tinyml_mul_standard/tinyml_mul_standard_dma_ctr_inst/tinyml_mul_standard_dma_ctr_aw_inst/dlatchrs_121/i2:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/MUL.u_tinyml_mul_op/mul_standard.u_tinyml_mul_standard/tinyml_mul_standard_dma_ctr_inst/tinyml_mul_standard_dma_ctr_aw_inst/dlatchrs_121/i2:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/MUL.u_tinyml_mul_op/mul_standard.u_tinyml_mul_standard/tinyml_mul_standard_dma_ctr_inst/tinyml_mul_standard_dma_ctr_aw_inst/dlatchrs_121/i2:out [TimerMsg::CombinationalLoopDetected]
+INFO     : [Setup Parallel Routing Scheduler]
+INFO     : ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO     : Route Circuit with 14 threads
+INFO     : ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO     : Beneficial skew enabled! Optimizing clock skews ... 
+INFO     : Non-legalized beneficial skew improved geomean CPD by 0.03% (from 2986ps to 2985ps)
+INFO     : CSS improved CPD of clock tx_cal_clk_90edge by 0.00% (from 2009ps to 2009ps)
+INFO     : CSS improved CPD of clock sdram_clk by 0.00% (from 1904ps to 1904ps)
+INFO     : CSS improved CPD of clock rx_cal_clk by 2.31% (from 2160ps to 2110ps)
+INFO     : CSS improved CPD of clock tx_cal_clk by 0.00% (from 1973ps to 1973ps)
+INFO     : CSS improved CPD of clock core_clk by 0.00% (from 6881ps to 6881ps)
+INFO     : CSS improved CPD of clock i_sysclk by 0.00% (from 5670ps to 5670ps)
+INFO     : CSS improved CPD of clock i_peripheralClk by 0.00% (from 4834ps to 4834ps)
+INFO     : CSS improved CPD of clock hdmi_tx_slow_clk by 0.00% (from 4814ps to 4814ps)
+INFO     : CSS improved CPD of clock i_mipi_rx_pclk by 0.00% (from 4716ps to 4716ps)
+INFO     : CSS improved CPD of clock pixel2_clk by 0.00% (from 4762ps to 4762ps)
+INFO     : CSS improved CPD of clock pixel1_clk by 0.00% (from 4630ps to 4630ps)
+INFO     : CSS improved CPD of clock CLK_5M by 0.00% (from 2720ps to 2720ps)
+INFO     : CSS improved CPD of clock i_cam_ck_CLKOUT by 0.00% (from 4030ps to 4030ps)
+INFO     : CSS improved CPD of clock jtag_inst1_TCK by 0.00% (from 421ps to 421ps)
+INFO     : CSS improved CPD of clock jtag_inst2_TCK by 0.00% (from 1884ps to 1884ps)
+INFO     : Discretized beneficial skew improved geomean CPD by 0.17% (from 2986ps to 2981ps in 5 iterations and 1.6 sec)
+INFO     : ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO     : Overridding delay budgets for 751 synchronizer-related pins
+INFO     : Iter  1: overlap=255943  heapops=19752013   (0%) cpd=4630  frr=1.00  msec=7758
+INFO     : [Setup Delay Budgets | 1285.1 ms]
+INFO     : ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO     : Hold Fixing
+INFO     : ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO     : Total min wire delay:  24039078
+INFO     : Hold fix wire delay:        795
+INFO     : Hold fix delay ratio:     0.00%
+INFO     : Pins requiring hold fix:  0.01%
+INFO     : ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO     : Iter  2: overlap=167132  heapops=20389055   (3%) cpd=4618  frr=1.00  msec=3997
+INFO     : Iter  3: overlap=112203  heapops=26179006   (2%) cpd=4616  frr=1.00  msec=4601
+INFO     : Iter  4: overlap=80414   heapops=35425417   (2%) cpd=4641  frr=1.00  msec=6065
+INFO     : Iter  5: overlap=61722   heapops=48156154   (6%) cpd=4631  frr=1.00  msec=8220
+INFO     : Iter  6: overlap=50880   heapops=65804359   (12%) cpd=4631  frr=1.00  msec=11648
+INFO     : Iter  7: overlap=44303   heapops=83070323   (18%) cpd=4631  frr=1.00  msec=15304
+INFO     : Iter  8: overlap=39693   heapops=96818695   (24%) cpd=2150  frr=0.46  msec=19065
+INFO     : Iter  9: overlap=36059   heapops=111488673  (28%) cpd=4633  frr=1.00  msec=22885
+INFO     : Iter 10: overlap=32987   heapops=126361823  (30%) cpd=4633  frr=1.00  msec=27099
+INFO     : Iter 11: overlap=30289   heapops=145018291  (33%) cpd=4633  frr=1.00  msec=32860
+INFO     : Iter 12: overlap=28180   heapops=163414742  (37%) cpd=4633  frr=1.00  msec=40503
+INFO     : Iter 13: overlap=25758   heapops=178586052  (38%) cpd=4633  frr=1.00  msec=44878
+INFO     : Iter 14: overlap=23969   heapops=197039507  (40%) cpd=4633  frr=1.00  msec=51872

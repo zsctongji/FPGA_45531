@@ -1,0 +1,28 @@
+{
+  "status": "FAIL",
+  "baseline": true,
+  "board_test_passed": false,
+  "cases": [
+    {
+      "mode": 0,
+      "returncode": 1,
+      "evidence": "FATAL: C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\display_fix\\tb_scanout_startup.sv:27: startup false missed_scans mode=0 missed=1\n       Time: 100000  Scope: tb_scanout_startup\n"
+    },
+    {
+      "mode": 1,
+      "returncode": 1,
+      "evidence": "FATAL: C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\display_fix\\tb_scanout_startup.sv:27: startup false missed_scans mode=1 missed=1\n       Time: 110000  Scope: tb_scanout_startup\n"
+    },
+    {
+      "mode": 2,
+      "returncode": 0,
+      "evidence": "PASS scanout startup mode=2; first-ready edge, real busy miss and recovery retained\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\display_fix\\tb_scanout_startup.sv:41: $finish called at 600000 (1ps)\n"
+    }
+  ],
+  "source_sha256": {
+    "projects/06_soc_c2/rtl/c2_video_scanout.sv": "711450de1c1494f02d963c686799da7892463449d59d8537ece57bdb9ff3da9d",
+    "projects/06_soc_c2/rtl/c2_cdc_mailbox.sv": "04550a55a2e5fbb824c9d0733f9b07378b0b041222eb3fbc9c6170043e57e7d4",
+    "team_work/03_ai_soc/c9_live/display_fix/tb_scanout_startup.sv": "f257169d80e721a630f8714c96ea26223147cbafcb9b88bd75f51732138ab42d",
+    "tools/test_c9_scanout_startup.py": "0354be32e1dcba1830c2bcd129635c9c5767d16fbe803df38c090236a209f049"
+  }
+}

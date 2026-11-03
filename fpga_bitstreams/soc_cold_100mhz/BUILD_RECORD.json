@@ -1,0 +1,55 @@
+{
+  "status": "PASS_C7_SPI_FIX_BOARD_AND_COLD_BOOT",
+  "scope": "Full C7 with private SPI RX sampling correction; original C7 package retained",
+  "source_manifest_sha256": "d4e1961c565f03b838826457b72d9281bf8b6db61d0c18aeab9278a1fc7f3e62",
+  "implementation_audit_sha256": "e93ff9158936a1792f4cf6827a10c23428d049f6ed9d919b454f624b86287780",
+  "artifacts": {
+    "soc_physical.bit": {
+      "bytes": 2905158,
+      "sha256": "982ab1bf07f6b8ba825b02c064de014003fc743a08f9083631e5adcc24956f5b"
+    },
+    "soc_physical.hex": {
+      "bytes": 2905218,
+      "sha256": "52bb0818044159de3899fa00d1d0da0a1dc9327f680cbfb0cad937ae7edeb79e"
+    }
+  },
+  "board_cpu_test_passed": true,
+  "board_static_tinyml_passed": true,
+  "rom_automatic_flash_warm_boot_passed": true,
+  "automatic_cold_boot_passed": true,
+  "warm_attempt": "logs/c10_warm_boot_20261101/20261101_173651/attempt.json",
+  "cpu_attempt": "logs/ram_diagnostic_20261101/20261101_173856/attempt.json",
+  "programmed_flash_sha256": "76f84fbb41f9e81f06a32c6c9b40976064bdac5e9851a7c51d9c48ea6ac3a59d",
+  "primary_sta": {
+    "setup": {
+      "rows": 29,
+      "minimum_slack_ns": 0.262,
+      "violations": []
+    },
+    "hold": {
+      "rows": 29,
+      "minimum_slack_ns": 0.026,
+      "violations": []
+    }
+  },
+  "packed_resources": {
+    "XLRs": {
+      "used": 59168,
+      "total": 60800
+    },
+    "Memory Blocks": {
+      "used": 224,
+      "total": 256
+    },
+    "DSP Blocks": {
+      "used": 60,
+      "total": 160
+    },
+    "Global Clocks (GBUF)": {
+      "used": 19,
+      "total": 32
+    }
+  },
+  "cold_attempt": "logs/c7_cold_boot_20261101/20261101_175401/attempt.json",
+  "cold_attempt_sha256": "c0da9035fa57b1a953a555ef71a5f7259cbe963d92ac4a081cce5e3f7aa9a11c"
+}

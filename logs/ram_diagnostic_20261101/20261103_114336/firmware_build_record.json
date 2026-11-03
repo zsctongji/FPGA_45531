@@ -1,0 +1,62 @@
+{
+  "status": "PASS_COMPILE_ONLY",
+  "version": "c9geom-3bcf05e8d3894dc3",
+  "entry": "0x01000000",
+  "board_test_passed": false,
+  "scope": "Read-only camera geometry after 10s source RUN; DONE means capture complete, not camera acceptance",
+  "source_sha256": {
+    "firmware/c9_camera_geometry/main.c": "384eec025466c856c46c7a055d6c002cffae62c873ec2ed62304135254bdd9d0",
+    "team_work/03_ai_soc/c7_board/start.S": "7a25d012227e18d8f7c5e3daa7e2d6379af0e0003c3531f3962938700e04604c",
+    "team_work/03_ai_soc/c7_board/link.ld": "f616ea100fb22d4f1772034e139c2e87142273aeaa2ee41d1ebfcd0f52f21976",
+    "team_work/03_ai_soc/c9_live/firmware/dma_main.c": "164a53e557b239cf48e15149c41912318cdba7bf0e2f6ff4e2f7e6330fd416eb",
+    "team_work/03_ai_soc/c2/c2_driver.h": "70e30ebfb5b6fd39122aba49eccde4668199aeff8f306fba45f4a6a2d490d761",
+    "team_work/shared/include/cooperation_v1.h": "6cd2c16ddc551304afa4a5b92d78c1a2a6faf3898afc0e3cea1509f1e2e53452",
+    "tools/build_c9_geometry_firmware.py": "7557855f6639d5449cf44b5cf36d1fccb4a78d4136e7f4cd221eef62ef6e09da",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/bsp/efinix/EfxSapphireSoc/include/bsp.h": "8e427e9ec90cd68f4a968f430691c949365e76ccead96361131930134393d06b",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/bsp/efinix/EfxSapphireSoc/include/compatibility.h": "51227bcfc49b1511b9802cefef07b0c9589b8c7e6206d8d84e410e4bf2a70eec",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/bsp/efinix/EfxSapphireSoc/include/freertosHalConfig.h": "1a193b788b55e906041b9298f2f0fee1e7b77739351d0e0675eccecbe01b6315",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/bsp/efinix/EfxSapphireSoc/include/print.h": "ecfae60245c1f3b4e11d5c9e093a3daeeb8f89e1ae4eb69c17ae6d7f36223852",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/bsp/efinix/EfxSapphireSoc/include/print_full.h": "64083154100c17f33b7a2f421388ec02c4072ec0f3509cf9e9097260534195ca",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/bsp/efinix/EfxSapphireSoc/include/semihosting.h": "854082d59b5396ffc8b8154e5568a3920ef957faa327895401f998ed69927226",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/bsp/efinix/EfxSapphireSoc/include/soc.h": "650185170e5f200d5672fd9bca1252d8420e452b8b453288d7f48b3619afae66",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/apb3_cl.h": "8ded59fed15d56b5b90fac52efbbabffead86ba4d220b3c553e8183f560eb7e6",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/clint.h": "06f30d6e325b5517b7fa15c8f773e50875a64247dc7642eca558d27098893778",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/dmasg.h": "a3ee4aae0457fd2148239ed73b4d4ecfb981ce181d4d9d303ab6c4ea015554e1",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/efx_mmc_driver.h": "9a1c1bfda176a40b6d6907b0f86faa61873821e6704b500c9cc09f4a6c7bf1a6",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/efx_tse_mac.h": "5c73f70012dd98738b7c1326c87474fca6cd021f4c1ce96f63424d137e685764",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/efx_tse_phy.h": "b558b33d4783acc0fbfa4e8722641775c7c705f70221e4e366f4ef266c09187d",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/gpio.h": "1e65d1734b2a599a42d6b598f199e08931a61257b10e67ee9c727eb42a747966",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/i2c.h": "2ca39066d49a0bd10f7f494af42fc23b3d945e02b9e82f70c91b83bd4a7fdb1a",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/io.h": "bd98eab95892eae1c08636c678041c3bbc814cc6b33bbf2944c20ab91f311ffa",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/mmc.h": "b2c357819448e66ed6bba7d1e2ce7f01b750d9e9724916f4c37920aa6b9823d5",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/plic.h": "633d178f738d624a0805f914d115d4bedaf575abd06d3566115622c2e3e51929",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/prescaler.h": "01292631801959e4655aa9bd444ec15c22f6b9d95fed3cef0c025dcf3847cdd4",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/riscv.h": "1a61e6299e3fbdf6ac45f902734e0d2dff33e282439a7ef21763adf4629b3ba6",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/spi.h": "492284ce4550d56b15f98239d2f4059655742805cf24e640068e91b26d074145",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/spiFlash.h": "5eb26a7c6f8c65cb15ce46f74d466b0209e3bdbca7eb3c10bac16b91cba08c95",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/start.h": "16ac55c6b56b86d9bbed092e4f8423e61b8f7b208501ab9204647ba91dd713ea",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/timer.h": "797dd07eb06e32f8b205ae6e4273399623fbb6f88daecb69045fc0dd690e2cb0",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/type.h": "a36b9e0c9cf99f1470832102e16aae53e44ebb0f4bd4279c68d329ffbe3a87bb",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/uart.h": "f33226e95f2fc4f4ad746f2a4d5d6466cd37a8481d70d0d3bb2a3ead6286a564",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/vexriscv.h": "e2cfa34325a44f3fc84dc208d94beafe5693f0ad8eb2e5fc1a2abbbee6fa95fa",
+    "firmware/c9_camera_geometry/build_id.h": "de4d800fe6ea29cf824ce278c0b83343e300e91ef3a6269203bcba60e2a37e20"
+  },
+  "artifacts": {
+    "c9_geometry.elf": {
+      "bytes": 35864,
+      "sha256": "233deb30a9f3eb9d712e685b756a1e0fcd19c573e79dd01dc7015fe05ffd54fe"
+    },
+    "c9_geometry.bin": {
+      "bytes": 3508,
+      "sha256": "f9955a3639543272716f1ef998156f6aae05d297c8841eb7092af8ef57ced9a5"
+    },
+    "c9_geometry.hex": {
+      "bytes": 9940,
+      "sha256": "7244424bbff116423da855e814199ede771df8068f0dd8265e9ce05acd114ba2"
+    },
+    "c9_geometry.map": {
+      "bytes": 6322,
+      "sha256": "1b95403e6080e0cad921998efba66ec5ee4e0261d2bc6b4cf3df1157a23a127c"
+    }
+  }
+}

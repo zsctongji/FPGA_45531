@@ -1,0 +1,257 @@
+{
+  "status": "STAGE_DIAGNOSTIC_VIDEO_ACCEPTANCE_PENDING",
+  "real_camera_verified": false,
+  "board_acceptance_passed": false,
+  "flash_written": false,
+  "active_profile_changed": false,
+  "ddr_parameters_changed": false,
+  "calibration_algorithm_changed": false,
+  "cold_boot_verified_this_session": false,
+  "image_sha256": "30986b841d4f4d92069b8d255b9d220a6da79b057cef93e5ec9607ee5590ecd4",
+  "trials": [
+    {
+      "result": "logs/c9_linebuffer_stream_board_20261103/20261103_175918/result.json",
+      "calibration_verified": true,
+      "observation": {
+        "status": "CAPTURED_LINEBUFFER_STATUS_ONLY",
+        "geometry_verified": false,
+        "geometry_failures": [
+          "normalizer/payload not verified",
+          "fresh transport/init error",
+          "no complete 1920x1080 capture record",
+          "source format/overflow errors or too few frames",
+          "downstream not verified"
+        ],
+        "tinyml_accelerator_present": false,
+        "real_camera_verified": false,
+        "board_acceptance_passed": false,
+        "flash_written": false,
+        "before": {
+          "normalizer": {
+            "run": false,
+            "armed": false,
+            "fault": false,
+            "error_flags_hex": "00",
+            "last_frame_beats": 0,
+            "input_frames_mod4": 0,
+            "debug_seen_hex": "00000000",
+            "init_done_seen": false,
+            "transport_error_bits_hex": "00000000"
+          },
+          "csr": {
+            "run": false,
+            "init_seen": false,
+            "capture_enable": false,
+            "fault": false,
+            "state": 0,
+            "retries": 0,
+            "pre_status_hex": "00000000",
+            "post_status_hex": "00000000",
+            "native_rises": 0,
+            "native_falls": 0,
+            "native_flags_hex": "00",
+            "native_vs_level": false,
+            "native_hs_level": false,
+            "native_de_seen": false,
+            "native_hs_seen": false,
+            "native_vs_seen": false,
+            "native_image_seen": false,
+            "native_non4_ppc_seen": false,
+            "native_bad_wc_seen": false
+          },
+          "video": {
+            "run": false,
+            "pattern_mode": false,
+            "fault_gate": false,
+            "config_valid": true,
+            "time_valid": true,
+            "pixel_maximum": 0,
+            "source_maximum": 0
+          }
+        },
+        "after": {
+          "normalizer": {
+            "run": true,
+            "armed": true,
+            "fault": true,
+            "error_flags_hex": "10",
+            "last_frame_beats": 0,
+            "input_frames_mod4": 0,
+            "debug_seen_hex": "00298002",
+            "init_done_seen": true,
+            "transport_error_bits_hex": "00010000"
+          },
+          "csr": {
+            "run": true,
+            "init_seen": true,
+            "capture_enable": true,
+            "fault": false,
+            "state": 7,
+            "retries": 0,
+            "pre_status_hex": "00000002",
+            "post_status_hex": "00000002",
+            "native_rises": 303,
+            "native_falls": 302,
+            "native_flags_hex": "cf",
+            "native_vs_level": true,
+            "native_hs_level": true,
+            "native_de_seen": true,
+            "native_hs_seen": true,
+            "native_vs_seen": true,
+            "native_image_seen": true,
+            "native_non4_ppc_seen": false,
+            "native_bad_wc_seen": false
+          },
+          "video": {
+            "run": true,
+            "pattern_mode": false,
+            "fault_gate": true,
+            "config_valid": true,
+            "time_valid": true,
+            "pixel_maximum": 1920,
+            "source_maximum": 1920
+          }
+        },
+        "source_frames": 1,
+        "format_errors": 0,
+        "overflow_frames": 0,
+        "a_completed": 0,
+        "width": 0,
+        "segments": 0,
+        "record_complete": false,
+        "uart_sha256": "5bca08a814bec16234e074dc249f29fb5874a24d4da556ab4ac1cf88d6030f32",
+        "attempt_sha256": "9960c7c4b9135e132d46a5dfcff7940b72c53203a7a12826de82ffc0b79a34a2",
+        "image_sha256": "30986b841d4f4d92069b8d255b9d220a6da79b057cef93e5ec9607ee5590ecd4",
+        "snapshots": {
+          "before": {
+            "start": 892,
+            "end": 1032,
+            "words": {
+              "0": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                57,
+                0,
+                0
+              ],
+              "1": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2248146944,
+                0
+              ],
+              "2": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "3": [
+                3388080130,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "4": [
+                0,
+                4043309056,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "after": {
+            "start": 11042,
+            "end": 11173,
+            "words": {
+              "0": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                666,
+                0,
+                0
+              ],
+              "1": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3212576640,
+                9
+              ],
+              "2": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "3": [
+                3388080130,
+                2,
+                2,
+                19792175,
+                117443831,
+                0,
+                0,
+                0
+              ],
+              "4": [
+                2719746,
+                4058251264,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "scope": "Fixed RAW10/VC0 Pack40 linebuffer candidate. Native transport and last-frame count observed coherently in PHY bank; native VS edges/flags after CSR enable and video maxima remain in own domains. PHY debug set begins after CSR enable, including the pre-arm interval. No AI/HDMI/cold-start acceptance; C2 timestamps remain first output GRAY8 DE, not original CSI arrival time."
+      },
+      "restore": "logs/c10_warm_boot_20261101/20261103_180024/attempt.json"
+    }
+  ],
+  "final_restore": "logs/c10_warm_boot_20261101/20261103_180024/attempt.json",
+  "evidence_sha256": {
+    "tools/report_c9_linebuffer_stream_board.py": "9f740f6c2ea75f7bf35c7b1ecf419382f41fb703e4f364d68445a1d7eb244c8e",
+    "build/c9_linebuffer_stream_image_20261103/implementation_audit.json": "0b76eecdcd4fbdc0d54a1d8b6662c062a9885c2df670072704350a570fa85098",
+    "logs/c9_linebuffer_stream_board_20261103/20261103_175918/result.json": "77f25820276e7fc12cb427b3febc975b6502da7470961da503459a0273f66655",
+    "logs/c9_ddr_probe_20261101/20261103_175920/attempt.json": "84eb441d7c224787c7a57f0a04369ac8eb66d19b61e4527632e4ea43a47a4175",
+    "logs/c9_ddr_probe_20261101/20261103_175920/samples.json": "143afd18a6d39fcc59fd018d4cc16b3c075d3a7a628cdac267546cbe38fb3bea",
+    "logs/ram_diagnostic_20261101/20261103_180002/attempt.json": "9960c7c4b9135e132d46a5dfcff7940b72c53203a7a12826de82ffc0b79a34a2",
+    "logs/ram_diagnostic_20261101/20261103_180002/uart.log": "5bca08a814bec16234e074dc249f29fb5874a24d4da556ab4ac1cf88d6030f32",
+    "logs/ram_diagnostic_20261101/20261103_180002/readback.bin": "f9955a3639543272716f1ef998156f6aae05d297c8841eb7092af8ef57ced9a5",
+    "logs/c10_warm_boot_20261101/20261103_180024/attempt.json": "238e8c7cfd773820acfdc3bc495b019a7c11e72b04bde2dbae82fb9eceacb148",
+    "logs/c10_warm_boot_20261101/20261103_180024/uart.log": "e3e5174578b2168c3f97f6bb756bce8866dd29a3acddef6ef266fda141787817"
+  }
+}

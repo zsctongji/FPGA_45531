@@ -1,0 +1,3 @@
+﻿PASS tb_sensor_smooth checks=27 plus consecutive cases
+D:\FPGA_2026_T3_P3\sim\tb_sensor_smooth.sv:71: $finish called at 636000 (1ps)
+

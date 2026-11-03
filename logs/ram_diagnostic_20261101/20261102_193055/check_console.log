@@ -1,0 +1,140 @@
+{
+  "status": "PASS",
+  "mode": "dma",
+  "snapshots": {
+    "before": {
+      "start": 1559,
+      "end": 1699,
+      "words": {
+        "0": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          97,
+          0,
+          0
+        ],
+        "1": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "2": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "3": [
+          2147969997,
+          2013607940,
+          2097205765,
+          1397952512,
+          1,
+          0,
+          0,
+          0
+        ],
+        "4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "after": {
+      "start": 1952,
+      "end": 2083,
+      "words": {
+        "0": [
+          3,
+          0,
+          0,
+          0,
+          15,
+          102,
+          0,
+          0
+        ],
+        "1": [
+          4,
+          0,
+          0,
+          3,
+          0,
+          0,
+          3,
+          12
+        ],
+        "2": [
+          2,
+          1732,
+          15,
+          0,
+          0,
+          3,
+          0,
+          0
+        ],
+        "3": [
+          2147969997,
+          2013607940,
+          2097205765,
+          1397952512,
+          1,
+          0,
+          0,
+          0
+        ],
+        "4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "physical_hdmi_picture_verified": false,
+  "flash_cold_boot_verified": false,
+  "dma_cache_handoff_verified": true,
+  "real_camera_verified": false,
+  "frames": [
+    {
+      "frame": 1,
+      "generation": 2,
+      "raw_fnv": 1125436805,
+      "seed": 195
+    },
+    {
+      "frame": 2,
+      "generation": 1,
+      "raw_fnv": 4016107205,
+      "seed": 90
+    }
+  ],
+  "firmware_version": "c9dma-3739cbec6825e6db",
+  "firmware_sha256": "4c72303ae52ada9798eeb3d3529c8062e80218ca608a4249a5986fa3baec346b",
+  "fpga_image_sha256": "ea542809a0a884fd2d3dbc89a22cdc0d7c891e424bd1cc1179194a0934f5ee6b",
+  "uart_sha256": "52ee643a5109ffe98b884bb75a6b2b3912ea7bcd5bbdaf63d6444b5f7bcd152c"
+}

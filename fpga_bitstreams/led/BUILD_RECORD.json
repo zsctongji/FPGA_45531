@@ -1,0 +1,21 @@
+{
+  "project": "led",
+  "source_project": "D:\\FPGA_2026_T3_P3\\projects\\01_led\\LED_8bit_Test.xml",
+  "compiled_at": "2026-10-18T13:59:51.9409003+08:00",
+  "minimum_setup_slack_ns": 10.381,
+  "minimum_hold_slack_ns": 0.097,
+  "artifacts": [
+    {
+      "file": "D:\\FPGA_2026_T3_P3\\fpga_bitstreams\\led\\LED_8bit_Test.hex",
+      "bytes": 1624713,
+      "sha256": "a3a1c4a3582c94b87474ed1a859c9de3f7cc4ff0dd9c9feb731b238da5e1b3e0"
+    },
+    {
+      "file": "D:\\FPGA_2026_T3_P3\\fpga_bitstreams\\led\\LED_8bit_Test.bit",
+      "bytes": 1624653,
+      "sha256": "5643fc6ef28b148f622204581f5260f1eaa55f4808cf18fa8cd73528fac1d2ce"
+    }
+  ],
+  "physical_board_test_passed": false,
+  "scope": "Independent bring-up example; not integrated competition system"
+}

@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "synthetic_only": true,
+  "hardware_accessed": false,
+  "board_test_passed": false,
+  "cases": [
+    "continuous",
+    "bursty",
+    "clipped",
+    "faults_retained",
+    "not_seen_rejected",
+    "reserved_rejected",
+    "zero_runs_rejected",
+    "runs_exceed_groups_rejected",
+    "false_clip_rejected",
+    "truncated_rejected",
+    "out_of_range_rejected"
+  ],
+  "source_sha256": {
+    "tools/test_c9_phy_geometry_decode.py": "8e85a1f23f2fbabd5dabc0476a6f5d76981416ddf6fdc5bbaa05bca645ad7735",
+    "tools/check_c9_phy_geometry.py": "374336a4d94f5a14ba42bf34d00660843f5606937614f0bf36cf4d533a2e3345",
+    "tools/check_c9_geometry.py": "e43cbbcece76d7ab76ffc26528e6ef382a8ba26ed5a56948087900179659aef2",
+    "tools/check_c9_uart.py": "117150fa5f8b4f6e242e274f610821e3428363ff39ee41be3d990223bb040376"
+  }
+}

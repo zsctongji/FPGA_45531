@@ -1,0 +1,32 @@
+{
+  "status": "PASS_PATTERN_DMA_VIDEO_CAMERA_FORMAT_PENDING",
+  "pattern_dma_concurrent_passed": true,
+  "dma_cache_handoff_verified": true,
+  "display_missed_before": 0,
+  "display_missed_after": 0,
+  "display_underflows_after": 0,
+  "axi_errors_after": [
+    0,
+    0
+  ],
+  "fpga_image_sha256": "ea542809a0a884fd2d3dbc89a22cdc0d7c891e424bd1cc1179194a0934f5ee6b",
+  "setup_ns": 0.134,
+  "hold_ns": 0.027,
+  "c2_regressions": 53,
+  "tail_burst_checks": 2,
+  "gray_cdc_bits": 66,
+  "real_camera_verified": false,
+  "valid_camera_inferences": 0,
+  "camera_time_progress_fixed": true,
+  "camera_source_frames": 505,
+  "camera_format_errors": 504,
+  "camera_overflow_frames": 0,
+  "physical_hdmi_picture_verified": false,
+  "c3_present": false,
+  "flash_written": false,
+  "acceptance_thresholds_changed": false,
+  "numeric_log_parser_change": "Accept optional 0x hexadecimal prefix; original PASS/FAIL cases retained",
+  "final_board": "C10",
+  "final_c10_restore_passed": true,
+  "final_c10_attempt": "logs/c10_warm_boot_20261101/20261102_195756/attempt.json"
+}

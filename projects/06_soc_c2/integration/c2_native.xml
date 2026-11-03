@@ -1,0 +1,174 @@
+<efx:project xmlns:efx="http://www.efinixinc.com/enf_proj" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="c2_native" description="Map-only SoC with GRAY8 triple framebuffer and raster scanout; physical pins/timing absent" last_change="1751875948" sw_version="2026.1.132" xsi:schemaLocation="http://www.efinixinc.com/enf_proj enf_proj.xsd">
+    <efx:device_info>
+        <efx:family name="Titanium" />
+        <efx:device name="Ti60F225" />
+        <efx:timing_model name="I3" />
+    </efx:device_info>
+    <efx:design_info def_veri_version="sv_09" def_vhdl_version="vhdl_2008" unified_flow="false">
+        <efx:top_module name="c2_tinyml_soc_top" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/debug_top.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/integration/c2_tinyml_soc_top.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/ddr3_controller/ddr3_parameter.vh" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/ddr3_controller/ddr3_top.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/ddr3_controller/memory_bus_ctl/memory_bus_ctl.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/ddr3_controller/local_bus_ctl/local_bus_ctl.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/ddr3_controller/axi4_bus_ctl/axi4_bus_ctl.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_mpr_rdlvl.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_phy_if.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/ddr3_controller/phy_ctl/phy_ctl.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_phy_wrcal.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_phy_rdlvl_dqs.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_calibration_ini.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_phy_wrlvl.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/ddr3_controller/lb2_axi_clk.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/ddr3_controller/common/efx_fifo_v2.3/efx_fifo_wrapper.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/common/simple_dual_port_ram.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/ip/dma/dma.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/ip/hw_accel_dma_out_fifo/hw_accel_dma_out_fifo.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/ip/hw_accel_dma_in_fifo/hw_accel_dma_in_fifo.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/axi/axi_full_to_half_duplex.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/axi/axi_interconnect_beta/arbiter.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/axi/axi_interconnect_beta/axi_interconnect_beta.sv" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/axi/axi_interconnect_beta/axi_rdata_sfifo.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/axi/axi_interconnect_beta/axi_wdata_sfifo.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/axi/axi_interconnect_beta/crossbar.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/axi/axi_interconnect_beta/fixed_priority_arbiter.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/axi/axi_interconnect_beta/lb_to_axi.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/axi/axi_interconnect_beta/master_coupler.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/axi/axi_interconnect_beta/round_robin_priority_arbiter.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/axi/axi_interconnect_beta/slave_coupler.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/axi/axi_interconnect_beta/slave_coupler_wrapper.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/common/common_efx_fifo_wrapper.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/common/common_reset_ctrl.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/common/common_simple_dual_port_ram.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/common/common_true_dual_port_ram.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/hw_accel/hw_accel.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/hw_accel/hw_accel_axi4.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/hw_accel/hw_accel_nearest_neighbor_downscale.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/hw_accel/hw_accel_pack_rgb_gray.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/hw_accel/hw_accel_rgb2gray.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/hw_accel/hw_accel_wrapper.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/tinyml/defines.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/tinyml/tinyml_accelerator.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/src/tinyml/tinyml_top.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/ip/sapphire_soc/sapphire_soc.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_a_image_source.sv" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_a_mailbox_bridge.sv" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_a_video_source.sv" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_apb_control.sv" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_async_fifo.sv" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_axi_arbiter.sv" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_axi_to_vendor.sv" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_bram_async_fifo.sv" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_buffer_manager.sv" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_cdc_mailbox.sv" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_frame_publisher.sv" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_image_writer.sv" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_memory_hub.sv" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_shared_time.sv" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_source_fence.sv" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_system_boundary.sv" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_vendor_attachment.sv" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_video_framebuffer.sv" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_video_ingress.sv" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_video_pipeline.sv" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c2_video_scanout.sv" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/rtl/c3_apb_peripheral.sv" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/a_side/ai_frame_mailbox.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/a_side/video_a_capture.v" version="default" library="default" />
+        <efx:design_file name="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/06_soc_c2/a_side/video_grid_sampler.v" version="default" library="default" />
+        <efx:top_vhdl_arch name="" />
+    </efx:design_info>
+    <efx:constraint_info>
+        <efx:inter_file name="" />
+    </efx:constraint_info>
+    <efx:sim_info />
+    <efx:misc_info />
+    <efx:synthesis tool_name="efx_map">
+        <efx:param name="work_dir" value="work_syn" value_type="e_string" />
+        <efx:param name="write_efx_verilog" value="on" value_type="e_bool" />
+        <efx:param name="allow-const-ram-index" value="0" value_type="e_option" />
+        <efx:param name="blackbox-error" value="1" value_type="e_option" />
+        <efx:param name="blast_const_operand_adders" value="1" value_type="e_option" />
+        <efx:param name="bram_output_regs_packing" value="1" value_type="e_option" />
+        <efx:param name="create-onehot-fsms" value="0" value_type="e_option" />
+        <efx:param name="fanout-limit" value="0" value_type="e_integer" />
+        <efx:param name="hdl-compile-unit" value="1" value_type="e_option" />
+        <efx:param name="infer-clk-enable" value="3" value_type="e_option" />
+        <efx:param name="infer-sync-set-reset" value="1" value_type="e_option" />
+        <efx:param name="max_ram" value="-1" value_type="e_integer" />
+        <efx:param name="max_mult" value="-1" value_type="e_integer" />
+        <efx:param name="min-sr-fanout" value="0" value_type="e_integer" />
+        <efx:param name="min-ce-fanout" value="0" value_type="e_integer" />
+        <efx:param name="mult-decomp-retime" value="0" value_type="e_option" />
+        <efx:param name="mode" value="speed" value_type="e_option" />
+        <efx:param name="operator-sharing" value="0" value_type="e_option" />
+        <efx:param name="optimize-adder-tree" value="0" value_type="e_option" />
+        <efx:param name="optimize-zero-init-rom" value="1" value_type="e_option" />
+        <efx:param name="retiming" value="1" value_type="e_option" />
+        <efx:param name="seq_opt" value="1" value_type="e_option" />
+        <efx:param name="seq-opt-sync-only" value="0" value_type="e_option" />
+        <efx:param name="dsp-input-regs-packing" value="1" value_type="e_option" />
+        <efx:param name="dsp-output-regs-packing" value="1" value_type="e_option" />
+        <efx:param name="dsp-mac-packing" value="1" value_type="e_option" />
+        <efx:param name="insert-carry-skip" value="0" value_type="e_option" />
+        <efx:param name="pack-luts-to-comb4" value="0" value_type="e_option" />
+        <efx:param name="mult-auto-pipeline" value="0" value_type="e_option" />
+        <efx:param name="use-logic-for-small-mem" value="64" value_type="e_integer" />
+        <efx:param name="use-logic-for-small-rom" value="64" value_type="e_integer" />
+        <efx:param name="include" value="C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/ip/sapphire_soc" value_type="e_string" />
+        <efx:param name="bram-push-tco-outreg" value="0" value_type="e_option" />
+        <efx:param name="hdl-loop-limit" value="20000" value_type="e_integer" />
+        <efx:param name="enable-mark-debug" value="1" value_type="e_option" />
+        <efx:param name="max-bit-blast-mem-size" value="10240" value_type="e_integer" />
+        <efx:param name="peri-syn-instantiation" value="0" value_type="e_option" />
+        <efx:param name="peri-syn-inference" value="0" value_type="e_option" />
+        <efx:param name="ram-decomp-mode" value="0" value_type="e_option" />
+        <efx:param name="max_threads" value="-1" value_type="e_integer" />
+    </efx:synthesis>
+    <efx:place_and_route tool_name="efx_pnr">
+        <efx:param name="work_dir" value="work_pnr" value_type="e_string" />
+        <efx:param name="verbose" value="off" value_type="e_bool" />
+        <efx:param name="load_delaym" value="on" value_type="e_bool" />
+        <efx:param name="optimization_level" value="NULL" value_type="e_option" />
+        <efx:param name="seed" value="1" value_type="e_integer" />
+        <efx:param name="placer_effort_level" value="2" value_type="e_option" />
+        <efx:param name="max_threads" value="-1" value_type="e_integer" />
+        <efx:param name="beneficial_skew" value="on" value_type="e_option" />
+        <efx:param name="print_critical_path" value="10" value_type="e_integer" />
+        <efx:param name="classic_flow" value="off" value_type="e_noarg" />
+    </efx:place_and_route>
+    <efx:bitstream_generation tool_name="efx_pgm">
+        <efx:param name="mode" value="active" value_type="e_option" />
+        <efx:param name="width" value="1" value_type="e_option" />
+        <efx:param name="enable_roms" value="smart" value_type="e_option" />
+        <efx:param name="spi_low_power_mode" value="on" value_type="e_bool" />
+        <efx:param name="io_weak_pullup" value="on" value_type="e_bool" />
+        <efx:param name="oscillator_clock_divider" value="DIV8" value_type="e_option" />
+        <efx:param name="bitstream_compression" value="on" value_type="e_bool" />
+        <efx:param name="enable_external_master_clock" value="off" value_type="e_bool" />
+        <efx:param name="active_capture_clk_edge" value="negedge" value_type="e_option" />
+        <efx:param name="jtag_usercode" value="0xFFFFFFFF" value_type="e_string" />
+        <efx:param name="release_tri_then_reset" value="on" value_type="e_bool" />
+        <efx:param name="four_byte_addressing" value="off" value_type="e_bool" />
+        <efx:param name="generate_bit" value="on" value_type="e_bool" />
+        <efx:param name="generate_bitbin" value="off" value_type="e_bool" />
+        <efx:param name="generate_hex" value="on" value_type="e_bool" />
+        <efx:param name="generate_hexbin" value="off" value_type="e_bool" />
+        <efx:param name="cold_boot" value="off" value_type="e_bool" />
+        <efx:param name="cascade" value="off" value_type="e_option" />
+    </efx:bitstream_generation>
+    <efx:debugger>
+        <efx:param name="work_dir" value="work_dbg" value_type="e_string" />
+        <efx:param name="auto_instantiation" value="off" value_type="e_bool" />
+        <efx:param name="profile" value="NONE" value_type="e_string" />
+    </efx:debugger>
+    <efx:security>
+        <efx:param name="enable_bitstream_encrypt" value="off" value_type="e_bool" />
+        <efx:param name="enable_bitstream_auth" value="off" value_type="e_bool" />
+        <efx:param name="encryption_key_file" value="NONE" value_type="e_string" />
+        <efx:param name="auth_key_file" value="NONE" value_type="e_string" />
+        <efx:param name="randomize_iv_value" value="off" value_type="e_bool" />
+        <efx:param name="iv_value" value="" value_type="e_string" />
+    </efx:security>
+</efx:project>

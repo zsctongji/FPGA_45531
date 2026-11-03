@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "started": "2026-11-01T10:01:24.382571+00:00",
+  "scope": "Linked C2/C4 live-mode firmware build; caller-verified mapping/time; no board execution",
+  "board_programmed": false,
+  "board_inference_passed": false,
+  "live_mmio_enabled": true,
+  "artifacts": [
+    {
+      "path": "firmware/c9_live_person_detect/tinyml_c9.elf",
+      "bytes": 2197568,
+      "sha256": "85a60900d8eca7648a7302723845b561b3eed992c815df3da0c6d500414d088e"
+    },
+    {
+      "path": "firmware/c9_live_person_detect/tinyml_c9.bin",
+      "bytes": 1395856,
+      "sha256": "1dd54e54f4a18fef030b859729912cfa7078a083c090fd42c2b15fbe465a7665"
+    },
+    {
+      "path": "firmware/c9_live_person_detect/tinyml_c9.hex",
+      "bytes": 3926259,
+      "sha256": "d4211c0a4935fa8b707b6d3e9f09890aeaccaf04110cf415f4616c4b815d28f1"
+    },
+    {
+      "path": "firmware/c9_live_person_detect/tinyml_c9.map",
+      "bytes": 1104750,
+      "sha256": "a34528485ca9a48999b81f38a804849460bc53893c212ebd92ea8548ee5b065a"
+    }
+  ],
+  "version": "c9live-97fed371cbc9e90a",
+  "native_compile_units": 122,
+  "linked_entrypoints": [
+    "c24_process_next",
+    "c2_poll_copy",
+    "c2_sapphire_bind",
+    "c4_tflm_infer",
+    "c3_shared_time_bind",
+    "c3_shared_now_ms"
+  ],
+  "finished": "2026-11-01T10:02:16.843808+00:00"
+}

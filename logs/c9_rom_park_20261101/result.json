@@ -1,0 +1,73 @@
+{
+  "status": "C9_ROM_PARK_STILL_CPU_HALT_TIMEOUT",
+  "generated": "2026-11-01T19:13:22.350546+08:00",
+  "base_audit_sha256": "5d65326f5acb66caa9e2048d4ccf4836964695a2e0076cb2820c2e9ee5628cca",
+  "base_bit_sha256": "e8c279ddb263b8e4a3939defe6cf66c3d9720b1339daf5072f74dd1d395372dd",
+  "patched_bit_sha256": "e90946bdf49cbb979698221df7aa42ef4e0510b06f9d063aeee9a93e435392e8",
+  "base_lbf_sha256": "471e479aeb4bc98c750dbf4c6d4280370afb13845919b17b039afb06bb6bf9de",
+  "patched_lbf_sha256": "8901232c03261e9fe805e87393ae36489862c0c80e42c295151ee5a374a3ff99",
+  "rom_instruction": "F9000000: 0000006f JAL x0,0",
+  "lanes": [
+    {
+      "lane": 0,
+      "input_sha256": "5fae99f7c6077e6125efaac56c88191e389e5380e384fcce39c730656b879df3",
+      "changes": [
+        {
+          "offset": 0,
+          "old": 151,
+          "new": 111
+        }
+      ]
+    },
+    {
+      "lane": 1,
+      "input_sha256": "d90e813d1e6be576c25a4482287db2880ccd72dfb91471df5286ec5ae7df15d0",
+      "changes": [
+        {
+          "offset": 0,
+          "old": 17,
+          "new": 0
+        }
+      ]
+    },
+    {
+      "lane": 2,
+      "input_sha256": "ad6b45543cbadd68e2ad6875d2d18a571a6a406885a330a71d60968d9beedbc5",
+      "changes": []
+    },
+    {
+      "lane": 3,
+      "input_sha256": "2324dda14e87ecf731bfc1da43eac82ab38b9dae4695a1b64c0ef0b5f2888d8f",
+      "changes": []
+    }
+  ],
+  "flash_written": false,
+  "tool": "Efinity GUI BRAM Initial Content Updater; bitgen exit code 0",
+  "configure_park_returncode": 0,
+  "park_probe_returncode": 1,
+  "probe_finished": "2026-11-01T19:14:00.513469+08:00",
+  "cpu_halt_passed": false,
+  "dma_cache_handoff_passed": false,
+  "real_video_concurrency_passed": false,
+  "raw_status_c9": [
+    "0000000000",
+    "0000000000",
+    "0000000000",
+    "0000000000"
+  ],
+  "raw_status_c10": [
+    "0000010644",
+    "0000010644",
+    "0000010644",
+    "0000010644"
+  ],
+  "restore_attempt": "logs/c10_warm_boot_20261101/20261101_191849/attempt.json",
+  "restore_passed": true,
+  "interpretation": "Same direct debug read produces no valid response in C9, valid response in C10. Internal DDR calibration/reset/clock state needs direct observation; root cause unproven.",
+  "scope": "GUI BRAM update in independent project clone; base C9 and C10 files preserved; SRAM configuration only",
+  "log_sha256": {
+    "park_probe.log": "e9493477e207c873fe3f1316d7f5cb3b7d0b33b633ce1ac918389d4a4035ee75",
+    "raw_status_park.log": "0ff9c4e268a64a8ec81c89acd10afffbef57b10adf0680141157ccab55724fef",
+    "raw_status_c10.log": "ccca23f5c05857c299970e069fec0bf816a4f872eb7b517e19967e74a79c9292"
+  }
+}

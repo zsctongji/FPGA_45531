@@ -1,0 +1,21 @@
+{
+  "started": "2026-11-01T12:37:23.048095+08:00",
+  "stage": "C7_C1_READBACK_THEN_RUN",
+  "firmware_sha256": "73401bb622454d06fd9fdc57ea799a0191cbd852574ccec9442f19006346307e",
+  "firmware": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\firmware\\c1_static_person_detect\\tinyml_c1.bin",
+  "load_attempt": "logs/c7_board_20261101/c1_20261101_123527",
+  "fpga_image_sha256": "962079f839a2f0348142e87fd83dd841f1534e30de42d71f5edb6de52d1ea26b",
+  "uart": "COM13",
+  "baud": 115200,
+  "dtr": false,
+  "rts": false,
+  "flash_written": false,
+  "board_inference_passed": false,
+  "readback_returncode": 0,
+  "readback_sha256": "a67683f076d3cbcd297a561e3aea70854e4c5d45d53969130665faa57e1a0d95",
+  "result": "FAILED",
+  "error": "AssertionError('Full firmware readback differs')",
+  "finished": "2026-11-01T12:39:52.812300+08:00",
+  "checker_returncode": 1,
+  "uart_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

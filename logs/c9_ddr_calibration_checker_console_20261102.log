@@ -1,0 +1,54 @@
+{
+  "status": "PASS_OFFLINE_CHECKER_TESTS",
+  "board_calibration_fixed": false,
+  "hardware_accessed": false,
+  "tests": [
+    {
+      "name": "20261101_205610",
+      "status": "EXPECTED_FAILURE_REPRODUCED",
+      "state": 23
+    },
+    {
+      "name": "20261101_213243",
+      "status": "EXPECTED_FAILURE_REPRODUCED",
+      "state": 3
+    },
+    {
+      "name": "synthetic_ready",
+      "status": "PASS_HOST_FIXTURE_ONLY"
+    },
+    {
+      "name": "cal_low",
+      "status": "REJECTED_HOST_FIXTURE"
+    },
+    {
+      "name": "cpu_reset",
+      "status": "REJECTED_HOST_FIXTURE"
+    },
+    {
+      "name": "ddr_reset",
+      "status": "REJECTED_HOST_FIXTURE"
+    },
+    {
+      "name": "pll_unlock",
+      "status": "REJECTED_HOST_FIXTURE"
+    },
+    {
+      "name": "root_reset",
+      "status": "REJECTED_HOST_FIXTURE"
+    },
+    {
+      "name": "clock_stopped",
+      "status": "REJECTED_HOST_FIXTURE"
+    },
+    {
+      "name": "raw_tamper",
+      "status": "REJECTED_HOST_FIXTURE"
+    }
+  ],
+  "source_sha256": {
+    "tools/test_c9_ddr_calibration.py": "7856ba06300e5a3cd6995606294c54eac31cbdd5815962e7d41e48a4c234324f",
+    "tools/check_c9_ddr_calibration.py": "7bdf796ccca43832d5a832cddb5da18d38d37f0d77c9e6c5616a63f098f5cd09",
+    "tools/capture_c9_ddr_probe.py": "faa56aad20f29c84cb61027c0c895aa8de3296b7e36f60cc3a4382c0ab8f4b0d"
+  }
+}

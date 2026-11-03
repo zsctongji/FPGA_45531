@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "project": "camera_preprocess",
+  "flow": "map",
+  "file": "D:\\FPGA_2026_T3_P3\\projects\\04_camera_preprocess\\ti60f225_oob.xml",
+  "started": "2026-10-17T21:45:30.2773520+08:00",
+  "stage": "finished",
+  "scope": "synthesis_only",
+  "physical_board_programmed": false,
+  "board_test_passed": false,
+  "efinity_version": "2026.1.132",
+  "exit_code": 0,
+  "design_log": "D:\\FPGA_2026_T3_P3\\projects\\04_camera_preprocess\\outflow\\ti60f225_oob.log",
+  "artifacts": [
+    {
+      "sha256": "4606EE131D076FD1E541476804989C96D26EE4E785A7F7B96A78712377AE1A33",
+      "path": "D:\\FPGA_2026_T3_P3\\projects\\04_camera_preprocess\\outflow\\ti60f225_oob.map.v"
+    },
+    {
+      "sha256": "3F363814A560F421C0682113292EB7F3836380F03DD4F5F249956DF5073811F3",
+      "path": "D:\\FPGA_2026_T3_P3\\projects\\04_camera_preprocess\\outflow\\ti60f225_oob.map.rpt"
+    }
+  ],
+  "finished": "2026-10-17T21:46:45.6740764+08:00"
+}

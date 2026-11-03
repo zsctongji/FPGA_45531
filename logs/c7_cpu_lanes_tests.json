@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "raw": 1,
+      "expected_result_met": true,
+      "returncode": 1,
+      "output": "FATAL: C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c7_board_20261101\\lane_regression\\tb_c7_cpu_lanes.sv:159: CPU byte/word lane rejected offset=4 response=3\n       Time: 240000  Scope: tb_c7_cpu_lanes.store\n"
+    },
+    {
+      "raw": 0,
+      "expected_result_met": true,
+      "returncode": 0,
+      "output": "PASS c7_cpu_lanes actual_vendor_upsizer stores=28 reads=48 SIZE4_shifted_WSTRB all16_offsets backpressure\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c7_board_20261101\\lane_regression\\tb_c7_cpu_lanes.sv:184: $finish called at 10260000 (1ps)\n"
+    }
+  ],
+  "source_sha256": {
+    "projects/03_tinyml/ip/sapphire_soc/sapphire_soc.v": "87c00873d2efc6b5bbb5336c1a1046eb0a21cf89c9d971f6c7cf703e0d2e6733",
+    "projects/07_soc_physical/rtl/c7_cpu_axi_address.sv": "20d67b2dc3c84ff9aab2259a72072be2cdd68847be43f3cef32dc9643abd6424",
+    "projects/06_soc_c2/rtl/c2_axi_to_vendor.sv": "c16fb2252e6315f21bbc229faf2db046fe18ceb81c4471cc11f91d384e744da0",
+    "tools/test_c7_cpu_lanes.py": "b54c8e6e9ee7a4662072087f11fe4931f7dd39e9a36d96472d8e3f56b63d833c"
+  }
+}

@@ -1,0 +1,2 @@
+PASS tb_c2_image bytes=9216 success=4 rejected=4 cpu_controls=7 background_writes=90 background_reads=90 checks=1026 final_B_fence FNV CPU_readback CDC busy_drop errors reset
+build/c9_display_c2_20261102/sim/tb_c2_image.sv:375: $finish called at 628642000 (1ps)

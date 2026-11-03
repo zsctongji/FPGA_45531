@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "hardware_accessed": false,
+  "synthetic_only": true,
+  "source_sha256": {
+    "tools/test_c9_sideband_decode.py": "0825f7ae3246a28cea451899f794a8aa2707bb9ab70ab76859465f3d8c7d9573",
+    "tools/check_c9_sideband.py": "dd243b4b75e4d2ee5d963f1f53c6b915b5a0f77bc21495a3f675dfd03148e9d9"
+  }
+}

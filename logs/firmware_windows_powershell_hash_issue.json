@@ -1,0 +1,19 @@
+﻿{
+    "status":  "FAIL",
+    "started":  "2026-10-18T13:52:47.1752728+08:00",
+    "scope":  "Cross compilation of vendor static-image TinyML demo; no inference executed",
+    "project":  "D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\embedded_sw\\sapphire_soc_tinyml\\software\\standalone\\tinyml_pdti8",
+    "board_programmed":  false,
+    "board_inference_passed":  false,
+    "compiler":  "riscv-none-elf-gcc.exe (xPack GNU RISC-V Embedded GCC x86_64) 13.4.0\r\nCopyright (C) 2023 Free Software Foundation, Inc.\r\nThis is free software; see the source for copying conditions.  There is NO\r\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+    "cpp_runtime_objects":  [
+                                "D:/FPGA_2026_T3_P3/tools/riscv_gcc/13.4.0/bin/../lib/gcc/riscv-none-elf/13.4.0/rv32im/ilp32/crtbegin.o",
+                                "D:/FPGA_2026_T3_P3/tools/riscv_gcc/13.4.0/bin/../lib/gcc/riscv-none-elf/13.4.0/rv32im/ilp32/crtend.o"
+                            ],
+    "exit_code":  0,
+    "artifacts":  [
+
+                  ],
+    "error":  "The term \u0027Get-FileHash\u0027 is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.",
+    "finished":  "2026-10-18T13:53:32.1895868+08:00"
+}

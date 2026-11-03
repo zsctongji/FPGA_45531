@@ -1,0 +1,34 @@
+{
+  "status": "PASS_PLAIN_WRAPPER_CHANGE_ONLY",
+  "base_source_sha256": "685d96fd52a604434a1da0bb404131cd4413bf76ed8ee738ac596b32ce373e5a",
+  "patched_source_sha256": "768f539d1b6514d19e4a2089ce31f0d067e826e2e6b38c0f4deb727682d7072d",
+  "protected_and_following_tail_sha256": "bbea88ac24e9682eafcecbb0efd3a2556df4f4bb9cc1793fe579dda5bb687ab7",
+  "tail_byte_identical": true,
+  "parameter_changes": {
+    "PACK_TYPE": {
+      "before": "15",
+      "after": "1"
+    }
+  },
+  "retained_parameters": {
+    "tLPX_NS": "50",
+    "tINIT_NS": "100000",
+    "tCLK_TERM_EN_NS": "38",
+    "tD_TERM_EN_NS": "25",
+    "tHS_SETTLE_NS": "85",
+    "tHS_PREPARE_ZERO_NS": "145",
+    "NUM_DATA_LANE": "4",
+    "ASYNC_STAGE": "2",
+    "HS_BYTECLK_MHZ": "70",
+    "CLOCK_FREQ_MHZ": "100",
+    "DPHY_CLOCK_MODE": "\"Discontinuous\"",
+    "PIXEL_FIFO_DEPTH": "1024",
+    "AREGISTER": "8",
+    "ENABLE_USER_DESKEWCAL": "1'b0",
+    "FRAME_MODE": "\"GENERIC\"",
+    "ENABLE_VCX": "1'b0"
+  },
+  "pixel_sideband_macro_enabled": true,
+  "ddr_changed": false,
+  "encrypted_functionality_simulated": false
+}

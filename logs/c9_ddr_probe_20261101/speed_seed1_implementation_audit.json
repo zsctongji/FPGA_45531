@@ -1,0 +1,215 @@
+{
+  "status": "PASS_OFFLINE_READONLY_DDR_PROBE",
+  "synthesis_mode": "speed",
+  "controlled_ab_only": true,
+  "diagnostic_only": true,
+  "board_test_passed": false,
+  "flash_written": false,
+  "controlled_change": "Reference cong/seed2 vs candidate speed/seed1. RTL, clocks, pins, DDR, COMB4=1 and CONGESTION_2 unchanged; physical implementation changes, so no compiler-bug claim.",
+  "timing": {
+    "setup": {
+      "rows": 30,
+      "minimum_slack_ns": 0.12,
+      "violations": []
+    },
+    "hold": {
+      "rows": 30,
+      "minimum_slack_ns": 0.026,
+      "violations": []
+    }
+  },
+  "cdc": {
+    "setup": [
+      {
+        "hierarchy": "soc/c2_full_video/ingress/crossing",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.027,
+        "minimum_slack_ns": 3.973
+      },
+      {
+        "hierarchy": "soc/c2_full_video/ingress/crossing",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.029,
+        "minimum_slack_ns": 7.971
+      },
+      {
+        "hierarchy": "soc/c2_full_video/framebuffer/output_cdc",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.011,
+        "minimum_slack_ns": 7.989
+      },
+      {
+        "hierarchy": "soc/c2_full_video/framebuffer/output_cdc",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 5.387,
+        "maximum_skew_ns": 0.025,
+        "minimum_slack_ns": 5.362
+      },
+      {
+        "hierarchy": "soc/c2_attachment/core/pixels/storage",
+        "pointer": "wgray",
+        "bits": 5,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.009,
+        "minimum_slack_ns": 3.991
+      },
+      {
+        "hierarchy": "soc/c2_attachment/core/pixels/storage",
+        "pointer": "rgray",
+        "bits": 5,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.035,
+        "minimum_slack_ns": 7.965
+      },
+      {
+        "hierarchy": "raw_split/queue",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 16.0,
+        "maximum_skew_ns": 0.035,
+        "minimum_slack_ns": 15.965
+      },
+      {
+        "hierarchy": "raw_split/queue",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.025,
+        "minimum_slack_ns": 7.975
+      },
+      {
+        "hierarchy": "gray_split/queue",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.073,
+        "minimum_slack_ns": 7.927
+      },
+      {
+        "hierarchy": "gray_split/queue",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.022,
+        "minimum_slack_ns": 3.978
+      }
+    ],
+    "hold": [
+      {
+        "hierarchy": "soc/c2_full_video/ingress/crossing",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.016,
+        "minimum_slack_ns": 3.984
+      },
+      {
+        "hierarchy": "soc/c2_full_video/ingress/crossing",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.018,
+        "minimum_slack_ns": 7.982
+      },
+      {
+        "hierarchy": "soc/c2_full_video/framebuffer/output_cdc",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.007,
+        "minimum_slack_ns": 7.993
+      },
+      {
+        "hierarchy": "soc/c2_full_video/framebuffer/output_cdc",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 5.387,
+        "maximum_skew_ns": 0.015,
+        "minimum_slack_ns": 5.372
+      },
+      {
+        "hierarchy": "soc/c2_attachment/core/pixels/storage",
+        "pointer": "wgray",
+        "bits": 5,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.005,
+        "minimum_slack_ns": 3.995
+      },
+      {
+        "hierarchy": "soc/c2_attachment/core/pixels/storage",
+        "pointer": "rgray",
+        "bits": 5,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.019,
+        "minimum_slack_ns": 7.981
+      },
+      {
+        "hierarchy": "raw_split/queue",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 16.0,
+        "maximum_skew_ns": 0.019,
+        "minimum_slack_ns": 15.981
+      },
+      {
+        "hierarchy": "raw_split/queue",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.013,
+        "minimum_slack_ns": 7.987
+      },
+      {
+        "hierarchy": "gray_split/queue",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.042,
+        "minimum_slack_ns": 7.958
+      },
+      {
+        "hierarchy": "gray_split/queue",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.014,
+        "minimum_slack_ns": 3.986
+      }
+    ]
+  },
+  "source_sha256": {
+    "build/c9_ddr_probe_speed_20261101/physical_soc_core.v": "7c795bb2962f1e3d1fba52bde1e0f564cacd37af10a170847e25cb5ec2987524",
+    "build/c9_ddr_probe_speed_20261101/soc_physical_top.sv": "c1eeef62797df4c41ac2a20533163027d310371142d60c258ca304580a41a93c",
+    "build/c9_ddr_probe_speed_20261101/soc_physical.xml": "0c4da7bddeecbf47fd6d81cfee1805e89bdd83d9b20f341cf62ab9300d331f52",
+    "build/c9_ddr_probe_speed_20261101/soc_physical.peri.xml": "0303170cbe27b86e11b15e490ad5f7fe5bd4ee6bf89acd60d22c1d170a230973",
+    "build/c9_ddr_probe_speed_20261101/soc_physical.sdc": "53f8baf48c4118283df2c9bcd57a5270516039e64caea6e9296592afe34f7b95",
+    "build/c9_ddr_probe_speed_20261101/review_timing.tcl": "041f9c91942fa3940f4832b3416a208f8e1f15a9166e7a5bcddbb1e6a7f8e6b2",
+    "build/c9_ddr_probe_speed_20261101/bind_cdc.py": "13d4702d1e778f6a1b2c400eb507707de1882797ff5deb2359d99369d13435ab",
+    "build/c9_ddr_probe_speed_20261101/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol0.bin": "95aa26b9cc41c94dca7543f5c4b48350b566cf9311ea714df17415d549e5aa6e",
+    "build/c9_ddr_probe_speed_20261101/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol1.bin": "e4ad872f2b3dcb92ec3e7d5860e16bc70177928642cce1c89383a74faf94d393",
+    "build/c9_ddr_probe_speed_20261101/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol2.bin": "b8c5f31b9b5e5fcea4ad83627e7749ca567fee94bef441a241bad2652a42064e",
+    "build/c9_ddr_probe_speed_20261101/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol3.bin": "b1be4104ba5dabcdef13ef787d604d39b75dac954d7d1f65728be266bf4b606d",
+    "team_work/03_ai_soc/c9_live/debug/c9_ddr_probe.sv": "379cd0c11256dc562dcc72c6c224d21e2a4c596f2783c17854fb6bf0e07934b4"
+  },
+  "evidence_sha256": {
+    "build/c9_ddr_probe_speed_20261101/work_pnr/soc_physical.lbf": "0d8cb2dbbce5ec5cd5cb66326ec445664ea988941edacd14d04be79b015a80b7",
+    "build/c9_ddr_probe_speed_20261101/outflow/soc_physical.bit": "daecdc09f22f9da10af394049bbf9d2dad2b9b7a07810dd8a5935e6ab29b0f09",
+    "build/c9_ddr_probe_speed_20261101/outflow/soc_physical.hex": "32ea6d11210ac73f6b445223dc502f95c12fc8367f6ee67eba0f6028dbb9c4b0",
+    "build/c9_ddr_probe_speed_20261101/outflow/soc_physical.review_timing.rpt": "cb1ce64985bd8dd7921076206b25963e4a5b3904577bb3bb5de5b4d0eb60cd9d",
+    "build/c9_ddr_probe_speed_20261101/outflow/soc_physical.bus_setup.rpt": "f7bacd9d80b260c8cd42f56806f573a7599714132eb73d7eddb59152c395516b",
+    "build/c9_ddr_probe_speed_20261101/outflow/soc_physical.bus_hold.rpt": "bb260b423c67bf5133c12ec653f75c61051c9b7119ca3ad4920620b6fa9f6a4f",
+    "build/c9_ddr_probe_speed_20261101/SPEED_MANIFEST.json": "296f5ea476f253dc0903090826064d607b1bccabd1759783431ec402f129dc72",
+    "build/c9_ddr_probe_20261101/implementation_audit.json": "890f761194ec23b900f5437602677de7fac84c0c237e4a12ad0ac7f6f37a108c",
+    "tools/audit_c9_ddr_probe_speed.py": "c703b63fd219e5e341c79028ada8b1e46edd17e163d0709ac7b4762065feee99",
+    "tools/prepare_c9_ddr_probe_speed.py": "a9b6886bc61c260bc1b8842faed0132775bda7f68fdf31c12010d0e91add6e8c",
+    "tools/run_c9_ddr_probe_speed.ps1": "2187b3f09a26d7c015040ef114160ed1356d5789fbb40cb1acfec3f0a74e85fb",
+    "build/c9_ddr_probe_speed_20261101/capture_speed.py": "1f72d6378b632bf9b66152b99d672b9fcf5e6ef4570a6c02ea30b6db33b405f9"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "report_c9_linebuffer_quality_board",
+  "returncode": 0,
+  "reports": [
+    "logs/c9_pc_acceptance_20261103_204335/report_c9_linebuffer_quality_board/c9_linebuffer_quality_board_result_20261103.json"
+  ],
+  "script_sha256": "bc995189cf09df9de8580162a6849c87445000348557cece257403ba5003cc85",
+  "hardware_accessed": false
+}

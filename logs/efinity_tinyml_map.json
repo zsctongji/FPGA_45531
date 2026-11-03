@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "project": "tinyml",
+  "flow": "map",
+  "file": "D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\Ti60F225_tinyml_helloworld.xml",
+  "started": "2026-10-17T21:47:00.6528231+08:00",
+  "stage": "finished",
+  "scope": "synthesis_only",
+  "physical_board_programmed": false,
+  "board_test_passed": false,
+  "efinity_version": "2026.1.132",
+  "exit_code": 0,
+  "design_log": "D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\outflow\\Ti60F225_tinyml_helloworld.log",
+  "artifacts": [
+    {
+      "path": "D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\outflow\\Ti60F225_tinyml_helloworld.map.v",
+      "sha256": "4E9EF9AE74FABEB21216EA4626D1F5BE15982DE2ECD6AC722D72B5A536B7054A"
+    },
+    {
+      "path": "D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\outflow\\Ti60F225_tinyml_helloworld.map.rpt",
+      "sha256": "CAEE6519470DCB51DF58E646C1DD0EAAF03A6B551951DED37BB08700EC4F0185"
+    }
+  ],
+  "finished": "2026-10-17T21:49:59.2414566+08:00"
+}

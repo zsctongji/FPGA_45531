@@ -1,0 +1,30 @@
+{
+  "status": "PASS_TWO_IDENTICAL_8MIB_READ_ONLY_BACKUPS",
+  "started": "2026-11-01T14:18:53.826067+08:00",
+  "flash_written": false,
+  "raw_backup_location": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\private_flash_backup_20261101\\20261101_141853",
+  "reads": [
+    {
+      "name": "identity_probe",
+      "bytes": 1024,
+      "sha256": "d905960a7f2c94f90b45b8a00f98a834dda962758774e235d30d7c2e90d5e17f",
+      "returncode": 0
+    },
+    {
+      "name": "backup_a",
+      "bytes": 8388608,
+      "sha256": "3bd34df462240bbf1057553c07943ff8cf95e820268def68c5242b45b71ba67b",
+      "returncode": 0
+    },
+    {
+      "name": "backup_b",
+      "bytes": 8388608,
+      "sha256": "3bd34df462240bbf1057553c07943ff8cf95e820268def68c5242b45b71ba67b",
+      "returncode": 0
+    }
+  ],
+  "temporary_sram_bridge": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1\\pgm\\fli\\titanium\\u10660A79.bit",
+  "temporary_bridge_sha256": "2fa6bda7ad79e03edc2f862c02e956823a90b4667b23229e2b2bc692bb63927e",
+  "identity_log": "Connecting to JTAG_TAP: efx_ti\nConnecting to JTAG_TAP: efx_ti\nFlash device: Winbond W25Q64 8 MiB (JEDEC ID: 0xEF6017) @ JTAG freq 1.0 MHz\nReading 1024 bytes from flash @ 0x00000000 ...\nFinished read in 0 seconds\n",
+  "finished": "2026-11-01T14:22:25.887221+08:00"
+}

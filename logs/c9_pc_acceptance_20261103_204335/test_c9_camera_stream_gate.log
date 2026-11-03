@@ -1,0 +1,2 @@
+FATAL: C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\build\c9_pc_acceptance_20261103_204335\test_c9_camera_stream_gate\red\tb.sv:10: Stream started before qualification
+PASS tb_stream_gate all_configuration_and_16_reads_before_enable single_final_stream_on

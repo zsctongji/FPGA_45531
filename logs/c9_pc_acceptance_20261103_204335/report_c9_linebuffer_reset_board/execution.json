@@ -1,0 +1,9 @@
+{
+  "name": "report_c9_linebuffer_reset_board",
+  "returncode": 0,
+  "reports": [
+    "logs/c9_pc_acceptance_20261103_204335/report_c9_linebuffer_reset_board/c9_linebuffer_reset_board_result_20261103.json"
+  ],
+  "script_sha256": "e59931661c09b49f2d0892f6e4c6103850c1be525ace32db86ee4f5d05151c3b",
+  "hardware_accessed": false
+}

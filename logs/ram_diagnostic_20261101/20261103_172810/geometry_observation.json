@@ -1,0 +1,226 @@
+{
+  "status": "CAPTURED_LINEBUFFER_STATUS_ONLY",
+  "geometry_verified": false,
+  "geometry_failures": [
+    "normalizer/payload not verified",
+    "fresh transport/init error",
+    "no complete 1920x1080 capture record",
+    "source format/overflow errors or too few frames",
+    "downstream not verified"
+  ],
+  "tinyml_accelerator_present": false,
+  "real_camera_verified": false,
+  "board_acceptance_passed": false,
+  "flash_written": false,
+  "before": {
+    "normalizer": {
+      "run": false,
+      "armed": false,
+      "fault": false,
+      "error_flags_hex": "00",
+      "last_frame_beats": 0,
+      "input_frames_mod4": 0,
+      "debug_seen_hex": "00000000",
+      "init_done_seen": false,
+      "transport_error_bits_hex": "00000000"
+    },
+    "csr": {
+      "run": false,
+      "init_seen": false,
+      "capture_enable": false,
+      "fault": false,
+      "state": 0,
+      "retries": 0,
+      "pre_status_hex": "00000000",
+      "post_status_hex": "00000000",
+      "native_rises": 0,
+      "native_falls": 0,
+      "native_flags_hex": "c0",
+      "native_vs_level": true,
+      "native_hs_level": true,
+      "native_de_seen": false,
+      "native_hs_seen": false,
+      "native_vs_seen": false,
+      "native_image_seen": false,
+      "native_non4_ppc_seen": false,
+      "native_bad_wc_seen": false
+    },
+    "video": {
+      "run": false,
+      "pattern_mode": false,
+      "fault_gate": false,
+      "config_valid": true,
+      "time_valid": true,
+      "pixel_maximum": 0,
+      "source_maximum": 0
+    }
+  },
+  "after": {
+    "normalizer": {
+      "run": true,
+      "armed": true,
+      "fault": true,
+      "error_flags_hex": "10",
+      "last_frame_beats": 0,
+      "input_frames_mod4": 0,
+      "debug_seen_hex": "0029841f",
+      "init_done_seen": true,
+      "transport_error_bits_hex": "0001041d"
+    },
+    "csr": {
+      "run": true,
+      "init_seen": true,
+      "capture_enable": true,
+      "fault": false,
+      "state": 7,
+      "retries": 0,
+      "pre_status_hex": "00000412",
+      "post_status_hex": "00000002",
+      "native_rises": 244,
+      "native_falls": 244,
+      "native_flags_hex": "0f",
+      "native_vs_level": false,
+      "native_hs_level": false,
+      "native_de_seen": true,
+      "native_hs_seen": true,
+      "native_vs_seen": true,
+      "native_image_seen": true,
+      "native_non4_ppc_seen": false,
+      "native_bad_wc_seen": false
+    },
+    "video": {
+      "run": true,
+      "pattern_mode": false,
+      "fault_gate": true,
+      "config_valid": true,
+      "time_valid": true,
+      "pixel_maximum": 1920,
+      "source_maximum": 1920
+    }
+  },
+  "source_frames": 1,
+  "format_errors": 0,
+  "overflow_frames": 0,
+  "a_completed": 0,
+  "width": 0,
+  "segments": 0,
+  "record_complete": false,
+  "uart_sha256": "dcdf676dadb03f5b631b9e574c30250ea62e54cc06662bd0602ef02f3b6fe22a",
+  "attempt_sha256": "1a6ec1035f340a595c31ebda5a01be7b6d6b8fed9ec17f74dcad3e67b40b41ec",
+  "image_sha256": "9ea8d3edb3fa0b98beb00e57128d88145eee0f2eac7f13324107afb997da8629",
+  "snapshots": {
+    "before": {
+      "start": 883,
+      "end": 1023,
+      "words": {
+        "0": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          57,
+          0,
+          0
+        ],
+        "1": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2248146944,
+          0
+        ],
+        "2": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "3": [
+          3388080130,
+          0,
+          0,
+          0,
+          3072,
+          0,
+          0,
+          0
+        ],
+        "4": [
+          0,
+          4043309056,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "after": {
+      "start": 11033,
+      "end": 11164,
+      "words": {
+        "0": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          665,
+          0,
+          0
+        ],
+        "1": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3212576640,
+          9
+        ],
+        "2": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "3": [
+          3388080130,
+          1042,
+          2,
+          15991028,
+          117440759,
+          0,
+          0,
+          0
+        ],
+        "4": [
+          2720799,
+          4058251264,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "scope": "Fixed RAW10/VC0 Pack40 linebuffer candidate. Native transport and last-frame count observed coherently in PHY bank; native VS edges/flags after CSR enable and video maxima remain in own domains. PHY debug set begins after CSR enable, including the pre-arm interval. No AI/HDMI/cold-start acceptance; C2 timestamps remain first output GRAY8 DE, not original CSI arrival time."
+}

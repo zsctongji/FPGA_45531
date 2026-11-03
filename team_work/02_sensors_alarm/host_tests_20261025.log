@@ -1,0 +1,7 @@
+Synthetic host regression; 2026-10-25T14:36:59.0625248+08:00
+PASS SHT30: CRC corruption, conversion, retries, deadlines, age, clock wrap
+PASS thermal: two modes, duplicate/missing pages, quality mask, calibration gate, wrap
+PASS alarm: off initialization, pulse, clear/rearm, cutoff, GPIO failure, wrap
+PASS Melexis port: real library linked, EEPROM chunks/endian, NACK, finite polling
+PASS 5987 host assertions; SYNTHETIC INPUTS, NO BOARD MEASUREMENTS
+B code and upstream C3 compiled with -std=c11 -O1 -Wall -Wextra -Werror. Official Melexis API compiled unchanged.

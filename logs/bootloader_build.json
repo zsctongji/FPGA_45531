@@ -1,0 +1,34 @@
+﻿{
+    "status":  "PASS",
+    "started":  "2026-10-18T14:13:40.6354839+08:00",
+    "scope":  "Cross compilation and ROM lane generation only",
+    "flash_offset":  "0x00380000",
+    "application_ram_address":  "0x00001000",
+    "application_copy_capacity":  4194304,
+    "board_programmed":  false,
+    "binary_bytes":  664,
+    "binary_sha256":  "0E08B4D8FBF9BC6151D3339559D8131A6A77541ABACA71ACB4B0FEAD2C353DE2",
+    "lanes":  [
+                  {
+                      "path":  "D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol0.bin",
+                      "sha256":  "57A0FC51CA44AE308670BBDBCE6CAD8C0C2D333E76940F421C54D1057A19F1E9",
+                      "lines":  1024
+                  },
+                  {
+                      "path":  "D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol1.bin",
+                      "sha256":  "C807366A705EBC8AE957C5C174C23F107134299420BCB77ACC2D1F8099A74FE3",
+                      "lines":  1024
+                  },
+                  {
+                      "path":  "D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol2.bin",
+                      "sha256":  "B8C5F31B9B5E5FCEA4AD83627E7749CA567FEE94BEF441A241BAD2652A42064E",
+                      "lines":  1024
+                  },
+                  {
+                      "path":  "D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol3.bin",
+                      "sha256":  "B1BE4104BA5DABCDEF13EF787D604D39B75DAC954D7D1F65728BE266BF4B606D",
+                      "lines":  1024
+                  }
+              ],
+    "finished":  "2026-10-18T14:13:41.1742487+08:00"
+}

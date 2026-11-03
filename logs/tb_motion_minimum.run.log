@@ -1,0 +1,3 @@
+﻿PASS tb_motion_minimum grid=1x1 first_frame_invalid threshold_equal static SOF_EOF_same_sample
+D:\FPGA_2026_T3_P3\sim\tb_motion_minimum.sv:32: $finish called at 490000 (1ps)
+

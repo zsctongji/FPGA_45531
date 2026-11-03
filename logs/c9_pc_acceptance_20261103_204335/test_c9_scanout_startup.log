@@ -1,0 +1,9 @@
+PASS scanout startup mode=0; first-ready edge, real busy miss and recovery retained
+C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\team_work\03_ai_soc\c9_live\display_fix\tb_scanout_startup.sv:41: $finish called at 600000 (1ps)
+
+PASS scanout startup mode=1; first-ready edge, real busy miss and recovery retained
+C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\team_work\03_ai_soc\c9_live\display_fix\tb_scanout_startup.sv:41: $finish called at 610000 (1ps)
+
+PASS scanout startup mode=2; first-ready edge, real busy miss and recovery retained
+C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\team_work\03_ai_soc\c9_live\display_fix\tb_scanout_startup.sv:41: $finish called at 600000 (1ps)
+

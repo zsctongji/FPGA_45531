@@ -1,0 +1,3 @@
+﻿PASS tb_video_motion_display cycles=903 complete_frames=9 format_errors=12 red_pixels=103 sampled_grid=4x3 invalid_width/extra_row/missing_row marker_alignment hold_frames=2
+D:\FPGA_2026_T3_P3\sim\tb_video_motion_display.sv:89: $finish called at 9060000 (1ps)
+

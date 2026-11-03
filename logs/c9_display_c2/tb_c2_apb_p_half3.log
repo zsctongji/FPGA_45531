@@ -1,0 +1,2 @@
+PASS tb_c2_apb commands=105 checks=870 APB3 CDC setup errors busy immutable_snapshot stale_token common_reset
+build/c9_display_c2_20261102/sim/tb_c2_apb.sv:106: $finish called at 16308000 (1ps)

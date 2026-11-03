@@ -1,0 +1,2033 @@
+# Keep C24 release payloads and pinned A snapshots byte-identical to their SHA256 manifests.
+/firmware/c24_frame_person_detect/** -text whitespace=cr-at-eol
+/firmware/c24_frame_person_detect/*.bin binary
+/firmware/c24_frame_person_detect/*.elf binary
+/firmware/c24_frame_person_detect/*.hex binary
+/firmware/c24_frame_person_detect/*.map binary
+/projects/06_soc_c2/a_side/** -text whitespace=cr-at-eol
+/projects/06_soc_c2/integration/c2_tinyml_soc_top.v -text whitespace=cr-at-eol
+/projects/06_soc_c2/rtl/c2_a_video_source.sv -text whitespace=cr-at-eol
+/projects/06_soc_c2/rtl/c2_video_framebuffer.sv -text whitespace=cr-at-eol
+/projects/06_soc_c2/rtl/c2_video_ingress.sv -text whitespace=cr-at-eol
+/projects/06_soc_c2/rtl/c2_video_pipeline.sv -text whitespace=cr-at-eol
+/projects/06_soc_c2/rtl/c2_video_scanout.sv -text whitespace=cr-at-eol
+/projects/06_soc_c2/sim/tb_c2_framebuffer.sv -text whitespace=cr-at-eol
+/projects/06_soc_c2/sim/tb_c2_video_config.sv -text whitespace=cr-at-eol
+/projects/06_soc_c2/sim/tb_c2_video_tail.sv -text whitespace=cr-at-eol
+/tools/audit_c2_baselines.py -text whitespace=cr-at-eol
+/tools/audit_c2_vendor.py -text whitespace=cr-at-eol
+/tools/check_a_c2_pc.py -text whitespace=cr-at-eol
+/tools/check_c2_video_tail.py -text whitespace=cr-at-eol
+/tools/prepare_c2_framebuffer.py -text whitespace=cr-at-eol
+/tools/prepare_c2_vendor.py -text whitespace=cr-at-eol
+/tools/prepare_c2_video_test.py -text whitespace=cr-at-eol
+/tools/run_c2_selftest.py -text whitespace=cr-at-eol
+/tools/verify_c24_package.py -text whitespace=cr-at-eol
+
+# Preserve exact real-data replay sources and report hashes.
+/tools/replay_team_real_data.py -text whitespace=cr-at-eol
+/team_work/03_ai_soc/replay/thermal_replay.c -text whitespace=cr-at-eol
+/logs/team_real_replay_20261031.json -text whitespace=cr-at-eol
+/firmware/c1_static_person_detect/C1_FROZEN_SOURCES.json -text whitespace=cr-at-eol
+/firmware/c1_static_person_detect/C1_PACKAGE.json -text whitespace=cr-at-eol
+/firmware/c1_static_person_detect/frozen_c3_hal/c3_hal.c -text whitespace=cr-at-eol
+/firmware/c1_static_person_detect/frozen_c3_hal/c3_hal.h -text whitespace=cr-at-eol
+/firmware/c1_static_person_detect/frozen_c3_hal/c3_sapphire_time.c -text whitespace=cr-at-eol
+/firmware/c24_frame_person_detect/C24_INPUT_MANIFEST.json -text whitespace=cr-at-eol
+/firmware/c24_frame_person_detect/tinyml_c24.bin binary
+/firmware/c24_frame_person_detect/tinyml_c24.elf binary
+/firmware/c24_frame_person_detect/tinyml_c24.hex -text whitespace=cr-at-eol
+/firmware/c24_frame_person_detect/tinyml_c24.map -text whitespace=cr-at-eol
+/firmware/c3_peripheral_backend/MANIFEST.json -text whitespace=cr-at-eol
+/firmware/c3_peripheral_backend/libc3_peripheral_rv32.a binary
+/projects/06_soc_c2/rtl/c2_apb_control.sv -text whitespace=cr-at-eol
+/projects/06_soc_c2/rtl/c2_vendor_attachment.sv -text whitespace=cr-at-eol
+/projects/06_soc_c2/rtl/c3_apb_peripheral.sv -text whitespace=cr-at-eol
+/projects/06_soc_c2/sim/tb_c3_peripheral.sv -text whitespace=cr-at-eol
+/projects/06_soc_c2/sim/tb_c3_shared_epoch.sv -text whitespace=cr-at-eol
+/projects/06_soc_c2/sim/tb_c3_timing.sv -text whitespace=cr-at-eol
+/team_work/03_ai_soc/c3_hal/c3_hal.c -text whitespace=cr-at-eol
+/team_work/03_ai_soc/c3_hal/c3_hal.h -text whitespace=cr-at-eol
+/team_work/03_ai_soc/c3_hal/c3_peripheral.c -text whitespace=cr-at-eol
+/team_work/03_ai_soc/c3_hal/c3_peripheral.h -text whitespace=cr-at-eol
+/team_work/03_ai_soc/c3_hal/c3_replay.c -text whitespace=cr-at-eol
+/team_work/03_ai_soc/c3_hal/c3_sapphire_peripheral.c -text whitespace=cr-at-eol
+/team_work/03_ai_soc/c3_hal/c3_sapphire_peripheral.h -text whitespace=cr-at-eol
+/team_work/03_ai_soc/c3_hal/c3_sapphire_time.c -text whitespace=cr-at-eol
+/team_work/03_ai_soc/c3_hal/c3_thermal_publish.c -text whitespace=cr-at-eol
+/team_work/03_ai_soc/c3_hal/c3_thermal_publish.h -text whitespace=cr-at-eol
+/team_work/03_ai_soc/tests/test_c3_peripheral.c -text whitespace=cr-at-eol
+/tools/build_c24.py -text whitespace=cr-at-eol
+/tools/check_c2_riscv.py -text whitespace=cr-at-eol
+/tools/check_c3_backend.py -text whitespace=cr-at-eol
+/tools/package_c3_backend.py -text whitespace=cr-at-eol
+/tools/prepare_c24.py -text whitespace=cr-at-eol
+/tools/verify_c1_package.py -text whitespace=cr-at-eol
+/projects/06_soc_c2/rtl/c2_bram_async_fifo.sv -text whitespace=cr-at-eol
+/projects/06_soc_c2/sim/tb_c2_bram_fifo.sv -text whitespace=cr-at-eol
+/tools/run_c2_synthesis.ps1 -text whitespace=cr-at-eol
+/tools/audit_bram_usage.py -text whitespace=cr-at-eol
+/tools/audit_pin_ownership.py -text whitespace=cr-at-eol
+/25_audit_bram_pins.cmd -text whitespace=cr-at-eol
+
+# Keep this BRAM/pin increment and its evidence hashes byte-identical.
+/logs/c2_selftest.json -text whitespace=cr-at-eol
+/logs/c2_native_synthesis.json -text whitespace=cr-at-eol
+/logs/c2_native_warning_review.json -text whitespace=cr-at-eol
+/logs/c2_video_tail.json -text whitespace=cr-at-eol
+/logs/c2_bram_baseline_20261031.json -text whitespace=cr-at-eol
+/logs/c2_bram_optimization_20261031.json -text whitespace=cr-at-eol
+/logs/pin_ownership_audit_20261031.json -text whitespace=cr-at-eol
+/logs/a_c2_pc_inference.json -text whitespace=cr-at-eol
+/logs/a_c2_video_pc_inference.json -text whitespace=cr-at-eol
+/logs/c24_package_check.json -text whitespace=cr-at-eol
+/projects/06_soc_c2/integration/c2_native.xml -text whitespace=cr-at-eol
+/projects/06_soc_c2/integration/INTEGRATION_MANIFEST.json -text whitespace=cr-at-eol
+/projects/06_soc_c2/BASELINE_AUDIT.json -text whitespace=cr-at-eol
+/logs/c2_riscv_compile.json -text whitespace=cr-at-eol
+
+# Generated tool output retains original whitespace verbatim.
+/logs/c2_native_synthesis.log -text -whitespace
+/logs/c2/tb_c2_bram_fifo_s_half11_d_half3.log -text whitespace=cr-at-eol
+/logs/c2/tb_c2_bram_fifo_s_half11_d_half3_compile.log -text whitespace=cr-at-eol
+/logs/c2/tb_c2_bram_fifo_s_half3_d_half11.log -text whitespace=cr-at-eol
+/logs/c2/tb_c2_bram_fifo_s_half3_d_half11_compile.log -text whitespace=cr-at-eol
+/logs/c2/tb_c2_bram_fifo_s_half5_d_half5.log -text whitespace=cr-at-eol
+/logs/c2/tb_c2_bram_fifo_s_half5_d_half5_compile.log -text whitespace=cr-at-eol
+
+# C7 physical sources/reports retain the exact audited bytes.
+/projects/07_soc_physical/** -text -whitespace
+/logs/soc_physical* -text -whitespace
+/logs/soc_physical_evidence/** -text -whitespace
+/logs/physical_c2/** -text -whitespace
+/logs/physical_c2* -text -whitespace
+/tools/prepare_soc_physical.py -text whitespace=cr-at-eol
+/tools/run_soc_physical.ps1 -text whitespace=cr-at-eol
+/tools/generate_physical_cdc.py -text whitespace=cr-at-eol
+/tools/audit_soc_physical.py -text whitespace=cr-at-eol
+/tools/export_physical_evidence.py -text whitespace=cr-at-eol
+/tools/check_soc_physical.py -text whitespace=cr-at-eol
+/tools/test_physical_c2.py -text whitespace=cr-at-eol
+/tools/efinity_preflight.py -text whitespace=cr-at-eol
+/26_build_soc_physical.cmd -text whitespace=cr-at-eol
+/tools/check_board_preflight.py -text whitespace=cr-at-eol
+/logs/board_preflight_20261031.json -text whitespace=cr-at-eol
+/logs/hardware_identity_20261031.json -text whitespace=cr-at-eol
+/27_prepare_board_review.cmd -text whitespace=cr-at-eol
+/projects/08_ddr_diag/** -text -whitespace
+/fpga_bitstreams/ddr_diag_100mhz/** -text -whitespace
+/logs/ddr_diag* -text -whitespace
+/logs/tb_ddr_diag.log -text -whitespace
+/logs/tb_ddr_status.log -text -whitespace
+/28_build_ddr_diag.cmd -text -whitespace
+/tools/prepare_ddr_diag.py -text -whitespace
+/tools/run_ddr_diag.ps1 -text -whitespace
+/tools/check_ddr_diag.py -text -whitespace
+/tools/check_ddr_uart.py -text -whitespace
+
+# Real-board evidence and CPU diagnostic identity must survive checkout exactly.
+/logs/ddr_board_20261101/** -text -whitespace
+/logs/c7_board_20261101/** -text -whitespace
+/logs/c7_cpu_lanes_tests.json -text -whitespace
+/firmware/c7_board_diag/** -text -whitespace
+/fpga_bitstreams/soc_physical_100mhz/** -text -whitespace
+/team_work/03_ai_soc/c7_board/** -text -whitespace
+/tools/build_c7_board_diag.py -text -whitespace
+/tools/check_c7_board_uart.py -text -whitespace
+/tools/run_c7_board_acceptance.py -text -whitespace
+/tools/probe_c7_ddr.py -text -whitespace
+/tools/test_c7_cpu_lanes.py -text -whitespace
+
+/projects/10_soc_cold/** -text
+/team_work/03_ai_soc/c7_spi/** -text
+/fpga_bitstreams/soc_cold_100mhz/** -text
+/logs/c10_*.json -text
+/logs/soc_cold_*.json -text
+/logs/c10_warm_boot_20261101/** -text
+/logs/c7_cold_boot_20261101/** -text
+/logs/ram_diagnostic_20261101/** -text
+
+/projects/09_c7_live_acceptance/** -text
+/team_work/03_ai_soc/c9_live/** -text
+/firmware/c9_dma_diag/** -text
+/firmware/c9_live_person_detect/** -text
+/logs/soc_live_*.json -text
+/tools/prepare_c7_live.py -text
+/tools/run_soc_live.ps1 -text
+/tools/generate_soc_live_cdc.py -text
+/tools/test_c7_live_rtl.py -text
+/tools/build_c9_dma.py -text
+/tools/prepare_c9_tinyml.py -text
+/tools/build_c9_tinyml.py -text
+/tools/audit_c9.py -text
+/tools/check_c9_uart.py -text
+/tools/check_c9_camera_reference.py -text
+/tools/run_ram_diagnostic.py -text
+/tools/c7_spi_rx_override.py -text
+/tools/test_c7_spi_rx.py -text
+/tools/prepare_soc_cold.py -text
+/tools/run_soc_cold.ps1 -text
+/tools/generate_soc_cold_cdc.py -text
+/tools/audit_soc_live.py -text
+/tools/capture_soc_cold_warm.py -text
+/tools/capture_c7_cold_boot.py -text
+/tools/program_soc_cold_flash.py -text
+
+/tools/prepare_c9_reset_status.py -text
+
+/tools/run_c9_reset_status.ps1 -text
+
+/tools/audit_c9_reset_status.py -text
+
+/logs/c9_rom_park_20261101/** -text
+
+/logs/c9_reset_status_20261101/** -text
+
+/tools/prepare_c9_ddr_probe.py -text
+
+/tools/run_c9_ddr_probe.ps1 -text
+
+/tools/test_c9_ddr_probe.py -text
+
+/tools/audit_c9_ddr_probe.py -text
+
+/tools/capture_c9_ddr_probe.py -text
+
+/logs/c9_ddr_probe_rtl.json -text
+
+/logs/c9_ddr_probe_20261101/** -text
+
+/tools/prepare_c9_ddr_probe_speed.py -text
+
+/tools/run_c9_ddr_probe_speed.ps1 -text
+
+/tools/audit_c9_ddr_probe_speed.py -text
+
+/tools/audit_c9_ddr_probe_nopack.py -text
+
+/tools/c8_comb4_control.py -text
+
+/tools/c9_probe_image.py -text
+
+/tools/capture_c8_comb4_control.py -text
+
+/tools/check_c9_offline.py -text
+
+/tools/prepare_c9_ddr_probe_nopack.py -text
+
+/tools/run_c8_comb4_control.ps1 -text
+
+/tools/run_c9_ddr_probe_nopack.ps1 -text
+
+/tools/test_c9_probe_preflight.py -text
+
+/logs/c8_comb4_control_20261102/** -text
+
+/logs/c9_preflight_tests_20261102.json -text
+
+/logs/c9_offline_readiness_20261102.json -text
+
+/logs/c9_offline_readiness_console_20261102.log -text
+
+/tools/check_c9_ddr_calibration.py -text
+
+/tools/test_c9_ddr_calibration.py -text
+
+/tools/audit_ddr_baseline_contract.py -text
+
+/tools/run_c9_ddr_control.py -text
+
+/logs/ddr_static_contract_20261102.json -text
+
+/logs/ddr_static_contract_console_20261102.log -text
+
+/logs/c9_ddr_calibration_checker_tests_20261102.json -text
+
+/logs/c9_ddr_calibration_checker_console_20261102.log -text
+
+/logs/c9_ddr_gate_20261101_205610.json -text
+
+/logs/c9_ddr_gate_20261101_213243.json -text
+
+/config/c9_board_profile_20261102.json -text
+
+/tools/report_ddr_fix.py -text
+
+/fpga_bitstreams/c9_nopack_100mhz/** -text
+
+/logs/ddr_control_20261102/** -text
+
+/logs/c8_comb4_baseline_20261102/** -text
+
+/logs/ddr_fix_20261102.json -text
+
+/logs/ddr_fix_console_20261102.log -text
+
+/logs/c9_ddr_gate_20261102_183619.json -text
+
+/fpga_bitstreams/c9_display_fix_100mhz/** -text
+
+/firmware/c9_camera_timefix/** -text
+
+/logs/c9_display_c2/** -text
+
+/logs/c9_display_board_20261102.json -text
+
+/logs/c9_time_baseline_20261102.json -text
+
+/tools/test_c9_display_c2.py -text
+
+/config/c9_active_profile.json -text
+
+/tools/prepare_c9_display_fix.py -text
+
+/logs/c10_after_camera_time_failure_20261102.log -text
+
+/logs/c9_display_c2_selftest.json -text
+
+/logs/c9_board_attempts_20261101.json -text
+
+/tools/audit_c9_display_fix.py -text
+
+/tools/build_c9_camera_timefix.py -text
+
+/logs/c9_display_implementation_audit_20261102.json -text
+
+/logs/c10_after_camera_format_failure_20261102.log -text
+
+/logs/c9_time_fixed_20261102.json -text
+
+/tools/run_c9_display_fix.ps1 -text
+
+/tools/test_c9_time_progress.py -text
+
+/logs/c9_scanout_baseline_20261102.json -text
+
+/tools/test_c9_uart_hex_format.py -text
+
+/tools/report_c9_display_fix.py -text
+
+/logs/c9_camera_geometry_phase_20261102.json -text
+
+/logs/c9_uart_hex_format_20261102.json -text
+
+/config/c9_display_profile_20261102.json -text
+
+/tools/test_c9_scanout_startup.py -text
+
+/logs/c9_scanout_fixed_20261102.json -text
+
+/logs/c9_display_board_console_20261102.log -text
+
+/logs/c9_uart_hex_baseline_20261102.json -text
+
+/firmware/c9_camera_geometry/build.log -text
+
+/firmware/c9_camera_geometry/build_id.h -text
+
+/firmware/c9_camera_geometry/BUILD_RECORD.json -text
+
+/firmware/c9_camera_geometry/c9_geometry.bin -text
+
+/firmware/c9_camera_geometry/c9_geometry.elf -text
+
+/firmware/c9_camera_geometry/c9_geometry.hex -text
+
+/firmware/c9_camera_geometry/c9_geometry.map -text
+
+/firmware/c9_camera_geometry/main.c -text
+
+/fpga_bitstreams/c9_camera_geometry_100mhz/BUILD_RECORD.json -text
+
+/fpga_bitstreams/c9_camera_geometry_100mhz/soc_physical.bit -text
+
+/fpga_bitstreams/c9_camera_geometry_100mhz/soc_physical.bus_hold.rpt -text
+
+/fpga_bitstreams/c9_camera_geometry_100mhz/soc_physical.bus_setup.rpt -text
+
+/fpga_bitstreams/c9_camera_geometry_100mhz/soc_physical.hex -text
+
+/fpga_bitstreams/c9_camera_geometry_100mhz/soc_physical.pinout.csv -text
+
+/fpga_bitstreams/c9_camera_geometry_100mhz/soc_physical.place.rpt -text
+
+/fpga_bitstreams/c9_camera_geometry_100mhz/soc_physical.review_timing.rpt -text
+
+/fpga_bitstreams/c9_phy_geometry_100mhz/BUILD_RECORD.json -text
+
+/fpga_bitstreams/c9_phy_geometry_100mhz/IMPLEMENTATION_AUDIT.json -text
+
+/fpga_bitstreams/c9_phy_geometry_100mhz/soc_physical.bit -text
+
+/fpga_bitstreams/c9_phy_geometry_100mhz/soc_physical.bus_hold.rpt -text
+
+/fpga_bitstreams/c9_phy_geometry_100mhz/soc_physical.bus_setup.rpt -text
+
+/fpga_bitstreams/c9_phy_geometry_100mhz/soc_physical.hex -text
+
+/fpga_bitstreams/c9_phy_geometry_100mhz/soc_physical.pinout.csv -text
+
+/fpga_bitstreams/c9_phy_geometry_100mhz/soc_physical.place.rpt -text
+
+/fpga_bitstreams/c9_phy_geometry_100mhz/soc_physical.review_timing.rpt -text
+
+/logs/c10_warm_boot_20261101/20261102_205833/attempt.json -text
+
+/logs/c10_warm_boot_20261101/20261102_205833/configure.log -text
+
+/logs/c10_warm_boot_20261101/20261102_205833/reference_check.json -text
+
+/logs/c10_warm_boot_20261101/20261102_205833/uart.log -text
+
+/logs/c10_warm_boot_20261101/20261102_205918/attempt.json -text
+
+/logs/c10_warm_boot_20261101/20261102_205918/configure.log -text
+
+/logs/c10_warm_boot_20261101/20261102_205918/reference_check.json -text
+
+/logs/c10_warm_boot_20261101/20261102_205918/uart.log -text
+
+/logs/c9_camera_geometry_ready_20261102.json -text
+
+/logs/c9_camera_geometry_tests_20261102.json -text
+
+/logs/c9_ddr_probe_20261101/20261102_205809/attempt.json -text
+
+/logs/c9_ddr_probe_20261101/20261102_205809/capture_tool.py -text
+
+/logs/c9_ddr_probe_20261101/20261102_205809/configure.log -text
+
+/logs/c9_ddr_probe_20261101/20261102_205809/restore_c10.log -text
+
+/logs/c9_ddr_probe_20261101/20261102_205809/samples.json -text
+
+/logs/c9_geometry_board_20261102/20261102_205807/camera_geometry.log -text
+
+/logs/c9_geometry_board_20261102/20261102_205807/ddr_status.log -text
+
+/logs/c9_geometry_board_20261102/20261102_205807/restore_c10.log -text
+
+/logs/c9_geometry_board_20261102/20261102_205807/result.json -text
+
+/logs/c9_geometry_console_20261102.log -text
+
+/logs/c9_geometry_decode_tests_20261102.json -text
+
+/logs/c9_paused_checkpoint_20261102.json -text
+
+/logs/c9_pc_identity_console_20261102.log -text
+
+/logs/c9_pc_work_20261102.json -text
+
+/logs/c9_phy_geometry_decode_tests_20261102.json -text
+
+/logs/c9_phy_geometry_ready_20261102.json -text
+
+/logs/c9_phy_geometry_tests_20261102.json -text
+
+/logs/ram_diagnostic_20261101/20261102_205853/attempt.json -text
+
+/logs/ram_diagnostic_20261101/20261102_205853/c9_probe_image.py -text
+
+/logs/ram_diagnostic_20261101/20261102_205853/check_c9_geometry.py -text
+
+/logs/ram_diagnostic_20261101/20261102_205853/check_c9_uart.py -text
+
+/logs/ram_diagnostic_20261101/20261102_205853/configure_probe.log -text
+
+/logs/ram_diagnostic_20261101/20261102_205853/firmware_build_record.json -text
+
+/logs/ram_diagnostic_20261101/20261102_205853/geometry_observation.json -text
+
+/logs/ram_diagnostic_20261101/20261102_205853/implementation_audit.json -text
+
+/logs/ram_diagnostic_20261101/20261102_205853/load_readback.log -text
+
+/logs/ram_diagnostic_20261101/20261102_205853/resume.log -text
+
+/logs/ram_diagnostic_20261101/20261102_205853/run_ram_diagnostic.py -text
+
+/logs/ram_diagnostic_20261101/20261102_205853/uart.log -text
+
+/team_work/03_ai_soc/C9_CAMERA_GEOMETRY_20261102.md -text
+
+/team_work/03_ai_soc/C9_CSI_PC_READY_20261102.md -text
+
+/team_work/03_ai_soc/c9_live/camera_geometry/c9_capture_geometry.sv -text
+
+/team_work/03_ai_soc/c9_live/camera_geometry/c9_phy_geometry.sv -text
+
+/team_work/03_ai_soc/c9_live/camera_geometry/tb_capture_geometry.sv -text
+
+/team_work/03_ai_soc/c9_live/camera_geometry/tb_phy_geometry.sv -text
+
+/team_work/03_ai_soc/c9_live/README.md -text
+
+/team_work/03_ai_soc/CURRENT_BOARD_CHECKPOINT_20261101.md -text
+
+/team_work/03_ai_soc/README.md -text
+
+/tools/audit_c9_camera_geometry.py -text
+
+/tools/audit_c9_phy_geometry.py -text
+
+/tools/build_c9_geometry_firmware.py -text
+
+/tools/check_c9_geometry.py -text
+
+/tools/check_c9_phy_geometry.py -text
+
+/tools/prepare_c9_camera_geometry.py -text
+
+/tools/prepare_c9_geometry_capture.py -text
+
+/tools/prepare_c9_phy_geometry.py -text
+
+/tools/report_c9_camera_geometry.py -text
+
+/tools/report_c9_phy_geometry.py -text
+
+/tools/run_c9_camera_geometry.ps1 -text
+
+/tools/run_c9_geometry.py -text
+
+/tools/run_c9_phy_geometry.ps1 -text
+
+/tools/run_c9_phy_geometry.py -text
+
+/tools/test_c9_camera_geometry.py -text
+
+/tools/test_c9_geometry_decode.py -text
+
+/tools/test_c9_phy_geometry.py -text
+
+/tools/test_c9_phy_geometry_decode.py -text
+
+/logs/c10_warm_boot_20261101/20261103_105137/attempt.json -text
+
+/logs/c10_warm_boot_20261101/20261103_105137/configure.log -text
+
+/logs/c10_warm_boot_20261101/20261103_105137/reference_check.json -text
+
+/logs/c10_warm_boot_20261101/20261103_105137/uart.log -text
+
+/logs/c10_warm_boot_20261101/20261103_105221/attempt.json -text
+
+/logs/c10_warm_boot_20261101/20261103_105221/configure.log -text
+
+/logs/c10_warm_boot_20261101/20261103_105221/reference_check.json -text
+
+/logs/c10_warm_boot_20261101/20261103_105221/uart.log -text
+
+/logs/c10_warm_boot_20261101/20261103_105400/attempt.json -text
+
+/logs/c10_warm_boot_20261101/20261103_105400/configure.log -text
+
+/logs/c10_warm_boot_20261101/20261103_105400/reference_check.json -text
+
+/logs/c10_warm_boot_20261101/20261103_105400/uart.log -text
+
+/logs/c10_warm_boot_20261101/20261103_105443/attempt.json -text
+
+/logs/c10_warm_boot_20261101/20261103_105443/configure.log -text
+
+/logs/c10_warm_boot_20261101/20261103_105443/reference_check.json -text
+
+/logs/c10_warm_boot_20261101/20261103_105443/uart.log -text
+
+/logs/c10_warm_boot_20261101/20261103_105707/attempt.json -text
+
+/logs/c10_warm_boot_20261101/20261103_105707/configure.log -text
+
+/logs/c10_warm_boot_20261101/20261103_105707/reference_check.json -text
+
+/logs/c10_warm_boot_20261101/20261103_105707/uart.log -text
+
+/logs/c10_warm_boot_20261101/20261103_105750/attempt.json -text
+
+/logs/c10_warm_boot_20261101/20261103_105750/configure.log -text
+
+/logs/c10_warm_boot_20261101/20261103_105750/reference_check.json -text
+
+/logs/c10_warm_boot_20261101/20261103_105750/uart.log -text
+
+/logs/c9_ddr_probe_20261101/20261103_105113/attempt.json -text
+
+/logs/c9_ddr_probe_20261101/20261103_105113/capture_tool.py -text
+
+/logs/c9_ddr_probe_20261101/20261103_105113/configure.log -text
+
+/logs/c9_ddr_probe_20261101/20261103_105113/restore_c10.log -text
+
+/logs/c9_ddr_probe_20261101/20261103_105113/samples.json -text
+
+/logs/c9_ddr_probe_20261101/20261103_105336/attempt.json -text
+
+/logs/c9_ddr_probe_20261101/20261103_105336/capture_tool.py -text
+
+/logs/c9_ddr_probe_20261101/20261103_105336/configure.log -text
+
+/logs/c9_ddr_probe_20261101/20261103_105336/restore_c10.log -text
+
+/logs/c9_ddr_probe_20261101/20261103_105336/samples.json -text
+
+/logs/c9_ddr_probe_20261101/20261103_105643/attempt.json -text
+
+/logs/c9_ddr_probe_20261101/20261103_105643/capture_tool.py -text
+
+/logs/c9_ddr_probe_20261101/20261103_105643/configure.log -text
+
+/logs/c9_ddr_probe_20261101/20261103_105643/restore_c10.log -text
+
+/logs/c9_ddr_probe_20261101/20261103_105643/samples.json -text
+
+/logs/c9_geometry_board_20261102/20261103_105641/camera_geometry.log -text
+
+/logs/c9_geometry_board_20261102/20261103_105641/ddr_status.log -text
+
+/logs/c9_geometry_board_20261102/20261103_105641/restore_c10.log -text
+
+/logs/c9_geometry_board_20261102/20261103_105641/result.json -text
+
+/logs/c9_geometry_control_20261103.log -text
+
+/logs/c9_phy_board_result_20261103.json -text
+
+/logs/c9_phy_geometry_board_20261102/20261103_105110/camera_geometry.log -text
+
+/logs/c9_phy_geometry_board_20261102/20261103_105110/ddr_status.log -text
+
+/logs/c9_phy_geometry_board_20261102/20261103_105110/restore_c10.log -text
+
+/logs/c9_phy_geometry_board_20261102/20261103_105110/result.json -text
+
+/logs/c9_phy_geometry_board_20261102/20261103_105333/camera_geometry.log -text
+
+/logs/c9_phy_geometry_board_20261102/20261103_105333/ddr_status.log -text
+
+/logs/c9_phy_geometry_board_20261102/20261103_105333/restore_c10.log -text
+
+/logs/c9_phy_geometry_board_20261102/20261103_105333/result.json -text
+
+/logs/c9_phy_geometry_console_20261103.log -text
+
+/logs/c9_phy_geometry_repeat_20261103.log -text
+
+/logs/ram_diagnostic_20261101/20261103_105157/attempt.json -text
+
+/logs/ram_diagnostic_20261101/20261103_105157/c9_probe_image.py -text
+
+/logs/ram_diagnostic_20261101/20261103_105157/check_c9_geometry.py -text
+
+/logs/ram_diagnostic_20261101/20261103_105157/check_c9_phy_geometry.py -text
+
+/logs/ram_diagnostic_20261101/20261103_105157/check_c9_uart.py -text
+
+/logs/ram_diagnostic_20261101/20261103_105157/configure_probe.log -text
+
+/logs/ram_diagnostic_20261101/20261103_105157/firmware_build_record.json -text
+
+/logs/ram_diagnostic_20261101/20261103_105157/geometry_observation.json -text
+
+/logs/ram_diagnostic_20261101/20261103_105157/implementation_audit.json -text
+
+/logs/ram_diagnostic_20261101/20261103_105157/load_readback.log -text
+
+/logs/ram_diagnostic_20261101/20261103_105157/resume.log -text
+
+/logs/ram_diagnostic_20261101/20261103_105157/run_ram_diagnostic.py -text
+
+/logs/ram_diagnostic_20261101/20261103_105157/uart.log -text
+
+/logs/ram_diagnostic_20261101/20261103_105419/attempt.json -text
+
+/logs/ram_diagnostic_20261101/20261103_105419/c9_probe_image.py -text
+
+/logs/ram_diagnostic_20261101/20261103_105419/check_c9_geometry.py -text
+
+/logs/ram_diagnostic_20261101/20261103_105419/check_c9_phy_geometry.py -text
+
+/logs/ram_diagnostic_20261101/20261103_105419/check_c9_uart.py -text
+
+/logs/ram_diagnostic_20261101/20261103_105419/configure_probe.log -text
+
+/logs/ram_diagnostic_20261101/20261103_105419/firmware_build_record.json -text
+
+/logs/ram_diagnostic_20261101/20261103_105419/implementation_audit.json -text
+
+/logs/ram_diagnostic_20261101/20261103_105419/load_readback.log -text
+
+/logs/ram_diagnostic_20261101/20261103_105419/resume.log -text
+
+/logs/ram_diagnostic_20261101/20261103_105419/run_ram_diagnostic.py -text
+
+/logs/ram_diagnostic_20261101/20261103_105419/uart.log -text
+
+/logs/ram_diagnostic_20261101/20261103_105727/attempt.json -text
+
+/logs/ram_diagnostic_20261101/20261103_105727/c9_probe_image.py -text
+
+/logs/ram_diagnostic_20261101/20261103_105727/check_c9_geometry.py -text
+
+/logs/ram_diagnostic_20261101/20261103_105727/check_c9_uart.py -text
+
+/logs/ram_diagnostic_20261101/20261103_105727/configure_probe.log -text
+
+/logs/ram_diagnostic_20261101/20261103_105727/firmware_build_record.json -text
+
+/logs/ram_diagnostic_20261101/20261103_105727/geometry_observation.json -text
+
+/logs/ram_diagnostic_20261101/20261103_105727/implementation_audit.json -text
+
+/logs/ram_diagnostic_20261101/20261103_105727/load_readback.log -text
+
+/logs/ram_diagnostic_20261101/20261103_105727/resume.log -text
+
+/logs/ram_diagnostic_20261101/20261103_105727/run_ram_diagnostic.py -text
+
+/logs/ram_diagnostic_20261101/20261103_105727/uart.log -text
+
+/team_work/03_ai_soc/C9_CSI_BOARD_20261103.md -text
+
+/tools/report_c9_phy_board_20261103.py -text
+
+/config/c9_packet_probe_profile_20261103.json -text
+
+/fpga_bitstreams/c9_packet_compact_100mhz/BUILD_RECORD.json -text
+
+/fpga_bitstreams/c9_packet_compact_100mhz/IMPLEMENTATION_AUDIT.json -text
+
+/fpga_bitstreams/c9_packet_compact_100mhz/soc_physical.bit -text
+
+/fpga_bitstreams/c9_packet_compact_100mhz/soc_physical.bus_hold.rpt -text
+
+/fpga_bitstreams/c9_packet_compact_100mhz/soc_physical.bus_setup.rpt -text
+
+/fpga_bitstreams/c9_packet_compact_100mhz/soc_physical.hex -text
+
+/fpga_bitstreams/c9_packet_compact_100mhz/soc_physical.pinout.csv -text
+
+/fpga_bitstreams/c9_packet_compact_100mhz/soc_physical.place.rpt -text
+
+/fpga_bitstreams/c9_packet_compact_100mhz/soc_physical.review_timing.rpt -text
+
+/logs/c10_warm_boot_20261101/20261103_114316/attempt.json -text
+
+/logs/c10_warm_boot_20261101/20261103_114316/configure.log -text
+
+/logs/c10_warm_boot_20261101/20261103_114316/reference_check.json -text
+
+/logs/c10_warm_boot_20261101/20261103_114316/uart.log -text
+
+/logs/c10_warm_boot_20261101/20261103_114400/attempt.json -text
+
+/logs/c10_warm_boot_20261101/20261103_114400/configure.log -text
+
+/logs/c10_warm_boot_20261101/20261103_114400/reference_check.json -text
+
+/logs/c10_warm_boot_20261101/20261103_114400/uart.log -text
+
+/logs/c10_warm_boot_20261101/20261103_114705/attempt.json -text
+
+/logs/c10_warm_boot_20261101/20261103_114705/configure.log -text
+
+/logs/c10_warm_boot_20261101/20261103_114705/reference_check.json -text
+
+/logs/c10_warm_boot_20261101/20261103_114705/uart.log -text
+
+/logs/c10_warm_boot_20261101/20261103_114748/attempt.json -text
+
+/logs/c10_warm_boot_20261101/20261103_114748/configure.log -text
+
+/logs/c10_warm_boot_20261101/20261103_114748/reference_check.json -text
+
+/logs/c10_warm_boot_20261101/20261103_114748/uart.log -text
+
+/logs/c9_ddr_probe_20261101/20261103_114251/attempt.json -text
+
+/logs/c9_ddr_probe_20261101/20261103_114251/capture_tool.py -text
+
+/logs/c9_ddr_probe_20261101/20261103_114251/configure.log -text
+
+/logs/c9_ddr_probe_20261101/20261103_114251/restore_c10.log -text
+
+/logs/c9_ddr_probe_20261101/20261103_114251/samples.json -text
+
+/logs/c9_ddr_probe_20261101/20261103_114641/attempt.json -text
+
+/logs/c9_ddr_probe_20261101/20261103_114641/capture_tool.py -text
+
+/logs/c9_ddr_probe_20261101/20261103_114641/configure.log -text
+
+/logs/c9_ddr_probe_20261101/20261103_114641/restore_c10.log -text
+
+/logs/c9_ddr_probe_20261101/20261103_114641/samples.json -text
+
+/logs/c9_geometry_implementation_comparison_20261103.json -text
+
+/logs/c9_packet_board_report_console_20261103.log -text
+
+/logs/c9_packet_board_result_20261103.json -text
+
+/logs/c9_packet_checkpoint_20261103.json -text
+
+/logs/c9_packet_compact_board_20261103/20261103_114248/camera_geometry.log -text
+
+/logs/c9_packet_compact_board_20261103/20261103_114248/ddr_status.log -text
+
+/logs/c9_packet_compact_board_20261103/20261103_114248/restore_c10.log -text
+
+/logs/c9_packet_compact_board_20261103/20261103_114248/result.json -text
+
+/logs/c9_packet_compact_board_20261103/20261103_114639/camera_geometry.log -text
+
+/logs/c9_packet_compact_board_20261103/20261103_114639/ddr_status.log -text
+
+/logs/c9_packet_compact_board_20261103/20261103_114639/restore_c10.log -text
+
+/logs/c9_packet_compact_board_20261103/20261103_114639/result.json -text
+
+/logs/c9_packet_compact_console_20261103.log -text
+
+/logs/c9_packet_compact_decode_tests_20261103.json -text
+
+/logs/c9_packet_compact_ready_20261103.json -text
+
+/logs/c9_packet_compact_repeat_20261103.log -text
+
+/logs/c9_packet_compact_tests_20261103.json -text
+
+/logs/c9_packet_decode_tests_20261103.json -text
+
+/logs/c9_packet_full_resource_failure_20261103.log -text
+
+/logs/c9_packet_identity_tests_20261103.json -text
+
+/logs/c9_packet_progress_20261103.json -text
+
+/logs/c9_packet_tests_20261103.json -text
+
+/logs/ram_diagnostic_20261101/20261103_114336/attempt.json -text
+
+/logs/ram_diagnostic_20261101/20261103_114336/c9_probe_image.py -text
+
+/logs/ram_diagnostic_20261101/20261103_114336/check_c9_geometry.py -text
+
+/logs/ram_diagnostic_20261101/20261103_114336/check_c9_packet_compact.py -text
+
+/logs/ram_diagnostic_20261101/20261103_114336/check_c9_packet_compact_v2.py -text
+
+/logs/ram_diagnostic_20261101/20261103_114336/check_c9_uart.py -text
+
+/logs/ram_diagnostic_20261101/20261103_114336/configure_probe.log -text
+
+/logs/ram_diagnostic_20261101/20261103_114336/firmware_build_record.json -text
+
+/logs/ram_diagnostic_20261101/20261103_114336/implementation_audit.json -text
+
+/logs/ram_diagnostic_20261101/20261103_114336/load_readback.log -text
+
+/logs/ram_diagnostic_20261101/20261103_114336/packet_observation_v2.json -text
+
+/logs/ram_diagnostic_20261101/20261103_114336/resume.log -text
+
+/logs/ram_diagnostic_20261101/20261103_114336/run_ram_diagnostic.py -text
+
+/logs/ram_diagnostic_20261101/20261103_114336/uart.log -text
+
+/logs/ram_diagnostic_20261101/20261103_114725/attempt.json -text
+
+/logs/ram_diagnostic_20261101/20261103_114725/c9_probe_image.py -text
+
+/logs/ram_diagnostic_20261101/20261103_114725/check_c9_geometry.py -text
+
+/logs/ram_diagnostic_20261101/20261103_114725/check_c9_packet_compact_v2.py -text
+
+/logs/ram_diagnostic_20261101/20261103_114725/check_c9_uart.py -text
+
+/logs/ram_diagnostic_20261101/20261103_114725/configure_probe.log -text
+
+/logs/ram_diagnostic_20261101/20261103_114725/firmware_build_record.json -text
+
+/logs/ram_diagnostic_20261101/20261103_114725/geometry_observation.json -text
+
+/logs/ram_diagnostic_20261101/20261103_114725/implementation_audit.json -text
+
+/logs/ram_diagnostic_20261101/20261103_114725/load_readback.log -text
+
+/logs/ram_diagnostic_20261101/20261103_114725/resume.log -text
+
+/logs/ram_diagnostic_20261101/20261103_114725/run_ram_diagnostic.py -text
+
+/logs/ram_diagnostic_20261101/20261103_114725/uart.log -text
+
+/team_work/03_ai_soc/c9_live/camera_geometry/c9_packet_probe.sv -text
+
+/team_work/03_ai_soc/c9_live/camera_geometry/c9_packet_probe_compact.sv -text
+
+/team_work/03_ai_soc/c9_live/camera_geometry/tb_packet_compact.sv -text
+
+/team_work/03_ai_soc/c9_live/camera_geometry/tb_packet_probe.sv -text
+
+/team_work/03_ai_soc/C9_PACKET_PROBE_20261103.md -text
+
+/tools/audit_c9_packet.py -text
+
+/tools/audit_c9_packet_compact.py -text
+
+/tools/check_c9_packet.py -text
+
+/tools/check_c9_packet_compact.py -text
+
+/tools/check_c9_packet_compact_v2.py -text
+
+/tools/prepare_c9_packet.py -text
+
+/tools/prepare_c9_packet_compact.py -text
+
+/tools/report_c9_packet.py -text
+
+/tools/report_c9_packet_board.py -text
+
+/tools/report_c9_packet_compact.py -text
+
+/tools/run_c9_packet.ps1 -text
+
+/tools/run_c9_packet.py -text
+
+/tools/run_c9_packet_compact.ps1 -text
+
+/tools/run_c9_packet_compact.py -text
+
+/tools/run_c9_packet_compact_v2.py -text
+
+/tools/test_c9_packet_compact.py -text
+
+/tools/test_c9_packet_compact_decode.py -text
+
+/tools/test_c9_packet_decode.py -text
+
+/tools/test_c9_packet_identity.py -text
+
+/tools/test_c9_packet_probe.py -text
+
+/fpga_bitstreams/c9_sideband_seed3_100mhz/BUILD_RECORD.json -text
+/fpga_bitstreams/c9_sideband_seed3_100mhz/IMPLEMENTATION_AUDIT.json -text
+/fpga_bitstreams/c9_sideband_seed3_100mhz/soc_physical.bit -text
+/fpga_bitstreams/c9_sideband_seed3_100mhz/soc_physical.bus_hold.rpt -text
+/fpga_bitstreams/c9_sideband_seed3_100mhz/soc_physical.bus_setup.rpt -text
+/fpga_bitstreams/c9_sideband_seed3_100mhz/soc_physical.hex -text
+/fpga_bitstreams/c9_sideband_seed3_100mhz/soc_physical.pinout.csv -text
+/fpga_bitstreams/c9_sideband_seed3_100mhz/soc_physical.place.rpt -text
+/fpga_bitstreams/c9_sideband_seed3_100mhz/soc_physical.review_timing.rpt -text
+/logs/c10_warm_boot_20261101/20261103_125746/attempt.json -text
+/logs/c10_warm_boot_20261101/20261103_125746/configure.log -text
+/logs/c10_warm_boot_20261101/20261103_125746/reference_check.json -text
+/logs/c10_warm_boot_20261101/20261103_125746/uart.log -text
+/logs/c10_warm_boot_20261101/20261103_125806/attempt.json -text
+/logs/c10_warm_boot_20261101/20261103_125806/configure.log -text
+/logs/c10_warm_boot_20261101/20261103_125806/reference_check.json -text
+/logs/c10_warm_boot_20261101/20261103_125806/uart.log -text
+/logs/c10_warm_boot_20261101/20261103_130017/attempt.json -text
+/logs/c10_warm_boot_20261101/20261103_130017/configure.log -text
+/logs/c10_warm_boot_20261101/20261103_130017/reference_check.json -text
+/logs/c10_warm_boot_20261101/20261103_130017/uart.log -text
+/logs/c10_warm_boot_20261101/20261103_130101/attempt.json -text
+/logs/c10_warm_boot_20261101/20261103_130101/configure.log -text
+/logs/c10_warm_boot_20261101/20261103_130101/reference_check.json -text
+/logs/c10_warm_boot_20261101/20261103_130101/uart.log -text
+/logs/c10_warm_boot_20261101/20261103_130758/attempt.json -text
+/logs/c10_warm_boot_20261101/20261103_130758/configure.log -text
+/logs/c10_warm_boot_20261101/20261103_130758/reference_check.json -text
+/logs/c10_warm_boot_20261101/20261103_130758/uart.log -text
+/logs/c10_warm_boot_20261101/20261103_130842/attempt.json -text
+/logs/c10_warm_boot_20261101/20261103_130842/configure.log -text
+/logs/c10_warm_boot_20261101/20261103_130842/reference_check.json -text
+/logs/c10_warm_boot_20261101/20261103_130842/uart.log -text
+/logs/c9_ddr_probe_20261101/20261103_125734/attempt.json -text
+/logs/c9_ddr_probe_20261101/20261103_125734/configure.log -text
+/logs/c9_ddr_probe_20261101/20261103_125734/restore_c10.log -text
+/logs/c9_ddr_probe_20261101/20261103_125953/attempt.json -text
+/logs/c9_ddr_probe_20261101/20261103_125953/capture_tool.py -text
+/logs/c9_ddr_probe_20261101/20261103_125953/configure.log -text
+/logs/c9_ddr_probe_20261101/20261103_125953/restore_c10.log -text
+/logs/c9_ddr_probe_20261101/20261103_125953/samples.json -text
+/logs/c9_ddr_probe_20261101/20261103_130734/attempt.json -text
+/logs/c9_ddr_probe_20261101/20261103_130734/capture_tool.py -text
+/logs/c9_ddr_probe_20261101/20261103_130734/configure.log -text
+/logs/c9_ddr_probe_20261101/20261103_130734/restore_c10.log -text
+/logs/c9_ddr_probe_20261101/20261103_130734/samples.json -text
+/logs/c9_pack40_mapping_20261103.json -text
+/logs/c9_sideband_board_report_console_20261103.log -text
+/logs/c9_sideband_board_result_20261103.json -text
+/logs/c9_sideband_build_evidence_20261103/sideband/SIDEBAND_MANIFEST.json -text
+/logs/c9_sideband_build_evidence_20261103/sideband/outflow/soc_physical.place.out -text
+/logs/c9_sideband_build_evidence_20261103/sideband_raw10/SIDEBAND_MANIFEST.json -text
+/logs/c9_sideband_build_evidence_20261103/sideband_raw10/outflow/soc_physical.place.out -text
+/logs/c9_sideband_build_evidence_20261103/sideband_seed3/HOST_ASSETS.json -text
+/logs/c9_sideband_build_evidence_20261103/sideband_seed3/LPF_REUSE.json -text
+/logs/c9_sideband_build_evidence_20261103/sideband_seed3/MAP_REUSE.json -text
+/logs/c9_sideband_build_evidence_20261103/sideband_seed3/SIDEBAND_MANIFEST.json -text
+/logs/c9_sideband_build_evidence_20261103/sideband_seed3/implementation_audit.json -text
+/logs/c9_sideband_build_evidence_20261103/sideband_seed3/outflow/soc_physical.place.out -text
+/logs/c9_sideband_build_evidence_20261103/sideband_small/SIDEBAND_MANIFEST.json -text
+/logs/c9_sideband_build_evidence_20261103/sideband_small/outflow/soc_physical.place.out -text
+/logs/c9_sideband_checkpoint_20261103.json -text
+/logs/c9_sideband_decode_tests_20261103.json -text
+/logs/c9_sideband_progress_20261103.json -text
+/logs/c9_sideband_raw10_decode_tests_20261103.json -text
+/logs/c9_sideband_raw10_tests_20261103.json -text
+/logs/c9_sideband_seed3_board_20261103/20261103_125732/ddr_status.log -text
+/logs/c9_sideband_seed3_board_20261103/20261103_125732/restore_c10.log -text
+/logs/c9_sideband_seed3_board_20261103/20261103_125732/result.json -text
+/logs/c9_sideband_seed3_board_20261103/20261103_125951/camera_geometry.log -text
+/logs/c9_sideband_seed3_board_20261103/20261103_125951/ddr_status.log -text
+/logs/c9_sideband_seed3_board_20261103/20261103_125951/restore_c10.log -text
+/logs/c9_sideband_seed3_board_20261103/20261103_125951/result.json -text
+/logs/c9_sideband_seed3_board_20261103/20261103_130732/camera_geometry.log -text
+/logs/c9_sideband_seed3_board_20261103/20261103_130732/ddr_status.log -text
+/logs/c9_sideband_seed3_board_20261103/20261103_130732/restore_c10.log -text
+/logs/c9_sideband_seed3_board_20261103/20261103_130732/result.json -text
+/logs/c9_sideband_seed3_console_20261103.log -text
+/logs/c9_sideband_seed3_ready_20261103.json -text
+/logs/c9_sideband_seed3_repeat_20261103.log -text
+/logs/c9_sideband_seed3_retry_20261103.log -text
+/logs/c9_sideband_small_decode_tests_20261103.json -text
+/logs/c9_sideband_small_tests_20261103.json -text
+/logs/c9_sideband_tests_20261103.json -text
+/logs/c9_sideband_vendor_patch_audit_20261103.json -text
+/logs/ram_diagnostic_20261101/20261103_130037/attempt.json -text
+/logs/ram_diagnostic_20261101/20261103_130037/c9_probe_image.py -text
+/logs/ram_diagnostic_20261101/20261103_130037/check_c9_geometry.py -text
+/logs/ram_diagnostic_20261101/20261103_130037/check_c9_sideband_seed3.py -text
+/logs/ram_diagnostic_20261101/20261103_130037/check_c9_uart.py -text
+/logs/ram_diagnostic_20261101/20261103_130037/configure_probe.log -text
+/logs/ram_diagnostic_20261101/20261103_130037/firmware_build_record.json -text
+/logs/ram_diagnostic_20261101/20261103_130037/geometry_observation.json -text
+/logs/ram_diagnostic_20261101/20261103_130037/implementation_audit.json -text
+/logs/ram_diagnostic_20261101/20261103_130037/load_readback.log -text
+/logs/ram_diagnostic_20261101/20261103_130037/readback.bin -text
+/logs/ram_diagnostic_20261101/20261103_130037/resume.log -text
+/logs/ram_diagnostic_20261101/20261103_130037/run_ram_diagnostic.py -text
+/logs/ram_diagnostic_20261101/20261103_130037/uart.log -text
+/logs/ram_diagnostic_20261101/20261103_130818/attempt.json -text
+/logs/ram_diagnostic_20261101/20261103_130818/c9_probe_image.py -text
+/logs/ram_diagnostic_20261101/20261103_130818/check_c9_geometry.py -text
+/logs/ram_diagnostic_20261101/20261103_130818/check_c9_sideband_seed3.py -text
+/logs/ram_diagnostic_20261101/20261103_130818/check_c9_uart.py -text
+/logs/ram_diagnostic_20261101/20261103_130818/configure_probe.log -text
+/logs/ram_diagnostic_20261101/20261103_130818/firmware_build_record.json -text
+/logs/ram_diagnostic_20261101/20261103_130818/geometry_observation.json -text
+/logs/ram_diagnostic_20261101/20261103_130818/implementation_audit.json -text
+/logs/ram_diagnostic_20261101/20261103_130818/load_readback.log -text
+/logs/ram_diagnostic_20261101/20261103_130818/readback.bin -text
+/logs/ram_diagnostic_20261101/20261103_130818/resume.log -text
+/logs/ram_diagnostic_20261101/20261103_130818/run_ram_diagnostic.py -text
+/logs/ram_diagnostic_20261101/20261103_130818/uart.log -text
+/team_work/03_ai_soc/C9_PIXEL_SIDEBAND_20261103.md -text
+/team_work/03_ai_soc/c9_live/camera_geometry/c9_sideband_probe.sv -text
+/team_work/03_ai_soc/c9_live/camera_geometry/c9_sideband_probe_small.sv -text
+/team_work/03_ai_soc/c9_live/camera_geometry/tb_sideband_probe.sv -text
+/team_work/03_ai_soc/c9_live/camera_geometry/tb_sideband_small.sv -text
+/tools/audit_c9_sideband.py -text
+/tools/audit_c9_sideband_raw10.py -text
+/tools/audit_c9_sideband_seed3.py -text
+/tools/audit_c9_sideband_small.py -text
+/tools/check_c9_sideband.py -text
+/tools/check_c9_sideband_raw10.py -text
+/tools/check_c9_sideband_seed3.py -text
+/tools/check_c9_sideband_small.py -text
+/tools/generate_c9_sideband_bit.ps1 -text
+/tools/patch_c9_raw10_sideband_vendor.py -text
+/tools/patch_c9_sideband_vendor.py -text
+/tools/prepare_c9_sideband.py -text
+/tools/prepare_c9_sideband_raw10.py -text
+/tools/prepare_c9_sideband_seed3.py -text
+/tools/prepare_c9_sideband_small.py -text
+/tools/report_c9_sideband.py -text
+/tools/report_c9_sideband_board.py -text
+/tools/report_c9_sideband_raw10.py -text
+/tools/report_c9_sideband_raw10_board.py -text
+/tools/report_c9_sideband_seed3.py -text
+/tools/report_c9_sideband_seed3_board.py -text
+/tools/report_c9_sideband_small.py -text
+/tools/reuse_c9_sideband_map.py -text
+/tools/run_c9_sideband.ps1 -text
+/tools/run_c9_sideband.py -text
+/tools/run_c9_sideband_raw10.ps1 -text
+/tools/run_c9_sideband_raw10.py -text
+/tools/run_c9_sideband_seed3.ps1 -text
+/tools/run_c9_sideband_seed3.py -text
+/tools/run_c9_sideband_small.ps1 -text
+/tools/run_c9_sideband_small.py -text
+/tools/test_c9_sideband.py -text
+/tools/test_c9_sideband_decode.py -text
+/tools/test_c9_sideband_raw10.py -text
+/tools/test_c9_sideband_raw10_decode.py -text
+/tools/test_c9_sideband_small.py -text
+/tools/test_c9_sideband_small_decode.py -text
+/logs/c9_sideband_handoff_20261103.json -text
+
+/fpga_bitstreams/c9_stage_min_100mhz/BUILD_RECORD.json -text
+/fpga_bitstreams/c9_stage_min_100mhz/IMPLEMENTATION_AUDIT.json -text
+/fpga_bitstreams/c9_stage_min_100mhz/soc_physical.bit -text
+/fpga_bitstreams/c9_stage_min_100mhz/soc_physical.bus_hold.rpt -text
+/fpga_bitstreams/c9_stage_min_100mhz/soc_physical.bus_setup.rpt -text
+/fpga_bitstreams/c9_stage_min_100mhz/soc_physical.hex -text
+/fpga_bitstreams/c9_stage_min_100mhz/soc_physical.pinout.csv -text
+/fpga_bitstreams/c9_stage_min_100mhz/soc_physical.place.rpt -text
+/fpga_bitstreams/c9_stage_min_100mhz/soc_physical.review_timing.rpt -text
+/logs/c10_warm_boot_20261101/20261103_160155/attempt.json -text
+/logs/c10_warm_boot_20261101/20261103_160155/configure.log -text
+/logs/c10_warm_boot_20261101/20261103_160155/reference_check.json -text
+/logs/c10_warm_boot_20261101/20261103_160155/uart.log -text
+/logs/c10_warm_boot_20261101/20261103_160237/attempt.json -text
+/logs/c10_warm_boot_20261101/20261103_160237/configure.log -text
+/logs/c10_warm_boot_20261101/20261103_160237/reference_check.json -text
+/logs/c10_warm_boot_20261101/20261103_160237/uart.log -text
+/logs/c10_warm_boot_20261101/20261103_160437/attempt.json -text
+/logs/c10_warm_boot_20261101/20261103_160437/configure.log -text
+/logs/c10_warm_boot_20261101/20261103_160437/reference_check.json -text
+/logs/c10_warm_boot_20261101/20261103_160437/uart.log -text
+/logs/c10_warm_boot_20261101/20261103_160518/attempt.json -text
+/logs/c10_warm_boot_20261101/20261103_160518/configure.log -text
+/logs/c10_warm_boot_20261101/20261103_160518/reference_check.json -text
+/logs/c10_warm_boot_20261101/20261103_160518/uart.log -text
+/logs/c9_ddr_probe_20261101/20261103_160133/attempt.json -text
+/logs/c9_ddr_probe_20261101/20261103_160133/capture_tool.py -text
+/logs/c9_ddr_probe_20261101/20261103_160133/configure.log -text
+/logs/c9_ddr_probe_20261101/20261103_160133/restore_c10.log -text
+/logs/c9_ddr_probe_20261101/20261103_160133/samples.json -text
+/logs/c9_ddr_probe_20261101/20261103_160414/attempt.json -text
+/logs/c9_ddr_probe_20261101/20261103_160414/capture_tool.py -text
+/logs/c9_ddr_probe_20261101/20261103_160414/configure.log -text
+/logs/c9_ddr_probe_20261101/20261103_160414/restore_c10.log -text
+/logs/c9_ddr_probe_20261101/20261103_160414/samples.json -text
+/logs/c9_stage_build_evidence_20261103/stage/STAGE_MANIFEST.json -text
+/logs/c9_stage_build_evidence_20261103/stage/cdc_binding.json -text
+/logs/c9_stage_build_evidence_20261103/stage/outflow/soc_physical.place.rpt -text
+/logs/c9_stage_build_evidence_20261103/stage/outflow/soc_physical.route.out -text
+/logs/c9_stage_build_evidence_20261103/stage_min/STAGE_MANIFEST.json -text
+/logs/c9_stage_build_evidence_20261103/stage_min/cdc_binding.json -text
+/logs/c9_stage_build_evidence_20261103/stage_min/implementation_audit.json -text
+/logs/c9_stage_build_evidence_20261103/stage_min/outflow/soc_physical.place.rpt -text
+/logs/c9_stage_build_evidence_20261103/stage_min/outflow/soc_physical.route.out -text
+/logs/c9_stage_chain_tests_20261103.json -text
+/logs/c9_stage_checkpoint_20261103.json -text
+/logs/c9_stage_decode_tests_20261103.json -text
+/logs/c9_stage_full_stopped_20261103.json -text
+/logs/c9_stage_min_board_20261103/20261103_160131/camera_geometry.log -text
+/logs/c9_stage_min_board_20261103/20261103_160131/ddr_status.log -text
+/logs/c9_stage_min_board_20261103/20261103_160131/restore_c10.log -text
+/logs/c9_stage_min_board_20261103/20261103_160131/result.json -text
+/logs/c9_stage_min_board_20261103/20261103_160412/camera_geometry.log -text
+/logs/c9_stage_min_board_20261103/20261103_160412/ddr_status.log -text
+/logs/c9_stage_min_board_20261103/20261103_160412/restore_c10.log -text
+/logs/c9_stage_min_board_20261103/20261103_160412/result.json -text
+/logs/c9_stage_min_board_report_console_20261103.log -text
+/logs/c9_stage_min_board_report_initial_mismatch_20261103.log -text
+/logs/c9_stage_min_board_result_20261103.json -text
+/logs/c9_stage_min_capture_console_20261103.log -text
+/logs/c9_stage_min_decode_tests_20261103.json -text
+/logs/c9_stage_min_firmware_audit_20261103.json -text
+/logs/c9_stage_min_ready_20261103.json -text
+/logs/c9_stage_min_repeat_console_20261103.log -text
+/logs/ram_diagnostic_20261101/20261103_160215/attempt.json -text
+/logs/ram_diagnostic_20261101/20261103_160215/c9_probe_image.py -text
+/logs/ram_diagnostic_20261101/20261103_160215/check_c9_geometry.py -text
+/logs/ram_diagnostic_20261101/20261103_160215/check_c9_stage_min.py -text
+/logs/ram_diagnostic_20261101/20261103_160215/check_c9_uart.py -text
+/logs/ram_diagnostic_20261101/20261103_160215/configure_probe.log -text
+/logs/ram_diagnostic_20261101/20261103_160215/firmware_build_record.json -text
+/logs/ram_diagnostic_20261101/20261103_160215/geometry_observation.json -text
+/logs/ram_diagnostic_20261101/20261103_160215/implementation_audit.json -text
+/logs/ram_diagnostic_20261101/20261103_160215/load_readback.log -text
+/logs/ram_diagnostic_20261101/20261103_160215/readback.bin -text
+/logs/ram_diagnostic_20261101/20261103_160215/resume.log -text
+/logs/ram_diagnostic_20261101/20261103_160215/run_ram_diagnostic.py -text
+/logs/ram_diagnostic_20261101/20261103_160215/uart.log -text
+/logs/ram_diagnostic_20261101/20261103_160456/attempt.json -text
+/logs/ram_diagnostic_20261101/20261103_160456/c9_probe_image.py -text
+/logs/ram_diagnostic_20261101/20261103_160456/check_c9_geometry.py -text
+/logs/ram_diagnostic_20261101/20261103_160456/check_c9_stage_min.py -text
+/logs/ram_diagnostic_20261101/20261103_160456/check_c9_uart.py -text
+/logs/ram_diagnostic_20261101/20261103_160456/configure_probe.log -text
+/logs/ram_diagnostic_20261101/20261103_160456/firmware_build_record.json -text
+/logs/ram_diagnostic_20261101/20261103_160456/geometry_observation.json -text
+/logs/ram_diagnostic_20261101/20261103_160456/implementation_audit.json -text
+/logs/ram_diagnostic_20261101/20261103_160456/load_readback.log -text
+/logs/ram_diagnostic_20261101/20261103_160456/readback.bin -text
+/logs/ram_diagnostic_20261101/20261103_160456/resume.log -text
+/logs/ram_diagnostic_20261101/20261103_160456/run_ram_diagnostic.py -text
+/logs/ram_diagnostic_20261101/20261103_160456/uart.log -text
+/team_work/03_ai_soc/C9_STAGE_TRACE_20261103.md -text
+/team_work/03_ai_soc/c9_live/camera_geometry/c9_stage_probe.sv -text
+/team_work/03_ai_soc/c9_live/camera_geometry/tb_stage_chain.sv -text
+/team_work/03_ai_soc/c9_live/camera_geometry/tb_stage_counter.sv -text
+/tools/audit_c9_stage.py -text
+/tools/audit_c9_stage_min.py -text
+/tools/audit_c9_stage_min_firmware.py -text
+/tools/check_c9_stage.py -text
+/tools/check_c9_stage_min.py -text
+/tools/prepare_c9_stage.py -text
+/tools/prepare_c9_stage_min.py -text
+/tools/report_c9_stage.py -text
+/tools/report_c9_stage_board.py -text
+/tools/report_c9_stage_min.py -text
+/tools/report_c9_stage_min_board.py -text
+/tools/run_c9_stage.ps1 -text
+/tools/run_c9_stage.py -text
+/tools/run_c9_stage_min.ps1 -text
+/tools/run_c9_stage_min.py -text
+/tools/test_c9_stage_chain.py -text
+/tools/test_c9_stage_decode.py -text
+/tools/test_c9_stage_min_decode.py -text
+/logs/c9_stage_handoff_20261103.json -text
+/build/c9_linebuffer_csr_image_20261103/cdc_binding.json -text
+/build/c9_linebuffer_csr_image_20261103/implementation_audit.json -text
+/build/c9_linebuffer_csr_image_20261103/interface.log -text
+/build/c9_linebuffer_csr_image_20261103/LINEBUFFER_MANIFEST.json -text
+/build/c9_linebuffer_csr_image_20261103/map.log -text
+/build/c9_linebuffer_csr_image_20261103/pgm.log -text
+/build/c9_linebuffer_csr_image_20261103/pnr.log -text
+/build/c9_linebuffer_csr_image_20261103/sta_tclsh.log -text
+/build/c9_linebuffer_edges_image_20261103/cdc_binding.json -text
+/build/c9_linebuffer_edges_image_20261103/implementation_audit.json -text
+/build/c9_linebuffer_edges_image_20261103/interface.log -text
+/build/c9_linebuffer_edges_image_20261103/LINEBUFFER_MANIFEST.json -text
+/build/c9_linebuffer_edges_image_20261103/map.log -text
+/build/c9_linebuffer_edges_image_20261103/pgm.log -text
+/build/c9_linebuffer_edges_image_20261103/pnr.log -text
+/build/c9_linebuffer_edges_image_20261103/sta_tclsh.log -text
+/build/c9_linebuffer_image_20261103/interface.log -text
+/build/c9_linebuffer_image_20261103/LINEBUFFER_MANIFEST.json -text
+/build/c9_linebuffer_quality_image_20261103/cdc_binding.json -text
+/build/c9_linebuffer_quality_image_20261103/implementation_audit.json -text
+/build/c9_linebuffer_quality_image_20261103/interface.log -text
+/build/c9_linebuffer_quality_image_20261103/LINEBUFFER_MANIFEST.json -text
+/build/c9_linebuffer_quality_image_20261103/map.log -text
+/build/c9_linebuffer_quality_image_20261103/pgm.log -text
+/build/c9_linebuffer_quality_image_20261103/pnr.log -text
+/build/c9_linebuffer_quality_image_20261103/sta_tclsh.log -text
+/build/c9_linebuffer_reset_image_20261103/cdc_binding.json -text
+/build/c9_linebuffer_reset_image_20261103/implementation_audit.json -text
+/build/c9_linebuffer_reset_image_20261103/interface.log -text
+/build/c9_linebuffer_reset_image_20261103/LINEBUFFER_MANIFEST.json -text
+/build/c9_linebuffer_reset_image_20261103/map.log -text
+/build/c9_linebuffer_reset_image_20261103/pgm.log -text
+/build/c9_linebuffer_reset_image_20261103/pnr.log -text
+/build/c9_linebuffer_reset_image_20261103/sta_tclsh.log -text
+/build/c9_linebuffer_stream_image_20261103/cdc_binding.json -text
+/build/c9_linebuffer_stream_image_20261103/implementation_audit.json -text
+/build/c9_linebuffer_stream_image_20261103/interface.log -text
+/build/c9_linebuffer_stream_image_20261103/LINEBUFFER_MANIFEST.json -text
+/build/c9_linebuffer_stream_image_20261103/map.log -text
+/build/c9_linebuffer_stream_image_20261103/pgm.log -text
+/build/c9_linebuffer_stream_image_20261103/pnr.log -text
+/build/c9_linebuffer_stream_image_20261103/sta_tclsh.log -text
+/build/c9_linebuffer_v2_image_20261103/cdc_binding.json -text
+/build/c9_linebuffer_v2_image_20261103/implementation_audit.json -text
+/build/c9_linebuffer_v2_image_20261103/interface.log -text
+/build/c9_linebuffer_v2_image_20261103/LINEBUFFER_MANIFEST.json -text
+/build/c9_linebuffer_v2_image_20261103/map.log -text
+/build/c9_linebuffer_v2_image_20261103/pgm.log -text
+/build/c9_linebuffer_v2_image_20261103/pnr.log -text
+/build/c9_linebuffer_v2_image_20261103/sta_tclsh.log -text
+/fpga_bitstreams/c9_linebuffer_100mhz/BUILD_RECORD.json -text
+/fpga_bitstreams/c9_linebuffer_100mhz/IMPLEMENTATION_AUDIT.json -text
+/fpga_bitstreams/c9_linebuffer_100mhz/soc_physical.bit -text
+/fpga_bitstreams/c9_linebuffer_100mhz/soc_physical.bus_hold.rpt -text
+/fpga_bitstreams/c9_linebuffer_100mhz/soc_physical.bus_setup.rpt -text
+/fpga_bitstreams/c9_linebuffer_100mhz/soc_physical.hex -text
+/fpga_bitstreams/c9_linebuffer_100mhz/soc_physical.pinout.csv -text
+/fpga_bitstreams/c9_linebuffer_100mhz/soc_physical.place.rpt -text
+/fpga_bitstreams/c9_linebuffer_100mhz/soc_physical.review_timing.rpt -text
+/fpga_bitstreams/c9_linebuffer_csr_100mhz/BUILD_RECORD.json -text
+/fpga_bitstreams/c9_linebuffer_csr_100mhz/IMPLEMENTATION_AUDIT.json -text
+/fpga_bitstreams/c9_linebuffer_csr_100mhz/soc_physical.bit -text
+/fpga_bitstreams/c9_linebuffer_csr_100mhz/soc_physical.bus_hold.rpt -text
+/fpga_bitstreams/c9_linebuffer_csr_100mhz/soc_physical.bus_setup.rpt -text
+/fpga_bitstreams/c9_linebuffer_csr_100mhz/soc_physical.hex -text
+/fpga_bitstreams/c9_linebuffer_csr_100mhz/soc_physical.pinout.csv -text
+/fpga_bitstreams/c9_linebuffer_csr_100mhz/soc_physical.place.rpt -text
+/fpga_bitstreams/c9_linebuffer_csr_100mhz/soc_physical.review_timing.rpt -text
+/fpga_bitstreams/c9_linebuffer_edges_100mhz/BUILD_RECORD.json -text
+/fpga_bitstreams/c9_linebuffer_edges_100mhz/IMPLEMENTATION_AUDIT.json -text
+/fpga_bitstreams/c9_linebuffer_edges_100mhz/soc_physical.bit -text
+/fpga_bitstreams/c9_linebuffer_edges_100mhz/soc_physical.bus_hold.rpt -text
+/fpga_bitstreams/c9_linebuffer_edges_100mhz/soc_physical.bus_setup.rpt -text
+/fpga_bitstreams/c9_linebuffer_edges_100mhz/soc_physical.hex -text
+/fpga_bitstreams/c9_linebuffer_edges_100mhz/soc_physical.pinout.csv -text
+/fpga_bitstreams/c9_linebuffer_edges_100mhz/soc_physical.place.rpt -text
+/fpga_bitstreams/c9_linebuffer_edges_100mhz/soc_physical.review_timing.rpt -text
+/fpga_bitstreams/c9_linebuffer_quality_100mhz/BUILD_RECORD.json -text
+/fpga_bitstreams/c9_linebuffer_quality_100mhz/IMPLEMENTATION_AUDIT.json -text
+/fpga_bitstreams/c9_linebuffer_quality_100mhz/soc_physical.bit -text
+/fpga_bitstreams/c9_linebuffer_quality_100mhz/soc_physical.bus_hold.rpt -text
+/fpga_bitstreams/c9_linebuffer_quality_100mhz/soc_physical.bus_setup.rpt -text
+/fpga_bitstreams/c9_linebuffer_quality_100mhz/soc_physical.hex -text
+/fpga_bitstreams/c9_linebuffer_quality_100mhz/soc_physical.pinout.csv -text
+/fpga_bitstreams/c9_linebuffer_quality_100mhz/soc_physical.place.rpt -text
+/fpga_bitstreams/c9_linebuffer_quality_100mhz/soc_physical.review_timing.rpt -text
+/fpga_bitstreams/c9_linebuffer_reset_100mhz/BUILD_RECORD.json -text
+/fpga_bitstreams/c9_linebuffer_reset_100mhz/IMPLEMENTATION_AUDIT.json -text
+/fpga_bitstreams/c9_linebuffer_reset_100mhz/soc_physical.bit -text
+/fpga_bitstreams/c9_linebuffer_reset_100mhz/soc_physical.bus_hold.rpt -text
+/fpga_bitstreams/c9_linebuffer_reset_100mhz/soc_physical.bus_setup.rpt -text
+/fpga_bitstreams/c9_linebuffer_reset_100mhz/soc_physical.hex -text
+/fpga_bitstreams/c9_linebuffer_reset_100mhz/soc_physical.pinout.csv -text
+/fpga_bitstreams/c9_linebuffer_reset_100mhz/soc_physical.place.rpt -text
+/fpga_bitstreams/c9_linebuffer_reset_100mhz/soc_physical.review_timing.rpt -text
+/fpga_bitstreams/c9_linebuffer_stream_100mhz/BUILD_RECORD.json -text
+/fpga_bitstreams/c9_linebuffer_stream_100mhz/IMPLEMENTATION_AUDIT.json -text
+/fpga_bitstreams/c9_linebuffer_stream_100mhz/soc_physical.bit -text
+/fpga_bitstreams/c9_linebuffer_stream_100mhz/soc_physical.bus_hold.rpt -text
+/fpga_bitstreams/c9_linebuffer_stream_100mhz/soc_physical.bus_setup.rpt -text
+/fpga_bitstreams/c9_linebuffer_stream_100mhz/soc_physical.hex -text
+/fpga_bitstreams/c9_linebuffer_stream_100mhz/soc_physical.pinout.csv -text
+/fpga_bitstreams/c9_linebuffer_stream_100mhz/soc_physical.place.rpt -text
+/fpga_bitstreams/c9_linebuffer_stream_100mhz/soc_physical.review_timing.rpt -text
+/logs/c10_warm_boot_20261101/20261103_164833/attempt.json -text
+/logs/c10_warm_boot_20261101/20261103_164833/configure.log -text
+/logs/c10_warm_boot_20261101/20261103_164833/reference_check.json -text
+/logs/c10_warm_boot_20261101/20261103_164833/uart.log -text
+/logs/c10_warm_boot_20261101/20261103_170824/attempt.json -text
+/logs/c10_warm_boot_20261101/20261103_170824/configure.log -text
+/logs/c10_warm_boot_20261101/20261103_170824/reference_check.json -text
+/logs/c10_warm_boot_20261101/20261103_170824/uart.log -text
+/logs/c10_warm_boot_20261101/20261103_171320/attempt.json -text
+/logs/c10_warm_boot_20261101/20261103_171320/configure.log -text
+/logs/c10_warm_boot_20261101/20261103_171320/reference_check.json -text
+/logs/c10_warm_boot_20261101/20261103_171320/uart.log -text
+/logs/c10_warm_boot_20261101/20261103_172832/attempt.json -text
+/logs/c10_warm_boot_20261101/20261103_172832/configure.log -text
+/logs/c10_warm_boot_20261101/20261103_172832/reference_check.json -text
+/logs/c10_warm_boot_20261101/20261103_172832/uart.log -text
+/logs/c10_warm_boot_20261101/20261103_174918/attempt.json -text
+/logs/c10_warm_boot_20261101/20261103_174918/configure.log -text
+/logs/c10_warm_boot_20261101/20261103_174918/reference_check.json -text
+/logs/c10_warm_boot_20261101/20261103_174918/uart.log -text
+/logs/c10_warm_boot_20261101/20261103_180024/attempt.json -text
+/logs/c10_warm_boot_20261101/20261103_180024/configure.log -text
+/logs/c10_warm_boot_20261101/20261103_180024/reference_check.json -text
+/logs/c10_warm_boot_20261101/20261103_180024/uart.log -text
+/logs/c10_warm_boot_20261101/20261103_182056/attempt.json -text
+/logs/c10_warm_boot_20261101/20261103_182056/configure.log -text
+/logs/c10_warm_boot_20261101/20261103_182056/reference_check.json -text
+/logs/c10_warm_boot_20261101/20261103_182056/uart.log -text
+/logs/c9_camera_reset_tests_20261103.json -text
+/logs/c9_camera_stream_gate_tests_20261103.json -text
+/logs/c9_ddr_probe_20261101/20261103_164728/attempt.json -text
+/logs/c9_ddr_probe_20261101/20261103_164728/configure.log -text
+/logs/c9_ddr_probe_20261101/20261103_164728/restore_c10.log -text
+/logs/c9_ddr_probe_20261101/20261103_164728/samples.json -text
+/logs/c9_ddr_probe_20261101/20261103_170719/attempt.json -text
+/logs/c9_ddr_probe_20261101/20261103_170719/configure.log -text
+/logs/c9_ddr_probe_20261101/20261103_170719/restore_c10.log -text
+/logs/c9_ddr_probe_20261101/20261103_170719/samples.json -text
+/logs/c9_ddr_probe_20261101/20261103_171215/attempt.json -text
+/logs/c9_ddr_probe_20261101/20261103_171215/configure.log -text
+/logs/c9_ddr_probe_20261101/20261103_171215/restore_c10.log -text
+/logs/c9_ddr_probe_20261101/20261103_171215/samples.json -text
+/logs/c9_ddr_probe_20261101/20261103_172727/attempt.json -text
+/logs/c9_ddr_probe_20261101/20261103_172727/configure.log -text
+/logs/c9_ddr_probe_20261101/20261103_172727/restore_c10.log -text
+/logs/c9_ddr_probe_20261101/20261103_172727/samples.json -text
+/logs/c9_ddr_probe_20261101/20261103_174814/attempt.json -text
+/logs/c9_ddr_probe_20261101/20261103_174814/configure.log -text
+/logs/c9_ddr_probe_20261101/20261103_174814/restore_c10.log -text
+/logs/c9_ddr_probe_20261101/20261103_174814/samples.json -text
+/logs/c9_ddr_probe_20261101/20261103_175920/attempt.json -text
+/logs/c9_ddr_probe_20261101/20261103_175920/configure.log -text
+/logs/c9_ddr_probe_20261101/20261103_175920/restore_c10.log -text
+/logs/c9_ddr_probe_20261101/20261103_175920/samples.json -text
+/logs/c9_ddr_probe_20261101/20261103_181951/attempt.json -text
+/logs/c9_ddr_probe_20261101/20261103_181951/configure.log -text
+/logs/c9_ddr_probe_20261101/20261103_181951/restore_c10.log -text
+/logs/c9_ddr_probe_20261101/20261103_181951/samples.json -text
+/logs/c9_linebuffer_board_20261103/20261103_164726/camera_geometry.log -text
+/logs/c9_linebuffer_board_20261103/20261103_164726/ddr_status.log -text
+/logs/c9_linebuffer_board_20261103/20261103_164726/restore_c10.log -text
+/logs/c9_linebuffer_board_20261103/20261103_164726/result.json -text
+/logs/c9_linebuffer_board_replay_final_20261103.log -text
+/logs/c9_linebuffer_board_report_console_20261103.log -text
+/logs/c9_linebuffer_board_result_20261103.json -text
+/logs/c9_linebuffer_capture_console_20261103.log -text
+/logs/c9_linebuffer_csr_board_20261103/20261103_170717/camera_geometry.log -text
+/logs/c9_linebuffer_csr_board_20261103/20261103_170717/ddr_status.log -text
+/logs/c9_linebuffer_csr_board_20261103/20261103_170717/restore_c10.log -text
+/logs/c9_linebuffer_csr_board_20261103/20261103_170717/result.json -text
+/logs/c9_linebuffer_csr_board_20261103/20261103_171213/camera_geometry.log -text
+/logs/c9_linebuffer_csr_board_20261103/20261103_171213/ddr_status.log -text
+/logs/c9_linebuffer_csr_board_20261103/20261103_171213/restore_c10.log -text
+/logs/c9_linebuffer_csr_board_20261103/20261103_171213/result.json -text
+/logs/c9_linebuffer_csr_board_replay_final_20261103.log -text
+/logs/c9_linebuffer_csr_board_report_console_20261103.log -text
+/logs/c9_linebuffer_csr_board_result_20261103.json -text
+/logs/c9_linebuffer_csr_capture_console_20261103.log -text
+/logs/c9_linebuffer_csr_chain_tests_20261103.json -text
+/logs/c9_linebuffer_csr_decode_tests_20261103.json -text
+/logs/c9_linebuffer_csr_ready_20261103.json -text
+/logs/c9_linebuffer_csr_repeat_console_20261103.log -text
+/logs/c9_linebuffer_csr_tests_20261103.json -text
+/logs/c9_linebuffer_decode_tests_20261103.json -text
+/logs/c9_linebuffer_edges_board_20261103/20261103_172725/camera_geometry.log -text
+/logs/c9_linebuffer_edges_board_20261103/20261103_172725/ddr_status.log -text
+/logs/c9_linebuffer_edges_board_20261103/20261103_172725/restore_c10.log -text
+/logs/c9_linebuffer_edges_board_20261103/20261103_172725/result.json -text
+/logs/c9_linebuffer_edges_board_replay_final_20261103.log -text
+/logs/c9_linebuffer_edges_board_report_console_20261103.log -text
+/logs/c9_linebuffer_edges_board_result_20261103.json -text
+/logs/c9_linebuffer_edges_capture_console_20261103.log -text
+/logs/c9_linebuffer_edges_decode_tests_20261103.json -text
+/logs/c9_linebuffer_edges_ready_20261103.json -text
+/logs/c9_linebuffer_initial_stopped_20261103.json -text
+/logs/c9_linebuffer_quality_board_20261103/20261103_181949/camera_geometry.log -text
+/logs/c9_linebuffer_quality_board_20261103/20261103_181949/ddr_status.log -text
+/logs/c9_linebuffer_quality_board_20261103/20261103_181949/restore_c10.log -text
+/logs/c9_linebuffer_quality_board_20261103/20261103_181949/result.json -text
+/logs/c9_linebuffer_quality_board_result_20261103.json -text
+/logs/c9_linebuffer_quality_capture_console_20261103.log -text
+/logs/c9_linebuffer_quality_decode_tests_20261103.json -text
+/logs/c9_linebuffer_quality_ready_20261103.json -text
+/logs/c9_linebuffer_ready_20261103.json -text
+/logs/c9_linebuffer_reset_bitgen_retry_20261103.json -text
+/logs/c9_linebuffer_reset_board_20261103/20261103_174812/camera_geometry.log -text
+/logs/c9_linebuffer_reset_board_20261103/20261103_174812/ddr_status.log -text
+/logs/c9_linebuffer_reset_board_20261103/20261103_174812/restore_c10.log -text
+/logs/c9_linebuffer_reset_board_20261103/20261103_174812/result.json -text
+/logs/c9_linebuffer_reset_board_replay_final_20261103.log -text
+/logs/c9_linebuffer_reset_board_report_console_20261103.log -text
+/logs/c9_linebuffer_reset_board_result_20261103.json -text
+/logs/c9_linebuffer_reset_capture_console_20261103.log -text
+/logs/c9_linebuffer_reset_decode_tests_20261103.json -text
+/logs/c9_linebuffer_reset_ready_20261103.json -text
+/logs/c9_linebuffer_stream_board_20261103/20261103_175918/camera_geometry.log -text
+/logs/c9_linebuffer_stream_board_20261103/20261103_175918/ddr_status.log -text
+/logs/c9_linebuffer_stream_board_20261103/20261103_175918/restore_c10.log -text
+/logs/c9_linebuffer_stream_board_20261103/20261103_175918/result.json -text
+/logs/c9_linebuffer_stream_board_replay_final_20261103.log -text
+/logs/c9_linebuffer_stream_board_report_console_20261103.log -text
+/logs/c9_linebuffer_stream_board_result_20261103.json -text
+/logs/c9_linebuffer_stream_capture_console_20261103.log -text
+/logs/c9_linebuffer_stream_decode_tests_20261103.json -text
+/logs/c9_linebuffer_stream_ready_20261103.json -text
+/logs/c9_linebuffer_tests_20261103.json -text
+/logs/c9_linebuffer_work_checkpoint_20261103.json -text
+/logs/c9_native_edges_tests_20261103.json -text
+/logs/c9_receiver_quality_chain_tests_20261103.json -text
+/logs/c9_receiver_quality_tests_20261103.json -text
+/logs/ram_diagnostic_20261101/20261103_164811/attempt.json -text
+/logs/ram_diagnostic_20261101/20261103_164811/configure_probe.log -text
+/logs/ram_diagnostic_20261101/20261103_164811/firmware_build_record.json -text
+/logs/ram_diagnostic_20261101/20261103_164811/geometry_observation.json -text
+/logs/ram_diagnostic_20261101/20261103_164811/implementation_audit.json -text
+/logs/ram_diagnostic_20261101/20261103_164811/load_readback.log -text
+/logs/ram_diagnostic_20261101/20261103_164811/readback.bin -text
+/logs/ram_diagnostic_20261101/20261103_164811/resume.log -text
+/logs/ram_diagnostic_20261101/20261103_164811/uart.log -text
+/logs/ram_diagnostic_20261101/20261103_170801/attempt.json -text
+/logs/ram_diagnostic_20261101/20261103_170801/configure_probe.log -text
+/logs/ram_diagnostic_20261101/20261103_170801/firmware_build_record.json -text
+/logs/ram_diagnostic_20261101/20261103_170801/geometry_observation.json -text
+/logs/ram_diagnostic_20261101/20261103_170801/implementation_audit.json -text
+/logs/ram_diagnostic_20261101/20261103_170801/load_readback.log -text
+/logs/ram_diagnostic_20261101/20261103_170801/readback.bin -text
+/logs/ram_diagnostic_20261101/20261103_170801/resume.log -text
+/logs/ram_diagnostic_20261101/20261103_170801/uart.log -text
+/logs/ram_diagnostic_20261101/20261103_171258/attempt.json -text
+/logs/ram_diagnostic_20261101/20261103_171258/configure_probe.log -text
+/logs/ram_diagnostic_20261101/20261103_171258/firmware_build_record.json -text
+/logs/ram_diagnostic_20261101/20261103_171258/geometry_observation.json -text
+/logs/ram_diagnostic_20261101/20261103_171258/implementation_audit.json -text
+/logs/ram_diagnostic_20261101/20261103_171258/load_readback.log -text
+/logs/ram_diagnostic_20261101/20261103_171258/readback.bin -text
+/logs/ram_diagnostic_20261101/20261103_171258/resume.log -text
+/logs/ram_diagnostic_20261101/20261103_171258/uart.log -text
+/logs/ram_diagnostic_20261101/20261103_172810/attempt.json -text
+/logs/ram_diagnostic_20261101/20261103_172810/configure_probe.log -text
+/logs/ram_diagnostic_20261101/20261103_172810/firmware_build_record.json -text
+/logs/ram_diagnostic_20261101/20261103_172810/geometry_observation.json -text
+/logs/ram_diagnostic_20261101/20261103_172810/implementation_audit.json -text
+/logs/ram_diagnostic_20261101/20261103_172810/load_readback.log -text
+/logs/ram_diagnostic_20261101/20261103_172810/readback.bin -text
+/logs/ram_diagnostic_20261101/20261103_172810/resume.log -text
+/logs/ram_diagnostic_20261101/20261103_172810/uart.log -text
+/logs/ram_diagnostic_20261101/20261103_174856/attempt.json -text
+/logs/ram_diagnostic_20261101/20261103_174856/configure_probe.log -text
+/logs/ram_diagnostic_20261101/20261103_174856/firmware_build_record.json -text
+/logs/ram_diagnostic_20261101/20261103_174856/geometry_observation.json -text
+/logs/ram_diagnostic_20261101/20261103_174856/implementation_audit.json -text
+/logs/ram_diagnostic_20261101/20261103_174856/load_readback.log -text
+/logs/ram_diagnostic_20261101/20261103_174856/readback.bin -text
+/logs/ram_diagnostic_20261101/20261103_174856/resume.log -text
+/logs/ram_diagnostic_20261101/20261103_174856/uart.log -text
+/logs/ram_diagnostic_20261101/20261103_180002/attempt.json -text
+/logs/ram_diagnostic_20261101/20261103_180002/configure_probe.log -text
+/logs/ram_diagnostic_20261101/20261103_180002/firmware_build_record.json -text
+/logs/ram_diagnostic_20261101/20261103_180002/geometry_observation.json -text
+/logs/ram_diagnostic_20261101/20261103_180002/implementation_audit.json -text
+/logs/ram_diagnostic_20261101/20261103_180002/load_readback.log -text
+/logs/ram_diagnostic_20261101/20261103_180002/readback.bin -text
+/logs/ram_diagnostic_20261101/20261103_180002/resume.log -text
+/logs/ram_diagnostic_20261101/20261103_180002/uart.log -text
+/logs/ram_diagnostic_20261101/20261103_182033/attempt.json -text
+/logs/ram_diagnostic_20261101/20261103_182033/configure_probe.log -text
+/logs/ram_diagnostic_20261101/20261103_182033/firmware_build_record.json -text
+/logs/ram_diagnostic_20261101/20261103_182033/geometry_observation.json -text
+/logs/ram_diagnostic_20261101/20261103_182033/implementation_audit.json -text
+/logs/ram_diagnostic_20261101/20261103_182033/load_readback.log -text
+/logs/ram_diagnostic_20261101/20261103_182033/readback.bin -text
+/logs/ram_diagnostic_20261101/20261103_182033/resume.log -text
+/logs/ram_diagnostic_20261101/20261103_182033/uart.log -text
+/team_work/03_ai_soc/c9_live/camera_geometry/c9_csi_capture_gate.sv -text
+/team_work/03_ai_soc/c9_live/camera_geometry/c9_native_edges.sv -text
+/team_work/03_ai_soc/c9_live/camera_geometry/c9_raw10_linebuffer.sv -text
+/team_work/03_ai_soc/c9_live/camera_geometry/c9_raw10_linebuffer_csr.sv -text
+/team_work/03_ai_soc/c9_live/camera_geometry/c9_raw10_linebuffer_quality.sv -text
+/team_work/03_ai_soc/c9_live/camera_geometry/c9_receiver_quality.sv -text
+/team_work/03_ai_soc/c9_live/camera_geometry/tb_csi_capture_gate.sv -text
+/team_work/03_ai_soc/c9_live/camera_geometry/tb_native_edges.sv -text
+/team_work/03_ai_soc/c9_live/camera_geometry/tb_raw10_linebuffer.sv -text
+/team_work/03_ai_soc/C9_RAW10_LINEBUFFER_20261103.md -text
+/tools/audit_c9_linebuffer.py -text
+/tools/audit_c9_linebuffer_csr.py -text
+/tools/audit_c9_linebuffer_edges.py -text
+/tools/audit_c9_linebuffer_quality.py -text
+/tools/audit_c9_linebuffer_reset.py -text
+/tools/audit_c9_linebuffer_stream.py -text
+/tools/check_c9_linebuffer.py -text
+/tools/check_c9_linebuffer_csr.py -text
+/tools/check_c9_linebuffer_edges.py -text
+/tools/check_c9_linebuffer_quality.py -text
+/tools/check_c9_linebuffer_reset.py -text
+/tools/check_c9_linebuffer_stream.py -text
+/tools/generate_c9_linebuffer_reset_bit.ps1 -text
+/tools/patch_c9_camera_stream_gate.py -text
+/tools/prepare_c9_linebuffer.py -text
+/tools/prepare_c9_linebuffer_csr.py -text
+/tools/prepare_c9_linebuffer_edges.py -text
+/tools/prepare_c9_linebuffer_quality.py -text
+/tools/prepare_c9_linebuffer_reset.py -text
+/tools/prepare_c9_linebuffer_stream.py -text
+/tools/report_c9_linebuffer.py -text
+/tools/report_c9_linebuffer_board.py -text
+/tools/report_c9_linebuffer_csr.py -text
+/tools/report_c9_linebuffer_csr_board.py -text
+/tools/report_c9_linebuffer_edges.py -text
+/tools/report_c9_linebuffer_edges_board.py -text
+/tools/report_c9_linebuffer_quality.py -text
+/tools/report_c9_linebuffer_quality_board.py -text
+/tools/report_c9_linebuffer_reset.py -text
+/tools/report_c9_linebuffer_reset_board.py -text
+/tools/report_c9_linebuffer_stream.py -text
+/tools/report_c9_linebuffer_stream_board.py -text
+/tools/run_c9_linebuffer.ps1 -text
+/tools/run_c9_linebuffer.py -text
+/tools/run_c9_linebuffer_csr.ps1 -text
+/tools/run_c9_linebuffer_csr.py -text
+/tools/run_c9_linebuffer_edges.ps1 -text
+/tools/run_c9_linebuffer_edges.py -text
+/tools/run_c9_linebuffer_quality.ps1 -text
+/tools/run_c9_linebuffer_quality.py -text
+/tools/run_c9_linebuffer_reset.ps1 -text
+/tools/run_c9_linebuffer_reset.py -text
+/tools/run_c9_linebuffer_stream.ps1 -text
+/tools/run_c9_linebuffer_stream.py -text
+/tools/test_c9_camera_reset.py -text
+/tools/test_c9_camera_stream_gate.py -text
+/tools/test_c9_linebuffer.py -text
+/tools/test_c9_linebuffer_csr.py -text
+/tools/test_c9_linebuffer_csr_decode.py -text
+/tools/test_c9_linebuffer_decode.py -text
+/tools/test_c9_linebuffer_edges_decode.py -text
+/tools/test_c9_linebuffer_quality_decode.py -text
+/tools/test_c9_linebuffer_reset_decode.py -text
+/tools/test_c9_linebuffer_stream_decode.py -text
+/tools/test_c9_native_edges.py -text
+/tools/test_c9_receiver_quality.py -text
+/logs/c9_linebuffer_handoff_20261103.json -text
+/logs/c9_pc_acceptance_20261103_204335/c10_image_identity.json -text
+/logs/c9_pc_acceptance_20261103_204335/c10_warm_boot_20261101_reference_replay.json -text
+/logs/c9_pc_acceptance_20261103_204335/c7_cold_boot_20261101_reference_replay.json -text
+/logs/c9_pc_acceptance_20261103_204335/cold_static_reference.json -text
+/logs/c9_pc_acceptance_20261103_204335/evidence_verification.json -text
+/logs/c9_pc_acceptance_20261103_204335/missed_scan_failure_replay.json -text
+/logs/c9_pc_acceptance_20261103_204335/mode0_phase0.log -text
+/logs/c9_pc_acceptance_20261103_204335/mode0_phase3.log -text
+/logs/c9_pc_acceptance_20261103_204335/mode1_phase0.log -text
+/logs/c9_pc_acceptance_20261103_204335/mode1_phase3.log -text
+/logs/c9_pc_acceptance_20261103_204335/pattern_dma_replay.json -text
+/logs/c9_pc_acceptance_20261103_204335/report_c9_linebuffer_board/c9_linebuffer_board_result_20261103.json -text
+/logs/c9_pc_acceptance_20261103_204335/report_c9_linebuffer_board/execution.json -text
+/logs/c9_pc_acceptance_20261103_204335/report_c9_linebuffer_board.log -text
+/logs/c9_pc_acceptance_20261103_204335/report_c9_linebuffer_csr_board/c9_linebuffer_csr_board_result_20261103.json -text
+/logs/c9_pc_acceptance_20261103_204335/report_c9_linebuffer_csr_board/execution.json -text
+/logs/c9_pc_acceptance_20261103_204335/report_c9_linebuffer_csr_board.log -text
+/logs/c9_pc_acceptance_20261103_204335/report_c9_linebuffer_edges_board/c9_linebuffer_edges_board_result_20261103.json -text
+/logs/c9_pc_acceptance_20261103_204335/report_c9_linebuffer_edges_board/execution.json -text
+/logs/c9_pc_acceptance_20261103_204335/report_c9_linebuffer_edges_board.log -text
+/logs/c9_pc_acceptance_20261103_204335/report_c9_linebuffer_quality_board/c9_linebuffer_quality_board_result_20261103.json -text
+/logs/c9_pc_acceptance_20261103_204335/report_c9_linebuffer_quality_board/execution.json -text
+/logs/c9_pc_acceptance_20261103_204335/report_c9_linebuffer_quality_board.log -text
+/logs/c9_pc_acceptance_20261103_204335/report_c9_linebuffer_reset_board/c9_linebuffer_reset_board_result_20261103.json -text
+/logs/c9_pc_acceptance_20261103_204335/report_c9_linebuffer_reset_board/execution.json -text
+/logs/c9_pc_acceptance_20261103_204335/report_c9_linebuffer_reset_board.log -text
+/logs/c9_pc_acceptance_20261103_204335/report_c9_linebuffer_stream_board/c9_linebuffer_stream_board_result_20261103.json -text
+/logs/c9_pc_acceptance_20261103_204335/report_c9_linebuffer_stream_board/execution.json -text
+/logs/c9_pc_acceptance_20261103_204335/report_c9_linebuffer_stream_board.log -text
+/logs/c9_pc_acceptance_20261103_204335/result.json -text
+/logs/c9_pc_acceptance_20261103_204335/supplemental_0.log -text
+/logs/c9_pc_acceptance_20261103_204335/supplemental_1.log -text
+/logs/c9_pc_acceptance_20261103_204335/supplemental_2.log -text
+/logs/c9_pc_acceptance_20261103_204335/supplemental_3.log -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_camera_reset/c9_camera_reset_tests_20261103.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_camera_reset/execution.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_camera_reset.log -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_camera_stream_gate/c9_camera_stream_gate_tests_20261103.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_camera_stream_gate/execution.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_camera_stream_gate.log -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_ddr_calibration/c9_ddr_calibration_checker_tests_20261102.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_ddr_calibration/execution.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_ddr_calibration.log -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_display_c2/c9_display_c2_selftest.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_display_c2/execution.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_display_c2.log -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_linebuffer/c9_linebuffer_tests_20261103.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_linebuffer/execution.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_linebuffer.log -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_linebuffer_csr/c9_linebuffer_csr_tests_20261103.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_linebuffer_csr/execution.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_linebuffer_csr.log -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_linebuffer_csr_decode/c9_linebuffer_csr_decode_tests_20261103.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_linebuffer_csr_decode/execution.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_linebuffer_csr_decode.log -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_linebuffer_decode/c9_linebuffer_decode_tests_20261103.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_linebuffer_decode/execution.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_linebuffer_decode.log -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_linebuffer_edges_decode/c9_linebuffer_edges_decode_tests_20261103.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_linebuffer_edges_decode/execution.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_linebuffer_edges_decode.log -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_linebuffer_quality_decode/c9_linebuffer_quality_decode_tests_20261103.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_linebuffer_quality_decode/execution.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_linebuffer_quality_decode.log -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_linebuffer_reset_decode/c9_linebuffer_reset_decode_tests_20261103.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_linebuffer_reset_decode/execution.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_linebuffer_reset_decode.log -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_linebuffer_stream_decode/c9_linebuffer_stream_decode_tests_20261103.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_linebuffer_stream_decode/execution.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_linebuffer_stream_decode.log -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_native_edges/c9_native_edges_tests_20261103.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_native_edges/execution.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_native_edges.log -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_probe_preflight/c9_preflight_tests_20261102.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_probe_preflight/execution.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_probe_preflight.log -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_receiver_quality/c9_receiver_quality_tests_20261103.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_receiver_quality/execution.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_receiver_quality.log -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_scanout_startup/execution.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_scanout_startup/test_c9_scanout_startup_result.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_scanout_startup.log -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_stage_chain/c9_stage_chain_tests_20261103.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_stage_chain/execution.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_stage_chain.log -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_time_progress/execution.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_time_progress/test_c9_time_progress_result.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_time_progress.log -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_uart_hex_format/execution.json -text
+/logs/c9_pc_acceptance_20261103_204335/test_c9_uart_hex_format.log -text
+/logs/c9_pc_acceptance_20261103_204335/warm_static_reference.json -text
+/team_work/03_ai_soc/C9_PC_ACCEPTANCE_20261103.md -text
+/tools/check_c9_pc_acceptance_evidence.py -text
+/tools/run_c9_pc_acceptance.py -text
+/logs/c9_pc_acceptance_handoff_20261103.json -text
+
+# Preserve generated evidence; do not interpret report whitespace or hex as code diffs.
+/logs/** -whitespace
+/build/** -whitespace
+/fpga_bitstreams/** -diff -whitespace
+/firmware/**/*.hex -diff -whitespace
+
+/firmware/**/*.map -whitespace
+/26_build_soc_physical.cmd -text
+/27_prepare_board_review.cmd -text
+/28_build_ddr_diag.cmd -text
+/firmware/c7_board_diag/BUILD_RECORD.json -text
+/firmware/c7_board_diag/build.log -text
+/firmware/c7_board_diag/build_id.h -text
+/firmware/c7_board_diag/c7_board_diag.bin -text
+/firmware/c7_board_diag/c7_board_diag.elf -text
+/firmware/c7_board_diag/c7_board_diag.map -text
+/firmware/c9_dma_diag/BUILD_RECORD.json -text
+/firmware/c9_dma_diag/build.log -text
+/firmware/c9_dma_diag/build_id.h -text
+/firmware/c9_dma_diag/c9_dma.bin -text
+/firmware/c9_dma_diag/c9_dma.elf -text
+/firmware/c9_dma_diag/c9_dma.map -text
+/firmware/c9_live_person_detect/BUILD_RECORD.json -text
+/firmware/c9_live_person_detect/C9_INPUT_MANIFEST.json -text
+/firmware/c9_live_person_detect/tinyml_c9.bin -text
+/firmware/c9_live_person_detect/tinyml_c9.elf -text
+/firmware/c9_live_person_detect/tinyml_c9.hex -text
+/firmware/c9_live_person_detect/tinyml_c9.map -text
+/fpga_bitstreams/ddr_diag_100mhz/BUILD_RECORD.json -text
+/fpga_bitstreams/ddr_diag_100mhz/README.md -text
+/fpga_bitstreams/ddr_diag_100mhz/ddr_diag.bit -text
+/fpga_bitstreams/ddr_diag_100mhz/ddr_diag.hex -text
+/fpga_bitstreams/ddr_diag_100mhz/ddr_diag.pinout.csv -text
+/fpga_bitstreams/ddr_diag_100mhz/ddr_diag.place.rpt -text
+/fpga_bitstreams/ddr_diag_100mhz/ddr_diag.timing.rpt -text
+/fpga_bitstreams/soc_cold_100mhz/BUILD_RECORD.json -text
+/fpga_bitstreams/soc_cold_100mhz/README.md -text
+/fpga_bitstreams/soc_cold_100mhz/soc_physical.bit -text
+/fpga_bitstreams/soc_cold_100mhz/soc_physical.hex -text
+/fpga_bitstreams/soc_physical_100mhz/BUILD_RECORD.json -text
+/fpga_bitstreams/soc_physical_100mhz/README.md -text
+/fpga_bitstreams/soc_physical_100mhz/soc_physical.bit -text
+/fpga_bitstreams/soc_physical_100mhz/soc_physical.hex -text
+/logs/board_preflight_20261031.json -text
+/logs/c10_board_summary_20261101.json -text
+/logs/c10_cold_flash_program_20261101.json -text
+/logs/c10_flash_verification_method.json -text
+/logs/c10_warm_boot_20261101/20261101_173651/attempt.json -text
+/logs/c10_warm_boot_20261101/20261101_173651/configure.log -text
+/logs/c10_warm_boot_20261101/20261101_173651/reference_check.json -text
+/logs/c10_warm_boot_20261101/20261101_173651/uart.log -text
+/logs/c10_warm_boot_20261101/20261101_185156/attempt.json -text
+/logs/c10_warm_boot_20261101/20261101_185156/configure.log -text
+/logs/c10_warm_boot_20261101/20261101_185156/reference_check.json -text
+/logs/c10_warm_boot_20261101/20261101_185156/uart.log -text
+/logs/c10_warm_boot_20261101/20261101_191849/attempt.json -text
+/logs/c10_warm_boot_20261101/20261101_191849/configure.log -text
+/logs/c10_warm_boot_20261101/20261101_191849/reference_check.json -text
+/logs/c10_warm_boot_20261101/20261101_191849/uart.log -text
+/logs/c10_warm_boot_20261101/20261101_195425/attempt.json -text
+/logs/c10_warm_boot_20261101/20261101_195425/configure.log -text
+/logs/c10_warm_boot_20261101/20261101_195425/reference_check.json -text
+/logs/c10_warm_boot_20261101/20261101_195425/uart.log -text
+/logs/c10_warm_boot_20261101/20261101_201103/attempt.json -text
+/logs/c10_warm_boot_20261101/20261101_201103/configure.log -text
+/logs/c10_warm_boot_20261101/20261101_201103/reference_check.json -text
+/logs/c10_warm_boot_20261101/20261101_201103/uart.log -text
+/logs/c10_warm_boot_20261101/20261101_205453/attempt.json -text
+/logs/c10_warm_boot_20261101/20261101_205453/configure.log -text
+/logs/c10_warm_boot_20261101/20261101_205453/reference_check.json -text
+/logs/c10_warm_boot_20261101/20261101_205453/uart.log -text
+/logs/c10_warm_boot_20261101/20261101_205634/attempt.json -text
+/logs/c10_warm_boot_20261101/20261101_205634/configure.log -text
+/logs/c10_warm_boot_20261101/20261101_205634/reference_check.json -text
+/logs/c10_warm_boot_20261101/20261101_205634/uart.log -text
+/logs/c7_board_20261101/c1_20261101_123527/attempt.json -text
+/logs/c7_board_20261101/c1_20261101_123527/capture_host_script.py -text
+/logs/c7_board_20261101/c1_20261101_123527/load_c1.cfg -text
+/logs/c7_board_20261101/c1_20261101_123527/openocd.log -text
+/logs/c7_board_20261101/c1_20261101_123527/uart.log -text
+/logs/c7_board_20261101/c1_20261101_123527/uart_check.json -text
+/logs/c7_board_20261101/c1_20261101_125949/C1_INPUT_MANIFEST.json -text
+/logs/c7_board_20261101/c1_20261101_125949/attempt.json -text
+/logs/c7_board_20261101/c1_20261101_125949/checker.log -text
+/logs/c7_board_20261101/c1_20261101_125949/load_readback.cfg -text
+/logs/c7_board_20261101/c1_20261101_125949/load_readback.log -text
+/logs/c7_board_20261101/c1_20261101_125949/reference_comparison.json -text
+/logs/c7_board_20261101/c1_20261101_125949/resume.cfg -text
+/logs/c7_board_20261101/c1_20261101_125949/resume.log -text
+/logs/c7_board_20261101/c1_20261101_125949/run_c7_board_acceptance.py -text
+/logs/c7_board_20261101/c1_20261101_125949/uart.log -text
+/logs/c7_board_20261101/c1_20261101_125949/uart_check.json -text
+/logs/c7_board_20261101/c1_verified_20261101_123723/attempt.json -text
+/logs/c7_board_20261101/c1_verified_20261101_123723/readback.cfg -text
+/logs/c7_board_20261101/c1_verified_20261101_123723/readback.log -text
+/logs/c7_board_20261101/c1_verified_20261101_123723/resume.cfg -text
+/logs/c7_board_20261101/c1_verified_20261101_123723/uart.log -text
+/logs/c7_board_20261101/c1_verified_20261101_123723/uart_check.json -text
+/logs/c7_board_20261101/cpu_diag_20261101_125916/BUILD_RECORD.json -text
+/logs/c7_board_20261101/cpu_diag_20261101_125916/attempt.json -text
+/logs/c7_board_20261101/cpu_diag_20261101_125916/checker.log -text
+/logs/c7_board_20261101/cpu_diag_20261101_125916/jtag_scan.log -text
+/logs/c7_board_20261101/cpu_diag_20261101_125916/load_readback.cfg -text
+/logs/c7_board_20261101/cpu_diag_20261101_125916/load_readback.log -text
+/logs/c7_board_20261101/cpu_diag_20261101_125916/programmer.log -text
+/logs/c7_board_20261101/cpu_diag_20261101_125916/resume.cfg -text
+/logs/c7_board_20261101/cpu_diag_20261101_125916/resume.log -text
+/logs/c7_board_20261101/cpu_diag_20261101_125916/run_c7_board_acceptance.py -text
+/logs/c7_board_20261101/cpu_diag_20261101_125916/uart.log -text
+/logs/c7_board_20261101/cpu_diag_20261101_125916/uart_check.json -text
+/logs/c7_board_20261101/ddr_probe_bulk_20261101_124053/openocd.log -text
+/logs/c7_board_20261101/ddr_probe_bulk_20261101_124053/probe.cfg -text
+/logs/c7_board_20261101/ddr_probe_bulk_20261101_124053/result.json -text
+/logs/c7_board_20261101/ddr_probe_bulk_20261101_124109/openocd.log -text
+/logs/c7_board_20261101/ddr_probe_bulk_20261101_124109/probe.cfg -text
+/logs/c7_board_20261101/ddr_probe_bulk_20261101_124109/result.json -text
+/logs/c7_board_20261101/ddr_probe_bulk_20261101_125948/openocd.log -text
+/logs/c7_board_20261101/ddr_probe_bulk_20261101_125948/probe.cfg -text
+/logs/c7_board_20261101/ddr_probe_bulk_20261101_125948/result.json -text
+/logs/c7_board_20261101/ddr_probe_byte_20261101_125948/openocd.log -text
+/logs/c7_board_20261101/ddr_probe_byte_20261101_125948/probe.cfg -text
+/logs/c7_board_20261101/ddr_probe_byte_20261101_125948/result.json -text
+/logs/c7_board_20261101/ddr_probe_word_20261101_124139/openocd.log -text
+/logs/c7_board_20261101/ddr_probe_word_20261101_124139/probe.cfg -text
+/logs/c7_board_20261101/ddr_probe_word_20261101_124139/result.json -text
+/logs/c7_board_20261101/ddr_probe_word_20261101_125948/openocd.log -text
+/logs/c7_board_20261101/ddr_probe_word_20261101_125948/probe.cfg -text
+/logs/c7_board_20261101/ddr_probe_word_20261101_125948/result.json -text
+/logs/c7_board_20261101/probe_20261101_123338/attempt.json -text
+/logs/c7_board_20261101/probe_20261101_123338/cpu_probe.log -text
+/logs/c7_board_20261101/probe_20261101_123338/jtag_scan.log -text
+/logs/c7_board_20261101/probe_20261101_123338/probe.cfg -text
+/logs/c7_board_20261101/probe_20261101_123338/programmer.log -text
+/logs/c7_board_20261101/probe_20261101_123338/uart.log -text
+/logs/c7_board_20261101/rebuild_console.log -text
+/logs/c7_board_20261101/summary.json -text
+/logs/c7_cold_boot_20261101/20261101_165246/attempt.json -text
+/logs/c7_cold_boot_20261101/20261101_165246/pretrigger_uart.log -text
+/logs/c7_cold_boot_20261101/20261101_165246/reference_check.json -text
+/logs/c7_cold_boot_20261101/20261101_165246/uart.log -text
+/logs/c7_cold_boot_20261101/20261101_175401/attempt.json -text
+/logs/c7_cold_boot_20261101/20261101_175401/pretrigger_uart.log -text
+/logs/c7_cold_boot_20261101/20261101_175401/reference_check.json -text
+/logs/c7_cold_boot_20261101/20261101_175401/uart.log -text
+/logs/c7_cold_boot_20261101/ram_alignment_analysis.json -text
+/logs/c7_cold_boot_20261101/spi_mode_comparison.json -text
+/logs/c7_cold_flash_plan_20261101.json -text
+/logs/c7_cold_flash_program_20261101.json -text
+/logs/c7_cpu_lanes_tests.json -text
+/logs/c7_spi_rx_tests.json -text
+/logs/c9_reset_status_20261101/board_probe.json -text
+/logs/c9_reset_status_20261101/configure_status.log -text
+/logs/c9_reset_status_20261101/cpu_halt.log -text
+/logs/c9_reset_status_20261101/implementation_audit.json -text
+/logs/c9_reset_status_20261101/key0_capture.json -text
+/logs/c9_reset_status_20261101/key0_capture_console.log -text
+/logs/c9_reset_status_20261101/pins_initial.json -text
+/logs/c9_reset_status_20261101/raw_status.log -text
+/logs/c9_reset_status_20261101/restore_after_key0_console.log -text
+/logs/c9_reset_status_20261101/result.json -text
+/logs/c9_rom_park_20261101/park_probe.log -text
+/logs/c9_rom_park_20261101/raw_status_c10.log -text
+/logs/c9_rom_park_20261101/raw_status_park.log -text
+/logs/c9_rom_park_20261101/result.json -text
+/logs/ddr_board_20261101/20261101_121928/attempt.json -text
+/logs/ddr_board_20261101/20261101_121928/capture_host_script.py -text
+/logs/ddr_board_20261101/20261101_121928/jtag_scan.log -text
+/logs/ddr_board_20261101/20261101_121928/programmer.log -text
+/logs/ddr_board_20261101/20261101_121928/uart.log -text
+/logs/ddr_board_20261101/20261101_121928/uart_check.json -text
+/logs/ddr_board_20261101/20261101_121928/usb_devices.json -text
+/logs/ddr_board_20261101/cold_20261101_122813/attempt.json -text
+/logs/ddr_board_20261101/cold_20261101_122813/capture_host_script.py -text
+/logs/ddr_board_20261101/cold_20261101_122813/jtag_scan.log -text
+/logs/ddr_board_20261101/cold_20261101_122813/programmer.log -text
+/logs/ddr_board_20261101/cold_20261101_122813/uart.log -text
+/logs/ddr_board_20261101/cold_20261101_122813/uart_check.json -text
+/logs/ddr_board_20261101/cold_20261101_122813/usb_devices.json -text
+/logs/ddr_board_20261101/key0_20261101_122404/attempt.json -text
+/logs/ddr_board_20261101/key0_20261101_122404/capture_host_script.py -text
+/logs/ddr_board_20261101/key0_20261101_122404/pretrigger_uart.log -text
+/logs/ddr_board_20261101/key0_20261101_122404/uart.log -text
+/logs/ddr_board_20261101/key0_20261101_122404/uart_check.json -text
+/logs/ddr_board_20261101/summary.json -text
+/logs/ddr_diag_build.json -text
+/logs/ddr_diag_check.json -text
+/logs/ddr_diag_interface.log -text
+/logs/ddr_diag_map.log -text
+/logs/ddr_diag_pgm.log -text
+/logs/ddr_diag_pnr.log -text
+/logs/ddr_diag_tests.json -text
+/logs/firmware_c9_live.json -text
+/logs/flash_backup_20261101.json -text
+/logs/hardware_identity_20261031.json -text
+/logs/physical_c2/tb_c2_a_bridge_mem_half5_video_half19_compile.log -text
+/logs/physical_c2/tb_c2_a_bridge_mem_half5_video_half19_seed12345.log -text
+/logs/physical_c2/tb_c2_a_bridge_mem_half5_video_half7_compile.log -text
+/logs/physical_c2/tb_c2_a_bridge_mem_half5_video_half7_seed12345.log -text
+/logs/physical_c2/tb_c2_a_bridge_mem_half7_video_half3_compile.log -text
+/logs/physical_c2/tb_c2_a_bridge_mem_half7_video_half3_seed12345.log -text
+/logs/physical_c2/tb_c2_a_errors.log -text
+/logs/physical_c2/tb_c2_a_errors_compile.log -text
+/logs/physical_c2/tb_c2_adapter_compile.log -text
+/logs/physical_c2/tb_c2_adapter_seed12345.log -text
+/logs/physical_c2/tb_c2_adapter_seed20261024.log -text
+/logs/physical_c2/tb_c2_adapter_seed67891.log -text
+/logs/physical_c2/tb_c2_apb_p_half131.log -text
+/logs/physical_c2/tb_c2_apb_p_half131_compile.log -text
+/logs/physical_c2/tb_c2_apb_p_half3.log -text
+/logs/physical_c2/tb_c2_apb_p_half3_compile.log -text
+/logs/physical_c2/tb_c2_apb_p_half7.log -text
+/logs/physical_c2/tb_c2_apb_p_half7_compile.log -text
+/logs/physical_c2/tb_c2_axi_compile.log -text
+/logs/physical_c2/tb_c2_axi_seed12345.log -text
+/logs/physical_c2/tb_c2_axi_seed20261024.log -text
+/logs/physical_c2/tb_c2_axi_seed67891.log -text
+/logs/physical_c2/tb_c2_boundary_mem_half5_video_half131_compile.log -text
+/logs/physical_c2/tb_c2_boundary_mem_half5_video_half131_seed12345.log -text
+/logs/physical_c2/tb_c2_boundary_mem_half5_video_half131_seed20261024.log -text
+/logs/physical_c2/tb_c2_boundary_mem_half5_video_half131_seed67891.log -text
+/logs/physical_c2/tb_c2_boundary_mem_half5_video_half7_compile.log -text
+/logs/physical_c2/tb_c2_boundary_mem_half5_video_half7_seed12345.log -text
+/logs/physical_c2/tb_c2_boundary_mem_half5_video_half7_seed20261024.log -text
+/logs/physical_c2/tb_c2_boundary_mem_half5_video_half7_seed67891.log -text
+/logs/physical_c2/tb_c2_boundary_mem_half7_video_half3_compile.log -text
+/logs/physical_c2/tb_c2_boundary_mem_half7_video_half3_seed12345.log -text
+/logs/physical_c2/tb_c2_boundary_mem_half7_video_half3_seed20261024.log -text
+/logs/physical_c2/tb_c2_boundary_mem_half7_video_half3_seed67891.log -text
+/logs/physical_c2/tb_c2_bram_fifo_s_half11_d_half3.log -text
+/logs/physical_c2/tb_c2_bram_fifo_s_half11_d_half3_compile.log -text
+/logs/physical_c2/tb_c2_bram_fifo_s_half3_d_half11.log -text
+/logs/physical_c2/tb_c2_bram_fifo_s_half3_d_half11_compile.log -text
+/logs/physical_c2/tb_c2_bram_fifo_s_half5_d_half5.log -text
+/logs/physical_c2/tb_c2_bram_fifo_s_half5_d_half5_compile.log -text
+/logs/physical_c2/tb_c2_cache.log -text
+/logs/physical_c2/tb_c2_cache_compile.log -text
+/logs/physical_c2/tb_c2_cdc.log -text
+/logs/physical_c2/tb_c2_cdc_compile.log -text
+/logs/physical_c2/tb_c2_fifo.log -text
+/logs/physical_c2/tb_c2_fifo_compile.log -text
+/logs/physical_c2/tb_c2_framebuffer_compile.log -text
+/logs/physical_c2/tb_c2_framebuffer_frame_width1920_frame_height1080_step_x20_step_y20_extended0_compile.log -text
+/logs/physical_c2/tb_c2_framebuffer_frame_width1920_frame_height1080_step_x20_step_y20_extended0_seed12345.log -text
+/logs/physical_c2/tb_c2_framebuffer_mem_half7_video_half11_frame_width383_compile.log -text
+/logs/physical_c2/tb_c2_framebuffer_mem_half7_video_half11_frame_width383_seed67891.log -text
+/logs/physical_c2/tb_c2_framebuffer_seed12345.log -text
+/logs/physical_c2/tb_c2_image_compile.log -text
+/logs/physical_c2/tb_c2_image_seed12345.log -text
+/logs/physical_c2/tb_c2_image_seed20261024.log -text
+/logs/physical_c2/tb_c2_image_seed67891.log -text
+/logs/physical_c2/tb_c2_pool.log -text
+/logs/physical_c2/tb_c2_pool_compile.log -text
+/logs/physical_c2/tb_c2_source_fence.log -text
+/logs/physical_c2/tb_c2_source_fence_compile.log -text
+/logs/physical_c2/tb_c2_time_p_half5_video_half131.log -text
+/logs/physical_c2/tb_c2_time_p_half5_video_half131_compile.log -text
+/logs/physical_c2/tb_c2_time_p_half5_video_half7.log -text
+/logs/physical_c2/tb_c2_time_p_half5_video_half7_compile.log -text
+/logs/physical_c2/tb_c2_time_p_half7_video_half3.log -text
+/logs/physical_c2/tb_c2_time_p_half7_video_half3_compile.log -text
+/logs/physical_c2/tb_c2_vendor_mem_half5_video_half131_compile.log -text
+/logs/physical_c2/tb_c2_vendor_mem_half5_video_half131_seed12345.log -text
+/logs/physical_c2/tb_c2_vendor_mem_half5_video_half131_seed20261024.log -text
+/logs/physical_c2/tb_c2_vendor_mem_half5_video_half131_seed67891.log -text
+/logs/physical_c2/tb_c2_vendor_mem_half5_video_half7_compile.log -text
+/logs/physical_c2/tb_c2_vendor_mem_half5_video_half7_seed12345.log -text
+/logs/physical_c2/tb_c2_vendor_mem_half5_video_half7_seed20261024.log -text
+/logs/physical_c2/tb_c2_vendor_mem_half5_video_half7_seed67891.log -text
+/logs/physical_c2/tb_c2_vendor_mem_half7_video_half3_compile.log -text
+/logs/physical_c2/tb_c2_vendor_mem_half7_video_half3_seed12345.log -text
+/logs/physical_c2/tb_c2_vendor_mem_half7_video_half3_seed20261024.log -text
+/logs/physical_c2/tb_c2_vendor_mem_half7_video_half3_seed67891.log -text
+/logs/physical_c2/tb_c2_video_config.log -text
+/logs/physical_c2/tb_c2_video_config_compile.log -text
+/logs/physical_c2/tb_c2_video_extended0_compile.log -text
+/logs/physical_c2/tb_c2_video_extended0_seed12345.log -text
+/logs/physical_c2/tb_c2_video_mem_half5_video_half19_frame_width384_frame_height216_step_x4_step_y4_compile.log -text
+/logs/physical_c2/tb_c2_video_mem_half5_video_half19_frame_width384_frame_height216_step_x4_step_y4_seed12345.log -text
+/logs/physical_c2/tb_c2_video_mem_half7_video_half3_frame_width384_frame_height216_step_x4_step_y4_compile.log -text
+/logs/physical_c2/tb_c2_video_mem_half7_video_half3_frame_width384_frame_height216_step_x4_step_y4_seed12345.log -text
+/logs/physical_c2/tb_c3_peripheral.log -text
+/logs/physical_c2/tb_c3_peripheral_compile.log -text
+/logs/physical_c2_console.log -text
+/logs/physical_c2_selftest.json -text
+/logs/ram_diagnostic_20261101/20261101_173856/attempt.json -text
+/logs/ram_diagnostic_20261101/20261101_173856/load_readback.cfg -text
+/logs/ram_diagnostic_20261101/20261101_173856/load_readback.log -text
+/logs/ram_diagnostic_20261101/20261101_173856/resume.cfg -text
+/logs/ram_diagnostic_20261101/20261101_173856/resume.log -text
+/logs/ram_diagnostic_20261101/20261101_173856/uart.log -text
+/logs/ram_diagnostic_20261101/20261101_173856/uart_check.json -text
+/logs/ram_diagnostic_20261101/20261101_183315/attempt.json -text
+/logs/ram_diagnostic_20261101/20261101_183315/configure_c9.log -text
+/logs/ram_diagnostic_20261101/20261101_183315/firmware_build_record.json -text
+/logs/ram_diagnostic_20261101/20261101_183315/implementation_audit.json -text
+/logs/ram_diagnostic_20261101/20261101_183315/load_readback.cfg -text
+/logs/ram_diagnostic_20261101/20261101_183315/load_readback.log -text
+/logs/ram_diagnostic_20261101/20261101_183315/pins_c10.json -text
+/logs/ram_diagnostic_20261101/20261101_183315/pins_c9.json -text
+/logs/ram_diagnostic_20261101/20261101_183315/reset_probe.log -text
+/logs/ram_diagnostic_20261101/20261101_183315/resume.cfg -text
+/logs/ram_diagnostic_20261101/20261101_183315/slow_jtag_probe.log -text
+/logs/ram_diagnostic_20261101/20261101_183315/uart.log -text
+/logs/soc_cold_audit.json -text
+/logs/soc_cold_build.json -text
+/logs/soc_cold_cdc_binding.json -text
+/logs/soc_cold_interface_check.json -text
+/logs/soc_cold_map_check.json -text
+/logs/soc_cold_pgm_check.json -text
+/logs/soc_cold_pnr_check.json -text
+/logs/soc_cold_route_build.json -text
+/logs/soc_cold_sta_tclsh_check.json -text
+/logs/soc_live_audit.json -text
+/logs/soc_live_build.json -text
+/logs/soc_live_cdc_binding.json -text
+/logs/soc_live_route_build.json -text
+/logs/soc_live_rtl_tests.json -text
+/logs/soc_physical_audit.json -text
+/logs/soc_physical_bitgen_console.log -text
+/logs/soc_physical_build.json -text
+/logs/soc_physical_cdc_binding.json -text
+/logs/soc_physical_evidence/EVIDENCE_INDEX.json -text
+/logs/soc_physical_interface.log -text
+/logs/soc_physical_interface_check.json -text
+/logs/soc_physical_interface_console.log -text
+/logs/soc_physical_map.log -text
+/logs/soc_physical_map_check.json -text
+/logs/soc_physical_map_console.log -text
+/logs/soc_physical_netlist_reuse.json -text
+/logs/soc_physical_pgm.log -text
+/logs/soc_physical_pgm_check.json -text
+/logs/soc_physical_pnr.log -text
+/logs/soc_physical_pnr_100_console.log -text
+/logs/soc_physical_pnr_check.json -text
+/logs/soc_physical_pnr_console.log -text
+/logs/soc_physical_postroute_review_inputs.json -text
+/logs/soc_physical_route_build.json -text
+/logs/soc_physical_sta_console.log -text
+/logs/soc_physical_sta_tclsh.log -text
+/logs/soc_physical_sta_tclsh_check.json -text
+/logs/soc_physical_test_console.log -text
+/logs/soc_physical_tests.json -text
+/logs/soc_physical_tfaw50_console.log -text
+/logs/tb_ddr_diag.log -text
+/logs/tb_ddr_status.log -text
+/team_work/03_ai_soc/BOARD_PREFLIGHT_20261031.md -text
+/team_work/03_ai_soc/C7_BOARD_ACCEPTANCE_20261101.md -text
+/team_work/03_ai_soc/C7_COLD_BOOT_DEBUG_20261101.md -text
+/team_work/03_ai_soc/DDR_BOARD_RESULT_20261101.md -text
+/team_work/03_ai_soc/DDR_DIAGNOSTIC_RUNBOOK.md -text
+/team_work/03_ai_soc/PAUSE_CHECKPOINT_20261101.md -text
+/team_work/03_ai_soc/PHYSICAL_V4_20261031.md -text
+/team_work/03_ai_soc/c7_board/link.ld -text
+/team_work/03_ai_soc/c7_board/main.c -text
+/team_work/03_ai_soc/c7_board/start.S -text
+/team_work/03_ai_soc/c7_spi/sim/tb_spi_receive.sv -text
+/team_work/03_ai_soc/c9_live/debug/README.md -text
+/team_work/03_ai_soc/c9_live/debug/c9_ddr_probe.sv -text
+/team_work/03_ai_soc/c9_live/debug/tb_c9_ddr_probe.sv -text
+/team_work/03_ai_soc/c9_live/firmware/dma_main.c -text
+/team_work/03_ai_soc/c9_live/firmware/tinyml_main.cc -text
+/team_work/03_ai_soc/c9_live/rtl/c9_live_control.sv -text
+/team_work/03_ai_soc/c9_live/rtl/c9_pattern_source.sv -text
+/team_work/03_ai_soc/c9_live/rtl/c9_snapshot_group.sv -text
+/team_work/03_ai_soc/c9_live/sim/tb_c9_control.sv -text
+/team_work/03_ai_soc/c9_live/sim/tb_c9_pattern.sv -text
+/tools/audit_soc_physical.py -text
+/tools/build_c7_board_diag.py -text
+/tools/check_board_preflight.py -text
+/tools/check_c7_board_uart.py -text
+/tools/check_ddr_diag.py -text
+/tools/check_ddr_uart.py -text
+/tools/check_soc_physical.py -text
+/tools/export_physical_evidence.py -text
+/tools/generate_physical_cdc.py -text
+/tools/prepare_ddr_diag.py -text
+/tools/prepare_soc_physical.py -text
+/tools/probe_c7_ddr.py -text
+/tools/run_c7_board_acceptance.py -text
+/tools/run_ddr_diag.ps1 -text
+/tools/run_soc_physical.ps1 -text
+/tools/test_c7_cpu_lanes.py -text
+/tools/test_physical_c2.py -text
+/logs/c9_board_handoff_20261103.json -text
+/logs/c9_local_handoff_20261102.json -text
+/logs/c9_packet_handoff_20261103.json -text
+/logs/c9_pc_handoff_20261102.json -text
+/team_work/03_ai_soc/C9_DISPLAY_FIX_20261102.md -text

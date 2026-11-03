@@ -1,0 +1,71 @@
+{
+  "status": "PASS_CLEAN_EXTRACTED_ARCHIVE",
+  "archive": "B_dual_sensor_followup_20261030.zip",
+  "sha256": "c817488dce310f2997c4856e44954576e14ca4c66a7ca52c4d16b84ccdad995d",
+  "clean_directory": "D:\\ADC&DAC\\Ti60_B_BoardReady_20261028\\artifacts\\B_dual_sensor_followup_clean_20261030_204202_616823",
+  "returncode": 0,
+  "hardware_accessed": false,
+  "verification": {
+    "status": "PASS_CLEAN_DELIVERY_EVIDENCE_VERIFICATION",
+    "hardware_accessed": false,
+    "files_hash_checked": 4524,
+    "adapter_boundary_tests": 3,
+    "sessions": [
+      {
+        "directory": "dual_soak_20261030_202334_012643",
+        "status": "EVIDENCE_CONSISTENT",
+        "files_hash_checked": 103,
+        "uart_transactions": 2501,
+        "uart_errors_preserved": 1,
+        "sht_valid": 8,
+        "sht_failed": 0,
+        "thermal_pairs": 15,
+        "algorithm_recalculations": 15,
+        "plausible_pairs": 15,
+        "observed_age_ms": [
+          361,
+          390
+        ],
+        "acquisition_result": "NOT_PASSED",
+        "full_requested_duration_completed": false
+      },
+      {
+        "directory": "dual_soak_20261030_202534_575823",
+        "status": "EVIDENCE_CONSISTENT",
+        "files_hash_checked": 891,
+        "uart_transactions": 19195,
+        "uart_errors_preserved": 1,
+        "sht_valid": 53,
+        "sht_failed": 0,
+        "thermal_pairs": 146,
+        "algorithm_recalculations": 146,
+        "plausible_pairs": 146,
+        "observed_age_ms": [
+          338,
+          377
+        ],
+        "acquisition_result": "NOT_PASSED",
+        "full_requested_duration_completed": false
+      },
+      {
+        "directory": "dual_soak_20261030_202918_079751",
+        "status": "EVIDENCE_CONSISTENT",
+        "files_hash_checked": 3466,
+        "uart_transactions": 74663,
+        "uart_errors_preserved": 10,
+        "sht_valid": 212,
+        "sht_failed": 0,
+        "thermal_pairs": 574,
+        "algorithm_recalculations": 574,
+        "plausible_pairs": 574,
+        "observed_age_ms": [
+          242,
+          409
+        ],
+        "acquisition_result": "COMPLETED_WITH_RECORDED_RECOVERED_TRANSPORT_ERRORS",
+        "full_requested_duration_completed": true
+      }
+    ],
+    "full_system_acceptance": false
+  }
+}

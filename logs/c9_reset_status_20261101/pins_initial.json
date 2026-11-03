@@ -1,0 +1,49 @@
+{
+  "time": "2026-11-01T19:54:19.347476+08:00",
+  "instruction": "SAMPLE(00010)",
+  "length": 741,
+  "pins": [
+    {
+      "bit": 167,
+      "pad": "GPIOR_28",
+      "signal": "uart_tx",
+      "kind": "output3",
+      "value": "1"
+    },
+    {
+      "bit": 170,
+      "pad": "GPIOR_27",
+      "signal": "led[0]",
+      "kind": "output3",
+      "value": "0"
+    },
+    {
+      "bit": 179,
+      "pad": "GPIOR_24",
+      "signal": "led[1]",
+      "kind": "output3",
+      "value": "1"
+    },
+    {
+      "bit": 263,
+      "pad": "GPIOR_N_08_CLK11_N",
+      "signal": "ddr_reset_n.N",
+      "kind": "output3",
+      "value": "1"
+    },
+    {
+      "bit": 383,
+      "pad": "GPIOR_16",
+      "signal": "o_cam_rst_p",
+      "kind": "output3",
+      "value": "0"
+    },
+    {
+      "bit": 549,
+      "pad": "GPIOL_07",
+      "signal": "i_arstn",
+      "kind": "input",
+      "value": "1"
+    }
+  ]
+}

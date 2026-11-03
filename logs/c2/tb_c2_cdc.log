@@ -1,0 +1,2 @@
+PASS tb_c2_cdc messages=200 width=512 asynchronous_clocks backpressure common_reset_cancel
+projects\06_soc_c2\sim\tb_c2_cdc.sv:50: $finish called at 24423000 (1ps)

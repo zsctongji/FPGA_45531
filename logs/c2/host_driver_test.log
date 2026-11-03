@@ -1,0 +1,12 @@
+cooperation_v1.c
+c2_driver.c
+c4_bridge.c
+c24_pipeline.c
+test_c2_driver.c
+正在生成代码...
+  正在创建库 build\c2\test_c2_driver.lib 和对象 build\c2\test_c2_driver.exp
+PASS c2_driver checks=29702 frames=102 both_slots RX_readonly stale_cache_negative invalidate_copy_release failure_cleanup timeout_poison C24_release_before_infer stale order score_mapping
+c3_shared_time.c
+test_c3_shared_time.c
+正在生成代码...
+PASS C3 shared time: 23 checks; wrap, invalid/reset, IO failure, version/capability/frequency guards; synthetic registers only.

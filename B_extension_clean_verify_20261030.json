@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "scope": "OFFLINE_HOST_ONLY",
+  "hardware_accessed": false,
+  "manifest_files_verified": 29,
+  "python_suites": [
+    {
+      "suite": "test_gray96_adapter.py",
+      "tests": 9,
+      "status": "PASS"
+    },
+    {
+      "suite": "test_robust_receiver.py",
+      "tests": 14,
+      "status": "PASS"
+    },
+    {
+      "suite": "test_network_draft.py",
+      "tests": 12,
+      "status": "PASS"
+    }
+  ],
+  "c_driver": {
+    "scope": "HOST_C_DRIVER_MOCK_HAL",
+    "hardware_accessed": false,
+    "cases": 16,
+    "assertions": 361,
+    "status": "PASS",
+    "compiler": "C:\\Program Files (x86)\\Dev-Cpp\\MinGW64\\bin\\gcc.exe",
+    "compiler_version": "gcc.exe (tdm64-1) 9.2.0",
+    "source_sha256": {
+      "b_sensors.h": "8fca1ad2a3eda5e491a0eb02c1f00a22a08ad6770bf51551ff52a93d93dd16b7",
+      "b_sht30.c": "fc61395e0ee9c4c07932764d87401d1fa15ebd6862e627970ae97132bacb435c",
+      "c3_hal.c": "a6615a58cf39518e993b34093312c747507cb5d2d05c94ee07b24d02795615ad",
+      "c3_hal.h": "8fa8fb9843f90a4a0f54ae8517f59d7ce9a57edfffe9d8c48a36b6fcf36e5286",
+      "cooperation_v1.h": "440d7fdd09887dd5fdf1a9761430226c95af795a1507cbbb7d76505bc473b80c"
+    }
+  }
+}

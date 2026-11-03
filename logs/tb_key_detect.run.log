@@ -1,0 +1,3 @@
+﻿PASS tb_key_detect debounce_cycles=1000 pulses=2 bounce/short_press/reset/held_release=checked
+D:\FPGA_2026_T3_P3\sim\tb_key_detect.sv:29: $finish called at 129460000 (1ps)
+

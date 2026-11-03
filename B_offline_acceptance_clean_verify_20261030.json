@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "scope": "CLEAN_BUNDLE_OFFLINE_VERIFICATION",
+  "hardware_accessed": false,
+  "new_board_measurements": 0,
+  "manifest_files_verified": 32,
+  "targeted_tests": 17,
+  "original_c_gate_compiled": true,
+  "saved_sht_rows_replayed": 104,
+  "tampered_disposable_input_rejected": true,
+  "release_allowed": false,
+  "release_status": "BLOCKED_BY_EVIDENCE"
+}

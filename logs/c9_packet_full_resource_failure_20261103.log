@@ -1,0 +1,54 @@
+           
+           Elitestek FPGA Placement and Routing.
+           Version: 2026.1.132 
+           Compiled: May 29 2026.
+           
+           Copyright (C) 2013 - 2026 Efinix, Inc. All rights reserved.
+
+           
+           The Tool Is Based on VPR of University of Toronto,
+           a free open source code under MIT license.
+           
+WARNING  : Found 23 warnings in the post-synthesis netlist.
+INFO     : Reading core interface constraints file "outflow\soc_physical.interface.csv" [DBMsg::CoreInterfaceConstraintsFileReading]
+INFO     : Successfully read core interface constraints file "outflow\soc_physical.interface.csv" [DBMsg::CoreInterfaceConstraintsFileLoadSuccess]
+INFO     : Creating interface clock pin CLK_27M [DBMsg::NetlistInterfaceClockPinCreated]
+INFO     : Creating interface clock pin clk_100m [DBMsg::NetlistInterfaceClockPinCreated]
+INFO     : Creating interface clock pin fb [DBMsg::NetlistInterfaceClockPinCreated]
+INFO     : Creating interface clock pin hdmi_tx_fast_clk [DBMsg::NetlistInterfaceClockPinCreated]
+WARNING  : logical_block LUT__193822 #38550 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block LUT__193823 #38551 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block soc/u_sapphire_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[0]~FF #56390 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block soc/u_sapphire_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[1]~FF #56391 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block soc/u_sapphire_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[2]~FF #56392 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block soc/u_sapphire_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[3]~FF #56393 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block soc/u_sapphire_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[4]~FF #56394 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block soc/u_sapphire_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[5]~FF #56395 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block LUT__193822 #38550 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block LUT__193823 #38551 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block soc/u_sapphire_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[0]~FF #56390 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block soc/u_sapphire_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[1]~FF #56391 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block soc/u_sapphire_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[2]~FF #56392 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block soc/u_sapphire_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[3]~FF #56393 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block soc/u_sapphire_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[4]~FF #56394 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block soc/u_sapphire_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[5]~FF #56395 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Reading core interface constraints file "outflow\soc_physical.interface.csv" [DBMsg::CoreInterfaceConstraintsFileReading]
+INFO     : Successfully read core interface constraints file "outflow\soc_physical.interface.csv" [DBMsg::CoreInterfaceConstraintsFileLoadSuccess]
+WARNING  : Clock source "jtag_inst1_TCK" does not use a dedicated clock pad, extra clock insertion delay will been added
+WARNING  : Clock source "jtag_inst2_TCK" does not use a dedicated clock pad, extra clock insertion delay will been added
+INFO     : Counting 2 clocks that are not assigned to clock resources as global clocks.
+INFO     : XLR count after merging: 60878
+INFO     : Netlist has 38558 luts, 31699 ffs and 7383 adders [PackerMsg::NetlistStatistics]
+INFO     : Packed into 60878 clusters with 2.5478826(1.0325898) inputs(outputs) per cluster for a total of 155110(62862) inputs(outputs) [PackerMsg::ClusterPackingStatistics]
+INFO     : Packed into 60878 xlrs with 2.5478826(1.0325898) inputs(outputs) per xlr for a total of 155110(62862) inputs(outputs) [PackerMsg::XLRPackingStatistics]
+INFO     : Packed 6 fracturable DSPs into 5 clusters [PackerMsg::DSPPackingStatistics]
+ERROR    : Not enough physical locations for Logic blocks : capacity=60800 usage=60878
+ERROR    : Not enough physical locations for FF cells : capacity=60800 usage=60878
+ERROR    : Not enough physical locations for EFT blocks : capacity=59707 usage=59785
+INFO     : Packing took 2.0472901 seconds [FlowMsg::StageDuration]
+INFO     :     Packing took 2.09375 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : Packing virtual memory usage: begin = 60.896 MB, end = 484.56 MB, delta = 423.664 MB [FlowMsg::VMUsage]
+INFO     :     Packing peak virtual memory usage = 484.56 MB [FlowMsg::VMUsage::Peak]
+INFO     : Packing resident set memory usage: begin = 67.716 MB, end = 490.956 MB, delta = 423.24 MB [FlowMsg::RSSUsage]
+INFO     :     Packing peak resident set memory usage = 490.956 MB [FlowMsg::RSSUsage::Peak]
+ERROR    : Block capacity checks have failed

@@ -1,0 +1,15 @@
+{
+  "status": "PASS_WARM_ROM_FLASH_BOOT",
+  "started": "2026-11-02T18:34:57.872140+08:00",
+  "fpga_image_sha256": "982ab1bf07f6b8ba825b02c064de014003fc743a08f9083631e5adcc24956f5b",
+  "flash_written": false,
+  "cpu_loaded": false,
+  "ram_firmware_loaded": false,
+  "cold_boot_passed": false,
+  "warm_automatic_boot_passed": true,
+  "port": "COM13",
+  "baud": 115200,
+  "programmer_returncode": 0,
+  "uart_sha256": "adf8741133b27a5cb5da12442b96155e404308048e9400e73ae7ebbc5a9c588a",
+  "finished": "2026-11-02T18:35:18.834860+08:00"
+}

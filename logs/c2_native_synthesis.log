@@ -1,0 +1,3 @@
+WARNING: cannot find correct IV value
+Running: efx_run_map.py c2_native --family Titanium --device Ti60F225 --project_xml C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\projects\06_soc_c2\integration\c2_native.xml --output_dir outflow --work_dir work_syn --timeout 600 --opt root=c2_tinyml_soc_top --opt veri_options=verilog_mode=sv_09,vhdl_mode=vhdl_2008 work-dir=work_syn write_efx_verilog=on I=C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/03_tinyml/ip/sapphire_soc
+   map :	PASS 

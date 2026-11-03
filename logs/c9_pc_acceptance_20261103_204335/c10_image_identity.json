@@ -1,0 +1,7 @@
+{
+  "status": "PASS_FROZEN_C10_IDENTITY",
+  "hardware_accessed": false,
+  "audit_sha256": "e93ff9158936a1792f4cf6827a10c23428d049f6ed9d919b454f624b86287780",
+  "files": 124,
+  "image_sha256": "982ab1bf07f6b8ba825b02c064de014003fc743a08f9083631e5adcc24956f5b"
+}

@@ -1,0 +1,3 @@
+CHECK framebuffer frame0 + AI readback
+PASS tb_c2_framebuffer geometry=1920x1080 full_HD=1 stride=1920 bank_pitch=2076672 full_bytes=2073600 display_bytes=2073600 cpu_bursts=92715 tinyml_bursts=92715 max_aw_wait=63 max_ar_wait=61 actual_full_frame_write_read final_B_fence single_DDR synthetic_masters
+build/c9_display_c2_20261102/sim/tb_c2_framebuffer.sv:803: $finish called at 83940168000 (1ps)

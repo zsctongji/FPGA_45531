@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "source_sha256": {
+    "team_work/03_ai_soc/c9_live/debug/c9_ddr_probe.sv": "379cd0c11256dc562dcc72c6c224d21e2a4c596f2783c17854fb6bf0e07934b4",
+    "team_work/03_ai_soc/c9_live/debug/tb_c9_ddr_probe.sv": "e91a96b739b412f9cca7f4b5b7f5c71c48751e1dac607102c16ebd840094639b",
+    "tools/test_c9_ddr_probe.py": "299f5aa39777577c52ea1bbe1fc8d67b98cf416813976c34bea1cd18f20ff129"
+  },
+  "checks": [
+    "Four bank contents and cycling",
+    "Readable while application reset held",
+    "Unselected TAP cannot capture/advance",
+    "All four running clocks change phase",
+    "Stopped clocks do not change phase"
+  ]
+}

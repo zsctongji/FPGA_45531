@@ -1,0 +1,14 @@
+{
+  "status": "HOST_ERROR",
+  "started": "2026-11-01T20:54:40.892306+08:00",
+  "flash_written": false,
+  "cpu_firmware_loaded": false,
+  "fpga_image_sha256": "0388c6add0b93bf7c73c807e94527d0c2bbe0acc6a7d3f8a3a2174f1a99c7bd5",
+  "implementation_audit_sha256": "890f761194ec23b900f5437602677de7fac84c0c237e4a12ad0ac7f6f37a108c",
+  "capture_tool_sha256": "571bb34233ab7d8536d74e7394b057f00e4f3ee1e72b550936b5757e83eca593",
+  "fpga_configured": true,
+  "error": "KeyError('EFINITY_USER_DIR')",
+  "c10_restore_passed": true,
+  "restore_attempt": "logs\\c10_warm_boot_20261101\\20261101_205453\\attempt.json",
+  "finished": "2026-11-01T20:55:13.804660+08:00"
+}

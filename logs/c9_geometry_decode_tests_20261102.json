@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "synthetic_only": true,
+  "board_test_passed": false,
+  "cases": [
+    "fragmented_record_is_observation_only",
+    "clipped_record_explicit",
+    "no_record_rejected",
+    "no_done_rejected",
+    "pattern_source_rejected",
+    "bad_hex_rejected"
+  ],
+  "source_sha256": {
+    "tools/test_c9_geometry_decode.py": "0674b2361757a3db3f845feb5ff20fb0c7a895e6774b7a7abc86c2770e0b8a7c",
+    "tools/check_c9_geometry.py": "e43cbbcece76d7ab76ffc26528e6ef382a8ba26ed5a56948087900179659aef2",
+    "tools/check_c9_uart.py": "117150fa5f8b4f6e242e274f610821e3428363ff39ee41be3d990223bb040376"
+  }
+}

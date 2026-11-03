@@ -1,0 +1,45 @@
+{
+  "status": "FAIL_CALIBRATION_INCOMPLETE",
+  "calibration_verified": false,
+  "failures": [
+    "cal_done must remain 1, CPU reset 0, sys_rst/ddr_rstn 1 for last eight bank0 samples"
+  ],
+  "observed": {
+    "cal_done": false,
+    "system_reset": true,
+    "controller_reset_released": true,
+    "root_reset_released": true,
+    "pll_locks": 15,
+    "sys_rst": true,
+    "init_state": 23,
+    "wrlvl_check": 0,
+    "read_level_check": 0,
+    "init_delay_counter": 300000,
+    "rdlvl_shift": 0,
+    "wrlvl_shift": 0,
+    "mpr_rdlvl_dly": false,
+    "idelay_ld": false,
+    "ddr_debug_port_hex": "200010000",
+    "status0_last8_identical": true,
+    "status1_last8_identical": true,
+    "clock_activity_observed": {
+      "core_clk": true,
+      "i_sysclk": true,
+      "tx_cal_clk": true,
+      "rx_cal_clk": true
+    },
+    "atomic_snapshot": false,
+    "clock_frequency_verified": false
+  },
+  "cpu_execution_verified": false,
+  "full_capacity_verified": false,
+  "clock_frequency_verified": false,
+  "atomic_snapshot": false,
+  "hardware_accessed": false,
+  "c10_restore_passed": true,
+  "fpga_image_sha256": "0388c6add0b93bf7c73c807e94527d0c2bbe0acc6a7d3f8a3a2174f1a99c7bd5",
+  "attempt_sha256": "7e3cc507ea48067b991870a7dace9e60545e79d263fa3011d080f39776dd4d16",
+  "samples_sha256": "07950228d62bd2abf6dee833c32aa7efb34b6b6f626b50c1175052a1799af014",
+  "audit_sha256": "890f761194ec23b900f5437602677de7fac84c0c237e4a12ad0ac7f6f37a108c",
+  "checker_sha256": "7bdf796ccca43832d5a832cddb5da18d38d37f0d77c9e6c5616a63f098f5cd09"
+}

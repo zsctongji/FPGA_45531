@@ -1,0 +1,2 @@
+PASS tb_c2_bram_fifo depth=64 words=4096 checks=16547 cycle_equivalent exact_capacity pointer_wrap stable_stall common_reset synchronous_RAM
+build/c9_display_c2_20261102/sim/tb_c2_bram_fifo.sv:50: $finish called at 165540000 (1ps)

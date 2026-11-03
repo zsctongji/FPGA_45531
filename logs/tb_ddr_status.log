@@ -1,0 +1,2 @@
+PASS tb_ddr_status UART records=4 PLL_timeout cal_timeout PASS LED independent_clock
+C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\projects\08_ddr_diag\sim\tb_ddr_status.sv:34: $finish called at 534795000 (1ps)

@@ -1,0 +1,2 @@
+PASS tb_c2_source_fence cases=8 both_orders delayed_verdict frame_id FNV errors stable_response common_reset
+projects\06_soc_c2\sim\tb_c2_source_fence.sv:28: $finish called at 2330000 (1ps)

@@ -1,0 +1,2 @@
+PASS tb_c2_vendor bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=152752 final_B_fence FNV CPU_readback APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset
+projects\06_soc_c2\sim\tb_c2_vendor.sv:553: $finish called at 1036080000 (1ps)

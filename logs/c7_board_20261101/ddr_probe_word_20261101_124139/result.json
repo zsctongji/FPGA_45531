@@ -1,0 +1,10 @@
+{
+  "status": "FAIL",
+  "mode": "word",
+  "base": "0x2000000",
+  "expected": "0102030405060708090a0b0c0d0e0f10",
+  "actual": "01020304000000000000000000000000",
+  "openocd_returncode": 0,
+  "flash_written": false,
+  "scope": "Small CPU debug memory write/read, not full C7 acceptance"
+}

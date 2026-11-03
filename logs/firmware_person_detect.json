@@ -1,0 +1,39 @@
+﻿{
+    "status":  "PASS",
+    "started":  "2026-10-18T13:54:39.7579149+08:00",
+    "scope":  "Cross compilation of vendor static-image TinyML demo; no inference executed",
+    "project":  "D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\embedded_sw\\sapphire_soc_tinyml\\software\\standalone\\tinyml_pdti8",
+    "board_programmed":  false,
+    "board_inference_passed":  false,
+    "compiler":  "riscv-none-elf-gcc.exe (xPack GNU RISC-V Embedded GCC x86_64) 13.4.0\r\nCopyright (C) 2023 Free Software Foundation, Inc.\r\nThis is free software; see the source for copying conditions.  There is NO\r\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+    "cpp_runtime_objects":  [
+                                "D:/FPGA_2026_T3_P3/tools/riscv_gcc/13.4.0/bin/../lib/gcc/riscv-none-elf/13.4.0/rv32im/ilp32/crtbegin.o",
+                                "D:/FPGA_2026_T3_P3/tools/riscv_gcc/13.4.0/bin/../lib/gcc/riscv-none-elf/13.4.0/rv32im/ilp32/crtend.o"
+                            ],
+    "exit_code":  0,
+    "artifacts":  [
+                      {
+                          "path":  "D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\embedded_sw\\sapphire_soc_tinyml\\software\\standalone\\tinyml_pdti8\\build_ours\\tinyml_pdti8.elf",
+                          "sha256":  "E76E886B16566D29A630E858DA9C7E8C224425CD04CF9C98600001701E9D88C9",
+                          "bytes":  12022336
+                      },
+                      {
+                          "path":  "D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\embedded_sw\\sapphire_soc_tinyml\\software\\standalone\\tinyml_pdti8\\build_ours\\tinyml_pdti8.hex",
+                          "sha256":  "EBB923377144E0B2EFCCA0C04CC313CDE845376E6A2ADEBBEA86109FCCC3DB37",
+                          "bytes":  3987766
+                      },
+                      {
+                          "path":  "D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\embedded_sw\\sapphire_soc_tinyml\\software\\standalone\\tinyml_pdti8\\build_ours\\tinyml_pdti8.bin",
+                          "sha256":  "5B09E3E333C6C21D949555234FDEF23237ECB5C9B9EC3DB64B774A4CEFAD752E",
+                          "bytes":  1417720
+                      },
+                      {
+                          "path":  "D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\embedded_sw\\sapphire_soc_tinyml\\software\\standalone\\tinyml_pdti8\\build_ours\\tinyml_pdti8.map",
+                          "sha256":  "029503F48D0015B04EAF06E904F3A57A2F8831058F0464E3766F46683E288A94",
+                          "bytes":  1145018
+                      }
+                  ],
+    "elf_verified":  "ELF32 RISC-V, entry 0x1000, vendor BSP",
+    "deliver_directory":  "D:\\FPGA_2026_T3_P3\\firmware\\static_person_detect",
+    "finished":  "2026-10-18T13:55:13.8486496+08:00"
+}

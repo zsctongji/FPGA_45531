@@ -1,0 +1,219 @@
+{
+  "status": "PASS_OFFLINE_READONLY_DDR_PROBE",
+  "synthesis_mode": "cong",
+  "comb4_packing": 0,
+  "diagnostic_only": true,
+  "board_test_passed": false,
+  "flash_written": false,
+  "controlled_change": "Scanout startup guard only; COMB4=0, cong/CONGESTION_2/seed2 and DDR/clock/pin configuration retained",
+  "timing": {
+    "setup": {
+      "rows": 30,
+      "minimum_slack_ns": 0.134,
+      "violations": []
+    },
+    "hold": {
+      "rows": 30,
+      "minimum_slack_ns": 0.027,
+      "violations": []
+    }
+  },
+  "cdc": {
+    "setup": [
+      {
+        "hierarchy": "soc/c2_full_video/ingress/crossing",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.035,
+        "minimum_slack_ns": 3.965
+      },
+      {
+        "hierarchy": "soc/c2_full_video/ingress/crossing",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.037,
+        "minimum_slack_ns": 7.963
+      },
+      {
+        "hierarchy": "soc/c2_full_video/framebuffer/output_cdc",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.011,
+        "minimum_slack_ns": 7.989
+      },
+      {
+        "hierarchy": "soc/c2_full_video/framebuffer/output_cdc",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 5.387,
+        "maximum_skew_ns": 0.037,
+        "minimum_slack_ns": 5.35
+      },
+      {
+        "hierarchy": "soc/c2_attachment/core/pixels/storage",
+        "pointer": "wgray",
+        "bits": 5,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.035,
+        "minimum_slack_ns": 3.965
+      },
+      {
+        "hierarchy": "soc/c2_attachment/core/pixels/storage",
+        "pointer": "rgray",
+        "bits": 5,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.035,
+        "minimum_slack_ns": 7.965
+      },
+      {
+        "hierarchy": "raw_split/queue",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 16.0,
+        "maximum_skew_ns": 0.039,
+        "minimum_slack_ns": 15.961
+      },
+      {
+        "hierarchy": "raw_split/queue",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.035,
+        "minimum_slack_ns": 7.965
+      },
+      {
+        "hierarchy": "gray_split/queue",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.019,
+        "minimum_slack_ns": 7.981
+      },
+      {
+        "hierarchy": "gray_split/queue",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.031,
+        "minimum_slack_ns": 3.969
+      }
+    ],
+    "hold": [
+      {
+        "hierarchy": "soc/c2_full_video/ingress/crossing",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.019,
+        "minimum_slack_ns": 3.981
+      },
+      {
+        "hierarchy": "soc/c2_full_video/ingress/crossing",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.021,
+        "minimum_slack_ns": 7.979
+      },
+      {
+        "hierarchy": "soc/c2_full_video/framebuffer/output_cdc",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.007,
+        "minimum_slack_ns": 7.993
+      },
+      {
+        "hierarchy": "soc/c2_full_video/framebuffer/output_cdc",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 5.387,
+        "maximum_skew_ns": 0.021,
+        "minimum_slack_ns": 5.366
+      },
+      {
+        "hierarchy": "soc/c2_attachment/core/pixels/storage",
+        "pointer": "wgray",
+        "bits": 5,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.019,
+        "minimum_slack_ns": 3.981
+      },
+      {
+        "hierarchy": "soc/c2_attachment/core/pixels/storage",
+        "pointer": "rgray",
+        "bits": 5,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.019,
+        "minimum_slack_ns": 7.981
+      },
+      {
+        "hierarchy": "raw_split/queue",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 16.0,
+        "maximum_skew_ns": 0.023,
+        "minimum_slack_ns": 15.977
+      },
+      {
+        "hierarchy": "raw_split/queue",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.019,
+        "minimum_slack_ns": 7.981
+      },
+      {
+        "hierarchy": "gray_split/queue",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.01,
+        "minimum_slack_ns": 7.99
+      },
+      {
+        "hierarchy": "gray_split/queue",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.017,
+        "minimum_slack_ns": 3.983
+      }
+    ]
+  },
+  "source_sha256": {
+    "build/c9_display_fix_20261102/physical_soc_core.v": "7c795bb2962f1e3d1fba52bde1e0f564cacd37af10a170847e25cb5ec2987524",
+    "build/c9_display_fix_20261102/soc_physical_top.sv": "c1eeef62797df4c41ac2a20533163027d310371142d60c258ca304580a41a93c",
+    "build/c9_display_fix_20261102/soc_physical.peri.xml": "0303170cbe27b86e11b15e490ad5f7fe5bd4ee6bf89acd60d22c1d170a230973",
+    "build/c9_display_fix_20261102/soc_physical.sdc": "53f8baf48c4118283df2c9bcd57a5270516039e64caea6e9296592afe34f7b95",
+    "build/c9_display_fix_20261102/review_timing.tcl": "041f9c91942fa3940f4832b3416a208f8e1f15a9166e7a5bcddbb1e6a7f8e6b2",
+    "build/c9_display_fix_20261102/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol0.bin": "95aa26b9cc41c94dca7543f5c4b48350b566cf9311ea714df17415d549e5aa6e",
+    "build/c9_display_fix_20261102/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol1.bin": "e4ad872f2b3dcb92ec3e7d5860e16bc70177928642cce1c89383a74faf94d393",
+    "build/c9_display_fix_20261102/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol2.bin": "b8c5f31b9b5e5fcea4ad83627e7749ca567fee94bef441a241bad2652a42064e",
+    "build/c9_display_fix_20261102/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol3.bin": "b1be4104ba5dabcdef13ef787d604d39b75dac954d7d1f65728be266bf4b606d",
+    "build/c9_display_fix_20261102/soc_physical.xml": "f9ae4c4cf577f90d441a42680f40326fcab38e60f74d20264ea8503844d809f9",
+    "build/c9_display_fix_20261102/bind_cdc.py": "30b506b6a70a20d717bee986a78d7bade62b0013bcc8b8964f57d3712aeb5340",
+    "build/c9_display_fix_20261102/capture_display.py": "e7a08a4c07480ffbe073545f8695d4211f8b22bd11cdc8580e92a9c06c3732d2",
+    "team_work/03_ai_soc/c9_live/display_fix/c2_video_scanout.sv": "dc4df78098c4d614db0fdd81a561c0475f969bae1ed0defa9efdb341dadf6fb3"
+  },
+  "evidence_sha256": {
+    "build/c9_display_fix_20261102/work_pnr/soc_physical.lbf": "14aa8823a93f0b158218493f372859c49f86466988ad41df57aaa3bdb6281e2f",
+    "build/c9_display_fix_20261102/outflow/soc_physical.bit": "ea542809a0a884fd2d3dbc89a22cdc0d7c891e424bd1cc1179194a0934f5ee6b",
+    "build/c9_display_fix_20261102/outflow/soc_physical.hex": "df12ae82df2a107e4c923ab729a49d3df25fa3b782e935a1bbb228cf08b02c36",
+    "build/c9_display_fix_20261102/outflow/soc_physical.review_timing.rpt": "cae9a1f6ae89d9d6fbb520c140766477666370f7863a818863c62d0db669df5d",
+    "build/c9_display_fix_20261102/outflow/soc_physical.bus_setup.rpt": "af43b61f205a3cb9592cd98790e3b605a6e339a19e5b43c87d1b6ccdc782b0b3",
+    "build/c9_display_fix_20261102/outflow/soc_physical.bus_hold.rpt": "b96df8305e5236b000ccd8a0c8548616cb113b2a0e1eace9b7024e9710431fc7",
+    "build/c9_display_fix_20261102/DISPLAY_MANIFEST.json": "b1f537ea9af8f1554df8c18f4723f9e44fc699a15171b65782972d538e8144bc",
+    "build/c9_ddr_probe_nopack_20261101/implementation_audit.json": "850123378f8a52a4d42b301752d57d9856997b4464bfa09ca65680ebc0634139",
+    "tools/audit_c9_display_fix.py": "8d9272def2d3ce2124b9fd66bf06827448ea8a55919a3c4481438fbb97106c10",
+    "tools/prepare_c9_display_fix.py": "c0e950d43be92015c87bfdde076451a9c217f59f938dd058e586b982666cfe27",
+    "tools/run_c9_display_fix.ps1": "2e9768c8710a937fe2bb3e570cb12dad37f80cf71e05f6ac8011f80b73633d77",
+    "build/c9_display_fix_20261102/capture_display.py": "e7a08a4c07480ffbe073545f8695d4211f8b22bd11cdc8580e92a9c06c3732d2",
+    "build/c9_scanout_startup_20261102/fixed_result.json": "471378c414fc02e75885e66add1f1e5a079aee569d7cb411fbb030646d0dfbff",
+    "logs/c9_display_c2_selftest.json": "db490cb0bff15ec99beb9fc2a2e23ef03d3cb642928541e9732cfa4498ba87ae",
+    "tools/test_c9_display_c2.py": "246f7ab52e855f34481ff69c23d30a0a5b1ae657984055746866e9ef7759fe93"
+  }
+}

@@ -1,0 +1,18 @@
+﻿{
+    "status":  "FAIL",
+    "project":  "tinyml",
+    "flow":  "compile",
+    "file":  "D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\Ti60F225_tinyml_helloworld.xml",
+    "started":  "2026-10-18T14:02:25.6551479+08:00",
+    "stage":  "validate_results",
+    "scope":  "tool_flow_only",
+    "physical_board_programmed":  false,
+    "board_test_passed":  false,
+    "efinity_version":  "2026.1.132",
+    "preflight_log":  "D:\\FPGA_2026_T3_P3\\logs\\efinity_tinyml_interface_preflight.log",
+    "preflight_exit_code":  0,
+    "exit_code":  0,
+    "design_log":  "D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\outflow\\Ti60F225_tinyml_helloworld.log",
+    "error":  "Timing violations reported; full compilation is not verified. See D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\outflow\\Ti60F225_tinyml_helloworld.log",
+    "finished":  "2026-10-18T14:06:40.3449887+08:00"
+}

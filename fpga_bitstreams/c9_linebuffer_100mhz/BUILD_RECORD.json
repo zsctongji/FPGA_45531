@@ -1,0 +1,66 @@
+{
+  "status": "OFFLINE_READY_BOARD_REQUIRED",
+  "hardware_accessed": false,
+  "board_test_passed": false,
+  "real_camera_verified": false,
+  "flash_written": false,
+  "controlled_change": "Fixed RAW10 VC0 whole-line ping-pong buffer before unchanged RAW split/ISP/luma/gray split. Validate WC/PPC and whole-frame payload; error stops publication. Enable vendor AXI/debug in native pixel clock, require init_done, fault mask 0x7447d (FIFO empty excluded). Repurpose PHY snapshot only; video word6 retains its native video-clock stage maxima. DDR, pin/PLL/SDC/IP parameters unchanged. Lightweight diagnostic has no TinyML accelerator.",
+  "image_sha256": "f0c9dca964ffcd3e8209346d9a52c04ecc5efd8677d92ec86b475cd2744994c9",
+  "audit_path": "build/c9_linebuffer_v2_image_20261103/implementation_audit.json",
+  "audit_sha256": "ca626fbcbba5724e4626600e60e0e09039433bdaa9cda358fe54ae1f18dd6e94",
+  "firmware_build_record_sha256": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc",
+  "active_profile_sha256": "29d90baa2c3721a2e440518b5aa4e20282003718408be57d0403f020dbe449fb",
+  "active_image_sha256": "ea542809a0a884fd2d3dbc89a22cdc0d7c891e424bd1cc1179194a0934f5ee6b",
+  "active_profile_changed": false,
+  "ddr_parameters_changed": false,
+  "calibration_algorithm_changed": false,
+  "acceptance_criteria_changed": false,
+  "timing": {
+    "setup": {
+      "rows": 30,
+      "minimum_slack_ns": 0.384,
+      "violations": []
+    },
+    "hold": {
+      "rows": 30,
+      "minimum_slack_ns": 0.026,
+      "violations": []
+    }
+  },
+  "xlrs": 31471,
+  "xlrs_available": 60800,
+  "cdc_pointer_bits": 66,
+  "hypothesis": "Fixed RAW10 whole-line buffering with live transport-error gate; geometry acceptance only, no TinyML accelerator. Native and video snapshot domains remain separate.",
+  "evidence_sha256": {
+    "build/c9_linebuffer_v2_image_20261103/implementation_audit.json": "ca626fbcbba5724e4626600e60e0e09039433bdaa9cda358fe54ae1f18dd6e94",
+    "logs/c9_linebuffer_tests_20261103.json": "16bdd165fa0c5e17c287c5225a080d592c01d92ecad5d8767da8d5920d007cbc",
+    "logs/c9_linebuffer_decode_tests_20261103.json": "e7f2327cb8a1c6955e9ad165238d8070f11e3e17854f447a2b6eef077af94556",
+    "firmware/c9_camera_geometry/BUILD_RECORD.json": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc",
+    "tools/report_c9_linebuffer.py": "8e2af19ff2381abaa645cf860ffacf1582f8e3e7076620ba6506704f3db38f26",
+    "tools/run_c9_linebuffer.py": "14bcbdea8367ad4a6b12296f0c9c82621b338461aa73c90c5683013760c03861",
+    "tools/check_c9_linebuffer.py": "447bba9c2ef518185c4ebaf85cfe1c8ecfdd1177b35483e70021cdef1a2a211d"
+  },
+  "packaged_sha256": {
+    "IMPLEMENTATION_AUDIT.json": "ca626fbcbba5724e4626600e60e0e09039433bdaa9cda358fe54ae1f18dd6e94",
+    "soc_physical.bit": "f0c9dca964ffcd3e8209346d9a52c04ecc5efd8677d92ec86b475cd2744994c9",
+    "soc_physical.bus_hold.rpt": "4ece7ce45e9dc8b82f73c3d0d17d3f49f0bf6e9441fa0faf17782e011aab3d68",
+    "soc_physical.bus_setup.rpt": "b775eff658c7bd43da5e569e0e4d5129276413cb827b3c1640db97cfb63f4c71",
+    "soc_physical.hex": "5c15ad8c3e8c4ad1fd3da2a1d28c1c518a4cf39a15f863912e05ef82f0931e26",
+    "soc_physical.pinout.csv": "fd7968e0ab59c7e85fd155b3c130c4566380b20c0151d7016dcea826f8bc7b0c",
+    "soc_physical.place.rpt": "b9c2c93f872ee752f328ef6d9b24ef3da72e9551a00c58c9e06141b727b51e52",
+    "soc_physical.review_timing.rpt": "1a5cf275b6f5f371d27276808dd37ed4abdaaffdd937341381a0895334878073"
+  },
+  "preflight": {
+    "status": "PASS_OFFLINE_PREFLIGHT",
+    "hardware_accessed": false,
+    "flash_written": false,
+    "board_test_passed": false,
+    "firmware_version": "c9geom-3bcf05e8d3894dc3",
+    "firmware_sha256": "f9955a3639543272716f1ef998156f6aae05d297c8841eb7092af8ef57ced9a5",
+    "entry": "0x1000000",
+    "probe_variant": "linebuffer",
+    "fpga_image_sha256": "f0c9dca964ffcd3e8209346d9a52c04ecc5efd8677d92ec86b475cd2744994c9",
+    "implementation_audit_sha256": "ca626fbcbba5724e4626600e60e0e09039433bdaa9cda358fe54ae1f18dd6e94",
+    "qualified_profile_sha256": null
+  }
+}

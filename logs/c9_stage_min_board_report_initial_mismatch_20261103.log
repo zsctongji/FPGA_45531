@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\tools\report_c9_stage_min_board.py", line 23, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\tools\report_c9_stage_min_board.py", line 15, in main
+    camera=R/m['camera_attempt'];obs=check(camera.parent/'uart.log');assert obs==m['observation'],'Stored stage summary differs'
+                                                                            ^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Stored stage summary differs

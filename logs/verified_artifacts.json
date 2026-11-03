@@ -1,0 +1,107 @@
+[
+  {
+    "project": "led",
+    "source_project": "D:\\FPGA_2026_T3_P3\\projects\\01_led\\LED_8bit_Test.xml",
+    "compiled_at": "2026-10-18T13:59:51.9409003+08:00",
+    "minimum_setup_slack_ns": 10.381,
+    "minimum_hold_slack_ns": 0.097,
+    "artifacts": [
+      {
+        "file": "D:\\FPGA_2026_T3_P3\\fpga_bitstreams\\led\\LED_8bit_Test.hex",
+        "bytes": 1624713,
+        "sha256": "a3a1c4a3582c94b87474ed1a859c9de3f7cc4ff0dd9c9feb731b238da5e1b3e0"
+      },
+      {
+        "file": "D:\\FPGA_2026_T3_P3\\fpga_bitstreams\\led\\LED_8bit_Test.bit",
+        "bytes": 1624653,
+        "sha256": "5643fc6ef28b148f622204581f5260f1eaa55f4808cf18fa8cd73528fac1d2ce"
+      }
+    ],
+    "physical_board_test_passed": false,
+    "scope": "Independent bring-up example; not integrated competition system"
+  },
+  {
+    "project": "camera",
+    "source_project": "D:\\FPGA_2026_T3_P3\\projects\\02_camera\\ti60f225_oob.xml",
+    "compiled_at": "2026-10-18T14:26:18.8491049+08:00",
+    "minimum_setup_slack_ns": 0.448,
+    "minimum_hold_slack_ns": 0.026,
+    "artifacts": [
+      {
+        "file": "D:\\FPGA_2026_T3_P3\\fpga_bitstreams\\camera_color\\ti60f225_oob.hex",
+        "bytes": 2583723,
+        "sha256": "9ded26955a7b7eac674996fed337226fe7cbee52384b085b92d0d8d74adb7d6d"
+      },
+      {
+        "file": "D:\\FPGA_2026_T3_P3\\fpga_bitstreams\\camera_color\\ti60f225_oob.bit",
+        "bytes": 2583663,
+        "sha256": "1a7d727c09bbd7128887b602fd994c18e2c2250dcd16453d91d2cba3776c2a23"
+      }
+    ],
+    "physical_board_test_passed": false,
+    "scope": "Independent bring-up example; not integrated competition system"
+  },
+  {
+    "project": "camera_preprocess",
+    "source_project": "D:\\FPGA_2026_T3_P3\\projects\\04_camera_preprocess\\ti60f225_oob.xml",
+    "compiled_at": "2026-10-18T14:06:03.9407545+08:00",
+    "minimum_setup_slack_ns": 0.492,
+    "minimum_hold_slack_ns": 0.026,
+    "artifacts": [
+      {
+        "file": "D:\\FPGA_2026_T3_P3\\fpga_bitstreams\\camera_preprocess\\ti60f225_oob.hex",
+        "bytes": 2566272,
+        "sha256": "ac63c5347b40351ed483b5b87251ab3b6b187873dfbf9a021cc64aed57812831"
+      },
+      {
+        "file": "D:\\FPGA_2026_T3_P3\\fpga_bitstreams\\camera_preprocess\\ti60f225_oob.bit",
+        "bytes": 2566212,
+        "sha256": "e20dfb47f56d3f32e3df5ce589d7025b91f8e6ed65192ebd82217c9b011c262b"
+      }
+    ],
+    "physical_board_test_passed": false,
+    "scope": "Independent bring-up example; not integrated competition system"
+  },
+  {
+    "project": "tinyml",
+    "source_project": "D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\Ti60F225_tinyml_helloworld.xml",
+    "compiled_at": "2026-10-18T14:17:36.7814646+08:00",
+    "minimum_setup_slack_ns": 0.144,
+    "minimum_hold_slack_ns": 0.026,
+    "artifacts": [
+      {
+        "file": "D:\\FPGA_2026_T3_P3\\fpga_bitstreams\\tinyml_225mhz\\Ti60F225_tinyml_helloworld.hex",
+        "bytes": 2508210,
+        "sha256": "cec861a1816c12e1bdbd5cbfc6cd726b7eeb995a98e3e54b09ea50ede5249c29"
+      },
+      {
+        "file": "D:\\FPGA_2026_T3_P3\\fpga_bitstreams\\tinyml_225mhz\\Ti60F225_tinyml_helloworld.bit",
+        "bytes": 2508150,
+        "sha256": "06ac9b287c841358e3da1dd05f33e0d2d3741fd20f4a051e8791798ee318b8b1"
+      }
+    ],
+    "physical_board_test_passed": false,
+    "scope": "Independent bring-up example; not integrated competition system"
+  },
+  {
+    "project": "camera_motion",
+    "source_project": "D:\\FPGA_2026_T3_P3\\projects\\05_camera_motion\\ti60f225_oob.xml",
+    "compiled_at": "2026-10-19T13:15:58.1022611+08:00",
+    "minimum_setup_slack_ns": 0.534,
+    "minimum_hold_slack_ns": 0.026,
+    "artifacts": [
+      {
+        "file": "D:\\FPGA_2026_T3_P3\\fpga_bitstreams\\camera_motion\\ti60f225_oob.hex",
+        "bytes": 2566518,
+        "sha256": "b3594de101e3b301afb36bf563912283ae8087e8b957ddbdb2290b6323b5651e"
+      },
+      {
+        "file": "D:\\FPGA_2026_T3_P3\\fpga_bitstreams\\camera_motion\\ti60f225_oob.bit",
+        "bytes": 2566458,
+        "sha256": "217e53b1e3f00104e47e14846662ac0ecf2d4f827cb95039c2a898345857ab76"
+      }
+    ],
+    "physical_board_test_passed": false,
+    "scope": "Independent bring-up example; not integrated competition system"
+  }
+]

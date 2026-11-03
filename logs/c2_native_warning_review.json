@@ -1,0 +1,83 @@
+{
+  "status": "REVIEWED_WITH_OPEN_VENDOR_WARNINGS",
+  "native_synthesis_status": "PASS",
+  "new_logic_width_driver_or_latch_errors": 0,
+  "inherited_vendor_warnings_resolved": false,
+  "categories": {
+    "EFX-0011": 252,
+    "EFX-0201": 10,
+    "EFX-0200": 20,
+    "EFX-0657": 12,
+    "EFX-0666": 2
+  },
+  "A_snapshot_warnings": [
+    "[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 13 (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\a_side\\ai_frame_mailbox.v:29)"
+  ],
+  "open_vendor_latches": [
+    "[EFX-0011 VERI-WARNING] latch inferred for net '**' (VERI-2580) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:14593)",
+    "[EFX-0011 VERI-WARNING] latch inferred for net '**' (VERI-2580) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:10868)",
+    "[EFX-0011 VERI-WARNING] latch inferred for net '**' (VERI-2580) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:12541)",
+    "[EFX-0011 VERI-WARNING] latch inferred for net '**' (VERI-2580) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\round_robin_priority_arbiter.v:122)",
+    "[EFX-0011 VERI-WARNING] latch inferred for net '**' (VERI-2580) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\crossbar.v:419)"
+  ],
+  "open_vendor_driver_warnings": [
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:1521)",
+    "[EFX-0011 VERI-WARNING] net 'u1_rdata_cnt[4]' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_phy_if.v:295)",
+    "[EFX-0011 VERI-WARNING] net 'u1_wdata_cnt[4]' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_phy_if.v:296)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v:935)",
+    "[EFX-0011 VERI-WARNING] net 'IBusCachedPlugin_cache_io_cpu_fetch_isRemoved' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:9812)",
+    "[EFX-0011 VERI-WARNING] net 'dataCache_1_io_cpu_writeBack_fence_SW' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:9825)",
+    "[EFX-0011 VERI-WARNING] net 'dataCache_1_io_cpu_writeBack_fence_SR' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:9826)",
+    "[EFX-0011 VERI-WARNING] net 'dataCache_1_io_cpu_writeBack_fence_SO' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:9827)",
+    "[EFX-0011 VERI-WARNING] net 'dataCache_1_io_cpu_writeBack_fence_SI' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:9828)",
+    "[EFX-0011 VERI-WARNING] net 'dataCache_1_io_cpu_writeBack_fence_PW' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:9829)",
+    "[EFX-0011 VERI-WARNING] net 'dataCache_1_io_cpu_writeBack_fence_PR' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:9830)",
+    "[EFX-0011 VERI-WARNING] net 'dataCache_1_io_cpu_writeBack_fence_PO' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:9831)",
+    "[EFX-0011 VERI-WARNING] net 'dataCache_1_io_cpu_writeBack_fence_PI' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:9832)",
+    "[EFX-0011 VERI-WARNING] net 'dataCache_1_io_cpu_writeBack_fence_FM[3]' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:9833)",
+    "[EFX-0011 VERI-WARNING] net 'IBusCachedPlugin_mmuBus_rsp_bypassTranslation' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:10347)",
+    "[EFX-0011 VERI-WARNING] net 'DBusCachedPlugin_mmuBus_rsp_bypassTranslation' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:10373)",
+    "[EFX-0011 VERI-WARNING] net 'IBusCachedPlugin_iBusRsp_output_payload_rsp_error' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:10481)",
+    "[EFX-0011 VERI-WARNING] net 'IBusCachedPlugin_iBusRsp_output_payload_isRvc' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:10483)",
+    "[EFX-0011 VERI-WARNING] net 'CsrPlugin_mtvec_mode[1]' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:10649)",
+    "[EFX-0011 VERI-WARNING] net 'one_hot_mem' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\round_robin_priority_arbiter.v:47)"
+  ],
+  "resources": {
+    "EFX_LUT4": 39656,
+    "EFX_FF": 36902,
+    "EFX_RAM10": 174,
+    "EFX_DSP48": 51,
+    "EFX_ADD": 6715
+  },
+  "scope": "C2 GRAY8 triple framebuffer with synchronous-read dual-clock video FIFOs, C3 I2C/GPIO shared clock; native map only, no physical pins/CDC/PNR/electrical signoff",
+  "synthesis_report_sha256": "392246cf1c395fedbd8e382d9a16a014f9660062440c7704028124c28ac4cbf6",
+  "logic_memory_warnings": [
+    "[EFX-0657 WARNING] Mapping into logic memory block 'logic_ram' (32 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:16891) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'one_hot_mem' (9 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\round_robin_priority_arbiter.v:47) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'gen' (64 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_buffer_manager.sv:18) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/Cache.u_tinyml_common_s_axi4addr8_to_m_axi4addrx/u1_fifo_32w8d_0dly/u_efx_fifo_top/xefx_fifo_ram/ram' (256 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:801) because 'syn_ram_style' directive is 'register' or 'logic'.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'u_ddr3_top/u_memory_bus_ctl/col_mach/fifo_ram[1].RAM32M0/memory' (256 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169) because 'syn_ram_style' directive is 'register' or 'logic'.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'c2_attachment/core/publisher/manager/meta' (1024 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_buffer_manager.sv:19) because it has async writer.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'c2_attachment/core/hub/writer/buffer' (2048 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_image_writer.sv:24) because read port is not synchronous.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'c2_attachment/core/pixels/memory' (2048 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_async_fifo.sv:8) because read port is not synchronous.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'c2_full_video/framebuffer/stamps' (96 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_video_framebuffer.sv:28) because it has async writer.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'c2_full_video/framebuffer/ids' (96 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_video_framebuffer.sv:28) because it has async writer.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'c2_full_video/framebuffer/rbuf' (2048 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_video_framebuffer.sv:34) because read port is not synchronous.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'c2_full_video/framebuffer/wbuf' (2048 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_video_framebuffer.sv:34) because read port is not synchronous."
+  ]
+}

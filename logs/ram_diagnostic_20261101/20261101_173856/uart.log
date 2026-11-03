@@ -1,0 +1,10 @@
+C7|BOOT version=c7diag-edd94bbbebcb45d2 cpu_hz=100000000 clint_hz=100000000
+C7|APB id=43325332 version=00020002 map=00000000 shared=09010000 errors=00000000
+C7|TIME ticks_hi=00000000 ticks_lo=009896d6 ms_delta=00000064
+C7|MEMORY_PASS pattern=00000000 checked=00040000
+C7|MEMORY_PASS pattern=00000001 checked=00080000
+C7|MEMORY_PASS pattern=00000002 checked=000c0000
+C7|MEMORY_PASS pattern=00000003 checked=00100000
+C7|LANES byte=PASS halfword=PASS cross16=PASS cross64=PASS
+C7|CACHE opcode=0000500f line_bytes=64 cache_bytes=4096 invalidate_refill=PASS dma_coherence=UNTESTED
+C7|DONE status=PASS checked=00100000 version=c7diag-edd94bbbebcb45d2

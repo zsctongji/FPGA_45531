@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-27",
+  "package_file": "B_联调资料包_20261027_同步版.zip",
+  "bytes": 5890785,
+  "sha256": "ec5881c9ffaecbb7fafd8b862c7f4b9c8a7b247ae72360cbc62269eeb221cf8a",
+  "payload_files_verified": 46,
+  "contains_empty_csv_templates": true,
+  "physical_board_test_results": false,
+  "source_snapshot": "B drivers plus prior C3 reference; not a full FPGA or SoC project",
+  "remote_base_commit": "21a6d7351d4bb265b3e1b37f5cdd2fb39ea4e13b"
+}

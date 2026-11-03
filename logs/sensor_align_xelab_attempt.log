@@ -1,0 +1,11 @@
+﻿Vivado Simulator 2018.3
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe work.tb_sensor_frame_align -s align_verbose --mt off --verbose 2 -O0 
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Compiling module work.sensor_frame_align(MAX_AGE_MS=32...
+Compiling module work.tb_sensor_frame_align
+D:\Xilinx\Vivado\2018.3\data\..\tps\mingw\6.2.0\win64.o\nt\bin\gcc.exe  -fPIC -c -Wa,-W  -I"D:\Xilinx\Vivado\2018.3\data/xsim/include" "xsim.dir/align_verbose/obj/xsim_1.c" -O0  -o "xsim.dir/align_verbose/obj/xsim_1.win64.obj" -DXILINX_SIMULATOR
+ERROR: [XSIM 43-3409] Failed to compile generated C file xsim.dir/align_verbose/obj/xsim_1.c.
+ERROR: [XSIM 43-3915] Encountered a fatal error. Cannot continue. Exiting... 

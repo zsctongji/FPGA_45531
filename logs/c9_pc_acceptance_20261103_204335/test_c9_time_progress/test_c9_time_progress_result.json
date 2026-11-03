@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "baseline": false,
+  "scope": "Host fixture executes extracted actual post-snapshot source; no FPGA or sensor",
+  "cases": [
+    {
+      "name": "no_log_delay",
+      "expected": 0,
+      "actual": 0,
+      "diagnostic": ""
+    },
+    {
+      "name": "uart_150ms",
+      "expected": 0,
+      "actual": 0,
+      "diagnostic": ""
+    },
+    {
+      "name": "frozen_shared_time",
+      "expected": 1,
+      "actual": 1,
+      "diagnostic": "FAIL time_progress"
+    },
+    {
+      "name": "read_failure",
+      "expected": 1,
+      "actual": 1,
+      "diagnostic": "FAIL time_read_before_wait"
+    },
+    {
+      "name": "wrong_clock_rate",
+      "expected": 1,
+      "actual": 1,
+      "diagnostic": "FAIL time_progress"
+    }
+  ],
+  "source_sha256": {
+    "team_work/03_ai_soc/c9_live/camera_time_fix/tinyml_main.cc": "300d1698da0cd1e9675c11fc5ec1a0dd7674c7912f64095a0447e764ef82b71f",
+    "tools/test_c9_time_progress.py": "8629049ab4d6ace287a4645fe7dd395963b79046f830111037c87e00450e0614"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "scope": "RV32IM link library, HAL C interface rev2, serialized ABI v1 unchanged",
+  "hardware_executed": false,
+  "objects": [
+    {
+      "source": "team_work/shared/src/cooperation_v1.c",
+      "source_sha256": "713607d064c072f55069ec63d2f2890f0d6aec66b83f50ac187a35256b4b0a9b",
+      "object": "build/c2/riscv/cooperation_v1.o",
+      "sha256": "d73d5f9e0a903347301c3eae5466ba0a9ea8980acb95f3d91687f4ff800becb3"
+    },
+    {
+      "source": "team_work/03_ai_soc/c3_hal/c3_shared_time.c",
+      "source_sha256": "7b28e7794f6d91796a1ed6d1f9c1603477136308a5e9c092480d57d11d167ae7",
+      "object": "build/c2/riscv/c3_shared_time.o",
+      "sha256": "e448905aa13c9bdf6395dff92cdbfe99d469818537dcc17734232770bfefa30c"
+    },
+    {
+      "source": "team_work/03_ai_soc/c3_hal/c3_hal.c",
+      "source_sha256": "b13be6fb846314a8ef76f5d62ad887caaf25568b573f4ecf5a6796ffbef06221",
+      "object": "build/c2/riscv/c3_hal.o",
+      "sha256": "8d08c04babde86e12297deaa2ff320e327a503c102d4afa167b1d637e9d22d59"
+    },
+    {
+      "source": "team_work/03_ai_soc/c3_hal/c3_peripheral.c",
+      "source_sha256": "5ee209938ef334acca4fb1d37f885a45bc429ab82aa2605c450441885cc8f193",
+      "object": "build/c2/riscv/c3_peripheral.o",
+      "sha256": "e4cd7a03df8dc9420d3bc69809a8eab849271d8fdd2569fe0495363838013c86"
+    },
+    {
+      "source": "team_work/03_ai_soc/c3_hal/c3_sapphire_peripheral.c",
+      "source_sha256": "7c043dc3dd4fece7579f73b04bb0f726685918aad6797bdc8f17cc367dce6e1b",
+      "object": "build/c2/riscv/c3_sapphire_peripheral.o",
+      "sha256": "27de599f2b28e928395040052500b43b4f12d93dc4a0eadfd719b348e0a38b60"
+    },
+    {
+      "source": "team_work/03_ai_soc/c3_hal/c3_thermal_publish.c",
+      "source_sha256": "81a19eb297973f11db46aa2ef4d0a79da8870ca9c305c05072a63a81451d7941",
+      "object": "build/c2/riscv/c3_thermal_publish.o",
+      "sha256": "b22a22382aec9ea15b8a835fe5f849a7a2f70527ec01a4a3979a7ff197c54973"
+    }
+  ],
+  "artifact": {
+    "path": "firmware/c3_peripheral_backend/libc3_peripheral_rv32.a",
+    "bytes": 19778,
+    "sha256": "8a8e6f7f039beb844527210899452e86f73ef342c01a96188583ea9cfbc7a416"
+  },
+  "header_sha256": {
+    "team_work/03_ai_soc/c3_hal/c3_hal.h": "0696a22e038c4bb1398ea2fc0619fd876ccee8b2f5f9fde0db797f8ebb37b8c8",
+    "team_work/03_ai_soc/c3_hal/c3_peripheral.h": "35cd983168c6e1257c747aae9577a23cb1c8cd2632e5aaaffaac2a6ea6bff04a",
+    "team_work/03_ai_soc/c3_hal/c3_replay.h": "a91b314183ae947d6479f6fc7ca3e0dcfcd69f713fc83646f09fecb6fa308f33",
+    "team_work/03_ai_soc/c3_hal/c3_sapphire_peripheral.h": "f71182542b7d74ae9b596b5538a61cac5a88f9b17f72b9ee9414ebb760aff2b0",
+    "team_work/03_ai_soc/c3_hal/c3_shared_time.h": "e7cba2798597114b10fcd0a9e4c46acf0f6814210e05a9c9f759ca88e2b54448",
+    "team_work/03_ai_soc/c3_hal/c3_thermal_publish.h": "6a906a39bc3261f5bdcba74f71e997e5e71a55fedf009de339419758529ad321",
+    "team_work/shared/include/cooperation_v1.h": "6cd2c16ddc551304afa4a5b92d78c1a2a6faf3898afc0e3cea1509f1e2e53452",
+    "team_work/03_ai_soc/c2/c2_driver.h": "70e30ebfb5b6fd39122aba49eccde4668199aeff8f306fba45f4a6a2d490d761"
+  },
+  "packager_sha256": "98c6918fd73c807672011cab548e5b21e396828d5bafbd2756ad3163e519770c"
+}

@@ -1,0 +1,66 @@
+{
+  "status": "OFFLINE_READY_BOARD_REQUIRED",
+  "hardware_accessed": false,
+  "board_test_passed": false,
+  "real_camera_verified": false,
+  "flash_written": false,
+  "controlled_change": "Sensor remains in standby for all configuration and 16 register reads; replace early stream-on by standby, append stream-on as transaction183. I2C sequencer waits before last transaction for synchronized CSR-ready. No mask relaxation, pixel/DDR/PLL/pin/CSI IP changes; no TinyML accelerator.",
+  "image_sha256": "30986b841d4f4d92069b8d255b9d220a6da79b057cef93e5ec9607ee5590ecd4",
+  "audit_path": "build/c9_linebuffer_stream_image_20261103/implementation_audit.json",
+  "audit_sha256": "0b76eecdcd4fbdc0d54a1d8b6662c062a9885c2df670072704350a570fa85098",
+  "firmware_build_record_sha256": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc",
+  "active_profile_sha256": "29d90baa2c3721a2e440518b5aa4e20282003718408be57d0403f020dbe449fb",
+  "active_image_sha256": "ea542809a0a884fd2d3dbc89a22cdc0d7c891e424bd1cc1179194a0934f5ee6b",
+  "active_profile_changed": false,
+  "ddr_parameters_changed": false,
+  "calibration_algorithm_changed": false,
+  "acceptance_criteria_changed": false,
+  "timing": {
+    "setup": {
+      "rows": 31,
+      "minimum_slack_ns": 0.343,
+      "violations": []
+    },
+    "hold": {
+      "rows": 31,
+      "minimum_slack_ns": 0.026,
+      "violations": []
+    }
+  },
+  "xlrs": 31391,
+  "xlrs_available": 60800,
+  "cdc_pointer_bits": 66,
+  "hypothesis": "Native-domain ISR cleanup/readback before capture. Fresh errors remain fatal, no TinyML accelerator.",
+  "evidence_sha256": {
+    "build/c9_linebuffer_stream_image_20261103/implementation_audit.json": "0b76eecdcd4fbdc0d54a1d8b6662c062a9885c2df670072704350a570fa85098",
+    "logs/c9_camera_stream_gate_tests_20261103.json": "d3ee5a7398a6972244e8ab53c96b0394cfa2538c02a40c52e8a6120bed52142b",
+    "logs/c9_linebuffer_stream_decode_tests_20261103.json": "d8985c9ac449294577a3b2b8d5e4e396ccb6a4288ff4c64a43d2a0346bca26c3",
+    "firmware/c9_camera_geometry/BUILD_RECORD.json": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc",
+    "tools/report_c9_linebuffer_stream.py": "54e3f6863207fefba260dd83fab8402c8514cb66d59598426f940970644cc247",
+    "tools/run_c9_linebuffer_stream.py": "e4d081b9b3ba60991136018c7d4b37b77ac7a5db0ccf43cd738b0abdeeee237f",
+    "tools/check_c9_linebuffer_stream.py": "a7344e9fad853194d26aeb91f269875f19014b3604be0763e386d000321f637b"
+  },
+  "packaged_sha256": {
+    "IMPLEMENTATION_AUDIT.json": "0b76eecdcd4fbdc0d54a1d8b6662c062a9885c2df670072704350a570fa85098",
+    "soc_physical.bit": "30986b841d4f4d92069b8d255b9d220a6da79b057cef93e5ec9607ee5590ecd4",
+    "soc_physical.bus_hold.rpt": "a68b79cf887ea652b9094f9532e7b877c74d67153c5535f665fec8278be43733",
+    "soc_physical.bus_setup.rpt": "cf4b13ab803c08a84691c6967e77e7817c27882416810d6e22b4c58854005db6",
+    "soc_physical.hex": "046c71b8e41e9a1dbc76039898d9d829e916c756f8ab8ad5176be21995592a89",
+    "soc_physical.pinout.csv": "e347221a37369bc249b19fc4746a78ddb04d95bf58d02e9906cee15eedabe052",
+    "soc_physical.place.rpt": "5a40e7a58eb982be19be85e182ae7feb7056a43e249a7945d003726503526377",
+    "soc_physical.review_timing.rpt": "4f3a70a2d7322a0ceb2ca857df2e1d38a7776f12fa016de4d65d9f25f14642df"
+  },
+  "preflight": {
+    "status": "PASS_OFFLINE_PREFLIGHT",
+    "hardware_accessed": false,
+    "flash_written": false,
+    "board_test_passed": false,
+    "firmware_version": "c9geom-3bcf05e8d3894dc3",
+    "firmware_sha256": "f9955a3639543272716f1ef998156f6aae05d297c8841eb7092af8ef57ced9a5",
+    "entry": "0x1000000",
+    "probe_variant": "linebuffer_stream",
+    "fpga_image_sha256": "30986b841d4f4d92069b8d255b9d220a6da79b057cef93e5ec9607ee5590ecd4",
+    "implementation_audit_sha256": "0b76eecdcd4fbdc0d54a1d8b6662c062a9885c2df670072704350a570fa85098",
+    "qualified_profile_sha256": null
+  }
+}

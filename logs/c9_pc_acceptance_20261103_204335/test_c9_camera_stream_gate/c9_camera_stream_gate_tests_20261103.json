@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "hardware_accessed": false,
+  "sensor_electrical_behavior_simulated": false,
+  "cases": [
+    {
+      "fixed": false,
+      "evidence": "FATAL: C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_camera_stream_gate\\red\\tb.sv:10: Stream started before qualification\n       Time: 7365000  Scope: tb_stream_gate\n"
+    },
+    {
+      "fixed": true,
+      "evidence": "PASS tb_stream_gate all_configuration_and_16_reads_before_enable single_final_stream_on\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_camera_stream_gate\\fixed\\tb.sv:19: $finish called at 31030000 (1ps)\n"
+    }
+  ],
+  "source_sha256": {
+    "build/c9_linebuffer_reset_image_20261103/vendor_a/rtl/cam_i2c_ctrl/i2c/i2c_master_reg_rom.v": "42a36a9e997035eabd6afbbc7b48b3ac0be436c9e7926415a2f07b45dc22a2e7",
+    "build/c9_linebuffer_reset_image_20261103/vendor_a/rtl/cam_i2c_ctrl/i2c/i2c_master_reg_set.v": "8bb2f5e862a606097f312bb90c2a501fc5f29e8a21737ffcd0a4ab62d90101ea",
+    "build/c9_linebuffer_reset_image_20261103/vendor_a/rtl/cam_i2c_ctrl/i2c/i2c_master_ctrl_top.v": "6dc0383cc1bf0f2b701b150a548ad59426534c9177b5348329a71c936264bc9a",
+    "tools/test_c9_camera_stream_gate.py": "84b52590a233c0249d3b1ca8986365e93d3589d37c49d70a2ddc5cbfd36aa35e",
+    "tools/patch_c9_camera_stream_gate.py": "bd4b4f0f48e664dbe02fcdf15e87078b1feb11418ddfbb756a65807876dc8492"
+  },
+  "generated_sha256": {
+    "build/c9_pc_acceptance_20261103_204335/test_c9_camera_stream_gate/red/i2c_master_reg_rom.v": "dc734dd7b8380dce4d27a251347ffeeaad1fcff8c3e8ac2e96e4227fe6c023c5",
+    "build/c9_pc_acceptance_20261103_204335/test_c9_camera_stream_gate/red/i2c_master_reg_set.v": "ee10893939465bc4eac61202b48691948263910d348cf68beae90b15be7d32aa",
+    "build/c9_pc_acceptance_20261103_204335/test_c9_camera_stream_gate/red/tb.sv": "3f9cb24cdbfe55f851b50b5e9ed93f68df2b0471fd13df9b0503b29ebbf475c0",
+    "build/c9_pc_acceptance_20261103_204335/test_c9_camera_stream_gate/fixed/i2c_master_reg_rom.v": "235c4c41c648bee470af61a0355269c74d131d069430b44eba3d513a6c6f6c93",
+    "build/c9_pc_acceptance_20261103_204335/test_c9_camera_stream_gate/fixed/i2c_master_reg_set.v": "131153e8e9bbca748527aea4683febf69b758fca310487d2678da859a302ad22",
+    "build/c9_pc_acceptance_20261103_204335/test_c9_camera_stream_gate/fixed/tb.sv": "b9573d888b25a679034002f3ea9941886a3bcb6fdbe7a0edaa8ae60889289f9f"
+  }
+}

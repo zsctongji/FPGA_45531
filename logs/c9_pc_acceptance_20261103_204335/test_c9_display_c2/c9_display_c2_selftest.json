@@ -1,0 +1,1177 @@
+{
+  "status": "PASS",
+  "started": "2026-11-03T12:44:11.594704+00:00",
+  "scope": "portable RTL functional simulation with synthetic masters and DDR model",
+  "board_test_passed": false,
+  "vendor_ddr_simulated": false,
+  "full_soc_integrated": false,
+  "timing_or_bandwidth_passed": false,
+  "tests": [
+    {
+      "name": "tb_c2_cdc",
+      "status": "PASS",
+      "parameters": {},
+      "ddr_seed": null,
+      "compiler_log": "logs/c9_display_c2/tb_c2_cdc_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_cdc.log",
+      "evidence": [
+        "PASS tb_c2_cdc messages=200 width=512 asynchronous_clocks backpressure common_reset_cancel"
+      ]
+    },
+    {
+      "name": "tb_c2_fifo",
+      "status": "PASS",
+      "parameters": {},
+      "ddr_seed": null,
+      "compiler_log": "logs/c9_display_c2/tb_c2_fifo_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_fifo.log",
+      "evidence": [
+        "PASS tb_c2_fifo words=2048 depth=4 pointer_wrap full empty async_clocks stable_stall common_reset"
+      ]
+    },
+    {
+      "name": "tb_c2_pool",
+      "status": "PASS",
+      "parameters": {},
+      "ddr_seed": null,
+      "compiler_log": "logs/c9_display_c2/tb_c2_pool_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_pool.log",
+      "evidence": [
+        "PASS tb_c2_pool commands=514 dual_slots generation ownership response_backpressure reset"
+      ]
+    },
+    {
+      "name": "tb_c2_axi_seed12345",
+      "status": "PASS",
+      "parameters": {},
+      "ddr_seed": 12345,
+      "compiler_log": "logs/c9_display_c2/tb_c2_axi_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_axi_seed12345.log",
+      "evidence": [
+        "PASS tb_c2_axi masters=4 writes=84 reads=84 checks=827 max_request_wait=103 full128_INCR strobes stalls error_routing reset"
+      ]
+    },
+    {
+      "name": "tb_c2_axi_seed67891",
+      "status": "PASS",
+      "parameters": {},
+      "ddr_seed": 67891,
+      "compiler_log": "logs/c9_display_c2/tb_c2_axi_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_axi_seed67891.log",
+      "evidence": [
+        "PASS tb_c2_axi masters=4 writes=84 reads=84 checks=827 max_request_wait=100 full128_INCR strobes stalls error_routing reset"
+      ]
+    },
+    {
+      "name": "tb_c2_axi_seed20261024",
+      "status": "PASS",
+      "parameters": {},
+      "ddr_seed": 20261024,
+      "compiler_log": "logs/c9_display_c2/tb_c2_axi_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_axi_seed20261024.log",
+      "evidence": [
+        "PASS tb_c2_axi masters=4 writes=84 reads=84 checks=827 max_request_wait=107 full128_INCR strobes stalls error_routing reset"
+      ]
+    },
+    {
+      "name": "tb_c2_image_seed12345",
+      "status": "PASS",
+      "parameters": {},
+      "ddr_seed": 12345,
+      "compiler_log": "logs/c9_display_c2/tb_c2_image_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_image_seed12345.log",
+      "evidence": [
+        "PASS tb_c2_image bytes=9216 success=4 rejected=4 cpu_controls=7 background_writes=90 background_reads=90 checks=1026 final_B_fence FNV CPU_readback CDC busy_drop errors reset"
+      ]
+    },
+    {
+      "name": "tb_c2_image_seed67891",
+      "status": "PASS",
+      "parameters": {},
+      "ddr_seed": 67891,
+      "compiler_log": "logs/c9_display_c2/tb_c2_image_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_image_seed67891.log",
+      "evidence": [
+        "PASS tb_c2_image bytes=9216 success=4 rejected=4 cpu_controls=7 background_writes=90 background_reads=90 checks=1026 final_B_fence FNV CPU_readback CDC busy_drop errors reset"
+      ]
+    },
+    {
+      "name": "tb_c2_image_seed20261024",
+      "status": "PASS",
+      "parameters": {},
+      "ddr_seed": 20261024,
+      "compiler_log": "logs/c9_display_c2/tb_c2_image_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_image_seed20261024.log",
+      "evidence": [
+        "PASS tb_c2_image bytes=9216 success=4 rejected=4 cpu_controls=7 background_writes=90 background_reads=90 checks=1026 final_B_fence FNV CPU_readback CDC busy_drop errors reset"
+      ]
+    },
+    {
+      "name": "tb_c2_adapter_seed12345",
+      "status": "PASS",
+      "parameters": {},
+      "ddr_seed": 12345,
+      "compiler_log": "logs/c9_display_c2/tb_c2_adapter_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_adapter_seed12345.log",
+      "evidence": [
+        "PASS tb_c2_adapter ids=256 full128 burst128 burst256 narrow32 byte_lanes relocation DECERR no_invalid_DDR error_routing"
+      ]
+    },
+    {
+      "name": "tb_c2_adapter_seed67891",
+      "status": "PASS",
+      "parameters": {},
+      "ddr_seed": 67891,
+      "compiler_log": "logs/c9_display_c2/tb_c2_adapter_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_adapter_seed67891.log",
+      "evidence": [
+        "PASS tb_c2_adapter ids=256 full128 burst128 burst256 narrow32 byte_lanes relocation DECERR no_invalid_DDR error_routing"
+      ]
+    },
+    {
+      "name": "tb_c2_adapter_seed20261024",
+      "status": "PASS",
+      "parameters": {},
+      "ddr_seed": 20261024,
+      "compiler_log": "logs/c9_display_c2/tb_c2_adapter_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_adapter_seed20261024.log",
+      "evidence": [
+        "PASS tb_c2_adapter ids=256 full128 burst128 burst256 narrow32 byte_lanes relocation DECERR no_invalid_DDR error_routing"
+      ]
+    },
+    {
+      "name": "tb_c2_cache",
+      "status": "PASS",
+      "parameters": {},
+      "ddr_seed": null,
+      "compiler_log": "logs/c9_display_c2/tb_c2_cache_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_cache.log",
+      "evidence": [
+        "PASS tb_c2_cache vendor_DataCache ways=2 sets=32 rounds=3 invalidate_all_tags CPU_instruction_execution_not_simulated"
+      ]
+    },
+    {
+      "name": "tb_c2_bram_fifo_s_half3_d_half11",
+      "status": "PASS",
+      "parameters": {
+        "S_HALF": 3,
+        "D_HALF": 11
+      },
+      "ddr_seed": null,
+      "compiler_log": "logs/c9_display_c2/tb_c2_bram_fifo_s_half3_d_half11_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_bram_fifo_s_half3_d_half11.log",
+      "evidence": [
+        "PASS tb_c2_bram_fifo depth=64 words=4096 checks=16472 cycle_equivalent exact_capacity pointer_wrap stable_stall common_reset synchronous_RAM"
+      ]
+    },
+    {
+      "name": "tb_c2_bram_fifo_s_half11_d_half3",
+      "status": "PASS",
+      "parameters": {
+        "S_HALF": 11,
+        "D_HALF": 3
+      },
+      "ddr_seed": null,
+      "compiler_log": "logs/c9_display_c2/tb_c2_bram_fifo_s_half11_d_half3_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_bram_fifo_s_half11_d_half3.log",
+      "evidence": [
+        "PASS tb_c2_bram_fifo depth=64 words=4096 checks=30609 cycle_equivalent exact_capacity pointer_wrap stable_stall common_reset synchronous_RAM"
+      ]
+    },
+    {
+      "name": "tb_c2_bram_fifo_s_half5_d_half5",
+      "status": "PASS",
+      "parameters": {
+        "S_HALF": 5,
+        "D_HALF": 5
+      },
+      "ddr_seed": null,
+      "compiler_log": "logs/c9_display_c2/tb_c2_bram_fifo_s_half5_d_half5_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_bram_fifo_s_half5_d_half5.log",
+      "evidence": [
+        "PASS tb_c2_bram_fifo depth=64 words=4096 checks=16547 cycle_equivalent exact_capacity pointer_wrap stable_stall common_reset synchronous_RAM"
+      ]
+    },
+    {
+      "name": "tb_c2_source_fence",
+      "status": "PASS",
+      "parameters": {},
+      "ddr_seed": null,
+      "compiler_log": "logs/c9_display_c2/tb_c2_source_fence_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_source_fence.log",
+      "evidence": [
+        "PASS tb_c2_source_fence cases=8 both_orders delayed_verdict frame_id FNV errors stable_response common_reset"
+      ]
+    },
+    {
+      "name": "tb_c2_a_errors",
+      "status": "PASS",
+      "parameters": {},
+      "ddr_seed": null,
+      "compiler_log": "logs/c9_display_c2/tb_c2_a_errors_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_a_errors.log",
+      "evidence": [
+        "PASS tb_c2_a_errors modes=7 read_error timeout bad_padding bad_sum wrong_grant busy drain576 stable_word release"
+      ]
+    },
+    {
+      "name": "tb_c3_peripheral",
+      "status": "PASS",
+      "parameters": {},
+      "ddr_seed": null,
+      "compiler_log": "logs/c9_display_c2/tb_c3_peripheral_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c3_peripheral.log",
+      "evidence": [
+        "PASS tb_c3_peripheral checks=6060 repeated_START READ WRITE ACK NACK stretch arbitration timeout abort nine_pulse_recovery GPIO_watchdog shared_time_wrap clock_fault reset open_drain"
+      ]
+    },
+    {
+      "name": "tb_c2_video_config",
+      "status": "PASS",
+      "parameters": {},
+      "ddr_seed": null,
+      "compiler_log": "logs/c9_display_c2/tb_c2_video_config_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_video_config.log",
+      "evidence": [
+        "PASS tb_c2_video_config unsupported_geometry_held_in_reset no_false_frame_or_DDR_request"
+      ]
+    },
+    {
+      "name": "tb_c2_video_extended0_seed12345",
+      "status": "PASS",
+      "parameters": {
+        "EXTENDED": 0
+      },
+      "ddr_seed": 12345,
+      "compiler_log": "logs/c9_display_c2/tb_c2_video_extended0_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_video_extended0_seed12345.log",
+      "evidence": [
+        "PASS tb_c2_video geometry=1920x1080 step=20x20 bytes=9216 full_HD=1 success=1 records=1 delayed_eof=1 first_DE_edges=1 time_wraps=1 checks=576 first_source_DE_timestamp A_capture sampler mailbox C2_DDR CPU_AXI APB synthetic_pixels_no_camera"
+      ]
+    },
+    {
+      "name": "tb_c2_video_mem_half7_video_half3_frame_width384_frame_height216_step_x4_step_y4_seed12345",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 7,
+        "VIDEO_HALF": 3,
+        "FRAME_WIDTH": 384,
+        "FRAME_HEIGHT": 216,
+        "STEP_X": 4,
+        "STEP_Y": 4
+      },
+      "ddr_seed": 12345,
+      "compiler_log": "logs/c9_display_c2/tb_c2_video_mem_half7_video_half3_frame_width384_frame_height216_step_x4_step_y4_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_video_mem_half7_video_half3_frame_width384_frame_height216_step_x4_step_y4_seed12345.log",
+      "evidence": [
+        "PASS tb_c2_video geometry=384x216 step=4x4 bytes=9216 success=5 busy=1 malformed=3 records=9 delayed_eof=6 first_DE_edges=2 time_wraps=2 concurrent_requests=62 checks=2754 first_source_DE_timestamp A_capture sampler mailbox C2_DDR CPU_AXI APB common_reset synthetic_pixels_no_camera"
+      ]
+    },
+    {
+      "name": "tb_c2_video_mem_half5_video_half19_frame_width384_frame_height216_step_x4_step_y4_seed12345",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 5,
+        "VIDEO_HALF": 19,
+        "FRAME_WIDTH": 384,
+        "FRAME_HEIGHT": 216,
+        "STEP_X": 4,
+        "STEP_Y": 4
+      },
+      "ddr_seed": 12345,
+      "compiler_log": "logs/c9_display_c2/tb_c2_video_mem_half5_video_half19_frame_width384_frame_height216_step_x4_step_y4_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_video_mem_half5_video_half19_frame_width384_frame_height216_step_x4_step_y4_seed12345.log",
+      "evidence": [
+        "PASS tb_c2_video geometry=384x216 step=4x4 bytes=9216 success=5 busy=1 malformed=3 records=9 delayed_eof=6 first_DE_edges=2 time_wraps=2 concurrent_requests=174 checks=2754 first_source_DE_timestamp A_capture sampler mailbox C2_DDR CPU_AXI APB common_reset synthetic_pixels_no_camera"
+      ]
+    },
+    {
+      "name": "tb_c2_framebuffer_frame_width1920_frame_height1080_step_x20_step_y20_extended0_seed12345",
+      "status": "PASS",
+      "parameters": {
+        "FRAME_WIDTH": 1920,
+        "FRAME_HEIGHT": 1080,
+        "STEP_X": 20,
+        "STEP_Y": 20,
+        "EXTENDED": 0
+      },
+      "ddr_seed": 12345,
+      "compiler_log": "logs/c9_display_c2/tb_c2_framebuffer_frame_width1920_frame_height1080_step_x20_step_y20_extended0_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_framebuffer_frame_width1920_frame_height1080_step_x20_step_y20_extended0_seed12345.log",
+      "evidence": [
+        "PASS tb_c2_framebuffer geometry=1920x1080 full_HD=1 stride=1920 bank_pitch=2076672 full_bytes=2073600 display_bytes=2073600 cpu_bursts=92715 tinyml_bursts=92715 max_aw_wait=63 max_ar_wait=61 actual_full_frame_write_read final_B_fence single_DDR synthetic_masters"
+      ]
+    },
+    {
+      "name": "tb_c2_framebuffer_seed12345",
+      "status": "PASS",
+      "parameters": {},
+      "ddr_seed": 12345,
+      "compiler_log": "logs/c9_display_c2/tb_c2_framebuffer_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_framebuffer_seed12345.log",
+      "evidence": [
+        "PASS tb_c2_framebuffer geometry=384x216 stride=384 bank_pitch=86016 full_bytes=414720 display_bytes=663552 cpu_bursts=28042 tinyml_bursts=28042 overlap_ai=63 overlap_rw=117113 max_aw_wait=116350 max_ar_wait=120 cpu_max_wait=103 tinyml_max_wait=100 source_verdict final_B_fence triple_buffer repeat drop malformed underflow BRESP RRESP source_overflow common_reset single_DDR synthetic_masters"
+      ]
+    },
+    {
+      "name": "tb_c2_framebuffer_mem_half7_video_half11_frame_width383_seed67891",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 7,
+        "VIDEO_HALF": 11,
+        "FRAME_WIDTH": 383
+      },
+      "ddr_seed": 67891,
+      "compiler_log": "logs/c9_display_c2/tb_c2_framebuffer_mem_half7_video_half11_frame_width383_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_framebuffer_mem_half7_video_half11_frame_width383_seed67891.log",
+      "evidence": [
+        "PASS tb_c2_framebuffer geometry=383x216 stride=384 bank_pitch=86016 full_bytes=414720 display_bytes=661824 cpu_bursts=23908 tinyml_bursts=23908 overlap_ai=63 overlap_rw=131103 max_aw_wait=130260 max_ar_wait=112 cpu_max_wait=106 tinyml_max_wait=102 source_verdict final_B_fence triple_buffer repeat drop malformed underflow BRESP RRESP source_overflow common_reset single_DDR synthetic_masters"
+      ]
+    },
+    {
+      "name": "tb_c2_time_p_half5_video_half7",
+      "status": "PASS",
+      "parameters": {
+        "P_HALF": 5,
+        "VIDEO_HALF": 7
+      },
+      "ddr_seed": null,
+      "compiler_log": "logs/c9_display_c2/tb_c2_time_p_half5_video_half7_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_time_p_half5_video_half7.log",
+      "evidence": [
+        "PASS tb_c2_time checks=384 video_snapshots=266 wraps=2 epochs=2 APB_single_clock coherent_CDC readonly rollover common_reset"
+      ]
+    },
+    {
+      "name": "tb_c2_time_p_half7_video_half3",
+      "status": "PASS",
+      "parameters": {
+        "P_HALF": 7,
+        "VIDEO_HALF": 3
+      },
+      "ddr_seed": null,
+      "compiler_log": "logs/c9_display_c2/tb_c2_time_p_half7_video_half3_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_time_p_half7_video_half3.log",
+      "evidence": [
+        "PASS tb_c2_time checks=182 video_snapshots=407 wraps=2 epochs=2 APB_single_clock coherent_CDC readonly rollover common_reset"
+      ]
+    },
+    {
+      "name": "tb_c2_time_p_half5_video_half131",
+      "status": "PASS",
+      "parameters": {
+        "P_HALF": 5,
+        "VIDEO_HALF": 131
+      },
+      "ddr_seed": null,
+      "compiler_log": "logs/c9_display_c2/tb_c2_time_p_half5_video_half131_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_time_p_half5_video_half131.log",
+      "evidence": [
+        "PASS tb_c2_time checks=5527 video_snapshots=207 wraps=2 epochs=2 APB_single_clock coherent_CDC readonly rollover common_reset"
+      ]
+    },
+    {
+      "name": "tb_c2_a_bridge_mem_half5_video_half7_seed12345",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 5,
+        "VIDEO_HALF": 7
+      },
+      "ddr_seed": 12345,
+      "compiler_log": "logs/c9_display_c2/tb_c2_a_bridge_mem_half5_video_half7_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_a_bridge_mem_half5_video_half7_seed12345.log",
+      "evidence": [
+        "PASS tb_c2_a_bridge bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=0 final_B_fence FNV CPU_readback A_BRAM lease pack128 SUM32 source_verdict FNV APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ]
+    },
+    {
+      "name": "tb_c2_a_bridge_mem_half7_video_half3_seed12345",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 7,
+        "VIDEO_HALF": 3
+      },
+      "ddr_seed": 12345,
+      "compiler_log": "logs/c9_display_c2/tb_c2_a_bridge_mem_half7_video_half3_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_a_bridge_mem_half7_video_half3_seed12345.log",
+      "evidence": [
+        "PASS tb_c2_a_bridge bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=0 final_B_fence FNV CPU_readback A_BRAM lease pack128 SUM32 source_verdict FNV APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ]
+    },
+    {
+      "name": "tb_c2_a_bridge_mem_half5_video_half19_seed12345",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 5,
+        "VIDEO_HALF": 19
+      },
+      "ddr_seed": 12345,
+      "compiler_log": "logs/c9_display_c2/tb_c2_a_bridge_mem_half5_video_half19_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_a_bridge_mem_half5_video_half19_seed12345.log",
+      "evidence": [
+        "PASS tb_c2_a_bridge bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=0 final_B_fence FNV CPU_readback A_BRAM lease pack128 SUM32 source_verdict FNV APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ]
+    },
+    {
+      "name": "tb_c2_apb_p_half3",
+      "status": "PASS",
+      "parameters": {
+        "P_HALF": 3
+      },
+      "ddr_seed": null,
+      "compiler_log": "logs/c9_display_c2/tb_c2_apb_p_half3_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_apb_p_half3.log",
+      "evidence": [
+        "PASS tb_c2_apb commands=105 checks=870 APB3 CDC setup errors busy immutable_snapshot stale_token common_reset"
+      ]
+    },
+    {
+      "name": "tb_c2_apb_p_half7",
+      "status": "PASS",
+      "parameters": {
+        "P_HALF": 7
+      },
+      "ddr_seed": null,
+      "compiler_log": "logs/c9_display_c2/tb_c2_apb_p_half7_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_apb_p_half7.log",
+      "evidence": [
+        "PASS tb_c2_apb commands=105 checks=766 APB3 CDC setup errors busy immutable_snapshot stale_token common_reset"
+      ]
+    },
+    {
+      "name": "tb_c2_apb_p_half131",
+      "status": "PASS",
+      "parameters": {
+        "P_HALF": 131
+      },
+      "ddr_seed": null,
+      "compiler_log": "logs/c9_display_c2/tb_c2_apb_p_half131_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_apb_p_half131.log",
+      "evidence": [
+        "PASS tb_c2_apb commands=105 checks=662 APB3 CDC setup errors busy immutable_snapshot stale_token common_reset"
+      ]
+    },
+    {
+      "name": "tb_c2_boundary_mem_half5_video_half7_seed12345",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 5,
+        "VIDEO_HALF": 7
+      },
+      "ddr_seed": 12345,
+      "compiler_log": "logs/c9_display_c2/tb_c2_boundary_mem_half5_video_half7_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_boundary_mem_half5_video_half7_seed12345.log",
+      "evidence": [
+        "PASS tb_c2_boundary bytes=9216 success=5 rejected=4 cpu_controls=11 background_writes=90 background_reads=90 checks=1026 source_stalls=41455 final_B_fence FNV CPU_readback async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ]
+    },
+    {
+      "name": "tb_c2_boundary_mem_half5_video_half7_seed67891",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 5,
+        "VIDEO_HALF": 7
+      },
+      "ddr_seed": 67891,
+      "compiler_log": "logs/c9_display_c2/tb_c2_boundary_mem_half5_video_half7_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_boundary_mem_half5_video_half7_seed67891.log",
+      "evidence": [
+        "PASS tb_c2_boundary bytes=9216 success=5 rejected=4 cpu_controls=11 background_writes=90 background_reads=90 checks=1026 source_stalls=41349 final_B_fence FNV CPU_readback async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ]
+    },
+    {
+      "name": "tb_c2_boundary_mem_half5_video_half7_seed20261024",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 5,
+        "VIDEO_HALF": 7
+      },
+      "ddr_seed": 20261024,
+      "compiler_log": "logs/c9_display_c2/tb_c2_boundary_mem_half5_video_half7_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_boundary_mem_half5_video_half7_seed20261024.log",
+      "evidence": [
+        "PASS tb_c2_boundary bytes=9216 success=5 rejected=4 cpu_controls=11 background_writes=90 background_reads=90 checks=1026 source_stalls=41570 final_B_fence FNV CPU_readback async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ]
+    },
+    {
+      "name": "tb_c2_vendor_mem_half5_video_half7_seed12345",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 5,
+        "VIDEO_HALF": 7
+      },
+      "ddr_seed": 12345,
+      "compiler_log": "logs/c9_display_c2/tb_c2_vendor_mem_half5_video_half7_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_vendor_mem_half5_video_half7_seed12345.log",
+      "evidence": [
+        "PASS tb_c2_vendor bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=41861 final_B_fence FNV CPU_readback APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ]
+    },
+    {
+      "name": "tb_c2_vendor_mem_half5_video_half7_seed67891",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 5,
+        "VIDEO_HALF": 7
+      },
+      "ddr_seed": 67891,
+      "compiler_log": "logs/c9_display_c2/tb_c2_vendor_mem_half5_video_half7_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_vendor_mem_half5_video_half7_seed67891.log",
+      "evidence": [
+        "PASS tb_c2_vendor bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=41606 final_B_fence FNV CPU_readback APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ]
+    },
+    {
+      "name": "tb_c2_vendor_mem_half5_video_half7_seed20261024",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 5,
+        "VIDEO_HALF": 7
+      },
+      "ddr_seed": 20261024,
+      "compiler_log": "logs/c9_display_c2/tb_c2_vendor_mem_half5_video_half7_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_vendor_mem_half5_video_half7_seed20261024.log",
+      "evidence": [
+        "PASS tb_c2_vendor bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=41857 final_B_fence FNV CPU_readback APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ]
+    },
+    {
+      "name": "tb_c2_boundary_mem_half7_video_half3_seed12345",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 7,
+        "VIDEO_HALF": 3
+      },
+      "ddr_seed": 12345,
+      "compiler_log": "logs/c9_display_c2/tb_c2_boundary_mem_half7_video_half3_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_boundary_mem_half7_video_half3_seed12345.log",
+      "evidence": [
+        "PASS tb_c2_boundary bytes=9216 success=5 rejected=4 cpu_controls=11 background_writes=90 background_reads=90 checks=1026 source_stalls=152018 final_B_fence FNV CPU_readback async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ]
+    },
+    {
+      "name": "tb_c2_boundary_mem_half7_video_half3_seed67891",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 7,
+        "VIDEO_HALF": 3
+      },
+      "ddr_seed": 67891,
+      "compiler_log": "logs/c9_display_c2/tb_c2_boundary_mem_half7_video_half3_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_boundary_mem_half7_video_half3_seed67891.log",
+      "evidence": [
+        "PASS tb_c2_boundary bytes=9216 success=5 rejected=4 cpu_controls=11 background_writes=90 background_reads=90 checks=1026 source_stalls=151840 final_B_fence FNV CPU_readback async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ]
+    },
+    {
+      "name": "tb_c2_boundary_mem_half7_video_half3_seed20261024",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 7,
+        "VIDEO_HALF": 3
+      },
+      "ddr_seed": 20261024,
+      "compiler_log": "logs/c9_display_c2/tb_c2_boundary_mem_half7_video_half3_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_boundary_mem_half7_video_half3_seed20261024.log",
+      "evidence": [
+        "PASS tb_c2_boundary bytes=9216 success=5 rejected=4 cpu_controls=11 background_writes=90 background_reads=90 checks=1026 source_stalls=151582 final_B_fence FNV CPU_readback async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ]
+    },
+    {
+      "name": "tb_c2_vendor_mem_half7_video_half3_seed12345",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 7,
+        "VIDEO_HALF": 3
+      },
+      "ddr_seed": 12345,
+      "compiler_log": "logs/c9_display_c2/tb_c2_vendor_mem_half7_video_half3_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_vendor_mem_half7_video_half3_seed12345.log",
+      "evidence": [
+        "PASS tb_c2_vendor bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=153302 final_B_fence FNV CPU_readback APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ]
+    },
+    {
+      "name": "tb_c2_vendor_mem_half7_video_half3_seed67891",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 7,
+        "VIDEO_HALF": 3
+      },
+      "ddr_seed": 67891,
+      "compiler_log": "logs/c9_display_c2/tb_c2_vendor_mem_half7_video_half3_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_vendor_mem_half7_video_half3_seed67891.log",
+      "evidence": [
+        "PASS tb_c2_vendor bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=153234 final_B_fence FNV CPU_readback APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ]
+    },
+    {
+      "name": "tb_c2_vendor_mem_half7_video_half3_seed20261024",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 7,
+        "VIDEO_HALF": 3
+      },
+      "ddr_seed": 20261024,
+      "compiler_log": "logs/c9_display_c2/tb_c2_vendor_mem_half7_video_half3_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_vendor_mem_half7_video_half3_seed20261024.log",
+      "evidence": [
+        "PASS tb_c2_vendor bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=152752 final_B_fence FNV CPU_readback APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ]
+    },
+    {
+      "name": "tb_c2_boundary_mem_half5_video_half131_seed12345",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 5,
+        "VIDEO_HALF": 131
+      },
+      "ddr_seed": 12345,
+      "compiler_log": "logs/c9_display_c2/tb_c2_boundary_mem_half5_video_half131_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_boundary_mem_half5_video_half131_seed12345.log",
+      "evidence": [
+        "PASS tb_c2_boundary bytes=9216 success=5 rejected=4 cpu_controls=11 background_writes=90 background_reads=90 checks=1026 source_stalls=0 final_B_fence FNV CPU_readback async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ]
+    },
+    {
+      "name": "tb_c2_boundary_mem_half5_video_half131_seed67891",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 5,
+        "VIDEO_HALF": 131
+      },
+      "ddr_seed": 67891,
+      "compiler_log": "logs/c9_display_c2/tb_c2_boundary_mem_half5_video_half131_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_boundary_mem_half5_video_half131_seed67891.log",
+      "evidence": [
+        "PASS tb_c2_boundary bytes=9216 success=5 rejected=4 cpu_controls=11 background_writes=90 background_reads=90 checks=1026 source_stalls=0 final_B_fence FNV CPU_readback async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ]
+    },
+    {
+      "name": "tb_c2_boundary_mem_half5_video_half131_seed20261024",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 5,
+        "VIDEO_HALF": 131
+      },
+      "ddr_seed": 20261024,
+      "compiler_log": "logs/c9_display_c2/tb_c2_boundary_mem_half5_video_half131_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_boundary_mem_half5_video_half131_seed20261024.log",
+      "evidence": [
+        "PASS tb_c2_boundary bytes=9216 success=5 rejected=4 cpu_controls=11 background_writes=90 background_reads=90 checks=1026 source_stalls=0 final_B_fence FNV CPU_readback async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ]
+    },
+    {
+      "name": "tb_c2_vendor_mem_half5_video_half131_seed12345",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 5,
+        "VIDEO_HALF": 131
+      },
+      "ddr_seed": 12345,
+      "compiler_log": "logs/c9_display_c2/tb_c2_vendor_mem_half5_video_half131_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_vendor_mem_half5_video_half131_seed12345.log",
+      "evidence": [
+        "PASS tb_c2_vendor bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=0 final_B_fence FNV CPU_readback APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ]
+    },
+    {
+      "name": "tb_c2_vendor_mem_half5_video_half131_seed67891",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 5,
+        "VIDEO_HALF": 131
+      },
+      "ddr_seed": 67891,
+      "compiler_log": "logs/c9_display_c2/tb_c2_vendor_mem_half5_video_half131_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_vendor_mem_half5_video_half131_seed67891.log",
+      "evidence": [
+        "PASS tb_c2_vendor bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=0 final_B_fence FNV CPU_readback APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ]
+    },
+    {
+      "name": "tb_c2_vendor_mem_half5_video_half131_seed20261024",
+      "status": "PASS",
+      "parameters": {
+        "MEM_HALF": 5,
+        "VIDEO_HALF": 131
+      },
+      "ddr_seed": 20261024,
+      "compiler_log": "logs/c9_display_c2/tb_c2_vendor_mem_half5_video_half131_compile.log",
+      "exit_code": 0,
+      "log": "logs/c9_display_c2/tb_c2_vendor_mem_half5_video_half131_seed20261024.log",
+      "evidence": [
+        "PASS tb_c2_vendor bytes=9216 success=5 rejected=4 cpu_controls=10 background_writes=90 background_reads=90 checks=1026 source_stalls=0 final_B_fence FNV CPU_readback APB CPU_ID vendor_S1 video_relocation async_pixel_FIFO grant error_drain CDC busy_drop errors reset"
+      ]
+    }
+  ],
+  "source_sha256": {
+    "build/c9_display_c2_20261102/rtl/c2_a_image_source.sv": "ca4ecba6a595851a28c2bc93b580212e68ac79481b1133767ef8f41c34538134",
+    "build/c9_display_c2_20261102/rtl/c2_a_mailbox_bridge.sv": "37d25577032e7fa78f4dc5616a1899d15feb565e3063d8e8d38b3963bfcf1f7c",
+    "build/c9_display_c2_20261102/rtl/c2_a_video_source.sv": "c43cd8a52c778d6883698d802ada9aaadcbcedfdba01e20dce48a4224b79be40",
+    "build/c9_display_c2_20261102/rtl/c2_apb_control.sv": "0be84c12bb8376f94ecff2de24bfbef85cbb3389a4eefa6e116bb9800bf5eb7d",
+    "build/c9_display_c2_20261102/rtl/c2_async_fifo.sv": "45421f3882790f6e67be745108fc5c65cc2603618e89c0ae135c6615286463b9",
+    "build/c9_display_c2_20261102/rtl/c2_axi_arbiter.sv": "b36413ca9feea3c8e4a714a41340980148e2eb2db2177e5da53f3d46876ebbde",
+    "build/c9_display_c2_20261102/rtl/c2_axi_to_vendor.sv": "c16fb2252e6315f21bbc229faf2db046fe18ceb81c4471cc11f91d384e744da0",
+    "build/c9_display_c2_20261102/rtl/c2_bram_async_fifo.sv": "5f993727ca3e48e89d10740c98c06d001b12b8a08d176d2eadb46c966413682d",
+    "build/c9_display_c2_20261102/rtl/c2_buffer_manager.sv": "df19575e73d2f0011d8aa2241d598a5c9f16d34ec37d2990fd07145e776ba2ea",
+    "build/c9_display_c2_20261102/rtl/c2_cdc_mailbox.sv": "04550a55a2e5fbb824c9d0733f9b07378b0b041222eb3fbc9c6170043e57e7d4",
+    "build/c9_display_c2_20261102/rtl/c2_frame_publisher.sv": "e07dc4798af6f03ab18ef16fd9faebe6306c19325685990e1586c66c3200910d",
+    "build/c9_display_c2_20261102/rtl/c2_image_writer.sv": "c1bf6994a33e854cda347cdc973bd0dc4441b7803d0c01f8d0d1a0093dcf05c9",
+    "build/c9_display_c2_20261102/rtl/c2_memory_hub.sv": "2b2c604fabcba80453d61596b933eb040ee6c3ee88a521751568727f11393b61",
+    "build/c9_display_c2_20261102/rtl/c2_shared_time.sv": "0465e815fd8d3d98f23ca136abf848e1a9514a56246b9b8d9b9bd2503647486a",
+    "build/c9_display_c2_20261102/rtl/c2_source_fence.sv": "1e865d73c3371428753db54562cfd6ef383ecba378e11e164bb2bc0c3a7f5482",
+    "build/c9_display_c2_20261102/rtl/c2_system_boundary.sv": "bf55c29bef46b953d7cfd152883f267464fbd3e97478b6f51362bdfdef3330ac",
+    "build/c9_display_c2_20261102/rtl/c2_vendor_attachment.sv": "38ef3fe766c953f2036eeef30b308c5656abe69d167f2fee638971ecd407674d",
+    "build/c9_display_c2_20261102/rtl/c2_video_framebuffer.sv": "25b80aa272f177906905d47a4f6449d2c7b4d38347f115cd0f133779831792f3",
+    "build/c9_display_c2_20261102/rtl/c2_video_ingress.sv": "5b855d68d50bcf2cfc2ea99d2f2b1512451bf2f4ab3850f480833c685de7cc88",
+    "build/c9_display_c2_20261102/rtl/c2_video_pipeline.sv": "9401308c63689b25baef2143c44de297e467fd0b4ed9b9525efe66d815f1405a",
+    "build/c9_display_c2_20261102/rtl/c2_video_scanout.sv": "dc4df78098c4d614db0fdd81a561c0475f969bae1ed0defa9efdb341dadf6fb3",
+    "build/c9_display_c2_20261102/rtl/c3_apb_peripheral.sv": "a521559e95ab39b1bd0b29a8eb1aade3ce5dfe5d8433b89cb420b65ff03c060e",
+    "build/c9_display_c2_20261102/a_side/ai_frame_mailbox.v": "be2a19b07be3b228001b64fc32a1fde2ed12ae12475dec29eeba989c9c2bb099",
+    "build/c9_display_c2_20261102/a_side/video_a_capture.v": "6fd4ba3f87ebc42e7ca4e90292da10d1233d8b6cd2b26311cc05cb818e673d57",
+    "build/c9_display_c2_20261102/a_side/video_grid_sampler.v": "9bd066f70ff8778caa7f4f18cfa4709a949b1c61ceb648cd79d015e00d57db84",
+    "build/c9_display_c2_20261102/sim/c2_bus_fixture.sv": "b045a2970eb0f43410b75e1a19dbaa2f187226013dab390c3b677937af7d43d8",
+    "build/c9_display_c2_20261102/sim/c2_ddr_model.sv": "9ebf8fdb842841c3e7ce3ba33e5a2ceec2dc5858ab1d2d15dbd68a21cd6527e0",
+    "build/c9_display_c2_20261102/sim/logic_reference.sv": "36c4e9832fa982e13e1412f7b840f80cce0f9bf45bf1c15e9ad1b119eb3d1ffa",
+    "build/c9_display_c2_20261102/sim/tb_c2_a_bridge.sv": "46b222e642e646d4b41b67c44d8108387fb6072fa079eaa13e3900c6f8a81437",
+    "build/c9_display_c2_20261102/sim/tb_c2_a_errors.sv": "b0d1bba8f7036eb0c7ba03ed7bcd2ea52c649c23425cdfc51eb020c62256d1df",
+    "build/c9_display_c2_20261102/sim/tb_c2_adapter.sv": "625c98196338cd27c1d4c1515bbd4a58a3aca7bd80cd20ce0ceeceed5c028922",
+    "build/c9_display_c2_20261102/sim/tb_c2_apb.sv": "e5976980f79012644428a75a97a084cc72c342f4ca18791a30c77cb163f21842",
+    "build/c9_display_c2_20261102/sim/tb_c2_axi.sv": "ccc6e7d9c9b80109930ad7bdd142f073dcf90a74eacbe559b5a3e2171b8dc28d",
+    "build/c9_display_c2_20261102/sim/tb_c2_boundary.sv": "44887f0f3033aafbb75a79f7396ba9047dc4b5b9d44c3cd8727ec7d6896d1e41",
+    "build/c9_display_c2_20261102/sim/tb_c2_bram_fifo.sv": "48f19ed4e0676a4e9129e2f72cbf8f9b600add1b86d4ba1b772ed28cae21498f",
+    "build/c9_display_c2_20261102/sim/tb_c2_cache.sv": "0bb318b7010d783ddc1f8b80ed8bce44d88219b8bb5fae92300c38197c2deca7",
+    "build/c9_display_c2_20261102/sim/tb_c2_cdc.sv": "087380d2becdb566b6336902e6644dc5ee6bd1521708cb31bfc150880cc72cfb",
+    "build/c9_display_c2_20261102/sim/tb_c2_fifo.sv": "3e6c2e748d503d44842a724c6e9b63468214451525a290a6ffaff67b54afbd2f",
+    "build/c9_display_c2_20261102/sim/tb_c2_framebuffer.sv": "6fb2dda6b554589df0e79da28292bb087fc2217b798197bb63f99f8813b6f9e2",
+    "build/c9_display_c2_20261102/sim/tb_c2_image.sv": "32b7a952382258b4db7229ea7260d9c8e26a3f755e4f2429a39e3ae39747a164",
+    "build/c9_display_c2_20261102/sim/tb_c2_pool.sv": "f000a41da07a229c83d1c207247a82980891517449b8a85829abe4a898c42d6e",
+    "build/c9_display_c2_20261102/sim/tb_c2_source_fence.sv": "f377fe0720b78e985bd41d60cf6890d312ba7e393f8ecfa126c9d35776a0b9cc",
+    "build/c9_display_c2_20261102/sim/tb_c2_time.sv": "2da94c8d75d2dff164c045a26b1c3abab5a1566e5b68bbc345cc244b37c04dd1",
+    "build/c9_display_c2_20261102/sim/tb_c2_vendor.sv": "ad12476ef0259ceeca28bc1a38ee4f1fa95dea9089c8c19fd03fd2110f7096a0",
+    "build/c9_display_c2_20261102/sim/tb_c2_video.sv": "9dc83586cd4b9e98707f08366e0e36b0b5fe8f59944a03d9cb55938a988d8377",
+    "build/c9_display_c2_20261102/sim/tb_c2_video_config.sv": "dab207d9eea0d2871f4dd5c5fb2f93e3f160e4825faa6a9eab3b356d0018a416",
+    "build/c9_display_c2_20261102/sim/tb_c2_video_tail.sv": "0d76272bf7a5a87561367333938f2ed5b05997c298a77baa9e6e71649bf0edb2",
+    "build/c9_display_c2_20261102/sim/tb_c3_peripheral.sv": "80966ffa98a93b9fc5050f7617e0199ec7ae673ad7ac87af3cbfa7389f31e63e",
+    "build/c9_display_c2_20261102/sim/tb_c3_shared_epoch.sv": "32c3660718582ae71c0a0e2dbb54b6959328f8481f77d1323973eab50cd5d264",
+    "build/c9_display_c2_20261102/sim/tb_c3_timing.sv": "dc4af9286bd8e3326c9621cc756b7e32067ef86b6855c050c4582b2ac4085848",
+    "build/c9_display_c2_20261102/sim/tb_physical_c2_tail.sv": "e153bcb86d9cd8d060294ed79e226454f40c5724cdaf2a72f9150b53d07e30a7",
+    "team_work/03_ai_soc/c2/c2_driver.c": "c1a561ef635bd51e9837f1f63f75ffbaffd912454faf8ff8520cf0a65361798c",
+    "team_work/03_ai_soc/c2/c2_driver.h": "70e30ebfb5b6fd39122aba49eccde4668199aeff8f306fba45f4a6a2d490d761",
+    "team_work/03_ai_soc/c2/c2_sapphire.c": "6bca6d86412d45287533209c41845486355928515fd252c6bc38e4f1ae777b77",
+    "team_work/03_ai_soc/c2/c2_sapphire.h": "972bf7ce236f9f39816d7115f05edd9419c35ea773471c8b4b35becf92868a7c",
+    "team_work/03_ai_soc/c24/c24_log_format.h": "7adb697e2af4935073add7a2ef554c8200400cc56f8c964e1b14b8e3234f538d",
+    "team_work/03_ai_soc/c24/c24_pipeline.c": "5ea3859b8c881e78d4c54d45328b82cc5d6464b8f32469633ee48a28f2400f94",
+    "team_work/03_ai_soc/c24/c24_pipeline.h": "bed6fa3c9c8a1faf669da514aaf7ad9bc9aedff7b2b76f8fc0e1716a68435802",
+    "team_work/03_ai_soc/c3_hal/c3_shared_time.c": "7b28e7794f6d91796a1ed6d1f9c1603477136308a5e9c092480d57d11d167ae7",
+    "team_work/03_ai_soc/c3_hal/c3_shared_time.h": "e7cba2798597114b10fcd0a9e4c46acf0f6814210e05a9c9f759ca88e2b54448",
+    "team_work/03_ai_soc/tests/test_c3_shared_time.c": "d8397dbf84a3a0416ca32cfa090f3798b98bc29b7515e969482c196e4187b48c",
+    "tools/prepare_a_c2.py": "7bd124ad9e9e07ff9a3982ea171779483ddb10f92af9c321c01c2685ee9f129e",
+    "projects/06_soc_c2/a_side/SOURCE_MANIFEST.json": "6fb2ba360dbf3fa9e36ec1036ef1b075ab1d5508186391b3e95f53594445dcf1",
+    "tools/prepare_c2_video_test.py": "811323dfbf262de49956f46cd9194d85d873c17f54ce81d14806e7f7847963f8",
+    "team_work/shared/a_interface_v1.md": "3eaeb919689ad9398e4144ad0e9ba3bb7744e179c4d5a639208365b5415ea4ee",
+    "tools/prepare_c2_framebuffer.py": "e19bc8a35a64c5c802895968329f1be8f080f2f790e90e9d7a7f21ec2fd0fe68",
+    "team_work/03_ai_soc/c3_hal/c3_hal.c": "b13be6fb846314a8ef76f5d62ad887caaf25568b573f4ecf5a6796ffbef06221",
+    "team_work/03_ai_soc/c3_hal/c3_hal.h": "0696a22e038c4bb1398ea2fc0619fd876ccee8b2f5f9fde0db797f8ebb37b8c8",
+    "team_work/03_ai_soc/c3_hal/c3_peripheral.c": "5ee209938ef334acca4fb1d37f885a45bc429ab82aa2605c450441885cc8f193",
+    "team_work/03_ai_soc/c3_hal/c3_peripheral.h": "35cd983168c6e1257c747aae9577a23cb1c8cd2632e5aaaffaac2a6ea6bff04a",
+    "team_work/03_ai_soc/c3_hal/c3_replay.c": "7abca1af0990b062d8f8ce4e54cc15aa672da18d0a08140c3ec7ecbd30e839e6",
+    "team_work/03_ai_soc/c3_hal/c3_replay.h": "a91b314183ae947d6479f6fc7ca3e0dcfcd69f713fc83646f09fecb6fa308f33",
+    "team_work/03_ai_soc/c3_hal/c3_sapphire_peripheral.c": "7c043dc3dd4fece7579f73b04bb0f726685918aad6797bdc8f17cc367dce6e1b",
+    "team_work/03_ai_soc/c3_hal/c3_sapphire_peripheral.h": "f71182542b7d74ae9b596b5538a61cac5a88f9b17f72b9ee9414ebb760aff2b0",
+    "team_work/03_ai_soc/c3_hal/c3_sapphire_time.c": "54dfb89f47a20ebd9cd56093e3a8c0676ca846575db1267c1ba35c4815624634",
+    "team_work/03_ai_soc/c3_hal/c3_thermal_publish.c": "81a19eb297973f11db46aa2ef4d0a79da8870ca9c305c05072a63a81451d7941",
+    "team_work/03_ai_soc/c3_hal/c3_thermal_publish.h": "6a906a39bc3261f5bdcba74f71e997e5e71a55fedf009de339419758529ad321",
+    "team_work/03_ai_soc/tests/test_c3_peripheral.c": "7a9ea78834342c7a07fb821790e12ad2b0cf62b53c817a1de4f9bca9bc2d90b9",
+    "tools/build_c3_host.cmd": "e2cf7bd10bbe7492981663276b0357d8e393ad86dcab3da2b6a3d92ff32d4c3f",
+    "team_work/03_ai_soc/tests/test_c2_driver.c": "76e50758262f5e140b815b8f2ba646f914ded661e077ea391daf7c4bdd7a6ed4",
+    "tools/prepare_c2_vendor.py": "f0c9fa059a55bec0f7e42db8b0359aef94ab5c92d73c375a9bf1644fa22d4a89",
+    "tools/audit_c2_vendor.py": "6b214d96c1c1b71a15efad24ab90002c65307685c0938483f179f0bebcd85fca",
+    "tools/check_c2_riscv.py": "f1bb530409560daaa99261035c0096341c8a2240f8d5928338de2c4a5563032a",
+    "tools/build_c2_host.cmd": "3410e984d7f4bb3841f568edcb51cad3558454ee01823e725e78873ab5dd54a6",
+    "projects/03_tinyml/ip/sapphire_soc/sapphire_soc.v": "87c00873d2efc6b5bbb5336c1a1046eb0a21cf89c9d971f6c7cf703e0d2e6733",
+    "build/c2/vendor_datacache.v": "a7f4b4df28d3c191c999cf08e74dca2cf68383b375f7a5a368b0bf752326f432",
+    "tools/run_c2_selftest.py": "229b229bf220186d34331c745963336d1b6e435a31eb083dfb6e38f487649876",
+    "tools/audit_c2_baselines.py": "e8aac50a3e82978c65872ddb4315576aed14b925ce88a9a590b67c82c0f87c2d"
+  },
+  "host_driver_test": null,
+  "riscv_compile": null,
+  "iverilog_version": "Icarus Verilog version 12.0 (devel) (s20150603-1539-g2693dd32b)",
+  "postchecks": "RTL-only alternate implementation; unchanged C software/native baseline not rebuilt",
+  "passed": 53,
+  "finished": "2026-11-03T13:03:32.911124+00:00",
+  "physical_overrides": true,
+  "tail_checks": [
+    {
+      "beats": 1,
+      "status": "PASS",
+      "evidence": "PASS tb_physical_c2_tail words=1 reads=2 BRAM_read_first_safe final_B_fence display_backpressure repeat\nbuild/c9_display_c2_20261102/sim/tb_physical_c2_tail.sv:85: $finish called at 910000 (1ps)\n"
+    },
+    {
+      "beats": 6,
+      "status": "PASS",
+      "evidence": "PASS tb_physical_c2_tail words=6 reads=12 BRAM_read_first_safe final_B_fence display_backpressure repeat\nbuild/c9_display_c2_20261102/sim/tb_physical_c2_tail.sv:85: $finish called at 1750000 (1ps)\n"
+    }
+  ],
+  "source_clone_provenance": {
+    "build/c9_display_c2_20261102/rtl/c2_apb_control.sv": {
+      "original": "projects/06_soc_c2/rtl/c2_apb_control.sv",
+      "original_sha256": "0be84c12bb8376f94ecff2de24bfbef85cbb3389a4eefa6e116bb9800bf5eb7d",
+      "compiled_from": "projects/06_soc_c2/rtl/c2_apb_control.sv",
+      "compiled_sha256": "0be84c12bb8376f94ecff2de24bfbef85cbb3389a4eefa6e116bb9800bf5eb7d"
+    },
+    "build/c9_display_c2_20261102/rtl/c2_async_fifo.sv": {
+      "original": "projects/06_soc_c2/rtl/c2_async_fifo.sv",
+      "original_sha256": "91d7dd66779d10552c23048734da6c6baaf6267d553eaf3567a2446e02ba9d77",
+      "compiled_from": "projects/07_soc_physical/overrides/c2_async_fifo.sv",
+      "compiled_sha256": "45421f3882790f6e67be745108fc5c65cc2603618e89c0ae135c6615286463b9"
+    },
+    "build/c9_display_c2_20261102/rtl/c2_axi_arbiter.sv": {
+      "original": "projects/06_soc_c2/rtl/c2_axi_arbiter.sv",
+      "original_sha256": "b36413ca9feea3c8e4a714a41340980148e2eb2db2177e5da53f3d46876ebbde",
+      "compiled_from": "projects/06_soc_c2/rtl/c2_axi_arbiter.sv",
+      "compiled_sha256": "b36413ca9feea3c8e4a714a41340980148e2eb2db2177e5da53f3d46876ebbde"
+    },
+    "build/c9_display_c2_20261102/rtl/c2_axi_to_vendor.sv": {
+      "original": "projects/06_soc_c2/rtl/c2_axi_to_vendor.sv",
+      "original_sha256": "c16fb2252e6315f21bbc229faf2db046fe18ceb81c4471cc11f91d384e744da0",
+      "compiled_from": "projects/06_soc_c2/rtl/c2_axi_to_vendor.sv",
+      "compiled_sha256": "c16fb2252e6315f21bbc229faf2db046fe18ceb81c4471cc11f91d384e744da0"
+    },
+    "build/c9_display_c2_20261102/rtl/c2_a_image_source.sv": {
+      "original": "projects/06_soc_c2/rtl/c2_a_image_source.sv",
+      "original_sha256": "ca4ecba6a595851a28c2bc93b580212e68ac79481b1133767ef8f41c34538134",
+      "compiled_from": "projects/06_soc_c2/rtl/c2_a_image_source.sv",
+      "compiled_sha256": "ca4ecba6a595851a28c2bc93b580212e68ac79481b1133767ef8f41c34538134"
+    },
+    "build/c9_display_c2_20261102/rtl/c2_a_mailbox_bridge.sv": {
+      "original": "projects/06_soc_c2/rtl/c2_a_mailbox_bridge.sv",
+      "original_sha256": "37d25577032e7fa78f4dc5616a1899d15feb565e3063d8e8d38b3963bfcf1f7c",
+      "compiled_from": "projects/06_soc_c2/rtl/c2_a_mailbox_bridge.sv",
+      "compiled_sha256": "37d25577032e7fa78f4dc5616a1899d15feb565e3063d8e8d38b3963bfcf1f7c"
+    },
+    "build/c9_display_c2_20261102/rtl/c2_a_video_source.sv": {
+      "original": "projects/06_soc_c2/rtl/c2_a_video_source.sv",
+      "original_sha256": "c43cd8a52c778d6883698d802ada9aaadcbcedfdba01e20dce48a4224b79be40",
+      "compiled_from": "projects/06_soc_c2/rtl/c2_a_video_source.sv",
+      "compiled_sha256": "c43cd8a52c778d6883698d802ada9aaadcbcedfdba01e20dce48a4224b79be40"
+    },
+    "build/c9_display_c2_20261102/rtl/c2_bram_async_fifo.sv": {
+      "original": "projects/06_soc_c2/rtl/c2_bram_async_fifo.sv",
+      "original_sha256": "5f993727ca3e48e89d10740c98c06d001b12b8a08d176d2eadb46c966413682d",
+      "compiled_from": "projects/06_soc_c2/rtl/c2_bram_async_fifo.sv",
+      "compiled_sha256": "5f993727ca3e48e89d10740c98c06d001b12b8a08d176d2eadb46c966413682d"
+    },
+    "build/c9_display_c2_20261102/rtl/c2_buffer_manager.sv": {
+      "original": "projects/06_soc_c2/rtl/c2_buffer_manager.sv",
+      "original_sha256": "df19575e73d2f0011d8aa2241d598a5c9f16d34ec37d2990fd07145e776ba2ea",
+      "compiled_from": "projects/06_soc_c2/rtl/c2_buffer_manager.sv",
+      "compiled_sha256": "df19575e73d2f0011d8aa2241d598a5c9f16d34ec37d2990fd07145e776ba2ea"
+    },
+    "build/c9_display_c2_20261102/rtl/c2_cdc_mailbox.sv": {
+      "original": "projects/06_soc_c2/rtl/c2_cdc_mailbox.sv",
+      "original_sha256": "04550a55a2e5fbb824c9d0733f9b07378b0b041222eb3fbc9c6170043e57e7d4",
+      "compiled_from": "projects/06_soc_c2/rtl/c2_cdc_mailbox.sv",
+      "compiled_sha256": "04550a55a2e5fbb824c9d0733f9b07378b0b041222eb3fbc9c6170043e57e7d4"
+    },
+    "build/c9_display_c2_20261102/rtl/c2_frame_publisher.sv": {
+      "original": "projects/06_soc_c2/rtl/c2_frame_publisher.sv",
+      "original_sha256": "e07dc4798af6f03ab18ef16fd9faebe6306c19325685990e1586c66c3200910d",
+      "compiled_from": "projects/06_soc_c2/rtl/c2_frame_publisher.sv",
+      "compiled_sha256": "e07dc4798af6f03ab18ef16fd9faebe6306c19325685990e1586c66c3200910d"
+    },
+    "build/c9_display_c2_20261102/rtl/c2_image_writer.sv": {
+      "original": "projects/06_soc_c2/rtl/c2_image_writer.sv",
+      "original_sha256": "53780b55dd93ce2987dfc45fb33b6c7be78f6a32f6b36343b5ffb4794d06b827",
+      "compiled_from": "projects/07_soc_physical/overrides/c2_image_writer.sv",
+      "compiled_sha256": "c1bf6994a33e854cda347cdc973bd0dc4441b7803d0c01f8d0d1a0093dcf05c9"
+    },
+    "build/c9_display_c2_20261102/rtl/c2_memory_hub.sv": {
+      "original": "projects/06_soc_c2/rtl/c2_memory_hub.sv",
+      "original_sha256": "2b2c604fabcba80453d61596b933eb040ee6c3ee88a521751568727f11393b61",
+      "compiled_from": "projects/06_soc_c2/rtl/c2_memory_hub.sv",
+      "compiled_sha256": "2b2c604fabcba80453d61596b933eb040ee6c3ee88a521751568727f11393b61"
+    },
+    "build/c9_display_c2_20261102/rtl/c2_shared_time.sv": {
+      "original": "projects/06_soc_c2/rtl/c2_shared_time.sv",
+      "original_sha256": "0465e815fd8d3d98f23ca136abf848e1a9514a56246b9b8d9b9bd2503647486a",
+      "compiled_from": "projects/06_soc_c2/rtl/c2_shared_time.sv",
+      "compiled_sha256": "0465e815fd8d3d98f23ca136abf848e1a9514a56246b9b8d9b9bd2503647486a"
+    },
+    "build/c9_display_c2_20261102/rtl/c2_source_fence.sv": {
+      "original": "projects/06_soc_c2/rtl/c2_source_fence.sv",
+      "original_sha256": "1e865d73c3371428753db54562cfd6ef383ecba378e11e164bb2bc0c3a7f5482",
+      "compiled_from": "projects/06_soc_c2/rtl/c2_source_fence.sv",
+      "compiled_sha256": "1e865d73c3371428753db54562cfd6ef383ecba378e11e164bb2bc0c3a7f5482"
+    },
+    "build/c9_display_c2_20261102/rtl/c2_system_boundary.sv": {
+      "original": "projects/06_soc_c2/rtl/c2_system_boundary.sv",
+      "original_sha256": "bf55c29bef46b953d7cfd152883f267464fbd3e97478b6f51362bdfdef3330ac",
+      "compiled_from": "projects/06_soc_c2/rtl/c2_system_boundary.sv",
+      "compiled_sha256": "bf55c29bef46b953d7cfd152883f267464fbd3e97478b6f51362bdfdef3330ac"
+    },
+    "build/c9_display_c2_20261102/rtl/c2_vendor_attachment.sv": {
+      "original": "projects/06_soc_c2/rtl/c2_vendor_attachment.sv",
+      "original_sha256": "38ef3fe766c953f2036eeef30b308c5656abe69d167f2fee638971ecd407674d",
+      "compiled_from": "projects/06_soc_c2/rtl/c2_vendor_attachment.sv",
+      "compiled_sha256": "38ef3fe766c953f2036eeef30b308c5656abe69d167f2fee638971ecd407674d"
+    },
+    "build/c9_display_c2_20261102/rtl/c2_video_framebuffer.sv": {
+      "original": "projects/06_soc_c2/rtl/c2_video_framebuffer.sv",
+      "original_sha256": "f942962793c0f2778750fea248f0259efca27928ae7f1488f0f2f491153d5c96",
+      "compiled_from": "projects/07_soc_physical/overrides/c2_video_framebuffer.sv",
+      "compiled_sha256": "25b80aa272f177906905d47a4f6449d2c7b4d38347f115cd0f133779831792f3"
+    },
+    "build/c9_display_c2_20261102/rtl/c2_video_ingress.sv": {
+      "original": "projects/06_soc_c2/rtl/c2_video_ingress.sv",
+      "original_sha256": "5b855d68d50bcf2cfc2ea99d2f2b1512451bf2f4ab3850f480833c685de7cc88",
+      "compiled_from": "projects/06_soc_c2/rtl/c2_video_ingress.sv",
+      "compiled_sha256": "5b855d68d50bcf2cfc2ea99d2f2b1512451bf2f4ab3850f480833c685de7cc88"
+    },
+    "build/c9_display_c2_20261102/rtl/c2_video_pipeline.sv": {
+      "original": "projects/06_soc_c2/rtl/c2_video_pipeline.sv",
+      "original_sha256": "9401308c63689b25baef2143c44de297e467fd0b4ed9b9525efe66d815f1405a",
+      "compiled_from": "projects/06_soc_c2/rtl/c2_video_pipeline.sv",
+      "compiled_sha256": "9401308c63689b25baef2143c44de297e467fd0b4ed9b9525efe66d815f1405a"
+    },
+    "build/c9_display_c2_20261102/rtl/c2_video_scanout.sv": {
+      "original": "projects/06_soc_c2/rtl/c2_video_scanout.sv",
+      "original_sha256": "711450de1c1494f02d963c686799da7892463449d59d8537ece57bdb9ff3da9d",
+      "compiled_from": "team_work/03_ai_soc/c9_live/display_fix/c2_video_scanout.sv",
+      "compiled_sha256": "dc4df78098c4d614db0fdd81a561c0475f969bae1ed0defa9efdb341dadf6fb3"
+    },
+    "build/c9_display_c2_20261102/rtl/c3_apb_peripheral.sv": {
+      "original": "projects/06_soc_c2/rtl/c3_apb_peripheral.sv",
+      "original_sha256": "a521559e95ab39b1bd0b29a8eb1aade3ce5dfe5d8433b89cb420b65ff03c060e",
+      "compiled_from": "projects/06_soc_c2/rtl/c3_apb_peripheral.sv",
+      "compiled_sha256": "a521559e95ab39b1bd0b29a8eb1aade3ce5dfe5d8433b89cb420b65ff03c060e"
+    },
+    "build/c9_display_c2_20261102/sim/c2_bus_fixture.sv": {
+      "original": "projects/06_soc_c2/sim/c2_bus_fixture.sv",
+      "original_sha256": "b045a2970eb0f43410b75e1a19dbaa2f187226013dab390c3b677937af7d43d8",
+      "compiled_from": "projects/06_soc_c2/sim/c2_bus_fixture.sv",
+      "compiled_sha256": "b045a2970eb0f43410b75e1a19dbaa2f187226013dab390c3b677937af7d43d8"
+    },
+    "build/c9_display_c2_20261102/sim/c2_ddr_model.sv": {
+      "original": "projects/06_soc_c2/sim/c2_ddr_model.sv",
+      "original_sha256": "9ebf8fdb842841c3e7ce3ba33e5a2ceec2dc5858ab1d2d15dbd68a21cd6527e0",
+      "compiled_from": "projects/06_soc_c2/sim/c2_ddr_model.sv",
+      "compiled_sha256": "9ebf8fdb842841c3e7ce3ba33e5a2ceec2dc5858ab1d2d15dbd68a21cd6527e0"
+    },
+    "build/c9_display_c2_20261102/sim/tb_c2_adapter.sv": {
+      "original": "projects/06_soc_c2/sim/tb_c2_adapter.sv",
+      "original_sha256": "625c98196338cd27c1d4c1515bbd4a58a3aca7bd80cd20ce0ceeceed5c028922",
+      "compiled_from": "projects/06_soc_c2/sim/tb_c2_adapter.sv",
+      "compiled_sha256": "625c98196338cd27c1d4c1515bbd4a58a3aca7bd80cd20ce0ceeceed5c028922"
+    },
+    "build/c9_display_c2_20261102/sim/tb_c2_apb.sv": {
+      "original": "projects/06_soc_c2/sim/tb_c2_apb.sv",
+      "original_sha256": "e5976980f79012644428a75a97a084cc72c342f4ca18791a30c77cb163f21842",
+      "compiled_from": "projects/06_soc_c2/sim/tb_c2_apb.sv",
+      "compiled_sha256": "e5976980f79012644428a75a97a084cc72c342f4ca18791a30c77cb163f21842"
+    },
+    "build/c9_display_c2_20261102/sim/tb_c2_axi.sv": {
+      "original": "projects/06_soc_c2/sim/tb_c2_axi.sv",
+      "original_sha256": "ccc6e7d9c9b80109930ad7bdd142f073dcf90a74eacbe559b5a3e2171b8dc28d",
+      "compiled_from": "projects/06_soc_c2/sim/tb_c2_axi.sv",
+      "compiled_sha256": "ccc6e7d9c9b80109930ad7bdd142f073dcf90a74eacbe559b5a3e2171b8dc28d"
+    },
+    "build/c9_display_c2_20261102/sim/tb_c2_a_bridge.sv": {
+      "original": "projects/06_soc_c2/sim/tb_c2_a_bridge.sv",
+      "original_sha256": "46b222e642e646d4b41b67c44d8108387fb6072fa079eaa13e3900c6f8a81437",
+      "compiled_from": "projects/06_soc_c2/sim/tb_c2_a_bridge.sv",
+      "compiled_sha256": "46b222e642e646d4b41b67c44d8108387fb6072fa079eaa13e3900c6f8a81437"
+    },
+    "build/c9_display_c2_20261102/sim/tb_c2_a_errors.sv": {
+      "original": "projects/06_soc_c2/sim/tb_c2_a_errors.sv",
+      "original_sha256": "b0d1bba8f7036eb0c7ba03ed7bcd2ea52c649c23425cdfc51eb020c62256d1df",
+      "compiled_from": "projects/06_soc_c2/sim/tb_c2_a_errors.sv",
+      "compiled_sha256": "b0d1bba8f7036eb0c7ba03ed7bcd2ea52c649c23425cdfc51eb020c62256d1df"
+    },
+    "build/c9_display_c2_20261102/sim/tb_c2_boundary.sv": {
+      "original": "projects/06_soc_c2/sim/tb_c2_boundary.sv",
+      "original_sha256": "44887f0f3033aafbb75a79f7396ba9047dc4b5b9d44c3cd8727ec7d6896d1e41",
+      "compiled_from": "projects/06_soc_c2/sim/tb_c2_boundary.sv",
+      "compiled_sha256": "44887f0f3033aafbb75a79f7396ba9047dc4b5b9d44c3cd8727ec7d6896d1e41"
+    },
+    "build/c9_display_c2_20261102/sim/tb_c2_bram_fifo.sv": {
+      "original": "projects/06_soc_c2/sim/tb_c2_bram_fifo.sv",
+      "original_sha256": "57fbf42b90ed793659276cfaa751d1afbccd07febd0ebcb9503398a6e90b6a45",
+      "compiled_from": "projects/06_soc_c2/sim/tb_c2_bram_fifo.sv",
+      "compiled_sha256": "57fbf42b90ed793659276cfaa751d1afbccd07febd0ebcb9503398a6e90b6a45"
+    },
+    "build/c9_display_c2_20261102/sim/tb_c2_cache.sv": {
+      "original": "projects/06_soc_c2/sim/tb_c2_cache.sv",
+      "original_sha256": "0bb318b7010d783ddc1f8b80ed8bce44d88219b8bb5fae92300c38197c2deca7",
+      "compiled_from": "projects/06_soc_c2/sim/tb_c2_cache.sv",
+      "compiled_sha256": "0bb318b7010d783ddc1f8b80ed8bce44d88219b8bb5fae92300c38197c2deca7"
+    },
+    "build/c9_display_c2_20261102/sim/tb_c2_cdc.sv": {
+      "original": "projects/06_soc_c2/sim/tb_c2_cdc.sv",
+      "original_sha256": "087380d2becdb566b6336902e6644dc5ee6bd1521708cb31bfc150880cc72cfb",
+      "compiled_from": "projects/06_soc_c2/sim/tb_c2_cdc.sv",
+      "compiled_sha256": "087380d2becdb566b6336902e6644dc5ee6bd1521708cb31bfc150880cc72cfb"
+    },
+    "build/c9_display_c2_20261102/sim/tb_c2_fifo.sv": {
+      "original": "projects/06_soc_c2/sim/tb_c2_fifo.sv",
+      "original_sha256": "3e6c2e748d503d44842a724c6e9b63468214451525a290a6ffaff67b54afbd2f",
+      "compiled_from": "projects/06_soc_c2/sim/tb_c2_fifo.sv",
+      "compiled_sha256": "3e6c2e748d503d44842a724c6e9b63468214451525a290a6ffaff67b54afbd2f"
+    },
+    "build/c9_display_c2_20261102/sim/tb_c2_framebuffer.sv": {
+      "original": "projects/06_soc_c2/sim/tb_c2_framebuffer.sv",
+      "original_sha256": "6fb2dda6b554589df0e79da28292bb087fc2217b798197bb63f99f8813b6f9e2",
+      "compiled_from": "projects/06_soc_c2/sim/tb_c2_framebuffer.sv",
+      "compiled_sha256": "6fb2dda6b554589df0e79da28292bb087fc2217b798197bb63f99f8813b6f9e2"
+    },
+    "build/c9_display_c2_20261102/sim/tb_c2_image.sv": {
+      "original": "projects/06_soc_c2/sim/tb_c2_image.sv",
+      "original_sha256": "32b7a952382258b4db7229ea7260d9c8e26a3f755e4f2429a39e3ae39747a164",
+      "compiled_from": "projects/06_soc_c2/sim/tb_c2_image.sv",
+      "compiled_sha256": "32b7a952382258b4db7229ea7260d9c8e26a3f755e4f2429a39e3ae39747a164"
+    },
+    "build/c9_display_c2_20261102/sim/tb_c2_pool.sv": {
+      "original": "projects/06_soc_c2/sim/tb_c2_pool.sv",
+      "original_sha256": "f000a41da07a229c83d1c207247a82980891517449b8a85829abe4a898c42d6e",
+      "compiled_from": "projects/06_soc_c2/sim/tb_c2_pool.sv",
+      "compiled_sha256": "f000a41da07a229c83d1c207247a82980891517449b8a85829abe4a898c42d6e"
+    },
+    "build/c9_display_c2_20261102/sim/tb_c2_source_fence.sv": {
+      "original": "projects/06_soc_c2/sim/tb_c2_source_fence.sv",
+      "original_sha256": "f377fe0720b78e985bd41d60cf6890d312ba7e393f8ecfa126c9d35776a0b9cc",
+      "compiled_from": "projects/06_soc_c2/sim/tb_c2_source_fence.sv",
+      "compiled_sha256": "f377fe0720b78e985bd41d60cf6890d312ba7e393f8ecfa126c9d35776a0b9cc"
+    },
+    "build/c9_display_c2_20261102/sim/tb_c2_time.sv": {
+      "original": "projects/06_soc_c2/sim/tb_c2_time.sv",
+      "original_sha256": "2da94c8d75d2dff164c045a26b1c3abab5a1566e5b68bbc345cc244b37c04dd1",
+      "compiled_from": "projects/06_soc_c2/sim/tb_c2_time.sv",
+      "compiled_sha256": "2da94c8d75d2dff164c045a26b1c3abab5a1566e5b68bbc345cc244b37c04dd1"
+    },
+    "build/c9_display_c2_20261102/sim/tb_c2_vendor.sv": {
+      "original": "projects/06_soc_c2/sim/tb_c2_vendor.sv",
+      "original_sha256": "ad12476ef0259ceeca28bc1a38ee4f1fa95dea9089c8c19fd03fd2110f7096a0",
+      "compiled_from": "projects/06_soc_c2/sim/tb_c2_vendor.sv",
+      "compiled_sha256": "ad12476ef0259ceeca28bc1a38ee4f1fa95dea9089c8c19fd03fd2110f7096a0"
+    },
+    "build/c9_display_c2_20261102/sim/tb_c2_video.sv": {
+      "original": "projects/06_soc_c2/sim/tb_c2_video.sv",
+      "original_sha256": "9dc83586cd4b9e98707f08366e0e36b0b5fe8f59944a03d9cb55938a988d8377",
+      "compiled_from": "projects/06_soc_c2/sim/tb_c2_video.sv",
+      "compiled_sha256": "9dc83586cd4b9e98707f08366e0e36b0b5fe8f59944a03d9cb55938a988d8377"
+    },
+    "build/c9_display_c2_20261102/sim/tb_c2_video_config.sv": {
+      "original": "projects/06_soc_c2/sim/tb_c2_video_config.sv",
+      "original_sha256": "dab207d9eea0d2871f4dd5c5fb2f93e3f160e4825faa6a9eab3b356d0018a416",
+      "compiled_from": "projects/06_soc_c2/sim/tb_c2_video_config.sv",
+      "compiled_sha256": "dab207d9eea0d2871f4dd5c5fb2f93e3f160e4825faa6a9eab3b356d0018a416"
+    },
+    "build/c9_display_c2_20261102/sim/tb_c2_video_tail.sv": {
+      "original": "projects/06_soc_c2/sim/tb_c2_video_tail.sv",
+      "original_sha256": "0d76272bf7a5a87561367333938f2ed5b05997c298a77baa9e6e71649bf0edb2",
+      "compiled_from": "projects/06_soc_c2/sim/tb_c2_video_tail.sv",
+      "compiled_sha256": "0d76272bf7a5a87561367333938f2ed5b05997c298a77baa9e6e71649bf0edb2"
+    },
+    "build/c9_display_c2_20261102/sim/tb_c3_peripheral.sv": {
+      "original": "projects/06_soc_c2/sim/tb_c3_peripheral.sv",
+      "original_sha256": "80966ffa98a93b9fc5050f7617e0199ec7ae673ad7ac87af3cbfa7389f31e63e",
+      "compiled_from": "projects/06_soc_c2/sim/tb_c3_peripheral.sv",
+      "compiled_sha256": "80966ffa98a93b9fc5050f7617e0199ec7ae673ad7ac87af3cbfa7389f31e63e"
+    },
+    "build/c9_display_c2_20261102/sim/tb_c3_shared_epoch.sv": {
+      "original": "projects/06_soc_c2/sim/tb_c3_shared_epoch.sv",
+      "original_sha256": "32c3660718582ae71c0a0e2dbb54b6959328f8481f77d1323973eab50cd5d264",
+      "compiled_from": "projects/06_soc_c2/sim/tb_c3_shared_epoch.sv",
+      "compiled_sha256": "32c3660718582ae71c0a0e2dbb54b6959328f8481f77d1323973eab50cd5d264"
+    },
+    "build/c9_display_c2_20261102/sim/tb_c3_timing.sv": {
+      "original": "projects/06_soc_c2/sim/tb_c3_timing.sv",
+      "original_sha256": "dc4af9286bd8e3326c9621cc756b7e32067ef86b6855c050c4582b2ac4085848",
+      "compiled_from": "projects/06_soc_c2/sim/tb_c3_timing.sv",
+      "compiled_sha256": "dc4af9286bd8e3326c9621cc756b7e32067ef86b6855c050c4582b2ac4085848"
+    },
+    "build/c9_display_c2_20261102/a_side/ai_frame_mailbox.v": {
+      "original": "projects/06_soc_c2/a_side/ai_frame_mailbox.v",
+      "original_sha256": "be2a19b07be3b228001b64fc32a1fde2ed12ae12475dec29eeba989c9c2bb099",
+      "compiled_from": "projects/06_soc_c2/a_side/ai_frame_mailbox.v",
+      "compiled_sha256": "be2a19b07be3b228001b64fc32a1fde2ed12ae12475dec29eeba989c9c2bb099"
+    },
+    "build/c9_display_c2_20261102/a_side/SOURCE_MANIFEST.json": {
+      "original": "projects/06_soc_c2/a_side/SOURCE_MANIFEST.json",
+      "original_sha256": "6fb2ba360dbf3fa9e36ec1036ef1b075ab1d5508186391b3e95f53594445dcf1",
+      "compiled_from": "projects/06_soc_c2/a_side/SOURCE_MANIFEST.json",
+      "compiled_sha256": "6fb2ba360dbf3fa9e36ec1036ef1b075ab1d5508186391b3e95f53594445dcf1"
+    },
+    "build/c9_display_c2_20261102/a_side/video_a_capture.v": {
+      "original": "projects/06_soc_c2/a_side/video_a_capture.v",
+      "original_sha256": "6fd4ba3f87ebc42e7ca4e90292da10d1233d8b6cd2b26311cc05cb818e673d57",
+      "compiled_from": "projects/06_soc_c2/a_side/video_a_capture.v",
+      "compiled_sha256": "6fd4ba3f87ebc42e7ca4e90292da10d1233d8b6cd2b26311cc05cb818e673d57"
+    },
+    "build/c9_display_c2_20261102/a_side/video_grid_sampler.v": {
+      "original": "projects/06_soc_c2/a_side/video_grid_sampler.v",
+      "original_sha256": "9bd066f70ff8778caa7f4f18cfa4709a949b1c61ceb648cd79d015e00d57db84",
+      "compiled_from": "projects/06_soc_c2/a_side/video_grid_sampler.v",
+      "compiled_sha256": "9bd066f70ff8778caa7f4f18cfa4709a949b1c61ceb648cd79d015e00d57db84"
+    }
+  },
+  "wrapper_sha256": "246f7ab52e855f34481ff69c23d30a0a5b1ae657984055746866e9ef7759fe93",
+  "original_runner_sha256": "229b229bf220186d34331c745963336d1b6e435a31eb083dfb6e38f487649876",
+  "derived_runner_sha256": "5c0570801a569f9ee6ccf2dbc2cebe18ca04596b8d35d403444d8cdb44e24443",
+  "display_scanout_fix": true,
+  "parent_wrapper_sha256": "4a8a5b17cfd4596319256aa4261f1b1e0596d21b75c213940e271385f2498dd9",
+  "derived_wrapper_sha256": "6e42c921d80dd2d9e80879f0b872e11dfcad15a6bcea35e1a8883392886588da"
+}

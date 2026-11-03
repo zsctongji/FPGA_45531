@@ -1,0 +1,31 @@
+{
+  "status": "PASS_FULL_CAPACITY_CONTROL",
+  "started": "2026-11-02T18:34:26.944476+08:00",
+  "flash_written": false,
+  "board_test_passed": true,
+  "fpga_image_sha256": "752d7855d7726ec61fdc1b863df381ff7fdac0f6577f0f59eeb8af812f9a6add",
+  "implementation_audit_sha256": "7e1f33eee47559cd867a16202e57eae7f6761c622e08cee567645309bafa90a7",
+  "capture_tool_sha256": "44ee8d90458b8c1eeaa7b2c23c36f19e57ccded42a56257991469c6911fe7aa0",
+  "fpga_configured": true,
+  "uart_check": {
+    "status": "PASS_LOG",
+    "records": 23,
+    "complete_pass_records": 2,
+    "expected_checked_words": 67108889,
+    "problems": [],
+    "last": {
+      "status": 6,
+      "locks": 3,
+      "cal": 1,
+      "init": 22,
+      "error": 0,
+      "address": 0,
+      "checked": 67108889,
+      "progress": 0
+    },
+    "scope": "Saved UART content only; bind actual bitstream SHA256 and board identity separately"
+  },
+  "uart_sha256": "17eaf5e912f184a0945b4820d7f26ed817fbb3b49ddcb560a402962d97a1ebd1",
+  "c10_restore_passed": true,
+  "finished": "2026-11-02T18:35:18.907668+08:00"
+}

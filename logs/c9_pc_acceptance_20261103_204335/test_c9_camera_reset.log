@@ -1,0 +1,2 @@
+red_original: FATAL: C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\build\c9_pc_acceptance_20261103_204335\test_c9_camera_reset\red_original.sv:11: Camera/config started while CSI held reset
+fixed: PASS tb_camera_reset hold_until_CSI_ready full_delay SoC_and_root_restart

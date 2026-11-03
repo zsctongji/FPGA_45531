@@ -1,0 +1,24 @@
+{
+  "status": "SUPERSEDED_BY_COMPLETED_SEED3_DIAGNOSTIC",
+  "flash_written": false,
+  "failed_images_loaded": false,
+  "failures": [
+    {
+      "variant": "sideband",
+      "xlrs": 60816,
+      "capacity": 60800
+    },
+    {
+      "variant": "sideband_small",
+      "xlrs": 61114,
+      "capacity": 60800
+    }
+  ],
+  "pending_project": "build/c9_sideband_raw10_image_20261103",
+  "evidence_sha256": {
+    "build/c9_sideband_image_20261103/outflow/soc_physical.place.out": "532ab36a4d5e1e4cae6bf1c45d1924814b1c9de1a6ed8460ea9c66107ac64b89",
+    "build/c9_sideband_small_image_20261103/outflow/soc_physical.place.out": "fda7e41130161de58ae4e6b8b8c558aef95ff044e051fbaee908db7d7242f481"
+  },
+  "historical_status": "FULL_FORMAT_SIDEBAND_RESOURCE_FAILURES_RAW10_BUILD_PENDING",
+  "superseded_by": "logs/c9_sideband_checkpoint_20261103.json"
+}

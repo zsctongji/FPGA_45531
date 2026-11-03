@@ -1,0 +1,205 @@
+{
+  "status": "PASS_OFFLINE_RESET_STATUS_DIAGNOSTIC",
+  "board_test_passed": false,
+  "flash_written": false,
+  "timing": {
+    "setup": {
+      "rows": 29,
+      "minimum_slack_ns": 0.21,
+      "violations": []
+    },
+    "hold": {
+      "rows": 29,
+      "minimum_slack_ns": 0.027,
+      "violations": []
+    }
+  },
+  "cdc": {
+    "setup": [
+      {
+        "hierarchy": "soc/c2_full_video/ingress/crossing",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.036,
+        "minimum_slack_ns": 3.964
+      },
+      {
+        "hierarchy": "soc/c2_full_video/ingress/crossing",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.019,
+        "minimum_slack_ns": 7.981
+      },
+      {
+        "hierarchy": "soc/c2_full_video/framebuffer/output_cdc",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.011,
+        "minimum_slack_ns": 7.989
+      },
+      {
+        "hierarchy": "soc/c2_full_video/framebuffer/output_cdc",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 5.387,
+        "maximum_skew_ns": 0.035,
+        "minimum_slack_ns": 5.352
+      },
+      {
+        "hierarchy": "soc/c2_attachment/core/pixels/storage",
+        "pointer": "wgray",
+        "bits": 5,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.011,
+        "minimum_slack_ns": 3.989
+      },
+      {
+        "hierarchy": "soc/c2_attachment/core/pixels/storage",
+        "pointer": "rgray",
+        "bits": 5,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.038,
+        "minimum_slack_ns": 7.962
+      },
+      {
+        "hierarchy": "raw_split/queue",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 16.0,
+        "maximum_skew_ns": 0.014,
+        "minimum_slack_ns": 15.986
+      },
+      {
+        "hierarchy": "raw_split/queue",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.003,
+        "minimum_slack_ns": 7.997
+      },
+      {
+        "hierarchy": "gray_split/queue",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.019,
+        "minimum_slack_ns": 7.981
+      },
+      {
+        "hierarchy": "gray_split/queue",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.033,
+        "minimum_slack_ns": 3.967
+      }
+    ],
+    "hold": [
+      {
+        "hierarchy": "soc/c2_full_video/ingress/crossing",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.02,
+        "minimum_slack_ns": 3.98
+      },
+      {
+        "hierarchy": "soc/c2_full_video/ingress/crossing",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.01,
+        "minimum_slack_ns": 7.99
+      },
+      {
+        "hierarchy": "soc/c2_full_video/framebuffer/output_cdc",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.007,
+        "minimum_slack_ns": 7.993
+      },
+      {
+        "hierarchy": "soc/c2_full_video/framebuffer/output_cdc",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 5.387,
+        "maximum_skew_ns": 0.021,
+        "minimum_slack_ns": 5.366
+      },
+      {
+        "hierarchy": "soc/c2_attachment/core/pixels/storage",
+        "pointer": "wgray",
+        "bits": 5,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.007,
+        "minimum_slack_ns": 3.993
+      },
+      {
+        "hierarchy": "soc/c2_attachment/core/pixels/storage",
+        "pointer": "rgray",
+        "bits": 5,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.022,
+        "minimum_slack_ns": 7.978
+      },
+      {
+        "hierarchy": "raw_split/queue",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 16.0,
+        "maximum_skew_ns": 0.008,
+        "minimum_slack_ns": 15.992
+      },
+      {
+        "hierarchy": "raw_split/queue",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.002,
+        "minimum_slack_ns": 7.998
+      },
+      {
+        "hierarchy": "gray_split/queue",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.01,
+        "minimum_slack_ns": 7.99
+      },
+      {
+        "hierarchy": "gray_split/queue",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.017,
+        "minimum_slack_ns": 3.983
+      }
+    ]
+  },
+  "base_audit_sha256": "5d65326f5acb66caa9e2048d4ccf4836964695a2e0076cb2820c2e9ee5628cca",
+  "diagnostic_only": true,
+  "source_sha256": {
+    "build/c9_reset_status_20261101/physical_soc_core.v": "4bbbb4421b711c7f1138c24f7ad916098bbebf0c2cda616f8df2fcbd4bff5293",
+    "build/c9_reset_status_20261101/soc_physical_top.sv": "4d10b5cfeb760ecf002253a8d6334884a3c8cfb1f2db600d5b59a0cbd829a517",
+    "build/c9_reset_status_20261101/soc_physical.xml": "2d3b18d137af2b8cbaee0737057a385a942cca3f2e5f4347b19cabcc62b9f431"
+  },
+  "prepared_source_sha256": {
+    "build/c9_reset_status_20261101/physical_soc_core.v": "4bbbb4421b711c7f1138c24f7ad916098bbebf0c2cda616f8df2fcbd4bff5293",
+    "build/c9_reset_status_20261101/soc_physical_top.sv": "4d10b5cfeb760ecf002253a8d6334884a3c8cfb1f2db600d5b59a0cbd829a517",
+    "build/c9_reset_status_20261101/soc_physical.xml": "e8e30733a7763c426887a248065f7a8246cdb2f1b95aa352431be016b932d470"
+  },
+  "evidence_sha256": {
+    "build/c9_reset_status_20261101/work_pnr/soc_physical.lbf": "ebf920a8da687f2f40aa305166fc2b23e7047805ca6c359188bacc80f8d2acff",
+    "build/c9_reset_status_20261101/outflow/soc_physical.bit": "9e9764ce8cf31ae5c00898d1be32fd3a7cabb92416cfcb5e9afc14940717b681",
+    "build/c9_reset_status_20261101/outflow/soc_physical.hex": "92d512e1a594ab3774c70b003c7588c0b121cc94a757a0b06181f1e6267596f4",
+    "build/c9_reset_status_20261101/outflow/soc_physical.review_timing.rpt": "bb506f2a385e0ae3266e4d78374c146878d51115b65576acab817efcf74bc34f",
+    "build/c9_reset_status_20261101/outflow/soc_physical.bus_setup.rpt": "e69770e7aaa96f830b51893d3b4382979c8e2d170c70e28d048fa5d053aad339",
+    "build/c9_reset_status_20261101/outflow/soc_physical.bus_hold.rpt": "de6b8d1007474d7c490c15ad69eaedc31d04a2f41a72c3df291208d96521bebe",
+    "build/c9_reset_status_20261101/RESET_STATUS_RECORD.json": "69ff55bd0f01e29303e9ddf365af7eed065a8a7d79208898362f71aeaf398fa3",
+    "tools/audit_c9_reset_status.py": "7f3f7b4ab3274ef0c6c54f649855d316f7f9327ab62bed331a47b2e83f2c0054"
+  }
+}

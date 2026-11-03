@@ -1,0 +1,2 @@
+PASS tb_c2_cache vendor_DataCache ways=2 sets=32 rounds=3 invalidate_all_tags CPU_instruction_execution_not_simulated
+build/physical_20261031/c2_regression/sim/tb_c2_cache.sv:86: $finish called at 2340000 (1ps)

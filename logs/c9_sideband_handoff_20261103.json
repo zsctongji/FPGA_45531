@@ -1,0 +1,651 @@
+{
+  "status": "PASS_LOCAL_COPY_PIXEL_SIDEBAND_DIAGNOSTIC_VIDEO_PENDING",
+  "git_committed": false,
+  "git_pushed": false,
+  "destination": "C:\\Users\\16034\\Documents\\ChatGPT\\FPGA\\FPGA_cooperation_handoff",
+  "backup": "C:\\Users\\16034\\Documents\\ChatGPT\\FPGA\\handoff_backups\\c9_sideband_20261103_132329",
+  "overwritten_known_files": [
+    "team_work/03_ai_soc/CURRENT_BOARD_CHECKPOINT_20261101.md",
+    "team_work/03_ai_soc/README.md",
+    "team_work/03_ai_soc/c9_live/README.md",
+    "tools/c9_probe_image.py"
+  ],
+  "files": [
+    {
+      "path": "fpga_bitstreams/c9_sideband_seed3_100mhz/BUILD_RECORD.json",
+      "sha256": "e7ea26c80e07d94a104f267625b3586ae775cabe5ac78369e25b2d536aa78e16"
+    },
+    {
+      "path": "fpga_bitstreams/c9_sideband_seed3_100mhz/IMPLEMENTATION_AUDIT.json",
+      "sha256": "88e6b03411e5608a5701b4b0d353514e89b3ca333af9354ee3d0d3497c115dbf"
+    },
+    {
+      "path": "fpga_bitstreams/c9_sideband_seed3_100mhz/soc_physical.bit",
+      "sha256": "333af57e423c4174aaf0b1d0589b6a0c796f85ea530758f0fc715528896328b2"
+    },
+    {
+      "path": "fpga_bitstreams/c9_sideband_seed3_100mhz/soc_physical.bus_hold.rpt",
+      "sha256": "29fb8f3bf7c32d7ff492f4b29e4dfeebda94a7c437b2c2f5363a916b060d1558"
+    },
+    {
+      "path": "fpga_bitstreams/c9_sideband_seed3_100mhz/soc_physical.bus_setup.rpt",
+      "sha256": "5d2b4427321dc4d07e20a6d56d0031726b61b3a8134a7497ed26c3a7691213c1"
+    },
+    {
+      "path": "fpga_bitstreams/c9_sideband_seed3_100mhz/soc_physical.hex",
+      "sha256": "fb7d13013bdf56ac35fc39af687569a8075bbacc435db49e831f92feac79aaf1"
+    },
+    {
+      "path": "fpga_bitstreams/c9_sideband_seed3_100mhz/soc_physical.pinout.csv",
+      "sha256": "ce8732e63f8009c01ee083a6756467d012bfe6b6bf04ee36c7cbae794d6cfb7d"
+    },
+    {
+      "path": "fpga_bitstreams/c9_sideband_seed3_100mhz/soc_physical.place.rpt",
+      "sha256": "dd0d92eddae27166382e5b9a5baa2b6079c1aa2296f729b4e29afcb9933095c1"
+    },
+    {
+      "path": "fpga_bitstreams/c9_sideband_seed3_100mhz/soc_physical.review_timing.rpt",
+      "sha256": "c048a61507e60d0fac2f32cd4b49e58a722507020e6382f2db193a4cf8f5eab1"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_125746/attempt.json",
+      "sha256": "c23194d27aa3c4828ed6c9ae0c742cc654541d8d0887bc3bc0c895773e9746bf"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_125746/configure.log",
+      "sha256": "51daf0a713f1c41dc95c0d161b7e1a2bfbed5aa9969ca73268d0d532a8839099"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_125746/reference_check.json",
+      "sha256": "6bc7b02a5a1a36f75a6907327a8d901a8c6495b97739998ee287791adedc04a5"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_125746/uart.log",
+      "sha256": "e3e5174578b2168c3f97f6bb756bce8866dd29a3acddef6ef266fda141787817"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_125806/attempt.json",
+      "sha256": "842078e2c95620e58d00046ad83a96c36a78d1b6d5da49050c1e09b25475ebdb"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_125806/configure.log",
+      "sha256": "51daf0a713f1c41dc95c0d161b7e1a2bfbed5aa9969ca73268d0d532a8839099"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_125806/reference_check.json",
+      "sha256": "6bc7b02a5a1a36f75a6907327a8d901a8c6495b97739998ee287791adedc04a5"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_125806/uart.log",
+      "sha256": "e3e5174578b2168c3f97f6bb756bce8866dd29a3acddef6ef266fda141787817"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_130017/attempt.json",
+      "sha256": "0cb013dff8c4572f2037793920b2c74ae985076526a044744da431cb9d9aad15"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_130017/configure.log",
+      "sha256": "51daf0a713f1c41dc95c0d161b7e1a2bfbed5aa9969ca73268d0d532a8839099"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_130017/reference_check.json",
+      "sha256": "6bc7b02a5a1a36f75a6907327a8d901a8c6495b97739998ee287791adedc04a5"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_130017/uart.log",
+      "sha256": "e3e5174578b2168c3f97f6bb756bce8866dd29a3acddef6ef266fda141787817"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_130101/attempt.json",
+      "sha256": "065521444fae5e956427f314974b64c2fef0e1ca8e426fa1eec2c0c09e37f03d"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_130101/configure.log",
+      "sha256": "51daf0a713f1c41dc95c0d161b7e1a2bfbed5aa9969ca73268d0d532a8839099"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_130101/reference_check.json",
+      "sha256": "6bc7b02a5a1a36f75a6907327a8d901a8c6495b97739998ee287791adedc04a5"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_130101/uart.log",
+      "sha256": "e3e5174578b2168c3f97f6bb756bce8866dd29a3acddef6ef266fda141787817"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_130758/attempt.json",
+      "sha256": "12a3cb6be54fe1d7b3ea42a06f285215a7dff721f4fa3cc66adbc040e655835d"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_130758/configure.log",
+      "sha256": "51daf0a713f1c41dc95c0d161b7e1a2bfbed5aa9969ca73268d0d532a8839099"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_130758/reference_check.json",
+      "sha256": "6bc7b02a5a1a36f75a6907327a8d901a8c6495b97739998ee287791adedc04a5"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_130758/uart.log",
+      "sha256": "e3e5174578b2168c3f97f6bb756bce8866dd29a3acddef6ef266fda141787817"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_130842/attempt.json",
+      "sha256": "891681c56bc96a8083235973e84ffa203fec3435d505f33a00f16555af25fad0"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_130842/configure.log",
+      "sha256": "51daf0a713f1c41dc95c0d161b7e1a2bfbed5aa9969ca73268d0d532a8839099"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_130842/reference_check.json",
+      "sha256": "6bc7b02a5a1a36f75a6907327a8d901a8c6495b97739998ee287791adedc04a5"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_130842/uart.log",
+      "sha256": "e3e5174578b2168c3f97f6bb756bce8866dd29a3acddef6ef266fda141787817"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261103_125734/attempt.json",
+      "sha256": "d99ce3d64fb55b93be9dc98875d3cc7c885805cc3d6cdff107170632763e9da2"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261103_125734/configure.log",
+      "sha256": "4da5c474f5b74649435beb1f7d823402853eb07dd273df67c1973a07b91184cb"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261103_125734/restore_c10.log",
+      "sha256": "f7422653eaa68755a6b3bd55fc0ba58e1dab8045fbf9641de2fc15dc8514fb0b"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261103_125953/attempt.json",
+      "sha256": "a683f1c02ae9e65e1f59e20b2f2f06e85844f2287ddc9c15917fa81005a43818"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261103_125953/capture_tool.py",
+      "sha256": "6576e2a9a1379f9591aa623a25198ef64d4924d975617fcc9a64ed4895f98811"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261103_125953/configure.log",
+      "sha256": "4da5c474f5b74649435beb1f7d823402853eb07dd273df67c1973a07b91184cb"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261103_125953/restore_c10.log",
+      "sha256": "c0df229e2ef1be471f3108e4faa2db30d61475f12e6afb3d4661f9234ada7ee6"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261103_125953/samples.json",
+      "sha256": "9d33dd64a21ff11c838e1bb3b606e323dfef4e1bc412c9d96a6869fa8fa1cde2"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261103_130734/attempt.json",
+      "sha256": "de345c1e4ac8c574e2429427ef72a32c40634721af22bc6c8fcdd5ec2896b327"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261103_130734/capture_tool.py",
+      "sha256": "6576e2a9a1379f9591aa623a25198ef64d4924d975617fcc9a64ed4895f98811"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261103_130734/configure.log",
+      "sha256": "4da5c474f5b74649435beb1f7d823402853eb07dd273df67c1973a07b91184cb"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261103_130734/restore_c10.log",
+      "sha256": "67376fbc3dd62f577f8ce0b1b54a331fb78b499d3e95cd721fa80c29661162dc"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261103_130734/samples.json",
+      "sha256": "eac5b97e2d183691f301747d7455f3f6338fd56dbebb178f37f9b7aa7560481c"
+    },
+    {
+      "path": "logs/c9_pack40_mapping_20261103.json",
+      "sha256": "6b9e56858d4ee376ab296021600d6a7524b0cab0e37f5f5bbc890839552a33d4"
+    },
+    {
+      "path": "logs/c9_sideband_board_report_console_20261103.log",
+      "sha256": "80b95dca3d542df4c1f058185de74622edbaf64a2ff4ae415297c754321b0ba6"
+    },
+    {
+      "path": "logs/c9_sideband_board_result_20261103.json",
+      "sha256": "539cd45cb84feadc563598e2e5833bb790ac3796d1d3ba2cf6199c1927ffe873"
+    },
+    {
+      "path": "logs/c9_sideband_build_evidence_20261103/sideband/SIDEBAND_MANIFEST.json",
+      "sha256": "dc5e5a5a4598f64710e15339ce8ab28096b5731ad215b4ab63875eabc1e89fab"
+    },
+    {
+      "path": "logs/c9_sideband_build_evidence_20261103/sideband/outflow/soc_physical.place.out",
+      "sha256": "532ab36a4d5e1e4cae6bf1c45d1924814b1c9de1a6ed8460ea9c66107ac64b89"
+    },
+    {
+      "path": "logs/c9_sideband_build_evidence_20261103/sideband_raw10/SIDEBAND_MANIFEST.json",
+      "sha256": "bee340da43fe04b25c115b6bdf02cae1c2bafc781788076783e0fbe65e7e594e"
+    },
+    {
+      "path": "logs/c9_sideband_build_evidence_20261103/sideband_raw10/outflow/soc_physical.place.out",
+      "sha256": "d50cdd62a0121b678d1b74af891a3bea585b74af3acfb18867021407148c4472"
+    },
+    {
+      "path": "logs/c9_sideband_build_evidence_20261103/sideband_seed3/HOST_ASSETS.json",
+      "sha256": "e72ab28ec8735c026a55b37bc9216c61dd31b5e951474be8edc741c73d764da6"
+    },
+    {
+      "path": "logs/c9_sideband_build_evidence_20261103/sideband_seed3/LPF_REUSE.json",
+      "sha256": "efe6bb14315a2b4bc7745c720fb2d4c9419d144354b29188e1adacce52098293"
+    },
+    {
+      "path": "logs/c9_sideband_build_evidence_20261103/sideband_seed3/MAP_REUSE.json",
+      "sha256": "f695d34ce5372e76ebbd09d312844b9f07af8389b98b116b47d244929aa39054"
+    },
+    {
+      "path": "logs/c9_sideband_build_evidence_20261103/sideband_seed3/SIDEBAND_MANIFEST.json",
+      "sha256": "5ca49f667a799536a7ee4c30059e188e7bb4777b880833cc2b18de6e614aca42"
+    },
+    {
+      "path": "logs/c9_sideband_build_evidence_20261103/sideband_seed3/implementation_audit.json",
+      "sha256": "88e6b03411e5608a5701b4b0d353514e89b3ca333af9354ee3d0d3497c115dbf"
+    },
+    {
+      "path": "logs/c9_sideband_build_evidence_20261103/sideband_seed3/outflow/soc_physical.place.out",
+      "sha256": "fefd119af86a5b61d11830f3d4d9c9ffdf46d0b087cc8dcfcd437f4de7c1e48d"
+    },
+    {
+      "path": "logs/c9_sideband_build_evidence_20261103/sideband_small/SIDEBAND_MANIFEST.json",
+      "sha256": "1a0fea3739171afaa20aa9696f6c4446d9a1056eb201325d2023b46793e8deb0"
+    },
+    {
+      "path": "logs/c9_sideband_build_evidence_20261103/sideband_small/outflow/soc_physical.place.out",
+      "sha256": "fda7e41130161de58ae4e6b8b8c558aef95ff044e051fbaee908db7d7242f481"
+    },
+    {
+      "path": "logs/c9_sideband_checkpoint_20261103.json",
+      "sha256": "b3b705613b0973a03b5a7e91de2fc57c74e20835182f83382349572b7468811a"
+    },
+    {
+      "path": "logs/c9_sideband_decode_tests_20261103.json",
+      "sha256": "a5e51d6c2c6f52c51383599af7b1e2a14de9ed2190cbc47e6ca7f2b8b347ca2b"
+    },
+    {
+      "path": "logs/c9_sideband_progress_20261103.json",
+      "sha256": "7f50b23c7e593f8e73ab2e62c01003132a4bb675502ae0a71654775857df61de"
+    },
+    {
+      "path": "logs/c9_sideband_raw10_decode_tests_20261103.json",
+      "sha256": "1aee437909a2b08296e0ae1204305120aa5d96fb2d6471b8fa1599d798e61e38"
+    },
+    {
+      "path": "logs/c9_sideband_raw10_tests_20261103.json",
+      "sha256": "fdae76d07309a44018e0fd7036ea20ea9b645dec4214cdf29e509529ca40786f"
+    },
+    {
+      "path": "logs/c9_sideband_seed3_board_20261103/20261103_125732/ddr_status.log",
+      "sha256": "caf5191385e69f21ec38f21d052534621a1373864aecd61d3afe2c1e973c6f4a"
+    },
+    {
+      "path": "logs/c9_sideband_seed3_board_20261103/20261103_125732/restore_c10.log",
+      "sha256": "db88d8a2c61c673c010079e36dec7c7e8b428a64e4cf464fa5b570da1694515c"
+    },
+    {
+      "path": "logs/c9_sideband_seed3_board_20261103/20261103_125732/result.json",
+      "sha256": "33428c8bbbda2b690e879c175eb93389255c16bec71d0d41855b427d558b10d6"
+    },
+    {
+      "path": "logs/c9_sideband_seed3_board_20261103/20261103_125951/camera_geometry.log",
+      "sha256": "58086b8be0d5ae38972751806dcfb18a71a1707031321129dcf1873c31d2080c"
+    },
+    {
+      "path": "logs/c9_sideband_seed3_board_20261103/20261103_125951/ddr_status.log",
+      "sha256": "e09872fe80084176d6c2da5c97f8e44eae34f15f22c3c00e7b5cdd40ecd27459"
+    },
+    {
+      "path": "logs/c9_sideband_seed3_board_20261103/20261103_125951/restore_c10.log",
+      "sha256": "23251a6f223da7438cbfdffcfe6a7b963a912ef72bcc1e3f33851fb957fbd1a4"
+    },
+    {
+      "path": "logs/c9_sideband_seed3_board_20261103/20261103_125951/result.json",
+      "sha256": "eadf63a330411b090a25964575808aedb01865d550dd59fa9aa9f790297ad166"
+    },
+    {
+      "path": "logs/c9_sideband_seed3_board_20261103/20261103_130732/camera_geometry.log",
+      "sha256": "9b59ea89b52638fac5a31e9c6481a292d747607a28080ae399e39913786a4838"
+    },
+    {
+      "path": "logs/c9_sideband_seed3_board_20261103/20261103_130732/ddr_status.log",
+      "sha256": "ac43285ec592ab3d0812d2ea9b8fa12dd6e192f73b032e9e59f8bda3d855fadb"
+    },
+    {
+      "path": "logs/c9_sideband_seed3_board_20261103/20261103_130732/restore_c10.log",
+      "sha256": "cd437f8d4fb669c34fb917699a75dbdfe2be5cb07705367092649444850cc572"
+    },
+    {
+      "path": "logs/c9_sideband_seed3_board_20261103/20261103_130732/result.json",
+      "sha256": "40fce8e452b1790903e786d2f2f51d4fe127c364ffd96e5faf941a759062cb31"
+    },
+    {
+      "path": "logs/c9_sideband_seed3_console_20261103.log",
+      "sha256": "b79b9b9ee415bb3836c069b93aa1af2d427081e3ba5415bb3ac20257b61a42e3"
+    },
+    {
+      "path": "logs/c9_sideband_seed3_ready_20261103.json",
+      "sha256": "e7ea26c80e07d94a104f267625b3586ae775cabe5ac78369e25b2d536aa78e16"
+    },
+    {
+      "path": "logs/c9_sideband_seed3_repeat_20261103.log",
+      "sha256": "21282eefbb8e1d7255f58352cd217dbe46cfae0dbbb4060809640a398a1be9cb"
+    },
+    {
+      "path": "logs/c9_sideband_seed3_retry_20261103.log",
+      "sha256": "27df2a4a387368627f3b2bcacb1a4fa0de77f65c0e37eb7791911fe6e7a25920"
+    },
+    {
+      "path": "logs/c9_sideband_small_decode_tests_20261103.json",
+      "sha256": "515778b26d7661c5c26936fecb7e204a75950095b3f078ad0ba6a26e51aab900"
+    },
+    {
+      "path": "logs/c9_sideband_small_tests_20261103.json",
+      "sha256": "df9d35d7f16661c9f92f45d854bc7e4054628ff6c2b0800616bf8a4b37716695"
+    },
+    {
+      "path": "logs/c9_sideband_tests_20261103.json",
+      "sha256": "856e12052657e82a09f1bc1e19989e86c075da2acf0f66446b71b526edd9dc81"
+    },
+    {
+      "path": "logs/c9_sideband_vendor_patch_audit_20261103.json",
+      "sha256": "7140d3b883084940e5f83bda8c5155108ded4ab5c0bace5d511bd77f6953534e"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130037/attempt.json",
+      "sha256": "3eb7a72ec45707d8a7616b5d880d223d07ddf6a567c1f47966349927b5ee1240"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130037/c9_probe_image.py",
+      "sha256": "3271645e88c0711a5e497dc2c64396001534a3bac75cb0ab623af5d45cdd676b"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130037/check_c9_geometry.py",
+      "sha256": "e43cbbcece76d7ab76ffc26528e6ef382a8ba26ed5a56948087900179659aef2"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130037/check_c9_sideband_seed3.py",
+      "sha256": "308beb9650af021bf4d1d9780d0af9990c7d18118bfff7ba569b441900f4010b"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130037/check_c9_uart.py",
+      "sha256": "117150fa5f8b4f6e242e274f610821e3428363ff39ee41be3d990223bb040376"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130037/configure_probe.log",
+      "sha256": "4da5c474f5b74649435beb1f7d823402853eb07dd273df67c1973a07b91184cb"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130037/firmware_build_record.json",
+      "sha256": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130037/geometry_observation.json",
+      "sha256": "0005f7c3a5e734688826c6b887de9d025130deeddaa4daf3ba62068a23d08352"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130037/implementation_audit.json",
+      "sha256": "88e6b03411e5608a5701b4b0d353514e89b3ca333af9354ee3d0d3497c115dbf"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130037/load_readback.log",
+      "sha256": "35f5202936d0dc387cf9d332475e5034a1dc3838ca804645dc7b2246e127553e"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130037/readback.bin",
+      "sha256": "f9955a3639543272716f1ef998156f6aae05d297c8841eb7092af8ef57ced9a5"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130037/resume.log",
+      "sha256": "46ddaf3d685d1c1f056f86afaa5ae9b2736f7bde9ca748091d267b6ffd95f57a"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130037/run_ram_diagnostic.py",
+      "sha256": "b184f04cfa42509bc4b56ad721c7cf627b9cbaeea22cb7a0428a840d09201ea6"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130037/uart.log",
+      "sha256": "c8466f851b13140c474440dabae80757fae909a99285c01809e7f09f97ba8cc0"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130818/attempt.json",
+      "sha256": "49513dae3e861fd1b9b099b5e8cde58ad14f8edec09a4afe51404342b324a49c"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130818/c9_probe_image.py",
+      "sha256": "3271645e88c0711a5e497dc2c64396001534a3bac75cb0ab623af5d45cdd676b"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130818/check_c9_geometry.py",
+      "sha256": "e43cbbcece76d7ab76ffc26528e6ef382a8ba26ed5a56948087900179659aef2"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130818/check_c9_sideband_seed3.py",
+      "sha256": "308beb9650af021bf4d1d9780d0af9990c7d18118bfff7ba569b441900f4010b"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130818/check_c9_uart.py",
+      "sha256": "117150fa5f8b4f6e242e274f610821e3428363ff39ee41be3d990223bb040376"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130818/configure_probe.log",
+      "sha256": "4da5c474f5b74649435beb1f7d823402853eb07dd273df67c1973a07b91184cb"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130818/firmware_build_record.json",
+      "sha256": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130818/geometry_observation.json",
+      "sha256": "cfc2a47cafbe78b30ec10d51e154c1e452ba59c320cfacff7ef0bd803d8eaa31"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130818/implementation_audit.json",
+      "sha256": "88e6b03411e5608a5701b4b0d353514e89b3ca333af9354ee3d0d3497c115dbf"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130818/load_readback.log",
+      "sha256": "5bc168bb4fd2b75263d7e6d5fe19ec2f029a110ce2d17841f19cd78354d2d8e4"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130818/readback.bin",
+      "sha256": "f9955a3639543272716f1ef998156f6aae05d297c8841eb7092af8ef57ced9a5"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130818/resume.log",
+      "sha256": "46ddaf3d685d1c1f056f86afaa5ae9b2736f7bde9ca748091d267b6ffd95f57a"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130818/run_ram_diagnostic.py",
+      "sha256": "b184f04cfa42509bc4b56ad721c7cf627b9cbaeea22cb7a0428a840d09201ea6"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_130818/uart.log",
+      "sha256": "e661657a604c95114ab99c47f3d874ddf879489814c261fb90f34153bcbbe2a9"
+    },
+    {
+      "path": "team_work/03_ai_soc/C9_PIXEL_SIDEBAND_20261103.md",
+      "sha256": "fd1e06e2e958e81b16cf60a3998e9b0144006c45e21907eaefd7d1e4296c81a2"
+    },
+    {
+      "path": "team_work/03_ai_soc/CURRENT_BOARD_CHECKPOINT_20261101.md",
+      "sha256": "30327f86beb056b964da610b375c588cf2bd4085ce2094e86a3334abc94a5714"
+    },
+    {
+      "path": "team_work/03_ai_soc/README.md",
+      "sha256": "45eee9f47646eed7a96c14c947ce24af21cd8b2074bc856d028d404b1778322f"
+    },
+    {
+      "path": "team_work/03_ai_soc/c9_live/README.md",
+      "sha256": "11a25d9617530bc610559743d1d9a39afc2951bc6c37cad444920f5f4ca1072f"
+    },
+    {
+      "path": "team_work/03_ai_soc/c9_live/camera_geometry/c9_sideband_probe.sv",
+      "sha256": "999c4bc5292794dca41da63ebb354cc318af26710fe66e60df1c068d792fd2f1"
+    },
+    {
+      "path": "team_work/03_ai_soc/c9_live/camera_geometry/c9_sideband_probe_small.sv",
+      "sha256": "e2ff654b86e0004904aaaa64ff7ad82c07fe0c3907835dd8b4f827e7963ca916"
+    },
+    {
+      "path": "team_work/03_ai_soc/c9_live/camera_geometry/tb_sideband_probe.sv",
+      "sha256": "e7922a3709ffd80e976cf7099925b8822ad7dfb51f8ff0c730791298107318b9"
+    },
+    {
+      "path": "team_work/03_ai_soc/c9_live/camera_geometry/tb_sideband_small.sv",
+      "sha256": "b2efe02c762d6f2f86efaaaa825c8194e99887de380de5e9f88d0a703c37dbfb"
+    },
+    {
+      "path": "tools/audit_c9_sideband.py",
+      "sha256": "af71c5f0eae34edc7514879d2ba8068d4eef75bd44c55db95a82708d64808894"
+    },
+    {
+      "path": "tools/audit_c9_sideband_raw10.py",
+      "sha256": "61ebd765ac15e84ebf521ae5b72c359f6af00f57ddaff855119fa82c9f54c321"
+    },
+    {
+      "path": "tools/audit_c9_sideband_seed3.py",
+      "sha256": "ed37dd1276ec6c7eafa2bb368c88abaa3874b0c983eb4e5e2639b37740a95f76"
+    },
+    {
+      "path": "tools/audit_c9_sideband_small.py",
+      "sha256": "101c962c81ba45cfe63105072109934ea80207bfd88b93da08498b4e020a7813"
+    },
+    {
+      "path": "tools/c9_probe_image.py",
+      "sha256": "3271645e88c0711a5e497dc2c64396001534a3bac75cb0ab623af5d45cdd676b"
+    },
+    {
+      "path": "tools/check_c9_sideband.py",
+      "sha256": "dd243b4b75e4d2ee5d963f1f53c6b915b5a0f77bc21495a3f675dfd03148e9d9"
+    },
+    {
+      "path": "tools/check_c9_sideband_raw10.py",
+      "sha256": "697d44abd3574bb79d3b533a043dd936903ec2c1a0058d1171b6d0db2eb0ff03"
+    },
+    {
+      "path": "tools/check_c9_sideband_seed3.py",
+      "sha256": "308beb9650af021bf4d1d9780d0af9990c7d18118bfff7ba569b441900f4010b"
+    },
+    {
+      "path": "tools/check_c9_sideband_small.py",
+      "sha256": "05a864f5484d412f39204a99c4d433187535a1d9fba28a972f51cc8873047e5e"
+    },
+    {
+      "path": "tools/generate_c9_sideband_bit.ps1",
+      "sha256": "5a3f358acbaf93cf37c3d7e3b6d05036fd90ac60a5c4448cbe7aafacf27bbf4c"
+    },
+    {
+      "path": "tools/patch_c9_raw10_sideband_vendor.py",
+      "sha256": "c12d35c254ad111728863126e6d6f168d1ecd09cd2e18fd3070aebdafb6ce229"
+    },
+    {
+      "path": "tools/patch_c9_sideband_vendor.py",
+      "sha256": "7b477d30e51c5995530d5dbceaa0c23a6b783f2c92c5c9bed8dc4686afb6912d"
+    },
+    {
+      "path": "tools/prepare_c9_sideband.py",
+      "sha256": "bd03830776092420855963eae38d618c6be76011c09d3b96bf34c48adf757f87"
+    },
+    {
+      "path": "tools/prepare_c9_sideband_raw10.py",
+      "sha256": "b2f1e242ebfd5508ef9d6353f24ac2e774dd206f812b04c2f95abddef06d299a"
+    },
+    {
+      "path": "tools/prepare_c9_sideband_seed3.py",
+      "sha256": "021f3ed7bbe2b79b004ca1fa5f5ab263b492249e744bf1b2451d344af2df16f1"
+    },
+    {
+      "path": "tools/prepare_c9_sideband_small.py",
+      "sha256": "05f070264f4b3bb03970d80079d2fe4d6021af8c59a2b3cc9e899df331c43ff7"
+    },
+    {
+      "path": "tools/report_c9_sideband.py",
+      "sha256": "972f957727967a7b8b9c556cd9c65bd3cf05fd3680010c39f4e512772085067e"
+    },
+    {
+      "path": "tools/report_c9_sideband_board.py",
+      "sha256": "ae9522d84e848efce74a7ff54776f0d8342b2437b1c2d6b6eb2dfa1b5016a055"
+    },
+    {
+      "path": "tools/report_c9_sideband_raw10.py",
+      "sha256": "9d6a95ad6984bcf14f45650893e0bf7d2ad1b2f807833c16643a4b911e5b06d4"
+    },
+    {
+      "path": "tools/report_c9_sideband_raw10_board.py",
+      "sha256": "6cf6316e697009773037d7f84cd70deb2f57f0d2e73c045cf56c46689bf8f6a5"
+    },
+    {
+      "path": "tools/report_c9_sideband_seed3.py",
+      "sha256": "6a7774ea1a3628eb0c6ae6a50cb404ff3f6bba37721ea47410a4b93657f56d13"
+    },
+    {
+      "path": "tools/report_c9_sideband_seed3_board.py",
+      "sha256": "13d3f836944893c03f6a16dc642134f38ff02291dea4b3d34621def94e03b803"
+    },
+    {
+      "path": "tools/report_c9_sideband_small.py",
+      "sha256": "c7610c3cfa2a09279466ecca310708549a05fb509ee0c059876ff072d094e9fb"
+    },
+    {
+      "path": "tools/reuse_c9_sideband_map.py",
+      "sha256": "3bc52894cc5e4d893f9224ac1ebf363dad46f2cfcb7a474d736d0f72ca502683"
+    },
+    {
+      "path": "tools/run_c9_sideband.ps1",
+      "sha256": "a4ff74dee4ea39e41052e88437e0a5351020cfdbd5e74ae3dbbccd2d32c276db"
+    },
+    {
+      "path": "tools/run_c9_sideband.py",
+      "sha256": "f284bb9e0feb1852c8d92efd39cf85e9dd2ec0cbf6f59f338a55aead6932f40d"
+    },
+    {
+      "path": "tools/run_c9_sideband_raw10.ps1",
+      "sha256": "7a8adf9d0d2b91f2e2c9d670756e1114e99b0019b0df90aa3756c4a9f146f212"
+    },
+    {
+      "path": "tools/run_c9_sideband_raw10.py",
+      "sha256": "ce48cc47d6938c34ca4bd2e85e1bb00aaac463f98d29f538d71278fce90cd796"
+    },
+    {
+      "path": "tools/run_c9_sideband_seed3.ps1",
+      "sha256": "f6bec58e3ffb54f0fca99af1b59823f7a10ef8b563577660978a68a88c2e39a9"
+    },
+    {
+      "path": "tools/run_c9_sideband_seed3.py",
+      "sha256": "940b5c7a367195497eb3617c02390481f3e7f8149ed06c3f0f5cd3a3ca0a44c9"
+    },
+    {
+      "path": "tools/run_c9_sideband_small.ps1",
+      "sha256": "cc66b3b5512f4e2f2b00013c821c37e8cf7e79210cac52c0edd62ab877fbe78a"
+    },
+    {
+      "path": "tools/run_c9_sideband_small.py",
+      "sha256": "4e859826d4865da2ab779cf51415e0a2d3b3c8791bd48a6aeb146f22a3207cd0"
+    },
+    {
+      "path": "tools/test_c9_sideband.py",
+      "sha256": "209f02d219ccfb265582e4d6c4611ebeaee453dd6f8252dd15db9f8ca51893a5"
+    },
+    {
+      "path": "tools/test_c9_sideband_decode.py",
+      "sha256": "0825f7ae3246a28cea451899f794a8aa2707bb9ab70ab76859465f3d8c7d9573"
+    },
+    {
+      "path": "tools/test_c9_sideband_raw10.py",
+      "sha256": "36c1bd659538362b50cd02007ea715340f1f2bb2d154801bc973f714c33e2a1a"
+    },
+    {
+      "path": "tools/test_c9_sideband_raw10_decode.py",
+      "sha256": "fdb8c743d5381f53068acff950aa5f563a73682b331d1023ba9add5ce4ba4b82"
+    },
+    {
+      "path": "tools/test_c9_sideband_small.py",
+      "sha256": "93c08b1f4cb3ce0f23aacb2c623811698643e88fba9745e4999e250473858018"
+    },
+    {
+      "path": "tools/test_c9_sideband_small_decode.py",
+      "sha256": "060302841dbef29dd90cb9d5f029b2b939872a2466558a39e25c15337b984a55"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "status": "STAGE_DIAGNOSTIC_VIDEO_ACCEPTANCE_PENDING",
+  "trials": [
+    {
+      "result": "logs/c9_linebuffer_reset_board_20261103/20261103_174812/result.json",
+      "after": {
+        "normalizer": {
+          "run": true,
+          "armed": true,
+          "fault": true,
+          "error_flags_hex": "10",
+          "last_frame_beats": 0,
+          "input_frames_mod4": 0,
+          "debug_seen_hex": "0029841a",
+          "init_done_seen": true,
+          "transport_error_bits_hex": "00010418"
+        },
+        "csr": {
+          "run": true,
+          "init_seen": true,
+          "capture_enable": true,
+          "fault": false,
+          "state": 7,
+          "retries": 0,
+          "pre_status_hex": "0000041a",
+          "post_status_hex": "00000000",
+          "native_rises": 246,
+          "native_falls": 246,
+          "native_flags_hex": "8f",
+          "native_vs_level": true,
+          "native_hs_level": false,
+          "native_de_seen": true,
+          "native_hs_seen": true,
+          "native_vs_seen": true,
+          "native_image_seen": true,
+          "native_non4_ppc_seen": false,
+          "native_bad_wc_seen": false
+        },
+        "video": {
+          "run": true,
+          "pattern_mode": false,
+          "fault_gate": true,
+          "config_valid": true,
+          "time_valid": true,
+          "pixel_maximum": 1920,
+          "source_maximum": 1920
+        }
+      },
+      "width": 0,
+      "source_frames": 1,
+      "format_errors": 0
+    }
+  ],
+  "final_restore": "logs/c10_warm_boot_20261101/20261103_174918/attempt.json"
+}

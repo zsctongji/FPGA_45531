@@ -1,0 +1,9 @@
+{
+  "name": "test_c9_linebuffer_edges_decode",
+  "returncode": 0,
+  "reports": [
+    "logs/c9_pc_acceptance_20261103_204335/test_c9_linebuffer_edges_decode/c9_linebuffer_edges_decode_tests_20261103.json"
+  ],
+  "script_sha256": "cf9c07d816834762f33173053ed880e73b117e63a3eaf1597124b25d6f679e66",
+  "hardware_accessed": false
+}

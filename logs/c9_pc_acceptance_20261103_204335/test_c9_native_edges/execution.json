@@ -1,0 +1,9 @@
+{
+  "name": "test_c9_native_edges",
+  "returncode": 0,
+  "reports": [
+    "logs/c9_pc_acceptance_20261103_204335/test_c9_native_edges/c9_native_edges_tests_20261103.json"
+  ],
+  "script_sha256": "8f368066dceae9466fb3f1f14b114d3c059ab5a00419f7a9f31673e9ed31e2de",
+  "hardware_accessed": false
+}

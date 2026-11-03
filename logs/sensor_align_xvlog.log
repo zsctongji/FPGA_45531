@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/zkr/Documents/Codex/2026-10-17/wo-x/outputs/FPGA_2026_T3_P3/rtl/sensor_frame_align.v" into library work
+INFO: [VRFC 10-311] analyzing module sensor_frame_align
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/zkr/Documents/Codex/2026-10-17/wo-x/outputs/FPGA_2026_T3_P3/sim/tb_sensor_frame_align.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_sensor_frame_align

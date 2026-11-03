@@ -1,0 +1,21 @@
+{
+  "status": "FAIL_OR_INCOMPLETE_COLD_BOOT",
+  "started": "2026-11-01T16:52:46.593279+08:00",
+  "port": "COM13",
+  "baud": 115200,
+  "dtr": false,
+  "rts": false,
+  "fpga_reconfigured_by_tool": false,
+  "cpu_loaded_by_tool": false,
+  "flash_written_by_tool": false,
+  "expected_flash_sha256": "2b83d24388a887aae9e20638e50352fd2bc4c20dcccb320e001731429148d04d",
+  "usb_disconnect_observed": true,
+  "usb_reconnect_observed": true,
+  "cold_boot_passed": false,
+  "power_rail_scope": "USB disconnect/reconnect plus user physical power-cycle confirmation; no rail waveform measurement",
+  "initial_port": "COM16",
+  "disconnected": "2026-11-01T16:53:15.060747+08:00",
+  "reconnected": "2026-11-01T16:53:19.975457+08:00",
+  "uart_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "finished": "2026-11-01T17:07:46.737657+08:00"
+}

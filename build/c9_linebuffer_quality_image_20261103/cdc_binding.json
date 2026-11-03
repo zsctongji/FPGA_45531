@@ -1,0 +1,303 @@
+{
+  "status": "PASS",
+  "netlist_sha256": "4978c0eff1c080f72b6d43e891bf88c43c05851e380ec29a364006cc7921da66",
+  "buses": [
+    {
+      "hierarchy": "soc/c2_full_video/ingress/crossing",
+      "pointer": "wgray",
+      "bits": 7,
+      "source_clock_period_ns": 5,
+      "skew_limit_ns": 4.0,
+      "sources": [
+        "soc/c2_full_video/ingress/crossing/wgray[0]~FF",
+        "soc/c2_full_video/ingress/crossing/wgray[1]~FF",
+        "soc/c2_full_video/ingress/crossing/wgray[2]~FF",
+        "soc/c2_full_video/ingress/crossing/wgray[3]~FF",
+        "soc/c2_full_video/ingress/crossing/wgray[4]~FF",
+        "soc/c2_full_video/ingress/crossing/wgray[5]~FF",
+        "soc/c2_full_video/ingress/crossing/wbin[6]~FF"
+      ],
+      "destinations": [
+        "soc/c2_full_video/ingress/crossing/wgray1[0]~FF",
+        "soc/c2_full_video/ingress/crossing/wgray1[1]~FF",
+        "soc/c2_full_video/ingress/crossing/wgray1[2]~FF",
+        "soc/c2_full_video/ingress/crossing/wgray1[3]~FF",
+        "soc/c2_full_video/ingress/crossing/wgray1[4]~FF",
+        "soc/c2_full_video/ingress/crossing/wgray1[5]~FF",
+        "soc/c2_full_video/ingress/crossing/wgray1[6]~FF"
+      ],
+      "merged_MSB_aliases": [
+        {
+          "logical_gray": "soc/c2_full_video/ingress/crossing/wgray[6]~FF",
+          "physical_ff": "soc/c2_full_video/ingress/crossing/wbin[6]~FF"
+        }
+      ]
+    },
+    {
+      "hierarchy": "soc/c2_full_video/ingress/crossing",
+      "pointer": "rgray",
+      "bits": 7,
+      "source_clock_period_ns": 10,
+      "skew_limit_ns": 8.0,
+      "sources": [
+        "soc/c2_full_video/ingress/crossing/rgray[0]~FF",
+        "soc/c2_full_video/ingress/crossing/rgray[1]~FF",
+        "soc/c2_full_video/ingress/crossing/rgray[2]~FF",
+        "soc/c2_full_video/ingress/crossing/rgray[3]~FF",
+        "soc/c2_full_video/ingress/crossing/rgray[4]~FF",
+        "soc/c2_full_video/ingress/crossing/rgray[5]~FF",
+        "soc/c2_full_video/ingress/crossing/rgray[6]~FF"
+      ],
+      "destinations": [
+        "soc/c2_full_video/ingress/crossing/rgray1[0]~FF",
+        "soc/c2_full_video/ingress/crossing/rgray1[1]~FF",
+        "soc/c2_full_video/ingress/crossing/rgray1[2]~FF",
+        "soc/c2_full_video/ingress/crossing/rgray1[3]~FF",
+        "soc/c2_full_video/ingress/crossing/rgray1[4]~FF",
+        "soc/c2_full_video/ingress/crossing/rgray1[5]~FF",
+        "soc/c2_full_video/ingress/crossing/rgray1[6]~FF"
+      ],
+      "merged_MSB_aliases": []
+    },
+    {
+      "hierarchy": "soc/c2_full_video/framebuffer/output_cdc",
+      "pointer": "wgray",
+      "bits": 7,
+      "source_clock_period_ns": 10,
+      "skew_limit_ns": 8.0,
+      "sources": [
+        "soc/c2_full_video/framebuffer/output_cdc/wgray[0]~FF",
+        "soc/c2_full_video/framebuffer/output_cdc/wgray[1]~FF",
+        "soc/c2_full_video/framebuffer/output_cdc/wgray[2]~FF",
+        "soc/c2_full_video/framebuffer/output_cdc/wgray[3]~FF",
+        "soc/c2_full_video/framebuffer/output_cdc/wgray[4]~FF",
+        "soc/c2_full_video/framebuffer/output_cdc/wgray[5]~FF",
+        "soc/c2_full_video/framebuffer/output_cdc/wbin[6]~FF"
+      ],
+      "destinations": [
+        "soc/c2_full_video/framebuffer/output_cdc/wgray1[0]~FF",
+        "soc/c2_full_video/framebuffer/output_cdc/wgray1[1]~FF",
+        "soc/c2_full_video/framebuffer/output_cdc/wgray1[2]~FF",
+        "soc/c2_full_video/framebuffer/output_cdc/wgray1[3]~FF",
+        "soc/c2_full_video/framebuffer/output_cdc/wgray1[4]~FF",
+        "soc/c2_full_video/framebuffer/output_cdc/wgray1[5]~FF",
+        "soc/c2_full_video/framebuffer/output_cdc/wgray1[6]~FF"
+      ],
+      "merged_MSB_aliases": [
+        {
+          "logical_gray": "soc/c2_full_video/framebuffer/output_cdc/wgray[6]~FF",
+          "physical_ff": "soc/c2_full_video/framebuffer/output_cdc/wbin[6]~FF"
+        }
+      ]
+    },
+    {
+      "hierarchy": "soc/c2_full_video/framebuffer/output_cdc",
+      "pointer": "rgray",
+      "bits": 7,
+      "source_clock_period_ns": 6.734006734006734,
+      "skew_limit_ns": 5.387,
+      "sources": [
+        "soc/c2_full_video/framebuffer/output_cdc/rgray[0]~FF",
+        "soc/c2_full_video/framebuffer/output_cdc/rgray[1]~FF",
+        "soc/c2_full_video/framebuffer/output_cdc/rgray[2]~FF",
+        "soc/c2_full_video/framebuffer/output_cdc/rgray[3]~FF",
+        "soc/c2_full_video/framebuffer/output_cdc/rgray[4]~FF",
+        "soc/c2_full_video/framebuffer/output_cdc/rgray[5]~FF",
+        "soc/c2_full_video/framebuffer/output_cdc/rgray[6]~FF"
+      ],
+      "destinations": [
+        "soc/c2_full_video/framebuffer/output_cdc/rgray1[0]~FF",
+        "soc/c2_full_video/framebuffer/output_cdc/rgray1[1]~FF",
+        "soc/c2_full_video/framebuffer/output_cdc/rgray1[2]~FF",
+        "soc/c2_full_video/framebuffer/output_cdc/rgray1[3]~FF",
+        "soc/c2_full_video/framebuffer/output_cdc/rgray1[4]~FF",
+        "soc/c2_full_video/framebuffer/output_cdc/rgray1[5]~FF",
+        "soc/c2_full_video/framebuffer/output_cdc/rgray1[6]~FF"
+      ],
+      "merged_MSB_aliases": []
+    },
+    {
+      "hierarchy": "soc/c2_attachment/core/pixels/storage",
+      "pointer": "wgray",
+      "bits": 5,
+      "source_clock_period_ns": 5,
+      "skew_limit_ns": 4.0,
+      "sources": [
+        "soc/c2_attachment/core/pixels/storage/wgray[0]~FF",
+        "soc/c2_attachment/core/pixels/storage/wgray[1]~FF",
+        "soc/c2_attachment/core/pixels/storage/wgray[2]~FF",
+        "soc/c2_attachment/core/pixels/storage/wgray[3]~FF",
+        "soc/c2_attachment/core/pixels/storage/wbin[4]~FF"
+      ],
+      "destinations": [
+        "soc/c2_attachment/core/pixels/storage/wgray1[0]~FF",
+        "soc/c2_attachment/core/pixels/storage/wgray1[1]~FF",
+        "soc/c2_attachment/core/pixels/storage/wgray1[2]~FF",
+        "soc/c2_attachment/core/pixels/storage/wgray1[3]~FF",
+        "soc/c2_attachment/core/pixels/storage/wgray1[4]~FF"
+      ],
+      "merged_MSB_aliases": [
+        {
+          "logical_gray": "soc/c2_attachment/core/pixels/storage/wgray[4]~FF",
+          "physical_ff": "soc/c2_attachment/core/pixels/storage/wbin[4]~FF"
+        }
+      ]
+    },
+    {
+      "hierarchy": "soc/c2_attachment/core/pixels/storage",
+      "pointer": "rgray",
+      "bits": 5,
+      "source_clock_period_ns": 10,
+      "skew_limit_ns": 8.0,
+      "sources": [
+        "soc/c2_attachment/core/pixels/storage/rgray[0]~FF",
+        "soc/c2_attachment/core/pixels/storage/rgray[1]~FF",
+        "soc/c2_attachment/core/pixels/storage/rgray[2]~FF",
+        "soc/c2_attachment/core/pixels/storage/rgray[3]~FF",
+        "soc/c2_attachment/core/pixels/storage/rbin[4]~FF"
+      ],
+      "destinations": [
+        "soc/c2_attachment/core/pixels/storage/rgray1[0]~FF",
+        "soc/c2_attachment/core/pixels/storage/rgray1[1]~FF",
+        "soc/c2_attachment/core/pixels/storage/rgray1[2]~FF",
+        "soc/c2_attachment/core/pixels/storage/rgray1[3]~FF",
+        "soc/c2_attachment/core/pixels/storage/rgray1[4]~FF"
+      ],
+      "merged_MSB_aliases": [
+        {
+          "logical_gray": "soc/c2_attachment/core/pixels/storage/rgray[4]~FF",
+          "physical_ff": "soc/c2_attachment/core/pixels/storage/rbin[4]~FF"
+        }
+      ]
+    },
+    {
+      "hierarchy": "raw_split/queue",
+      "pointer": "wgray",
+      "bits": 7,
+      "source_clock_period_ns": 20,
+      "skew_limit_ns": 16.0,
+      "sources": [
+        "raw_split/queue/wgray[0]~FF",
+        "raw_split/queue/wgray[1]~FF",
+        "raw_split/queue/wgray[2]~FF",
+        "raw_split/queue/wgray[3]~FF",
+        "raw_split/queue/wgray[4]~FF",
+        "raw_split/queue/wgray[5]~FF",
+        "raw_split/queue/wbin[6]~FF"
+      ],
+      "destinations": [
+        "raw_split/queue/wgray1[0]~FF",
+        "raw_split/queue/wgray1[1]~FF",
+        "raw_split/queue/wgray1[2]~FF",
+        "raw_split/queue/wgray1[3]~FF",
+        "raw_split/queue/wgray1[4]~FF",
+        "raw_split/queue/wgray1[5]~FF",
+        "raw_split/queue/wgray1[6]~FF"
+      ],
+      "merged_MSB_aliases": [
+        {
+          "logical_gray": "raw_split/queue/wgray[6]~FF",
+          "physical_ff": "raw_split/queue/wbin[6]~FF"
+        }
+      ]
+    },
+    {
+      "hierarchy": "raw_split/queue",
+      "pointer": "rgray",
+      "bits": 7,
+      "source_clock_period_ns": 10,
+      "skew_limit_ns": 8.0,
+      "sources": [
+        "raw_split/queue/rgray[0]~FF",
+        "raw_split/queue/rgray[1]~FF",
+        "raw_split/queue/rgray[2]~FF",
+        "raw_split/queue/rgray[3]~FF",
+        "raw_split/queue/rgray[4]~FF",
+        "raw_split/queue/rgray[5]~FF",
+        "raw_split/queue/rbin[6]~FF"
+      ],
+      "destinations": [
+        "raw_split/queue/rgray1[0]~FF",
+        "raw_split/queue/rgray1[1]~FF",
+        "raw_split/queue/rgray1[2]~FF",
+        "raw_split/queue/rgray1[3]~FF",
+        "raw_split/queue/rgray1[4]~FF",
+        "raw_split/queue/rgray1[5]~FF",
+        "raw_split/queue/rgray1[6]~FF"
+      ],
+      "merged_MSB_aliases": [
+        {
+          "logical_gray": "raw_split/queue/rgray[6]~FF",
+          "physical_ff": "raw_split/queue/rbin[6]~FF"
+        }
+      ]
+    },
+    {
+      "hierarchy": "gray_split/queue",
+      "pointer": "wgray",
+      "bits": 7,
+      "source_clock_period_ns": 10,
+      "skew_limit_ns": 8.0,
+      "sources": [
+        "gray_split/queue/wgray[0]~FF",
+        "gray_split/queue/wgray[1]~FF",
+        "gray_split/queue/wgray[2]~FF",
+        "gray_split/queue/wgray[3]~FF",
+        "gray_split/queue/wgray[4]~FF",
+        "gray_split/queue/wgray[5]~FF",
+        "gray_split/queue/wbin[6]~FF"
+      ],
+      "destinations": [
+        "gray_split/queue/wgray1[0]~FF",
+        "gray_split/queue/wgray1[1]~FF",
+        "gray_split/queue/wgray1[2]~FF",
+        "gray_split/queue/wgray1[3]~FF",
+        "gray_split/queue/wgray1[4]~FF",
+        "gray_split/queue/wgray1[5]~FF",
+        "gray_split/queue/wgray1[6]~FF"
+      ],
+      "merged_MSB_aliases": [
+        {
+          "logical_gray": "gray_split/queue/wgray[6]~FF",
+          "physical_ff": "gray_split/queue/wbin[6]~FF"
+        }
+      ]
+    },
+    {
+      "hierarchy": "gray_split/queue",
+      "pointer": "rgray",
+      "bits": 7,
+      "source_clock_period_ns": 5,
+      "skew_limit_ns": 4.0,
+      "sources": [
+        "gray_split/queue/rgray[0]~FF",
+        "gray_split/queue/rgray[1]~FF",
+        "gray_split/queue/rgray[2]~FF",
+        "gray_split/queue/rgray[3]~FF",
+        "gray_split/queue/rgray[4]~FF",
+        "gray_split/queue/rgray[5]~FF",
+        "gray_split/queue/rbin[6]~FF"
+      ],
+      "destinations": [
+        "gray_split/queue/rgray1[0]~FF",
+        "gray_split/queue/rgray1[1]~FF",
+        "gray_split/queue/rgray1[2]~FF",
+        "gray_split/queue/rgray1[3]~FF",
+        "gray_split/queue/rgray1[4]~FF",
+        "gray_split/queue/rgray1[5]~FF",
+        "gray_split/queue/rgray1[6]~FF"
+      ],
+      "merged_MSB_aliases": [
+        {
+          "logical_gray": "gray_split/queue/rgray[6]~FF",
+          "physical_ff": "gray_split/queue/rbin[6]~FF"
+        }
+      ]
+    }
+  ],
+  "pointer_bits": 66,
+  "method": "Use mapped Gray FF; only the mathematically identical MSB may alias the mapped binary FF. No unbound patterns or ignored Gray bits.",
+  "diagnostic_sdc_sha256": "7b2c437e5d71e982b28701a84dbc842675572e2eed3ecc432c961fa3af3b1a21",
+  "constraint_sha256": "99902c4202e199937305654535f1da4cb93755207136b85da5f2dd6f9605d7c4",
+  "generator_sha256": "0bd838f4639d683941139c4dbcec8c0c8ac93c6e3ac37e7a83ea45c629540ca4"
+}

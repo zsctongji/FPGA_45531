@@ -1,0 +1,388 @@
+{
+  "status": "PIXEL_SIDEBAND_DIAGNOSTIC_VIDEO_ACCEPTANCE_PENDING",
+  "real_camera_verified": false,
+  "flash_written": false,
+  "active_profile_changed": false,
+  "pixel_header_source": "vendor_pixel_sideband",
+  "byte_domain_header_sampled": false,
+  "ppc_set_after_RUN": true,
+  "error_debug_interface_enabled": false,
+  "image_sha256": "333af57e423c4174aaf0b1d0589b6a0c796f85ea530758f0fc715528896328b2",
+  "trials": [
+    {
+      "result": "logs/c9_sideband_seed3_board_20261103/20261103_125951/result.json",
+      "camera_attempt": "logs/ram_diagnostic_20261101/20261103_130037/attempt.json",
+      "calibration_verified": true,
+      "observation": {
+        "status": "CAPTURED_SIDEBAND_STATUS_ONLY",
+        "missing": [],
+        "real_camera_verified": false,
+        "board_acceptance_passed": false,
+        "flash_written": false,
+        "native_before": {
+          "pixel_wordcount": 0,
+          "selected_datatype": 43,
+          "selected_vc": 0,
+          "image_seen": false,
+          "ppc_mask_hex": "0000",
+          "image_ppc_values_0_to_4": [],
+          "ppc_above_4_seen": false,
+          "other_payload_seen": false,
+          "image_valid_outside_hs_seen": false,
+          "camera_fault": false
+        },
+        "native_after": {
+          "pixel_wordcount": 2400,
+          "selected_datatype": 43,
+          "selected_vc": 0,
+          "image_seen": true,
+          "ppc_mask_hex": "0010",
+          "image_ppc_values_0_to_4": [
+            4
+          ],
+          "ppc_above_4_seen": false,
+          "other_payload_seen": false,
+          "image_valid_outside_hs_seen": false,
+          "camera_fault": false
+        },
+        "source_frames": 244,
+        "format_errors": 243,
+        "overflow_frames": 0,
+        "a_completed": 0,
+        "width": 0,
+        "segments": 0,
+        "segments_clipped": false,
+        "capture_record_seen": true,
+        "capture_record_complete": false,
+        "source_flags_hex": "00000088",
+        "uart_sha256": "c8466f851b13140c474440dabae80757fae909a99285c01809e7f09f97ba8cc0",
+        "attempt_sha256": "3eb7a72ec45707d8a7616b5d880d223d07ddf6a567c1f47966349927b5ee1240",
+        "fpga_image_sha256": "333af57e423c4174aaf0b1d0589b6a0c796f85ea530758f0fc715528896328b2",
+        "scope": "Pixel-domain sideband only. PPC set includes RAW10 VC0 valid cycles after synchronized RUN; no frequency or per-frame distribution inferred. Other enabled Pack40 payloads are flagged but excluded; Pack48/56/64 disabled, so their absence is not measured. Different snapshot domains are not simultaneous.",
+        "snapshots": {
+          "before": {
+            "start": 882,
+            "end": 1022,
+            "words": {
+              "0": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                57,
+                0,
+                0
+              ],
+              "1": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "2": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "3": [
+                2147969997,
+                2013607940,
+                2097205765,
+                1397952512,
+                1,
+                0,
+                0,
+                0
+              ],
+              "4": [
+                2818048,
+                3385982976,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "after": {
+            "start": 11032,
+            "end": 11163,
+            "words": {
+              "0": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                665,
+                0,
+                0
+              ],
+              "1": [
+                244,
+                243,
+                0,
+                0,
+                0,
+                0,
+                0,
+                136
+              ],
+              "2": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "3": [
+                2147969997,
+                2013607940,
+                2097205765,
+                1397952512,
+                1,
+                0,
+                0,
+                0
+              ],
+              "4": [
+                2150304096,
+                3385982992,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        }
+      },
+      "restore": "logs/c10_warm_boot_20261101/20261103_130101/attempt.json"
+    },
+    {
+      "result": "logs/c9_sideband_seed3_board_20261103/20261103_130732/result.json",
+      "camera_attempt": "logs/ram_diagnostic_20261101/20261103_130818/attempt.json",
+      "calibration_verified": true,
+      "observation": {
+        "status": "CAPTURED_SIDEBAND_STATUS_ONLY",
+        "missing": [],
+        "real_camera_verified": false,
+        "board_acceptance_passed": false,
+        "flash_written": false,
+        "native_before": {
+          "pixel_wordcount": 0,
+          "selected_datatype": 43,
+          "selected_vc": 0,
+          "image_seen": false,
+          "ppc_mask_hex": "0000",
+          "image_ppc_values_0_to_4": [],
+          "ppc_above_4_seen": false,
+          "other_payload_seen": false,
+          "image_valid_outside_hs_seen": false,
+          "camera_fault": false
+        },
+        "native_after": {
+          "pixel_wordcount": 2400,
+          "selected_datatype": 43,
+          "selected_vc": 0,
+          "image_seen": true,
+          "ppc_mask_hex": "0010",
+          "image_ppc_values_0_to_4": [
+            4
+          ],
+          "ppc_above_4_seen": false,
+          "other_payload_seen": false,
+          "image_valid_outside_hs_seen": false,
+          "camera_fault": false
+        },
+        "source_frames": 238,
+        "format_errors": 237,
+        "overflow_frames": 0,
+        "a_completed": 0,
+        "width": 72,
+        "segments": 4095,
+        "segments_clipped": true,
+        "capture_record_seen": true,
+        "capture_record_complete": false,
+        "source_flags_hex": "048fff98",
+        "uart_sha256": "e661657a604c95114ab99c47f3d874ddf879489814c261fb90f34153bcbbe2a9",
+        "attempt_sha256": "49513dae3e861fd1b9b099b5e8cde58ad14f8edec09a4afe51404342b324a49c",
+        "fpga_image_sha256": "333af57e423c4174aaf0b1d0589b6a0c796f85ea530758f0fc715528896328b2",
+        "scope": "Pixel-domain sideband only. PPC set includes RAW10 VC0 valid cycles after synchronized RUN; no frequency or per-frame distribution inferred. Other enabled Pack40 payloads are flagged but excluded; Pack48/56/64 disabled, so their absence is not measured. Different snapshot domains are not simultaneous.",
+        "snapshots": {
+          "before": {
+            "start": 896,
+            "end": 1037,
+            "words": {
+              "0": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                58,
+                0,
+                0
+              ],
+              "1": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "2": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "3": [
+                2147969997,
+                2013607940,
+                2097205765,
+                1397952512,
+                1,
+                0,
+                0,
+                0
+              ],
+              "4": [
+                2818048,
+                3385982976,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "after": {
+            "start": 11046,
+            "end": 11178,
+            "words": {
+              "0": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                666,
+                0,
+                0
+              ],
+              "1": [
+                238,
+                237,
+                0,
+                0,
+                0,
+                0,
+                0,
+                76545944
+              ],
+              "2": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "3": [
+                2147969997,
+                2013607940,
+                2097205765,
+                1397952512,
+                1,
+                0,
+                0,
+                0
+              ],
+              "4": [
+                2150304096,
+                3385982992,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        }
+      },
+      "restore": "logs/c10_warm_boot_20261101/20261103_130842/attempt.json"
+    }
+  ],
+  "host_failures": [
+    {
+      "result": "logs/c9_sideband_seed3_board_20261103/20261103_125732/result.json",
+      "attempt": "logs/c9_ddr_probe_20261101/20261103_125734/attempt.json",
+      "error": "FileNotFoundError(2, 'No such file or directory')",
+      "calibration_verdict": "NOT_CAPTURED",
+      "restore": "logs/c10_warm_boot_20261101/20261103_125806/attempt.json"
+    }
+  ],
+  "diagnostic_pack_type": 1,
+  "disabled_pack_classes": [
+    48,
+    56,
+    64
+  ],
+  "final_restore": "logs/c10_warm_boot_20261101/20261103_130842/attempt.json",
+  "cold_boot_verified_this_session": false,
+  "evidence_sha256": {
+    "tools/report_c9_sideband_seed3_board.py": "13d3f836944893c03f6a16dc642134f38ff02291dea4b3d34621def94e03b803",
+    "build/c9_sideband_seed3_image_20261103/implementation_audit.json": "88e6b03411e5608a5701b4b0d353514e89b3ca333af9354ee3d0d3497c115dbf",
+    "logs/c9_sideband_seed3_board_20261103/20261103_125732/result.json": "33428c8bbbda2b690e879c175eb93389255c16bec71d0d41855b427d558b10d6",
+    "logs/c9_ddr_probe_20261101/20261103_125734/attempt.json": "d99ce3d64fb55b93be9dc98875d3cc7c885805cc3d6cdff107170632763e9da2",
+    "logs/c10_warm_boot_20261101/20261103_125806/attempt.json": "842078e2c95620e58d00046ad83a96c36a78d1b6d5da49050c1e09b25475ebdb",
+    "logs/c10_warm_boot_20261101/20261103_125806/uart.log": "e3e5174578b2168c3f97f6bb756bce8866dd29a3acddef6ef266fda141787817",
+    "logs/c9_sideband_seed3_board_20261103/20261103_125951/result.json": "eadf63a330411b090a25964575808aedb01865d550dd59fa9aa9f790297ad166",
+    "logs/c9_ddr_probe_20261101/20261103_125953/attempt.json": "a683f1c02ae9e65e1f59e20b2f2f06e85844f2287ddc9c15917fa81005a43818",
+    "logs/c9_ddr_probe_20261101/20261103_125953/samples.json": "9d33dd64a21ff11c838e1bb3b606e323dfef4e1bc412c9d96a6869fa8fa1cde2",
+    "logs/ram_diagnostic_20261101/20261103_130037/attempt.json": "3eb7a72ec45707d8a7616b5d880d223d07ddf6a567c1f47966349927b5ee1240",
+    "logs/ram_diagnostic_20261101/20261103_130037/firmware_build_record.json": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc",
+    "logs/ram_diagnostic_20261101/20261103_130037/uart.log": "c8466f851b13140c474440dabae80757fae909a99285c01809e7f09f97ba8cc0",
+    "logs/c10_warm_boot_20261101/20261103_130101/attempt.json": "065521444fae5e956427f314974b64c2fef0e1ca8e426fa1eec2c0c09e37f03d",
+    "logs/c10_warm_boot_20261101/20261103_130101/uart.log": "e3e5174578b2168c3f97f6bb756bce8866dd29a3acddef6ef266fda141787817",
+    "logs/c9_sideband_seed3_board_20261103/20261103_130732/result.json": "40fce8e452b1790903e786d2f2f51d4fe127c364ffd96e5faf941a759062cb31",
+    "logs/c9_ddr_probe_20261101/20261103_130734/attempt.json": "de345c1e4ac8c574e2429427ef72a32c40634721af22bc6c8fcdd5ec2896b327",
+    "logs/c9_ddr_probe_20261101/20261103_130734/samples.json": "eac5b97e2d183691f301747d7455f3f6338fd56dbebb178f37f9b7aa7560481c",
+    "logs/ram_diagnostic_20261101/20261103_130818/attempt.json": "49513dae3e861fd1b9b099b5e8cde58ad14f8edec09a4afe51404342b324a49c",
+    "logs/ram_diagnostic_20261101/20261103_130818/firmware_build_record.json": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc",
+    "logs/ram_diagnostic_20261101/20261103_130818/uart.log": "e661657a604c95114ab99c47f3d874ddf879489814c261fb90f34153bcbbe2a9",
+    "logs/c10_warm_boot_20261101/20261103_130842/attempt.json": "891681c56bc96a8083235973e84ffa203fec3435d505f33a00f16555af25fad0",
+    "logs/c10_warm_boot_20261101/20261103_130842/uart.log": "e3e5174578b2168c3f97f6bb756bce8866dd29a3acddef6ef266fda141787817"
+  }
+}

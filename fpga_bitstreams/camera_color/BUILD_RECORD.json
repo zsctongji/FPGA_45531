@@ -1,0 +1,21 @@
+{
+  "project": "camera",
+  "source_project": "D:\\FPGA_2026_T3_P3\\projects\\02_camera\\ti60f225_oob.xml",
+  "compiled_at": "2026-10-18T14:26:18.8491049+08:00",
+  "minimum_setup_slack_ns": 0.448,
+  "minimum_hold_slack_ns": 0.026,
+  "artifacts": [
+    {
+      "file": "D:\\FPGA_2026_T3_P3\\fpga_bitstreams\\camera_color\\ti60f225_oob.hex",
+      "bytes": 2583723,
+      "sha256": "9ded26955a7b7eac674996fed337226fe7cbee52384b085b92d0d8d74adb7d6d"
+    },
+    {
+      "file": "D:\\FPGA_2026_T3_P3\\fpga_bitstreams\\camera_color\\ti60f225_oob.bit",
+      "bytes": 2583663,
+      "sha256": "1a7d727c09bbd7128887b602fd994c18e2c2250dcd16453d91d2cba3776c2a23"
+    }
+  ],
+  "physical_board_test_passed": false,
+  "scope": "Independent bring-up example; not integrated competition system"
+}

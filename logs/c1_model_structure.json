@@ -1,0 +1,1 @@
+{"schema_version":3,"input":{"type":9,"shape":[1,96,96,1],"scale_bits":"3c008081","zero":-1},"output":{"type":9,"shape":[1,2],"scale_bits":"3b800000","zero":-128}}

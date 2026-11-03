@@ -1,0 +1,41 @@
+﻿{
+    "status":  "PASS",
+    "project":  "camera_motion",
+    "flow":  "compile",
+    "file":  "D:\\FPGA_2026_T3_P3\\projects\\05_camera_motion\\ti60f225_oob.xml",
+    "started":  "2026-10-19T13:11:47.4636851+08:00",
+    "stage":  "finished",
+    "scope":  "tool_flow_only",
+    "physical_board_programmed":  false,
+    "board_test_passed":  false,
+    "efinity_version":  "2026.1.132",
+    "preflight_log":  "D:\\FPGA_2026_T3_P3\\logs\\efinity_camera_motion_interface_preflight.log",
+    "preflight_exit_code":  0,
+    "exit_code":  0,
+    "design_log":  "D:\\FPGA_2026_T3_P3\\projects\\05_camera_motion\\outflow\\ti60f225_oob.log",
+    "final_sta":  {
+                      "scope":  "Declared vendor constraints only; physical board not measured",
+                      "minimum_hold_slack_ns":  0.026,
+                      "minimum_setup_slack_ns":  0.534,
+                      "report":  "D:\\FPGA_2026_T3_P3\\projects\\05_camera_motion\\outflow\\ti60f225_oob.timing.rpt"
+                  },
+    "artifacts":  [
+                      {
+                          "sha256":  "2407B8B8F22F2F8650EC6133171E9F29312E075574FCA19637E9DD899127CBE0",
+                          "path":  "D:\\FPGA_2026_T3_P3\\projects\\05_camera_motion\\outflow\\ti60f225_oob.map.v"
+                      },
+                      {
+                          "sha256":  "3B5E652141613FD4FFB200759FFCD9911075109F709B4E89F2B222814BA934F1",
+                          "path":  "D:\\FPGA_2026_T3_P3\\projects\\05_camera_motion\\outflow\\ti60f225_oob.map.rpt"
+                      },
+                      {
+                          "sha256":  "1173E9BD9AE9C21058AB0F3BFDA1126B2391D5E825C9603E3C2A0D8432251E8F",
+                          "path":  "D:\\FPGA_2026_T3_P3\\projects\\05_camera_motion\\outflow\\ti60f225_oob.lpf"
+                      },
+                      {
+                          "sha256":  "B3594DE101E3B301AFB36BF563912283AE8087E8B957DDBDB2290B6323B5651E",
+                          "path":  "D:\\FPGA_2026_T3_P3\\projects\\05_camera_motion\\outflow\\ti60f225_oob.hex"
+                      }
+                  ],
+    "finished":  "2026-10-19T13:15:58.1022611+08:00"
+}

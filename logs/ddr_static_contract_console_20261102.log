@@ -1,0 +1,52 @@
+{
+  "status": "PASS_STATIC_DDR_CONTRACT_COMPARISON",
+  "board_calibration_fixed": false,
+  "hardware_accessed": false,
+  "baseline": "C10 accepted CPU/DDR/TinyML image",
+  "comparisons": [
+    {
+      "project": "build/c9_ddr_probe_20261101",
+      "status": "MATCHES_C10_STATIC_DDR_CONTRACT",
+      "ddr_io_components": 49,
+      "identical_generated_common_peripherals": 119,
+      "controller_source_files": 14
+    },
+    {
+      "project": "build/c9_ddr_probe_speed_20261101",
+      "status": "MATCHES_C10_STATIC_DDR_CONTRACT",
+      "ddr_io_components": 49,
+      "identical_generated_common_peripherals": 119,
+      "controller_source_files": 14
+    },
+    {
+      "project": "build/c9_ddr_probe_nopack_20261101",
+      "status": "MATCHES_C10_STATIC_DDR_CONTRACT",
+      "ddr_io_components": 49,
+      "identical_generated_common_peripherals": 119,
+      "controller_source_files": 14
+    }
+  ],
+  "c8_ddr_pll_io_and_controller_sources_match": true,
+  "phase_selectors": {
+    "RX_CLK_SEL": {
+      "index": 2,
+      "output": "rx_cal_clk"
+    },
+    "TX_CLK_SEL": {
+      "index": 3,
+      "output": "tx_cal_clk"
+    },
+    "TX_CLK_90EDGE_SEL": {
+      "index": 0,
+      "output": "tx_cal_clk_90edge"
+    }
+  },
+  "source_comparison_note": "ddr3_top include paths differ by isolated project; each included header is byte-identical and identity-bound before normalizing that path only",
+  "limitations": [
+    "Not fabric-netlist functional equivalence",
+    "Not routed fabric timing/electrical equivalence",
+    "Clock activity does not establish actual frequency or phase",
+    "Encrypted initialization state definitions unavailable",
+    "C9 COMB4-off and C8 COMB4-on controls still require the board"
+  ]
+}

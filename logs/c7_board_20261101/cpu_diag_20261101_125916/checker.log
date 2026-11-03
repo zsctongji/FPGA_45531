@@ -1,0 +1,1 @@
+{"status": "PASS_CPU_DDR_CACHE_LOG", "records": 10, "errors": [], "scope": "CPU-side tested DDR ranges, byte lanes and D-cache invalidate/refill; external DMA stale-cache behavior and TinyML are separate", "log_sha256": "fba912531809ee5c9c09395456263e86f02ac3489c3a417c6d3a15c17f323614"}

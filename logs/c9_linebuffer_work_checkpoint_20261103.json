@@ -1,0 +1,399 @@
+{
+  "status": "WAITING_PHYSICAL_CAMERA_FPC_CHECK",
+  "updated_at": "2026-11-03T18:29:22.133746+08:00",
+  "flash_written": false,
+  "ddr_parameters_changed": false,
+  "active_profile_changed": false,
+  "git_pushed": false,
+  "board_trials": [
+    {
+      "variant": "linebuffer",
+      "result": "logs/c9_linebuffer_board_20261103/20261103_164726/result.json",
+      "status": "CAPTURED_LINEBUFFER_STATUS_ONLY",
+      "geometry": false,
+      "after": {
+        "stages": {
+          "raw_2ppc": {
+            "maximum_contiguous_cycles": 0,
+            "maximum_at_least": false,
+            "segments": 0,
+            "segments_at_least": false
+          },
+          "rgb_de": {
+            "maximum_contiguous_cycles": 0,
+            "maximum_at_least": false,
+            "segments": 0,
+            "segments_at_least": false
+          },
+          "rgb_valid": {
+            "maximum_contiguous_cycles": 0,
+            "maximum_at_least": false,
+            "segments": 0,
+            "segments_at_least": false
+          },
+          "rgb_joint": {
+            "maximum_contiguous_cycles": 0,
+            "maximum_at_least": false,
+            "segments": 0,
+            "segments_at_least": false
+          },
+          "gray_2ppc": {
+            "maximum_contiguous_cycles": 0,
+            "maximum_at_least": false,
+            "segments": 0,
+            "segments_at_least": false
+          },
+          "pixel_1ppc": {
+            "maximum_contiguous_cycles": 0,
+            "maximum_at_least": false
+          },
+          "source_1ppc": {
+            "maximum_contiguous_cycles": 0,
+            "maximum_at_least": false
+          }
+        },
+        "normalizer": {
+          "run": true,
+          "armed": false,
+          "fault": true,
+          "error_flags_hex": "10",
+          "error_names": [
+            "transport"
+          ],
+          "last_frame_beats": 0,
+          "input_frames_mod4": 0,
+          "debug_seen_hex": "0029c41a",
+          "init_done_seen": true,
+          "transport_error_bits_hex": "00014418",
+          "pixel_fifo_empty_seen": true
+        },
+        "isp": {
+          "run": true,
+          "raw_vs_seen": false,
+          "rgb_vs_seen": false,
+          "gray_vs_seen": false,
+          "rgb_de_without_valid_seen": false,
+          "rgb_valid_without_de_seen": false,
+          "raw_overflow_seen": false,
+          "raw_de_seen": false
+        },
+        "video": {
+          "run": true,
+          "pattern_mode": false,
+          "fault_gate": false,
+          "config_valid": true,
+          "time_valid": true,
+          "pixel_vs_seen": false,
+          "source_vs_seen": false,
+          "source_de_seen": false
+        }
+      },
+      "restore": "logs/c10_warm_boot_20261101/20261103_164833/attempt.json",
+      "restored": true
+    },
+    {
+      "variant": "linebuffer_csr",
+      "result": "logs/c9_linebuffer_csr_board_20261103/20261103_170717/result.json",
+      "status": "CAPTURED_LINEBUFFER_STATUS_ONLY",
+      "geometry": false,
+      "after": {
+        "normalizer": {
+          "run": true,
+          "armed": false,
+          "fault": false,
+          "error_flags_hex": "00",
+          "last_frame_beats": 0,
+          "input_frames_mod4": 0,
+          "debug_seen_hex": "00000000",
+          "init_done_seen": false,
+          "transport_error_bits_hex": "00000000"
+        },
+        "csr": {
+          "run": true,
+          "init_seen": true,
+          "capture_enable": true,
+          "fault": false,
+          "state": 7,
+          "retries": 0,
+          "pre_status_hex": "00004408",
+          "post_status_hex": "00000000",
+          "pre_debug_hex": "0020c002"
+        },
+        "video": {
+          "run": true,
+          "pattern_mode": false,
+          "fault_gate": false,
+          "config_valid": true,
+          "time_valid": true,
+          "pixel_maximum": 0,
+          "source_maximum": 0
+        }
+      },
+      "restore": "logs/c10_warm_boot_20261101/20261103_170824/attempt.json",
+      "restored": true
+    },
+    {
+      "variant": "linebuffer_csr",
+      "result": "logs/c9_linebuffer_csr_board_20261103/20261103_171213/result.json",
+      "status": "CAPTURED_LINEBUFFER_STATUS_ONLY",
+      "geometry": false,
+      "after": {
+        "normalizer": {
+          "run": true,
+          "armed": false,
+          "fault": false,
+          "error_flags_hex": "00",
+          "last_frame_beats": 0,
+          "input_frames_mod4": 0,
+          "debug_seen_hex": "00000000",
+          "init_done_seen": false,
+          "transport_error_bits_hex": "00000000"
+        },
+        "csr": {
+          "run": true,
+          "init_seen": true,
+          "capture_enable": true,
+          "fault": false,
+          "state": 7,
+          "retries": 0,
+          "pre_status_hex": "00004412",
+          "post_status_hex": "00000002",
+          "pre_debug_hex": "0028c002"
+        },
+        "video": {
+          "run": true,
+          "pattern_mode": false,
+          "fault_gate": false,
+          "config_valid": true,
+          "time_valid": true,
+          "pixel_maximum": 0,
+          "source_maximum": 0
+        }
+      },
+      "restore": "logs/c10_warm_boot_20261101/20261103_171320/attempt.json",
+      "restored": true
+    },
+    {
+      "variant": "linebuffer_edges",
+      "result": "logs/c9_linebuffer_edges_board_20261103/20261103_172725/result.json",
+      "status": "CAPTURED_LINEBUFFER_STATUS_ONLY",
+      "geometry": false,
+      "after": {
+        "normalizer": {
+          "run": true,
+          "armed": true,
+          "fault": true,
+          "error_flags_hex": "10",
+          "last_frame_beats": 0,
+          "input_frames_mod4": 0,
+          "debug_seen_hex": "0029841f",
+          "init_done_seen": true,
+          "transport_error_bits_hex": "0001041d"
+        },
+        "csr": {
+          "run": true,
+          "init_seen": true,
+          "capture_enable": true,
+          "fault": false,
+          "state": 7,
+          "retries": 0,
+          "pre_status_hex": "00000412",
+          "post_status_hex": "00000002",
+          "native_rises": 244,
+          "native_falls": 244,
+          "native_flags_hex": "0f",
+          "native_vs_level": false,
+          "native_hs_level": false,
+          "native_de_seen": true,
+          "native_hs_seen": true,
+          "native_vs_seen": true,
+          "native_image_seen": true,
+          "native_non4_ppc_seen": false,
+          "native_bad_wc_seen": false
+        },
+        "video": {
+          "run": true,
+          "pattern_mode": false,
+          "fault_gate": true,
+          "config_valid": true,
+          "time_valid": true,
+          "pixel_maximum": 1920,
+          "source_maximum": 1920
+        }
+      },
+      "restore": "logs/c10_warm_boot_20261101/20261103_172832/attempt.json",
+      "restored": true
+    },
+    {
+      "variant": "linebuffer_reset",
+      "result": "logs/c9_linebuffer_reset_board_20261103/20261103_174812/result.json",
+      "status": "CAPTURED_LINEBUFFER_STATUS_ONLY",
+      "geometry": false,
+      "after": {
+        "normalizer": {
+          "run": true,
+          "armed": true,
+          "fault": true,
+          "error_flags_hex": "10",
+          "last_frame_beats": 0,
+          "input_frames_mod4": 0,
+          "debug_seen_hex": "0029841a",
+          "init_done_seen": true,
+          "transport_error_bits_hex": "00010418"
+        },
+        "csr": {
+          "run": true,
+          "init_seen": true,
+          "capture_enable": true,
+          "fault": false,
+          "state": 7,
+          "retries": 0,
+          "pre_status_hex": "0000041a",
+          "post_status_hex": "00000000",
+          "native_rises": 246,
+          "native_falls": 246,
+          "native_flags_hex": "8f",
+          "native_vs_level": true,
+          "native_hs_level": false,
+          "native_de_seen": true,
+          "native_hs_seen": true,
+          "native_vs_seen": true,
+          "native_image_seen": true,
+          "native_non4_ppc_seen": false,
+          "native_bad_wc_seen": false
+        },
+        "video": {
+          "run": true,
+          "pattern_mode": false,
+          "fault_gate": true,
+          "config_valid": true,
+          "time_valid": true,
+          "pixel_maximum": 1920,
+          "source_maximum": 1920
+        }
+      },
+      "restore": "logs/c10_warm_boot_20261101/20261103_174918/attempt.json",
+      "restored": true
+    },
+    {
+      "variant": "linebuffer_stream",
+      "result": "logs/c9_linebuffer_stream_board_20261103/20261103_175918/result.json",
+      "status": "CAPTURED_LINEBUFFER_STATUS_ONLY",
+      "geometry": false,
+      "after": {
+        "normalizer": {
+          "run": true,
+          "armed": true,
+          "fault": true,
+          "error_flags_hex": "10",
+          "last_frame_beats": 0,
+          "input_frames_mod4": 0,
+          "debug_seen_hex": "00298002",
+          "init_done_seen": true,
+          "transport_error_bits_hex": "00010000"
+        },
+        "csr": {
+          "run": true,
+          "init_seen": true,
+          "capture_enable": true,
+          "fault": false,
+          "state": 7,
+          "retries": 0,
+          "pre_status_hex": "00000002",
+          "post_status_hex": "00000002",
+          "native_rises": 303,
+          "native_falls": 302,
+          "native_flags_hex": "cf",
+          "native_vs_level": true,
+          "native_hs_level": true,
+          "native_de_seen": true,
+          "native_hs_seen": true,
+          "native_vs_seen": true,
+          "native_image_seen": true,
+          "native_non4_ppc_seen": false,
+          "native_bad_wc_seen": false
+        },
+        "video": {
+          "run": true,
+          "pattern_mode": false,
+          "fault_gate": true,
+          "config_valid": true,
+          "time_valid": true,
+          "pixel_maximum": 1920,
+          "source_maximum": 1920
+        }
+      },
+      "restore": "logs/c10_warm_boot_20261101/20261103_180024/attempt.json",
+      "restored": true
+    },
+    {
+      "variant": "linebuffer_quality",
+      "result": "logs/c9_linebuffer_quality_board_20261103/20261103_181949/result.json",
+      "status": "CAPTURED_LINEBUFFER_STATUS_ONLY",
+      "geometry": false,
+      "after": {
+        "normalizer": {
+          "run": true,
+          "armed": true,
+          "fault": true,
+          "error_flags_hex": "10",
+          "last_frame_beats": 0,
+          "input_frames_mod4": 0,
+          "debug_seen_hex": "00298002",
+          "init_done_seen": true,
+          "transport_error_bits_hex": "00000000"
+        },
+        "csr": {
+          "phy_prequalification_error_seen": false,
+          "phy_active_error_seen": true,
+          "phy_quality_released": true,
+          "phy_error_in_input_data_seen": false,
+          "run": true,
+          "init_seen": true,
+          "capture_enable": true,
+          "fault": false,
+          "state": 7,
+          "retries": 0,
+          "pre_status_hex": "00000002",
+          "post_status_hex": "00000002",
+          "native_rises": 303,
+          "native_falls": 302,
+          "native_flags_hex": "8f",
+          "native_vs_level": true,
+          "native_hs_level": false,
+          "native_de_seen": true,
+          "native_hs_seen": true,
+          "native_vs_seen": true,
+          "native_image_seen": true,
+          "native_non4_ppc_seen": false,
+          "native_bad_wc_seen": false
+        },
+        "video": {
+          "run": true,
+          "pattern_mode": false,
+          "fault_gate": true,
+          "config_valid": true,
+          "time_valid": true,
+          "pixel_maximum": 1920,
+          "source_maximum": 1920
+        }
+      },
+      "restore": "logs/c10_warm_boot_20261101/20261103_182056/attempt.json",
+      "restored": true
+    }
+  ],
+  "current_project": "build/c9_linebuffer_quality_image_20261103",
+  "current_tool_session": null,
+  "next": "Power off including USB; reseat camera FPC both ends with same contact orientation and lock; reconnect original COM13. Repeat identical quality image, keep PHY/packet rejection strict. No Flash writes.",
+  "user_input_pending": true,
+  "final_restore": "logs/c10_warm_boot_20261101/20261103_182056/attempt.json",
+  "final_restore_passed": true,
+  "cold_boot_verified_this_session": false,
+  "camera_geometry_verified": false,
+  "offline_acceptance": {
+    "status": "PASS_OFFLINE_REGRESSION_HARDWARE_PENDING",
+    "result": "logs/c9_pc_acceptance_20261103_204335/result.json",
+    "evidence": "logs/c9_pc_acceptance_20261103_204335/evidence_verification.json",
+    "hardware_accessed": false
+  }
+}

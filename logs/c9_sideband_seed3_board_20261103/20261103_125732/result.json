@@ -1,0 +1,11 @@
+{
+  "status": "FAIL_CAPTURE_OR_EVIDENCE",
+  "flash_written": false,
+  "board_acceptance_passed": false,
+  "real_camera_verified": false,
+  "runner_sha256": "940b5c7a367195497eb3617c02390481f3e7f8149ed06c3f0f5cd3a3ca0a44c9",
+  "error": "AssertionError('ddr_status failed; inspect C:\\\\Users\\\\16034\\\\Downloads\\\\FPGA\\\\FPGA_2026_T3_P3\\\\logs\\\\c9_sideband_seed3_board_20261103\\\\20261103_125732\\\\ddr_status.log')",
+  "c10_restore_passed": true,
+  "restore_attempt": "logs/c10_warm_boot_20261101/20261103_125806/attempt.json",
+  "finished": "2026-11-03T12:58:26.155817+08:00"
+}

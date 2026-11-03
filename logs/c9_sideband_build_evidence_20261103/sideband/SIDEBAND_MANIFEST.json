@@ -1,0 +1,26 @@
+{
+  "status": "PREPARED_READONLY_GEOMETRY",
+  "started": "2026-11-03T12:00:25.405858+08:00",
+  "parent_audit_sha256": "a9714500ce6585a50388133bb8fa02e639ad01e14b9c1073d659e5d9caa98543",
+  "generator_sha256": "bd03830776092420855963eae38d618c6be76011c09d3b96bf34c48adf757f87",
+  "runner_sha256": "a4ff74dee4ea39e41052e88437e0a5351020cfdbd5e74ae3dbbccd2d32c276db",
+  "test_report_sha256": "856e12052657e82a09f1bc1e19989e86c075da2acf0f66446b71b526edd9dc81",
+  "controlled_change": "Enable existing pixel sideband ports through plain vendor wrapper; record RAW10 VC0 PPC set after RUN. Protected IP tail and all IP parameters retained; pixel/control/DDR/clock/pin paths unchanged",
+  "source_sha256": {
+    "build/c9_sideband_image_20261103/physical_soc_core.v": "7c795bb2962f1e3d1fba52bde1e0f564cacd37af10a170847e25cb5ec2987524",
+    "build/c9_sideband_image_20261103/soc_physical.peri.xml": "0303170cbe27b86e11b15e490ad5f7fe5bd4ee6bf89acd60d22c1d170a230973",
+    "build/c9_sideband_image_20261103/soc_physical.sdc": "53f8baf48c4118283df2c9bcd57a5270516039e64caea6e9296592afe34f7b95",
+    "build/c9_sideband_image_20261103/review_timing.tcl": "041f9c91942fa3940f4832b3416a208f8e1f15a9166e7a5bcddbb1e6a7f8e6b2",
+    "build/c9_sideband_image_20261103/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol0.bin": "95aa26b9cc41c94dca7543f5c4b48350b566cf9311ea714df17415d549e5aa6e",
+    "build/c9_sideband_image_20261103/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol1.bin": "e4ad872f2b3dcb92ec3e7d5860e16bc70177928642cce1c89383a74faf94d393",
+    "build/c9_sideband_image_20261103/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol2.bin": "b8c5f31b9b5e5fcea4ad83627e7749ca567fee94bef441a241bad2652a42064e",
+    "build/c9_sideband_image_20261103/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol3.bin": "b1be4104ba5dabcdef13ef787d604d39b75dac954d7d1f65728be266bf4b606d",
+    "build/c9_sideband_image_20261103/soc_physical_top.sv": "ddf26e0ce2e05d08ff9c8376948d952a37e2b10ac5eb55e3240d9350260c83a8",
+    "build/c9_sideband_image_20261103/soc_physical.xml": "1589418c6ca38b90ea9cc020321f4e9f2960a256bc1d12406ec89e81c9c10d74",
+    "build/c9_sideband_image_20261103/bind_cdc.py": "693873e04259dea39dceb2923444ab82ee9b89042e15af16221f533d5b1a17e7",
+    "build/c9_sideband_image_20261103/capture_geometry.py": "fa5d71e596cceb0fbb5b08a55b555882f7ebc71cc4fb5b4c09216631ac77b2f5",
+    "team_work/03_ai_soc/c9_live/camera_geometry/c9_sideband_probe.sv": "999c4bc5292794dca41da63ebb354cc318af26710fe66e60df1c068d792fd2f1",
+    "build/c9_sideband_image_20261103/vendor_a/rtl/csi_rx_controller.sv": "23d6f5cc81b889473bd6bc8cfa3b42a0bd40d5803c2b745876c863567a851fb9",
+    "tools/patch_c9_sideband_vendor.py": "7b477d30e51c5995530d5dbceaa0c23a6b783f2c92c5c9bed8dc4686afb6912d"
+  }
+}

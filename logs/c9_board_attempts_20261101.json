@@ -1,0 +1,45 @@
+{
+  "status": "PASS_PATTERN_DMA_VIDEO_CAMERA_FORMAT_PENDING",
+  "implementation_audit_sha256": "bc859f15627193c5d4d6c6da02db015236afc2319537496df7b60b0fa18645fb",
+  "implementation_passed": true,
+  "cpu_halt_passed": true,
+  "dma_cache_handoff_passed": true,
+  "real_video_concurrency_passed": false,
+  "flash_written_by_c9": false,
+  "attempts": [
+    {
+      "path": "logs/ram_diagnostic_20261101/20261101_183315/attempt.json",
+      "status": "HOST_ERROR",
+      "firmware_version": "c9dma-3739cbec6825e6db",
+      "fpga_image_sha256": "e8c279ddb263b8e4a3939defe6cf66c3d9720b1339daf5072f74dd1d395372dd",
+      "error": "RuntimeError('load_readback process failed')"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261101_184719/attempt.json",
+      "status": "HOST_ERROR",
+      "firmware_version": "c9dma-3739cbec6825e6db",
+      "fpga_image_sha256": "e8c279ddb263b8e4a3939defe6cf66c3d9720b1339daf5072f74dd1d395372dd",
+      "error": "RuntimeError('load_readback process failed')"
+    }
+  ],
+  "evidence": "Startup scanout fix passes original strict DMA/video test. Camera time gate fixed, but real source reports 505 boundaries/504 format errors and zero accepted inference. No Flash writes.",
+  "ui_operation": "GUI reauthorized by user; private ROM parking variant generated with official BRAM updater and tested in SRAM.",
+  "board_restored_to": "C10_SPI_FIXED_C7",
+  "restore_attempt": "logs/c10_warm_boot_20261101/20261102_195756/attempt.json",
+  "restore_passed": true,
+  "final_board_fpga_sha256": "982ab1bf07f6b8ba825b02c064de014003fc743a08f9083631e5adcc24956f5b",
+  "rom_park_result": "logs/c9_rom_park_20261101/result.json",
+  "reset_status_project": "build/c9_reset_status_20261101",
+  "reset_status_state": "KEY0_RETEST_COMPLETE_CALIBRATION_INCOMPLETE",
+  "reset_status_result": "logs/c9_reset_status_20261101/result.json",
+  "current_board_state": "C10_SPI_FIXED_C7",
+  "next_probe_project": "build/c9_ddr_probe_20261101",
+  "ddr_probe_summary": "logs/c9_ddr_probe_20261101/summary.json",
+  "nopack_project": "build/c9_ddr_probe_nopack_20261101",
+  "last_verified_board_state": "C10_SPI_FIXED_C7",
+  "board_connected": true,
+  "offline_readiness": "logs/c9_offline_readiness_20261102.json",
+  "board_fix_summary": "logs/c9_display_board_20261102.json",
+  "active_c9_profile": "config/c9_active_profile.json",
+  "pattern_video_concurrency_passed": true
+}

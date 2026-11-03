@@ -1,0 +1,19 @@
+{
+  "status": "PASS_OFFLINE_IDENTITY_CHECKS",
+  "hardware_accessed": false,
+  "board_test_passed": false,
+  "checks": [
+    "c7_board_diag: frozen firmware and no hardware access",
+    "c9_dma_diag: frozen firmware and no hardware access",
+    "c9_live_person_detect: frozen firmware and no hardware access",
+    "image_tamper: rejected before hardware",
+    "source_tamper: rejected before hardware",
+    "missing_image_binding: rejected before hardware",
+    "pending_audit: rejected before hardware"
+  ],
+  "source_sha256": {
+    "tools/test_c9_probe_preflight.py": "730e6e5c9b50c940b9718c7b2e50ec3840b1fbd5e858ae1bcb3733d2c7dcaa26",
+    "tools/c9_probe_image.py": "95b88e718cf249bfd86c5df7c689cd30c8c9d0248dd0b2fb22a05dfe04d3cdd0",
+    "tools/run_ram_diagnostic.py": "b184f04cfa42509bc4b56ad721c7cf627b9cbaeea22cb7a0428a840d09201ea6"
+  }
+}

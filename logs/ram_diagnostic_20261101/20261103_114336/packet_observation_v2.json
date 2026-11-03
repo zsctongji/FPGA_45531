@@ -1,0 +1,159 @@
+{
+  "status": "CAPTURED_PACKET_STATUS_ONLY",
+  "missing": [],
+  "real_camera_verified": false,
+  "board_acceptance_passed": false,
+  "flash_written": false,
+  "native_before": {
+    "word_count": 2400,
+    "datatype": 43,
+    "pixel_per_clk": 4,
+    "vc": 0,
+    "metadata_seen": true,
+    "vs_level": true,
+    "hs_level": false,
+    "camera_fault": false,
+    "vs_edge_mod16": 9,
+    "hs_edge_mod16": 1
+  },
+  "native_after": {
+    "word_count": 2400,
+    "datatype": 43,
+    "pixel_per_clk": 4,
+    "vc": 0,
+    "metadata_seen": true,
+    "vs_level": true,
+    "hs_level": false,
+    "camera_fault": false,
+    "vs_edge_mod16": 2,
+    "hs_edge_mod16": 1
+  },
+  "source_frames": 294,
+  "format_errors": 293,
+  "overflow_frames": 0,
+  "a_completed": 0,
+  "width": 0,
+  "segments": 0,
+  "segments_clipped": false,
+  "capture_record_seen": true,
+  "capture_record_complete": false,
+  "source_flags_hex": "00000088",
+  "uart_sha256": "8f63a5821ee758bf55a5d17de55cc580aa0caaa75f398b0e4742066844a11c97",
+  "attempt_sha256": "afe54e433bdc7e4c575c84c0d37592442294403fd6f75bd5bace9fe48b281b5b",
+  "fpga_image_sha256": "e6637e93edccaa5232e9a3ed852932e7508d6f17cfac4bd5edb633ce1011ed20",
+  "scope": "Diagnostic packet/header and edge observations only; Modulo-16 edge counts can wrap and cannot establish line counts or absence of activity. Metadata is last valid payload. Cross-domain observations are not simultaneous.",
+  "snapshots": {
+    "before": {
+      "start": 874,
+      "end": 1014,
+      "words": {
+        "0": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          56,
+          0,
+          0
+        ],
+        "1": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "2": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "3": [
+          2147969997,
+          2013607940,
+          2097205765,
+          1397952512,
+          1,
+          0,
+          0,
+          0
+        ],
+        "4": [
+          3240823136,
+          3384934545,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "after": {
+      "start": 11024,
+      "end": 11155,
+      "words": {
+        "0": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          665,
+          0,
+          0
+        ],
+        "1": [
+          294,
+          293,
+          0,
+          0,
+          0,
+          0,
+          0,
+          136
+        ],
+        "2": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "3": [
+          2147969997,
+          2013607940,
+          2097205765,
+          1397952512,
+          1,
+          0,
+          0,
+          0
+        ],
+        "4": [
+          3240823136,
+          3384934433,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  }
+}

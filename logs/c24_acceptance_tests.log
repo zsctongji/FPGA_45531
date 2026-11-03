@@ -1,0 +1,26 @@
+parser_fixtures
+......................................
+----------------------------------------------------------------------
+Ran 38 tests in 0.129s
+
+OK
+actual_vendor_formatter
+test_c24_uart_format.cc
+micro_string.cc
+projects\03_tinyml\embedded_sw\sapphire_soc_tinyml\software\standalone\tinyml_pdti8\src\tensorflow\lite\micro\micro_string.cc(79): warning C4244: “=”: 从“int32_t”转换到“char”，可能丢失数据
+projects\03_tinyml\embedded_sw\sapphire_soc_tinyml\software\standalone\tinyml_pdti8\src\tensorflow\lite\micro\micro_string.cc(81): warning C4244: “=”: 从“int”转换到“char”，可能丢失数据
+projects\03_tinyml\embedded_sw\sapphire_soc_tinyml\software\standalone\tinyml_pdti8\src\tensorflow\lite\micro\micro_string.cc(96): warning C4146: 一元负运算符应用于无符号类型，结果仍为无符号类型
+projects\03_tinyml\embedded_sw\sapphire_soc_tinyml\software\standalone\tinyml_pdti8\src\tensorflow\lite\micro\micro_string.cc(143): warning C4244: “参数”: 从“__int64”转换到“int”，可能丢失数据
+projects\03_tinyml\embedded_sw\sapphire_soc_tinyml\software\standalone\tinyml_pdti8\src\tensorflow\lite\micro\micro_string.cc(146): warning C4244: “参数”: 从“__int64”转换到“int”，可能丢失数据
+projects\03_tinyml\embedded_sw\sapphire_soc_tinyml\software\standalone\tinyml_pdti8\src\tensorflow\lite\micro\micro_string.cc(187): warning C4244: “参数”: 从“__int64”转换到“int”，可能丢失数据
+projects\03_tinyml\embedded_sw\sapphire_soc_tinyml\software\standalone\tinyml_pdti8\src\tensorflow\lite\micro\micro_string.cc(188): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
+projects\03_tinyml\embedded_sw\sapphire_soc_tinyml\software\standalone\tinyml_pdti8\src\tensorflow\lite\micro\micro_string.cc(211): warning C4244: “参数”: 从“__int64”转换到“int”，可能丢失数据
+projects\03_tinyml\embedded_sw\sapphire_soc_tinyml\software\standalone\tinyml_pdti8\src\tensorflow\lite\micro\micro_string.cc(212): warning C4244: “参数”: 从“__int64”转换到“int”，可能丢失数据
+projects\03_tinyml\embedded_sw\sapphire_soc_tinyml\software\standalone\tinyml_pdti8\src\tensorflow\lite\micro\micro_string.cc(280): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+projects\03_tinyml\embedded_sw\sapphire_soc_tinyml\software\standalone\tinyml_pdti8\src\tensorflow\lite\micro\micro_string.cc(291): warning C4244: “=”: 从“int32_t”转换到“char”，可能丢失数据
+正在生成代码...
+PASS C24 actual vendor formatter: prefix=113 suffix=119 combined=232 bytes, max uint32, 256-byte per-call bound.
+capture_syntax
+PASS capture syntax
+capture_pre_open_guard
+PASS rejected before opening port

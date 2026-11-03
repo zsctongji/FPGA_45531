@@ -1,0 +1,66 @@
+{
+  "status": "OFFLINE_READY_BOARD_REQUIRED",
+  "hardware_accessed": false,
+  "board_test_passed": false,
+  "real_camera_verified": false,
+  "flash_written": false,
+  "controlled_change": "CSI HS payload count and valid-run count into reserved phy status bits; existing capture geometry retained; pixel/control/DDR/clock/pin paths unchanged",
+  "image_sha256": "da4d195aa3181ff382b043f5c32f68482352a8f187a2da89965e012880ad73b4",
+  "audit_path": "build/c9_phy_geometry_image_20261102/implementation_audit.json",
+  "audit_sha256": "5f34943de1dcfb1bbfd46a9601dc8b9744d91918d04389858b9b88d7dae9525e",
+  "firmware_build_record_sha256": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc",
+  "active_profile_sha256": "29d90baa2c3721a2e440518b5aa4e20282003718408be57d0403f020dbe449fb",
+  "active_image_sha256": "ea542809a0a884fd2d3dbc89a22cdc0d7c891e424bd1cc1179194a0934f5ee6b",
+  "active_profile_changed": false,
+  "ddr_parameters_changed": false,
+  "calibration_algorithm_changed": false,
+  "acceptance_criteria_changed": false,
+  "timing": {
+    "setup": {
+      "rows": 30,
+      "minimum_slack_ns": 0.223,
+      "violations": []
+    },
+    "hold": {
+      "rows": 30,
+      "minimum_slack_ns": 0.026,
+      "violations": []
+    }
+  },
+  "xlrs": 60571,
+  "xlrs_available": 60800,
+  "cdc_pointer_bits": 66,
+  "hypothesis": "Capture-domain fragmentation is already measured; this observer will distinguish native CSI HS/valid bursts from downstream fragmentation. No new board evidence.",
+  "evidence_sha256": {
+    "build/c9_phy_geometry_image_20261102/implementation_audit.json": "5f34943de1dcfb1bbfd46a9601dc8b9744d91918d04389858b9b88d7dae9525e",
+    "logs/c9_phy_geometry_tests_20261102.json": "79941f550a1bd76abc1cfc7e5aabeba91d25b73b50054fa4b949dda56748104e",
+    "logs/c9_phy_geometry_decode_tests_20261102.json": "b62437fde65b7fd79d17f8dc3169356fab1757edea3cd97b6d3cfeae2321be6c",
+    "firmware/c9_camera_geometry/BUILD_RECORD.json": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc",
+    "tools/report_c9_phy_geometry.py": "53e9508f080d048e72691e4d8a74bfb33d50947f211ec4490905e7d7710268c2",
+    "tools/run_c9_phy_geometry.py": "c707a56dacf4c01a6236a9b9a9358a02cc1948c7e8ea217394bcd2010545906e",
+    "tools/check_c9_phy_geometry.py": "374336a4d94f5a14ba42bf34d00660843f5606937614f0bf36cf4d533a2e3345"
+  },
+  "packaged_sha256": {
+    "IMPLEMENTATION_AUDIT.json": "5f34943de1dcfb1bbfd46a9601dc8b9744d91918d04389858b9b88d7dae9525e",
+    "soc_physical.bit": "da4d195aa3181ff382b043f5c32f68482352a8f187a2da89965e012880ad73b4",
+    "soc_physical.bus_hold.rpt": "6a1fd8f2b1ef1dd98a0c9cc2a4234087ca9a6d648b19f1ad8fd130c5bffbb7a2",
+    "soc_physical.bus_setup.rpt": "142c23aefc3656f9f0b3e6bc544f26488e76049d6e1272726b0481192e758ba0",
+    "soc_physical.hex": "e9452b75615d784524ee72203d270d3b9a5219a943d91de057068df4e730c2c8",
+    "soc_physical.pinout.csv": "43fc8e5a8b24cf355fc8596b7a5f92cb6d613c7e8b4641bfb3ee5d1ab4da9e17",
+    "soc_physical.place.rpt": "fd53529c432024d075b5a4d5375ad7857763efd1e0fccd4053f65bcaaa9ffe45",
+    "soc_physical.review_timing.rpt": "6212f2fb289c08730b2119e365639d6fe82e88f0654d9530cecae751bde104ca"
+  },
+  "preflight": {
+    "status": "PASS_OFFLINE_PREFLIGHT",
+    "hardware_accessed": false,
+    "flash_written": false,
+    "board_test_passed": false,
+    "firmware_version": "c9geom-3bcf05e8d3894dc3",
+    "firmware_sha256": "f9955a3639543272716f1ef998156f6aae05d297c8841eb7092af8ef57ced9a5",
+    "entry": "0x1000000",
+    "probe_variant": "geometry_phy",
+    "fpga_image_sha256": "da4d195aa3181ff382b043f5c32f68482352a8f187a2da89965e012880ad73b4",
+    "implementation_audit_sha256": "5f34943de1dcfb1bbfd46a9601dc8b9744d91918d04389858b9b88d7dae9525e",
+    "qualified_profile_sha256": null
+  }
+}

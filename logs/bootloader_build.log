@@ -1,0 +1,13 @@
+﻿CC src/main.c
+CC ../common/start.S
+LD bootloader
+make.exe : D:/FPGA_2026_T3_P3/tools/riscv_gcc/13.4.0/bin/../lib/gcc/riscv-none-elf/13.4.0/../../../../riscv-none-elf/bi
+n/ld.exe: warning: build_ours/bootloader.elf has a LOAD segment with RWX permissions
+At D:\FPGA_2026_T3_P3\tools\build_tinyml_bootloader.ps1:24 char:10
++     try {& (Join-Path $makeRoot 'bin\make.exe') @args 2>&1 | Out-File ...
++          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (D:/FPGA_2026_T3...RWX permissions:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Memory region         Used Size  Region Size  %age Used
+             ram:         944 B         4 KB     23.05%

@@ -1,0 +1,1 @@
+PASS C2/C3 RV32: 8 objects; checked clock, I2C/GPIO and thermal policy; exact fence/invalidate/fence sequence verified; not executed on board.

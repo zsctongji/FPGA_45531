@@ -1,0 +1,21 @@
+{
+  "project": "tinyml",
+  "source_project": "D:\\FPGA_2026_T3_P3\\projects\\03_tinyml\\Ti60F225_tinyml_helloworld.xml",
+  "compiled_at": "2026-10-18T14:17:36.7814646+08:00",
+  "minimum_setup_slack_ns": 0.144,
+  "minimum_hold_slack_ns": 0.026,
+  "artifacts": [
+    {
+      "file": "D:\\FPGA_2026_T3_P3\\fpga_bitstreams\\tinyml_225mhz\\Ti60F225_tinyml_helloworld.hex",
+      "bytes": 2508210,
+      "sha256": "cec861a1816c12e1bdbd5cbfc6cd726b7eeb995a98e3e54b09ea50ede5249c29"
+    },
+    {
+      "file": "D:\\FPGA_2026_T3_P3\\fpga_bitstreams\\tinyml_225mhz\\Ti60F225_tinyml_helloworld.bit",
+      "bytes": 2508150,
+      "sha256": "06ac9b287c841358e3da1dd05f33e0d2d3741fd20f4a051e8791798ee318b8b1"
+    }
+  ],
+  "physical_board_test_passed": false,
+  "scope": "Independent bring-up example; not integrated competition system"
+}

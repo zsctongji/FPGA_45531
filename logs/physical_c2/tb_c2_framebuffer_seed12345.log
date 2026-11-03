@@ -1,0 +1,8 @@
+CHECK framebuffer frame0 + AI readback
+CHECK simultaneous source/display/AI/CPU/TinyML
+CHECK no-free-bank drop
+CHECK malformed recovery
+CHECK underflow recovery
+CHECK BRESP/RRESP and source-overflow recovery
+PASS tb_c2_framebuffer geometry=384x216 stride=384 bank_pitch=86016 full_bytes=414720 display_bytes=663552 cpu_bursts=28042 tinyml_bursts=28042 overlap_ai=63 overlap_rw=117113 max_aw_wait=116350 max_ar_wait=120 cpu_max_wait=103 tinyml_max_wait=100 source_verdict final_B_fence triple_buffer repeat drop malformed underflow BRESP RRESP source_overflow common_reset single_DDR synthetic_masters
+build/physical_20261031/c2_regression/sim/tb_c2_framebuffer.sv:859: $finish called at 39497614000 (1ps)

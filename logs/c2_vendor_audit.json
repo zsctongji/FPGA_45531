@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Vendor APB address is 16 bits",
+    "BSP APB0 aperture is 0xf8100000",
+    "Pinned D-cache line size is 64 bytes",
+    "Vendor SDK documents the whole-cache custom instruction",
+    "Generated CPU decodes the custom cache instruction",
+    "CPU instruction stalls until cache flush ready",
+    "APB aperture belongs to the generated CPU IO/cache-bypass range",
+    "Actual cache tag format contains address/error/valid; tested flusher clears valid bits",
+    "C backend uses volatile assembly and compiler memory clobber",
+    "Overlay declares APB address/data widths explicitly",
+    "Overlay contains one DDR controller",
+    "DDR ID width explicitly matches vendor beta output width",
+    "CPU response IDs restored by serializer",
+    "CPU write errors are connected rather than discarded",
+    "S1 has an actual producer in the separate overlay",
+    "Native top connects source pixels to pinned A capture and shared video time",
+    "No external grid/timestamp override bypasses source capture",
+    "Native full-frame writer and scan reader connect to the C2 video AXI port",
+    "Native C3 page decoded separately and wired to the same C2 APB clock epoch",
+    "Native C3 pad interface exports open-drain OE rather than driven high data",
+    "Video master is internal and display RGB/raster is exposed at the A boundary",
+    "APB offset matches C header: ID",
+    "APB offset matches C header: VERSION",
+    "APB offset matches C header: STATUS",
+    "APB offset matches C header: COMMAND",
+    "APB offset matches C header: GENERATION",
+    "APB offset matches C header: ACK",
+    "APB offset matches C header: RESPONSE",
+    "APB offset matches C header: RESPONSE_GENERATION",
+    "APB offset matches C header: STATES",
+    "APB offset matches C header: DROPPED",
+    "APB offset matches C header: PROTOCOL_ERROR",
+    "APB offset matches C header: MAP_ENABLED",
+    "APB offset matches C header: SHARED_BASE",
+    "APB offset matches C header: SHARED_BYTES",
+    "APB offset matches C header: VIDEO_BASE",
+    "APB offset matches C header: VIDEO_BYTES",
+    "APB offset matches C header: DESCRIPTOR",
+    "APB offset matches C header: CAPABILITIES",
+    "APB offset matches C header: TIME_MS",
+    "APB offset matches C header: TIME_STATUS",
+    "APB offset matches C header: TIME_HZ",
+    "APB offset matches C header: TIME_KIND",
+    "Native input/timestamp contract recorded",
+    "Three GRAY8 banks fit provisional video aperture",
+    "Original TinyML top identity unchanged after overlay generation"
+  ],
+  "board_verified": false,
+  "CPU_instruction_execution_simulated": false,
+  "cache_scope": "RX-only DMA image slots; global invalidate on pinned core; no generic clean implementation",
+  "files": {
+    "soc": {
+      "path": "projects/03_tinyml/ip/sapphire_soc/sapphire_soc.v",
+      "sha256": "87c00873d2efc6b5bbb5336c1a1046eb0a21cf89c9d971f6c7cf703e0d2e6733"
+    },
+    "header": {
+      "path": "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/bsp/efinix/EfxSapphireSoc/include/soc.h",
+      "sha256": "650185170e5f200d5672fd9bca1252d8420e452b8b453288d7f48b3619afae66"
+    },
+    "vendor_cache_api": {
+      "path": "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/vexriscv.h",
+      "sha256": "e2cfa34325a44f3fc84dc208d94beafe5693f0ad8eb2e5fc1a2abbbee6fa95fa"
+    },
+    "original_top": {
+      "path": "projects/03_tinyml/src/tinyml_soc_top.v",
+      "sha256": "174a8eadd8da0fbd78d249c3ac0db4c17914ed14718b1eb95412a7683a91a5cd"
+    },
+    "overlay": {
+      "path": "projects/06_soc_c2/integration/c2_tinyml_soc_top.v",
+      "sha256": "3e842a10829f50e3d6c650fa61031f4d91b1be014cf575243d26c705be0403cc"
+    },
+    "backend": {
+      "path": "team_work/03_ai_soc/c2/c2_sapphire.c",
+      "sha256": "6bca6d86412d45287533209c41845486355928515fd252c6bc38e4f1ae777b77"
+    },
+    "driver_header": {
+      "path": "team_work/03_ai_soc/c2/c2_driver.h",
+      "sha256": "70e30ebfb5b6fd39122aba49eccde4668199aeff8f306fba45f4a6a2d490d761"
+    },
+    "apb": {
+      "path": "projects/06_soc_c2/rtl/c2_apb_control.sv",
+      "sha256": "0be84c12bb8376f94ecff2de24bfbef85cbb3389a4eefa6e116bb9800bf5eb7d"
+    }
+  }
+}

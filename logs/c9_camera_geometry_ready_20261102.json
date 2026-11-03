@@ -1,0 +1,64 @@
+{
+  "status": "OFFLINE_READY_BOARD_REQUIRED",
+  "board_test_passed": false,
+  "real_camera_verified": false,
+  "flash_written": false,
+  "controlled_change": "Connect existing capture width/height/complete to reserved upper source_flags via video-domain observer; no pixel/control/DDR/clock/pin changes",
+  "image_sha256": "0f6285a20a6f1352ea578b09ec37d588c62af3e3c52737c47fd34b33064c3293",
+  "audit_path": "build/c9_camera_geometry_image_20261102/implementation_audit.json",
+  "audit_sha256": "a9714500ce6585a50388133bb8fa02e639ad01e14b9c1073d659e5d9caa98543",
+  "firmware_build_record_sha256": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc",
+  "active_profile_sha256": "29d90baa2c3721a2e440518b5aa4e20282003718408be57d0403f020dbe449fb",
+  "active_image_sha256": "ea542809a0a884fd2d3dbc89a22cdc0d7c891e424bd1cc1179194a0934f5ee6b",
+  "active_profile_changed": false,
+  "ddr_parameters_changed": false,
+  "calibration_algorithm_changed": false,
+  "acceptance_criteria_changed": false,
+  "timing": {
+    "setup": {
+      "rows": 30,
+      "minimum_slack_ns": 0.115,
+      "violations": []
+    },
+    "hold": {
+      "rows": 30,
+      "minimum_slack_ns": 0.026,
+      "violations": []
+    }
+  },
+  "xlrs": 60582,
+  "xlrs_available": 60800,
+  "cdc_pointer_bits": 66,
+  "hypothesis": "Synthetic valid-data gaps fragment lines; actual CSI signal relationship still requires board measurement",
+  "evidence_sha256": {
+    "build/c9_camera_geometry_image_20261102/implementation_audit.json": "a9714500ce6585a50388133bb8fa02e639ad01e14b9c1073d659e5d9caa98543",
+    "logs/c9_camera_geometry_tests_20261102.json": "8601b974611a270f3f3b929ddccd5c19e39003cf6b18efd1f15bbb12c99b7368",
+    "logs/c9_geometry_decode_tests_20261102.json": "1af4bb18be0838638703659f385034d807cdee878d40f35ffff59bad1ed4c150",
+    "firmware/c9_camera_geometry/BUILD_RECORD.json": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc",
+    "tools/report_c9_camera_geometry.py": "2cb563495dabc94ab0dabf387756792cc75bb3ad7352924f7f18298493a0e29c",
+    "tools/run_c9_geometry.py": "6394b41503d5e2e31089b87969659d54a5b32c738344480b30d250d1925f1813",
+    "tools/check_c9_geometry.py": "e43cbbcece76d7ab76ffc26528e6ef382a8ba26ed5a56948087900179659aef2"
+  },
+  "packaged_sha256": {
+    "soc_physical.bit": "0f6285a20a6f1352ea578b09ec37d588c62af3e3c52737c47fd34b33064c3293",
+    "soc_physical.bus_hold.rpt": "0bec1843cfa4271c9885c95aec82c2380e61d16d83888a5fd27516b477dd391b",
+    "soc_physical.bus_setup.rpt": "1824209d0e6afd2ba5dd074d83b0f4ba514caa2b24068db594d7bc7942aa3375",
+    "soc_physical.hex": "5805967dea942688411f5b12e7b5af18022f99fbf08cd1ca2e299c82e7c7f8b8",
+    "soc_physical.pinout.csv": "128cd4ca50dd6b168c962d85133cd937399985ca82393d1819a86aed0131caeb",
+    "soc_physical.place.rpt": "1e5d0b4ced6c4766075252f1cd1c1d82158397d1cef42c9a6690e9d290cdded3",
+    "soc_physical.review_timing.rpt": "76b8ab79b4d6cdfd3ee10c77afff9aa3da7dbf8e2084160e9ce9045b83b25610"
+  },
+  "preflight": {
+    "status": "PASS_OFFLINE_PREFLIGHT",
+    "hardware_accessed": false,
+    "flash_written": false,
+    "board_test_passed": false,
+    "firmware_version": "c9geom-3bcf05e8d3894dc3",
+    "firmware_sha256": "f9955a3639543272716f1ef998156f6aae05d297c8841eb7092af8ef57ced9a5",
+    "entry": "0x1000000",
+    "probe_variant": "geometry",
+    "fpga_image_sha256": "0f6285a20a6f1352ea578b09ec37d588c62af3e3c52737c47fd34b33064c3293",
+    "implementation_audit_sha256": "a9714500ce6585a50388133bb8fa02e639ad01e14b9c1073d659e5d9caa98543",
+    "qualified_profile_sha256": null
+  }
+}

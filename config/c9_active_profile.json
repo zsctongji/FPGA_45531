@@ -1,0 +1,31 @@
+{
+  "status": "QUALIFIED_DDR_DIAGNOSTIC",
+  "variant": "display",
+  "synthesis_mode": "cong",
+  "pack_luts_to_comb4": 0,
+  "pnr_place_mode": "CONGESTION_2",
+  "pnr_seed": 2,
+  "image_sha256": "ea542809a0a884fd2d3dbc89a22cdc0d7c891e424bd1cc1179194a0934f5ee6b",
+  "implementation_audit_sha256": "bc859f15627193c5d4d6c6da02db015236afc2319537496df7b60b0fa18645fb",
+  "calibration_attempts": [
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261102_192944/attempt.json",
+      "sha256": "f4d41f9977c35d22f42b1267ec16225d0ba21c71ecfeb6099ad0d70e7826f1ac"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261102_193339/attempt.json",
+      "sha256": "3fc989c5a6d1b4880c22c5597fb41b8183a38531171c5cb1881a464fec860710"
+    }
+  ],
+  "ddr_parameters_changed": false,
+  "calibration_algorithm_changed": false,
+  "acceptance_criteria_changed": false,
+  "flash_boot_image": false,
+  "c3_present": false,
+  "rom_entry_parked": true,
+  "whole_system_acceptance_passed": false,
+  "scope": "C9 diagnostic with startup scanout fix; original strict DMA/video checker PASS; C3 and Flash auto-boot excluded",
+  "display_startup_guard": true,
+  "dma_video_acceptance_passed": true,
+  "dma_acceptance_attempt": "logs/ram_diagnostic_20261101/20261102_193055/attempt.json"
+}

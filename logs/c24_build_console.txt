@@ -1,0 +1,8 @@
+C24 compile 20/122
+C24 compile 40/122
+C24 compile 60/122
+C24 compile 80/122
+C24 compile 100/122
+C24 compile 120/122
+C24 compile 122/122
+PASS linked C24 firmware: ELF32 RV32IM entry 0x1000; live_enabled=False; no board execution.

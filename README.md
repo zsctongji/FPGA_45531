@@ -1,3 +1,22 @@
+# FPGA 团队工程与源码交接
+
+2026-11-04：已将原 `zsctongji/FPGA_cooperation` 仓库迁入本仓库。
+
+## 原工程直接浏览
+
+- [团队分工与接口](team_work/README.md)
+- [视频与显示 A](team_work/01_video/)
+- [传感器与报警 B](team_work/02_sensors_alarm/)
+- [AI 与 SoC C](team_work/03_ai_soc/)
+- [原项目首页与构建入口](docs/migration_20261104/source_FPGA_cooperation/README.md)
+- [迁移说明](MIGRATION_20261104.md)
+
+原仓库两个分支 `codex/team-handoff`、`codex/a-video-20261029` 及其全部提交历史保留。
+`main` 同时包含原默认分支的展开文件，以及本仓库此前上传的 A 与 A/B/C 源码压缩包。
+以下保留原新仓库下载说明；工程的完成状态仍以各模块原始记录为准。
+
+---
+
 # FPGA A/B/C 源码快照
 
 2026-11-04 整理的团队源码压缩包，包含 A/B/C 协作源码、本机最新 C 侧 RTL/固件、接口说明、验证与构建脚本，以及当前摄像头预览工程的配套 IP 输入。

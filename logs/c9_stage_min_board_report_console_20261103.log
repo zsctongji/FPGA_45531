@@ -1,0 +1,176 @@
+{
+  "status": "STAGE_DIAGNOSTIC_VIDEO_ACCEPTANCE_PENDING",
+  "trials": [
+    {
+      "result": "logs/c9_stage_min_board_20261103/20261103_160131/result.json",
+      "after": {
+        "stages": {
+          "raw_2ppc": {
+            "maximum_contiguous_cycles": 36,
+            "maximum_at_least": false,
+            "segments": 4095,
+            "segments_at_least": true
+          },
+          "rgb_de": {
+            "maximum_contiguous_cycles": 36,
+            "maximum_at_least": false,
+            "segments": 4095,
+            "segments_at_least": true
+          },
+          "rgb_valid": {
+            "maximum_contiguous_cycles": 36,
+            "maximum_at_least": false,
+            "segments": 4095,
+            "segments_at_least": true
+          },
+          "rgb_joint": {
+            "maximum_contiguous_cycles": 36,
+            "maximum_at_least": false,
+            "segments": 4095,
+            "segments_at_least": true
+          },
+          "gray_2ppc": {
+            "maximum_contiguous_cycles": 36,
+            "maximum_at_least": false,
+            "segments": 4095,
+            "segments_at_least": true
+          },
+          "native_4ppc": {
+            "maximum_contiguous_cycles": 18,
+            "maximum_at_least": false,
+            "segments": 4095,
+            "segments_at_least": true
+          },
+          "pixel_1ppc": {
+            "maximum_contiguous_cycles": 72,
+            "maximum_at_least": false
+          },
+          "source_1ppc": {
+            "maximum_contiguous_cycles": 72,
+            "maximum_at_least": false
+          }
+        },
+        "native": {
+          "run": true,
+          "vs_seen": true,
+          "hs_seen": true,
+          "image_seen": true,
+          "image_valid_outside_hs": false,
+          "non4_image_ppc_seen": false,
+          "other_enabled_payload_seen": false,
+          "raw_overflow_seen": false,
+          "last_image_wc": 2400
+        },
+        "isp": {
+          "run": true,
+          "raw_vs_seen": true,
+          "rgb_vs_seen": true,
+          "gray_vs_seen": true,
+          "rgb_de_without_valid_seen": false,
+          "rgb_valid_without_de_seen": false,
+          "raw_overflow_seen": false,
+          "raw_de_seen": true
+        },
+        "video": {
+          "run": true,
+          "pattern_mode": false,
+          "fault_gate": false,
+          "config_valid": true,
+          "time_valid": true,
+          "pixel_vs_seen": true,
+          "source_vs_seen": true,
+          "source_de_seen": true
+        }
+      },
+      "width": 72,
+      "source_frames": 252,
+      "format_errors": 251
+    },
+    {
+      "result": "logs/c9_stage_min_board_20261103/20261103_160412/result.json",
+      "after": {
+        "stages": {
+          "raw_2ppc": {
+            "maximum_contiguous_cycles": 36,
+            "maximum_at_least": false,
+            "segments": 4095,
+            "segments_at_least": true
+          },
+          "rgb_de": {
+            "maximum_contiguous_cycles": 36,
+            "maximum_at_least": false,
+            "segments": 4095,
+            "segments_at_least": true
+          },
+          "rgb_valid": {
+            "maximum_contiguous_cycles": 36,
+            "maximum_at_least": false,
+            "segments": 4095,
+            "segments_at_least": true
+          },
+          "rgb_joint": {
+            "maximum_contiguous_cycles": 36,
+            "maximum_at_least": false,
+            "segments": 4095,
+            "segments_at_least": true
+          },
+          "gray_2ppc": {
+            "maximum_contiguous_cycles": 36,
+            "maximum_at_least": false,
+            "segments": 4095,
+            "segments_at_least": true
+          },
+          "native_4ppc": {
+            "maximum_contiguous_cycles": 18,
+            "maximum_at_least": false,
+            "segments": 4095,
+            "segments_at_least": true
+          },
+          "pixel_1ppc": {
+            "maximum_contiguous_cycles": 72,
+            "maximum_at_least": false
+          },
+          "source_1ppc": {
+            "maximum_contiguous_cycles": 72,
+            "maximum_at_least": false
+          }
+        },
+        "native": {
+          "run": true,
+          "vs_seen": true,
+          "hs_seen": true,
+          "image_seen": true,
+          "image_valid_outside_hs": false,
+          "non4_image_ppc_seen": false,
+          "other_enabled_payload_seen": false,
+          "raw_overflow_seen": false,
+          "last_image_wc": 2400
+        },
+        "isp": {
+          "run": true,
+          "raw_vs_seen": true,
+          "rgb_vs_seen": true,
+          "gray_vs_seen": true,
+          "rgb_de_without_valid_seen": false,
+          "rgb_valid_without_de_seen": false,
+          "raw_overflow_seen": false,
+          "raw_de_seen": true
+        },
+        "video": {
+          "run": true,
+          "pattern_mode": false,
+          "fault_gate": false,
+          "config_valid": true,
+          "time_valid": true,
+          "pixel_vs_seen": true,
+          "source_vs_seen": true,
+          "source_de_seen": true
+        }
+      },
+      "width": 0,
+      "source_frames": 297,
+      "format_errors": 296
+    }
+  ],
+  "final_restore": "logs/c10_warm_boot_20261101/20261103_160518/attempt.json"
+}

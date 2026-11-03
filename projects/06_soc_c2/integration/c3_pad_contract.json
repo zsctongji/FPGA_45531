@@ -1,0 +1,52 @@
+{
+  "status": "REFERENCE_ONLY_NOT_APPLIED",
+  "requires_final_board_constraints": true,
+  "open_drain_mapping": {
+    "output_data": 0,
+    "output_enable": "drive_low (active high)",
+    "input": "pad input buffer; not the output intent"
+  },
+  "pins": [
+    {
+      "role": "sensor_scl",
+      "package_candidate": "B3",
+      "connector_candidate": "J28.37",
+      "read_port": "c3_sensor_scl_read",
+      "oe_port": "c3_sensor_scl_drive_low"
+    },
+    {
+      "role": "sensor_sda",
+      "package_candidate": "C3",
+      "connector_candidate": "J28.39",
+      "read_port": "c3_sensor_sda_read",
+      "oe_port": "c3_sensor_sda_drive_low"
+    },
+    {
+      "role": "buzzer",
+      "package_candidate": "B5",
+      "connector_candidate": "J28.38",
+      "output_port": "c3_buzzer",
+      "reset_level": 0,
+      "active_polarity_verified": false
+    },
+    {
+      "role": "alarm_led",
+      "package_candidate": null,
+      "output_port": "c3_alarm_led",
+      "active_polarity_verified": false
+    }
+  ],
+  "must_remove_conflicting_owners": [
+    "legacy LCD outputs on the same sensor pins",
+    "independent BQFAST SRAM design; replace only with the reviewed final integrated image"
+  ],
+  "electrical_required": [
+    "confirmed IO bank voltage and pull-ups",
+    "open-drain OE polarity and wired-AND bus",
+    "measured SCL/SDA rise/fall",
+    "buzzer polarity/cold-start behavior"
+  ],
+  "physical_cdc_signoff": false,
+  "native_pnr_passed": false,
+  "required_preverification_io_enable_tie": 0
+}

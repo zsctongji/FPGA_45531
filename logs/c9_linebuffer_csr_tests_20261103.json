@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "hardware_accessed": false,
+  "encrypted_CSI_behavior_simulated": false,
+  "cases": [
+    {
+      "top": "tb_csi_capture_gate",
+      "case": 0,
+      "evidence": "PASS tb_csi_capture_gate mode=0 AXI_separate_handshakes_W1C_readback_no_fresh_error_masking\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\camera_geometry\\tb_csi_capture_gate.sv:32: $finish called at 2530000 (1ps)\n"
+    },
+    {
+      "top": "tb_csi_capture_gate",
+      "case": 1,
+      "evidence": "PASS tb_csi_capture_gate mode=1 AXI_separate_handshakes_W1C_readback_no_fresh_error_masking\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\camera_geometry\\tb_csi_capture_gate.sv:32: $finish called at 2530000 (1ps)\n"
+    },
+    {
+      "top": "tb_csi_capture_gate",
+      "case": 2,
+      "evidence": "PASS tb_csi_capture_gate mode=2 AXI_separate_handshakes_W1C_readback_no_fresh_error_masking\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\camera_geometry\\tb_csi_capture_gate.sv:32: $finish called at 2430000 (1ps)\n"
+    },
+    {
+      "top": "tb_csi_capture_gate",
+      "case": 3,
+      "evidence": "PASS tb_csi_capture_gate mode=3 AXI_separate_handshakes_W1C_readback_no_fresh_error_masking\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\camera_geometry\\tb_csi_capture_gate.sv:32: $finish called at 2430000 (1ps)\n"
+    },
+    {
+      "top": "tb_csi_capture_gate",
+      "case": 4,
+      "evidence": "PASS tb_csi_capture_gate mode=4 AXI_separate_handshakes_W1C_readback_no_fresh_error_masking\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\camera_geometry\\tb_csi_capture_gate.sv:32: $finish called at 2430000 (1ps)\n"
+    },
+    {
+      "top": "tb_raw10_linebuffer",
+      "case": 0,
+      "evidence": "PASS tb_raw10_linebuffer case=0 words=5760 vs=4 errors=00\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_linebuffer_csr_tests_20261103\\unit.sv:77: $finish called at 170200000 (1ps)\n"
+    },
+    {
+      "top": "tb_raw10_linebuffer",
+      "case": 1,
+      "evidence": "PASS tb_raw10_linebuffer case=1 words=0 vs=1 errors=02\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_linebuffer_csr_tests_20261103\\unit.sv:77: $finish called at 51780000 (1ps)\n"
+    },
+    {
+      "top": "tb_raw10_linebuffer",
+      "case": 2,
+      "evidence": "PASS tb_raw10_linebuffer case=2 words=0 vs=1 errors=04\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_linebuffer_csr_tests_20261103\\unit.sv:77: $finish called at 51780000 (1ps)\n"
+    },
+    {
+      "top": "tb_raw10_linebuffer",
+      "case": 3,
+      "evidence": "PASS tb_raw10_linebuffer case=3 words=0 vs=1 errors=08\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_linebuffer_csr_tests_20261103\\unit.sv:77: $finish called at 52660000 (1ps)\n"
+    },
+    {
+      "top": "tb_raw10_linebuffer",
+      "case": 4,
+      "evidence": "PASS tb_raw10_linebuffer case=4 words=1459 vs=1 errors=08\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_linebuffer_csr_tests_20261103\\unit.sv:77: $finish called at 83760000 (1ps)\n"
+    },
+    {
+      "top": "tb_raw10_linebuffer",
+      "case": 5,
+      "evidence": "PASS tb_raw10_linebuffer case=5 words=0 vs=1 errors=40\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_linebuffer_csr_tests_20261103\\unit.sv:77: $finish called at 43100000 (1ps)\n"
+    },
+    {
+      "top": "tb_raw10_linebuffer",
+      "case": 6,
+      "evidence": "PASS tb_raw10_linebuffer case=6 words=479 vs=1 errors=01\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_linebuffer_csr_tests_20261103\\unit.sv:77: $finish called at 79660000 (1ps)\n"
+    },
+    {
+      "top": "tb_raw10_linebuffer",
+      "case": 7,
+      "evidence": "PASS tb_raw10_linebuffer case=7 words=1459 vs=1 errors=10\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_linebuffer_csr_tests_20261103\\unit.sv:77: $finish called at 83360000 (1ps)\n"
+    },
+    {
+      "top": "tb_raw10_linebuffer",
+      "case": 8,
+      "evidence": "PASS tb_raw10_linebuffer case=8 words=5760 vs=4 errors=00\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_linebuffer_csr_tests_20261103\\unit.sv:77: $finish called at 171880000 (1ps)\n"
+    },
+    {
+      "top": "tb_raw10_linebuffer",
+      "case": 9,
+      "evidence": "PASS tb_raw10_linebuffer case=9 words=5760 vs=4 errors=00\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_linebuffer_csr_tests_20261103\\unit.sv:77: $finish called at 170660000 (1ps)\n"
+    },
+    {
+      "top": "tb_raw10_linebuffer",
+      "case": 10,
+      "evidence": "PASS tb_raw10_linebuffer case=10 words=0 vs=1 errors=02\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_linebuffer_csr_tests_20261103\\unit.sv:77: $finish called at 51780000 (1ps)\n"
+    }
+  ],
+  "source_sha256": {
+    "tools/test_c9_linebuffer_csr.py": "08d626e530c4159740dbbf405e4aeec99d7c90f3468af8cc796c6a200a282753",
+    "team_work/03_ai_soc/c9_live/camera_geometry/c9_csi_capture_gate.sv": "fd823e7c173c0e69fbea715d24ed48bbe6b2a560c7480a6b3478fc6f4f2c826b",
+    "team_work/03_ai_soc/c9_live/camera_geometry/tb_csi_capture_gate.sv": "573f5b45d4fd8f938e3d82763ffb1f638e9dca5c57f15bd48fba7a5a1c543cbb",
+    "team_work/03_ai_soc/c9_live/camera_geometry/c9_raw10_linebuffer_csr.sv": "b1062ed7366161d770de3cc130f11aa8385939905b6b98683dc3fb33b39c8411",
+    "team_work/03_ai_soc/c9_live/camera_geometry/tb_raw10_linebuffer.sv": "3cb551b2a5fbd0fa3a4b2cd39cbe76e0965f6f3b265d86ade776645ab76a494e"
+  },
+  "generated_sha256": {
+    "build/c9_linebuffer_csr_tests_20261103/unit.sv": "0beb63356e1e6d4c539e34c1e828ded19f588927d93d2872496b46394bd3c3c7"
+  }
+}

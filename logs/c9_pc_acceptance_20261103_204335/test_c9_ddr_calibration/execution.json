@@ -1,0 +1,9 @@
+{
+  "name": "test_c9_ddr_calibration",
+  "returncode": 0,
+  "reports": [
+    "logs/c9_pc_acceptance_20261103_204335/test_c9_ddr_calibration/c9_ddr_calibration_checker_tests_20261102.json"
+  ],
+  "script_sha256": "7856ba06300e5a3cd6995606294c54eac31cbdd5815962e7d41e48a4c234324f",
+  "hardware_accessed": false
+}

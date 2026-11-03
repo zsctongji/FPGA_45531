@@ -1,0 +1,645 @@
+{
+  "status": "PASS",
+  "started": "2026-10-31T11:57:56.5289622+08:00",
+  "scope": "C2 boundary logic synthesis only",
+  "project": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_native.xml",
+  "top": "c2_tinyml_soc_top",
+  "target": "native",
+  "device": "Ti60F225",
+  "physical_board_programmed": false,
+  "board_test_passed": false,
+  "full_soc_integrated": false,
+  "timing_or_cdc_signoff": false,
+  "artifacts": [
+    {
+      "sha256": "6ffe02d66ae3987eb617df4e73076b2678434950664b191a83023d844f1fa049",
+      "bytes": 697655,
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\outflow\\c2_native.map.rpt"
+    },
+    {
+      "sha256": "2ebae98d17f2d97b3d46f67f36d3a877b890da5d0932e9898eb0b8407282da8b",
+      "bytes": 122889138,
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\outflow\\c2_native.map.v"
+    },
+    {
+      "sha256": "12b04196c32c7f2923e19f315ce9de5e2ce4419ca6f68f7f0514dc4a710694f8",
+      "bytes": 332,
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\outflow\\debug_profile.mark_debug.json"
+    }
+  ],
+  "sources": [
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\debug_top.v",
+      "sha256": "9e46c35b561b07a675302be235d98bd3c23bbc7ef89506025c633b0a2cf51c3a"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\dma\\dma.v",
+      "sha256": "2e42c52ae319648580c25fd060f68258f51c06162974f0871ee5436b2eef02f9"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\hw_accel_dma_in_fifo\\hw_accel_dma_in_fifo.v",
+      "sha256": "6c0f298577c0d51d090d686110269ac6d01b88e97c81f764ff171fbcbb5d0b2c"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\hw_accel_dma_out_fifo\\hw_accel_dma_out_fifo.v",
+      "sha256": "58646cd0c1d62c453675c12bca6b7cc0d0f1d9fb16e0710bdd991f593f84e149"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v",
+      "sha256": "87c00873d2efc6b5bbb5336c1a1046eb0a21cf89c9d971f6c7cf703e0d2e6733"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_full_to_half_duplex.v",
+      "sha256": "a43794ba12a01484d794cf9575e1819a0a844d60dd538f789d6cd900957f00af"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\arbiter.v",
+      "sha256": "c9675a28cf7f640e8c94c82ca2982b8a95b1c7dc3cf5074f7aff24da0dfa96dd"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\axi_interconnect_beta.sv",
+      "sha256": "f0dd43346ff0f937621f56450abafc4e79e0bf893b4be041993b3c7a8d81bd88"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\axi_rdata_sfifo.v",
+      "sha256": "10297d6d63b520ae7d354bf37233d456c89c4ee40b01508fa4f4a5b0e81044d2"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\axi_wdata_sfifo.v",
+      "sha256": "4f811bcd05e68c1572a22f7072586f254d2d2e0d308d67c0f9818893f073f91c"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\crossbar.v",
+      "sha256": "63101c98a335ee5d5771f815f4fcab8cef2b7da76b3eebec4b5e6e7045afa1f5"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\fixed_priority_arbiter.v",
+      "sha256": "67d29383ddcf48612af659acc5388c1d939bc50deb2270d067c66f2993009a1e"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\lb_to_axi.v",
+      "sha256": "1355d186ad153573e2319b53760f90ba001cf5cda5fb3118d91ab2387a8e9a9a"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\master_coupler.v",
+      "sha256": "912b04fe64a891f1b77ab9d90fe0f57051854181562c440a2c2d752e724f8814"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\round_robin_priority_arbiter.v",
+      "sha256": "d001311049250eb9037167e61b6029f4463e2c2b4bcba4fc220c525b5e2fb416"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\slave_coupler_wrapper.v",
+      "sha256": "0c130f2627534e46d6f33c10464a0955c7bb8c085b26bd9ce65a086c3ec3e90a"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\slave_coupler.v",
+      "sha256": "391be140f77546d3347b99098f8a6db2a6c4e63f3faf0c4361f787dc5f6a1b6d"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v",
+      "sha256": "3774307c34b786070102e54ba2f704379930cd79e4844baa067383e1f8771215"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_reset_ctrl.v",
+      "sha256": "336c4d759b6822220e88f39121bd1446a97309acc6bf3b304a83690fe0bdbf49"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_simple_dual_port_ram.v",
+      "sha256": "55b7e6f51f6fd9f436cf88cb39c8bd011cf07912c7b7557509cfddf86044b770"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_true_dual_port_ram.v",
+      "sha256": "ec4cf65899bca7817d0fd2d44c64b623b9a7c1108758fc2135c4f0cfff8644c4"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\simple_dual_port_ram.v",
+      "sha256": "ecb40539c1a25bcf4917c6d492767d90886316f286b4f26ecb63f008c721ca2a"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\axi4_bus_ctl\\axi4_bus_ctl.v",
+      "sha256": "adc4180c51d6bc4b8932bae4b079573a8b442d3ddee614c8ec387b769264f76e"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\common\\efx_fifo_v2.3\\efx_fifo_wrapper.v",
+      "sha256": "1415901a8f83cefaaf8cd7c86a23fcfed85ff8335ce390a8d4ba2d54e5cf32d4"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_parameter.vh",
+      "sha256": "2c4c19966ecb897a477dcd7374dacc543c8cf54c9b128faf1a69685cb34f1d75"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v",
+      "sha256": "71b53e8a0861705fa7e2d8b38e684e0f0a9235db64a63f29046b2371963617e6"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\lb2_axi_clk.v",
+      "sha256": "f23d157e14f6b3ec8a34f53de5220a203a9cda5e05697e00a5ac2446a31bb513"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\local_bus_ctl\\local_bus_ctl.v",
+      "sha256": "e7a70405fe69373e06c21a974e9f6bd985b08cdebaa776d0f36c28515ab66c81"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v",
+      "sha256": "9fbcf768f4fbd5d6a21333ecdf9bea55b302a2b124a1da641fb79080bc9b6934"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v",
+      "sha256": "0a2fcde0852873ff80e8cdd3feeeec110400066ea51e12d25d49b671fc53f818"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_mpr_rdlvl.v",
+      "sha256": "1211b140c260fdeef037dafbb47be3124335e72203391eb3c71e45086636de69"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_phy_if.v",
+      "sha256": "75a658b6eac8b26bdfb55ea93d3f034f7f5d975c49f04264d46b34f2c87986d4"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_phy_rdlvl_dqs.v",
+      "sha256": "d40b71414c8991c7756621ee3fde9b200997388a3042112595e747d55a0d0c9b"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_phy_wrcal.v",
+      "sha256": "0f513546ac20beebc5403aa12ef4e5d264aa431bef9fe56c8fb04c8ac98b6656"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_phy_wrlvl.v",
+      "sha256": "c5998adb6fa297263d2d9a2c90b0efe0bf020f7a132f17264f6704bb6b4213ef"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\phy_ctl.v",
+      "sha256": "0a701d36110253e114f2e93f366efbd38a4c19de9d49a7a0aa646501d7d0c6a2"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\hw_accel\\hw_accel_axi4.v",
+      "sha256": "bc5281ec149a35af276a55a303cf782098b4821912be77a131c55865ed7564b3"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\hw_accel\\hw_accel_nearest_neighbor_downscale.v",
+      "sha256": "702b57e0aa64f81b8439d9910fb3f348d763b0943f3728090074fafd44bcf7d3"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\hw_accel\\hw_accel_pack_rgb_gray.v",
+      "sha256": "d175225b85b01c0a08a28c5fd52f594a4a386ed5ab5c4187b3f32d8706b72073"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\hw_accel\\hw_accel_rgb2gray.v",
+      "sha256": "e27d326eb4fb8c4a029676147753789a0840c8ca7f5a3c39cd3b8df33df6a15d"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\hw_accel\\hw_accel_wrapper.v",
+      "sha256": "9d9f68021b469ee3966cb08861cd3f2ff9c2c9d4f368f1f6e841b80786d279a1"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\hw_accel\\hw_accel.v",
+      "sha256": "9ff92fd28b8479724af5eb73d425cb10b998b8c56fb2c0714095a2f5bdf3c25b"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\defines.v",
+      "sha256": "e66ab2bfa102e45e84ff78bd4a56b85a502c94068bc0b0899d6ac2203e4cc7a5"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v",
+      "sha256": "fd9119386c5fdca03a010a04c9d38eb8bfc7fa73daf3559441530bdef5016ba1"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_top.v",
+      "sha256": "c1fac3d2349f05d3452a229ba1a22cd8042d8614e914bea9717f40cc5279bcd7"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\a_side\\ai_frame_mailbox.v",
+      "sha256": "be2a19b07be3b228001b64fc32a1fde2ed12ae12475dec29eeba989c9c2bb099"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\a_side\\video_a_capture.v",
+      "sha256": "6fd4ba3f87ebc42e7ca4e90292da10d1233d8b6cd2b26311cc05cb818e673d57"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\a_side\\video_grid_sampler.v",
+      "sha256": "9bd066f70ff8778caa7f4f18cfa4709a949b1c61ceb648cd79d015e00d57db84"
+    },
+    {
+      "sha256": "1035138d5128f6b7bdf44b38c2741b7496db001486b5774c51928c4b54af3523",
+      "post_tool_sha256": "1f5726b6d8107dbd1c802297b71ba045955b7b751bbf8d4c4cdc77b6b4261265",
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_native.xml"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v",
+      "sha256": "3e842a10829f50e3d6c650fa61031f4d91b1be014cf575243d26c705be0403cc"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol0.bin",
+      "sha256": "57a0fc51ca44ae308670bbdbce6cad8c0c2d333e76940f421c54d1057a19f1e9"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol1.bin",
+      "sha256": "c807366a705ebc8ae957c5c174c23f107134299420bcb77acc2d1f8099a74fe3"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol2.bin",
+      "sha256": "b8c5f31b9b5e5fcea4ad83627e7749ca567fee94bef441a241bad2652a42064e"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol3.bin",
+      "sha256": "b1be4104ba5dabcdef13ef787d604d39b75dac954d7d1f65728be266bf4b606d"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_a_image_source.sv",
+      "sha256": "ca4ecba6a595851a28c2bc93b580212e68ac79481b1133767ef8f41c34538134"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_a_mailbox_bridge.sv",
+      "sha256": "37d25577032e7fa78f4dc5616a1899d15feb565e3063d8e8d38b3963bfcf1f7c"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_a_video_source.sv",
+      "sha256": "c43cd8a52c778d6883698d802ada9aaadcbcedfdba01e20dce48a4224b79be40"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_apb_control.sv",
+      "sha256": "0be84c12bb8376f94ecff2de24bfbef85cbb3389a4eefa6e116bb9800bf5eb7d"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_async_fifo.sv",
+      "sha256": "91d7dd66779d10552c23048734da6c6baaf6267d553eaf3567a2446e02ba9d77"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_axi_arbiter.sv",
+      "sha256": "b36413ca9feea3c8e4a714a41340980148e2eb2db2177e5da53f3d46876ebbde"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_axi_to_vendor.sv",
+      "sha256": "c16fb2252e6315f21bbc229faf2db046fe18ceb81c4471cc11f91d384e744da0"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_bram_async_fifo.sv",
+      "sha256": "5f993727ca3e48e89d10740c98c06d001b12b8a08d176d2eadb46c966413682d"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_buffer_manager.sv",
+      "sha256": "df19575e73d2f0011d8aa2241d598a5c9f16d34ec37d2990fd07145e776ba2ea"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_cdc_mailbox.sv",
+      "sha256": "04550a55a2e5fbb824c9d0733f9b07378b0b041222eb3fbc9c6170043e57e7d4"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_frame_publisher.sv",
+      "sha256": "e07dc4798af6f03ab18ef16fd9faebe6306c19325685990e1586c66c3200910d"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_image_writer.sv",
+      "sha256": "53780b55dd93ce2987dfc45fb33b6c7be78f6a32f6b36343b5ffb4794d06b827"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_memory_hub.sv",
+      "sha256": "2b2c604fabcba80453d61596b933eb040ee6c3ee88a521751568727f11393b61"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_shared_time.sv",
+      "sha256": "0465e815fd8d3d98f23ca136abf848e1a9514a56246b9b8d9b9bd2503647486a"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_source_fence.sv",
+      "sha256": "1e865d73c3371428753db54562cfd6ef383ecba378e11e164bb2bc0c3a7f5482"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_system_boundary.sv",
+      "sha256": "bf55c29bef46b953d7cfd152883f267464fbd3e97478b6f51362bdfdef3330ac"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_vendor_attachment.sv",
+      "sha256": "38ef3fe766c953f2036eeef30b308c5656abe69d167f2fee638971ecd407674d"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_video_framebuffer.sv",
+      "sha256": "f942962793c0f2778750fea248f0259efca27928ae7f1488f0f2f491153d5c96"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_video_ingress.sv",
+      "sha256": "5b855d68d50bcf2cfc2ea99d2f2b1512451bf2f4ab3850f480833c685de7cc88"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_video_pipeline.sv",
+      "sha256": "9401308c63689b25baef2143c44de297e467fd0b4ed9b9525efe66d815f1405a"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_video_scanout.sv",
+      "sha256": "711450de1c1494f02d963c686799da7892463449d59d8537ece57bdb9ff3da9d"
+    },
+    {
+      "path": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c3_apb_peripheral.sv",
+      "sha256": "a521559e95ab39b1bd0b29a8eb1aade3ce5dfe5d8433b89cb420b65ff03c060e"
+    }
+  ],
+  "exit_code": 0,
+  "warnings": [
+    "[EFX-0011 VERI-WARNING] parameter 'tCKE' becomes localparam in 'ddr3_top' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v:166)",
+    "[EFX-0011 VERI-WARNING] parameter 'tFAW' becomes localparam in 'ddr3_top' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v:167)",
+    "[EFX-0011 VERI-WARNING] parameter 'tRAS' becomes localparam in 'ddr3_top' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v:168)",
+    "[EFX-0011 VERI-WARNING] parameter 'tRCD' becomes localparam in 'ddr3_top' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v:169)",
+    "[EFX-0011 VERI-WARNING] parameter 'tREFI' becomes localparam in 'ddr3_top' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v:170)",
+    "[EFX-0011 VERI-WARNING] parameter 'tRFC' becomes localparam in 'ddr3_top' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v:171)",
+    "[EFX-0011 VERI-WARNING] parameter 'tRP' becomes localparam in 'ddr3_top' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v:172)",
+    "[EFX-0011 VERI-WARNING] parameter 'tRRD' becomes localparam in 'ddr3_top' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v:173)",
+    "[EFX-0011 VERI-WARNING] parameter 'tRTP' becomes localparam in 'ddr3_top' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v:174)",
+    "[EFX-0011 VERI-WARNING] parameter 'tWTR' becomes localparam in 'ddr3_top' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v:175)",
+    "[EFX-0011 VERI-WARNING] parameter 'tZQI' becomes localparam in 'ddr3_top' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v:176)",
+    "[EFX-0011 VERI-WARNING] parameter 'tZQCS' becomes localparam in 'ddr3_top' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v:177)",
+    "[EFX-0011 VERI-WARNING] parameter 'tCK' becomes localparam in 'ddr3_top' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v:178)",
+    "[EFX-0011 VERI-WARNING] parameter 'CWL' becomes localparam in 'ddr3_top' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v:179)",
+    "[EFX-0011 VERI-WARNING] parameter 'CL' becomes localparam in 'ddr3_top' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v:180)",
+    "[EFX-0011 VERI-WARNING] parameter 'nAL' becomes localparam in 'ddr3_top' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v:181)",
+    "[EFX-0011 VERI-WARNING] parameter 'RTT_NOM' becomes localparam in 'ddr3_top' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v:183)",
+    "[EFX-0011 VERI-WARNING] parameter 'RTT_WR' becomes localparam in 'ddr3_top' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v:184)",
+    "[EFX-0011 VERI-WARNING] parameter 'BURST_MODE' becomes localparam in 'ddr3_top' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v:185)",
+    "[EFX-0011 VERI-WARNING] parameter 'MEM_ADDR_ORDER' becomes localparam in 'ddr3_top' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v:187)",
+    "[EFX-0011 VERI-WARNING] parameter 'RX_CLK_SEL' becomes localparam in 'ddr3_top' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v:188)",
+    "[EFX-0011 VERI-WARNING] parameter 'TX_CLK_SEL' becomes localparam in 'ddr3_top' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v:189)",
+    "[EFX-0011 VERI-WARNING] parameter 'TX_CLK_90EDGE_SEL' becomes localparam in 'ddr3_top' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v:190)",
+    "[EFX-0011 VERI-WARNING] parameter '**' becomes localparam in '**' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v:935)",
+    "[EFX-0011 VERI-WARNING] parameter 'BANK_CTL_NUM' becomes localparam in 'memory_bus_ctl' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:135)",
+    "[EFX-0011 VERI-WARNING] parameter '**' becomes localparam in '**' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] non-net output port '**' cannot be initialized at declaration in SystemVerilog mode (VERI-2522) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] parameter '**' becomes localparam in '**' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\axi4_bus_ctl\\axi4_bus_ctl.v:2890)",
+    "[EFX-0011 VERI-WARNING] parameter '**' becomes localparam in '**' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\phy_ctl.v:754)",
+    "[EFX-0011 VERI-WARNING] parameter '**' becomes localparam in '**' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_phy_wrcal.v:905)",
+    "[EFX-0011 VERI-WARNING] parameter '**' becomes localparam in '**' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:1521)",
+    "[EFX-0011 VERI-WARNING] parameter 'DEPTH' becomes localparam in 'axi_interconnect_beta' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\axi_interconnect_beta.sv:114)",
+    "[EFX-0011 VERI-WARNING] parameter 'RD_QUEUE_FIFO_DEPTH' becomes localparam in 'crossbar' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\crossbar.v:79)",
+    "[EFX-0011 VERI-WARNING] parameter 'aw_State_idle' becomes localparam in 'master_coupler' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\master_coupler.v:94)",
+    "[EFX-0011 VERI-WARNING] parameter 'aw_State_aw' becomes localparam in 'master_coupler' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\master_coupler.v:95)",
+    "[EFX-0011 VERI-WARNING] parameter 'aw_State_cmd' becomes localparam in 'master_coupler' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\master_coupler.v:96)",
+    "[EFX-0011 VERI-WARNING] parameter 'aw_State_data' becomes localparam in 'master_coupler' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\master_coupler.v:97)",
+    "[EFX-0011 VERI-WARNING] parameter 'aw_State_done' becomes localparam in 'master_coupler' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\master_coupler.v:98)",
+    "[EFX-0011 VERI-WARNING] parameter 'ar_State_idle' becomes localparam in 'master_coupler' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\master_coupler.v:100)",
+    "[EFX-0011 VERI-WARNING] parameter 'ar_State_ar' becomes localparam in 'master_coupler' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\master_coupler.v:101)",
+    "[EFX-0011 VERI-WARNING] parameter 'ar_State_cmd' becomes localparam in 'master_coupler' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\master_coupler.v:102)",
+    "[EFX-0011 VERI-WARNING] parameter 'ar_State_data' becomes localparam in 'master_coupler' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\master_coupler.v:103)",
+    "[EFX-0011 VERI-WARNING] parameter 'ar_State_done' becomes localparam in 'master_coupler' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\master_coupler.v:104)",
+    "[EFX-0011 VERI-WARNING] parameter 'State_idle' becomes localparam in 'slave_coupler' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\slave_coupler.v:85)",
+    "[EFX-0011 VERI-WARNING] parameter 'State_aw' becomes localparam in 'slave_coupler' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\slave_coupler.v:86)",
+    "[EFX-0011 VERI-WARNING] parameter 'State_ar' becomes localparam in 'slave_coupler' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\slave_coupler.v:87)",
+    "[EFX-0011 VERI-WARNING] parameter 'State_done' becomes localparam in 'slave_coupler' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\slave_coupler.v:88)",
+    "[EFX-0011 VERI-WARNING] parameter 'aw_State_idle' becomes localparam in 'slave_coupler' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\slave_coupler.v:90)",
+    "[EFX-0011 VERI-WARNING] parameter 'aw_State_aw' becomes localparam in 'slave_coupler' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\slave_coupler.v:91)",
+    "[EFX-0011 VERI-WARNING] parameter 'aw_State_cmd' becomes localparam in 'slave_coupler' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\slave_coupler.v:92)",
+    "[EFX-0011 VERI-WARNING] parameter 'aw_State_data' becomes localparam in 'slave_coupler' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\slave_coupler.v:93)",
+    "[EFX-0011 VERI-WARNING] parameter 'aw_State_done' becomes localparam in 'slave_coupler' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\slave_coupler.v:94)",
+    "[EFX-0011 VERI-WARNING] parameter 'ar_State_idle' becomes localparam in 'slave_coupler' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\slave_coupler.v:96)",
+    "[EFX-0011 VERI-WARNING] parameter 'ar_State_ar' becomes localparam in 'slave_coupler' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\slave_coupler.v:97)",
+    "[EFX-0011 VERI-WARNING] parameter 'ar_State_cmd' becomes localparam in 'slave_coupler' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\slave_coupler.v:98)",
+    "[EFX-0011 VERI-WARNING] parameter 'ar_State_data' becomes localparam in 'slave_coupler' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\slave_coupler.v:99)",
+    "[EFX-0011 VERI-WARNING] parameter 'ar_State_done' becomes localparam in 'slave_coupler' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\slave_coupler.v:100)",
+    "[EFX-0011 VERI-WARNING] parameter 'CMD_FIFO_DEPTH' becomes localparam in 'slave_coupler_wrapper' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\slave_coupler_wrapper.v:89)",
+    "[EFX-0011 VERI-WARNING] parameter 'WDATA_FIFO_DEPTH' becomes localparam in 'slave_coupler_wrapper' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\slave_coupler_wrapper.v:90)",
+    "[EFX-0011 VERI-WARNING] parameter 'RDATA_FIFO_DEPTH' becomes localparam in 'slave_coupler_wrapper' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\slave_coupler_wrapper.v:91)",
+    "[EFX-0011 VERI-WARNING] parameter '**' becomes localparam in '**' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:3005)",
+    "[EFX-0011 VERI-WARNING] parameter '**' becomes localparam in '**' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:3544)",
+    "[EFX-0011 VERI-WARNING] parameter '**' becomes localparam in '**' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:7203)",
+    "[EFX-0011 VERI-WARNING] parameter '**' becomes localparam in '**' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:7421)",
+    "[EFX-0011 VERI-WARNING] parameter '**' becomes localparam in '**' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:8227)",
+    "[EFX-0011 VERI-WARNING] parameter '**' becomes localparam in '**' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:8388)",
+    "[EFX-0011 VERI-WARNING] parameter '**' becomes localparam in '**' with formal parameter declaration list (VERI-1199) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:8908)",
+    "[EFX-0011 VERI-WARNING] illegal integral type argument in math function '**()'; expected ** (VERI-2792) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:10236)",
+    "[EFX-0011 VERI-WARNING] concatenation with an unsized literal will be treated as 32 bits (VERI-1320) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:11327)",
+    "[EFX-0011 VERI-WARNING] port '**' remains unconnected for this instance (VERI-1927) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\phy_ctl.v:754)",
+    "[EFX-0011 VERI-WARNING] port '**' is not connected on this instance (VERI-2435) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\phy_ctl.v:754)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:1521)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:1521)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_phy_rdlvl_dqs.v:418)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_phy_wrlvl.v:461)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_mpr_rdlvl.v:309)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_phy_wrcal.v:905)",
+    "[EFX-0011 VERI-WARNING] port '**' is not connected on this instance (VERI-2435) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_phy_if.v:959)",
+    "[EFX-0011 VERI-WARNING] port '**' remains unconnected for this instance (VERI-1927) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_phy_if.v:959)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_phy_if.v:959)",
+    "[EFX-0011 VERI-WARNING] port 'a_wr_rst_i' remains unconnected for this instance (VERI-1927) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\common\\efx_fifo_v2.3\\efx_fifo_wrapper.v:144)",
+    "[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 5 (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\common\\efx_fifo_v2.3\\efx_fifo_wrapper.v:1275)",
+    "[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 5 (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\common\\efx_fifo_v2.3\\efx_fifo_wrapper.v:1276)",
+    "[EFX-0011 VERI-WARNING] input port 'a_wr_rst_i' is not connected on this instance (VDB-1013) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\common\\efx_fifo_v2.3\\efx_fifo_wrapper.v:124)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_phy_if.v:959)",
+    "[EFX-0011 VERI-WARNING] input port 'a_wr_rst_i' is not connected on this instance (VDB-1013) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\common\\efx_fifo_v2.3\\efx_fifo_wrapper.v:124)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_phy_if.v:959)",
+    "[EFX-0011 VERI-WARNING] input port 'a_wr_rst_i' is not connected on this instance (VDB-1013) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\common\\efx_fifo_v2.3\\efx_fifo_wrapper.v:124)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_phy_if.v:959)",
+    "[EFX-0011 VERI-WARNING] input port 'a_wr_rst_i' is not connected on this instance (VDB-1013) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\common\\efx_fifo_v2.3\\efx_fifo_wrapper.v:124)",
+    "[EFX-0011 VERI-WARNING] net 'u1_rdata_cnt[4]' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_phy_if.v:295)",
+    "[EFX-0011 VERI-WARNING] net 'u1_wdata_cnt[4]' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_phy_if.v:296)",
+    "[EFX-0011 VERI-WARNING] input port '**' is not connected on this instance (VDB-1013) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_phy_if.v:959)",
+    "[EFX-0011 VERI-WARNING] input port '**' remains unconnected for this instance (VDB-1053) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_phy_if.v:959)",
+    "[EFX-0011 VERI-WARNING] actual bit length ** differs from formal bit length *** for port '**' (VERI-1330) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\phy_ctl.v:754)",
+    "[EFX-0011 VERI-WARNING] input port '**' is not connected on this instance (VDB-1013) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\phy_ctl.v:754)",
+    "[EFX-0011 VERI-WARNING] port '**' remains unconnected for this instance (VERI-1927) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] '**' should be on the sensitivity list (VERI-1221) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] using initial value of '**' since it is never assigned (VERI-1220) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] input port '**' remains unconnected for this instance (VDB-1053) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\axi4_bus_ctl\\axi4_bus_ctl.v:2890)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\axi4_bus_ctl\\axi4_bus_ctl.v:2890)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\axi4_bus_ctl\\axi4_bus_ctl.v:2890)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\axi4_bus_ctl\\axi4_bus_ctl.v:2890)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\axi4_bus_ctl\\axi4_bus_ctl.v:2890)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\axi4_bus_ctl\\axi4_bus_ctl.v:2890)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\axi4_bus_ctl\\axi4_bus_ctl.v:2890)",
+    "[EFX-0011 VERI-WARNING] net '**' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\ddr3_top.v:935)",
+    "[EFX-0011 VERI-WARNING] system task 'display' is ignored for synthesis (VERI-1142) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:18893)",
+    "[EFX-0011 VERI-WARNING] net 'IBusCachedPlugin_cache_io_cpu_fetch_isRemoved' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:9812)",
+    "[EFX-0011 VERI-WARNING] net 'dataCache_1_io_cpu_writeBack_fence_SW' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:9825)",
+    "[EFX-0011 VERI-WARNING] net 'dataCache_1_io_cpu_writeBack_fence_SR' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:9826)",
+    "[EFX-0011 VERI-WARNING] net 'dataCache_1_io_cpu_writeBack_fence_SO' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:9827)",
+    "[EFX-0011 VERI-WARNING] net 'dataCache_1_io_cpu_writeBack_fence_SI' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:9828)",
+    "[EFX-0011 VERI-WARNING] net 'dataCache_1_io_cpu_writeBack_fence_PW' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:9829)",
+    "[EFX-0011 VERI-WARNING] net 'dataCache_1_io_cpu_writeBack_fence_PR' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:9830)",
+    "[EFX-0011 VERI-WARNING] net 'dataCache_1_io_cpu_writeBack_fence_PO' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:9831)",
+    "[EFX-0011 VERI-WARNING] net 'dataCache_1_io_cpu_writeBack_fence_PI' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:9832)",
+    "[EFX-0011 VERI-WARNING] net 'dataCache_1_io_cpu_writeBack_fence_FM[3]' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:9833)",
+    "[EFX-0011 VERI-WARNING] net 'IBusCachedPlugin_mmuBus_rsp_bypassTranslation' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:10347)",
+    "[EFX-0011 VERI-WARNING] net 'DBusCachedPlugin_mmuBus_rsp_bypassTranslation' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:10373)",
+    "[EFX-0011 VERI-WARNING] net 'IBusCachedPlugin_iBusRsp_output_payload_rsp_error' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:10481)",
+    "[EFX-0011 VERI-WARNING] net 'IBusCachedPlugin_iBusRsp_output_payload_isRvc' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:10483)",
+    "[EFX-0011 VERI-WARNING] net 'CsrPlugin_mtvec_mode[1]' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:10649)",
+    "[EFX-0011 VERI-WARNING] system function call 'urandom' is not supported (VERI-1141) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:17908)",
+    "[EFX-0011 VERI-WARNING] system function call 'urandom' is not supported (VERI-1141) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:17909)",
+    "[EFX-0011 VERI-WARNING] system function call 'urandom' is not supported (VERI-1141) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:20240)",
+    "[EFX-0011 VERI-WARNING] system function call 'urandom' is not supported (VERI-1141) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:20241)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:3125)",
+    "[EFX-0011 VERI-WARNING] port '**' is not connected on this instance (VERI-2435) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:3544)",
+    "[EFX-0011 VERI-WARNING] port '**' remains unconnected for this instance (VERI-1927) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:3544)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:3544)",
+    "[EFX-0011 VERI-WARNING] port 'a_wr_rst_i' remains unconnected for this instance (VERI-1927) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:145)",
+    "[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 4 (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:1276)",
+    "[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 4 (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:1277)",
+    "[EFX-0011 VERI-WARNING] input port 'a_wr_rst_i' is not connected on this instance (VDB-1013) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:124)",
+    "[EFX-0011 VERI-WARNING] input port '**' is not connected on this instance (VDB-1013) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:3544)",
+    "[EFX-0011 VERI-WARNING] input port '**' remains unconnected for this instance (VDB-1053) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:3544)",
+    "[EFX-0011 VERI-WARNING] actual bit length ** differs from formal bit length *** for port '**' (VERI-1330) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:3992)",
+    "[EFX-0011 VERI-WARNING] port '**' is not connected on this instance (VERI-2435) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:3350)",
+    "[EFX-0011 VERI-WARNING] port '**' remains unconnected for this instance (VERI-1927) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:3350)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:5785)",
+    "[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 7 (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:1276)",
+    "[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 7 (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:1277)",
+    "[EFX-0011 VERI-WARNING] input port 'a_wr_rst_i' is not connected on this instance (VDB-1013) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:124)",
+    "[EFX-0011 VERI-WARNING] input port '**' is not connected on this instance (VDB-1013) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:3350)",
+    "[EFX-0011 VERI-WARNING] input port '**' remains unconnected for this instance (VDB-1053) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:3350)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:3005)",
+    "[EFX-0011 VERI-WARNING] actual bit length ** differs from formal bit length *** for port '**' (VERI-1330) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:3992)",
+    "[EFX-0011 VERI-WARNING] port '**' is not connected on this instance (VERI-2435) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:5700)",
+    "[EFX-0011 VERI-WARNING] port '**' remains unconnected for this instance (VERI-1927) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:5700)",
+    "[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 4 (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:1276)",
+    "[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 4 (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:1277)",
+    "[EFX-0011 VERI-WARNING] input port 'a_wr_rst_i' is not connected on this instance (VDB-1013) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:124)",
+    "[EFX-0011 VERI-WARNING] input port 'a_wr_rst_i' is not connected on this instance (VDB-1013) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:124)",
+    "[EFX-0011 VERI-WARNING] input port 'a_wr_rst_i' is not connected on this instance (VDB-1013) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:124)",
+    "[EFX-0011 VERI-WARNING] input port 'a_wr_rst_i' is not connected on this instance (VDB-1013) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:124)",
+    "[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 6 (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:1276)",
+    "[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 6 (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:1277)",
+    "[EFX-0011 VERI-WARNING] input port 'a_wr_rst_i' is not connected on this instance (VDB-1013) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:124)",
+    "[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 6 (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:1276)",
+    "[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 6 (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:1277)",
+    "[EFX-0011 VERI-WARNING] input port 'a_wr_rst_i' is not connected on this instance (VDB-1013) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:124)",
+    "[EFX-0011 VERI-WARNING] actual bit length ** differs from formal bit length *** for port '**' (VERI-1330) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:5700)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:5700)",
+    "[EFX-0011 VERI-WARNING] input port '**' is not connected on this instance (VDB-1013) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:5700)",
+    "[EFX-0011 VERI-WARNING] input port '**' remains unconnected for this instance (VDB-1053) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:5700)",
+    "[EFX-0011 VERI-WARNING] port '**' is not connected on this instance (VERI-2435) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:4479)",
+    "[EFX-0011 VERI-WARNING] port '**' remains unconnected for this instance (VERI-1927) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:4479)",
+    "[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 10 (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:1276)",
+    "[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 10 (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:1277)",
+    "[EFX-0011 VERI-WARNING] input port 'a_wr_rst_i' is not connected on this instance (VDB-1013) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:124)",
+    "[EFX-0011 VERI-WARNING] actual bit length ** differs from formal bit length *** for port '**' (VERI-1330) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:4479)",
+    "[EFX-0011 VERI-WARNING] input port '**' is not connected on this instance (VDB-1013) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:4479)",
+    "[EFX-0011 VERI-WARNING] input port '**' remains unconnected for this instance (VDB-1053) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:4479)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:9517)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:6611)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:7203)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:5785)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:8227)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:7421)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:5785)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:8908)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:8908)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:8908)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:9040)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:5030)",
+    "[EFX-0011 VERI-WARNING] actual bit length ** differs from formal bit length *** for port '**' (VERI-1330) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:8908)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:9120)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:2677)",
+    "[EFX-0011 VERI-WARNING] actual bit length ** differs from formal bit length *** for port '**' (VERI-1330) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:2290)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:1597)",
+    "[EFX-0011 VERI-WARNING] expression size ** truncated to fit in target size ** (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:1597)",
+    "[EFX-0011 VERI-WARNING] port '**' remains unconnected for this instance (VERI-1927) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:14950)",
+    "[EFX-0011 VERI-WARNING] latch inferred for net '**' (VERI-2580) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:14593)",
+    "[EFX-0011 VERI-WARNING] port '**' remains unconnected for this instance (VERI-1927) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:11866)",
+    "[EFX-0011 VERI-WARNING] port '**' remains unconnected for this instance (VERI-1927) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:11241)",
+    "[EFX-0011 VERI-WARNING] latch inferred for net '**' (VERI-2580) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:10868)",
+    "[EFX-0011 VERI-WARNING] concatenation with an unsized literal will be treated as 32 bits (VERI-1320) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:11327)",
+    "[EFX-0011 VERI-WARNING] actual bit length ** differs from formal bit length *** for port '**' (VERI-1330) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:11656)",
+    "[EFX-0011 VERI-WARNING] port '**' remains unconnected for this instance (VERI-1927) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:12816)",
+    "[EFX-0011 VERI-WARNING] latch inferred for net '**' (VERI-2580) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\tinyml\\tinyml_accelerator.v:12541)",
+    "[EFX-0011 VERI-WARNING] ** system task '**' is ignored for synthesis (VERI-2512) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\axi_interconnect_beta.sv:582)",
+    "[EFX-0011 VERI-WARNING] ** system task '**' is ignored for synthesis (VERI-2512) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\axi_interconnect_beta.sv:582)",
+    "[EFX-0011 VERI-WARNING] ** system task '**' is ignored for synthesis (VERI-2512) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\axi_interconnect_beta.sv:582)",
+    "[EFX-0011 VERI-WARNING] port '**' is not connected on this instance (VERI-2435) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\crossbar.v:419)",
+    "[EFX-0011 VERI-WARNING] port '**' remains unconnected for this instance (VERI-1927) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\crossbar.v:419)",
+    "[EFX-0011 VERI-WARNING] latch inferred for net '**' (VERI-2580) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\round_robin_priority_arbiter.v:122)",
+    "[EFX-0011 VERI-WARNING] net 'one_hot_mem' does not have a driver (VDB-1002) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\round_robin_priority_arbiter.v:47)",
+    "[EFX-0011 VERI-WARNING] latch inferred for net '**' (VERI-2580) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\crossbar.v:419)",
+    "[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 5 (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:1276)",
+    "[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 5 (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:1277)",
+    "[EFX-0011 VERI-WARNING] input port 'a_wr_rst_i' is not connected on this instance (VDB-1013) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:124)",
+    "[EFX-0011 VERI-WARNING] input port '**' is not connected on this instance (VDB-1013) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\crossbar.v:419)",
+    "[EFX-0011 VERI-WARNING] input port '**' remains unconnected for this instance (VDB-1053) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\crossbar.v:419)",
+    "[EFX-0011 VERI-WARNING] port '**' is not connected on this instance (VERI-2435) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\master_coupler.v:880)",
+    "[EFX-0011 VERI-WARNING] input port '**' is not connected on this instance (VDB-1013) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\master_coupler.v:880)",
+    "[EFX-0011 VERI-WARNING] actual bit length ** differs from formal bit length *** for port '**' (VERI-1330) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\axi_interconnect_beta.sv:582)",
+    "[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 13 (VERI-1209) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\a_side\\ai_frame_mailbox.v:29)",
+    "[EFX-0201 WARNING] Re-wiring to GND non-driven net/port 'pi_calib_done_r1' in module 'ddr_calibration_ini(tCK=2500,CLK_PERIOD=10000,DQ_WIDTH=16,DQS_WIDTH=2,nCL=6,tRFC=350000,RTT_WR=\"120\")'. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:1521)",
+    "[EFX-0200 WARNING] Removing redundant signal : wrcal_sanity_chk_done. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:83)",
+    "[EFX-0200 WARNING] Removing redundant signal : read_calib. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:97)",
+    "[EFX-0200 WARNING] Removing redundant signal : pi_dqs_found_all_r. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:1521)",
+    "[EFX-0200 WARNING] Removing redundant signal : pi_calib_rank_done_r. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:1521)",
+    "[EFX-0200 WARNING] Removing redundant signal : stg1_wr_done. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:1521)",
+    "[EFX-0200 WARNING] Removing redundant signal : rnk_ref_cnt. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:1521)",
+    "[EFX-0200 WARNING] Removing redundant signal : pi_dqs_found_done_r1. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:1521)",
+    "[EFX-0200 WARNING] Removing redundant signal : pi_dqs_found_rank_done_r. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:1521)",
+    "[EFX-0200 WARNING] Removing redundant signal : read_calib_int. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:1521)",
+    "[EFX-0200 WARNING] Removing redundant signal : read_calib_r. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:1521)",
+    "[EFX-0200 WARNING] Removing redundant signal : pi_calib_done_r. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:1521)",
+    "[EFX-0200 WARNING] Removing redundant signal : cnt_init_af_done_r. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:1521)",
+    "[EFX-0200 WARNING] Removing redundant signal : cnt_init_pre_wait_done_r. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:1521)",
+    "[EFX-0200 WARNING] Removing redundant signal : ddr2_pre_flag_r. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:1521)",
+    "[EFX-0200 WARNING] Removing redundant signal : ddr2_refresh_flag_r. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:1521)",
+    "[EFX-0200 WARNING] Removing redundant signal : ddr3_lm_done_r. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:1521)",
+    "[EFX-0200 WARNING] Removing redundant signal : phy_wrdata_en_r1. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:1521)",
+    "[EFX-0200 WARNING] Removing redundant signal : rdlvl_stg1_done_r1. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:1521)",
+    "[EFX-0200 WARNING] Removing redundant signal : rdlvl_stg1_start_int. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:1521)",
+    "[EFX-0200 WARNING] Removing redundant signal : rdlvl_start_pre. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_calibration_ini.v:1521)",
+    "[EFX-0201 WARNING] Re-wiring to GND non-driven net/port 'a_wr_rst_i' in module 'efx_fifo_top_6ceb0421bf6b4ab2809a782952ee3925(FAMILY=\"TITANIUM\",MODE=\"FWFT\",DEPTH=16,DATA_WIDTH=90,PROGRAMMABLE_FULL=\"NONE\",PROG_FULL_ASSERT=16,PROG_FULL_NEGATE=16,PROGRAMMABLE_EMPTY=\"NONE\",PROG_EMPTY_ASSERT=0,PROG_EMPTY_NEGATE=0)'. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\common\\efx_fifo_v2.3\\efx_fifo_wrapper.v:124)",
+    "[EFX-0201 WARNING] Re-wiring to GND non-driven net/port 'a_rd_rst_i' in module 'efx_fifo_top_6ceb0421bf6b4ab2809a782952ee3925(FAMILY=\"TITANIUM\",MODE=\"FWFT\",DEPTH=16,DATA_WIDTH=90,PROGRAMMABLE_FULL=\"NONE\",PROG_FULL_ASSERT=16,PROG_FULL_NEGATE=16,PROGRAMMABLE_EMPTY=\"NONE\",PROG_EMPTY_ASSERT=0,PROG_EMPTY_NEGATE=0)'. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\common\\efx_fifo_v2.3\\efx_fifo_wrapper.v:124)",
+    "[EFX-0201 WARNING] Re-wiring to GND non-driven net/port 'a_wr_rst_i' in module 'efx_fifo_top_6ceb0421bf6b4ab2809a782952ee3925(FAMILY=\"TITANIUM\",MODE=\"FWFT\",DEPTH=16,PROGRAMMABLE_FULL=\"NONE\",PROG_FULL_ASSERT=16,PROG_FULL_NEGATE=16,PROGRAMMABLE_EMPTY=\"NONE\",PROG_EMPTY_ASSERT=0,PROG_EMPTY_NEGATE=0)'. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\common\\efx_fifo_v2.3\\efx_fifo_wrapper.v:124)",
+    "[EFX-0201 WARNING] Re-wiring to GND non-driven net/port 'a_rd_rst_i' in module 'efx_fifo_top_6ceb0421bf6b4ab2809a782952ee3925(FAMILY=\"TITANIUM\",MODE=\"FWFT\",DEPTH=16,PROGRAMMABLE_FULL=\"NONE\",PROG_FULL_ASSERT=16,PROG_FULL_NEGATE=16,PROGRAMMABLE_EMPTY=\"NONE\",PROG_EMPTY_ASSERT=0,PROG_EMPTY_NEGATE=0)'. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\common\\efx_fifo_v2.3\\efx_fifo_wrapper.v:124)",
+    "[EFX-0201 WARNING] Re-wiring to GND non-driven net/port 'a_wr_rst_i' in module 'efx_fifo_top_6ceb0421bf6b4ab2809a782952ee3925(FAMILY=\"TITANIUM\",MODE=\"FWFT\",DEPTH=16,DATA_WIDTH=144,PROGRAMMABLE_FULL=\"NONE\",PROG_FULL_ASSERT=16,PROG_FULL_NEGATE=16,PROGRAMMABLE_EMPTY=\"NONE\",PROG_EMPTY_ASSERT=0,PROG_EMPTY_NEGATE=0)'. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\common\\efx_fifo_v2.3\\efx_fifo_wrapper.v:124)",
+    "[EFX-0201 WARNING] Re-wiring to GND non-driven net/port 'a_rd_rst_i' in module 'efx_fifo_top_6ceb0421bf6b4ab2809a782952ee3925(FAMILY=\"TITANIUM\",MODE=\"FWFT\",DEPTH=16,DATA_WIDTH=144,PROGRAMMABLE_FULL=\"NONE\",PROG_FULL_ASSERT=16,PROG_FULL_NEGATE=16,PROGRAMMABLE_EMPTY=\"NONE\",PROG_EMPTY_ASSERT=0,PROG_EMPTY_NEGATE=0)'. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\common\\efx_fifo_v2.3\\efx_fifo_wrapper.v:124)",
+    "[EFX-0201 WARNING] Re-wiring to GND non-driven net/port 'a_wr_rst_i' in module 'efx_fifo_top_6ceb0421bf6b4ab2809a782952ee3925(FAMILY=\"TITANIUM\",MODE=\"FWFT\",DEPTH=16,DATA_WIDTH=128,PROGRAMMABLE_FULL=\"NONE\",PROG_FULL_ASSERT=16,PROG_FULL_NEGATE=16,PROGRAMMABLE_EMPTY=\"NONE\",PROG_EMPTY_ASSERT=0,PROG_EMPTY_NEGATE=0)'. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\common\\efx_fifo_v2.3\\efx_fifo_wrapper.v:124)",
+    "[EFX-0201 WARNING] Re-wiring to GND non-driven net/port 'a_rd_rst_i' in module 'efx_fifo_top_6ceb0421bf6b4ab2809a782952ee3925(FAMILY=\"TITANIUM\",MODE=\"FWFT\",DEPTH=16,DATA_WIDTH=128,PROGRAMMABLE_FULL=\"NONE\",PROG_FULL_ASSERT=16,PROG_FULL_NEGATE=16,PROGRAMMABLE_EMPTY=\"NONE\",PROG_EMPTY_ASSERT=0,PROG_EMPTY_NEGATE=0)'. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\common\\efx_fifo_v2.3\\efx_fifo_wrapper.v:124)",
+    "[EFX-0201 WARNING] Re-wiring to GND non-driven net/port 'a_wr_rst_i' in module 'efx_fifo_wrapper(SYNC_CLK=0,MODE=\"FWFT\",DEPTH=16,DATA_WIDTH=90)'. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\phy_ctl\\ddr_phy_if.v:959)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'logic_ram' (32 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\ip\\sapphire_soc\\sapphire_soc.v:16891) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'one_hot_mem' (9 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\axi\\axi_interconnect_beta\\round_robin_priority_arbiter.v:47) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'gen' (64 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_buffer_manager.sv:18) because size is too small (<=64)",
+    "[EFX-0666 WARNING] Mapping into logic multiplier 'mult_30'. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_video_framebuffer.sv:59)",
+    "[EFX-0666 WARNING] Mapping into logic multiplier 'mult_54'. (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_video_framebuffer.sv:62)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/Cache.u_tinyml_common_s_axi4addr8_to_m_axi4addrx/u1_fifo_32w8d_0dly/u_efx_fifo_top/xefx_fifo_ram/ram' (256 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\common\\common_efx_fifo_wrapper.v:801) because 'syn_ram_style' directive is 'register' or 'logic'.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'u_ddr3_top/u_memory_bus_ctl/col_mach/fifo_ram[1].RAM32M0/memory' (256 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\src\\ddr3_controller\\memory_bus_ctl\\memory_bus_ctl.v:5169) because 'syn_ram_style' directive is 'register' or 'logic'.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'c2_attachment/core/publisher/manager/meta' (1024 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_buffer_manager.sv:19) because it has async writer.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'c2_attachment/core/hub/writer/buffer' (2048 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_image_writer.sv:24) because read port is not synchronous.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'c2_attachment/core/pixels/memory' (2048 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_async_fifo.sv:8) because read port is not synchronous.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'c2_full_video/framebuffer/stamps' (96 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_video_framebuffer.sv:28) because it has async writer.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'c2_full_video/framebuffer/ids' (96 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_video_framebuffer.sv:28) because it has async writer.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'c2_full_video/framebuffer/rbuf' (2048 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_video_framebuffer.sv:34) because read port is not synchronous.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'c2_full_video/framebuffer/wbuf' (2048 bits) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\rtl\\c2_video_framebuffer.sv:34) because read port is not synchronous.",
+    "[EFX-0011 VERI-WARNING] Input/inout port axi_clk is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:74)",
+    "[EFX-0011 VERI-WARNING] Input/inout port i_fb_clk is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:84)",
+    "[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_DRCK is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:98)",
+    "[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_RESET is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:99)",
+    "[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_RUNTEST is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:100)",
+    "[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_TMS is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:105)",
+    "[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_UPDATE is unconnected. Place and route may remove this unconnected port. (VDB-8003) (C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\06_soc_c2\\integration\\c2_tinyml_soc_top.v:106)",
+    "[EFX-0011 VERI-WARNING] Net u_sapphire_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[0] is dangling. (VDB-8009)",
+    "[EFX-0011 VERI-WARNING] Net u_sapphire_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[5] is dangling. (VDB-8009)",
+    "[EFX-0011 VERI-WARNING] Net u_sapphire_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[4] is dangling. (VDB-8009)",
+    "[EFX-0011 VERI-WARNING] Net u_sapphire_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[3] is dangling. (VDB-8009)",
+    "[EFX-0011 VERI-WARNING] Net u_sapphire_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[2] is dangling. (VDB-8009)",
+    "[EFX-0011 VERI-WARNING] Net u_sapphire_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[1] is dangling. (VDB-8009)",
+    "[EFX-0011 VERI-WARNING] Net u_sapphire_soc/u_EfxSapphireSoc/system_ddr_ddrLogic_cc_fifo/io_output_rsp_queue/popCC_popPtrPlus[0] is dangling. (VDB-8009)",
+    "[EFX-0011 VERI-WARNING] Net u_sapphire_soc/u_EfxSapphireSoc/system_ddr_ddrLogic_cc_fifo/io_input_cmd_queue/popCC_popPtrPlus[0] is dangling. (VDB-8009)",
+    "[EFX-0011 VERI-WARNING] Found 15 warnings in the post-synthesis netlist."
+  ],
+  "warning_scope": "Full native warnings retained; portable C2 warnings checked strictly; inherited vendor warnings require review",
+  "resources": {
+    "EFX_LUT4": 39656,
+    "EFX_FF": 36902,
+    "EFX_RAM10": 174,
+    "EFX_DSP48": 51,
+    "EFX_ADD": 6715
+  },
+  "finished": "2026-10-31T12:00:47.2120811+08:00"
+}

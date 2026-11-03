@@ -1,0 +1,35 @@
+﻿{
+    "status":  "PASS",
+    "project":  "led",
+    "flow":  "compile",
+    "file":  "D:\\FPGA_2026_T3_P3\\projects\\01_led\\LED_8bit_Test.xml",
+    "started":  "2026-10-18T13:59:12.6872335+08:00",
+    "stage":  "finished",
+    "scope":  "tool_flow_only",
+    "physical_board_programmed":  false,
+    "board_test_passed":  false,
+    "efinity_version":  "2026.1.132",
+    "preflight_log":  "D:\\FPGA_2026_T3_P3\\logs\\efinity_led_interface_preflight.log",
+    "preflight_exit_code":  0,
+    "exit_code":  0,
+    "design_log":  "D:\\FPGA_2026_T3_P3\\projects\\01_led\\outflow\\LED_8bit_Test.log",
+    "artifacts":  [
+                      {
+                          "sha256":  "DE347D1505754195DE21D97BDD2D95AF5EAF3F78BB46575BABE119BE416B5124",
+                          "path":  "D:\\FPGA_2026_T3_P3\\projects\\01_led\\outflow\\LED_8bit_Test.map.v"
+                      },
+                      {
+                          "sha256":  "5FACDF8E4170A69091274C6B84CB0CCBD8F0F180002700728BBF3F4F9FFD303E",
+                          "path":  "D:\\FPGA_2026_T3_P3\\projects\\01_led\\outflow\\LED_8bit_Test.map.rpt"
+                      },
+                      {
+                          "sha256":  "CD615CDC8F1AB9A58998B061B544AA9230FD9732F3E9C69E719C4E7867EC1B0E",
+                          "path":  "D:\\FPGA_2026_T3_P3\\projects\\01_led\\outflow\\LED_8bit_Test.lpf"
+                      },
+                      {
+                          "sha256":  "A3A1C4A3582C94B87474ED1A859C9DE3F7CC4FF0DD9C9FEB731B238DA5E1B3E0",
+                          "path":  "D:\\FPGA_2026_T3_P3\\projects\\01_led\\outflow\\LED_8bit_Test.hex"
+                      }
+                  ],
+    "finished":  "2026-10-18T13:59:51.9409003+08:00"
+}

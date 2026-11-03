@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "baseline": false,
+  "board_test_passed": false,
+  "cases": [
+    {
+      "mode": 0,
+      "returncode": 0,
+      "evidence": "PASS scanout startup mode=0; first-ready edge, real busy miss and recovery retained\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\display_fix\\tb_scanout_startup.sv:41: $finish called at 600000 (1ps)\n"
+    },
+    {
+      "mode": 1,
+      "returncode": 0,
+      "evidence": "PASS scanout startup mode=1; first-ready edge, real busy miss and recovery retained\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\display_fix\\tb_scanout_startup.sv:41: $finish called at 610000 (1ps)\n"
+    },
+    {
+      "mode": 2,
+      "returncode": 0,
+      "evidence": "PASS scanout startup mode=2; first-ready edge, real busy miss and recovery retained\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\display_fix\\tb_scanout_startup.sv:41: $finish called at 600000 (1ps)\n"
+    }
+  ],
+  "source_sha256": {
+    "team_work/03_ai_soc/c9_live/display_fix/c2_video_scanout.sv": "dc4df78098c4d614db0fdd81a561c0475f969bae1ed0defa9efdb341dadf6fb3",
+    "projects/06_soc_c2/rtl/c2_cdc_mailbox.sv": "04550a55a2e5fbb824c9d0733f9b07378b0b041222eb3fbc9c6170043e57e7d4",
+    "team_work/03_ai_soc/c9_live/display_fix/tb_scanout_startup.sv": "f257169d80e721a630f8714c96ea26223147cbafcb9b88bd75f51732138ab42d",
+    "tools/test_c9_scanout_startup.py": "0354be32e1dcba1830c2bcd129635c9c5767d16fbe803df38c090236a209f049"
+  }
+}

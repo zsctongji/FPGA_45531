@@ -1,0 +1,16 @@
+{
+  "rom_lane_roundtrip": "PASS",
+  "rom_bytes": 4096,
+  "bootloader_binary_bytes": 664,
+  "application_bytes": 1417720,
+  "copy_capacity_bytes": 4194304,
+  "fpga_projects": [
+    "led",
+    "camera",
+    "camera_preprocess",
+    "tinyml",
+    "camera_motion"
+  ],
+  "physical_board_verified": false,
+  "complete_multimodal_system_integrated": false
+}

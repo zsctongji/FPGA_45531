@@ -1,0 +1,9 @@
+{
+  "status": "DIAGNOSTIC_ONLY_NOT_VIDEO_QUALIFIED",
+  "variant": "packet_compact",
+  "runner": "tools/run_c9_packet_compact_v2.py",
+  "checker": "tools/check_c9_packet_compact_v2.py",
+  "image_sha256": "e6637e93edccaa5232e9a3ed852932e7508d6f17cfac4bd5edb633ce1011ed20",
+  "pixel_header_cdc_verified": false,
+  "active_profile_changed": false
+}

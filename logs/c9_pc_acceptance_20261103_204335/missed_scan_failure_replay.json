@@ -1,0 +1,8 @@
+{
+  "status": "FAIL",
+  "mode": "dma",
+  "error": "Display underflow/missed scans",
+  "real_camera_verified": false,
+  "dma_cache_handoff_verified": false,
+  "uart_sha256": "87b1f80b689726fee04071c8e7269679b592ba50d93f09a17aefe97760e2e01e"
+}

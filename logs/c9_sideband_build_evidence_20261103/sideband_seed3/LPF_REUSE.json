@@ -1,0 +1,8 @@
+{
+  "status": "PASS_IDENTICAL_PERIPHERAL_LPF_REUSE",
+  "source": "build/c9_sideband_raw10_image_20261103/outflow/soc_physical.lpf",
+  "target": "build/c9_sideband_seed3_image_20261103/outflow/soc_physical.lpf",
+  "sha256": "6031568df357377864dd3a86d4ddec8a0107f631392183f9664a03d7bc4cb35b",
+  "base_peri_sha256": "0303170cbe27b86e11b15e490ad5f7fe5bd4ee6bf89acd60d22c1d170a230973",
+  "new_peri_sha256": "0303170cbe27b86e11b15e490ad5f7fe5bd4ee6bf89acd60d22c1d170a230973"
+}

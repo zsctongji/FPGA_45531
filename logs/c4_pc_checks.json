@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "scope": "Host C4 replay, actual desktop compatibility-model inference and RISC-V object compilation only",
+  "steps": [
+    {
+      "name": "native C4 and synthetic sensor replay tests plus DLL build",
+      "status": "PASS"
+    },
+    {
+      "name": "actual desktop reference and 24 C4 inference replays",
+      "status": "PASS"
+    },
+    {
+      "name": "reference comparison negative tests",
+      "status": "PASS"
+    },
+    {
+      "name": "existing C1 log parser regression tests",
+      "status": "PASS"
+    },
+    {
+      "name": "RISC-V C4 adapter object compile checks",
+      "status": "PASS"
+    },
+    {
+      "name": "existing C1 package remains consistent",
+      "status": "PASS"
+    }
+  ],
+  "board_inference_passed": false,
+  "live_camera_passed": false,
+  "padding_class_changes": [
+    "people2"
+  ],
+  "preprocess_policy_approved": false,
+  "finished": "2026-10-24T11:40:13.5750781+08:00"
+}

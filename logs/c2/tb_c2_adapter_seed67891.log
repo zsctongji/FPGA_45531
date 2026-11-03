@@ -1,0 +1,2 @@
+PASS tb_c2_adapter ids=256 full128 burst128 burst256 narrow32 byte_lanes relocation DECERR no_invalid_DDR error_routing
+projects\06_soc_c2\sim\tb_c2_adapter.sv:244: $finish called at 86010000 (1ps)

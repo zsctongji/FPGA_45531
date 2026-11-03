@@ -1,0 +1,129 @@
+{
+  "status": "PASS_OFFLINE_DIAGNOSTIC",
+  "board_test_passed": false,
+  "destructive_memory_test": true,
+  "expected_capacity_bytes": 268435456,
+  "expected_success_checked_words": 67108889,
+  "timing": {
+    "setup": {
+      "rows": 9,
+      "minimum_slack_ns": 0.324
+    },
+    "hold": {
+      "rows": 9,
+      "minimum_slack_ns": 0.027
+    }
+  },
+  "configuration_stream_upper_bound_bytes": 581713,
+  "pin_contract": {
+    "i_arstn": {
+      "Pin Number": "C4",
+      "Pin Name": "GPIOL_07",
+      "Signal Name": "i_arstn",
+      "Direction": "Input",
+      "Bank": "TL",
+      "I/O Bank Voltage": "3.3 V",
+      "I/O Standard": "3.3 V LVCMOS",
+      "Pull Type": "weak pullup",
+      "Function": "User IO"
+    },
+    "CLK_25M": {
+      "Pin Number": "J2",
+      "Pin Name": "GPIOL_P_08_CLK1_P",
+      "Signal Name": "CLK_25M.P",
+      "Direction": "Input",
+      "Bank": "1A",
+      "I/O Bank Voltage": "1.8 V",
+      "I/O Standard": "1.8 V LVCMOS",
+      "Pull Type": "",
+      "Function": "User IO/GCLK/RCLK"
+    },
+    "uart_tx": {
+      "Pin Number": "R14",
+      "Pin Name": "GPIOR_28",
+      "Signal Name": "uart_tx",
+      "Direction": "Output",
+      "Bank": "BR",
+      "I/O Bank Voltage": "3.3 V",
+      "I/O Standard": "3.3 V LVCMOS",
+      "Pull Type": "",
+      "Function": "User IO"
+    },
+    "led[0]": {
+      "Pin Number": "P13",
+      "Pin Name": "GPIOR_27",
+      "Signal Name": "led[0]",
+      "Direction": "Output",
+      "Bank": "BR",
+      "I/O Bank Voltage": "3.3 V",
+      "I/O Standard": "3.3 V LVCMOS",
+      "Pull Type": "",
+      "Function": "User IO"
+    },
+    "led[1]": {
+      "Pin Number": "N13",
+      "Pin Name": "GPIOR_24",
+      "Signal Name": "led[1]",
+      "Direction": "Output",
+      "Bank": "BR",
+      "I/O Bank Voltage": "3.3 V",
+      "I/O Standard": "3.3 V LVCMOS",
+      "Pull Type": "",
+      "Function": "User IO"
+    }
+  },
+  "source_sha256": {
+    "projects/07_soc_physical/overrides/ddr3_parameter.vh": "d56934d3778e3b4689d759112de021100d56425242e5a06adf90b4d53640abb1",
+    "projects/07_soc_physical/overrides/ddr3_top.v": "cdd95172f6cc7c059ab39bbe95529564407cab5d92147d346d7a52fe0cd0b9af",
+    "projects/03_tinyml/src/ddr3_controller/memory_bus_ctl/memory_bus_ctl.v": "9fbcf768f4fbd5d6a21333ecdf9bea55b302a2b124a1da641fb79080bc9b6934",
+    "projects/03_tinyml/src/ddr3_controller/local_bus_ctl/local_bus_ctl.v": "e7a70405fe69373e06c21a974e9f6bd985b08cdebaa776d0f36c28515ab66c81",
+    "projects/03_tinyml/src/ddr3_controller/axi4_bus_ctl/axi4_bus_ctl.v": "adc4180c51d6bc4b8932bae4b079573a8b442d3ddee614c8ec387b769264f76e",
+    "projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_mpr_rdlvl.v": "1211b140c260fdeef037dafbb47be3124335e72203391eb3c71e45086636de69",
+    "projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_phy_if.v": "75a658b6eac8b26bdfb55ea93d3f034f7f5d975c49f04264d46b34f2c87986d4",
+    "projects/03_tinyml/src/ddr3_controller/phy_ctl/phy_ctl.v": "0a701d36110253e114f2e93f366efbd38a4c19de9d49a7a0aa646501d7d0c6a2",
+    "projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_phy_wrcal.v": "0f513546ac20beebc5403aa12ef4e5d264aa431bef9fe56c8fb04c8ac98b6656",
+    "projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_phy_rdlvl_dqs.v": "d40b71414c8991c7756621ee3fde9b200997388a3042112595e747d55a0d0c9b",
+    "projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_calibration_ini.v": "0a2fcde0852873ff80e8cdd3feeeec110400066ea51e12d25d49b671fc53f818",
+    "projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_phy_wrlvl.v": "c5998adb6fa297263d2d9a2c90b0efe0bf020f7a132f17264f6704bb6b4213ef",
+    "projects/03_tinyml/src/ddr3_controller/lb2_axi_clk.v": "f23d157e14f6b3ec8a34f53de5220a203a9cda5e05697e00a5ac2446a31bb513",
+    "projects/03_tinyml/src/ddr3_controller/common/efx_fifo_v2.3/efx_fifo_wrapper.v": "1415901a8f83cefaaf8cd7c86a23fcfed85ff8335ce390a8d4ba2d54e5cf32d4",
+    "projects/03_tinyml/src/common/simple_dual_port_ram.v": "ecb40539c1a25bcf4917c6d492767d90886316f286b4f26ecb63f008c721ca2a",
+    "projects/03_tinyml/src/common/common_efx_fifo_wrapper.v": "3774307c34b786070102e54ba2f704379930cd79e4844baa067383e1f8771215",
+    "projects/03_tinyml/src/common/common_reset_ctrl.v": "336c4d759b6822220e88f39121bd1446a97309acc6bf3b304a83690fe0bdbf49",
+    "projects/03_tinyml/src/common/common_simple_dual_port_ram.v": "55b7e6f51f6fd9f436cf88cb39c8bd011cf07912c7b7557509cfddf86044b770",
+    "projects/03_tinyml/src/common/common_true_dual_port_ram.v": "ec4cf65899bca7817d0fd2d44c64b623b9a7c1108758fc2135c4f0cfff8644c4",
+    "projects/08_ddr_diag/ddr_diag_top.sv": "d5badbad87a0efd4cc231220cf3ce2ff3d3fc522e4a151f108f2df226e03adb6",
+    "projects/08_ddr_diag/rtl/ddr_diag_bist.sv": "3129f59050a678b3ad40a138f7607a649ceac5ccb06ce60d4167a142f2ce1e85",
+    "projects/08_ddr_diag/rtl/ddr_diag_status.sv": "949759a77733c421e31c4f9f3ab902ff8164a2efaf753d622c2b7f6019194dfa"
+  },
+  "tool_sha256": "0c883185448f8bd7814328ccb6689f848c4582114de6b859daa9afaea30cc62d",
+  "artifacts": {
+    "ddr_diag.bit": {
+      "bytes": 1745079,
+      "sha256": "752d7855d7726ec61fdc1b863df381ff7fdac0f6577f0f59eeb8af812f9a6add"
+    },
+    "ddr_diag.hex": {
+      "bytes": 1745139,
+      "sha256": "7c414246f6b8cd40e90e589562592a5511df10f53263f8ef697e5329c54bfa26"
+    },
+    "ddr_diag.timing.rpt": {
+      "bytes": 765210,
+      "sha256": "cc4a60f1d0eedcef5503c56e90e2e0729bb616cbba7440efaab5c5dc262f2fcb"
+    },
+    "ddr_diag.place.rpt": {
+      "bytes": 1457,
+      "sha256": "fb7d4c648ab6ee0b2913bef4d805cc202f63991180e6f497174b504d731388c4"
+    },
+    "ddr_diag.pinout.csv": {
+      "bytes": 12369,
+      "sha256": "14aab98f265a166b6eb5ad23347a45b8d1e1164aff8b8d13378fdfba67bf3691"
+    }
+  },
+  "project_constraint_sha256": {
+    "ddr_diag.xml": "1734e89e80ac5b6e9cf9d189543f8cd11a340cd6ea322042c83fc54a13970a32",
+    "ddr_diag.peri.xml": "73a4f8e5aaebd7e63046b57cd6bb5ac812f0eda308e7cec15696d1bc2f70b799",
+    "ddr_diag.sdc": "3db41d95217d56159442dbb1ecc9abdddc2be296590a86ded2a7ee5aabbcc014"
+  },
+  "test_report_sha256": "933e2f4f654d0e36047e6551d16caa58d7d4cb3786532ae87091a397bef34e05",
+  "build_report_sha256": "f525e84d9200113a54b50a13fa0e375f784acf3be286bcb076bc163f6e60a7f0"
+}

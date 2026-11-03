@@ -1,0 +1,28 @@
+{
+  "status": "QUALIFIED_DDR_DIAGNOSTIC",
+  "variant": "nopack",
+  "synthesis_mode": "cong",
+  "pack_luts_to_comb4": 0,
+  "pnr_place_mode": "CONGESTION_2",
+  "pnr_seed": 2,
+  "image_sha256": "e780083e22b4383cf2dbf5088a7a3f93e9a81698fda1dcfec30f0169a99a7c04",
+  "implementation_audit_sha256": "850123378f8a52a4d42b301752d57d9856997b4464bfa09ca65680ebc0634139",
+  "calibration_attempts": [
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261102_182836/attempt.json",
+      "sha256": "8f19254d64da3db1ea6421366a53b30c661bf46d0944d7b845df5a67e94f4dad"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261102_183801/attempt.json",
+      "sha256": "417e46f45ee6c7fd31ec131e2ef7cd4a8cdff6c8fc8c49eb17a4f19e2806866e"
+    }
+  ],
+  "ddr_parameters_changed": false,
+  "calibration_algorithm_changed": false,
+  "acceptance_criteria_changed": false,
+  "flash_boot_image": false,
+  "c3_present": false,
+  "rom_entry_parked": true,
+  "whole_system_acceptance_passed": false,
+  "scope": "C9 diagnostic CPU/DDR firmware loader; complete DMA/video acceptance still fails display missed_scans=1"
+}

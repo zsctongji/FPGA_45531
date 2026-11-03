@@ -1,0 +1,218 @@
+{
+  "status": "CAPTURED_SIDEBAND_STATUS_ONLY",
+  "flash_written": false,
+  "board_acceptance_passed": false,
+  "real_camera_verified": false,
+  "runner_sha256": "940b5c7a367195497eb3617c02390481f3e7f8149ed06c3f0f5cd3a3ca0a44c9",
+  "ddr_status": {
+    "attempt": "logs/c9_ddr_probe_20261101/20261103_125953/attempt.json",
+    "result": {
+      "status": "PASS_CALIBRATION_ONLY",
+      "calibration_verified": true,
+      "failures": [],
+      "observed": {
+        "cal_done": true,
+        "system_reset": false,
+        "controller_reset_released": true,
+        "root_reset_released": true,
+        "pll_locks": 15,
+        "sys_rst": true,
+        "init_state": 22,
+        "wrlvl_check": 254,
+        "read_level_check": 254,
+        "init_delay_counter": 300000,
+        "rdlvl_shift": 4,
+        "wrlvl_shift": 5,
+        "mpr_rdlvl_dly": true,
+        "idelay_ld": false,
+        "ddr_debug_port_hex": "70f0b000d",
+        "status0_last8_identical": true,
+        "status1_last8_identical": true,
+        "clock_activity_observed": {
+          "core_clk": true,
+          "i_sysclk": true,
+          "tx_cal_clk": true,
+          "rx_cal_clk": true
+        },
+        "atomic_snapshot": false,
+        "clock_frequency_verified": false
+      },
+      "cpu_execution_verified": false,
+      "full_capacity_verified": false,
+      "clock_frequency_verified": false,
+      "atomic_snapshot": false,
+      "hardware_accessed": false,
+      "c10_restore_passed": true,
+      "fpga_image_sha256": "333af57e423c4174aaf0b1d0589b6a0c796f85ea530758f0fc715528896328b2",
+      "attempt_sha256": "a683f1c02ae9e65e1f59e20b2f2f06e85844f2287ddc9c15917fa81005a43818",
+      "samples_sha256": "9d33dd64a21ff11c838e1bb3b606e323dfef4e1bc412c9d96a6869fa8fa1cde2",
+      "audit_sha256": "88e6b03411e5608a5701b4b0d353514e89b3ca333af9354ee3d0d3497c115dbf",
+      "checker_sha256": "7bdf796ccca43832d5a832cddb5da18d38d37f0d77c9e6c5616a63f098f5cd09"
+    }
+  },
+  "camera_attempt": "logs/ram_diagnostic_20261101/20261103_130037/attempt.json",
+  "observation": {
+    "status": "CAPTURED_SIDEBAND_STATUS_ONLY",
+    "missing": [],
+    "real_camera_verified": false,
+    "board_acceptance_passed": false,
+    "flash_written": false,
+    "native_before": {
+      "pixel_wordcount": 0,
+      "selected_datatype": 43,
+      "selected_vc": 0,
+      "image_seen": false,
+      "ppc_mask_hex": "0000",
+      "image_ppc_values_0_to_4": [],
+      "ppc_above_4_seen": false,
+      "other_payload_seen": false,
+      "image_valid_outside_hs_seen": false,
+      "camera_fault": false
+    },
+    "native_after": {
+      "pixel_wordcount": 2400,
+      "selected_datatype": 43,
+      "selected_vc": 0,
+      "image_seen": true,
+      "ppc_mask_hex": "0010",
+      "image_ppc_values_0_to_4": [
+        4
+      ],
+      "ppc_above_4_seen": false,
+      "other_payload_seen": false,
+      "image_valid_outside_hs_seen": false,
+      "camera_fault": false
+    },
+    "source_frames": 244,
+    "format_errors": 243,
+    "overflow_frames": 0,
+    "a_completed": 0,
+    "width": 0,
+    "segments": 0,
+    "segments_clipped": false,
+    "capture_record_seen": true,
+    "capture_record_complete": false,
+    "source_flags_hex": "00000088",
+    "uart_sha256": "c8466f851b13140c474440dabae80757fae909a99285c01809e7f09f97ba8cc0",
+    "attempt_sha256": "3eb7a72ec45707d8a7616b5d880d223d07ddf6a567c1f47966349927b5ee1240",
+    "fpga_image_sha256": "333af57e423c4174aaf0b1d0589b6a0c796f85ea530758f0fc715528896328b2",
+    "scope": "Pixel-domain sideband only. PPC set includes RAW10 VC0 valid cycles after synchronized RUN; no frequency or per-frame distribution inferred. Other enabled Pack40 payloads are flagged but excluded; Pack48/56/64 disabled, so their absence is not measured. Different snapshot domains are not simultaneous.",
+    "snapshots": {
+      "before": {
+        "start": 882,
+        "end": 1022,
+        "words": {
+          "0": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            57,
+            0,
+            0
+          ],
+          "1": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "2": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            2147969997,
+            2013607940,
+            2097205765,
+            1397952512,
+            1,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            2818048,
+            3385982976,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "after": {
+        "start": 11032,
+        "end": 11163,
+        "words": {
+          "0": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            665,
+            0,
+            0
+          ],
+          "1": [
+            244,
+            243,
+            0,
+            0,
+            0,
+            0,
+            0,
+            136
+          ],
+          "2": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            2147969997,
+            2013607940,
+            2097205765,
+            1397952512,
+            1,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            2150304096,
+            3385982992,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    }
+  },
+  "c10_restore_passed": true,
+  "restore_attempt": "logs/c10_warm_boot_20261101/20261103_130101/attempt.json",
+  "finished": "2026-11-03T13:01:20.586536+08:00"
+}

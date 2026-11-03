@@ -1,0 +1,12 @@
+{
+  "status": "VERIFIED_FROM_LOCAL_VENDOR_COMPONENT",
+  "component_path": "tools/efinity/2026.1/ipm/ip/efx_csi2/efx_2p5g_csi2_rx/ipm/ip_component.xml",
+  "component_sha256": "de90992119043eccb8e68ef658c7682106c325294895db876099c90ce0ea40ee",
+  "pack_type_expression": "(${Pack_64}*8)+(${Pack_56}*4)+(${Pack_48}*2)+(${Pack_40}*1)",
+  "diagnostic_pack_type": 1,
+  "pack40_enabled": true,
+  "pack48_enabled": false,
+  "pack56_enabled": false,
+  "pack64_enabled": false,
+  "ddr_changed": false
+}

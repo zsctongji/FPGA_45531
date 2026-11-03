@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "hardware_accessed": false,
+  "real_camera_verified": false,
+  "cases": [
+    "baseline_variant_mismatch_reproduced",
+    "saved_hardware_log_replayed",
+    "wrong_variant_rejected",
+    "wrong_image_rejected",
+    "bad_readback_rejected"
+  ],
+  "source_sha256": {
+    "tools/test_c9_packet_identity.py": "18cca9fab722b33b4ca201cef7cf7b8ae860326395ab4e4dbcb3f0e959ba718b",
+    "tools/check_c9_packet_compact_v2.py": "f0b769e211a8f81e8e36bc16a1b765851960f4df0fee12f3e6273f1904df0cb0",
+    "logs/ram_diagnostic_20261101/20261103_114336/attempt.json": "afe54e433bdc7e4c575c84c0d37592442294403fd6f75bd5bace9fe48b281b5b",
+    "logs/ram_diagnostic_20261101/20261103_114336/uart.log": "8f63a5821ee758bf55a5d17de55cc580aa0caaa75f398b0e4742066844a11c97"
+  }
+}

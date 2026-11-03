@@ -1,0 +1,11 @@
+{
+  "bytes": 65536,
+  "exact_matches": 5581,
+  "one_bit_left_matches": 65536,
+  "ram_sha256": "e5a60a44f8386977ed71c2223891a7a68d2348e2cf1f9f55e72491279f9cc1fa",
+  "expected_first32": "9781150093818177174138001301812417550f001305c52797550f0093854527",
+  "actual_first32": "2f022a01270302ee2e827000260302482eaa1e00260b8a4f2eaa1e01270a8a4e",
+  "shifted_first32": "2f022a01270302ee2e827000260302482eaa1e00260b8a4f2eaa1e01270a8a4e",
+  "cpu_state": "halted after cold capture timed out; PC=0x8",
+  "status": "FAIL_BOOT_SPI_READ_BIT_ALIGNMENT"
+}

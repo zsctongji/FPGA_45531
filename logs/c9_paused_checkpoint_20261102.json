@@ -1,0 +1,29 @@
+{
+  "status": "PAUSED_BY_USER",
+  "time": "2026-11-02T21:14:45.663735+08:00",
+  "reason": "User requested pause due to nearly exhausted quota",
+  "background_build_stopped": true,
+  "flash_written": false,
+  "active_profile_changed": false,
+  "ddr_parameters_changed": false,
+  "real_camera_verified": false,
+  "last_geometry_result": "logs/c9_geometry_board_20261102/20261102_205807/result.json",
+  "last_geometry_result_sha256": "43d09c35b801017d44a0d828fa291fe43993aae26f0306684e14b008020aceb7",
+  "last_restore": "logs/c10_warm_boot_20261101/20261102_205918/attempt.json",
+  "observed_width": 72,
+  "observed_segments_clipped_at": 4095,
+  "observed_record_complete": false,
+  "source_frames": 252,
+  "format_errors": 251,
+  "pending_project": "build/c9_phy_geometry_image_20261102",
+  "pending_image_qualified": false,
+  "next_steps": [
+    "Run full tools/run_c9_phy_geometry.ps1 after verifying its isolated target",
+    "Run tools/audit_c9_phy_geometry.py",
+    "If audit passes, run tools/run_c9_phy_geometry.py --capture --port COM13",
+    "Use measured CSI HS/valid counts to decide a pixel-path repair; preserve DDR and frame rejection criteria"
+  ],
+  "local_handoff_synced": false,
+  "git_committed": false,
+  "git_pushed": false
+}

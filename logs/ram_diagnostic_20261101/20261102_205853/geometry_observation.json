@@ -1,0 +1,137 @@
+{
+  "status": "CAPTURED_GEOMETRY_ONLY",
+  "real_camera_verified": false,
+  "dma_cache_handoff_verified": false,
+  "board_acceptance_passed": false,
+  "width": 72,
+  "height": 4095,
+  "width_clipped": false,
+  "height_clipped": true,
+  "record_complete": false,
+  "source_frames": 252,
+  "format_errors": 251,
+  "overflow_frames": 0,
+  "a_completed": 0,
+  "source_flags_hex": "048fff98",
+  "expected_width": 1920,
+  "expected_height": 1080,
+  "scope": "Latest capture record counts contiguous DE segments, not necessarily physical sensor HS lines; pairs/domains sampled separately",
+  "snapshots": {
+    "before": {
+      "start": 996,
+      "end": 1136,
+      "words": {
+        "0": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          63,
+          0,
+          0
+        ],
+        "1": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "2": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "3": [
+          2147969997,
+          2013607940,
+          2097205765,
+          1397952512,
+          1,
+          0,
+          0,
+          0
+        ],
+        "4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "after": {
+      "start": 11146,
+      "end": 11277,
+      "words": {
+        "0": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          672,
+          0,
+          0
+        ],
+        "1": [
+          252,
+          251,
+          0,
+          0,
+          0,
+          0,
+          0,
+          76545944
+        ],
+        "2": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "3": [
+          2147969997,
+          2013607940,
+          2097205765,
+          1397952512,
+          1,
+          0,
+          0,
+          0
+        ],
+        "4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "uart_sha256": "c735979c7a6530ca2a4cfa658fc87eb518deb9611bed02dd9cb914e809f4670b",
+  "attempt_sha256": "1d2f372c1aec27c6d8db287361cfa5619bc0d385231d71664bb559a75ad50fda",
+  "fpga_image_sha256": "0f6285a20a6f1352ea578b09ec37d588c62af3e3c52737c47fd34b33064c3293",
+  "firmware_sha256": "f9955a3639543272716f1ef998156f6aae05d297c8841eb7092af8ef57ced9a5"
+}

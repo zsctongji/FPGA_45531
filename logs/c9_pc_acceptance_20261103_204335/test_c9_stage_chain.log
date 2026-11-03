@@ -1,0 +1,28 @@
+STAGES mode=0 phase=0 native=e1870960001e000c isp=c9e21001c73c000c3c000c3c000c3c000c3c000c video=be7c0780 capture_width=1920 height=4 frames=4 errors=0 complete_records=3
+PASS tb_stage_chain mode=0 phase=0
+C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\team_work\03_ai_soc\c9_live\camera_geometry\tb_stage_chain.sv:59: $finish called at 128080000 (1ps)
+
+STAGES mode=0 phase=1 native=e1870960001e000c isp=c9e21001c73c000c3c000c3c000c3c000c3c000c video=be7c0780 capture_width=1920 height=4 frames=4 errors=0 complete_records=3
+PASS tb_stage_chain mode=0 phase=1
+C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\team_work\03_ai_soc\c9_live\camera_geometry\tb_stage_chain.sv:59: $finish called at 128080000 (1ps)
+
+STAGES mode=0 phase=3 native=e1870960001e000c isp=c9e21001c73c000c3c000c3c000c3c000c3c000c video=be7c0780 capture_width=1920 height=4 frames=4 errors=0 complete_records=3
+PASS tb_stage_chain mode=0 phase=3
+C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\team_work\03_ai_soc\c9_live\camera_geometry\tb_stage_chain.sv:59: $finish called at 128080000 (1ps)
+
+STAGES mode=1 phase=0 native=e187096000012144 isp=c9e21001c7024144024144024144024144024144 video=be424048 capture_width=72 height=108 frames=4 errors=3 complete_records=0
+PASS tb_stage_chain mode=1 phase=0
+C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\team_work\03_ai_soc\c9_live\camera_geometry\tb_stage_chain.sv:59: $finish called at 134320000 (1ps)
+
+STAGES mode=1 phase=3 native=e187096000012144 isp=c9e21001c7024144024144024144024144024144 video=be424048 capture_width=72 height=108 frames=4 errors=3 complete_records=0
+PASS tb_stage_chain mode=1 phase=3
+C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\team_work\03_ai_soc\c9_live\camera_geometry\tb_stage_chain.sv:59: $finish called at 134320000 (1ps)
+
+STAGES mode=2 phase=0 native=e1870960001e000c isp=c9e21001cf0000000000000000003c000c3c000c video=9e400000 capture_width=0 height=0 frames=4 errors=3 complete_records=0
+PASS tb_stage_chain mode=2 phase=0
+C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\team_work\03_ai_soc\c9_live\camera_geometry\tb_stage_chain.sv:59: $finish called at 128080000 (1ps)
+
+STAGES mode=3 phase=0 native=e1870960001e000c isp=c9e21001c73c000c3c000c3c000c3c000c3c000c video=9f400780 capture_width=0 height=0 frames=4 errors=3 complete_records=0
+PASS tb_stage_chain mode=3 phase=0
+C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\team_work\03_ai_soc\c9_live\camera_geometry\tb_stage_chain.sv:59: $finish called at 128080000 (1ps)
+

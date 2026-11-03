@@ -1,0 +1,9 @@
+{
+  "name": "test_c9_camera_stream_gate",
+  "returncode": 0,
+  "reports": [
+    "logs/c9_pc_acceptance_20261103_204335/test_c9_camera_stream_gate/c9_camera_stream_gate_tests_20261103.json"
+  ],
+  "script_sha256": "84b52590a233c0249d3b1ca8986365e93d3589d37c49d70a2ddc5cbfd36aa35e",
+  "hardware_accessed": false
+}

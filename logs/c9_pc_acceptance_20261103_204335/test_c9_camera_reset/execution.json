@@ -1,0 +1,9 @@
+{
+  "name": "test_c9_camera_reset",
+  "returncode": 0,
+  "reports": [
+    "logs/c9_pc_acceptance_20261103_204335/test_c9_camera_reset/c9_camera_reset_tests_20261103.json"
+  ],
+  "script_sha256": "bfee446f5311e40b14930556222cab1fb6ec1721c6bcc08e4f0e2bb14f8b8994",
+  "hardware_accessed": false
+}

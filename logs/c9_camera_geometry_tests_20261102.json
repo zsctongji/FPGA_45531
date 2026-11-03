@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "board_test_passed": false,
+  "scope": "Synthetic valid gaps reproduce line fragmentation through actual A ISP and pixel glue; sensor valid-gap hypothesis remains unverified",
+  "cases": [
+    {
+      "name": "capture_geometry",
+      "returncode": 0,
+      "expected_failure": false,
+      "expected_result_met": true,
+      "evidence": "PASS tb_capture_geometry good fragmented cropped missing_line saturation reset low_flags_preserved\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\camera_geometry\\tb_capture_geometry.sv:36: $finish called at 11222000 (1ps)\n"
+    },
+    {
+      "name": "isp_continuous",
+      "returncode": 0,
+      "expected_failure": false,
+      "expected_result_met": true,
+      "evidence": "PASS tb_camera_valid_gap geometry=32x8 frames=3 exact_line_frame_counts warmed_pixels_known actual_A_debayer RAW4_to_GRAY8_1PPC\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_geometry_tests_20261102\\continuous.sv:50: $finish called at 20040000 (1ps)\n"
+    },
+    {
+      "name": "isp_valid_gap",
+      "returncode": 1,
+      "expected_failure": true,
+      "expected_result_met": true,
+      "evidence": "FATAL: C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_geometry_tests_20261102\\gapped.sv:31: ISP line split/length: 16 expected 32\n       Time: 1817500  Scope: tb_camera_valid_gap\n"
+    }
+  ],
+  "source_sha256": {
+    "build/c9_display_fix_20261102/rtl/physical_video.sv": "400d2c9d81429ef50f17d67e9bb79c3c1351c878af54399eaa8723c445dae37b",
+    "build/c9_display_fix_20261102/vendor_a/rtl/debayer/debayer_top_2to1.v": "aeb59623af84e18b042681388fa5abe82a5be70bc0524ed9ae13f715cb4da21c",
+    "build/c9_display_fix_20261102/vendor_a/rtl/debayer/line_buffer.v": "bc15b0c8ada51392a6aaa94dfd24bf8aa136b9a93ac1893ca215594d67d76214",
+    "build/c9_display_fix_20261102/vendor_a/rtl/debayer/raw_to_rgb.v": "e95812bbf061a77b69a4345f40db7b151c81db57a7cb5b4661d6d4a792061d4f",
+    "build/c9_display_fix_20261102/vendor_a/rtl/debayer/rgb_gain_v1.v": "e564586b46457d39fba69c0594aa3c6fab0c01d9d9dc21e7cae75c6d42822d6b",
+    "build/c9_display_fix_20261102/vendor_a/rtl/debayer/true_dual_port_ram.v": "3bb28a26d727b65690c518eba6d91fe17f13c87af6031e6d4894c02e8b57aa7c",
+    "build/c9_geometry_tests_20261102/continuous.sv": "d3df05b6920f95143035568fdd8a68d8b5dbb9c3bdb57370cbde98d9bf891835",
+    "build/c9_geometry_tests_20261102/gapped.sv": "9eefe17f17b6595ab0227171bd2b7fcce7d86936d81aabd42a9f5ffc37aafd6b",
+    "projects/06_soc_c2/a_side/video_a_capture.v": "6fd4ba3f87ebc42e7ca4e90292da10d1233d8b6cd2b26311cc05cb818e673d57",
+    "projects/06_soc_c2/a_side/video_grid_sampler.v": "9bd066f70ff8778caa7f4f18cfa4709a949b1c61ceb648cd79d015e00d57db84",
+    "projects/06_soc_c2/rtl/c2_bram_async_fifo.sv": "5f993727ca3e48e89d10740c98c06d001b12b8a08d176d2eadb46c966413682d",
+    "projects/07_soc_physical/sim/tb_physical_isp.sv": "6576b12c73c78c18bf8c4b94543ef6be9d92137f7d57b82cb7bc67f35ad241c7",
+    "team_work/03_ai_soc/c9_live/camera_geometry/c9_capture_geometry.sv": "94d7510bfb7509c62020e59cc2d6038f72d8087229183f05d62e6dbce4b32e9c",
+    "team_work/03_ai_soc/c9_live/camera_geometry/tb_capture_geometry.sv": "d1ded640e9cec7c0c0b5d2d1aebcf8ccf850827b8c7b0185dec2f316da00f1cc",
+    "tools/test_c9_camera_geometry.py": "1b02aca4e2dedffaa0a1d5ed4df207488f856b96b37caa8e8b9d144462fb45e0"
+  }
+}

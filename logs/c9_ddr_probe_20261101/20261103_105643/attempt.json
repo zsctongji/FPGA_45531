@@ -1,0 +1,43 @@
+{
+  "status": "CAPTURED_READONLY_DDR_STATUS",
+  "started": "2026-11-03T10:56:43.148698+08:00",
+  "flash_written": false,
+  "cpu_firmware_loaded": false,
+  "synthesis_variant": "cong_comb4_off_seed2_scanout_geometry_observer",
+  "fpga_image_sha256": "0f6285a20a6f1352ea578b09ec37d588c62af3e3c52737c47fd34b33064c3293",
+  "implementation_audit_sha256": "a9714500ce6585a50388133bb8fa02e639ad01e14b9c1073d659e5d9caa98543",
+  "capture_tool_sha256": "f70ee61cc91ca983e602e432a0c0a4e9b30b20c1ac89ddd2afd75ff9143359c3",
+  "fpga_configured": true,
+  "last_raw_hex": "007f7f16d",
+  "samples_sha256": "e67915034374209237d1da0c38ba1a7761f5fa1c2b66e17b4e7f43c2d1821394",
+  "observed": {
+    "cal_done": true,
+    "system_reset": false,
+    "controller_reset_released": true,
+    "root_reset_released": true,
+    "pll_locks": 15,
+    "sys_rst": true,
+    "init_state": 22,
+    "wrlvl_check": 254,
+    "read_level_check": 254,
+    "init_delay_counter": 300000,
+    "rdlvl_shift": 4,
+    "wrlvl_shift": 5,
+    "mpr_rdlvl_dly": true,
+    "idelay_ld": false,
+    "ddr_debug_port_hex": "70f03000d",
+    "status0_last8_identical": true,
+    "status1_last8_identical": true,
+    "clock_activity_observed": {
+      "core_clk": true,
+      "i_sysclk": true,
+      "tx_cal_clk": true,
+      "rx_cal_clk": true
+    },
+    "atomic_snapshot": false,
+    "clock_frequency_verified": false
+  },
+  "c10_restore_passed": true,
+  "restore_attempt": "logs\\c10_warm_boot_20261101\\20261103_105707\\attempt.json",
+  "finished": "2026-11-03T10:57:26.891070+08:00"
+}

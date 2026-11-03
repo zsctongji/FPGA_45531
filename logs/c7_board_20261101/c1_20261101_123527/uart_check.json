@@ -1,0 +1,14 @@
+{
+  "status": "FAIL",
+  "errors": [
+    "Require exactly one boot session; capture a fresh single run",
+    "Missing/duplicate BOOT",
+    "Missing/duplicate RAM_PROBE",
+    "Missing/duplicate MODEL",
+    "Missing/duplicate OUTPUT",
+    "Missing/duplicate DONE",
+    "Missing/duplicate HAL",
+    "Malformed/incomplete record: 'BOOT'"
+  ],
+  "scope": "UART log consistency and six static-label checks; not proof of capture provenance or PC golden-reference agreement"
+}

@@ -1,0 +1,14 @@
+PASS case=0 state=6 error=00 checked=153
+PASS case=1 state=7 error=05 checked=0
+PASS case=2 state=7 error=03 checked=0
+PASS case=3 state=7 error=04 checked=0
+PASS case=4 state=7 error=04 checked=0
+PASS case=5 state=7 error=01 checked=0
+PASS case=6 state=7 error=02 checked=0
+PASS case=7 state=7 error=05 checked=0
+PASS case=8 state=7 error=03 checked=0
+PASS case=9 state=7 error=04 checked=0
+PASS case=10 state=7 error=05 checked=0
+PASS case=0 state=6 error=00 checked=153
+PASS tb_ddr_diag tests=12 periodic_stalls high_address_alias data_errors cal_loss timeout reset_recovery
+C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\projects\08_ddr_diag\sim\tb_ddr_diag.sv:54: $finish called at 34470000 (1ps)

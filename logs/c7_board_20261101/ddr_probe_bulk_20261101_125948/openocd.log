@@ -1,0 +1,14 @@
+Open On-Chip Debugger 0.11.0+dev-04060-g967f8f6f0-dirty (2026-03-24-19:56)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Info : clock speed 1000 kHz
+Info : JTAG tap: fpga_spinal.bridge tap/device found: 0x10660a79 (mfg: 0x53c (Efinix Inc), part: 0x0660, ver: 0x1)
+[fpga_spinal.cpu0] Target successfully examined.
+Info : gdb port disabled
+16 bytes written at address 0x02000000
+downloaded 16 bytes in 0.000335s (46.642 KiB/s)
+
+dumped 16 bytes in 0.002455s (6.365 KiB/s)
+
+shutdown command invoked

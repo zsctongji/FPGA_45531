@@ -1,0 +1,55 @@
+{
+  "started": "2026-11-01T12:28:13.118163+08:00",
+  "image": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\fpga_bitstreams\\ddr_diag_100mhz\\ddr_diag.bit",
+  "image_sha256": "752d7855d7726ec61fdc1b863df381ff7fdac0f6577f0f59eeb8af812f9a6add",
+  "mode": "jtag",
+  "flash_written": false,
+  "destructive_ddr_test": true,
+  "uart": "COM13",
+  "baud": 115200,
+  "dtr": false,
+  "rts": false,
+  "jtag_url": "ftdi://0x0403:0x6011:0:ff/1",
+  "jtag_hz": 1000000,
+  "expected_idcode": "0x10660a79",
+  "board_test_passed": true,
+  "result": "TERMINAL_RECORDS_CAPTURED",
+  "test_kind": "cold_power_on_then_jtag_reload",
+  "power_cycle_evidence": "User reported all-power disconnection/reconnection in this conversation; not independently measured",
+  "user_reported_power_cycle": true,
+  "flash_boot_validated": false,
+  "usb_port_recovery": "Initial reconnect used USB(5), B bound to FTDIBUS; no programming attempted there. User returned to original USB(1), B libusbK and C COM13 restored.",
+  "scan_returncode": 0,
+  "jtag_scan": [
+    {
+      "vid": "0x0403",
+      "pid": "0x6011",
+      "serial_no": "",
+      "description": "Quad RS232-HS",
+      "idcode": [
+        "0x10660a79"
+      ],
+      "ir_width": [
+        5
+      ]
+    }
+  ],
+  "uart_opened": "2026-11-01T12:28:15.019890+08:00",
+  "command": [
+    "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1\\python311\\bin\\python.exe",
+    "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1\\pgm\\bin\\efx_pgm\\ftdi_program.py",
+    "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\fpga_bitstreams\\ddr_diag_100mhz\\ddr_diag.bit",
+    "-m",
+    "jtag",
+    "-u",
+    "ftdi://0x0403:0x6011:0:ff/1",
+    "--jtag_clock_freq",
+    "1000000"
+  ],
+  "programmer_returncode": 0,
+  "elapsed_seconds": 30.516,
+  "finished": "2026-11-01T12:28:45.708724+08:00",
+  "uart_check_returncode": 0,
+  "programmer_log_sha256": "4d81807e7ca46d9f40f7ead3373e249fef0e40943669c202cb10a4170d53a771",
+  "uart_log_sha256": "4ce1cd2645a102897e77c4855837343cf73fede31f41a590db2cce43cecc017c"
+}

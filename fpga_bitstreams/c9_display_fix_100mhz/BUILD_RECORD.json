@@ -1,0 +1,55 @@
+{
+  "status": "PASS_PATTERN_DMA_VIDEO_CAMERA_FORMAT_PENDING",
+  "diagnostic_only": true,
+  "rom_entry_parked": true,
+  "c3_present": false,
+  "flash_boot_image": false,
+  "full_system_passed": false,
+  "artifacts": {
+    "soc_physical.bit": {
+      "bytes": 2854974,
+      "sha256": "ea542809a0a884fd2d3dbc89a22cdc0d7c891e424bd1cc1179194a0934f5ee6b"
+    },
+    "soc_physical.hex": {
+      "bytes": 2855034,
+      "sha256": "df12ae82df2a107e4c923ab729a49d3df25fa3b782e935a1bbb228cf08b02c36"
+    },
+    "soc_physical.place.rpt": {
+      "bytes": 2325,
+      "sha256": "bc05e51aa34d8a87386607807cab513ec673cd1252c82dc1b19d167b9122b32a"
+    },
+    "soc_physical.pinout.csv": {
+      "bytes": 13210,
+      "sha256": "a04e0365bbbdd8e22f38d1a6cc43a13e03c89ae11d07186bafa493dc5b95e2d6"
+    },
+    "soc_physical.review_timing.rpt": {
+      "bytes": 2788773,
+      "sha256": "cae9a1f6ae89d9d6fbb520c140766477666370f7863a818863c62d0db669df5d"
+    },
+    "soc_physical.bus_setup.rpt": {
+      "bytes": 1327540,
+      "sha256": "af43b61f205a3cb9592cd98790e3b605a6e339a19e5b43c87d1b6ccdc782b0b3"
+    },
+    "soc_physical.bus_hold.rpt": {
+      "bytes": 1330183,
+      "sha256": "b96df8305e5236b000ccd8a0c8548616cb113b2a0e1eace9b7024e9710431fc7"
+    }
+  },
+  "board_summary_sha256": "edf9bb6ddc5a3fcc42af5aed60452b838472011cc99b54699a162a754cf094e3",
+  "source_sha256": {
+    "build/c9_display_fix_20261102/physical_soc_core.v": "7c795bb2962f1e3d1fba52bde1e0f564cacd37af10a170847e25cb5ec2987524",
+    "build/c9_display_fix_20261102/soc_physical_top.sv": "c1eeef62797df4c41ac2a20533163027d310371142d60c258ca304580a41a93c",
+    "build/c9_display_fix_20261102/soc_physical.peri.xml": "0303170cbe27b86e11b15e490ad5f7fe5bd4ee6bf89acd60d22c1d170a230973",
+    "build/c9_display_fix_20261102/soc_physical.sdc": "53f8baf48c4118283df2c9bcd57a5270516039e64caea6e9296592afe34f7b95",
+    "build/c9_display_fix_20261102/review_timing.tcl": "041f9c91942fa3940f4832b3416a208f8e1f15a9166e7a5bcddbb1e6a7f8e6b2",
+    "build/c9_display_fix_20261102/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol0.bin": "95aa26b9cc41c94dca7543f5c4b48350b566cf9311ea714df17415d549e5aa6e",
+    "build/c9_display_fix_20261102/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol1.bin": "e4ad872f2b3dcb92ec3e7d5860e16bc70177928642cce1c89383a74faf94d393",
+    "build/c9_display_fix_20261102/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol2.bin": "b8c5f31b9b5e5fcea4ad83627e7749ca567fee94bef441a241bad2652a42064e",
+    "build/c9_display_fix_20261102/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol3.bin": "b1be4104ba5dabcdef13ef787d604d39b75dac954d7d1f65728be266bf4b606d",
+    "build/c9_display_fix_20261102/soc_physical.xml": "f9ae4c4cf577f90d441a42680f40326fcab38e60f74d20264ea8503844d809f9",
+    "build/c9_display_fix_20261102/bind_cdc.py": "30b506b6a70a20d717bee986a78d7bade62b0013bcc8b8964f57d3712aeb5340",
+    "build/c9_display_fix_20261102/capture_display.py": "e7a08a4c07480ffbe073545f8695d4211f8b22bd11cdc8580e92a9c06c3732d2",
+    "team_work/03_ai_soc/c9_live/display_fix/c2_video_scanout.sv": "dc4df78098c4d614db0fdd81a561c0475f969bae1ed0defa9efdb341dadf6fb3"
+  },
+  "implementation_audit_sha256": "bc859f15627193c5d4d6c6da02db015236afc2319537496df7b60b0fa18645fb"
+}

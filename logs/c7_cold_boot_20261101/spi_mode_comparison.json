@@ -1,0 +1,197 @@
+{
+  "status": "FAIL_ALL_MODES",
+  "rows": [
+    {
+      "mode": 0,
+      "divider": 2,
+      "command": "0000000b",
+      "jedec": "00dec02e",
+      "exact_matches": 30,
+      "bytes": 256
+    },
+    {
+      "mode": 0,
+      "divider": 2,
+      "command": "00000003",
+      "jedec": "00dec02e",
+      "exact_matches": 30,
+      "bytes": 256
+    },
+    {
+      "mode": 0,
+      "divider": 8,
+      "command": "0000000b",
+      "jedec": "00dec02e",
+      "exact_matches": 30,
+      "bytes": 256
+    },
+    {
+      "mode": 0,
+      "divider": 8,
+      "command": "00000003",
+      "jedec": "00dec02e",
+      "exact_matches": 30,
+      "bytes": 256
+    },
+    {
+      "mode": 0,
+      "divider": 32,
+      "command": "0000000b",
+      "jedec": "00dec02e",
+      "exact_matches": 30,
+      "bytes": 256
+    },
+    {
+      "mode": 0,
+      "divider": 32,
+      "command": "00000003",
+      "jedec": "00dec02e",
+      "exact_matches": 30,
+      "bytes": 256
+    },
+    {
+      "mode": 1,
+      "divider": 2,
+      "command": "0000000b",
+      "jedec": "00ef6017",
+      "exact_matches": 3,
+      "bytes": 256
+    },
+    {
+      "mode": 1,
+      "divider": 2,
+      "command": "00000003",
+      "jedec": "00ef6017",
+      "exact_matches": 3,
+      "bytes": 256
+    },
+    {
+      "mode": 1,
+      "divider": 8,
+      "command": "0000000b",
+      "jedec": "00ef6017",
+      "exact_matches": 3,
+      "bytes": 256
+    },
+    {
+      "mode": 1,
+      "divider": 8,
+      "command": "00000003",
+      "jedec": "00ef6017",
+      "exact_matches": 3,
+      "bytes": 256
+    },
+    {
+      "mode": 1,
+      "divider": 32,
+      "command": "0000000b",
+      "jedec": "00ef6017",
+      "exact_matches": 3,
+      "bytes": 256
+    },
+    {
+      "mode": 1,
+      "divider": 32,
+      "command": "00000003",
+      "jedec": "00ef6017",
+      "exact_matches": 3,
+      "bytes": 256
+    },
+    {
+      "mode": 2,
+      "divider": 2,
+      "command": "0000000b",
+      "jedec": "00ffffff",
+      "exact_matches": 3,
+      "bytes": 256
+    },
+    {
+      "mode": 2,
+      "divider": 2,
+      "command": "00000003",
+      "jedec": "00ffffff",
+      "exact_matches": 15,
+      "bytes": 256
+    },
+    {
+      "mode": 2,
+      "divider": 8,
+      "command": "0000000b",
+      "jedec": "00ffffff",
+      "exact_matches": 3,
+      "bytes": 256
+    },
+    {
+      "mode": 2,
+      "divider": 8,
+      "command": "00000003",
+      "jedec": "00ffffff",
+      "exact_matches": 15,
+      "bytes": 256
+    },
+    {
+      "mode": 2,
+      "divider": 32,
+      "command": "0000000b",
+      "jedec": "00ffffff",
+      "exact_matches": 3,
+      "bytes": 256
+    },
+    {
+      "mode": 2,
+      "divider": 32,
+      "command": "00000003",
+      "jedec": "00ffffff",
+      "exact_matches": 15,
+      "bytes": 256
+    },
+    {
+      "mode": 3,
+      "divider": 2,
+      "command": "0000000b",
+      "jedec": "00dfc02f",
+      "exact_matches": 57,
+      "bytes": 256
+    },
+    {
+      "mode": 3,
+      "divider": 2,
+      "command": "00000003",
+      "jedec": "00dfc02f",
+      "exact_matches": 57,
+      "bytes": 256
+    },
+    {
+      "mode": 3,
+      "divider": 8,
+      "command": "0000000b",
+      "jedec": "00dfc02f",
+      "exact_matches": 57,
+      "bytes": 256
+    },
+    {
+      "mode": 3,
+      "divider": 8,
+      "command": "00000003",
+      "jedec": "00dfc02f",
+      "exact_matches": 57,
+      "bytes": 256
+    },
+    {
+      "mode": 3,
+      "divider": 32,
+      "command": "0000000b",
+      "jedec": "00dfc02f",
+      "exact_matches": 57,
+      "bytes": 256
+    },
+    {
+      "mode": 3,
+      "divider": 32,
+      "command": "00000003",
+      "jedec": "00dfc02f",
+      "exact_matches": 57,
+      "bytes": 256
+    }
+  ]
+}

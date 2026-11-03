@@ -1,0 +1,8 @@
+{
+  "status": "FAIL",
+  "mode": "camera",
+  "error": "Firmware failure/trap",
+  "real_camera_verified": false,
+  "dma_cache_handoff_verified": false,
+  "uart_sha256": "93f4ed83fbff9f4bfa5013c52099877028afd1edcf22b326e4d500202dd12054"
+}

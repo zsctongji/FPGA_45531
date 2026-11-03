@@ -1,0 +1,46 @@
+{
+  "status": "PIXEL_SIDEBAND_DIAGNOSTIC_VIDEO_ACCEPTANCE_PENDING",
+  "trials": [
+    {
+      "camera_attempt": "logs/ram_diagnostic_20261101/20261103_130037/attempt.json",
+      "native": {
+        "pixel_wordcount": 2400,
+        "selected_datatype": 43,
+        "selected_vc": 0,
+        "image_seen": true,
+        "ppc_mask_hex": "0010",
+        "image_ppc_values_0_to_4": [
+          4
+        ],
+        "ppc_above_4_seen": false,
+        "other_payload_seen": false,
+        "image_valid_outside_hs_seen": false,
+        "camera_fault": false
+      },
+      "source_frames": 244,
+      "format_errors": 243,
+      "width": 0
+    },
+    {
+      "camera_attempt": "logs/ram_diagnostic_20261101/20261103_130818/attempt.json",
+      "native": {
+        "pixel_wordcount": 2400,
+        "selected_datatype": 43,
+        "selected_vc": 0,
+        "image_seen": true,
+        "ppc_mask_hex": "0010",
+        "image_ppc_values_0_to_4": [
+          4
+        ],
+        "ppc_above_4_seen": false,
+        "other_payload_seen": false,
+        "image_valid_outside_hs_seen": false,
+        "camera_fault": false
+      },
+      "source_frames": 238,
+      "format_errors": 237,
+      "width": 72
+    }
+  ],
+  "final_restore": "logs/c10_warm_boot_20261101/20261103_130842/attempt.json"
+}

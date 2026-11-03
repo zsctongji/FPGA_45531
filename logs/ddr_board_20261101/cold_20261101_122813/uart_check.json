@@ -1,0 +1,19 @@
+{
+  "status": "PASS_LOG",
+  "records": 23,
+  "complete_pass_records": 2,
+  "expected_checked_words": 67108889,
+  "problems": [],
+  "last": {
+    "status": 6,
+    "locks": 3,
+    "cal": 1,
+    "init": 22,
+    "error": 0,
+    "address": 0,
+    "checked": 67108889,
+    "progress": 0
+  },
+  "scope": "Saved UART content only; bind actual bitstream SHA256 and board identity separately",
+  "log_sha256": "4ce1cd2645a102897e77c4855837343cf73fede31f41a590db2cce43cecc017c"
+}

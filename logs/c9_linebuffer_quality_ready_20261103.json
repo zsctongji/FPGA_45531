@@ -1,0 +1,67 @@
+{
+  "status": "OFFLINE_READY_BOARD_REQUIRED",
+  "hardware_accessed": false,
+  "board_test_passed": false,
+  "real_camera_verified": false,
+  "flash_written": false,
+  "controlled_change": "Buffer output waits for 32 consecutive PHY-clean native cycles after natural frame arm. Prequalification PHY status is retained separately; any subsequent PHY error and all packet/FIFO/init errors remain fatal. No payload release for persistent PHY fault; no WC/PPC/frame-count/DDR/clock/pin/IP change; TinyML omitted.",
+  "image_sha256": "5fb524c4063a6074157bfe8d602754f8f39b902b0106bb674ab364fe78c4c5ba",
+  "audit_path": "build/c9_linebuffer_quality_image_20261103/implementation_audit.json",
+  "audit_sha256": "4e0b6af2a87e3f4a80ebcb7f760e407a42bd0922ed9f7c8db6e3381c361f5cfe",
+  "firmware_build_record_sha256": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc",
+  "active_profile_sha256": "29d90baa2c3721a2e440518b5aa4e20282003718408be57d0403f020dbe449fb",
+  "active_image_sha256": "ea542809a0a884fd2d3dbc89a22cdc0d7c891e424bd1cc1179194a0934f5ee6b",
+  "active_profile_changed": false,
+  "ddr_parameters_changed": false,
+  "calibration_algorithm_changed": false,
+  "acceptance_criteria_changed": false,
+  "timing": {
+    "setup": {
+      "rows": 31,
+      "minimum_slack_ns": 0.362,
+      "violations": []
+    },
+    "hold": {
+      "rows": 31,
+      "minimum_slack_ns": 0.026,
+      "violations": []
+    }
+  },
+  "xlrs": 31265,
+  "xlrs_available": 60800,
+  "cdc_pointer_bits": 66,
+  "hypothesis": "Native-domain ISR cleanup/readback before capture. Fresh errors remain fatal, no TinyML accelerator.",
+  "evidence_sha256": {
+    "build/c9_linebuffer_quality_image_20261103/implementation_audit.json": "4e0b6af2a87e3f4a80ebcb7f760e407a42bd0922ed9f7c8db6e3381c361f5cfe",
+    "logs/c9_receiver_quality_tests_20261103.json": "f8f1b78261002bbb91f92ae42204c5ef10bed05aa389d661d9c327eea1820772",
+    "logs/c9_receiver_quality_chain_tests_20261103.json": "9f0af83864836c24351ea00b658ce5eea4ec229310bf67a104bb5c176d475d9c",
+    "logs/c9_linebuffer_quality_decode_tests_20261103.json": "5edec1c1138844ad2b4c865e594008e54eb07aea93d70234bfd6a728d715459d",
+    "firmware/c9_camera_geometry/BUILD_RECORD.json": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc",
+    "tools/report_c9_linebuffer_quality.py": "55600dabaaf24249b8943540de10163d42720b1bee787253bbf245cbd54b1160",
+    "tools/run_c9_linebuffer_quality.py": "3508b92d9db6d80e41a87e461707b8177716884fbfb2521f8a8d2437c269a42e",
+    "tools/check_c9_linebuffer_quality.py": "e0b421666ca98b7021a4e33beb9840ed25d65813f48a6db2d2a7148d603de37a"
+  },
+  "packaged_sha256": {
+    "IMPLEMENTATION_AUDIT.json": "4e0b6af2a87e3f4a80ebcb7f760e407a42bd0922ed9f7c8db6e3381c361f5cfe",
+    "soc_physical.bit": "5fb524c4063a6074157bfe8d602754f8f39b902b0106bb674ab364fe78c4c5ba",
+    "soc_physical.bus_hold.rpt": "fcb10c8fde33eed8cac399f1b94c890a488515255e5777b164b70194833d17a5",
+    "soc_physical.bus_setup.rpt": "74644da80ab8654e289dec96b3f7349fb45bc1acfb08fd32d4165c55705e8db5",
+    "soc_physical.hex": "cfd1eff4c7c1a298fa5ab7517015000cd498b103a6f545a7db4f6d8b6b536245",
+    "soc_physical.pinout.csv": "fa6d22a2d22917d765baba28fdf389fb8cac78f36aca899fd44c6923e85fe2b5",
+    "soc_physical.place.rpt": "a894b6ef40a2797e5d9267dff5e84d81f39c8b230c85cecb152b2adef7a65e66",
+    "soc_physical.review_timing.rpt": "fff34865755624eece2404974cffd29f72833ac677261549b0e3a62ea9038f78"
+  },
+  "preflight": {
+    "status": "PASS_OFFLINE_PREFLIGHT",
+    "hardware_accessed": false,
+    "flash_written": false,
+    "board_test_passed": false,
+    "firmware_version": "c9geom-3bcf05e8d3894dc3",
+    "firmware_sha256": "f9955a3639543272716f1ef998156f6aae05d297c8841eb7092af8ef57ced9a5",
+    "entry": "0x1000000",
+    "probe_variant": "linebuffer_quality",
+    "fpga_image_sha256": "5fb524c4063a6074157bfe8d602754f8f39b902b0106bb674ab364fe78c4c5ba",
+    "implementation_audit_sha256": "4e0b6af2a87e3f4a80ebcb7f760e407a42bd0922ed9f7c8db6e3381c361f5cfe",
+    "qualified_profile_sha256": null
+  }
+}

@@ -1,0 +1,2 @@
+PASS tb_c2_time checks=384 video_snapshots=266 wraps=2 epochs=2 APB_single_clock coherent_CDC readonly rollover common_reset
+build/physical_20261031/c2_regression/sim/tb_c2_time.sv:76: $finish called at 3880000 (1ps)

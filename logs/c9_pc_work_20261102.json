@@ -1,0 +1,34 @@
+{
+  "status": "COMPLETE_PC_ONLY_BOARD_MEASUREMENT_PENDING",
+  "finished": "2026-11-02T23:41:29.475964+08:00",
+  "hardware_accessed": false,
+  "flash_written": false,
+  "board_test_passed": false,
+  "real_camera_verified": false,
+  "active_profile_changed": false,
+  "ddr_parameters_changed": false,
+  "acceptance_criteria_changed": false,
+  "image_sha256": "da4d195aa3181ff382b043f5c32f68482352a8f187a2da89965e012880ad73b4",
+  "audit_sha256": "5f34943de1dcfb1bbfd46a9601dc8b9744d91918d04389858b9b88d7dae9525e",
+  "timing": {
+    "setup": {
+      "rows": 30,
+      "minimum_slack_ns": 0.223,
+      "violations": []
+    },
+    "hold": {
+      "rows": 30,
+      "minimum_slack_ns": 0.026,
+      "violations": []
+    }
+  },
+  "xlrs": 60571,
+  "cdc_pointer_bits": 66,
+  "decoder_cases": 11,
+  "ready_report": "logs/c9_phy_geometry_ready_20261102.json",
+  "ready_report_sha256": "1ff0e2fde800f4bad2b3708bef83e9d25e949b842919b5103ca835480d80083a",
+  "last_hardware_restore_historical": "logs/c10_warm_boot_20261101/20261102_205918/attempt.json",
+  "next_action": "When board work is resumed, run tools/run_c9_phy_geometry.py --capture --port COM13",
+  "git_committed": false,
+  "git_pushed": false
+}

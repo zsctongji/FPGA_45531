@@ -1,0 +1,9 @@
+{
+  "name": "report_c9_linebuffer_csr_board",
+  "returncode": 0,
+  "reports": [
+    "logs/c9_pc_acceptance_20261103_204335/report_c9_linebuffer_csr_board/c9_linebuffer_csr_board_result_20261103.json"
+  ],
+  "script_sha256": "c4ebda272191ced6abe946752273dce39f6b6d45197b57b56a525c18f0e39909",
+  "hardware_accessed": false
+}

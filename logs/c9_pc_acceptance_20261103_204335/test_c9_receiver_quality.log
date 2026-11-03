@@ -1,0 +1,14 @@
+PASS tb_quality no_release_for_persistent_status exact_clean_wait new_error_sticky CRC_not_masked
+PASS tb_raw10_linebuffer case=0 words=5760 vs=4 errors=00
+PASS tb_raw10_linebuffer case=1 words=0 vs=0 errors=02
+PASS tb_raw10_linebuffer case=2 words=0 vs=0 errors=04
+PASS tb_raw10_linebuffer case=3 words=0 vs=1 errors=08
+PASS tb_raw10_linebuffer case=4 words=1459 vs=1 errors=08
+PASS tb_raw10_linebuffer case=5 words=0 vs=1 errors=40
+PASS tb_raw10_linebuffer case=6 words=479 vs=1 errors=01
+PASS tb_raw10_linebuffer case=7 words=1459 vs=1 errors=10
+PASS tb_raw10_linebuffer case=8 words=5760 vs=4 errors=00
+PASS tb_raw10_linebuffer case=9 words=5760 vs=4 errors=00
+PASS tb_raw10_linebuffer case=10 words=0 vs=0 errors=02
+PASS tb_raw10_linebuffer case=11 words=5760 vs=4 errors=00
+PASS tb_raw10_linebuffer case=12 words=0 vs=0 errors=01

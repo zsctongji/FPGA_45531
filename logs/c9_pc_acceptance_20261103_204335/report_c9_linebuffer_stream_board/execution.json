@@ -1,0 +1,9 @@
+{
+  "name": "report_c9_linebuffer_stream_board",
+  "returncode": 0,
+  "reports": [
+    "logs/c9_pc_acceptance_20261103_204335/report_c9_linebuffer_stream_board/c9_linebuffer_stream_board_result_20261103.json"
+  ],
+  "script_sha256": "9f740f6c2ea75f7bf35c7b1ecf419382f41fb703e4f364d68445a1d7eb244c8e",
+  "hardware_accessed": false
+}

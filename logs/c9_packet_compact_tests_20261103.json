@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "board_test_passed": false,
+  "hardware_accessed": false,
+  "evidence": "PASS tb_packet_compact modulo_16 held_HS last_valid_metadata fault reset\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\camera_geometry\\tb_packet_compact.sv:14: $finish called at 2392000 (1ps)\n",
+  "source_sha256": {
+    "team_work/03_ai_soc/c9_live/camera_geometry/c9_packet_probe_compact.sv": "1db1e008329f4a06885510fcc41e02b63c72b94cf88405cf6a01eb1fd149a270",
+    "team_work/03_ai_soc/c9_live/camera_geometry/tb_packet_compact.sv": "720f88678aa0ce379a8121e026bb855b6c7ca8f97df833c2caa65ee23c049136",
+    "tools/test_c9_packet_compact.py": "4bd32fe920ba737854896bd1d20628d24238d468606b2c2d003fbde5cbd27c15"
+  }
+}

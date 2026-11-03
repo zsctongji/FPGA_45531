@@ -1,0 +1,9 @@
+{
+  "name": "test_c9_receiver_quality",
+  "returncode": 0,
+  "reports": [
+    "logs/c9_pc_acceptance_20261103_204335/test_c9_receiver_quality/c9_receiver_quality_tests_20261103.json"
+  ],
+  "script_sha256": "8f07c6610f49d1f956a34c61c3b357d8bc9c1b822d8cba717a0885c729131e52",
+  "hardware_accessed": false
+}

@@ -1,0 +1,93 @@
+{
+  "scope": "Component identity and user-reported voltage intake; C7 timing correction and implementation checks are in linked reports",
+  "physical_release_ready": false,
+  "board_programmed": false,
+  "ddr": {
+    "reference": "U12",
+    "user_reported_markings": [
+      "3HK77",
+      "D9PTK"
+    ],
+    "decoded_part": "MT41K128M16JT-125:K",
+    "manufacturer": "Micron",
+    "capacity_bytes": 268435456,
+    "organization": "128M x16, 8 banks, 14 row / 10 column bits",
+    "official_decoder_response": {
+      "date": "2026-10-31 11:08:50.332",
+      "response-code": "200",
+      "details": [
+        {
+          "part-number": "MT41K128M16JT-125:K",
+          "part-key": "mt41k128m16jt-125-k",
+          "part-name": "DDR3 2G X16 FBGA",
+          "sub-category": "ddr3-sdram",
+          "fbga-code": "D9PTK",
+          "pageurl": "/products/memory/dram-components/ddr3-sdram/part-catalog/part-detail/mt41k128m16jt-125-k"
+        }
+      ]
+    },
+    "official_decoder_url": "https://www.micron.com/sales-support/design-tools/fbga-parts-decoder",
+    "datasheet_product_url": "https://www.micron.com/products/memory/dram-components/ddr3-sdram/part-catalog/part-detail/mt41k128m16jt-125-k",
+    "parameter_file": "projects/03_tinyml/src/ddr3_controller/ddr3_parameter.vh",
+    "parameter_sha256": "2c4c19966ecb897a477dcd7374dacc543c8cf54c9b128faf1a69685cb34f1d75",
+    "capacity_geometry_matches": true,
+    "supply_and_timing_validated": false,
+    "documented_voltage_compatibility": {
+      "supports_1p5V_mode": true,
+      "VDD_VDDQ_1p5V_range_V": [
+        1.425,
+        1.575
+      ],
+      "source": "Micron 2Gb: x4, x8, x16 DDR3L SDRAM Rev G 2/12, Features and Table 11",
+      "url": "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/791/MT41K128M16JT_2D00_125M_5F00_K.pdf",
+      "physical_rails_measured": true,
+      "controller_timing_fully_reviewed": false,
+      "measurement_evidence": "PASS_USER_REPORTED; exact values not supplied"
+    },
+    "active_C7_tFAW_ps": 50000
+  },
+  "flash": {
+    "reference": "U14",
+    "visually_read_marking": "25Q64JWSIQ",
+    "identified_part": "W25Q64JWSSIQ",
+    "identification": "visual marking plus manufacturer product catalog; JEDEC not read",
+    "capacity_bytes": 8388608,
+    "nominal_voltage_V": 1.8,
+    "official_product_url": "https://www.winbond.com/hq/product/code-storage-flash/qspi-nor/w25q-jw/?__locale=en&partNo=W25Q64JWSSIQ",
+    "source_image_sha256": "a5105acb287bb64b9b6363e2e0e4666c2254d6dbf05690ff99e075ea8fc43b20",
+    "previous_tentative_256Mbit_identification_superseded": true,
+    "boot_copy_start": 3670016,
+    "boot_copy_bytes": 4194304,
+    "boot_copy_end_exclusive": 7864320,
+    "copy_window_within_flash_capacity": true,
+    "combined_fpga_cpu_layout_validated": false,
+    "static_non_overlap_report": "logs/board_preflight_20261031.json"
+  },
+  "open_items": [
+    "Numerical rail readings/instrument not supplied; user reports measured voltages match expectations. Dynamic ripple/startup and hardware function remain untested.",
+    "Exact DDR initialization/timing and real calibration/read-write test",
+    "Read-only Flash JEDEC/SFDP confirmation, SPI external timing, FPGA bitstream size and combined layout",
+    "Camera exact module/FPC mapping, buzzer identity/polarity and physical sensor wiring"
+  ],
+  "voltage_observation": {
+    "status": "PASS_USER_REPORTED",
+    "statement": "实测电压符合预期",
+    "source": "User report in this conversation",
+    "expected_rails_reported_checked": [
+      "DDR VDD/VDDQ ~1.5V",
+      "DDR VREF/VTT ~0.75V",
+      "FPGA DDR banks ~1.5V",
+      "Flash ~1.8V"
+    ],
+    "exact_readings_V": null,
+    "instrument": null,
+    "raw_measurement_log": null,
+    "independently_measured_by_agent": false,
+    "does_not_imply": [
+      "DDR calibration",
+      "DDR read-write qualification",
+      "Flash read-ID",
+      "cold-boot validation"
+    ]
+  }
+}

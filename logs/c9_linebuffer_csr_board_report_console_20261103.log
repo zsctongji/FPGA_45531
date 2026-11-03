@@ -1,0 +1,84 @@
+{
+  "status": "STAGE_DIAGNOSTIC_VIDEO_ACCEPTANCE_PENDING",
+  "trials": [
+    {
+      "result": "logs/c9_linebuffer_csr_board_20261103/20261103_170717/result.json",
+      "after": {
+        "normalizer": {
+          "run": true,
+          "armed": false,
+          "fault": false,
+          "error_flags_hex": "00",
+          "last_frame_beats": 0,
+          "input_frames_mod4": 0,
+          "debug_seen_hex": "00000000",
+          "init_done_seen": false,
+          "transport_error_bits_hex": "00000000"
+        },
+        "csr": {
+          "run": true,
+          "init_seen": true,
+          "capture_enable": true,
+          "fault": false,
+          "state": 7,
+          "retries": 0,
+          "pre_status_hex": "00004408",
+          "post_status_hex": "00000000",
+          "pre_debug_hex": "0020c002"
+        },
+        "video": {
+          "run": true,
+          "pattern_mode": false,
+          "fault_gate": false,
+          "config_valid": true,
+          "time_valid": true,
+          "pixel_maximum": 0,
+          "source_maximum": 0
+        }
+      },
+      "width": 0,
+      "source_frames": 0,
+      "format_errors": 0
+    },
+    {
+      "result": "logs/c9_linebuffer_csr_board_20261103/20261103_171213/result.json",
+      "after": {
+        "normalizer": {
+          "run": true,
+          "armed": false,
+          "fault": false,
+          "error_flags_hex": "00",
+          "last_frame_beats": 0,
+          "input_frames_mod4": 0,
+          "debug_seen_hex": "00000000",
+          "init_done_seen": false,
+          "transport_error_bits_hex": "00000000"
+        },
+        "csr": {
+          "run": true,
+          "init_seen": true,
+          "capture_enable": true,
+          "fault": false,
+          "state": 7,
+          "retries": 0,
+          "pre_status_hex": "00004412",
+          "post_status_hex": "00000002",
+          "pre_debug_hex": "0028c002"
+        },
+        "video": {
+          "run": true,
+          "pattern_mode": false,
+          "fault_gate": false,
+          "config_valid": true,
+          "time_valid": true,
+          "pixel_maximum": 0,
+          "source_maximum": 0
+        }
+      },
+      "width": 0,
+      "source_frames": 0,
+      "format_errors": 0
+    }
+  ],
+  "final_restore": "logs/c10_warm_boot_20261101/20261103_171320/attempt.json"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "report_c9_linebuffer_edges_board",
+  "returncode": 0,
+  "reports": [
+    "logs/c9_pc_acceptance_20261103_204335/report_c9_linebuffer_edges_board/c9_linebuffer_edges_board_result_20261103.json"
+  ],
+  "script_sha256": "573dcf55e8a486cc7ce5ac36140fe1900d6644a669ce555573e4a0cbb5fa020d",
+  "hardware_accessed": false
+}

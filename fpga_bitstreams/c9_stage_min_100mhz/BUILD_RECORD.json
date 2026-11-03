@@ -1,0 +1,66 @@
+{
+  "status": "OFFLINE_READY_BOARD_REQUIRED",
+  "hardware_accessed": false,
+  "board_test_passed": false,
+  "real_camera_verified": false,
+  "flash_written": false,
+  "controlled_change": "Same native-domain stage probes and pixel path as stage variant. TinyML accelerator omitted, custom commands unaccepted, AXI S2 master idle. CPU, C2, unique DDR, pixel/control/clock/pin/IP connections retained. Pack40 diagnostic only; no AI/concurrency acceptance.",
+  "image_sha256": "0179b3e7d9a60655cf668c4828f670efe2e4927194cd7ded9fbd7a10e2b1f048",
+  "audit_path": "build/c9_stage_min_image_20261103/implementation_audit.json",
+  "audit_sha256": "35383a485d714c161fe95f75c37c4731fc2a378ab3fcc6b33bc43dcd4db2021a",
+  "firmware_build_record_sha256": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc",
+  "active_profile_sha256": "29d90baa2c3721a2e440518b5aa4e20282003718408be57d0403f020dbe449fb",
+  "active_image_sha256": "ea542809a0a884fd2d3dbc89a22cdc0d7c891e424bd1cc1179194a0934f5ee6b",
+  "active_profile_changed": false,
+  "ddr_parameters_changed": false,
+  "calibration_algorithm_changed": false,
+  "acceptance_criteria_changed": false,
+  "timing": {
+    "setup": {
+      "rows": 30,
+      "minimum_slack_ns": 0.319,
+      "violations": []
+    },
+    "hold": {
+      "rows": 30,
+      "minimum_slack_ns": 0.025,
+      "violations": []
+    }
+  },
+  "xlrs": 30823,
+  "xlrs_available": 60800,
+  "cdc_pointer_bits": 66,
+  "hypothesis": "Stage-local contiguous DE maxima and segment counts after RUN, Pack40 only. Different domains/pairs not simultaneous; not full video acceptance.",
+  "evidence_sha256": {
+    "build/c9_stage_min_image_20261103/implementation_audit.json": "35383a485d714c161fe95f75c37c4731fc2a378ab3fcc6b33bc43dcd4db2021a",
+    "logs/c9_stage_chain_tests_20261103.json": "9df11ed601c27f9c135a530aa723c3a388488fad850e563608b9cdb2ca2f40fd",
+    "logs/c9_stage_min_decode_tests_20261103.json": "75337dd690f882b4010bc6f342184ba01f2c2db9dc3f15bab4fe5828a2f16377",
+    "firmware/c9_camera_geometry/BUILD_RECORD.json": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc",
+    "tools/report_c9_stage_min.py": "ad23f45dc73a24ca89b9e1e2bf807cc591797b5223e7d1bd753e4ce390129af0",
+    "tools/run_c9_stage_min.py": "2ffc424e11d37bdd13d0cb4e99828d39fe3605b87003a085501201ea871fbad2",
+    "tools/check_c9_stage_min.py": "dc4632e789d00317c849a3ec7233598f5d6bdc3f0ff4021ae0f932ffbecfc82e"
+  },
+  "packaged_sha256": {
+    "IMPLEMENTATION_AUDIT.json": "35383a485d714c161fe95f75c37c4731fc2a378ab3fcc6b33bc43dcd4db2021a",
+    "soc_physical.bit": "0179b3e7d9a60655cf668c4828f670efe2e4927194cd7ded9fbd7a10e2b1f048",
+    "soc_physical.bus_hold.rpt": "9185b270ab2e26183b2bd758a393f8e0782f67546ad1ee47ff794a81e69f20cf",
+    "soc_physical.bus_setup.rpt": "7b686b163a853b685787bfa3d690578d93ff14da9b2b5d54b74a08975c90b7f7",
+    "soc_physical.hex": "2560cff0c689864a1f4d586332eac4c732d83461297daf6abf4699426b4c3bfb",
+    "soc_physical.pinout.csv": "a6ac95de7c3ca255cd3f7dfb8e3f78ef3a1270a9f1bfaaf34ba271baf36faeaf",
+    "soc_physical.place.rpt": "380ac2aa3be5c7b444600e18529a58870878108bbe66b0d58eda4f0c393ca407",
+    "soc_physical.review_timing.rpt": "420a45fca86d0d6b6a8d825b8e4186fc2ce24acd1a5e84785166dba32f957a4d"
+  },
+  "preflight": {
+    "status": "PASS_OFFLINE_PREFLIGHT",
+    "hardware_accessed": false,
+    "flash_written": false,
+    "board_test_passed": false,
+    "firmware_version": "c9geom-3bcf05e8d3894dc3",
+    "firmware_sha256": "f9955a3639543272716f1ef998156f6aae05d297c8841eb7092af8ef57ced9a5",
+    "entry": "0x1000000",
+    "probe_variant": "stage_min",
+    "fpga_image_sha256": "0179b3e7d9a60655cf668c4828f670efe2e4927194cd7ded9fbd7a10e2b1f048",
+    "implementation_audit_sha256": "35383a485d714c161fe95f75c37c4731fc2a378ab3fcc6b33bc43dcd4db2021a",
+    "qualified_profile_sha256": null
+  }
+}

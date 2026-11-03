@@ -1,0 +1,26 @@
+{
+  "status": "PACKET_STAGE_COMPLETE_VIDEO_REPAIR_PENDING",
+  "time": "2026-11-03T11:53:16.202767+08:00",
+  "flash_written": false,
+  "active_profile_changed": false,
+  "real_camera_verified": false,
+  "failed_full_probe_xlrs": 60878,
+  "compact_xlrs": 60555,
+  "compact_timing": {
+    "setup_ns": 0.061,
+    "hold_ns": 0.016
+  },
+  "packet_header_clock_coherence_verified": false,
+  "observed_ppc_last_valid_samples": [
+    4,
+    2
+  ],
+  "final_restore": "logs/c10_warm_boot_20261101/20261103_114748/attempt.json",
+  "next_steps": [
+    "Verify generated CSI IP version and pixel sideband support",
+    "Use coherent pixel-domain header metadata or a protocol CDC snapshot",
+    "Measure per-valid PPC distribution and pixel totals before normalization"
+  ],
+  "git_committed": false,
+  "git_pushed": false
+}

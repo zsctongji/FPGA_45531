@@ -1,0 +1,9 @@
+{
+  "status": "PASS_IDENTICAL_INTERFACE_HOST_ASSET_REUSE",
+  "source": "build/c9_sideband_raw10_image_20261103/outflow/soc_physical-post.bsd",
+  "target": "build/c9_sideband_seed3_image_20261103/outflow/soc_physical-post.bsd",
+  "sha256": "6bafa9db4976ab8ca87b238aadf15d134733c5e52f3e3dca7cff1043355a6396",
+  "user2_ir": "01001",
+  "source_peri_sha256": "0303170cbe27b86e11b15e490ad5f7fe5bd4ee6bf89acd60d22c1d170a230973",
+  "target_peri_sha256": "0303170cbe27b86e11b15e490ad5f7fe5bd4ee6bf89acd60d22c1d170a230973"
+}

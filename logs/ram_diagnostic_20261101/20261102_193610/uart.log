@@ -1,0 +1,62 @@
+DEPTHW_INPUT_CNT:4; DEPTHW_OUTPUT_CNT:1.
+CONV_INPUT_CNT:4; CONV_OUTPUT_CNT:1.
+C24|BOOT version=c9live-97fed371cbc9e90a policy=pad54_candidate source=synthetic_selftest_then_camera live=1 map_verified=1 shared_time_verified=1 transport=0x20002 clint_hz=100000000
+C24|MODEL fnv=0x20a1f252
+C24|SELFTEST_BEGIN raw_fnv=0xe8113185 tensor_fnv=0x8f0f8585 synthetic=1
+0; DEPTHWISE_CONV_2D; SOFTWARE; 110ms
+1; DEPTHWISE_CONV_2D; STANDARD; 12ms
+2; CONV_2D; STANDARD; 4ms
+3; DEPTHWISE_CONV_2D; STANDARD; 6ms
+4; CONV_2D; STANDARD; 2ms
+5; DEPTHWISE_CONV_2D; STANDARD; 12ms
+6; CONV_2D; STANDARD; 4ms
+7; DEPTHWISE_CONV_2D; STANDARD; 3ms
+8; CONV_2D; STANDARD; 1ms
+9; DEPTHWISE_CONV_2D; STANDARD; 6ms
+10; CONV_2D; STANDARD; 3ms
+11; DEPTHWISE_CONV_2D; STANDARD; 1ms
+12; CONV_2D; STANDARD; 1ms
+13; DEPTHWISE_CONV_2D; STANDARD; 3ms
+14; CONV_2D; STANDARD; 3ms
+15; DEPTHWISE_CONV_2D; STANDARD; 3ms
+16; CONV_2D; STANDARD; 3ms
+17; DEPTHWISE_CONV_2D; STANDARD; 3ms
+18; CONV_2D; STANDARD; 3ms
+19; DEPTHWISE_CONV_2D; STANDARD; 3ms
+20; CONV_2D; STANDARD; 3ms
+21; DEPTHWISE_CONV_2D; STANDARD; 3ms
+22; CONV_2D; STANDARD; 3ms
+23; DEPTHWISE_CONV_2D; STANDARD; 1ms
+24; CONV_2D; STANDARD; 12ms
+25; DEPTHWISE_CONV_2D; STANDARD; 2ms
+26; CONV_2D; STANDARD; 34ms
+27; AVERAGE_POOL_2D; SOFTWARE; 0ms
+28; CONV_2D; STANDARD; 0ms
+29; RESHAPE; SOFTWARE; 0ms
+30; SOFTMAX; SOFTWARE; 0ms
+C24|SELFTEST raw_fnv=0xe8113185 tensor_fnv=0x8f0f8585 no_person=-6 person=6 person_u8=134 ticks_hi=0x0 ticks_lo=0x18e38f7 synthetic=1
+C9|MAP status=PASS independent_locations=6 words=24 source_off=1
+C24|LIVE_READY version=c9live-97fed371cbc9e90a capabilities=7 policy=pad54_candidate time_kind=1 time_hz=100000000 now_ms=211655 source=c2_samples
+C9|SNAP_BEGIN label=before start_ms=0x33ad4
+C9|BANK pair=0x0 bank=0x0 sequence=0x1 lo=0x0 hi=0x0
+C9|BANK pair=0x0 bank=0x1 sequence=0x1 lo=0x0 hi=0x0
+C9|BANK pair=0x0 bank=0x2 sequence=0x1 lo=0x0 hi=0x0
+C9|BANK pair=0x0 bank=0x3 sequence=0x1 lo=0x80076bcd hi=0x78053804
+C9|BANK pair=0x0 bank=0x4 sequence=0x1 lo=0x0 hi=0x0
+C9|BANK pair=0x1 bank=0x0 sequence=0x2 lo=0x0 hi=0x0
+C9|BANK pair=0x1 bank=0x1 sequence=0x2 lo=0x0 hi=0x0
+C9|BANK pair=0x1 bank=0x2 sequence=0x2 lo=0x0 hi=0x0
+C9|BANK pair=0x1 bank=0x3 sequence=0x2 lo=0x7d00d205 hi=0x53531000
+C9|BANK pair=0x1 bank=0x4 sequence=0x2 lo=0x0 hi=0x0
+C9|BANK pair=0x2 bank=0x0 sequence=0x3 lo=0x0 hi=0x319f
+C9|BANK pair=0x2 bank=0x1 sequence=0x3 lo=0x0 hi=0x0
+C9|BANK pair=0x2 bank=0x2 sequence=0x3 lo=0x0 hi=0x0
+C9|BANK pair=0x2 bank=0x3 sequence=0x3 lo=0x1 hi=0x0
+C9|BANK pair=0x2 bank=0x4 sequence=0x3 lo=0x0 hi=0x0
+C9|BANK pair=0x3 bank=0x0 sequence=0x4 lo=0x0 hi=0x0
+C9|BANK pair=0x3 bank=0x1 sequence=0x4 lo=0x0 hi=0x0
+C9|BANK pair=0x3 bank=0x2 sequence=0x4 lo=0x0 hi=0x0
+C9|BANK pair=0x3 bank=0x3 sequence=0x4 lo=0x0 hi=0x0
+C9|BANK pair=0x3 bank=0x4 sequence=0x4 lo=0x0 hi=0x0
+C9|SNAP_END label=before end_ms=0x33b36 pairs=4
+C24|FAIL stage=time_progress status=-1

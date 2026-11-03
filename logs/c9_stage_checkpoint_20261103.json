@@ -1,0 +1,35 @@
+{
+  "status": "STAGE_LOCALIZATION_COMPLETE_REAL_VIDEO_PENDING",
+  "updated_at": "2026-11-03T16:12:19.346790+08:00",
+  "hardware_accessed": true,
+  "flash_written": false,
+  "ddr_parameters_changed": false,
+  "calibration_algorithm_changed": false,
+  "active_profile_changed": false,
+  "acceptance_criteria_changed": false,
+  "real_camera_verified": false,
+  "cold_boot_verified_this_session": false,
+  "diagnostic_tinyml_accelerator_present": false,
+  "image_sha256": "0179b3e7d9a60655cf668c4828f670efe2e4927194cd7ded9fbd7a10e2b1f048",
+  "final_restore": "logs/c10_warm_boot_20261101/20261103_160518/attempt.json",
+  "trial_count": 2,
+  "earliest_observed_fragmentation": "CSI pixel-domain output; maximum 18 valid 4PPC cycles",
+  "downstream_maximums_match_72_pixels": true,
+  "latest_c2_widths": [
+    72,
+    0
+  ],
+  "unresolved": [
+    "Per-frame reason for latest C2 record width 72 versus 0",
+    "CSI packet/line completeness and pacing",
+    "CRC/synchronization health: debug domain disabled",
+    "Line buffering/valid versus DE interface repair",
+    "Full SoC video/AI/DMA concurrency acceptance"
+  ],
+  "evidence_sha256": {
+    "logs/c9_stage_min_board_result_20261103.json": "94d30a4fac3b0044f4ba371449a4d897d8867491a30343ef35c4063aa77f7d38",
+    "logs/c9_stage_min_ready_20261103.json": "64499079ac31ea8b8ea286eb35bd0ece57bb0638d8797e5fc1d3011e4c991616",
+    "team_work/03_ai_soc/C9_STAGE_TRACE_20261103.md": "c24e8af3fef16bce82b7af956428ecf647fef7ee4529a516bcb1cea9cf306af4",
+    "logs/c10_warm_boot_20261101/20261103_160518/attempt.json": "583321c78c0790de8c02571039a768583fc82959b2d3dea99766e3e6ee0e6fa8"
+  }
+}

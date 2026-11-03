@@ -1,0 +1,33 @@
+{
+  "status": "PIXEL_SIDEBAND_STAGE_COMPLETE_REAL_VIDEO_PENDING",
+  "updated_at": "2026-11-03T13:22:23.397554+08:00",
+  "image_sha256": "333af57e423c4174aaf0b1d0589b6a0c796f85ea530758f0fc715528896328b2",
+  "real_camera_verified": false,
+  "flash_written": false,
+  "ddr_parameters_changed": false,
+  "calibration_algorithm_changed": false,
+  "acceptance_criteria_changed": false,
+  "active_profile_changed": false,
+  "active_profile_sha256": "29d90baa2c3721a2e440518b5aa4e20282003718408be57d0403f020dbe449fb",
+  "final_restore": "logs/c10_warm_boot_20261101/20261103_130842/attempt.json",
+  "cold_boot_verified_this_session": false,
+  "diagnostic_pack_type": 1,
+  "disabled_pack_classes": [
+    48,
+    56,
+    64
+  ],
+  "error_debug_interface_enabled": false,
+  "successful_trials": 2,
+  "host_failure_trials": 1,
+  "c2_widths": [
+    0,
+    72
+  ],
+  "next_step": "Trace DE/valid and reset stage-by-stage through RAW split, ISP, grayscale and C2 input; preserve format rejection and DDR parameters.",
+  "evidence_sha256": {
+    "logs/c9_sideband_board_result_20261103.json": "539cd45cb84feadc563598e2e5833bb790ac3796d1d3ba2cf6199c1927ffe873",
+    "team_work/03_ai_soc/C9_PIXEL_SIDEBAND_20261103.md": "fd1e06e2e958e81b16cf60a3998e9b0144006c45e21907eaefd7d1e4296c81a2",
+    "logs/c10_warm_boot_20261101/20261103_130842/attempt.json": "891681c56bc96a8083235973e84ffa203fec3435d505f33a00f16555af25fad0"
+  }
+}

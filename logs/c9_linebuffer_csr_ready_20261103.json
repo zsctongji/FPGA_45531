@@ -1,0 +1,67 @@
+{
+  "status": "OFFLINE_READY_BOARD_REQUIRED",
+  "hardware_accessed": false,
+  "board_test_passed": false,
+  "real_camera_verified": false,
+  "flash_written": false,
+  "controlled_change": "From frozen linebuffer v2: native-domain AXI ISR pre-read, W1C bits14:2, readback before enabling capture; fresh errors remain fatal after natural VS arm. Native CSR camera bank replaces ISP probes; video counters stay video-domain. Pixel linebuffer and downstream unchanged apart from ignoring pre-arm transport errors; DDR, clock, pin, IP params unchanged. No TinyML accelerator.",
+  "image_sha256": "b1c85b7cbce5b43ecc8ca5e2d4f3627f793f46fabc35cb9e43dbeb58162e0398",
+  "audit_path": "build/c9_linebuffer_csr_image_20261103/implementation_audit.json",
+  "audit_sha256": "5951a747921b4e31f4ec4ad160f682cf112994c3be47b1392dfd61a643ac7d93",
+  "firmware_build_record_sha256": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc",
+  "active_profile_sha256": "29d90baa2c3721a2e440518b5aa4e20282003718408be57d0403f020dbe449fb",
+  "active_image_sha256": "ea542809a0a884fd2d3dbc89a22cdc0d7c891e424bd1cc1179194a0934f5ee6b",
+  "active_profile_changed": false,
+  "ddr_parameters_changed": false,
+  "calibration_algorithm_changed": false,
+  "acceptance_criteria_changed": false,
+  "timing": {
+    "setup": {
+      "rows": 30,
+      "minimum_slack_ns": 0.067,
+      "violations": []
+    },
+    "hold": {
+      "rows": 30,
+      "minimum_slack_ns": 0.001,
+      "violations": []
+    }
+  },
+  "xlrs": 31223,
+  "xlrs_available": 60800,
+  "cdc_pointer_bits": 66,
+  "hypothesis": "Native-domain ISR cleanup/readback before capture. Fresh errors remain fatal, no TinyML accelerator.",
+  "evidence_sha256": {
+    "build/c9_linebuffer_csr_image_20261103/implementation_audit.json": "5951a747921b4e31f4ec4ad160f682cf112994c3be47b1392dfd61a643ac7d93",
+    "logs/c9_linebuffer_csr_tests_20261103.json": "108426c724c3fcb4bdef42c415d5f0a2423013714f9795dc243df9bdd9a4ca18",
+    "logs/c9_linebuffer_csr_chain_tests_20261103.json": "e3a0e717fbb96c8f514858bdfe8d4d880aef40109d4898153c070aa9d10b4fdc",
+    "logs/c9_linebuffer_csr_decode_tests_20261103.json": "5dbe5d413d6ffeda653908490dbc47bd7daeb0c42d3ae9f4feef83376e2ed043",
+    "firmware/c9_camera_geometry/BUILD_RECORD.json": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc",
+    "tools/report_c9_linebuffer_csr.py": "210696941746c72921168e8b5502d8ded827032ca208606122752112d136faea",
+    "tools/run_c9_linebuffer_csr.py": "5df12ab1d26bfa0d99a7b62095aae901724ace02fa4054e57c1c304707585634",
+    "tools/check_c9_linebuffer_csr.py": "3105ed269bbc7d90ac5e4abe1b9cffb82ae74d28b2be67c330e658cd3d29de59"
+  },
+  "packaged_sha256": {
+    "IMPLEMENTATION_AUDIT.json": "5951a747921b4e31f4ec4ad160f682cf112994c3be47b1392dfd61a643ac7d93",
+    "soc_physical.bit": "b1c85b7cbce5b43ecc8ca5e2d4f3627f793f46fabc35cb9e43dbeb58162e0398",
+    "soc_physical.bus_hold.rpt": "a37a05fb19c443028945948517823d928033cf58429502c56b097f073ae5b862",
+    "soc_physical.bus_setup.rpt": "335260adc7fd5d0606b35ffee52410b52c789a5e2983b897b40d64653118334a",
+    "soc_physical.hex": "084fb720c36b77aaeb54139c60033a540dc10051392e3ec168a2dcf48862639b",
+    "soc_physical.pinout.csv": "7450b732e9de8c8c3f781a2d0b48227b2f6c67c7bd994f9cc521aecbbc20f103",
+    "soc_physical.place.rpt": "61c59def9c24d73e5bf24d32d1922bd63156ab0baca925e1b07b34b62065f349",
+    "soc_physical.review_timing.rpt": "8f483bd984a9a2e028537d42caa05eac14af62a5fea2f6b8ccf5bca103d19732"
+  },
+  "preflight": {
+    "status": "PASS_OFFLINE_PREFLIGHT",
+    "hardware_accessed": false,
+    "flash_written": false,
+    "board_test_passed": false,
+    "firmware_version": "c9geom-3bcf05e8d3894dc3",
+    "firmware_sha256": "f9955a3639543272716f1ef998156f6aae05d297c8841eb7092af8ef57ced9a5",
+    "entry": "0x1000000",
+    "probe_variant": "linebuffer_csr",
+    "fpga_image_sha256": "b1c85b7cbce5b43ecc8ca5e2d4f3627f793f46fabc35cb9e43dbeb58162e0398",
+    "implementation_audit_sha256": "5951a747921b4e31f4ec4ad160f682cf112994c3be47b1392dfd61a643ac7d93",
+    "qualified_profile_sha256": null
+  }
+}

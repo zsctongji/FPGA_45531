@@ -1,0 +1,107 @@
+{
+  "status": "PASS_COMPILE_ONLY",
+  "version": "c7diag-edd94bbbebcb45d2",
+  "started": "2026-11-01T12:39:58.352455+08:00",
+  "entry": "0x01000000",
+  "stack_top": "0x01010000",
+  "tested_ranges": [
+    {
+      "base": "0x2000000",
+      "bytes": 262144
+    },
+    {
+      "base": "0x4000000",
+      "bytes": 262144
+    },
+    {
+      "base": "0x6000000",
+      "bytes": 262144
+    },
+    {
+      "base": "0x7000000",
+      "bytes": 262144
+    }
+  ],
+  "checked_words": 1048576,
+  "flash_written": false,
+  "board_test_passed": false,
+  "source_sha256": {
+    "team_work/03_ai_soc/c7_board/main.c": "1616ad2bf7239e8e3b40538f203e53341924475b2465dbbc82586b9fdd246126",
+    "team_work/03_ai_soc/c7_board/start.S": "7a25d012227e18d8f7c5e3daa7e2d6379af0e0003c3531f3962938700e04604c",
+    "team_work/03_ai_soc/c7_board/link.ld": "f616ea100fb22d4f1772034e139c2e87142273aeaa2ee41d1ebfcd0f52f21976",
+    "tools/build_c7_board_diag.py": "a992fd34bfdb64f42f44e4590297fe05a9c851e04c520f75c2a04e3205f9d59d",
+    "team_work/03_ai_soc/c2/c2_driver.h": "70e30ebfb5b6fd39122aba49eccde4668199aeff8f306fba45f4a6a2d490d761",
+    "team_work/shared/include/cooperation_v1.h": "6cd2c16ddc551304afa4a5b92d78c1a2a6faf3898afc0e3cea1509f1e2e53452",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/bsp/efinix/EfxSapphireSoc/include/bsp.h": "8e427e9ec90cd68f4a968f430691c949365e76ccead96361131930134393d06b",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/bsp/efinix/EfxSapphireSoc/include/compatibility.h": "51227bcfc49b1511b9802cefef07b0c9589b8c7e6206d8d84e410e4bf2a70eec",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/bsp/efinix/EfxSapphireSoc/include/freertosHalConfig.h": "1a193b788b55e906041b9298f2f0fee1e7b77739351d0e0675eccecbe01b6315",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/bsp/efinix/EfxSapphireSoc/include/print.h": "ecfae60245c1f3b4e11d5c9e093a3daeeb8f89e1ae4eb69c17ae6d7f36223852",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/bsp/efinix/EfxSapphireSoc/include/print_full.h": "64083154100c17f33b7a2f421388ec02c4072ec0f3509cf9e9097260534195ca",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/bsp/efinix/EfxSapphireSoc/include/semihosting.h": "854082d59b5396ffc8b8154e5568a3920ef957faa327895401f998ed69927226",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/bsp/efinix/EfxSapphireSoc/include/soc.h": "650185170e5f200d5672fd9bca1252d8420e452b8b453288d7f48b3619afae66",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/apb3_cl.h": "8ded59fed15d56b5b90fac52efbbabffead86ba4d220b3c553e8183f560eb7e6",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/clint.h": "06f30d6e325b5517b7fa15c8f773e50875a64247dc7642eca558d27098893778",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/dmasg.h": "a3ee4aae0457fd2148239ed73b4d4ecfb981ce181d4d9d303ab6c4ea015554e1",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/efx_mmc_driver.h": "9a1c1bfda176a40b6d6907b0f86faa61873821e6704b500c9cc09f4a6c7bf1a6",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/efx_tse_mac.h": "5c73f70012dd98738b7c1326c87474fca6cd021f4c1ce96f63424d137e685764",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/efx_tse_phy.h": "b558b33d4783acc0fbfa4e8722641775c7c705f70221e4e366f4ef266c09187d",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/gpio.h": "1e65d1734b2a599a42d6b598f199e08931a61257b10e67ee9c727eb42a747966",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/i2c.h": "2ca39066d49a0bd10f7f494af42fc23b3d945e02b9e82f70c91b83bd4a7fdb1a",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/io.h": "bd98eab95892eae1c08636c678041c3bbc814cc6b33bbf2944c20ab91f311ffa",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/mmc.h": "b2c357819448e66ed6bba7d1e2ce7f01b750d9e9724916f4c37920aa6b9823d5",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/plic.h": "633d178f738d624a0805f914d115d4bedaf575abd06d3566115622c2e3e51929",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/prescaler.h": "01292631801959e4655aa9bd444ec15c22f6b9d95fed3cef0c025dcf3847cdd4",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/riscv.h": "1a61e6299e3fbdf6ac45f902734e0d2dff33e282439a7ef21763adf4629b3ba6",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/spi.h": "492284ce4550d56b15f98239d2f4059655742805cf24e640068e91b26d074145",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/spiFlash.h": "5eb26a7c6f8c65cb15ce46f74d466b0209e3bdbca7eb3c10bac16b91cba08c95",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/start.h": "16ac55c6b56b86d9bbed092e4f8423e61b8f7b208501ab9204647ba91dd713ea",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/timer.h": "797dd07eb06e32f8b205ae6e4273399623fbb6f88daecb69045fc0dd690e2cb0",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/type.h": "a36b9e0c9cf99f1470832102e16aae53e44ebb0f4bd4279c68d329ffbe3a87bb",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/uart.h": "f33226e95f2fc4f4ad746f2a4d5d6466cd37a8481d70d0d3bb2a3ead6286a564",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/driver/vexriscv.h": "e2cfa34325a44f3fc84dc208d94beafe5693f0ad8eb2e5fc1a2abbbee6fa95fa"
+  },
+  "artifacts": {
+    "c7_board_diag.elf": {
+      "bytes": 32972,
+      "sha256": "931260e67f1f02547cf4df824490a7efd36900b68648ebb0a03bbe4c42779b16"
+    },
+    "c7_board_diag.bin": {
+      "bytes": 3460,
+      "sha256": "bcf96b4f0e9a28b8c11ba6beb1c83ee08385525395e1cf952c53926b765e33a4"
+    },
+    "c7_board_diag.map": {
+      "bytes": 5143,
+      "sha256": "850135c017753ef349bf643f8c4875c4a9128ea7b56c85bf0e95548b68e22d46"
+    }
+  },
+  "command": [
+    "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\tools\\riscv_gcc\\13.4.0\\bin\\riscv-none-elf-gcc.exe",
+    "-BC:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/tools/riscv_gcc/13.4.0/libexec/gcc/riscv-none-elf/13.4.0/",
+    "-BC:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/tools/riscv_gcc/13.4.0/riscv-none-elf/bin/",
+    "-march=rv32im_zicsr_zifencei",
+    "-mabi=ilp32",
+    "-O2",
+    "-g",
+    "-ffreestanding",
+    "-fno-builtin",
+    "-nostdlib",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-Wno-unused-function",
+    "-isystem",
+    "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\embedded_sw\\sapphire_soc_tinyml\\bsp\\efinix\\EfxSapphireSoc\\include",
+    "-isystem",
+    "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\03_tinyml\\embedded_sw\\sapphire_soc_tinyml\\software\\standalone\\driver",
+    "-IC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c2",
+    "-IC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\shared\\include",
+    "-IC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\firmware\\c7_board_diag",
+    "-TC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c7_board\\link.ld",
+    "-Wl,-Map=C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\firmware\\c7_board_diag\\c7_board_diag.map",
+    "-o",
+    "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\firmware\\c7_board_diag\\c7_board_diag.elf",
+    "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c7_board\\start.S",
+    "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c7_board\\main.c"
+  ],
+  "scope": "CPU-side four-pattern 1MiB DDR test with D-cache invalidate/refill and byte/halfword lanes; external-DMA stale-cache negative test remains separate"
+}

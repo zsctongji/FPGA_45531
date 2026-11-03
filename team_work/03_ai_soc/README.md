@@ -1,5 +1,39 @@
 # C：RISC-V/TinyML、统一工程、融合与预测
 
+2026-11-03 电脑端回归与证据核对完成：25个测试/重放入口、4项质量门ISP联合仿真通过；545个绑定文件和6个诊断包身份复核通过。真实摄像头SoT失败仍被严格拒绝，等待排线检查后实板复测。 见 [电脑端验收报告](C9_PC_ACCEPTANCE_20261103.md)。
+
+2026-11-03 18:21 整行缓存诊断更新：最大连续pixel/source段已达到1920，但没有完整1920×1080帧。配置完成后延迟stream-on使本轮未记录CRC/ECC/帧同步错误；质量门通过32个干净周期后仍采到新的SoT错误，已严格拒绝整帧。等待完全断电后检查并重插摄像头排线，再用同一位流复测。最新C10恢复182056，六组静态推理通过；未写Flash，DDR/校准及active profile不变。 详细证据见 [整行缓存与PHY诊断](C9_RAW10_LINEBUFFER_20261103.md)。下文保留历史阶段记录。
+
+2026-11-03 最新分级实板：两轮均测到CSI 18×4PPC → RAW/ISP/灰度36×2PPC → C2入口72×1PPC，首个碎段已在CSI像素输出出现。没有完整帧；C2最后记录0/72的逐帧差异仍待解释。轻量诊断未含TinyML，C10六组静态推理已恢复、未写Flash；下一步核对包/行边界并设计整行缓存。见 [分级检查](C9_STAGE_TRACE_20261103.md)。以下为历史阶段记录。
+
+2026-11-03 最新像素域sideband：Pack40/seed3诊断P&R和两轮板测完成，DDR校准/固件回读通过，RUN后RAW10 VC0的PPC集合仅4、最近WC2400；C2宽度仍0/72、完整帧与AI均未取得。C10六组静态推理已恢复，未写Flash；下步逐级核对RAW/ISP/灰度/C2的DE、valid与复位。见 [像素域诊断结果](C9_PIXEL_SIDEBAND_20261103.md)。以下为历史阶段记录。
+
+2026-11-03 包格式观测更新：两轮校准/固件回读通过，PPC最后valid采样分别4/2，视频仍未通过。须核对像素域sideband/包头CDC并统计分布后再修像素路径，C10已恢复、未写Flash。见 [包格式诊断](C9_PACKET_PROBE_20261103.md)。
+
+
+2026-11-03 实板对照：三轮 DDR 校准通过，真实视频仍失败；新 PHY 探针与旧 geometry 视频表现不同，暂不可据饱和计数确定修复方案。C10 六组静态推理已恢复，未写 Flash。见 [CSI 实板结果](C9_CSI_BOARD_20261103.md)。
+2026-11-02 最新电脑端：CSI HS/valid 只读探针已完成综合、P&R、STA 与 66 位 Gray CDC 两角审计（setup +0.223 ns，hold +0.026 ns），11 项解码测试通过，诊断包已就绪。当前阶段未访问板卡，真实视频仍等待下一次采集；说明 [C9_CSI_PC_READY_20261102.md](C9_CSI_PC_READY_20261102.md)。
+
+2026-11-02 晚间：已实板确认 C2 连续 DE 段最大仅 72 像素，段数超过 4095，真实视频仍未通过；C10 已恢复、六组静态推理通过。用户因额度要求暂停，后续 CSI 只读探针构建已停止。见 [C9_CAMERA_GEOMETRY_20261102.md](C9_CAMERA_GEOMETRY_20261102.md)。
+
+2026-11-02 后续：显示启动误计数已修正，实板原DMA/图案视频并发验收PASS，missed/underflow/AXI错误均0；默认C9入口已切到display修正版。真实摄像头固件的计时采样问题已修正，但真实源505个边界中504帧格式错误，尚无有效推理；下一步核对源行宽/行数及DE/valid。见 [C9_DISPLAY_FIX_20261102.md](C9_DISPLAY_FIX_20261102.md)。板卡最后恢复C10，未写Flash。下方为历史阶段记录。
+
+2026-11-02 最新：C9 DDR校准阻塞在关闭COMB4打包的诊断配置下解除；两次重新配置校准通过，实际CPU程序完整读回及DDR/DMA数据步骤执行通过。完整并发仍因显示missed_scans=1未通过，DDR参数及校验标准不变。默认`run_ram_diagnostic.py --configure-c9`已指向该配置；当前板卡恢复C10，未写Flash。见 [DDR_FIX_BOARD_RESULT_20261102.md](DDR_FIX_BOARD_RESULT_20261102.md) 和 [CURRENT_BOARD_CHECKPOINT_20261101.md](CURRENT_BOARD_CHECKPOINT_20261101.md)。以下为各阶段历史记录。
+
+2026-11-01 C7 CPU/DDR/静态 TinyML 实板通过：定位并修正 CPU 厂家桥与通用适配器的单拍地址规则不匹配；28 store / 48 read 回归通过后重新综合/P&R，setup +0.270 ns、hold +0.023 ns、XLR 58,926/60,800。实板 CPU 的 1 MiB 四图案、缓存 invalidate/refill、byte/halfword 通道和公共时间通过；原 C1 六次推理的 INT8 分数与桌面参考逐项相同，Invoke 约 250 ms（含现有日志）。仅 JTAG SRAM/DDR 加载，未写 Flash；外部 DMA stale-cache 负例、真实视频/传感器并发及 C7 冷上电/Flash 自动启动仍待验收。见 [C7_BOARD_ACCEPTANCE_20261101.md](C7_BOARD_ACCEPTANCE_20261101.md)。
+
+2026-11-01 当前 DDR 实板状态：首次 JTAG 加载、KEY0 复位，以及用户确认重新上电后再次 JTAG 配置三次均通过；每次核对 67,108,889 个 word，均有两条完整 PASS、E=00。重新上电测试为 23 条 UART 记录，断电过程由用户确认，未写 Flash。独立诊断已形成三次证据，C7 CPU/AI/视频整机和 Flash 自动启动仍待验收。见 [DDR_BOARD_RESULT_20261101.md](DDR_BOARD_RESULT_20261101.md)；以下各条保留对应阶段的历史状态。
+
+2026-11-01 KEY0 实板复测通过：串口实际捕获复位清零、重新校准后的测试过程和两条完整容量 PASS；26 条记录、N=04000019、E=00。与首次 JTAG 测试分开保存证据，未重新配置 FPGA、未写 Flash。冷上电后重新配置及整机验收仍待完成。见 [DDR_BOARD_RESULT_20261101.md](DDR_BOARD_RESULT_20261101.md)。
+
+2026-11-01 独立 DDR 首次实板通过：FT4232HL 的 B/MI_01 使用 libusbK，C/MI_02 保留 UART COM13。以 1 MHz JTAG 临时加载固定 SHA256 的 C8 镜像，实际收到 23 条 UART 记录，其中两条完整容量 PASS；256 MiB 地址别名与四轮全容量读写核对 67,108,889 个 word，L=3、C=1、E=00。未写 Flash，KEY0 重测、冷上电后重新配置及 C7 整机验收仍待完成。见 [DDR_BOARD_RESULT_20261101.md](DDR_BOARD_RESULT_20261101.md)。以下条目保留各日期的历史状态。
+
+2026-10-31 独立 DDR 诊断：新增 `projects/08_ddr_diag` 和 `28_build_ddr_diag.cmd`。已生成 JTAG 临时加载镜像，具备独立 LED/UART 状态、PLL/校准超时、地址别名探测及四图案 256 MiB 读写。12 项 AXI、4 组 UART 和 8 项解析器检查通过；P&R setup +0.324 ns、hold +0.027 ns。该镜像会破坏 DDR 内容，尚无上板执行证据。见 [DDR_DIAGNOSTIC_RUNBOOK.md](DDR_DIAGNOSTIC_RUNBOOK.md)。
+
+2026-10-31 电压反馈与 DDR 修正：用户报告电压符合预期；C7 tFAW 改为 50 ns 后重新综合/P&R/STA，setup +0.119 ns、hold +0.026 ns，XLR 58,702/60,800。新增 27_prepare_board_review.cmd，46 项静态检查及配置/CPU 区间检查通过，仍待 DDR 校准、读写和冷启动。见 [BOARD_PREFLIGHT_20261031.md](BOARD_PREFLIGHT_20261031.md)。
+
+2026-10-31 整机物理实现（修正前历史）：新增 `projects/07_soc_physical`，见 [PHYSICAL_V4_20261031.md](PHYSICAL_V4_20261031.md)，复现入口 `26_build_soc_physical.cmd`。V4 参考引脚/电压/PLL 已统一，100 MHz CPU 整机完成 P&R；setup +0.127 ns、hold +0.026 ns，66 位 Gray CDC 两角检查通过。实际占用 58,887/60,800 XLR；58 项 RTL 与 543 项物理参考审计通过。未确认实际 PCB/供电/Flash，物理发布仍禁用；下文关于 C6 尚未 P&R 的描述保留为历史记录。
+
 2026-10-31 BRAM 优化与引脚审计：见 [BRAM_OPTIMIZATION_20261031.md](BRAM_OPTIMIZATION_20261031.md) 和 [PIN_OWNERSHIP_20261031.md](PIN_OWNERSHIP_20261031.md)。native map 为 39,656 LUT4 / 36,902 FF / 174 RAM10；53 次 RTL 与 781 项包检查 PASS。25_audit_bram_pins.cmd 复核综合证据与管脚所有权，物理约束仍为 REVIEW_REQUIRED。下文 49/50 次与旧资源数字是历史阶段记录。
 
 2026-10-31 C3真实外设与发布策略见 [C3_REAL_BACKEND_20261031.md](C3_REAL_BACKEND_20261031.md)。native新增I²C/GPIO APB页、公共时间直连及显式620号坏点策略；50次RTL、C3专项、RV32与756项包检查PASS，物理管脚/P&R/上板未验收。C HAL rev2须重编译，默认MMIO关闭。

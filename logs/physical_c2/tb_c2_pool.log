@@ -1,0 +1,2 @@
+PASS tb_c2_pool commands=514 dual_slots generation ownership response_backpressure reset
+build/physical_20261031/c2_regression/sim/tb_c2_pool.sv:61: $finish called at 30910000 (1ps)

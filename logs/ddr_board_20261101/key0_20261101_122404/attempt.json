@@ -1,0 +1,20 @@
+{
+  "started": "2026-11-01T12:24:04.667516+08:00",
+  "trigger": "KEY0/SW0 pressed by user",
+  "mode": "uart_capture_only",
+  "uart": "COM13",
+  "baud": 115200,
+  "dtr": false,
+  "rts": false,
+  "flash_written": false,
+  "fpga_reprogrammed": false,
+  "prior_configuration_attempt": "logs\\ddr_board_20261101\\20261101_121928\\attempt.json",
+  "image_sha256": "752d7855d7726ec61fdc1b863df381ff7fdac0f6577f0f59eeb8af812f9a6add",
+  "identity_scope": "Previous JTAG configuration and unchanged local image; no new hardware image attestation",
+  "reset_or_active_observed": true,
+  "reset_state_observed": true,
+  "board_test_passed": true,
+  "result": "TERMINAL_RECORDS_CAPTURED",
+  "finished": "2026-11-01T12:25:09.978545+08:00",
+  "uart_log_sha256": "164a91882145eb21a043fda5a44efc85c7dd543ba2833850fa8a3d489feec8ff"
+}

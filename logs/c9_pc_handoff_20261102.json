@@ -1,0 +1,382 @@
+{
+  "status": "PASS_LOCAL_COPY_CSI_OFFLINE_READY",
+  "hardware_accessed": false,
+  "git_committed": false,
+  "git_pushed": false,
+  "copied_at": "2026-11-02T23:41:30.092206+08:00",
+  "destination": "C:\\Users\\16034\\Documents\\ChatGPT\\FPGA\\FPGA_cooperation_handoff",
+  "files": [
+    {
+      "path": "firmware/c9_camera_geometry/build.log",
+      "sha256": "ca7138c983e1efba7bf6d839b113b3648b4961091428b0eed95dc9d07cd4b11f"
+    },
+    {
+      "path": "firmware/c9_camera_geometry/build_id.h",
+      "sha256": "de4d800fe6ea29cf824ce278c0b83343e300e91ef3a6269203bcba60e2a37e20"
+    },
+    {
+      "path": "firmware/c9_camera_geometry/BUILD_RECORD.json",
+      "sha256": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc"
+    },
+    {
+      "path": "firmware/c9_camera_geometry/c9_geometry.bin",
+      "sha256": "f9955a3639543272716f1ef998156f6aae05d297c8841eb7092af8ef57ced9a5"
+    },
+    {
+      "path": "firmware/c9_camera_geometry/c9_geometry.elf",
+      "sha256": "233deb30a9f3eb9d712e685b756a1e0fcd19c573e79dd01dc7015fe05ffd54fe"
+    },
+    {
+      "path": "firmware/c9_camera_geometry/c9_geometry.hex",
+      "sha256": "7244424bbff116423da855e814199ede771df8068f0dd8265e9ce05acd114ba2"
+    },
+    {
+      "path": "firmware/c9_camera_geometry/c9_geometry.map",
+      "sha256": "1b95403e6080e0cad921998efba66ec5ee4e0261d2bc6b4cf3df1157a23a127c"
+    },
+    {
+      "path": "firmware/c9_camera_geometry/main.c",
+      "sha256": "384eec025466c856c46c7a055d6c002cffae62c873ec2ed62304135254bdd9d0"
+    },
+    {
+      "path": "fpga_bitstreams/c9_camera_geometry_100mhz/BUILD_RECORD.json",
+      "sha256": "1726093bd7ff1584ce06e6a882dbb745ae9bc0442d5a0444d18ebaad43306501"
+    },
+    {
+      "path": "fpga_bitstreams/c9_camera_geometry_100mhz/soc_physical.bit",
+      "sha256": "0f6285a20a6f1352ea578b09ec37d588c62af3e3c52737c47fd34b33064c3293"
+    },
+    {
+      "path": "fpga_bitstreams/c9_camera_geometry_100mhz/soc_physical.bus_hold.rpt",
+      "sha256": "0bec1843cfa4271c9885c95aec82c2380e61d16d83888a5fd27516b477dd391b"
+    },
+    {
+      "path": "fpga_bitstreams/c9_camera_geometry_100mhz/soc_physical.bus_setup.rpt",
+      "sha256": "1824209d0e6afd2ba5dd074d83b0f4ba514caa2b24068db594d7bc7942aa3375"
+    },
+    {
+      "path": "fpga_bitstreams/c9_camera_geometry_100mhz/soc_physical.hex",
+      "sha256": "5805967dea942688411f5b12e7b5af18022f99fbf08cd1ca2e299c82e7c7f8b8"
+    },
+    {
+      "path": "fpga_bitstreams/c9_camera_geometry_100mhz/soc_physical.pinout.csv",
+      "sha256": "128cd4ca50dd6b168c962d85133cd937399985ca82393d1819a86aed0131caeb"
+    },
+    {
+      "path": "fpga_bitstreams/c9_camera_geometry_100mhz/soc_physical.place.rpt",
+      "sha256": "1e5d0b4ced6c4766075252f1cd1c1d82158397d1cef42c9a6690e9d290cdded3"
+    },
+    {
+      "path": "fpga_bitstreams/c9_camera_geometry_100mhz/soc_physical.review_timing.rpt",
+      "sha256": "76b8ab79b4d6cdfd3ee10c77afff9aa3da7dbf8e2084160e9ce9045b83b25610"
+    },
+    {
+      "path": "fpga_bitstreams/c9_phy_geometry_100mhz/BUILD_RECORD.json",
+      "sha256": "1ff0e2fde800f4bad2b3708bef83e9d25e949b842919b5103ca835480d80083a"
+    },
+    {
+      "path": "fpga_bitstreams/c9_phy_geometry_100mhz/IMPLEMENTATION_AUDIT.json",
+      "sha256": "5f34943de1dcfb1bbfd46a9601dc8b9744d91918d04389858b9b88d7dae9525e"
+    },
+    {
+      "path": "fpga_bitstreams/c9_phy_geometry_100mhz/soc_physical.bit",
+      "sha256": "da4d195aa3181ff382b043f5c32f68482352a8f187a2da89965e012880ad73b4"
+    },
+    {
+      "path": "fpga_bitstreams/c9_phy_geometry_100mhz/soc_physical.bus_hold.rpt",
+      "sha256": "6a1fd8f2b1ef1dd98a0c9cc2a4234087ca9a6d648b19f1ad8fd130c5bffbb7a2"
+    },
+    {
+      "path": "fpga_bitstreams/c9_phy_geometry_100mhz/soc_physical.bus_setup.rpt",
+      "sha256": "142c23aefc3656f9f0b3e6bc544f26488e76049d6e1272726b0481192e758ba0"
+    },
+    {
+      "path": "fpga_bitstreams/c9_phy_geometry_100mhz/soc_physical.hex",
+      "sha256": "e9452b75615d784524ee72203d270d3b9a5219a943d91de057068df4e730c2c8"
+    },
+    {
+      "path": "fpga_bitstreams/c9_phy_geometry_100mhz/soc_physical.pinout.csv",
+      "sha256": "43fc8e5a8b24cf355fc8596b7a5f92cb6d613c7e8b4641bfb3ee5d1ab4da9e17"
+    },
+    {
+      "path": "fpga_bitstreams/c9_phy_geometry_100mhz/soc_physical.place.rpt",
+      "sha256": "fd53529c432024d075b5a4d5375ad7857763efd1e0fccd4053f65bcaaa9ffe45"
+    },
+    {
+      "path": "fpga_bitstreams/c9_phy_geometry_100mhz/soc_physical.review_timing.rpt",
+      "sha256": "6212f2fb289c08730b2119e365639d6fe82e88f0654d9530cecae751bde104ca"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261102_205833/attempt.json",
+      "sha256": "f81d21df3a5a6fa1d4279ff802267a6c04195c8543e5d41d49c8949454f16d57"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261102_205833/configure.log",
+      "sha256": "51daf0a713f1c41dc95c0d161b7e1a2bfbed5aa9969ca73268d0d532a8839099"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261102_205833/reference_check.json",
+      "sha256": "6bc7b02a5a1a36f75a6907327a8d901a8c6495b97739998ee287791adedc04a5"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261102_205833/uart.log",
+      "sha256": "e3e5174578b2168c3f97f6bb756bce8866dd29a3acddef6ef266fda141787817"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261102_205918/attempt.json",
+      "sha256": "05cd52382a6e4251b6252dc7437efff964568e43459c51795e67e229aeb6fd10"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261102_205918/configure.log",
+      "sha256": "51daf0a713f1c41dc95c0d161b7e1a2bfbed5aa9969ca73268d0d532a8839099"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261102_205918/reference_check.json",
+      "sha256": "6bc7b02a5a1a36f75a6907327a8d901a8c6495b97739998ee287791adedc04a5"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261102_205918/uart.log",
+      "sha256": "e3e5174578b2168c3f97f6bb756bce8866dd29a3acddef6ef266fda141787817"
+    },
+    {
+      "path": "logs/c9_camera_geometry_ready_20261102.json",
+      "sha256": "1726093bd7ff1584ce06e6a882dbb745ae9bc0442d5a0444d18ebaad43306501"
+    },
+    {
+      "path": "logs/c9_camera_geometry_tests_20261102.json",
+      "sha256": "8601b974611a270f3f3b929ddccd5c19e39003cf6b18efd1f15bbb12c99b7368"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261102_205809/attempt.json",
+      "sha256": "6278c6342157c42a397e6494eb5e4346d26b81a7dcacd17bbaac075fb4db40c2"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261102_205809/capture_tool.py",
+      "sha256": "f70ee61cc91ca983e602e432a0c0a4e9b30b20c1ac89ddd2afd75ff9143359c3"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261102_205809/configure.log",
+      "sha256": "f960deaea9e26e9ac81a5ada36d96ebde378fc48415d8373386db1c962afab94"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261102_205809/restore_c10.log",
+      "sha256": "0fb29502578b4588754515dc551f157672c37d646993f1cb5ef2f35a259a9776"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261102_205809/samples.json",
+      "sha256": "9a1e833ae3f5ec9532e019b7e85e51f2c0b9fcff130ea3a960458a3c0c351993"
+    },
+    {
+      "path": "logs/c9_geometry_board_20261102/20261102_205807/camera_geometry.log",
+      "sha256": "824facfb803f20b942ca08595b04c5d1c86ed14fe2c666ed92a66f99cbb2cc15"
+    },
+    {
+      "path": "logs/c9_geometry_board_20261102/20261102_205807/ddr_status.log",
+      "sha256": "98c60c5fe3ef030be69bd9a3a82c465d2794982ff824743185a91c7fe121b99c"
+    },
+    {
+      "path": "logs/c9_geometry_board_20261102/20261102_205807/restore_c10.log",
+      "sha256": "4013fe36e3529ae87920ba1143c3121b39de8d3cd21967efa8766739112b5ead"
+    },
+    {
+      "path": "logs/c9_geometry_board_20261102/20261102_205807/result.json",
+      "sha256": "43d09c35b801017d44a0d828fa291fe43993aae26f0306684e14b008020aceb7"
+    },
+    {
+      "path": "logs/c9_geometry_console_20261102.log",
+      "sha256": "2fb735772989e1a177146146e3336f7cf382edc8d3209e5907f3cd2bbf0eaf28"
+    },
+    {
+      "path": "logs/c9_geometry_decode_tests_20261102.json",
+      "sha256": "1af4bb18be0838638703659f385034d807cdee878d40f35ffff59bad1ed4c150"
+    },
+    {
+      "path": "logs/c9_paused_checkpoint_20261102.json",
+      "sha256": "d69d51f11639f1abe7a0570fb3cd44d94a652cbdbcf28135999587b20d281a62"
+    },
+    {
+      "path": "logs/c9_pc_identity_console_20261102.log",
+      "sha256": "a564c0024137963db49c6496b12342c619437ce92446e7ccba867b8a9981ea75"
+    },
+    {
+      "path": "logs/c9_pc_work_20261102.json",
+      "sha256": "a9510802b73132454d6f10cd2eb1046108523c8610ff73e24a8a040017fc3c91"
+    },
+    {
+      "path": "logs/c9_phy_geometry_decode_tests_20261102.json",
+      "sha256": "b62437fde65b7fd79d17f8dc3169356fab1757edea3cd97b6d3cfeae2321be6c"
+    },
+    {
+      "path": "logs/c9_phy_geometry_ready_20261102.json",
+      "sha256": "1ff0e2fde800f4bad2b3708bef83e9d25e949b842919b5103ca835480d80083a"
+    },
+    {
+      "path": "logs/c9_phy_geometry_tests_20261102.json",
+      "sha256": "79941f550a1bd76abc1cfc7e5aabeba91d25b73b50054fa4b949dda56748104e"
+    },
+    {
+      "path": "logs/c9_preflight_tests_20261102.json",
+      "sha256": "a564c0024137963db49c6496b12342c619437ce92446e7ccba867b8a9981ea75"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261102_205853/attempt.json",
+      "sha256": "1d2f372c1aec27c6d8db287361cfa5619bc0d385231d71664bb559a75ad50fda"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261102_205853/c9_probe_image.py",
+      "sha256": "d59a114d7eec961a59b716f70426f16c71362feec1876eb5658339ddc8ac619c"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261102_205853/check_c9_geometry.py",
+      "sha256": "e43cbbcece76d7ab76ffc26528e6ef382a8ba26ed5a56948087900179659aef2"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261102_205853/check_c9_uart.py",
+      "sha256": "117150fa5f8b4f6e242e274f610821e3428363ff39ee41be3d990223bb040376"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261102_205853/configure_probe.log",
+      "sha256": "f960deaea9e26e9ac81a5ada36d96ebde378fc48415d8373386db1c962afab94"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261102_205853/firmware_build_record.json",
+      "sha256": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261102_205853/geometry_observation.json",
+      "sha256": "cd0da7ef55f3c4cc8b11a844805b329c7ca2143daf8e0ab40a7507760da67046"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261102_205853/implementation_audit.json",
+      "sha256": "a9714500ce6585a50388133bb8fa02e639ad01e14b9c1073d659e5d9caa98543"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261102_205853/load_readback.log",
+      "sha256": "85ec842133034a35b7fe93c253a74f335fb04b560174c3962f4bcf1f38ea49c1"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261102_205853/resume.log",
+      "sha256": "46ddaf3d685d1c1f056f86afaa5ae9b2736f7bde9ca748091d267b6ffd95f57a"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261102_205853/run_ram_diagnostic.py",
+      "sha256": "b184f04cfa42509bc4b56ad721c7cf627b9cbaeea22cb7a0428a840d09201ea6"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261102_205853/uart.log",
+      "sha256": "c735979c7a6530ca2a4cfa658fc87eb518deb9611bed02dd9cb914e809f4670b"
+    },
+    {
+      "path": "team_work/03_ai_soc/C9_CAMERA_GEOMETRY_20261102.md",
+      "sha256": "6f4a1e82d20bd35178e66ff536e6c56c27dec5cb4a63712702784e2ba4c9134a"
+    },
+    {
+      "path": "team_work/03_ai_soc/C9_CSI_PC_READY_20261102.md",
+      "sha256": "c69473206fd77da1ab7e8b8ea4a4caf42286bda92736df9f6ca0b9f5d4ee40d5"
+    },
+    {
+      "path": "team_work/03_ai_soc/c9_live/camera_geometry/c9_capture_geometry.sv",
+      "sha256": "94d7510bfb7509c62020e59cc2d6038f72d8087229183f05d62e6dbce4b32e9c"
+    },
+    {
+      "path": "team_work/03_ai_soc/c9_live/camera_geometry/c9_phy_geometry.sv",
+      "sha256": "de503aac90bd4e6b0eb7951c97216fee2c65a84b22d58f4a1f2064512307eaf2"
+    },
+    {
+      "path": "team_work/03_ai_soc/c9_live/camera_geometry/tb_capture_geometry.sv",
+      "sha256": "d1ded640e9cec7c0c0b5d2d1aebcf8ccf850827b8c7b0185dec2f316da00f1cc"
+    },
+    {
+      "path": "team_work/03_ai_soc/c9_live/camera_geometry/tb_phy_geometry.sv",
+      "sha256": "1735610a1433b07dfc08e9c0c990ac3d8dc806869a93b3579c14612bd482b49c"
+    },
+    {
+      "path": "team_work/03_ai_soc/c9_live/README.md",
+      "sha256": "4f444d9925ecf6b95dcacd5eb257883326f67371d4f64ef60ff642d869019a1f"
+    },
+    {
+      "path": "team_work/03_ai_soc/CURRENT_BOARD_CHECKPOINT_20261101.md",
+      "sha256": "319c15f5e238e51f1d5412bc0fac2579a61fabb66d2b962b4bc976e00f07040f"
+    },
+    {
+      "path": "team_work/03_ai_soc/README.md",
+      "sha256": "e25ef03bd280236bb7b875953a47f6d84cb69ac4fdedb29f868273126b80d27b"
+    },
+    {
+      "path": "tools/audit_c9_camera_geometry.py",
+      "sha256": "05d4f166f697bdc4557d09fc45765b4cd77ec5865d8d6ad71173dce866e7daba"
+    },
+    {
+      "path": "tools/audit_c9_phy_geometry.py",
+      "sha256": "e7b06e430caf83392a006f4b0db4a06fc1097124a3f9373160ba252bc228f68d"
+    },
+    {
+      "path": "tools/build_c9_geometry_firmware.py",
+      "sha256": "7557855f6639d5449cf44b5cf36d1fccb4a78d4136e7f4cd221eef62ef6e09da"
+    },
+    {
+      "path": "tools/c9_probe_image.py",
+      "sha256": "95b88e718cf249bfd86c5df7c689cd30c8c9d0248dd0b2fb22a05dfe04d3cdd0"
+    },
+    {
+      "path": "tools/check_c9_geometry.py",
+      "sha256": "e43cbbcece76d7ab76ffc26528e6ef382a8ba26ed5a56948087900179659aef2"
+    },
+    {
+      "path": "tools/check_c9_phy_geometry.py",
+      "sha256": "374336a4d94f5a14ba42bf34d00660843f5606937614f0bf36cf4d533a2e3345"
+    },
+    {
+      "path": "tools/prepare_c9_camera_geometry.py",
+      "sha256": "0877e5cc236e5e3e1a3233a1bf5b290e2ee7ba2ea0f054195278598cfacc7ee3"
+    },
+    {
+      "path": "tools/prepare_c9_geometry_capture.py",
+      "sha256": "be74b81462afb07ad65f5f007be741d035436c45b1331d64f875a917028e2aec"
+    },
+    {
+      "path": "tools/prepare_c9_phy_geometry.py",
+      "sha256": "f33355b1e7246dd371a79a72091c8ed344d069f1d940ed757eefb32371ddcc88"
+    },
+    {
+      "path": "tools/report_c9_camera_geometry.py",
+      "sha256": "2cb563495dabc94ab0dabf387756792cc75bb3ad7352924f7f18298493a0e29c"
+    },
+    {
+      "path": "tools/report_c9_phy_geometry.py",
+      "sha256": "53e9508f080d048e72691e4d8a74bfb33d50947f211ec4490905e7d7710268c2"
+    },
+    {
+      "path": "tools/run_c9_camera_geometry.ps1",
+      "sha256": "42edc5edf3e8b2637c8fc58bf4d0cafa80f5662e2b30526cd6abe988c7739078"
+    },
+    {
+      "path": "tools/run_c9_geometry.py",
+      "sha256": "6394b41503d5e2e31089b87969659d54a5b32c738344480b30d250d1925f1813"
+    },
+    {
+      "path": "tools/run_c9_phy_geometry.ps1",
+      "sha256": "06f1a71a047b13ece414593a89fb93259d303bbff5681eaac070c39a6f198bd7"
+    },
+    {
+      "path": "tools/run_c9_phy_geometry.py",
+      "sha256": "c707a56dacf4c01a6236a9b9a9358a02cc1948c7e8ea217394bcd2010545906e"
+    },
+    {
+      "path": "tools/test_c9_camera_geometry.py",
+      "sha256": "1b02aca4e2dedffaa0a1d5ed4df207488f856b96b37caa8e8b9d144462fb45e0"
+    },
+    {
+      "path": "tools/test_c9_geometry_decode.py",
+      "sha256": "0674b2361757a3db3f845feb5ff20fb0c7a895e6774b7a7abc86c2770e0b8a7c"
+    },
+    {
+      "path": "tools/test_c9_phy_geometry.py",
+      "sha256": "faf71c049b8d3cfc45f0d851b2895bc5d83e5679a2589d37f3f73bc082972f6b"
+    },
+    {
+      "path": "tools/test_c9_phy_geometry_decode.py",
+      "sha256": "8e85a1f23f2fbabd5dabc0476a6f5d76981416ddf6fdc5bbaa05bca645ad7735"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "hardware_accessed": false,
+  "source_sha256": {
+    "tools/test_c9_receiver_quality.py": "8f07c6610f49d1f956a34c61c3b357d8bc9c1b822d8cba717a0885c729131e52",
+    "team_work/03_ai_soc/c9_live/camera_geometry/c9_receiver_quality.sv": "a774499342131e3acbbd9c722480ce22b6e22ec336f6fd79e47c9efc3036528e",
+    "team_work/03_ai_soc/c9_live/camera_geometry/c9_raw10_linebuffer_quality.sv": "61027284937ca0269a98f6e885f1e79f0a2e13b540e89a0cc02304bd3a246f66",
+    "team_work/03_ai_soc/c9_live/camera_geometry/tb_raw10_linebuffer.sv": "3cb551b2a5fbd0fa3a4b2cd39cbe76e0965f6f3b265d86ade776645ab76a494e"
+  },
+  "generated_sha256": {
+    "build/c9_pc_acceptance_20261103_204335/test_c9_receiver_quality/unit.sv": "9c1b376bb09433d912c9c9820bb6762cdc8127a3ec05c0f4a983911b740875bc",
+    "build/c9_pc_acceptance_20261103_204335/test_c9_receiver_quality/quality.sv": "46dd6980dfc56f3e45f9629603473aaa909a0778482778fc7fd45b5c049979a6"
+  },
+  "cases": [
+    {
+      "case": -1,
+      "evidence": "PASS tb_quality no_release_for_persistent_status exact_clean_wait new_error_sticky CRC_not_masked\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_receiver_quality\\quality.sv:13: $finish called at 1500000 (1ps)\n"
+    },
+    {
+      "case": 0,
+      "evidence": "PASS tb_raw10_linebuffer case=0 words=5760 vs=4 errors=00\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_receiver_quality\\unit.sv:83: $finish called at 170200000 (1ps)\n"
+    },
+    {
+      "case": 1,
+      "evidence": "PASS tb_raw10_linebuffer case=1 words=0 vs=0 errors=02\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_receiver_quality\\unit.sv:83: $finish called at 51780000 (1ps)\n"
+    },
+    {
+      "case": 2,
+      "evidence": "PASS tb_raw10_linebuffer case=2 words=0 vs=0 errors=04\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_receiver_quality\\unit.sv:83: $finish called at 51780000 (1ps)\n"
+    },
+    {
+      "case": 3,
+      "evidence": "PASS tb_raw10_linebuffer case=3 words=0 vs=1 errors=08\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_receiver_quality\\unit.sv:83: $finish called at 52660000 (1ps)\n"
+    },
+    {
+      "case": 4,
+      "evidence": "PASS tb_raw10_linebuffer case=4 words=1459 vs=1 errors=08\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_receiver_quality\\unit.sv:83: $finish called at 83760000 (1ps)\n"
+    },
+    {
+      "case": 5,
+      "evidence": "PASS tb_raw10_linebuffer case=5 words=0 vs=1 errors=40\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_receiver_quality\\unit.sv:83: $finish called at 43100000 (1ps)\n"
+    },
+    {
+      "case": 6,
+      "evidence": "PASS tb_raw10_linebuffer case=6 words=479 vs=1 errors=01\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_receiver_quality\\unit.sv:83: $finish called at 79660000 (1ps)\n"
+    },
+    {
+      "case": 7,
+      "evidence": "PASS tb_raw10_linebuffer case=7 words=1459 vs=1 errors=10\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_receiver_quality\\unit.sv:83: $finish called at 83360000 (1ps)\n"
+    },
+    {
+      "case": 8,
+      "evidence": "PASS tb_raw10_linebuffer case=8 words=5760 vs=4 errors=00\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_receiver_quality\\unit.sv:83: $finish called at 171880000 (1ps)\n"
+    },
+    {
+      "case": 9,
+      "evidence": "PASS tb_raw10_linebuffer case=9 words=5760 vs=4 errors=00\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_receiver_quality\\unit.sv:83: $finish called at 170660000 (1ps)\n"
+    },
+    {
+      "case": 10,
+      "evidence": "PASS tb_raw10_linebuffer case=10 words=0 vs=0 errors=02\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_receiver_quality\\unit.sv:83: $finish called at 51780000 (1ps)\n"
+    },
+    {
+      "case": 11,
+      "evidence": "PASS tb_raw10_linebuffer case=11 words=5760 vs=4 errors=00\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_receiver_quality\\unit.sv:83: $finish called at 170600000 (1ps)\n"
+    },
+    {
+      "case": 12,
+      "evidence": "PASS tb_raw10_linebuffer case=12 words=0 vs=0 errors=01\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_receiver_quality\\unit.sv:83: $finish called at 84240000 (1ps)\n"
+    }
+  ]
+}

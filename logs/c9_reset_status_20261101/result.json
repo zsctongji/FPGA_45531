@@ -1,0 +1,86 @@
+{
+  "status": "KEY0_RESET_CONFIRMED_DDR_CALIBRATION_INCOMPLETE",
+  "started": "2026-11-01T19:54:02.878743+08:00",
+  "flash_written": false,
+  "fpga_image_sha256": "9e9764ce8cf31ae5c00898d1be32fd3a7cabb92416cfcb5e9afc14940717b681",
+  "implementation_audit_sha256": "0706a8713921f5313e4b015cf4eb3a22de9d3c2d8efc6b7eff79747f6486e137",
+  "cpu_halt_passed": false,
+  "fpga_configured": true,
+  "pins": {
+    "time": "2026-11-01T19:54:19.347476+08:00",
+    "instruction": "SAMPLE(00010)",
+    "length": 741,
+    "pins": [
+      {
+        "bit": 167,
+        "pad": "GPIOR_28",
+        "signal": "uart_tx",
+        "kind": "output3",
+        "value": "1"
+      },
+      {
+        "bit": 170,
+        "pad": "GPIOR_27",
+        "signal": "led[0]",
+        "kind": "output3",
+        "value": "0"
+      },
+      {
+        "bit": 179,
+        "pad": "GPIOR_24",
+        "signal": "led[1]",
+        "kind": "output3",
+        "value": "1"
+      },
+      {
+        "bit": 263,
+        "pad": "GPIOR_N_08_CLK11_N",
+        "signal": "ddr_reset_n.N",
+        "kind": "output3",
+        "value": "1"
+      },
+      {
+        "bit": 383,
+        "pad": "GPIOR_16",
+        "signal": "o_cam_rst_p",
+        "kind": "output3",
+        "value": "0"
+      },
+      {
+        "bit": 549,
+        "pad": "GPIOL_07",
+        "signal": "i_arstn",
+        "kind": "input",
+        "value": "1"
+      }
+    ]
+  },
+  "c10_restore_passed": true,
+  "finished": "2026-11-01T19:54:46.250003+08:00",
+  "underlying_ddr_calibration_cause_proven": false,
+  "observed_cal_done": 0,
+  "observed_io_systemReset": 1,
+  "seed1_setup_ns": -0.03,
+  "seed2_setup_ns": 0.21,
+  "seed2_hold_ns": 0.027,
+  "seed": 2,
+  "dma_cache_handoff_passed": false,
+  "real_video_concurrency_passed": false,
+  "restored_c10_after_first_probe": "logs/c10_warm_boot_20261101/20261101_195425/attempt.json",
+  "current_sram_image": "C10_SPI_FIXED_C7",
+  "current_flash_image": "C10_PLUS_ORIGINAL_C1",
+  "key0_capture": "build/c9_reset_status_20261101/key0_capture.json",
+  "tool_sha256": {
+    "prepare_c9_reset_status.py": "622ba4356f16aaa9e863238455aafeb69bf57238f1950a629f643723d92eb8a0",
+    "run_c9_reset_status.ps1": "14591343229ed8904186ad92f47fa6957eb73876b1e1005e96871bf00504820a",
+    "audit_c9_reset_status.py": "7f3f7b4ab3274ef0c6c54f649855d316f7f9327ab62bed331a47b2e83f2c0054"
+  },
+  "key0_reset_verified": true,
+  "key0_asserted": "2026-11-01T20:09:18.391130+08:00",
+  "key0_released": "2026-11-01T20:09:19.843884+08:00",
+  "key0_hold_seconds": 1.452754,
+  "key0_capture_sha256": "1fc3b0c88fad57af0a2d317bbc488bb2b4d29263c7e9641a109537b7ccbada96",
+  "restore_attempt": "logs/c10_warm_boot_20261101/20261101_201103/attempt.json",
+  "restore_passed": true,
+  "next_probe_project": "build/c9_ddr_probe_20261101"
+}

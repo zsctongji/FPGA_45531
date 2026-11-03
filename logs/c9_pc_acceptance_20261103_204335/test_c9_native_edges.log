@@ -1,0 +1,3 @@
+PASS tb_native_edges exact_rises_falls no_fake_enable_edge metadata same_domain reset
+C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\team_work\03_ai_soc\c9_live\camera_geometry\tb_native_edges.sv:13: $finish called at 141000 (1ps)
+

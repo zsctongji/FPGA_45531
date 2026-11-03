@@ -1,0 +1,168 @@
+{
+  "status": "PASS",
+  "hardware_accessed": false,
+  "real_camera_verified": false,
+  "encrypted_CSI_behavior_simulated": false,
+  "cases": [
+    {
+      "name": "red_original_gapped",
+      "expected_failure": true,
+      "matched": true,
+      "returncode": 1,
+      "evidence": "STAGES mode=1 phase=0 native=e187096000012144 isp=c9e21001c7024144024144024144024144024144 video=be424048 capture_width=72 height=108 frames=4 errors=3 complete_records=0\nFATAL: C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_linebuffer\\red_chain.sv:56: RAW valid gaps must produce full 1920-pixel rows\n       Time: 172320000  Scope: tb_linebuffer_chain\n"
+    },
+    {
+      "name": "green_mode0_phase0",
+      "expected_failure": false,
+      "matched": true,
+      "returncode": 0,
+      "evidence": "STAGES mode=0 phase=0 native=e1870960001e000c isp=c9e21001c73c000c3c000c3c000c3c000c3c000c video=be7c0780 capture_width=1920 height=4 frames=4 errors=0 complete_records=3\nPASS tb_linebuffer_chain mode=0 phase=0\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_linebuffer\\green_chain.sv:62: $finish called at 166080000 (1ps)\n"
+    },
+    {
+      "name": "green_mode0_phase1",
+      "expected_failure": false,
+      "matched": true,
+      "returncode": 0,
+      "evidence": "STAGES mode=0 phase=1 native=e1870960001e000c isp=c9e21001c73c000c3c000c3c000c3c000c3c000c video=be7c0780 capture_width=1920 height=4 frames=4 errors=0 complete_records=3\nPASS tb_linebuffer_chain mode=0 phase=1\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_linebuffer\\green_chain.sv:62: $finish called at 166080000 (1ps)\n"
+    },
+    {
+      "name": "green_mode0_phase3",
+      "expected_failure": false,
+      "matched": true,
+      "returncode": 0,
+      "evidence": "STAGES mode=0 phase=3 native=e1870960001e000c isp=c9e21001c73c000c3c000c3c000c3c000c3c000c video=be7c0780 capture_width=1920 height=4 frames=4 errors=0 complete_records=3\nPASS tb_linebuffer_chain mode=0 phase=3\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_linebuffer\\green_chain.sv:62: $finish called at 166080000 (1ps)\n"
+    },
+    {
+      "name": "green_mode1_phase0",
+      "expected_failure": false,
+      "matched": true,
+      "returncode": 0,
+      "evidence": "STAGES mode=1 phase=0 native=e187096000012144 isp=c9e21001c73c000c3c000c3c000c3c000c3c000c video=be7c0780 capture_width=1920 height=4 frames=4 errors=0 complete_records=3\nPASS tb_linebuffer_chain mode=1 phase=0\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_linebuffer\\green_chain.sv:62: $finish called at 172320000 (1ps)\n"
+    },
+    {
+      "name": "green_mode1_phase1",
+      "expected_failure": false,
+      "matched": true,
+      "returncode": 0,
+      "evidence": "STAGES mode=1 phase=1 native=e187096000012144 isp=c9e21001c73c000c3c000c3c000c3c000c3c000c video=be7c0780 capture_width=1920 height=4 frames=4 errors=0 complete_records=3\nPASS tb_linebuffer_chain mode=1 phase=1\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_linebuffer\\green_chain.sv:62: $finish called at 172320000 (1ps)\n"
+    },
+    {
+      "name": "green_mode1_phase3",
+      "expected_failure": false,
+      "matched": true,
+      "returncode": 0,
+      "evidence": "STAGES mode=1 phase=3 native=e187096000012144 isp=c9e21001c73c000c3c000c3c000c3c000c3c000c video=be7c0780 capture_width=1920 height=4 frames=4 errors=0 complete_records=3\nPASS tb_linebuffer_chain mode=1 phase=3\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_linebuffer\\green_chain.sv:62: $finish called at 172320000 (1ps)\n"
+    },
+    {
+      "name": "green_mode2_phase0",
+      "expected_failure": false,
+      "matched": true,
+      "returncode": 0,
+      "evidence": "STAGES mode=2 phase=0 native=e1870960001e000c isp=c9e21001cf0000000000000000003c000c3c000c video=9e400000 capture_width=0 height=0 frames=4 errors=3 complete_records=0\nPASS tb_linebuffer_chain mode=2 phase=0\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_linebuffer\\green_chain.sv:62: $finish called at 166080000 (1ps)\n"
+    },
+    {
+      "name": "green_mode3_phase0",
+      "expected_failure": false,
+      "matched": true,
+      "returncode": 0,
+      "evidence": "STAGES mode=3 phase=0 native=e1870960001e000c isp=c9e21001c73c000c3c000c3c000c3c000c3c000c video=9f400780 capture_width=0 height=0 frames=4 errors=3 complete_records=0\nPASS tb_linebuffer_chain mode=3 phase=0\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_linebuffer\\green_chain.sv:62: $finish called at 166080000 (1ps)\n"
+    },
+    {
+      "name": "unit0",
+      "expected_failure": false,
+      "matched": true,
+      "returncode": 0,
+      "evidence": "PASS tb_raw10_linebuffer case=0 words=5760 vs=4 errors=00\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\camera_geometry\\tb_raw10_linebuffer.sv:77: $finish called at 170200000 (1ps)\n"
+    },
+    {
+      "name": "unit1",
+      "expected_failure": false,
+      "matched": true,
+      "returncode": 0,
+      "evidence": "PASS tb_raw10_linebuffer case=1 words=0 vs=1 errors=02\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\camera_geometry\\tb_raw10_linebuffer.sv:77: $finish called at 51780000 (1ps)\n"
+    },
+    {
+      "name": "unit2",
+      "expected_failure": false,
+      "matched": true,
+      "returncode": 0,
+      "evidence": "PASS tb_raw10_linebuffer case=2 words=0 vs=1 errors=04\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\camera_geometry\\tb_raw10_linebuffer.sv:77: $finish called at 51780000 (1ps)\n"
+    },
+    {
+      "name": "unit3",
+      "expected_failure": false,
+      "matched": true,
+      "returncode": 0,
+      "evidence": "PASS tb_raw10_linebuffer case=3 words=0 vs=1 errors=08\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\camera_geometry\\tb_raw10_linebuffer.sv:77: $finish called at 52660000 (1ps)\n"
+    },
+    {
+      "name": "unit4",
+      "expected_failure": false,
+      "matched": true,
+      "returncode": 0,
+      "evidence": "PASS tb_raw10_linebuffer case=4 words=1459 vs=1 errors=08\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\camera_geometry\\tb_raw10_linebuffer.sv:77: $finish called at 83760000 (1ps)\n"
+    },
+    {
+      "name": "unit5",
+      "expected_failure": false,
+      "matched": true,
+      "returncode": 0,
+      "evidence": "PASS tb_raw10_linebuffer case=5 words=0 vs=1 errors=40\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\camera_geometry\\tb_raw10_linebuffer.sv:77: $finish called at 43100000 (1ps)\n"
+    },
+    {
+      "name": "unit6",
+      "expected_failure": false,
+      "matched": true,
+      "returncode": 0,
+      "evidence": "PASS tb_raw10_linebuffer case=6 words=479 vs=1 errors=01\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\camera_geometry\\tb_raw10_linebuffer.sv:77: $finish called at 79660000 (1ps)\n"
+    },
+    {
+      "name": "unit7",
+      "expected_failure": false,
+      "matched": true,
+      "returncode": 0,
+      "evidence": "PASS tb_raw10_linebuffer case=7 words=1459 vs=1 errors=10\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\camera_geometry\\tb_raw10_linebuffer.sv:77: $finish called at 83360000 (1ps)\n"
+    },
+    {
+      "name": "unit8",
+      "expected_failure": false,
+      "matched": true,
+      "returncode": 0,
+      "evidence": "PASS tb_raw10_linebuffer case=8 words=5760 vs=4 errors=00\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\camera_geometry\\tb_raw10_linebuffer.sv:77: $finish called at 171880000 (1ps)\n"
+    },
+    {
+      "name": "unit9",
+      "expected_failure": false,
+      "matched": true,
+      "returncode": 0,
+      "evidence": "PASS tb_raw10_linebuffer case=9 words=5760 vs=4 errors=00\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\camera_geometry\\tb_raw10_linebuffer.sv:77: $finish called at 170660000 (1ps)\n"
+    },
+    {
+      "name": "unit10",
+      "expected_failure": false,
+      "matched": true,
+      "returncode": 0,
+      "evidence": "PASS tb_raw10_linebuffer case=10 words=0 vs=1 errors=02\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\camera_geometry\\tb_raw10_linebuffer.sv:77: $finish called at 51780000 (1ps)\n"
+    }
+  ],
+  "source_sha256": {
+    "build/c9_stage_min_image_20261103/rtl/physical_video.sv": "400d2c9d81429ef50f17d67e9bb79c3c1351c878af54399eaa8723c445dae37b",
+    "build/c9_stage_min_image_20261103/vendor_a/rtl/debayer/debayer_top_2to1.v": "aeb59623af84e18b042681388fa5abe82a5be70bc0524ed9ae13f715cb4da21c",
+    "build/c9_stage_min_image_20261103/vendor_a/rtl/debayer/line_buffer.v": "bc15b0c8ada51392a6aaa94dfd24bf8aa136b9a93ac1893ca215594d67d76214",
+    "build/c9_stage_min_image_20261103/vendor_a/rtl/debayer/raw_to_rgb.v": "e95812bbf061a77b69a4345f40db7b151c81db57a7cb5b4661d6d4a792061d4f",
+    "build/c9_stage_min_image_20261103/vendor_a/rtl/debayer/rgb_gain_v1.v": "e564586b46457d39fba69c0594aa3c6fab0c01d9d9dc21e7cae75c6d42822d6b",
+    "build/c9_stage_min_image_20261103/vendor_a/rtl/debayer/true_dual_port_ram.v": "3bb28a26d727b65690c518eba6d91fe17f13c87af6031e6d4894c02e8b57aa7c",
+    "projects/06_soc_c2/a_side/video_a_capture.v": "6fd4ba3f87ebc42e7ca4e90292da10d1233d8b6cd2b26311cc05cb818e673d57",
+    "projects/06_soc_c2/a_side/video_grid_sampler.v": "9bd066f70ff8778caa7f4f18cfa4709a949b1c61ceb648cd79d015e00d57db84",
+    "projects/06_soc_c2/rtl/c2_bram_async_fifo.sv": "5f993727ca3e48e89d10740c98c06d001b12b8a08d176d2eadb46c966413682d",
+    "team_work/03_ai_soc/c9_live/camera_geometry/c9_raw10_linebuffer.sv": "a4df5d4be78d5fd5c68a3daf6d51d7608d772ba11dbe2ae6ddd874e12aae66d1",
+    "team_work/03_ai_soc/c9_live/camera_geometry/c9_stage_probe.sv": "d164032c97c257f68ff5de803a3efa0c7cf9cd0113099b211c8a85d9ef53f035",
+    "team_work/03_ai_soc/c9_live/camera_geometry/tb_raw10_linebuffer.sv": "3cb551b2a5fbd0fa3a4b2cd39cbe76e0965f6f3b265d86ade776645ab76a494e",
+    "team_work/03_ai_soc/c9_live/camera_geometry/tb_stage_chain.sv": "742e92fb443142ac6b85edf4b8bf1b6beaa105ecaceaf0747fbc681f3fda26b4",
+    "tools/test_c9_linebuffer.py": "00bec0bc6c0732134edd4d5ea7ccecf8c568391cba37af66ebcd35d96df009d7"
+  },
+  "generated_sha256": {
+    "build/c9_pc_acceptance_20261103_204335/test_c9_linebuffer/red_chain.sv": "df960b8fc49e4e04f867326a9276f0ae78e5db1f37682a0ab2428c54723de2f4",
+    "build/c9_pc_acceptance_20261103_204335/test_c9_linebuffer/green_chain.sv": "ede473d97c326bb702a08bfb28ef68f7925b27f318022cb8809203b145be8a6e"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "hardware_accessed": false,
+  "encrypted_CSI_behavior_simulated": false,
+  "cases": [
+    {
+      "name": "tb_sideband_probe",
+      "evidence": "PASS tb_sideband_probe RUN_CDC image_PPC_set other_type_VC excluded outside_HS zero_PPC invalid_cycles reset\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\camera_geometry\\tb_sideband_probe.sv:21: $finish called at 290000 (1ps)\n"
+    },
+    {
+      "name": "tb_sideband_wrapper",
+      "evidence": "PASS tb_sideband_wrapper actual_plain_wrapper pixel_ports_forwarded byte_status_poison_excluded protocol_stub_only\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_sideband_tests_20261103\\tb_wrapper.sv:9: $finish called at 110000 (1ps)\n"
+    }
+  ],
+  "source_sha256": {
+    "build/c9_camera_geometry_image_20261102/vendor_a/rtl/csi_rx_controller.sv": "685d96fd52a604434a1da0bb404131cd4413bf76ed8ee738ac596b32ce373e5a",
+    "team_work/03_ai_soc/c9_live/camera_geometry/c9_sideband_probe.sv": "999c4bc5292794dca41da63ebb354cc318af26710fe66e60df1c068d792fd2f1",
+    "team_work/03_ai_soc/c9_live/camera_geometry/tb_sideband_probe.sv": "e7922a3709ffd80e976cf7099925b8822ad7dfb51f8ff0c730791298107318b9",
+    "tools/patch_c9_sideband_vendor.py": "7b477d30e51c5995530d5dbceaa0c23a6b783f2c92c5c9bed8dc4686afb6912d",
+    "tools/test_c9_sideband.py": "209f02d219ccfb265582e4d6c4611ebeaee453dd6f8252dd15db9f8ca51893a5"
+  }
+}

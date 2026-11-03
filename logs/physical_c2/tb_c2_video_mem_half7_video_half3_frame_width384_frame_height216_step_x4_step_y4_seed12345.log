@@ -1,0 +1,2 @@
+PASS tb_c2_video geometry=384x216 step=4x4 bytes=9216 success=5 busy=1 malformed=3 records=9 delayed_eof=6 first_DE_edges=2 time_wraps=2 concurrent_requests=62 checks=2754 first_source_DE_timestamp A_capture sampler mailbox C2_DDR CPU_AXI APB common_reset synthetic_pixels_no_camera
+build/physical_20261031/c2_regression/sim/tb_c2_video.sv:697: $finish called at 5770732000 (1ps)

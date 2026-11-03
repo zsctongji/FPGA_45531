@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "mode": "byte",
+  "base": "0x2000000",
+  "expected": "0102030405060708090a0b0c0d0e0f10",
+  "actual": "0102030405060708090a0b0c0d0e0f10",
+  "openocd_returncode": 0,
+  "flash_written": false,
+  "scope": "Small CPU debug memory write/read, not full C7 acceptance"
+}

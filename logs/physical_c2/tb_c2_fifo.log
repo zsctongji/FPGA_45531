@@ -1,0 +1,2 @@
+PASS tb_c2_fifo words=2048 depth=4 pointer_wrap full empty async_clocks stable_stall common_reset
+build/physical_20261031/c2_regression/sim/tb_c2_fifo.sv:48: $finish called at 183788000 (1ps)

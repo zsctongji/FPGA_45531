@@ -1,0 +1,10 @@
+{
+  "name": "test_c9_scanout_startup",
+  "returncode": 0,
+  "reports": [
+    "logs/c9_pc_acceptance_20261103_204335/test_c9_scanout_startup/test_c9_scanout_startup_result.json",
+    "logs/c9_pc_acceptance_20261103_204335/test_c9_scanout_startup/test_c9_scanout_startup_result.json"
+  ],
+  "script_sha256": "0354be32e1dcba1830c2bcd129635c9c5767d16fbe803df38c090236a209f049",
+  "hardware_accessed": false
+}

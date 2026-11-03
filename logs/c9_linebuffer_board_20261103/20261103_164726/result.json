@@ -1,0 +1,348 @@
+{
+  "status": "CAPTURED_LINEBUFFER_STATUS_ONLY",
+  "flash_written": false,
+  "board_acceptance_passed": false,
+  "real_camera_verified": false,
+  "runner_sha256": "14bcbdea8367ad4a6b12296f0c9c82621b338461aa73c90c5683013760c03861",
+  "ddr_status": {
+    "attempt": "logs/c9_ddr_probe_20261101/20261103_164728/attempt.json",
+    "result": {
+      "status": "PASS_CALIBRATION_ONLY",
+      "calibration_verified": true,
+      "failures": [],
+      "observed": {
+        "cal_done": true,
+        "system_reset": false,
+        "controller_reset_released": true,
+        "root_reset_released": true,
+        "pll_locks": 15,
+        "sys_rst": true,
+        "init_state": 22,
+        "wrlvl_check": 254,
+        "read_level_check": 254,
+        "init_delay_counter": 300000,
+        "rdlvl_shift": 4,
+        "wrlvl_shift": 5,
+        "mpr_rdlvl_dly": true,
+        "idelay_ld": false,
+        "ddr_debug_port_hex": "70f00000d",
+        "status0_last8_identical": true,
+        "status1_last8_identical": true,
+        "clock_activity_observed": {
+          "core_clk": true,
+          "i_sysclk": true,
+          "tx_cal_clk": true,
+          "rx_cal_clk": true
+        },
+        "atomic_snapshot": false,
+        "clock_frequency_verified": false
+      },
+      "cpu_execution_verified": false,
+      "full_capacity_verified": false,
+      "clock_frequency_verified": false,
+      "atomic_snapshot": false,
+      "hardware_accessed": false,
+      "c10_restore_passed": true,
+      "fpga_image_sha256": "f0c9dca964ffcd3e8209346d9a52c04ecc5efd8677d92ec86b475cd2744994c9",
+      "attempt_sha256": "ddcf123cf7bb45ff3f34652af0360cc291d70cbdf6bbe5eb11706ddc4733b6dc",
+      "samples_sha256": "2f56e706ea5fea98ac510c7c5fe457a1895774e453f59312a3bea8bf1c8ddd2a",
+      "audit_sha256": "ca626fbcbba5724e4626600e60e0e09039433bdaa9cda358fe54ae1f18dd6e94",
+      "checker_sha256": "7bdf796ccca43832d5a832cddb5da18d38d37f0d77c9e6c5616a63f098f5cd09"
+    }
+  },
+  "camera_attempt": "logs/ram_diagnostic_20261101/20261103_164811/attempt.json",
+  "observation": {
+    "status": "CAPTURED_LINEBUFFER_STATUS_ONLY",
+    "geometry_verified": false,
+    "geometry_failures": [
+      "normalizer/payload not verified",
+      "transport/init not verified",
+      "no complete 1920x1080 capture record",
+      "source format/overflow errors or too few frames"
+    ],
+    "tinyml_accelerator_present": false,
+    "real_camera_verified": false,
+    "board_acceptance_passed": false,
+    "flash_written": false,
+    "before": {
+      "stages": {
+        "raw_2ppc": {
+          "maximum_contiguous_cycles": 0,
+          "maximum_at_least": false,
+          "segments": 0,
+          "segments_at_least": false
+        },
+        "rgb_de": {
+          "maximum_contiguous_cycles": 0,
+          "maximum_at_least": false,
+          "segments": 0,
+          "segments_at_least": false
+        },
+        "rgb_valid": {
+          "maximum_contiguous_cycles": 0,
+          "maximum_at_least": false,
+          "segments": 0,
+          "segments_at_least": false
+        },
+        "rgb_joint": {
+          "maximum_contiguous_cycles": 0,
+          "maximum_at_least": false,
+          "segments": 0,
+          "segments_at_least": false
+        },
+        "gray_2ppc": {
+          "maximum_contiguous_cycles": 0,
+          "maximum_at_least": false,
+          "segments": 0,
+          "segments_at_least": false
+        },
+        "pixel_1ppc": {
+          "maximum_contiguous_cycles": 0,
+          "maximum_at_least": false
+        },
+        "source_1ppc": {
+          "maximum_contiguous_cycles": 0,
+          "maximum_at_least": false
+        }
+      },
+      "normalizer": {
+        "run": false,
+        "armed": false,
+        "fault": false,
+        "error_flags_hex": "00",
+        "error_names": [],
+        "last_frame_beats": 0,
+        "input_frames_mod4": 0,
+        "debug_seen_hex": "00000000",
+        "init_done_seen": false,
+        "transport_error_bits_hex": "00000000",
+        "pixel_fifo_empty_seen": false
+      },
+      "isp": {
+        "run": false,
+        "raw_vs_seen": false,
+        "rgb_vs_seen": false,
+        "gray_vs_seen": false,
+        "rgb_de_without_valid_seen": false,
+        "rgb_valid_without_de_seen": false,
+        "raw_overflow_seen": false,
+        "raw_de_seen": false
+      },
+      "video": {
+        "run": false,
+        "pattern_mode": false,
+        "fault_gate": false,
+        "config_valid": true,
+        "time_valid": true,
+        "pixel_vs_seen": false,
+        "source_vs_seen": false,
+        "source_de_seen": false
+      }
+    },
+    "after": {
+      "stages": {
+        "raw_2ppc": {
+          "maximum_contiguous_cycles": 0,
+          "maximum_at_least": false,
+          "segments": 0,
+          "segments_at_least": false
+        },
+        "rgb_de": {
+          "maximum_contiguous_cycles": 0,
+          "maximum_at_least": false,
+          "segments": 0,
+          "segments_at_least": false
+        },
+        "rgb_valid": {
+          "maximum_contiguous_cycles": 0,
+          "maximum_at_least": false,
+          "segments": 0,
+          "segments_at_least": false
+        },
+        "rgb_joint": {
+          "maximum_contiguous_cycles": 0,
+          "maximum_at_least": false,
+          "segments": 0,
+          "segments_at_least": false
+        },
+        "gray_2ppc": {
+          "maximum_contiguous_cycles": 0,
+          "maximum_at_least": false,
+          "segments": 0,
+          "segments_at_least": false
+        },
+        "pixel_1ppc": {
+          "maximum_contiguous_cycles": 0,
+          "maximum_at_least": false
+        },
+        "source_1ppc": {
+          "maximum_contiguous_cycles": 0,
+          "maximum_at_least": false
+        }
+      },
+      "normalizer": {
+        "run": true,
+        "armed": false,
+        "fault": true,
+        "error_flags_hex": "10",
+        "error_names": [
+          "transport"
+        ],
+        "last_frame_beats": 0,
+        "input_frames_mod4": 0,
+        "debug_seen_hex": "0029c41a",
+        "init_done_seen": true,
+        "transport_error_bits_hex": "00014418",
+        "pixel_fifo_empty_seen": true
+      },
+      "isp": {
+        "run": true,
+        "raw_vs_seen": false,
+        "rgb_vs_seen": false,
+        "gray_vs_seen": false,
+        "rgb_de_without_valid_seen": false,
+        "rgb_valid_without_de_seen": false,
+        "raw_overflow_seen": false,
+        "raw_de_seen": false
+      },
+      "video": {
+        "run": true,
+        "pattern_mode": false,
+        "fault_gate": false,
+        "config_valid": true,
+        "time_valid": true,
+        "pixel_vs_seen": false,
+        "source_vs_seen": false,
+        "source_de_seen": false
+      }
+    },
+    "source_frames": 0,
+    "format_errors": 0,
+    "overflow_frames": 0,
+    "a_completed": 0,
+    "width": 0,
+    "segments": 0,
+    "record_complete": false,
+    "uart_sha256": "3bd8a51e2f7b309ec53c55ba2326c899bc867bd6073d72bba85ec8f56d8c423e",
+    "attempt_sha256": "d0360a63fc4ead0a0f81ae8f02a3db0c661a05f39dd15f1af9aabd78ea84a62d",
+    "image_sha256": "f0c9dca964ffcd3e8209346d9a52c04ecc5efd8677d92ec86b475cd2744994c9",
+    "snapshots": {
+      "before": {
+        "start": 923,
+        "end": 1063,
+        "words": {
+          "0": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            59,
+            0,
+            0
+          ],
+          "1": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2248146944,
+            0
+          ],
+          "2": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            0,
+            0,
+            0,
+            3387035649,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            0,
+            4043309056,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "after": {
+        "start": 11073,
+        "end": 11204,
+        "words": {
+          "0": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            668,
+            0,
+            0
+          ],
+          "1": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2252341248,
+            8
+          ],
+          "2": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            0,
+            0,
+            2147483648,
+            3387035649,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            2737178,
+            4054056960,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "scope": "Fixed RAW10/VC0 Pack40 linebuffer candidate. Native transport and last-frame count observed coherently in PHY bank; stage maxima remain in own domains. No AI/HDMI/cold-start acceptance; C2 timestamps remain first output GRAY8 DE, not original CSI arrival time."
+  },
+  "c10_restore_passed": true,
+  "restore_attempt": "logs/c10_warm_boot_20261101/20261103_164833/attempt.json",
+  "finished": "2026-11-03T16:48:53.206106+08:00"
+}

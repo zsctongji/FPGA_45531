@@ -1,0 +1,66 @@
+{
+  "status": "OFFLINE_READY_BOARD_REQUIRED",
+  "hardware_accessed": false,
+  "board_test_passed": false,
+  "real_camera_verified": false,
+  "flash_written": false,
+  "controlled_change": "Enable existing pixel sideband ports through plain vendor wrapper; record RAW10 VC0 PPC set after RUN. Protected IP tail and PACK_TYPE=1 Pack40 only (RAW10 retained, Pack48/56/64 disabled); PNR seed=3; other IP parameters, pixel/control/DDR/clock/pin connections retained",
+  "image_sha256": "333af57e423c4174aaf0b1d0589b6a0c796f85ea530758f0fc715528896328b2",
+  "audit_path": "build/c9_sideband_seed3_image_20261103/implementation_audit.json",
+  "audit_sha256": "88e6b03411e5608a5701b4b0d353514e89b3ca333af9354ee3d0d3497c115dbf",
+  "firmware_build_record_sha256": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc",
+  "active_profile_sha256": "29d90baa2c3721a2e440518b5aa4e20282003718408be57d0403f020dbe449fb",
+  "active_image_sha256": "ea542809a0a884fd2d3dbc89a22cdc0d7c891e424bd1cc1179194a0934f5ee6b",
+  "active_profile_changed": false,
+  "ddr_parameters_changed": false,
+  "calibration_algorithm_changed": false,
+  "acceptance_criteria_changed": false,
+  "timing": {
+    "setup": {
+      "rows": 30,
+      "minimum_slack_ns": 0.17,
+      "violations": []
+    },
+    "hold": {
+      "rows": 30,
+      "minimum_slack_ns": 0.026,
+      "violations": []
+    }
+  },
+  "xlrs": 60217,
+  "xlrs_available": 60800,
+  "cdc_pointer_bits": 66,
+  "hypothesis": "Pixel-domain RAW10 VC0 PPC categories after RUN; Pack40-only diagnostic profile. Not a general-format CSI acceptance image.",
+  "evidence_sha256": {
+    "build/c9_sideband_seed3_image_20261103/implementation_audit.json": "88e6b03411e5608a5701b4b0d353514e89b3ca333af9354ee3d0d3497c115dbf",
+    "logs/c9_sideband_raw10_tests_20261103.json": "fdae76d07309a44018e0fd7036ea20ea9b645dec4214cdf29e509529ca40786f",
+    "logs/c9_sideband_raw10_decode_tests_20261103.json": "1aee437909a2b08296e0ae1204305120aa5d96fb2d6471b8fa1599d798e61e38",
+    "firmware/c9_camera_geometry/BUILD_RECORD.json": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc",
+    "tools/report_c9_sideband_seed3.py": "6a7774ea1a3628eb0c6ae6a50cb404ff3f6bba37721ea47410a4b93657f56d13",
+    "tools/run_c9_sideband_seed3.py": "940b5c7a367195497eb3617c02390481f3e7f8149ed06c3f0f5cd3a3ca0a44c9",
+    "tools/check_c9_sideband_seed3.py": "308beb9650af021bf4d1d9780d0af9990c7d18118bfff7ba569b441900f4010b"
+  },
+  "packaged_sha256": {
+    "IMPLEMENTATION_AUDIT.json": "88e6b03411e5608a5701b4b0d353514e89b3ca333af9354ee3d0d3497c115dbf",
+    "soc_physical.bit": "333af57e423c4174aaf0b1d0589b6a0c796f85ea530758f0fc715528896328b2",
+    "soc_physical.bus_hold.rpt": "29fb8f3bf7c32d7ff492f4b29e4dfeebda94a7c437b2c2f5363a916b060d1558",
+    "soc_physical.bus_setup.rpt": "5d2b4427321dc4d07e20a6d56d0031726b61b3a8134a7497ed26c3a7691213c1",
+    "soc_physical.hex": "fb7d13013bdf56ac35fc39af687569a8075bbacc435db49e831f92feac79aaf1",
+    "soc_physical.pinout.csv": "ce8732e63f8009c01ee083a6756467d012bfe6b6bf04ee36c7cbae794d6cfb7d",
+    "soc_physical.place.rpt": "dd0d92eddae27166382e5b9a5baa2b6079c1aa2296f729b4e29afcb9933095c1",
+    "soc_physical.review_timing.rpt": "c048a61507e60d0fac2f32cd4b49e58a722507020e6382f2db193a4cf8f5eab1"
+  },
+  "preflight": {
+    "status": "PASS_OFFLINE_PREFLIGHT",
+    "hardware_accessed": false,
+    "flash_written": false,
+    "board_test_passed": false,
+    "firmware_version": "c9geom-3bcf05e8d3894dc3",
+    "firmware_sha256": "f9955a3639543272716f1ef998156f6aae05d297c8841eb7092af8ef57ced9a5",
+    "entry": "0x1000000",
+    "probe_variant": "sideband_seed3",
+    "fpga_image_sha256": "333af57e423c4174aaf0b1d0589b6a0c796f85ea530758f0fc715528896328b2",
+    "implementation_audit_sha256": "88e6b03411e5608a5701b4b0d353514e89b3ca333af9354ee3d0d3497c115dbf",
+    "qualified_profile_sha256": null
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "raw",
+      "divider": 2,
+      "returncode": 0,
+      "output": "PASS spi_read fixed=0 jedec=dec02e expected=dec02e\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c7_spi\\sim\\tb_spi_receive.sv:29: $finish called at 2925000 (1ps)\n"
+    },
+    {
+      "case": "buffered",
+      "divider": 2,
+      "returncode": 0,
+      "output": "PASS spi_read fixed=1 jedec=ef6017 expected=ef6017\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c7_spi\\sim\\tb_spi_receive.sv:29: $finish called at 2925000 (1ps)\n"
+    },
+    {
+      "case": "raw",
+      "divider": 8,
+      "returncode": 0,
+      "output": "PASS spi_read fixed=0 jedec=dec02e expected=dec02e\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c7_spi\\sim\\tb_spi_receive.sv:29: $finish called at 6765000 (1ps)\n"
+    },
+    {
+      "case": "buffered",
+      "divider": 8,
+      "returncode": 0,
+      "output": "PASS spi_read fixed=1 jedec=ef6017 expected=ef6017\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c7_spi\\sim\\tb_spi_receive.sv:29: $finish called at 6765000 (1ps)\n"
+    },
+    {
+      "case": "raw",
+      "divider": 32,
+      "returncode": 0,
+      "output": "PASS spi_read fixed=0 jedec=dec02e expected=dec02e\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c7_spi\\sim\\tb_spi_receive.sv:29: $finish called at 22125000 (1ps)\n"
+    },
+    {
+      "case": "buffered",
+      "divider": 32,
+      "returncode": 0,
+      "output": "PASS spi_read fixed=1 jedec=ef6017 expected=ef6017\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c7_spi\\sim\\tb_spi_receive.sv:29: $finish called at 22125000 (1ps)\n"
+    }
+  ],
+  "source_sha256": {
+    "projects/03_tinyml/ip/sapphire_soc/sapphire_soc.v": "87c00873d2efc6b5bbb5336c1a1046eb0a21cf89c9d971f6c7cf703e0d2e6733",
+    "team_work/03_ai_soc/c7_spi/sim/tb_spi_receive.sv": "265d64166dde3b3f569b8e85500c6e7c3c887f98891c9af1b0d17e9ec87c8d27",
+    "tools/c7_spi_rx_override.py": "70bfe04d33eddaaa257b8243ecb94200cc31d9a28f39093d7e8c91e00c9eac92",
+    "tools/test_c7_spi_rx.py": "d73033a1012148be845978d14267bf0658eedca08e223ff6884dcb5a69f0eca3"
+  }
+}

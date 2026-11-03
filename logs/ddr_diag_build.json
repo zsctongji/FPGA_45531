@@ -1,0 +1,158 @@
+{
+  "status": "PASS",
+  "started": "2026-10-31T23:05:48.5158400+08:00",
+  "board_programmed": false,
+  "scope": "Offline standalone destructive DDR diagnostic generation",
+  "sources": [
+    {
+      "sha256": "d56934d3778e3b4689d759112de021100d56425242e5a06adf90b4d53640abb1",
+      "path": "projects/07_soc_physical/overrides/ddr3_parameter.vh"
+    },
+    {
+      "sha256": "cdd95172f6cc7c059ab39bbe95529564407cab5d92147d346d7a52fe0cd0b9af",
+      "path": "projects/07_soc_physical/overrides/ddr3_top.v"
+    },
+    {
+      "sha256": "9fbcf768f4fbd5d6a21333ecdf9bea55b302a2b124a1da641fb79080bc9b6934",
+      "path": "projects/03_tinyml/src/ddr3_controller/memory_bus_ctl/memory_bus_ctl.v"
+    },
+    {
+      "sha256": "e7a70405fe69373e06c21a974e9f6bd985b08cdebaa776d0f36c28515ab66c81",
+      "path": "projects/03_tinyml/src/ddr3_controller/local_bus_ctl/local_bus_ctl.v"
+    },
+    {
+      "sha256": "adc4180c51d6bc4b8932bae4b079573a8b442d3ddee614c8ec387b769264f76e",
+      "path": "projects/03_tinyml/src/ddr3_controller/axi4_bus_ctl/axi4_bus_ctl.v"
+    },
+    {
+      "sha256": "1211b140c260fdeef037dafbb47be3124335e72203391eb3c71e45086636de69",
+      "path": "projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_mpr_rdlvl.v"
+    },
+    {
+      "sha256": "75a658b6eac8b26bdfb55ea93d3f034f7f5d975c49f04264d46b34f2c87986d4",
+      "path": "projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_phy_if.v"
+    },
+    {
+      "sha256": "0a701d36110253e114f2e93f366efbd38a4c19de9d49a7a0aa646501d7d0c6a2",
+      "path": "projects/03_tinyml/src/ddr3_controller/phy_ctl/phy_ctl.v"
+    },
+    {
+      "sha256": "0f513546ac20beebc5403aa12ef4e5d264aa431bef9fe56c8fb04c8ac98b6656",
+      "path": "projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_phy_wrcal.v"
+    },
+    {
+      "sha256": "d40b71414c8991c7756621ee3fde9b200997388a3042112595e747d55a0d0c9b",
+      "path": "projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_phy_rdlvl_dqs.v"
+    },
+    {
+      "sha256": "0a2fcde0852873ff80e8cdd3feeeec110400066ea51e12d25d49b671fc53f818",
+      "path": "projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_calibration_ini.v"
+    },
+    {
+      "sha256": "c5998adb6fa297263d2d9a2c90b0efe0bf020f7a132f17264f6704bb6b4213ef",
+      "path": "projects/03_tinyml/src/ddr3_controller/phy_ctl/ddr_phy_wrlvl.v"
+    },
+    {
+      "sha256": "f23d157e14f6b3ec8a34f53de5220a203a9cda5e05697e00a5ac2446a31bb513",
+      "path": "projects/03_tinyml/src/ddr3_controller/lb2_axi_clk.v"
+    },
+    {
+      "sha256": "1415901a8f83cefaaf8cd7c86a23fcfed85ff8335ce390a8d4ba2d54e5cf32d4",
+      "path": "projects/03_tinyml/src/ddr3_controller/common/efx_fifo_v2.3/efx_fifo_wrapper.v"
+    },
+    {
+      "sha256": "ecb40539c1a25bcf4917c6d492767d90886316f286b4f26ecb63f008c721ca2a",
+      "path": "projects/03_tinyml/src/common/simple_dual_port_ram.v"
+    },
+    {
+      "sha256": "3774307c34b786070102e54ba2f704379930cd79e4844baa067383e1f8771215",
+      "path": "projects/03_tinyml/src/common/common_efx_fifo_wrapper.v"
+    },
+    {
+      "sha256": "336c4d759b6822220e88f39121bd1446a97309acc6bf3b304a83690fe0bdbf49",
+      "path": "projects/03_tinyml/src/common/common_reset_ctrl.v"
+    },
+    {
+      "sha256": "55b7e6f51f6fd9f436cf88cb39c8bd011cf07912c7b7557509cfddf86044b770",
+      "path": "projects/03_tinyml/src/common/common_simple_dual_port_ram.v"
+    },
+    {
+      "sha256": "ec4cf65899bca7817d0fd2d44c64b623b9a7c1108758fc2135c4f0cfff8644c4",
+      "path": "projects/03_tinyml/src/common/common_true_dual_port_ram.v"
+    },
+    {
+      "sha256": "d5badbad87a0efd4cc231220cf3ce2ff3d3fc522e4a151f108f2df226e03adb6",
+      "path": "projects/08_ddr_diag/ddr_diag_top.sv"
+    },
+    {
+      "sha256": "3129f59050a678b3ad40a138f7607a649ceac5ccb06ce60d4167a142f2ce1e85",
+      "path": "projects/08_ddr_diag/rtl/ddr_diag_bist.sv"
+    },
+    {
+      "sha256": "949759a77733c421e31c4f9f3ab902ff8164a2efaf753d622c2b7f6019194dfa",
+      "path": "projects/08_ddr_diag/rtl/ddr_diag_status.sv"
+    }
+  ],
+  "steps": [
+    {
+      "flow": "interface",
+      "status": "PASS",
+      "started": "2026-10-31T23:05:51.9124970+08:00",
+      "inputs": {
+        "ddr_diag.xml": "8947b088db22b7958d5175ad0e5e7082fdd7fb9b53be304e5f837354fcabe132",
+        "ddr_diag.peri.xml": "73a4f8e5aaebd7e63046b57cd6bb5ac812f0eda308e7cec15696d1bc2f70b799",
+        "ddr_diag.sdc": "3db41d95217d56159442dbb1ecc9abdddc2be296590a86ded2a7ee5aabbcc014"
+      },
+      "artifacts": {
+        "ddr_diag.lpf": "0d5c7825096e3173e2444b64d886f3c9f7b9b6c7ba8b3e13e7eba9357b550eeb"
+      },
+      "finished": "2026-10-31T23:06:06.4340798+08:00"
+    },
+    {
+      "flow": "map",
+      "status": "PASS",
+      "started": "2026-10-31T23:06:06.4371302+08:00",
+      "inputs": {
+        "ddr_diag.xml": "8947b088db22b7958d5175ad0e5e7082fdd7fb9b53be304e5f837354fcabe132",
+        "ddr_diag.peri.xml": "73a4f8e5aaebd7e63046b57cd6bb5ac812f0eda308e7cec15696d1bc2f70b799",
+        "ddr_diag.sdc": "3db41d95217d56159442dbb1ecc9abdddc2be296590a86ded2a7ee5aabbcc014"
+      },
+      "artifacts": {
+        "ddr_diag.map.v": "cfdf86b757d7da37d298def8f88a2df6471a84b15444ce74231d32b713944db3",
+        "ddr_diag.map.rpt": "802ecc84597ee9af0975555055774e49a5e9ace0d73f9756148fa9dc56aa1526"
+      },
+      "finished": "2026-10-31T23:06:31.8791898+08:00"
+    },
+    {
+      "flow": "pnr",
+      "status": "PASS",
+      "started": "2026-10-31T23:06:31.8816320+08:00",
+      "inputs": {
+        "ddr_diag.xml": "1734e89e80ac5b6e9cf9d189543f8cd11a340cd6ea322042c83fc54a13970a32",
+        "ddr_diag.peri.xml": "73a4f8e5aaebd7e63046b57cd6bb5ac812f0eda308e7cec15696d1bc2f70b799",
+        "ddr_diag.sdc": "3db41d95217d56159442dbb1ecc9abdddc2be296590a86ded2a7ee5aabbcc014"
+      },
+      "artifacts": {
+        "ddr_diag.timing.rpt": "cc4a60f1d0eedcef5503c56e90e2e0729bb616cbba7440efaab5c5dc262f2fcb"
+      },
+      "finished": "2026-10-31T23:06:45.4367726+08:00"
+    },
+    {
+      "flow": "pgm",
+      "status": "PASS",
+      "started": "2026-10-31T23:06:45.4391392+08:00",
+      "inputs": {
+        "ddr_diag.xml": "1734e89e80ac5b6e9cf9d189543f8cd11a340cd6ea322042c83fc54a13970a32",
+        "ddr_diag.peri.xml": "73a4f8e5aaebd7e63046b57cd6bb5ac812f0eda308e7cec15696d1bc2f70b799",
+        "ddr_diag.sdc": "3db41d95217d56159442dbb1ecc9abdddc2be296590a86ded2a7ee5aabbcc014"
+      },
+      "routed_lbf_sha256": "a57eb65dd770a394eebb0094cf22d15a20aad8a3a50790a43c568d87a8268b07",
+      "artifacts": {
+        "ddr_diag.hex": "7c414246f6b8cd40e90e589562592a5511df10f53263f8ef697e5329c54bfa26",
+        "ddr_diag.bit": "752d7855d7726ec61fdc1b863df381ff7fdac0f6577f0f59eeb8af812f9a6add"
+      },
+      "finished": "2026-10-31T23:06:47.8559580+08:00"
+    }
+  ],
+  "finished": "2026-10-31T23:06:47.8719159+08:00"
+}

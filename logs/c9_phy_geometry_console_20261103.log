@@ -1,0 +1,208 @@
+START ddr_status
+ddr_status exit=0
+START camera_geometry
+camera_geometry exit=0
+START restore_c10
+restore_c10 exit=0
+{
+  "status": "CAPTURED_CSI_GEOMETRY_ONLY",
+  "flash_written": false,
+  "board_acceptance_passed": false,
+  "real_camera_verified": false,
+  "runner_sha256": "c707a56dacf4c01a6236a9b9a9358a02cc1948c7e8ea217394bcd2010545906e",
+  "ddr_status": {
+    "attempt": "logs/c9_ddr_probe_20261101/20261103_105113/attempt.json",
+    "result": {
+      "status": "PASS_CALIBRATION_ONLY",
+      "calibration_verified": true,
+      "failures": [],
+      "observed": {
+        "cal_done": true,
+        "system_reset": false,
+        "controller_reset_released": true,
+        "root_reset_released": true,
+        "pll_locks": 15,
+        "sys_rst": true,
+        "init_state": 22,
+        "wrlvl_check": 254,
+        "read_level_check": 126,
+        "init_delay_counter": 300000,
+        "rdlvl_shift": 4,
+        "wrlvl_shift": 5,
+        "mpr_rdlvl_dly": true,
+        "idelay_ld": false,
+        "ddr_debug_port_hex": "70f0b000d",
+        "status0_last8_identical": true,
+        "status1_last8_identical": true,
+        "clock_activity_observed": {
+          "core_clk": true,
+          "i_sysclk": true,
+          "tx_cal_clk": true,
+          "rx_cal_clk": true
+        },
+        "atomic_snapshot": false,
+        "clock_frequency_verified": false
+      },
+      "cpu_execution_verified": false,
+      "full_capacity_verified": false,
+      "clock_frequency_verified": false,
+      "atomic_snapshot": false,
+      "hardware_accessed": false,
+      "c10_restore_passed": true,
+      "fpga_image_sha256": "da4d195aa3181ff382b043f5c32f68482352a8f187a2da89965e012880ad73b4",
+      "attempt_sha256": "60dc4e15571c3f537c161a1b68c7391b6cb11774de4d84eb923c2c49343763a7",
+      "samples_sha256": "7041226858fb464d78198ba2e1a6160a3df3eb9b8cf95ccbb4d078e3b4ef0aab",
+      "audit_sha256": "5f34943de1dcfb1bbfd46a9601dc8b9744d91918d04389858b9b88d7dae9525e",
+      "checker_sha256": "7bdf796ccca43832d5a832cddb5da18d38d37f0d77c9e6c5616a63f098f5cd09"
+    }
+  },
+  "camera_attempt": "logs/ram_diagnostic_20261101/20261103_105157/attempt.json",
+  "observation": {
+    "status": "CAPTURED_CSI_GEOMETRY_ONLY",
+    "real_camera_verified": false,
+    "dma_cache_handoff_verified": false,
+    "board_acceptance_passed": false,
+    "width": 0,
+    "height": 0,
+    "width_clipped": false,
+    "height_clipped": false,
+    "record_complete": false,
+    "source_frames": 291,
+    "format_errors": 290,
+    "overflow_frames": 0,
+    "a_completed": 0,
+    "source_flags_hex": "00000088",
+    "expected_width": 1920,
+    "expected_height": 1080,
+    "scope": "Latest capture record counts contiguous DE segments, not necessarily physical sensor HS lines; pairs/domains sampled separately",
+    "snapshots": {
+      "before": {
+        "start": 930,
+        "end": 1070,
+        "words": {
+          "0": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            60,
+            0,
+            0
+          ],
+          "1": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "2": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            2147969997,
+            2013607940,
+            2097205765,
+            1397952512,
+            1,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            0,
+            2014132224,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "after": {
+        "start": 11080,
+        "end": 11211,
+        "words": {
+          "0": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            668,
+            0,
+            0
+          ],
+          "1": [
+            291,
+            290,
+            0,
+            0,
+            0,
+            0,
+            0,
+            136
+          ],
+          "2": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            2147969997,
+            2013607940,
+            2097205765,
+            1397952512,
+            1,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            0,
+            4294503424,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "csi_payload_groups": 1023,
+    "csi_valid_runs": 910,
+    "csi_count_clipped": true,
+    "csi_valid_outside_hs": false,
+    "camera_fault": false,
+    "mipi_debug_hex": "00000000",
+    "csi_geometry_flags_hex": "fff8ec00",
+    "csi_scope": "Last nonempty HS in native CSI pixel clock; no cross-domain atomicity with capture dimensions; configured RAW10 interface carries four pixels/group",
+    "uart_sha256": "d2f17b2c4f97b293e94cfaad30d1965cf36b47b75dcfd521712ade7f5237f48c",
+    "attempt_sha256": "ce88cb96ada67ebc14c6a27cc691dc7efd78cbe3d44e6fdcef41daba50afe44c",
+    "fpga_image_sha256": "da4d195aa3181ff382b043f5c32f68482352a8f187a2da89965e012880ad73b4",
+    "firmware_sha256": "f9955a3639543272716f1ef998156f6aae05d297c8841eb7092af8ef57ced9a5"
+  },
+  "c10_restore_passed": true,
+  "restore_attempt": "logs/c10_warm_boot_20261101/20261103_105221/attempt.json",
+  "finished": "2026-11-03T10:52:41.286799+08:00"
+}

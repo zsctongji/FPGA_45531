@@ -1,0 +1,322 @@
+{
+  "status": "STAGE_DIAGNOSTIC_VIDEO_ACCEPTANCE_PENDING",
+  "real_camera_verified": false,
+  "board_acceptance_passed": false,
+  "flash_written": false,
+  "active_profile_changed": false,
+  "ddr_parameters_changed": false,
+  "calibration_algorithm_changed": false,
+  "cold_boot_verified_this_session": false,
+  "image_sha256": "f0c9dca964ffcd3e8209346d9a52c04ecc5efd8677d92ec86b475cd2744994c9",
+  "trials": [
+    {
+      "result": "logs/c9_linebuffer_board_20261103/20261103_164726/result.json",
+      "calibration_verified": true,
+      "observation": {
+        "status": "CAPTURED_LINEBUFFER_STATUS_ONLY",
+        "geometry_verified": false,
+        "geometry_failures": [
+          "normalizer/payload not verified",
+          "transport/init not verified",
+          "no complete 1920x1080 capture record",
+          "source format/overflow errors or too few frames"
+        ],
+        "tinyml_accelerator_present": false,
+        "real_camera_verified": false,
+        "board_acceptance_passed": false,
+        "flash_written": false,
+        "before": {
+          "stages": {
+            "raw_2ppc": {
+              "maximum_contiguous_cycles": 0,
+              "maximum_at_least": false,
+              "segments": 0,
+              "segments_at_least": false
+            },
+            "rgb_de": {
+              "maximum_contiguous_cycles": 0,
+              "maximum_at_least": false,
+              "segments": 0,
+              "segments_at_least": false
+            },
+            "rgb_valid": {
+              "maximum_contiguous_cycles": 0,
+              "maximum_at_least": false,
+              "segments": 0,
+              "segments_at_least": false
+            },
+            "rgb_joint": {
+              "maximum_contiguous_cycles": 0,
+              "maximum_at_least": false,
+              "segments": 0,
+              "segments_at_least": false
+            },
+            "gray_2ppc": {
+              "maximum_contiguous_cycles": 0,
+              "maximum_at_least": false,
+              "segments": 0,
+              "segments_at_least": false
+            },
+            "pixel_1ppc": {
+              "maximum_contiguous_cycles": 0,
+              "maximum_at_least": false
+            },
+            "source_1ppc": {
+              "maximum_contiguous_cycles": 0,
+              "maximum_at_least": false
+            }
+          },
+          "normalizer": {
+            "run": false,
+            "armed": false,
+            "fault": false,
+            "error_flags_hex": "00",
+            "error_names": [],
+            "last_frame_beats": 0,
+            "input_frames_mod4": 0,
+            "debug_seen_hex": "00000000",
+            "init_done_seen": false,
+            "transport_error_bits_hex": "00000000",
+            "pixel_fifo_empty_seen": false
+          },
+          "isp": {
+            "run": false,
+            "raw_vs_seen": false,
+            "rgb_vs_seen": false,
+            "gray_vs_seen": false,
+            "rgb_de_without_valid_seen": false,
+            "rgb_valid_without_de_seen": false,
+            "raw_overflow_seen": false,
+            "raw_de_seen": false
+          },
+          "video": {
+            "run": false,
+            "pattern_mode": false,
+            "fault_gate": false,
+            "config_valid": true,
+            "time_valid": true,
+            "pixel_vs_seen": false,
+            "source_vs_seen": false,
+            "source_de_seen": false
+          }
+        },
+        "after": {
+          "stages": {
+            "raw_2ppc": {
+              "maximum_contiguous_cycles": 0,
+              "maximum_at_least": false,
+              "segments": 0,
+              "segments_at_least": false
+            },
+            "rgb_de": {
+              "maximum_contiguous_cycles": 0,
+              "maximum_at_least": false,
+              "segments": 0,
+              "segments_at_least": false
+            },
+            "rgb_valid": {
+              "maximum_contiguous_cycles": 0,
+              "maximum_at_least": false,
+              "segments": 0,
+              "segments_at_least": false
+            },
+            "rgb_joint": {
+              "maximum_contiguous_cycles": 0,
+              "maximum_at_least": false,
+              "segments": 0,
+              "segments_at_least": false
+            },
+            "gray_2ppc": {
+              "maximum_contiguous_cycles": 0,
+              "maximum_at_least": false,
+              "segments": 0,
+              "segments_at_least": false
+            },
+            "pixel_1ppc": {
+              "maximum_contiguous_cycles": 0,
+              "maximum_at_least": false
+            },
+            "source_1ppc": {
+              "maximum_contiguous_cycles": 0,
+              "maximum_at_least": false
+            }
+          },
+          "normalizer": {
+            "run": true,
+            "armed": false,
+            "fault": true,
+            "error_flags_hex": "10",
+            "error_names": [
+              "transport"
+            ],
+            "last_frame_beats": 0,
+            "input_frames_mod4": 0,
+            "debug_seen_hex": "0029c41a",
+            "init_done_seen": true,
+            "transport_error_bits_hex": "00014418",
+            "pixel_fifo_empty_seen": true
+          },
+          "isp": {
+            "run": true,
+            "raw_vs_seen": false,
+            "rgb_vs_seen": false,
+            "gray_vs_seen": false,
+            "rgb_de_without_valid_seen": false,
+            "rgb_valid_without_de_seen": false,
+            "raw_overflow_seen": false,
+            "raw_de_seen": false
+          },
+          "video": {
+            "run": true,
+            "pattern_mode": false,
+            "fault_gate": false,
+            "config_valid": true,
+            "time_valid": true,
+            "pixel_vs_seen": false,
+            "source_vs_seen": false,
+            "source_de_seen": false
+          }
+        },
+        "source_frames": 0,
+        "format_errors": 0,
+        "overflow_frames": 0,
+        "a_completed": 0,
+        "width": 0,
+        "segments": 0,
+        "record_complete": false,
+        "uart_sha256": "3bd8a51e2f7b309ec53c55ba2326c899bc867bd6073d72bba85ec8f56d8c423e",
+        "attempt_sha256": "d0360a63fc4ead0a0f81ae8f02a3db0c661a05f39dd15f1af9aabd78ea84a62d",
+        "image_sha256": "f0c9dca964ffcd3e8209346d9a52c04ecc5efd8677d92ec86b475cd2744994c9",
+        "snapshots": {
+          "before": {
+            "start": 923,
+            "end": 1063,
+            "words": {
+              "0": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                59,
+                0,
+                0
+              ],
+              "1": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2248146944,
+                0
+              ],
+              "2": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "3": [
+                0,
+                0,
+                0,
+                0,
+                3387035649,
+                0,
+                0,
+                0
+              ],
+              "4": [
+                0,
+                4043309056,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "after": {
+            "start": 11073,
+            "end": 11204,
+            "words": {
+              "0": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                668,
+                0,
+                0
+              ],
+              "1": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2252341248,
+                8
+              ],
+              "2": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "3": [
+                0,
+                0,
+                0,
+                2147483648,
+                3387035649,
+                0,
+                0,
+                0
+              ],
+              "4": [
+                2737178,
+                4054056960,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "scope": "Fixed RAW10/VC0 Pack40 linebuffer candidate. Native transport and last-frame count observed coherently in PHY bank; stage maxima remain in own domains. No AI/HDMI/cold-start acceptance; C2 timestamps remain first output GRAY8 DE, not original CSI arrival time."
+      },
+      "restore": "logs/c10_warm_boot_20261101/20261103_164833/attempt.json"
+    }
+  ],
+  "final_restore": "logs/c10_warm_boot_20261101/20261103_164833/attempt.json",
+  "evidence_sha256": {
+    "tools/report_c9_linebuffer_board.py": "c11b04ecbbb2013b4cbbd56a62e921b703dc4591c333d50f72ef88fbb2d2e26c",
+    "build/c9_linebuffer_v2_image_20261103/implementation_audit.json": "ca626fbcbba5724e4626600e60e0e09039433bdaa9cda358fe54ae1f18dd6e94",
+    "logs/c9_linebuffer_board_20261103/20261103_164726/result.json": "a6b16fbadb44291bde183f968a5a81a3f6a43a58cee626b8f326f3e179da2002",
+    "logs/c9_ddr_probe_20261101/20261103_164728/attempt.json": "ddcf123cf7bb45ff3f34652af0360cc291d70cbdf6bbe5eb11706ddc4733b6dc",
+    "logs/c9_ddr_probe_20261101/20261103_164728/samples.json": "2f56e706ea5fea98ac510c7c5fe457a1895774e453f59312a3bea8bf1c8ddd2a",
+    "logs/ram_diagnostic_20261101/20261103_164811/attempt.json": "d0360a63fc4ead0a0f81ae8f02a3db0c661a05f39dd15f1af9aabd78ea84a62d",
+    "logs/ram_diagnostic_20261101/20261103_164811/uart.log": "3bd8a51e2f7b309ec53c55ba2326c899bc867bd6073d72bba85ec8f56d8c423e",
+    "logs/ram_diagnostic_20261101/20261103_164811/readback.bin": "f9955a3639543272716f1ef998156f6aae05d297c8841eb7092af8ef57ced9a5",
+    "logs/c10_warm_boot_20261101/20261103_164833/attempt.json": "cf94f2320c9fa794c2c2634eaea7118b842bd5a82a765d65b095a1c1528ea866",
+    "logs/c10_warm_boot_20261101/20261103_164833/uart.log": "e3e5174578b2168c3f97f6bb756bce8866dd29a3acddef6ef266fda141787817"
+  }
+}

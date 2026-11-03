@@ -1,0 +1,74 @@
+{
+  "status": "PASS_STATIC_CHECKS_RELEASE_REVIEW_REQUIRED",
+  "checks": 47,
+  "physical_release_ready": false,
+  "board_programmed": false,
+  "voltage_observation": {
+    "status": "PASS_USER_REPORTED",
+    "statement": "实测电压符合预期",
+    "source": "User report in this conversation",
+    "expected_rails_reported_checked": [
+      "DDR VDD/VDDQ ~1.5V",
+      "DDR VREF/VTT ~0.75V",
+      "FPGA DDR banks ~1.5V",
+      "Flash ~1.8V"
+    ],
+    "exact_readings_V": null,
+    "instrument": null,
+    "raw_measurement_log": null,
+    "independently_measured_by_agent": false,
+    "does_not_imply": [
+      "DDR calibration",
+      "DDR read-write qualification",
+      "Flash read-ID",
+      "cold-boot validation"
+    ]
+  },
+  "ddr": {
+    "capacity_bytes": 268435456,
+    "clock_MHz": 400.0,
+    "tFAW_ns": 50.0,
+    "CL": 6,
+    "CWL": 5,
+    "tRCD_ns": 15.0,
+    "tRP_ns": 15.0,
+    "tRAS_ns": 35.0,
+    "tRFC_ns": 350.0,
+    "tREFI_ns": 7800.0,
+    "full_timing_or_hardware_signoff": false
+  },
+  "flash": {
+    "capacity_bytes": 8388608,
+    "cpu_reserved_start": 3670016,
+    "cpu_copy_end_exclusive": 7864320,
+    "raw_application_bytes": 1393872,
+    "raw_application_end_exclusive": 5063888,
+    "fpga_configuration_must_end_at_or_before": 3670016,
+    "configuration_stream_upper_bound_bytes": 942082,
+    "fpga_actual_size_known": true,
+    "static_non_overlap_verified": true,
+    "combined_board_boot_verified": false
+  },
+  "remaining": [
+    "Real DDR calibration, address-alias/data-pattern tests and repeated cold boot",
+    "Encrypted controller scheduling/MRS, full timing and operating-temperature refresh review",
+    "Flash JEDEC/SFDP identity and external SPI timing",
+    "Final programming-tool address interpretation, readback and repeated combined cold boot",
+    "Camera/FPC and buzzer identity/polarity plus live sensor/AI validation"
+  ],
+  "tool_sha256": "f24c9e74918ba2d8a0e98ddef14776cfc7d7778179bb7231170f424427a6f2a5",
+  "evidence_sha256": {
+    "logs/hardware_identity_20261031.json": "004a2f96ba436e49c28d7719485b5ad2304b50017a19589e9441b56fdf68c346",
+    "projects/07_soc_physical/overrides/ddr3_parameter.vh": "d56934d3778e3b4689d759112de021100d56425242e5a06adf90b4d53640abb1",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/bsp/efinix/EfxSapphireSoc/app/bootloaderConfig.h": "88b31c6ba4cd32efb572755d41df8e78c053e9f36a73fd03da660f599b0e5e80",
+    "projects/03_tinyml/embedded_sw/sapphire_soc_tinyml/software/standalone/bootloader/build_ours/bootloader.bin": "0e08b4d8fbf9bc6151d3339559d8131a6a77541abaca71acb4b0fead2c353de2",
+    "projects/07_soc_physical/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol0.bin": "57a0fc51ca44ae308670bbdbce6cad8c0c2d333e76940f421c54d1057a19f1e9",
+    "projects/07_soc_physical/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol1.bin": "c807366a705ebc8ae957c5c174c23f107134299420bcb77acc2d1f8099a74fe3",
+    "projects/07_soc_physical/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol2.bin": "b8c5f31b9b5e5fcea4ad83627e7749ca567fee94bef441a241bad2652a42064e",
+    "projects/07_soc_physical/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol3.bin": "b1be4104ba5dabcdef13ef787d604d39b75dac954d7d1f65728be266bf4b606d",
+    "firmware/c24_frame_person_detect/tinyml_c24.bin": "27ed4fc608d48e2f560241e5ee1df44d0b71f54b99105247730f16af7d8f4f1c",
+    "projects/07_soc_physical/outflow/soc_physical.hex": "5976ed68f57b7765f669a694fe2d104121cf180a40742b2d4f8a9a53047bd365",
+    "logs/soc_physical_pgm_check.json": "b6895d7a32f3d2dbeef74f7753ab1ea4d5724073752ae09274da570288e84a7d",
+    "logs/soc_physical_audit.json": "09cf7cc427693ed770ad1f18def73fe3a0f0df3c975ea8ecf68a707308f202f6"
+  }
+}

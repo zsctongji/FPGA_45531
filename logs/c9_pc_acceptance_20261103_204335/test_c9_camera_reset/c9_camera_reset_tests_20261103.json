@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "hardware_accessed": false,
+  "scope": "Extracted actual top reset/configuration fragment; sensor/MIPI analog behavior not simulated.",
+  "cases": [
+    {
+      "fixed": false,
+      "returncode": 1,
+      "evidence": "FATAL: C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_camera_reset\\red_original.sv:11: Camera/config started while CSI held reset\n       Time: 130000  Scope: tb_camera_reset\n"
+    },
+    {
+      "fixed": true,
+      "returncode": 0,
+      "evidence": "PASS tb_camera_reset hold_until_CSI_ready full_delay SoC_and_root_restart\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_pc_acceptance_20261103_204335\\test_c9_camera_reset\\fixed.sv:17: $finish called at 82091000 (1ps)\n"
+    }
+  ],
+  "source_sha256": {
+    "tools/test_c9_camera_reset.py": "bfee446f5311e40b14930556222cab1fb6ec1721c6bcc08e4f0e2bb14f8b8994",
+    "tools/prepare_c9_linebuffer_reset.py": "63966c762315a7aba5e267448ee40d02c9475bf6bf33cf8a34f323639485a6c9",
+    "build/c9_linebuffer_edges_image_20261103/soc_physical_top.sv": "de7af4a0e53f690edc6d9306d2558725f1f67f90fa5d4aa1c172a918fdf36651"
+  },
+  "generated_sha256": {
+    "build/c9_pc_acceptance_20261103_204335/test_c9_camera_reset/red_original.sv": "75695c79f79203f0e4bffba7f9239825365440df7fb09b9ae56aa98967b68760",
+    "build/c9_pc_acceptance_20261103_204335/test_c9_camera_reset/fixed.sv": "e9d197fa6700dc6b7939e01836713f1163abada345af280a060000c7c1165839"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "board_test_passed": false,
+  "cases": [
+    {
+      "phase": "original",
+      "returncode": 0,
+      "evidence": "PASS tb_camera_phase geometry=32x8 frames=3 exact_line_frame_counts warmed_pixels_known actual_A_debayer RAW4_to_GRAY8_1PPC\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_camera_geometry_20261102\\original.sv:52: $finish called at 20040000 (1ps)\n"
+    },
+    {
+      "phase": "coincident",
+      "returncode": 0,
+      "evidence": "PASS tb_camera_phase geometry=32x8 frames=3 exact_line_frame_counts warmed_pixels_known actual_A_debayer RAW4_to_GRAY8_1PPC\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_camera_geometry_20261102\\coincident.sv:52: $finish called at 20040000 (1ps)\n"
+    },
+    {
+      "phase": "shifted",
+      "returncode": 0,
+      "evidence": "PASS tb_camera_phase geometry=32x8 frames=3 exact_line_frame_counts warmed_pixels_known actual_A_debayer RAW4_to_GRAY8_1PPC\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\c9_camera_geometry_20261102\\shifted.sv:52: $finish called at 20040000 (1ps)\n"
+    }
+  ]
+}

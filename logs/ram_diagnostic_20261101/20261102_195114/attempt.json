@@ -1,0 +1,19 @@
+{
+  "started": "2026-11-02T19:51:14.386951+08:00",
+  "status": "FAIL_OR_INCOMPLETE",
+  "flash_written": false,
+  "entry": "0x1000",
+  "firmware_sha256": "f71c597ef7b25278e119377fb15275dceb71ea16bfd580d022ee13c456950c79",
+  "firmware_version": "c9time-0beb9d9f3f36baa1",
+  "build_record_sha256": "90d0bd419561706a9aaf4e96fac8d87a4942d6b82131538425cf201c41ccfb8f",
+  "runner_sha256": "a1910490830b504c2ab531b2694d12345400f8a5b6643b1867b177ffee5f7527",
+  "prefix": "C9|",
+  "board_test_passed": false,
+  "fpga_configured": true,
+  "qualified_profile_sha256": "29d90baa2c3721a2e440518b5aa4e20282003718408be57d0403f020dbe449fb",
+  "implementation_audit_sha256": "bc859f15627193c5d4d6c6da02db015236afc2319537496df7b60b0fa18645fb",
+  "probe_variant": "display",
+  "fpga_image_sha256": "ea542809a0a884fd2d3dbc89a22cdc0d7c891e424bd1cc1179194a0934f5ee6b",
+  "readback_sha256": "f71c597ef7b25278e119377fb15275dceb71ea16bfd580d022ee13c456950c79",
+  "finished": "2026-11-02T19:55:18.291312+08:00"
+}

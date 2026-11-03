@@ -1,0 +1,3 @@
+STAGES mode=0 phase=3 native=e1870960001e000c isp=c9e21001c73c000c3c000c3c000c3c000c3c000c video=be7c0780 capture_width=1920 height=4 frames=4 errors=0 complete_records=3
+PASS tb_linebuffer_chain mode=0 phase=3
+C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\build\c9_receiver_quality_tests_20261103\chain.sv:63: $finish called at 166080000 (1ps)

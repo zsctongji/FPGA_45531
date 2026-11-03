@@ -1,0 +1,74 @@
+{
+  "status": "PASS_STANDALONE_DDR_THREE_ATTEMPTS",
+  "date": "2026-11-01",
+  "timezone": "Asia/Shanghai",
+  "diagnostic": "C8 DDR CK 400MHz / AXI 100MHz, 256MiB alias probe plus four full write/read passes",
+  "image_sha256": "752d7855d7726ec61fdc1b863df381ff7fdac0f6577f0f59eeb8af812f9a6add",
+  "attempts": [
+    {
+      "kind": "initial_jtag",
+      "attempt": "logs/ddr_board_20261101/20261101_121928/attempt.json",
+      "started": "2026-11-01T12:19:28.921749+08:00",
+      "finished": "2026-11-01T12:20:02.536373+08:00",
+      "records": 23,
+      "complete_pass_records": 2,
+      "checked_words": 67108889,
+      "uart_sha256": "757ca6709e268f8d1db81acb53fed00c201f17127a99faeebe0258442792d971",
+      "evidence_sha256": {
+        "attempt.json": "ba793ba9d912ea809db854a7f57dd712c8a51dc5c63c6a6f12b0bac809c51610",
+        "capture_host_script.py": "bfcf3a1c3f83771b5883effb126b3b196ddc2f75d5ecb51c558dfe0b88fc70d7",
+        "jtag_scan.log": "e2312dace9e639c05fc0759abddef9f64d159f84a2cd894c49b560c9b150f926",
+        "programmer.log": "4d81807e7ca46d9f40f7ead3373e249fef0e40943669c202cb10a4170d53a771",
+        "uart.log": "757ca6709e268f8d1db81acb53fed00c201f17127a99faeebe0258442792d971",
+        "uart_check.json": "f506b20e259f1879b304792b83017fd4f31fb7b65805bb00ba8c8f50c59b8e2d",
+        "usb_devices.json": "a3dfff4adae7bb4b3a1b56e01af797e00d0e6d5a5fee81351b81d4a3be707c7b"
+      }
+    },
+    {
+      "kind": "key0_restart",
+      "attempt": "logs/ddr_board_20261101/key0_20261101_122404/attempt.json",
+      "started": "2026-11-01T12:24:04.667516+08:00",
+      "finished": "2026-11-01T12:25:09.978545+08:00",
+      "records": 26,
+      "complete_pass_records": 2,
+      "checked_words": 67108889,
+      "uart_sha256": "164a91882145eb21a043fda5a44efc85c7dd543ba2833850fa8a3d489feec8ff",
+      "evidence_sha256": {
+        "attempt.json": "5486c1a0b09499782e16d1e7b52d211656eeb4122016c42e62c42c4033b0bfe7",
+        "capture_host_script.py": "76cf1adff8e60707901fbb608fcba16de9883ce46e1abf766cb1023e6ac3470d",
+        "pretrigger_uart.log": "f412135dd6d2c543dff27b1f5ea4b11a9746f6442b2e9d548f505af098779fce",
+        "uart.log": "164a91882145eb21a043fda5a44efc85c7dd543ba2833850fa8a3d489feec8ff",
+        "uart_check.json": "27ed5620c4c4f7787b2b1ed8be9a98f6d6bd6648836d3d6a077f09a52080cc29"
+      }
+    },
+    {
+      "kind": "user_reported_cold_power_on_then_jtag",
+      "attempt": "logs/ddr_board_20261101/cold_20261101_122813/attempt.json",
+      "started": "2026-11-01T12:28:13.118163+08:00",
+      "finished": "2026-11-01T12:28:45.708724+08:00",
+      "records": 23,
+      "complete_pass_records": 2,
+      "checked_words": 67108889,
+      "uart_sha256": "4ce1cd2645a102897e77c4855837343cf73fede31f41a590db2cce43cecc017c",
+      "evidence_sha256": {
+        "attempt.json": "d58602c4ced5769dae5ea2adcb39682910ceee74bd89ec08e571ab7a375f7b33",
+        "capture_host_script.py": "cd30ff05a7d15124930a0ce1d770eca2cd8e01362e9811eda6985deb5636936d",
+        "jtag_scan.log": "e2312dace9e639c05fc0759abddef9f64d159f84a2cd894c49b560c9b150f926",
+        "programmer.log": "4d81807e7ca46d9f40f7ead3373e249fef0e40943669c202cb10a4170d53a771",
+        "uart.log": "4ce1cd2645a102897e77c4855837343cf73fede31f41a590db2cce43cecc017c",
+        "uart_check.json": "dbc68ce22372a43847a282bf8c02ce44017493baba00137c61d818283c993865",
+        "usb_devices.json": "a3dfff4adae7bb4b3a1b56e01af797e00d0e6d5a5fee81351b81d4a3be707c7b"
+      }
+    }
+  ],
+  "flash_written": false,
+  "flash_boot_validated": false,
+  "whole_soc_validated": false,
+  "physical_release_ready": false,
+  "power_cycle_evidence": "User confirmation; supply-off interval and rails not independently measured",
+  "next_items": [
+    "C7 CPU/DDR/cache and TinyML board acceptance",
+    "Video and sensor concurrent acceptance",
+    "Flash identity/layout and automatic cold boot"
+  ]
+}

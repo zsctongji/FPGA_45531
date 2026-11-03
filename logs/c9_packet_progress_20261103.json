@@ -1,0 +1,20 @@
+{
+  "status": "FULL_PROBE_RESOURCE_FAILURE_COMPACT_BUILD_RUNNING",
+  "time": "2026-11-03T11:32:30.252341+08:00",
+  "flash_written": false,
+  "failed_probe_loaded": false,
+  "failed_stage": "pnr_packing",
+  "xlr_usage": 60878,
+  "xlr_capacity": 60800,
+  "resource_excess": 78,
+  "failed_project": "build/c9_packet_image_20261103",
+  "compact_project": "build/c9_packet_compact_image_20261103",
+  "change": "Compact uses last-valid packet metadata and modulo-16 VS/HS counters, not per-frame HS counts. DDR and pixel/control configuration retained.",
+  "evidence_sha256": {
+    "build/c9_packet_image_20261103/PACKET_MANIFEST.json": "058d8a9a8f3df6973db53e75d00fd60b62af4f4f8250f71cc99deaf00d93baf9",
+    "build/c9_packet_image_20261103/outflow/soc_physical.place.out": "431de56644f303e3a765acc3dd3fbccb9414a74e252d231ac590edb19ae0465c",
+    "logs/c9_packet_tests_20261103.json": "fc6a34f0d7e843a07e93a27974f5bc2cb4d570e28102ab9ace861df1b1205d11",
+    "logs/c9_packet_compact_tests_20261103.json": "815acac3fe9af427a89a516566627bb2f806d9c9d1bdfd596207d7aa96985750",
+    "logs/c9_packet_compact_decode_tests_20261103.json": "6e09b22053df581bc61814282bb324356a645d21b3da50d9768b7d5dc77b5322"
+  }
+}

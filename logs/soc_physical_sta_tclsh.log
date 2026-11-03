@@ -1,0 +1,178 @@
+WARNING: cannot find correct IV value
+Running: C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/tools/efinity/2026.1\bin\efx_sta.exe --prj C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\projects\07_soc_physical\soc_physical.xml -t C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\projects\07_soc_physical\review_timing.tcl -- --circuit soc_physical --family Titanium --device Ti60F225 --operating_conditions I3 --vdb_file outflow\soc_physical.vdb --use_vdb_file on --prj C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\projects\07_soc_physical\soc_physical.xml --output_dir outflow --work_dir work_pnr --place_file outflow\soc_physical.place --route_file outflow\soc_physical.route --sync_file outflow\soc_physical.interface.csv --generate_prevpr_netlist off --sdc_file=soc_physical.sdc
+INFO     : Reading project database "C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\projects\07_soc_physical\soc_physical.xml" [FlowMsg::ProjectDatabaseReading]
+WARNING  : Ignored unrecognised place and route setting "load_delaym" from the project XML file [FlowMsg::PrjXMLUnknownPnROption]
+WARNING  : Ignoring option "optimization_level=NULL" as it is not a valid optimization level [FlowMsg::InvalidOptimizationLevel]
+INFO     :     Supported options: TIMING_1, TIMING_2, TIMING_3, CONGESTION_1, CONGESTION_2, CONGESTION_3, POWER_1, POWER_2
+INFO     : Maximum concurrency has been set to 14 [FlowMsg::MaxThreads]
+INFO     : SDC file 'soc_physical.sdc' parsed successfully.
+WARNING  : Ignoring option "optimization_level=NULL" as it is not a valid optimization level.
+
+Please use one of the following optimization levels:
+	1. TIMING_1
+	2. TIMING_2
+	3. TIMING_3
+	4. CONGESTION_1
+	5. CONGESTION_2
+	6. CONGESTION_3
+	7. POWER_1
+	8. POWER_2
+INFO     : ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO     : Router Setup
+INFO     : ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO     : Routing trace digest: 12362526044189474498
+INFO     : Successfully reloaded trace from trace file
+INFO     : SDC file 'soc_physical.sdc' parsed successfully.
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_axi_interconnect/MUL_MASTER.u_crossbar/u_arbiter/ROUND_ROBIN.u_round_robin_priority_arbiter/dlatchrs_72/i1:in[0] to soc/u_axi_interconnect/MUL_MASTER.u_crossbar/u_arbiter/ROUND_ROBIN.u_round_robin_priority_arbiter/dlatchrs_72/i1:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_axi_interconnect/MUL_MASTER.u_crossbar/u_arbiter/ROUND_ROBIN.u_round_robin_priority_arbiter/dlatchrs_72/i1:in[0] to soc/u_axi_interconnect/MUL_MASTER.u_crossbar/u_arbiter/ROUND_ROBIN.u_round_robin_priority_arbiter/dlatchrs_72/i1:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_axi_interconnect/MUL_MASTER.u_crossbar/u_arbiter/ROUND_ROBIN.u_round_robin_priority_arbiter/dlatchrs_72/i2:in[0] to soc/u_axi_interconnect/MUL_MASTER.u_crossbar/u_arbiter/ROUND_ROBIN.u_round_robin_priority_arbiter/dlatchrs_72/i2:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_axi_interconnect/MUL_MASTER.u_crossbar/u_arbiter/ROUND_ROBIN.u_round_robin_priority_arbiter/dlatchrs_72/i2:in[0] to soc/u_axi_interconnect/MUL_MASTER.u_crossbar/u_arbiter/ROUND_ROBIN.u_round_robin_priority_arbiter/dlatchrs_72/i2:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/FC.u_tinyml_fc_op/fc_standard.u_tinyml_fc_standard/tinyml_fc_standard_dma_ctr_inst/tinyml_fc_standard_dma_ctr_aw_inst/dlatchrs_134/i1:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/FC.u_tinyml_fc_op/fc_standard.u_tinyml_fc_standard/tinyml_fc_standard_dma_ctr_inst/tinyml_fc_standard_dma_ctr_aw_inst/dlatchrs_134/i1:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/FC.u_tinyml_fc_op/fc_standard.u_tinyml_fc_standard/tinyml_fc_standard_dma_ctr_inst/tinyml_fc_standard_dma_ctr_aw_inst/dlatchrs_134/i1:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/FC.u_tinyml_fc_op/fc_standard.u_tinyml_fc_standard/tinyml_fc_standard_dma_ctr_inst/tinyml_fc_standard_dma_ctr_aw_inst/dlatchrs_134/i1:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/FC.u_tinyml_fc_op/fc_standard.u_tinyml_fc_standard/tinyml_fc_standard_dma_ctr_inst/tinyml_fc_standard_dma_ctr_aw_inst/dlatchrs_134/i2:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/FC.u_tinyml_fc_op/fc_standard.u_tinyml_fc_standard/tinyml_fc_standard_dma_ctr_inst/tinyml_fc_standard_dma_ctr_aw_inst/dlatchrs_134/i2:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/FC.u_tinyml_fc_op/fc_standard.u_tinyml_fc_standard/tinyml_fc_standard_dma_ctr_inst/tinyml_fc_standard_dma_ctr_aw_inst/dlatchrs_134/i2:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/FC.u_tinyml_fc_op/fc_standard.u_tinyml_fc_standard/tinyml_fc_standard_dma_ctr_inst/tinyml_fc_standard_dma_ctr_aw_inst/dlatchrs_134/i2:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/LR.u_tinyml_lr_op/lr_standard.u_tinyml_lr_standard/tinyml_lr_standard_dma_ctr_inst/tinyml_lr_standard_dma_ctr_aw_inst/dlatchrs_104/i1:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/LR.u_tinyml_lr_op/lr_standard.u_tinyml_lr_standard/tinyml_lr_standard_dma_ctr_inst/tinyml_lr_standard_dma_ctr_aw_inst/dlatchrs_104/i1:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/LR.u_tinyml_lr_op/lr_standard.u_tinyml_lr_standard/tinyml_lr_standard_dma_ctr_inst/tinyml_lr_standard_dma_ctr_aw_inst/dlatchrs_104/i1:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/LR.u_tinyml_lr_op/lr_standard.u_tinyml_lr_standard/tinyml_lr_standard_dma_ctr_inst/tinyml_lr_standard_dma_ctr_aw_inst/dlatchrs_104/i1:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/LR.u_tinyml_lr_op/lr_standard.u_tinyml_lr_standard/tinyml_lr_standard_dma_ctr_inst/tinyml_lr_standard_dma_ctr_aw_inst/dlatchrs_104/i2:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/LR.u_tinyml_lr_op/lr_standard.u_tinyml_lr_standard/tinyml_lr_standard_dma_ctr_inst/tinyml_lr_standard_dma_ctr_aw_inst/dlatchrs_104/i2:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/LR.u_tinyml_lr_op/lr_standard.u_tinyml_lr_standard/tinyml_lr_standard_dma_ctr_inst/tinyml_lr_standard_dma_ctr_aw_inst/dlatchrs_104/i2:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/LR.u_tinyml_lr_op/lr_standard.u_tinyml_lr_standard/tinyml_lr_standard_dma_ctr_inst/tinyml_lr_standard_dma_ctr_aw_inst/dlatchrs_104/i2:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/MUL.u_tinyml_mul_op/mul_standard.u_tinyml_mul_standard/tinyml_mul_standard_dma_ctr_inst/tinyml_mul_standard_dma_ctr_aw_inst/dlatchrs_121/i1:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/MUL.u_tinyml_mul_op/mul_standard.u_tinyml_mul_standard/tinyml_mul_standard_dma_ctr_inst/tinyml_mul_standard_dma_ctr_aw_inst/dlatchrs_121/i1:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/MUL.u_tinyml_mul_op/mul_standard.u_tinyml_mul_standard/tinyml_mul_standard_dma_ctr_inst/tinyml_mul_standard_dma_ctr_aw_inst/dlatchrs_121/i1:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/MUL.u_tinyml_mul_op/mul_standard.u_tinyml_mul_standard/tinyml_mul_standard_dma_ctr_inst/tinyml_mul_standard_dma_ctr_aw_inst/dlatchrs_121/i1:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/MUL.u_tinyml_mul_op/mul_standard.u_tinyml_mul_standard/tinyml_mul_standard_dma_ctr_inst/tinyml_mul_standard_dma_ctr_aw_inst/dlatchrs_121/i2:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/MUL.u_tinyml_mul_op/mul_standard.u_tinyml_mul_standard/tinyml_mul_standard_dma_ctr_inst/tinyml_mul_standard_dma_ctr_aw_inst/dlatchrs_121/i2:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/MUL.u_tinyml_mul_op/mul_standard.u_tinyml_mul_standard/tinyml_mul_standard_dma_ctr_inst/tinyml_mul_standard_dma_ctr_aw_inst/dlatchrs_121/i2:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/MUL.u_tinyml_mul_op/mul_standard.u_tinyml_mul_standard/tinyml_mul_standard_dma_ctr_inst/tinyml_mul_standard_dma_ctr_aw_inst/dlatchrs_121/i2:out [TimerMsg::CombinationalLoopDetected]
+           
+INFO     : Evaluating user specified Tcl script "C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\projects\07_soc_physical\review_timing.tcl" [FlowMsg::EvaluatingTclScript]
+INFO     : Write clock report to "outflow\soc_physical.clocks.rpt" ...
+INFO     : Printing timing report summary
+INFO     : Write Timing Report to "outflow\soc_physical.review_timing.rpt" ...
+Maximum possible analyzed clocks frequency
+   Clock Name     Period (ns)  Frequency (MHz)     Edge
+tx_cal_clk_90edge    2.181        458.505         (R-R)
+sdram_clk            2.176        459.559         (R-R)
+rx_cal_clk           2.101        475.964         (R-R)
+tx_cal_clk           2.230        448.430         (R-R)
+core_clk             8.017        124.735         (R-R)
+i_sysclk             8.020        124.688         (R-R)
+i_peripheralClk      7.081        141.223         (R-R)
+hdmi_tx_slow_clk     5.324        187.829         (R-R)
+i_mipi_rx_pclk       6.866        145.645         (R-R)
+pixel2_clk           6.322        158.178         (R-R)
+pixel1_clk           4.474        223.514         (R-R)
+CLK_5M               3.605        277.393         (R-R)
+i_cam_ck_CLKOUT      5.898        169.549         (R-R)
+jtag_inst1_TCK       6.106        163.773         (R-R)
+
+Geomean max period: 4.491
+
+Setup (Max) Clock Relationship
+  Launch Clock      Capture Clock   Constraint (ns)     Slack (ns)          Edge
+tx_cal_clk_90edge tx_cal_clk_90edge       2.500            0.319           (R-R)
+tx_cal_clk_90edge tx_cal_clk              2.500            1.157           (R-R)
+sdram_clk         tx_cal_clk_90edge       2.500            0.502           (R-R)
+sdram_clk         sdram_clk               2.500            0.324           (R-R)
+sdram_clk         rx_cal_clk              2.500            0.465           (R-R)
+rx_cal_clk        rx_cal_clk              2.500            0.399           (R-R)
+tx_cal_clk        tx_cal_clk              2.500            0.270           (R-R)
+core_clk          core_clk               10.000            1.983           (R-R)
+core_clk          i_sysclk               10.000            8.060           (R-R)
+core_clk          i_peripheralClk        10.000            2.928           (R-R)
+i_sysclk          core_clk               10.000            3.015           (R-R)
+i_sysclk          i_sysclk               10.000            1.980           (R-R)
+i_sysclk          i_peripheralClk        10.000            6.541           (R-R)
+i_peripheralClk   core_clk               10.000            4.601           (R-R)
+i_peripheralClk   i_sysclk               10.000            7.292           (R-R)
+i_peripheralClk   i_peripheralClk        10.000            2.919           (R-R)
+hdmi_tx_slow_clk  hdmi_tx_slow_clk        6.734            1.410           (R-R)
+i_mipi_rx_pclk    i_mipi_rx_pclk         20.000           13.134           (R-R)
+i_mipi_rx_pclk    pixel2_clk             10.000            9.528           (R-R)
+i_mipi_rx_pclk    pixel1_clk              5.000            3.230           (R-R)
+pixel2_clk        i_mipi_rx_pclk         10.000            9.512           (R-R)
+pixel2_clk        pixel2_clk             10.000            3.678           (R-R)
+pixel2_clk        pixel1_clk              5.000            3.580           (R-R)
+pixel1_clk        pixel2_clk              5.000            4.503           (R-R)
+pixel1_clk        pixel1_clk              5.000            0.526           (R-R)
+CLK_5M            CLK_5M                200.000          196.395           (R-R)
+i_cam_ck_CLKOUT   i_cam_ck_CLKOUT        10.000            4.102           (R-R)
+jtag_inst1_TCK    jtag_inst1_TCK         20.000           13.894           (R-R)
+jtag_inst1_TCK    jtag_inst1_TCK         10.000            7.609           (F-R)
+
+Hold (Min) Clock Relationship
+  Launch Clock      Capture Clock   Constraint (ns)     Slack (ns)          Edge
+tx_cal_clk_90edge tx_cal_clk_90edge       0.000           0.039            (R-R)
+tx_cal_clk_90edge tx_cal_clk              0.000           0.560            (R-R)
+sdram_clk         tx_cal_clk_90edge       0.000           0.606            (R-R)
+sdram_clk         sdram_clk               0.000           0.023            (R-R)
+sdram_clk         rx_cal_clk              0.000           0.471            (R-R)
+rx_cal_clk        rx_cal_clk              0.000           0.026            (R-R)
+tx_cal_clk        tx_cal_clk              0.000           0.097            (R-R)
+core_clk          core_clk                0.000           0.030            (R-R)
+core_clk          i_sysclk                0.000           0.117            (R-R)
+core_clk          i_peripheralClk         0.000           0.105            (R-R)
+i_sysclk          core_clk                0.000           0.075            (R-R)
+i_sysclk          i_sysclk                0.000           0.026            (R-R)
+i_sysclk          i_peripheralClk         0.000           0.107            (R-R)
+i_peripheralClk   core_clk                0.000           0.116            (R-R)
+i_peripheralClk   i_sysclk                0.000           0.100            (R-R)
+i_peripheralClk   i_peripheralClk         0.000           0.026            (R-R)
+hdmi_tx_slow_clk  hdmi_tx_slow_clk        0.000           0.071            (R-R)
+i_mipi_rx_pclk    i_mipi_rx_pclk          0.000           0.094            (R-R)
+i_mipi_rx_pclk    pixel2_clk              0.000           0.104            (R-R)
+i_mipi_rx_pclk    pixel1_clk              0.000           0.861            (R-R)
+pixel2_clk        i_mipi_rx_pclk          0.000           0.122            (R-R)
+pixel2_clk        pixel2_clk              0.000           0.048            (R-R)
+pixel2_clk        pixel1_clk              0.000           0.112            (R-R)
+pixel1_clk        pixel2_clk              0.000           0.117            (R-R)
+pixel1_clk        pixel1_clk              0.000           0.026            (R-R)
+CLK_5M            CLK_5M                  0.000           0.092            (R-R)
+i_cam_ck_CLKOUT   i_cam_ck_CLKOUT         0.000           0.034            (R-R)
+jtag_inst1_TCK    jtag_inst1_TCK          0.000           0.097            (R-R)
+jtag_inst1_TCK    jtag_inst1_TCK        -10.000           8.419            (F-R)
+
+INFO     : Done printing reported timing summary
+INFO     : Reset timing
+INFO     : Reading SDC file soc_physical_cdc_review.sdc
+INFO     : [SDC C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/07_soc_physical/soc_physical_cdc_review.sdc:2] Creating clock 'tx_cal_clk_90edge' with 1 sources
+INFO     : [SDC C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/07_soc_physical/soc_physical_cdc_review.sdc:3] Creating clock 'sdram_clk' with 1 sources
+INFO     : [SDC C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/07_soc_physical/soc_physical_cdc_review.sdc:4] Creating clock 'rx_cal_clk' with 1 sources
+INFO     : [SDC C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/07_soc_physical/soc_physical_cdc_review.sdc:5] Creating clock 'tx_cal_clk' with 1 sources
+INFO     : [SDC C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/07_soc_physical/soc_physical_cdc_review.sdc:6] Creating clock 'core_clk' with 1 sources
+INFO     : [SDC C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/07_soc_physical/soc_physical_cdc_review.sdc:7] Creating clock 'i_sysclk' with 1 sources
+INFO     : [SDC C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/07_soc_physical/soc_physical_cdc_review.sdc:8] Creating clock 'i_peripheralClk' with 1 sources
+INFO     : [SDC C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/07_soc_physical/soc_physical_cdc_review.sdc:9] Creating clock 'i_fb_clk' with 1 sources
+INFO     : [SDC C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/07_soc_physical/soc_physical_cdc_review.sdc:10] Creating clock 'hdmi_tx_slow_clk' with 1 sources
+INFO     : [SDC C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/07_soc_physical/soc_physical_cdc_review.sdc:11] Creating clock 'fb' with 1 sources
+INFO     : [SDC C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/07_soc_physical/soc_physical_cdc_review.sdc:12] Creating clock 'i_mipi_rx_pclk' with 1 sources
+INFO     : [SDC C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/07_soc_physical/soc_physical_cdc_review.sdc:13] Creating clock 'pixel2_clk' with 1 sources
+INFO     : [SDC C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/07_soc_physical/soc_physical_cdc_review.sdc:14] Creating clock 'pixel1_clk' with 1 sources
+INFO     : [SDC C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/07_soc_physical/soc_physical_cdc_review.sdc:15] Creating clock 'CLK_5M' with 1 sources
+INFO     : [SDC C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/07_soc_physical/soc_physical_cdc_review.sdc:16] Creating clock 'i_cam_ck_CLKOUT' with 1 sources
+INFO     : [SDC C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/07_soc_physical/soc_physical_cdc_review.sdc:17] Creating clock 'CLK_25M' with 1 sources
+INFO     : [SDC C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/07_soc_physical/soc_physical_cdc_review.sdc:18] Creating clock 'CLK_27M' with 1 sources
+INFO     : [SDC C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/07_soc_physical/soc_physical_cdc_review.sdc:19] Creating clock 'jtag_inst1_TCK' with 1 sources
+INFO     : [SDC C:/Users/16034/Downloads/FPGA/FPGA_2026_T3_P3/projects/07_soc_physical/soc_physical_cdc_review.sdc:20] Creating clock 'hdmi_tx_fast_clk' with 1 sources
+INFO     : SDC file 'soc_physical_cdc_review.sdc' parsed successfully.
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_axi_interconnect/MUL_MASTER.u_crossbar/u_arbiter/ROUND_ROBIN.u_round_robin_priority_arbiter/dlatchrs_72/i1:in[0] to soc/u_axi_interconnect/MUL_MASTER.u_crossbar/u_arbiter/ROUND_ROBIN.u_round_robin_priority_arbiter/dlatchrs_72/i1:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_axi_interconnect/MUL_MASTER.u_crossbar/u_arbiter/ROUND_ROBIN.u_round_robin_priority_arbiter/dlatchrs_72/i1:in[0] to soc/u_axi_interconnect/MUL_MASTER.u_crossbar/u_arbiter/ROUND_ROBIN.u_round_robin_priority_arbiter/dlatchrs_72/i1:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_axi_interconnect/MUL_MASTER.u_crossbar/u_arbiter/ROUND_ROBIN.u_round_robin_priority_arbiter/dlatchrs_72/i2:in[0] to soc/u_axi_interconnect/MUL_MASTER.u_crossbar/u_arbiter/ROUND_ROBIN.u_round_robin_priority_arbiter/dlatchrs_72/i2:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_axi_interconnect/MUL_MASTER.u_crossbar/u_arbiter/ROUND_ROBIN.u_round_robin_priority_arbiter/dlatchrs_72/i2:in[0] to soc/u_axi_interconnect/MUL_MASTER.u_crossbar/u_arbiter/ROUND_ROBIN.u_round_robin_priority_arbiter/dlatchrs_72/i2:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/FC.u_tinyml_fc_op/fc_standard.u_tinyml_fc_standard/tinyml_fc_standard_dma_ctr_inst/tinyml_fc_standard_dma_ctr_aw_inst/dlatchrs_134/i1:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/FC.u_tinyml_fc_op/fc_standard.u_tinyml_fc_standard/tinyml_fc_standard_dma_ctr_inst/tinyml_fc_standard_dma_ctr_aw_inst/dlatchrs_134/i1:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/FC.u_tinyml_fc_op/fc_standard.u_tinyml_fc_standard/tinyml_fc_standard_dma_ctr_inst/tinyml_fc_standard_dma_ctr_aw_inst/dlatchrs_134/i1:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/FC.u_tinyml_fc_op/fc_standard.u_tinyml_fc_standard/tinyml_fc_standard_dma_ctr_inst/tinyml_fc_standard_dma_ctr_aw_inst/dlatchrs_134/i1:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/FC.u_tinyml_fc_op/fc_standard.u_tinyml_fc_standard/tinyml_fc_standard_dma_ctr_inst/tinyml_fc_standard_dma_ctr_aw_inst/dlatchrs_134/i2:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/FC.u_tinyml_fc_op/fc_standard.u_tinyml_fc_standard/tinyml_fc_standard_dma_ctr_inst/tinyml_fc_standard_dma_ctr_aw_inst/dlatchrs_134/i2:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/FC.u_tinyml_fc_op/fc_standard.u_tinyml_fc_standard/tinyml_fc_standard_dma_ctr_inst/tinyml_fc_standard_dma_ctr_aw_inst/dlatchrs_134/i2:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/FC.u_tinyml_fc_op/fc_standard.u_tinyml_fc_standard/tinyml_fc_standard_dma_ctr_inst/tinyml_fc_standard_dma_ctr_aw_inst/dlatchrs_134/i2:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/LR.u_tinyml_lr_op/lr_standard.u_tinyml_lr_standard/tinyml_lr_standard_dma_ctr_inst/tinyml_lr_standard_dma_ctr_aw_inst/dlatchrs_104/i1:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/LR.u_tinyml_lr_op/lr_standard.u_tinyml_lr_standard/tinyml_lr_standard_dma_ctr_inst/tinyml_lr_standard_dma_ctr_aw_inst/dlatchrs_104/i1:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/LR.u_tinyml_lr_op/lr_standard.u_tinyml_lr_standard/tinyml_lr_standard_dma_ctr_inst/tinyml_lr_standard_dma_ctr_aw_inst/dlatchrs_104/i1:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/LR.u_tinyml_lr_op/lr_standard.u_tinyml_lr_standard/tinyml_lr_standard_dma_ctr_inst/tinyml_lr_standard_dma_ctr_aw_inst/dlatchrs_104/i1:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/LR.u_tinyml_lr_op/lr_standard.u_tinyml_lr_standard/tinyml_lr_standard_dma_ctr_inst/tinyml_lr_standard_dma_ctr_aw_inst/dlatchrs_104/i2:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/LR.u_tinyml_lr_op/lr_standard.u_tinyml_lr_standard/tinyml_lr_standard_dma_ctr_inst/tinyml_lr_standard_dma_ctr_aw_inst/dlatchrs_104/i2:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/LR.u_tinyml_lr_op/lr_standard.u_tinyml_lr_standard/tinyml_lr_standard_dma_ctr_inst/tinyml_lr_standard_dma_ctr_aw_inst/dlatchrs_104/i2:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/LR.u_tinyml_lr_op/lr_standard.u_tinyml_lr_standard/tinyml_lr_standard_dma_ctr_inst/tinyml_lr_standard_dma_ctr_aw_inst/dlatchrs_104/i2:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/MUL.u_tinyml_mul_op/mul_standard.u_tinyml_mul_standard/tinyml_mul_standard_dma_ctr_inst/tinyml_mul_standard_dma_ctr_aw_inst/dlatchrs_121/i1:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/MUL.u_tinyml_mul_op/mul_standard.u_tinyml_mul_standard/tinyml_mul_standard_dma_ctr_inst/tinyml_mul_standard_dma_ctr_aw_inst/dlatchrs_121/i1:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/MUL.u_tinyml_mul_op/mul_standard.u_tinyml_mul_standard/tinyml_mul_standard_dma_ctr_inst/tinyml_mul_standard_dma_ctr_aw_inst/dlatchrs_121/i1:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/MUL.u_tinyml_mul_op/mul_standard.u_tinyml_mul_standard/tinyml_mul_standard_dma_ctr_inst/tinyml_mul_standard_dma_ctr_aw_inst/dlatchrs_121/i1:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/MUL.u_tinyml_mul_op/mul_standard.u_tinyml_mul_standard/tinyml_mul_standard_dma_ctr_inst/tinyml_mul_standard_dma_ctr_aw_inst/dlatchrs_121/i2:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/MUL.u_tinyml_mul_op/mul_standard.u_tinyml_mul_standard/tinyml_mul_standard_dma_ctr_inst/tinyml_mul_standard_dma_ctr_aw_inst/dlatchrs_121/i2:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/MUL.u_tinyml_mul_op/mul_standard.u_tinyml_mul_standard/tinyml_mul_standard_dma_ctr_inst/tinyml_mul_standard_dma_ctr_aw_inst/dlatchrs_121/i2:in[1] to soc/u_tinyml_top/u_tinyml_accelerator/u_tinyml_accelerator_int/MUL.u_tinyml_mul_op/mul_standard.u_tinyml_mul_standard/tinyml_mul_standard_dma_ctr_inst/tinyml_mul_standard_dma_ctr_aw_inst/dlatchrs_121/i2:out [TimerMsg::CombinationalLoopDetected]
+INFO     : Write report_bus_skew report to "outflow\soc_physical.bus_setup.rpt" ...
+INFO     : Done printing report_bus_skew result
+INFO     : Write report_bus_skew report to "outflow\soc_physical.bus_hold.rpt" ...
+INFO     : Done printing report_bus_skew result
+INFO     : The entire flow of EFX_STA took 68.0916125 seconds [FlowMsg::StageDuration]
+INFO     :     The entire flow of EFX_STA took 84.5625 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : The entire flow of EFX_STA virtual memory usage: begin = 20.032 MB, end = 3341.992 MB, delta = 3321.96 MB [FlowMsg::VMUsage]
+INFO     :     The entire flow of EFX_STA peak virtual memory usage = 3343.88 MB [FlowMsg::VMUsage::Peak]
+INFO     : The entire flow of EFX_STA resident set memory usage: begin = 22.956 MB, end = 3331.568 MB, delta = 3308.612 MB [FlowMsg::RSSUsage]
+INFO     :     The entire flow of EFX_STA peak resident set memory usage = 3332.62 MB [FlowMsg::RSSUsage::Peak]

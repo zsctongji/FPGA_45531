@@ -1,0 +1,17 @@
+{
+  "status": "PASS_C7_SPI_FIX_CPU_DDR_TINYML_COLD_BOOT",
+  "fpga_bit_sha256": "982ab1bf07f6b8ba825b02c064de014003fc743a08f9083631e5adcc24956f5b",
+  "automatic_flash_cold_boot_passed": true,
+  "physical_power_cycle_user_confirmed": true,
+  "usb_disconnect_reconnect_observed": true,
+  "cpu_firmware_loaded_by_tool_during_cold_capture": false,
+  "cold_attempt": "logs/c7_cold_boot_20261101/20261101_175401/attempt.json",
+  "cold_attempt_sha256": "c0da9035fa57b1a953a555ef71a5f7259cbe963d92ac4a081cce5e3f7aa9a11c",
+  "cold_uart_sha256": "e3e5174578b2168c3f97f6bb756bce8866dd29a3acddef6ef266fda141787817",
+  "cold_reference_sha256": "6d24ca36867aa4634e6ee6cd43229850d393789677e43f505f9c6c8179629161",
+  "capture_tool_sha256": "8bde066b8bcb48907c14195a1721aaf5649f5530e18345f7ef04e84e57ee5589",
+  "dma_coherence_passed": false,
+  "real_video_concurrency_passed": false,
+  "physical_hdmi_picture_passed": false,
+  "scope": "C10 is the full C7 with corrected SPI RX; CPU, DDR/cache and six static TinyML cases pass. DMA and real video require independent C9 evidence."
+}

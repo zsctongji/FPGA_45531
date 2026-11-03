@@ -1,0 +1,15 @@
+{
+  "status": "HOST_ERROR",
+  "started": "2026-11-03T12:57:34.764327+08:00",
+  "flash_written": false,
+  "cpu_firmware_loaded": false,
+  "synthesis_variant": "cong_comb4_off_seed3_scanout_sideband_observer",
+  "fpga_image_sha256": "333af57e423c4174aaf0b1d0589b6a0c796f85ea530758f0fc715528896328b2",
+  "implementation_audit_sha256": "88e6b03411e5608a5701b4b0d353514e89b3ca333af9354ee3d0d3497c115dbf",
+  "capture_tool_sha256": "6576e2a9a1379f9591aa623a25198ef64d4924d975617fcc9a64ed4895f98811",
+  "fpga_configured": true,
+  "error": "FileNotFoundError(2, 'No such file or directory')",
+  "c10_restore_passed": true,
+  "restore_attempt": "logs\\c10_warm_boot_20261101\\20261103_125746\\attempt.json",
+  "finished": "2026-11-03T12:58:06.133238+08:00"
+}

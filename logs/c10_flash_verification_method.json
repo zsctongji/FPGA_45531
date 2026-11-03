@@ -1,0 +1,10 @@
+{
+  "status": "PASS_AFTER_VENDOR_MAX_WAIT_RETRY",
+  "first_verify_failed": true,
+  "vendor_max_wait_retry": true,
+  "final_host_verify": true,
+  "independent_full_readback_passed": true,
+  "program_log_sha256": "9b1b8b62ceb39e68bb6af1e1745afbda2e9b2d983b280672210027ca8ead1b62",
+  "raw_unknown_flash_data_uploaded": false,
+  "first_verify_message": "ERROR: Flash verify unsuccessful... mismatch found"
+}

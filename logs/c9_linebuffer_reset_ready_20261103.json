@@ -1,0 +1,66 @@
+{
+  "status": "OFFLINE_READY_BOARD_REQUIRED",
+  "hardware_accessed": false,
+  "board_test_passed": false,
+  "real_camera_verified": false,
+  "flash_written": false,
+  "controlled_change": "Camera reset output and camera I2C configuration-delay reset now use camera_reset_n, already used by CSI and pixel pipeline. Original reset polarity and delay length retained. All pixel/CSR/error-mask/DDR/clock/pin/IP logic unchanged. Diagnostic only, no TinyML accelerator.",
+  "image_sha256": "0682560f773a92e50c5e97384ef490d2f03d51a910ef810aa6bcd5a18b271d2c",
+  "audit_path": "build/c9_linebuffer_reset_image_20261103/implementation_audit.json",
+  "audit_sha256": "3cf721d86d5ade3fda9f49fd0f3d791e531168cc0f7eb5e7ebd5f094c2f1d318",
+  "firmware_build_record_sha256": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc",
+  "active_profile_sha256": "29d90baa2c3721a2e440518b5aa4e20282003718408be57d0403f020dbe449fb",
+  "active_image_sha256": "ea542809a0a884fd2d3dbc89a22cdc0d7c891e424bd1cc1179194a0934f5ee6b",
+  "active_profile_changed": false,
+  "ddr_parameters_changed": false,
+  "calibration_algorithm_changed": false,
+  "acceptance_criteria_changed": false,
+  "timing": {
+    "setup": {
+      "rows": 30,
+      "minimum_slack_ns": 0.275,
+      "violations": []
+    },
+    "hold": {
+      "rows": 30,
+      "minimum_slack_ns": 0.026,
+      "violations": []
+    }
+  },
+  "xlrs": 31375,
+  "xlrs_available": 60800,
+  "cdc_pointer_bits": 66,
+  "hypothesis": "Native-domain ISR cleanup/readback before capture. Fresh errors remain fatal, no TinyML accelerator.",
+  "evidence_sha256": {
+    "build/c9_linebuffer_reset_image_20261103/implementation_audit.json": "3cf721d86d5ade3fda9f49fd0f3d791e531168cc0f7eb5e7ebd5f094c2f1d318",
+    "logs/c9_camera_reset_tests_20261103.json": "b912fb00a315cd330a2e05fa495ca2f09373c9fabf5ba8ad6123fbf4bf099a5e",
+    "logs/c9_linebuffer_reset_decode_tests_20261103.json": "89dbc1c5e342ac13a94297e21b563221cd9daeb106022a1d90d544783bf3e46f",
+    "firmware/c9_camera_geometry/BUILD_RECORD.json": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc",
+    "tools/report_c9_linebuffer_reset.py": "193c40c1915ee27f0ead319c87e35d546ae428bfd23fc8720d0d2da8dfeb9fa5",
+    "tools/run_c9_linebuffer_reset.py": "5e1d45dfe01513c11326ea37f526036cf39cb2190bcfc9065b70bb48067ac237",
+    "tools/check_c9_linebuffer_reset.py": "f25a7e93ed4a756eee88633c7f602847a8b70c57e2941d1d7fe474458da7e272"
+  },
+  "packaged_sha256": {
+    "IMPLEMENTATION_AUDIT.json": "3cf721d86d5ade3fda9f49fd0f3d791e531168cc0f7eb5e7ebd5f094c2f1d318",
+    "soc_physical.bit": "0682560f773a92e50c5e97384ef490d2f03d51a910ef810aa6bcd5a18b271d2c",
+    "soc_physical.bus_hold.rpt": "87e7fd9eedf3e3eeea9734d18e6973dff679185ef6abbb01ff33d829791414bd",
+    "soc_physical.bus_setup.rpt": "70a852797ed545871772c0dad3b494fa8291b3c3f1bf290c4e0fc42e49558a50",
+    "soc_physical.hex": "6f49b518a8ebba1d0632cf75c9142b5775b593912bb87a225543d121ac1ac202",
+    "soc_physical.pinout.csv": "b5a506d33296bf101d21f593c863dcb0ff59853cca0253585b6d8e9c6950b41b",
+    "soc_physical.place.rpt": "ff0b7f470a7d3215e9e1a1551440730038cc7bc3603a2dad498b3787627cdad9",
+    "soc_physical.review_timing.rpt": "e10cc8a8ce9b88325c0030c962e27504093c1abdd98180eca81b48cecc9822ad"
+  },
+  "preflight": {
+    "status": "PASS_OFFLINE_PREFLIGHT",
+    "hardware_accessed": false,
+    "flash_written": false,
+    "board_test_passed": false,
+    "firmware_version": "c9geom-3bcf05e8d3894dc3",
+    "firmware_sha256": "f9955a3639543272716f1ef998156f6aae05d297c8841eb7092af8ef57ced9a5",
+    "entry": "0x1000000",
+    "probe_variant": "linebuffer_reset",
+    "fpga_image_sha256": "0682560f773a92e50c5e97384ef490d2f03d51a910ef810aa6bcd5a18b271d2c",
+    "implementation_audit_sha256": "3cf721d86d5ade3fda9f49fd0f3d791e531168cc0f7eb5e7ebd5f094c2f1d318",
+    "qualified_profile_sha256": null
+  }
+}

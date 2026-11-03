@@ -1,0 +1,2 @@
+PASS tb_c2_axi masters=4 writes=84 reads=84 checks=827 max_request_wait=103 full128_INCR strobes stalls error_routing reset
+build/physical_20261031/c2_regression/sim/tb_c2_axi.sv:144: $finish called at 61860000 (1ps)

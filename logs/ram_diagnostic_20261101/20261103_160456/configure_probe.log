@@ -1,0 +1,6 @@
+Connecting to JTAG_TAP: efx_ti
+jtag programming started!
+JTAG Programming on ftdi://0x0403:0x6011:0:ff/1
+Programming 'C:\Users\16034\Downloads\FPGA\FPGA_2026_T3_P3\build\c9_stage_min_image_20261103\outflow\soc_physical.bit' via JTAG at freq 1.0 MHz
+Device ID read from JTAG: 0x10660A79
+... finished with JTAG programming

@@ -26,3 +26,6 @@ __pycache__/
 *.pem
 *.key
 *.lic
+
+# Generated private vendor SDK override
+/projects/10_soc_cold/overrides/sapphire_soc_spi.v

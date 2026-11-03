@@ -1,0 +1,216 @@
+{
+  "status": "CAPTURED_PACKET_STATUS_ONLY",
+  "flash_written": false,
+  "board_acceptance_passed": false,
+  "real_camera_verified": false,
+  "runner_sha256": "a6d38a69c2e0042fdb483bdf2f22f328f3daa79e9e02cf4ecad5cec3f603f704",
+  "ddr_status": {
+    "attempt": "logs/c9_ddr_probe_20261101/20261103_114641/attempt.json",
+    "result": {
+      "status": "PASS_CALIBRATION_ONLY",
+      "calibration_verified": true,
+      "failures": [],
+      "observed": {
+        "cal_done": true,
+        "system_reset": false,
+        "controller_reset_released": true,
+        "root_reset_released": true,
+        "pll_locks": 15,
+        "sys_rst": true,
+        "init_state": 22,
+        "wrlvl_check": 254,
+        "read_level_check": 254,
+        "init_delay_counter": 300000,
+        "rdlvl_shift": 4,
+        "wrlvl_shift": 5,
+        "mpr_rdlvl_dly": true,
+        "idelay_ld": false,
+        "ddr_debug_port_hex": "70f00000d",
+        "status0_last8_identical": true,
+        "status1_last8_identical": true,
+        "clock_activity_observed": {
+          "core_clk": true,
+          "i_sysclk": true,
+          "tx_cal_clk": true,
+          "rx_cal_clk": true
+        },
+        "atomic_snapshot": false,
+        "clock_frequency_verified": false
+      },
+      "cpu_execution_verified": false,
+      "full_capacity_verified": false,
+      "clock_frequency_verified": false,
+      "atomic_snapshot": false,
+      "hardware_accessed": false,
+      "c10_restore_passed": true,
+      "fpga_image_sha256": "e6637e93edccaa5232e9a3ed852932e7508d6f17cfac4bd5edb633ce1011ed20",
+      "attempt_sha256": "878d4c78e93161e96b91f78977748bb5538fde5ed17c45f94bb9591ad9dcc38e",
+      "samples_sha256": "f4b700d0dc7091ce0c1045982332e8616c4a61e923ac8b577f570cd9d2c19d13",
+      "audit_sha256": "fe35fd686059e48e33e47875d212eef1cdb2c5df9d336ee529c3d1ac8f043801",
+      "checker_sha256": "7bdf796ccca43832d5a832cddb5da18d38d37f0d77c9e6c5616a63f098f5cd09"
+    }
+  },
+  "camera_attempt": "logs/ram_diagnostic_20261101/20261103_114725/attempt.json",
+  "observation": {
+    "status": "CAPTURED_PACKET_STATUS_ONLY",
+    "missing": [],
+    "real_camera_verified": false,
+    "board_acceptance_passed": false,
+    "flash_written": false,
+    "native_before": {
+      "word_count": 2400,
+      "datatype": 43,
+      "pixel_per_clk": 2,
+      "vc": 0,
+      "metadata_seen": true,
+      "vs_level": true,
+      "hs_level": false,
+      "camera_fault": false,
+      "vs_edge_mod16": 7,
+      "hs_edge_mod16": 1
+    },
+    "native_after": {
+      "word_count": 2400,
+      "datatype": 43,
+      "pixel_per_clk": 2,
+      "vc": 0,
+      "metadata_seen": true,
+      "vs_level": false,
+      "hs_level": false,
+      "camera_fault": false,
+      "vs_edge_mod16": 10,
+      "hs_edge_mod16": 1
+    },
+    "source_frames": 241,
+    "format_errors": 240,
+    "overflow_frames": 0,
+    "a_completed": 0,
+    "width": 0,
+    "segments": 0,
+    "segments_clipped": false,
+    "capture_record_seen": true,
+    "capture_record_complete": false,
+    "source_flags_hex": "00000088",
+    "uart_sha256": "9e69d2c6d3b79e73ba6217848f6b8320c40d3f4f1fcbd79254232ac855d4e167",
+    "attempt_sha256": "36b6a7f8fa0ef827f61841ffea985edadeb7ce756c57fba2eb6afd7218972182",
+    "fpga_image_sha256": "e6637e93edccaa5232e9a3ed852932e7508d6f17cfac4bd5edb633ce1011ed20",
+    "scope": "Diagnostic packet/header and edge observations only; Modulo-16 edge counts can wrap and cannot establish line counts or absence of activity. Metadata is last valid payload. Cross-domain observations are not simultaneous.",
+    "snapshots": {
+      "before": {
+        "start": 894,
+        "end": 1035,
+        "words": {
+          "0": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            57,
+            0,
+            0
+          ],
+          "1": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "2": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            2147969997,
+            2013607940,
+            2097205765,
+            1397952512,
+            1,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            3232434528,
+            3384934513,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "after": {
+        "start": 11044,
+        "end": 11176,
+        "words": {
+          "0": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            666,
+            0,
+            0
+          ],
+          "1": [
+            241,
+            240,
+            0,
+            0,
+            0,
+            0,
+            0,
+            136
+          ],
+          "2": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            2147969997,
+            2013607940,
+            2097205765,
+            1397952512,
+            1,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            2158692704,
+            3384934561,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    }
+  },
+  "c10_restore_passed": true,
+  "restore_attempt": "logs/c10_warm_boot_20261101/20261103_114748/attempt.json",
+  "finished": "2026-11-03T11:48:08.370083+08:00"
+}

@@ -1,0 +1,18 @@
+{
+  "started": "2026-11-03T18:00:02.665480+08:00",
+  "status": "CAPTURED_DONE_REQUIRES_CHECKER",
+  "flash_written": false,
+  "entry": "0x1000000",
+  "firmware_sha256": "f9955a3639543272716f1ef998156f6aae05d297c8841eb7092af8ef57ced9a5",
+  "firmware_version": "c9geom-3bcf05e8d3894dc3",
+  "build_record_sha256": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc",
+  "runner_sha256": "b184f04cfa42509bc4b56ad721c7cf627b9cbaeea22cb7a0428a840d09201ea6",
+  "prefix": "C9|",
+  "board_test_passed": false,
+  "fpga_configured": true,
+  "implementation_audit_sha256": "0b76eecdcd4fbdc0d54a1d8b6662c062a9885c2df670072704350a570fa85098",
+  "probe_variant": "linebuffer_stream",
+  "fpga_image_sha256": "30986b841d4f4d92069b8d255b9d220a6da79b057cef93e5ec9607ee5590ecd4",
+  "readback_sha256": "f9955a3639543272716f1ef998156f6aae05d297c8841eb7092af8ef57ced9a5",
+  "finished": "2026-11-03T18:00:24.264000+08:00"
+}

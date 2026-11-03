@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "scope": "Strict C1 log versus desktop reference comparison only",
+  "errors": [],
+  "differences": [
+    {
+      "sample": "person",
+      "delta": {
+        "person": 0,
+        "no_person": 0
+      }
+    },
+    {
+      "sample": "no_person",
+      "delta": {
+        "person": 0,
+        "no_person": 0
+      }
+    },
+    {
+      "sample": "people1",
+      "delta": {
+        "person": 0,
+        "no_person": 0
+      }
+    },
+    {
+      "sample": "people2",
+      "delta": {
+        "person": 0,
+        "no_person": 0
+      }
+    },
+    {
+      "sample": "no_people1",
+      "delta": {
+        "person": 0,
+        "no_person": 0
+      }
+    },
+    {
+      "sample": "no_people2",
+      "delta": {
+        "person": 0,
+        "no_person": 0
+      }
+    }
+  ],
+  "source_model_sha256": "808cfdfc0cf3a6fa6f6fa26bfa379ea97c16d5db7334637766e39c3408502e9d",
+  "runtime_model_sha256": "77cac99d46416295fc3ec9cf752dec8e0c8aafd9421475da6c86439aee22e1c4",
+  "desktop_metadata_compatibility_copy": true,
+  "board_capture_provenance_verified": false
+}

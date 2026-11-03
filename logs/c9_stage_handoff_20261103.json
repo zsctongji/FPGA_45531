@@ -1,0 +1,487 @@
+{
+  "status": "PASS_LOCAL_COPY_STAGE_LOCALIZATION_REAL_VIDEO_PENDING",
+  "git_committed": false,
+  "git_pushed": false,
+  "destination": "C:\\Users\\16034\\Documents\\ChatGPT\\FPGA\\FPGA_cooperation_handoff",
+  "backup": "C:\\Users\\16034\\Documents\\ChatGPT\\FPGA\\handoff_backups\\c9_stage_20261103_161352",
+  "known_files_updated": [
+    "team_work/03_ai_soc/CURRENT_BOARD_CHECKPOINT_20261101.md",
+    "team_work/03_ai_soc/README.md",
+    "team_work/03_ai_soc/c9_live/README.md",
+    "tools/c9_probe_image.py"
+  ],
+  "files": [
+    {
+      "path": "fpga_bitstreams/c9_stage_min_100mhz/BUILD_RECORD.json",
+      "sha256": "64499079ac31ea8b8ea286eb35bd0ece57bb0638d8797e5fc1d3011e4c991616"
+    },
+    {
+      "path": "fpga_bitstreams/c9_stage_min_100mhz/IMPLEMENTATION_AUDIT.json",
+      "sha256": "35383a485d714c161fe95f75c37c4731fc2a378ab3fcc6b33bc43dcd4db2021a"
+    },
+    {
+      "path": "fpga_bitstreams/c9_stage_min_100mhz/soc_physical.bit",
+      "sha256": "0179b3e7d9a60655cf668c4828f670efe2e4927194cd7ded9fbd7a10e2b1f048"
+    },
+    {
+      "path": "fpga_bitstreams/c9_stage_min_100mhz/soc_physical.bus_hold.rpt",
+      "sha256": "9185b270ab2e26183b2bd758a393f8e0782f67546ad1ee47ff794a81e69f20cf"
+    },
+    {
+      "path": "fpga_bitstreams/c9_stage_min_100mhz/soc_physical.bus_setup.rpt",
+      "sha256": "7b686b163a853b685787bfa3d690578d93ff14da9b2b5d54b74a08975c90b7f7"
+    },
+    {
+      "path": "fpga_bitstreams/c9_stage_min_100mhz/soc_physical.hex",
+      "sha256": "2560cff0c689864a1f4d586332eac4c732d83461297daf6abf4699426b4c3bfb"
+    },
+    {
+      "path": "fpga_bitstreams/c9_stage_min_100mhz/soc_physical.pinout.csv",
+      "sha256": "a6ac95de7c3ca255cd3f7dfb8e3f78ef3a1270a9f1bfaaf34ba271baf36faeaf"
+    },
+    {
+      "path": "fpga_bitstreams/c9_stage_min_100mhz/soc_physical.place.rpt",
+      "sha256": "380ac2aa3be5c7b444600e18529a58870878108bbe66b0d58eda4f0c393ca407"
+    },
+    {
+      "path": "fpga_bitstreams/c9_stage_min_100mhz/soc_physical.review_timing.rpt",
+      "sha256": "420a45fca86d0d6b6a8d825b8e4186fc2ce24acd1a5e84785166dba32f957a4d"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_160155/attempt.json",
+      "sha256": "6633cdd09287532a653a27b8ad15dd3f1aca9953f1fbfed0af976e30633512f4"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_160155/configure.log",
+      "sha256": "51daf0a713f1c41dc95c0d161b7e1a2bfbed5aa9969ca73268d0d532a8839099"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_160155/reference_check.json",
+      "sha256": "6bc7b02a5a1a36f75a6907327a8d901a8c6495b97739998ee287791adedc04a5"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_160155/uart.log",
+      "sha256": "e3e5174578b2168c3f97f6bb756bce8866dd29a3acddef6ef266fda141787817"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_160237/attempt.json",
+      "sha256": "b980537b9d1c69c8a181ccafb8a37b6fd03b6c4d3f779222a8994031525b0ba2"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_160237/configure.log",
+      "sha256": "51daf0a713f1c41dc95c0d161b7e1a2bfbed5aa9969ca73268d0d532a8839099"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_160237/reference_check.json",
+      "sha256": "6bc7b02a5a1a36f75a6907327a8d901a8c6495b97739998ee287791adedc04a5"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_160237/uart.log",
+      "sha256": "e3e5174578b2168c3f97f6bb756bce8866dd29a3acddef6ef266fda141787817"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_160437/attempt.json",
+      "sha256": "3e8b459faafcf082cb81ee1b7ab5380025282812fd44c5132da3835c168f722a"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_160437/configure.log",
+      "sha256": "51daf0a713f1c41dc95c0d161b7e1a2bfbed5aa9969ca73268d0d532a8839099"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_160437/reference_check.json",
+      "sha256": "6bc7b02a5a1a36f75a6907327a8d901a8c6495b97739998ee287791adedc04a5"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_160437/uart.log",
+      "sha256": "e3e5174578b2168c3f97f6bb756bce8866dd29a3acddef6ef266fda141787817"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_160518/attempt.json",
+      "sha256": "583321c78c0790de8c02571039a768583fc82959b2d3dea99766e3e6ee0e6fa8"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_160518/configure.log",
+      "sha256": "51daf0a713f1c41dc95c0d161b7e1a2bfbed5aa9969ca73268d0d532a8839099"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_160518/reference_check.json",
+      "sha256": "6bc7b02a5a1a36f75a6907327a8d901a8c6495b97739998ee287791adedc04a5"
+    },
+    {
+      "path": "logs/c10_warm_boot_20261101/20261103_160518/uart.log",
+      "sha256": "e3e5174578b2168c3f97f6bb756bce8866dd29a3acddef6ef266fda141787817"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261103_160133/attempt.json",
+      "sha256": "fc5a588a9c611528e7895401f149036a89fb3fe2fe1f06d7705e2606574d6f40"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261103_160133/capture_tool.py",
+      "sha256": "5cc7956385cce3b8728ea74788d699432e81038afe72f94f94add96abbf2d487"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261103_160133/configure.log",
+      "sha256": "bd330be2936df7040e5d7b82500ec8caa384571d5d09d9acf7f1ba72541db657"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261103_160133/restore_c10.log",
+      "sha256": "f8271856153566fd71639712c118cca19ff08fa610d66badadbbe71e8f2de4b9"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261103_160133/samples.json",
+      "sha256": "1135b04e193c4d0692fb6da6f4090a3e643f15c39ce7bde1a82bc0a46272e798"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261103_160414/attempt.json",
+      "sha256": "c503736c904f8564979d20c4761421be049a7ef8b07718858ddf6fd6b1971880"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261103_160414/capture_tool.py",
+      "sha256": "5cc7956385cce3b8728ea74788d699432e81038afe72f94f94add96abbf2d487"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261103_160414/configure.log",
+      "sha256": "bd330be2936df7040e5d7b82500ec8caa384571d5d09d9acf7f1ba72541db657"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261103_160414/restore_c10.log",
+      "sha256": "a81e6dee049fe6b341babf6fc916bb6d5b57a4d4abfc9f6fcb81b24a59a6805b"
+    },
+    {
+      "path": "logs/c9_ddr_probe_20261101/20261103_160414/samples.json",
+      "sha256": "94f0bde54847a44dddb3e6558b817672ad7a09611df4f25fc3e1ef12edc40844"
+    },
+    {
+      "path": "logs/c9_stage_build_evidence_20261103/stage/STAGE_MANIFEST.json",
+      "sha256": "f7f5953ca9e8f28536f773ed2d99c8dfa869b1461d230ebd2403bea8c24920af"
+    },
+    {
+      "path": "logs/c9_stage_build_evidence_20261103/stage/cdc_binding.json",
+      "sha256": "a6a8ded2436522b7a21a2d128da094651d8fc64e36c8f14de7ef5b33fa392ad8"
+    },
+    {
+      "path": "logs/c9_stage_build_evidence_20261103/stage/outflow/soc_physical.place.rpt",
+      "sha256": "463b9797aad2074e02935c57872ccd697ec163541b80302012552a8476a39bf9"
+    },
+    {
+      "path": "logs/c9_stage_build_evidence_20261103/stage/outflow/soc_physical.route.out",
+      "sha256": "0663515b263d7ace16a7be442f242f5f121129194d7064821ab3f61e5398d315"
+    },
+    {
+      "path": "logs/c9_stage_build_evidence_20261103/stage_min/STAGE_MANIFEST.json",
+      "sha256": "0202c322ce9778326fb685b686b1594f0d9b9a6ca6e81c998fefef4b643873e3"
+    },
+    {
+      "path": "logs/c9_stage_build_evidence_20261103/stage_min/cdc_binding.json",
+      "sha256": "7646215bc4ebbd8bc3d209bfd683f4c045ea1d7688800c39255cf7669e054531"
+    },
+    {
+      "path": "logs/c9_stage_build_evidence_20261103/stage_min/implementation_audit.json",
+      "sha256": "35383a485d714c161fe95f75c37c4731fc2a378ab3fcc6b33bc43dcd4db2021a"
+    },
+    {
+      "path": "logs/c9_stage_build_evidence_20261103/stage_min/outflow/soc_physical.place.rpt",
+      "sha256": "380ac2aa3be5c7b444600e18529a58870878108bbe66b0d58eda4f0c393ca407"
+    },
+    {
+      "path": "logs/c9_stage_build_evidence_20261103/stage_min/outflow/soc_physical.route.out",
+      "sha256": "714fd8602caa7489281f6e393124e8a7ab637a5ddbb89d246834698d125fc656"
+    },
+    {
+      "path": "logs/c9_stage_chain_tests_20261103.json",
+      "sha256": "9df11ed601c27f9c135a530aa723c3a388488fad850e563608b9cdb2ca2f40fd"
+    },
+    {
+      "path": "logs/c9_stage_checkpoint_20261103.json",
+      "sha256": "455c45b9409b0456141a8359ba9e55449e1270c2a5dfa2e35f11a5869ffb4abd"
+    },
+    {
+      "path": "logs/c9_stage_decode_tests_20261103.json",
+      "sha256": "5900faa9b6d060060642905f533d0d2485e6ed953fc8ba61fd341ae4f08e503c"
+    },
+    {
+      "path": "logs/c9_stage_full_stopped_20261103.json",
+      "sha256": "c711187db5a68bf52ef24ca0b4689b6db8a731bb8395049bfddcade7d642d89b"
+    },
+    {
+      "path": "logs/c9_stage_min_board_20261103/20261103_160131/camera_geometry.log",
+      "sha256": "8297033130bbd54f0c57d42ab28083fc1b4fb7472c77aba983d49cfa75175b76"
+    },
+    {
+      "path": "logs/c9_stage_min_board_20261103/20261103_160131/ddr_status.log",
+      "sha256": "7d006d123e92d8cb321abcdc69c2c98b5fa5b440d25dce6871edf3f733058805"
+    },
+    {
+      "path": "logs/c9_stage_min_board_20261103/20261103_160131/restore_c10.log",
+      "sha256": "b1dcb1d21922061f78545157a4178dd1fa6aa6a7ad4b5672056651a0d185d141"
+    },
+    {
+      "path": "logs/c9_stage_min_board_20261103/20261103_160131/result.json",
+      "sha256": "56d0d3263ee93a8873f543881a92489084cf5b2d3063addd7a0c7e82198565ef"
+    },
+    {
+      "path": "logs/c9_stage_min_board_20261103/20261103_160412/camera_geometry.log",
+      "sha256": "be6c85f82fb071352481fd970930cdc419030ae7a822ce95a5dc1328a2b57fc1"
+    },
+    {
+      "path": "logs/c9_stage_min_board_20261103/20261103_160412/ddr_status.log",
+      "sha256": "ea9119e6e745391d019f9b29a6e22ada292971c603da4b5a0ce89cae9257e9e0"
+    },
+    {
+      "path": "logs/c9_stage_min_board_20261103/20261103_160412/restore_c10.log",
+      "sha256": "2505935d6d71879c5b1bcc628ec756b5ca03ec147f1a741f3023a1f083071640"
+    },
+    {
+      "path": "logs/c9_stage_min_board_20261103/20261103_160412/result.json",
+      "sha256": "bbe392dbfe60e0889ef6eb67d5f4c937243b69ced3e39967b04305bb68bc6e05"
+    },
+    {
+      "path": "logs/c9_stage_min_board_report_console_20261103.log",
+      "sha256": "08fdd920cfc5cd38eb6dedb94da15d3850256da52393f345ab5b1a081d1b40a4"
+    },
+    {
+      "path": "logs/c9_stage_min_board_report_initial_mismatch_20261103.log",
+      "sha256": "72da1fd86a9c448b444969b51db744c3d87f5e4b02470f0409b6e81579ff5cbd"
+    },
+    {
+      "path": "logs/c9_stage_min_board_result_20261103.json",
+      "sha256": "94d30a4fac3b0044f4ba371449a4d897d8867491a30343ef35c4063aa77f7d38"
+    },
+    {
+      "path": "logs/c9_stage_min_capture_console_20261103.log",
+      "sha256": "20c31c189eb70caeb45117b9341eda4cb86077cb41997d3a296310db1847fdc0"
+    },
+    {
+      "path": "logs/c9_stage_min_decode_tests_20261103.json",
+      "sha256": "75337dd690f882b4010bc6f342184ba01f2c2db9dc3f15bab4fe5828a2f16377"
+    },
+    {
+      "path": "logs/c9_stage_min_firmware_audit_20261103.json",
+      "sha256": "d38ca5babb2587ccfb5fb2715862eb0a1947b1e5ce523b014320118479f379af"
+    },
+    {
+      "path": "logs/c9_stage_min_ready_20261103.json",
+      "sha256": "64499079ac31ea8b8ea286eb35bd0ece57bb0638d8797e5fc1d3011e4c991616"
+    },
+    {
+      "path": "logs/c9_stage_min_repeat_console_20261103.log",
+      "sha256": "95a576d33793d2477098c14a868eae0b6fcb8b8868f00fad530f12faeed7f789"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160215/attempt.json",
+      "sha256": "7487b3e97598cceb72e8a5fb81c78a311d7f8c2970df1226f1b18f863c89bbb8"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160215/c9_probe_image.py",
+      "sha256": "a0a214449728316d3b9378862ab44b51d5f8488549109767ed8493a705643ff9"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160215/check_c9_geometry.py",
+      "sha256": "e43cbbcece76d7ab76ffc26528e6ef382a8ba26ed5a56948087900179659aef2"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160215/check_c9_stage_min.py",
+      "sha256": "dc4632e789d00317c849a3ec7233598f5d6bdc3f0ff4021ae0f932ffbecfc82e"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160215/check_c9_uart.py",
+      "sha256": "117150fa5f8b4f6e242e274f610821e3428363ff39ee41be3d990223bb040376"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160215/configure_probe.log",
+      "sha256": "bd330be2936df7040e5d7b82500ec8caa384571d5d09d9acf7f1ba72541db657"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160215/firmware_build_record.json",
+      "sha256": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160215/geometry_observation.json",
+      "sha256": "e4f330f3c42968f5467e08a59fe80cb8fe12b3e2984e22051faa89b8aae43cc2"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160215/implementation_audit.json",
+      "sha256": "35383a485d714c161fe95f75c37c4731fc2a378ab3fcc6b33bc43dcd4db2021a"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160215/load_readback.log",
+      "sha256": "1aa572ffcb55b66663cfc8fbc7d664b772a9fd9a9cbd1a418643c6fa5a193d2c"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160215/readback.bin",
+      "sha256": "f9955a3639543272716f1ef998156f6aae05d297c8841eb7092af8ef57ced9a5"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160215/resume.log",
+      "sha256": "46ddaf3d685d1c1f056f86afaa5ae9b2736f7bde9ca748091d267b6ffd95f57a"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160215/run_ram_diagnostic.py",
+      "sha256": "b184f04cfa42509bc4b56ad721c7cf627b9cbaeea22cb7a0428a840d09201ea6"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160215/uart.log",
+      "sha256": "6df63cd5a98a23e9f5e951ef3f40b59de4b478d331f12767fd9e6db2c3bce779"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160456/attempt.json",
+      "sha256": "fe507b40b7d330b580b93f73ef4eb5890d78b34309f6534a1d398e9823f05b69"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160456/c9_probe_image.py",
+      "sha256": "a0a214449728316d3b9378862ab44b51d5f8488549109767ed8493a705643ff9"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160456/check_c9_geometry.py",
+      "sha256": "e43cbbcece76d7ab76ffc26528e6ef382a8ba26ed5a56948087900179659aef2"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160456/check_c9_stage_min.py",
+      "sha256": "dc4632e789d00317c849a3ec7233598f5d6bdc3f0ff4021ae0f932ffbecfc82e"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160456/check_c9_uart.py",
+      "sha256": "117150fa5f8b4f6e242e274f610821e3428363ff39ee41be3d990223bb040376"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160456/configure_probe.log",
+      "sha256": "bd330be2936df7040e5d7b82500ec8caa384571d5d09d9acf7f1ba72541db657"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160456/firmware_build_record.json",
+      "sha256": "fa9bf70b23b24002e001602d696d784c5f0079138434ab56346f5e3630008ebc"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160456/geometry_observation.json",
+      "sha256": "29aa7ff098e989f4badb223b7a38d8bee7921b78ddb70de6bf8301e50238284b"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160456/implementation_audit.json",
+      "sha256": "35383a485d714c161fe95f75c37c4731fc2a378ab3fcc6b33bc43dcd4db2021a"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160456/load_readback.log",
+      "sha256": "f79124e6f7e00d2d0eb3d11d194b059777fa7b39970b381b2442e218b567bc3c"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160456/readback.bin",
+      "sha256": "f9955a3639543272716f1ef998156f6aae05d297c8841eb7092af8ef57ced9a5"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160456/resume.log",
+      "sha256": "46ddaf3d685d1c1f056f86afaa5ae9b2736f7bde9ca748091d267b6ffd95f57a"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160456/run_ram_diagnostic.py",
+      "sha256": "b184f04cfa42509bc4b56ad721c7cf627b9cbaeea22cb7a0428a840d09201ea6"
+    },
+    {
+      "path": "logs/ram_diagnostic_20261101/20261103_160456/uart.log",
+      "sha256": "12ae47af919d7e8cc0de35486f402063c0e75a3b60200689ae01f7ea42d964eb"
+    },
+    {
+      "path": "team_work/03_ai_soc/C9_STAGE_TRACE_20261103.md",
+      "sha256": "c24e8af3fef16bce82b7af956428ecf647fef7ee4529a516bcb1cea9cf306af4"
+    },
+    {
+      "path": "team_work/03_ai_soc/CURRENT_BOARD_CHECKPOINT_20261101.md",
+      "sha256": "1d1a2032df7d56daaec6b616f12347d15386c5f7d853305af86c4aaa6249a86d"
+    },
+    {
+      "path": "team_work/03_ai_soc/README.md",
+      "sha256": "657ce23ac362327ab1ced1d8bb77336772f0e139580f2d6d10e192d11d3b567b"
+    },
+    {
+      "path": "team_work/03_ai_soc/c9_live/README.md",
+      "sha256": "756800049577f667a578773945302f4dc56e26c34dcc0f43a4337e56d4f87713"
+    },
+    {
+      "path": "team_work/03_ai_soc/c9_live/camera_geometry/c9_stage_probe.sv",
+      "sha256": "d164032c97c257f68ff5de803a3efa0c7cf9cd0113099b211c8a85d9ef53f035"
+    },
+    {
+      "path": "team_work/03_ai_soc/c9_live/camera_geometry/tb_stage_chain.sv",
+      "sha256": "742e92fb443142ac6b85edf4b8bf1b6beaa105ecaceaf0747fbc681f3fda26b4"
+    },
+    {
+      "path": "team_work/03_ai_soc/c9_live/camera_geometry/tb_stage_counter.sv",
+      "sha256": "419b8a69e40b681ba2cf0e77bb4aa3c15535dc7348b0ef7169ff7d8a1a3fdffd"
+    },
+    {
+      "path": "tools/audit_c9_stage.py",
+      "sha256": "89790113adb489baf1cb205c1afcf6869ad846582a7138635ca751c498a4bfe0"
+    },
+    {
+      "path": "tools/audit_c9_stage_min.py",
+      "sha256": "82c93a9a19c59aeaadf08c901b9e57defc452aee593a81a2478550846ee639b1"
+    },
+    {
+      "path": "tools/audit_c9_stage_min_firmware.py",
+      "sha256": "f3bdb4a90c442fac31cd3d2fd223d6a21e71acc73107451d109b607d386acf16"
+    },
+    {
+      "path": "tools/c9_probe_image.py",
+      "sha256": "a0a214449728316d3b9378862ab44b51d5f8488549109767ed8493a705643ff9"
+    },
+    {
+      "path": "tools/check_c9_stage.py",
+      "sha256": "aa3d4238e20d8d7d10c4de99f2c60a97f09170a2f6fad89a419e55f07683a073"
+    },
+    {
+      "path": "tools/check_c9_stage_min.py",
+      "sha256": "dc4632e789d00317c849a3ec7233598f5d6bdc3f0ff4021ae0f932ffbecfc82e"
+    },
+    {
+      "path": "tools/prepare_c9_stage.py",
+      "sha256": "1863c953d49799c7248de124784994a462a27e8b7b3bb2eb173904281c899572"
+    },
+    {
+      "path": "tools/prepare_c9_stage_min.py",
+      "sha256": "669f1cd01e2524e2ecfb698fde07bda3e2d38d2f5cf7f3c8c1673ea78b4b52fe"
+    },
+    {
+      "path": "tools/report_c9_stage.py",
+      "sha256": "8ff5b444b89ac880a94e1d370193b56eb2399aae78897377284375b167399581"
+    },
+    {
+      "path": "tools/report_c9_stage_board.py",
+      "sha256": "92f8fb78ab33b0dd2685d5985222dca2c6e2ec138ec1779cf0efccbcafbae89a"
+    },
+    {
+      "path": "tools/report_c9_stage_min.py",
+      "sha256": "ad23f45dc73a24ca89b9e1e2bf807cc591797b5223e7d1bd753e4ce390129af0"
+    },
+    {
+      "path": "tools/report_c9_stage_min_board.py",
+      "sha256": "f4c8acc8947705c59bda4e8afac3af32f136ee26009c21fd21c022854ce8f38a"
+    },
+    {
+      "path": "tools/run_c9_stage.ps1",
+      "sha256": "df841f61169c9cc4c9b9a79f2a254f00813ef36d63ca743bb80a18a96cca8275"
+    },
+    {
+      "path": "tools/run_c9_stage.py",
+      "sha256": "898ddc2b671b5e6b1ed52bc6827cabcead48e5dcd45777f273dd8dd3486fa7a1"
+    },
+    {
+      "path": "tools/run_c9_stage_min.ps1",
+      "sha256": "5b0218b80ba9a5f8852e243394040c908782fa48fdc35a02e72cf191904be689"
+    },
+    {
+      "path": "tools/run_c9_stage_min.py",
+      "sha256": "2ffc424e11d37bdd13d0cb4e99828d39fe3605b87003a085501201ea871fbad2"
+    },
+    {
+      "path": "tools/test_c9_stage_chain.py",
+      "sha256": "9a3f9fc1234906e23377c51e4f4d49ac1abc9117396c35db9a8ebc6bc820f4dc"
+    },
+    {
+      "path": "tools/test_c9_stage_decode.py",
+      "sha256": "5d737e962eccabff6b691c8f0699cec961de1e97b6cf338fba9d653fff74ee2e"
+    },
+    {
+      "path": "tools/test_c9_stage_min_decode.py",
+      "sha256": "60ab428692acb76248abd7d1b67f21eb984a9901a1d0d39159d8cf997082454b"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "test_c9_display_c2",
+  "returncode": 0,
+  "reports": [
+    "logs/c9_pc_acceptance_20261103_204335/test_c9_display_c2/c9_display_c2_selftest.json"
+  ],
+  "script_sha256": "246f7ab52e855f34481ff69c23d30a0a5b1ae657984055746866e9ef7759fe93",
+  "hardware_accessed": false
+}

@@ -1,0 +1,157 @@
+{
+  "status": "PASS_C7_CPU_DDR_CACHE_STATIC_TINYML",
+  "date": "2026-11-01",
+  "timezone": "Asia/Shanghai",
+  "fpga_image_sha256": "dd49ca7f8064a70e52ff1370646e6858c20d6d659249b8b00c126f95e7d33411",
+  "cpu_firmware_version": "c7diag-edd94bbbebcb45d2",
+  "tinyml_firmware_version": "c1-02a568e5375cc27b",
+  "cpu_hz": 100000000,
+  "ddr_ck_hz": 400000000,
+  "cpu_tested_ddr_bytes": 1048576,
+  "cpu_checked_32bit_words": 1048576,
+  "cpu_cache_scope": "Explicit whole D-cache invalidate/refill and CPU byte/halfword/word paths. External DMA stale-cache negative case not executed.",
+  "samples": [
+    {
+      "sample": "person",
+      "person": 113,
+      "no_person": -113,
+      "strict_reference_delta_person": 0,
+      "strict_reference_delta_no_person": 0,
+      "invoke_ms": 249.71286
+    },
+    {
+      "sample": "no_person",
+      "person": -57,
+      "no_person": 57,
+      "strict_reference_delta_person": 0,
+      "strict_reference_delta_no_person": 0,
+      "invoke_ms": 249.60141
+    },
+    {
+      "sample": "people1",
+      "person": 93,
+      "no_person": -93,
+      "strict_reference_delta_person": 0,
+      "strict_reference_delta_no_person": 0,
+      "invoke_ms": 249.65636
+    },
+    {
+      "sample": "people2",
+      "person": 57,
+      "no_person": -57,
+      "strict_reference_delta_person": 0,
+      "strict_reference_delta_no_person": 0,
+      "invoke_ms": 250.20058
+    },
+    {
+      "sample": "no_people1",
+      "person": -51,
+      "no_person": 51,
+      "strict_reference_delta_person": 0,
+      "strict_reference_delta_no_person": 0,
+      "invoke_ms": 250.25263
+    },
+    {
+      "sample": "no_people2",
+      "person": -111,
+      "no_person": 111,
+      "strict_reference_delta_person": 0,
+      "strict_reference_delta_no_person": 0,
+      "invoke_ms": 250.06459
+    }
+  ],
+  "mean_invoke_ms": 249.91473833333333,
+  "performance_scope": "Six static samples with existing layer profiler UART output; Invoke time includes that overhead, not camera FPS or uninstrumented compute throughput",
+  "source_model_sha256": "808cfdfc0cf3a6fa6f6fa26bfa379ea97c16d5db7334637766e39c3408502e9d",
+  "desktop_compatibility_model_sha256": "77cac99d46416295fc3ec9cf752dec8e0c8aafd9421475da6c86439aee22e1c4",
+  "primary_sta": {
+    "setup": {
+      "rows": 29,
+      "minimum_slack_ns": 0.27,
+      "violations": []
+    },
+    "hold": {
+      "rows": 29,
+      "minimum_slack_ns": 0.023,
+      "violations": []
+    }
+  },
+  "packed_resources": {
+    "XLRs": {
+      "used": 58926,
+      "total": 60800,
+      "percent": 96.92
+    },
+    "Memory Blocks": {
+      "used": 224,
+      "total": 256,
+      "percent": 87.5
+    },
+    "DSP Blocks": {
+      "used": 60,
+      "total": 160,
+      "percent": 37.5
+    },
+    "Global Clocks (GBUF)": {
+      "used": 19,
+      "total": 32,
+      "percent": 59.38
+    }
+  },
+  "external_dma_coherence_validated": false,
+  "live_video_sensors_validated": false,
+  "c7_power_cycle_repeat_validated": false,
+  "flash_written": false,
+  "flash_boot_validated": false,
+  "whole_soc_validated": false,
+  "physical_release_ready": false,
+  "fixed_issue": "Sapphire BMB upsizer retains byte address with AXI SIZE=4; normalize only single-beat full-width CPU addresses at the private C7 boundary and preserve shifted byte lanes.",
+  "evidence_sha256": {
+    "logs/c7_board_20261101/cpu_diag_20261101_125916/attempt.json": "55f525a076c2c3641200b4e18a63b23af2614302a2e6c7f3ef9746594a99f115",
+    "logs/c7_board_20261101/cpu_diag_20261101_125916/BUILD_RECORD.json": "c5085eead8701052ab8af88ae12ffa83c2b56d5ae614b0a7b54340f0387f8670",
+    "logs/c7_board_20261101/cpu_diag_20261101_125916/checker.log": "ee01d311ad8bdf594885e0faab47cec3cb8748eacdfccd4812270f58ad5e7673",
+    "logs/c7_board_20261101/cpu_diag_20261101_125916/jtag_scan.log": "e2312dace9e639c05fc0759abddef9f64d159f84a2cd894c49b560c9b150f926",
+    "logs/c7_board_20261101/cpu_diag_20261101_125916/load_readback.cfg": "3657c8047cd825490a2c463f5318e02c24d6eaf0b8c5c3ccd52caa89f8e1a401",
+    "logs/c7_board_20261101/cpu_diag_20261101_125916/load_readback.log": "cef0512a242af51564f755edc74b02bec066c6634080006ef9122d089029f337",
+    "logs/c7_board_20261101/cpu_diag_20261101_125916/programmer.log": "6e4816b4086341e261d37b27b6cde01266f50371a1d5f79f5a581dd1e25de768",
+    "logs/c7_board_20261101/cpu_diag_20261101_125916/readback.bin": "bcf96b4f0e9a28b8c11ba6beb1c83ee08385525395e1cf952c53926b765e33a4",
+    "logs/c7_board_20261101/cpu_diag_20261101_125916/resume.cfg": "2e9bbe10e7b79a754de127660a1b576b42abb7925340819f18e1fdbe0259d3ed",
+    "logs/c7_board_20261101/cpu_diag_20261101_125916/resume.log": "7c349d7cb3c4a9af19f916578b5c50c5dfb73995a3011ac78bb5c4ac250c55e1",
+    "logs/c7_board_20261101/cpu_diag_20261101_125916/run_c7_board_acceptance.py": "133b5c75410fff5be9a97b1d807a3324ccf80a33408dfb62f429af451968ffac",
+    "logs/c7_board_20261101/cpu_diag_20261101_125916/uart.log": "fba912531809ee5c9c09395456263e86f02ac3489c3a417c6d3a15c17f323614",
+    "logs/c7_board_20261101/cpu_diag_20261101_125916/uart_check.json": "175fd5a10795d86440c1173b3e5dc993ef7c368c9464590cfeb719c272b04c65",
+    "logs/c7_board_20261101/c1_20261101_125949/attempt.json": "1d0f4544d7ec08b04965cc4b19d6f5c4c2ddcd799cf36c8e502a2aca93863e07",
+    "logs/c7_board_20261101/c1_20261101_125949/C1_INPUT_MANIFEST.json": "63589ee927f9a812f9818f9319ee538bc1a3d195bb6f1c77a1da50a518f4d4db",
+    "logs/c7_board_20261101/c1_20261101_125949/checker.log": "a218a7629634ae2456a55138763e4f0bc1647191e7f00b91c111d67c93df06c8",
+    "logs/c7_board_20261101/c1_20261101_125949/load_readback.cfg": "3b82ed3f61258cd86e30e56be99ff69d8d46abd6a1e63b132d3684a991289df8",
+    "logs/c7_board_20261101/c1_20261101_125949/load_readback.log": "539edacdf9851b8282d2435117fd0900f9e852a702697b37038bc97ce5b920f8",
+    "logs/c7_board_20261101/c1_20261101_125949/readback.bin": "73401bb622454d06fd9fdc57ea799a0191cbd852574ccec9442f19006346307e",
+    "logs/c7_board_20261101/c1_20261101_125949/reference_comparison.json": "f07d848c7bcebe06c585cce253be888f6e79f77a3c4ced633354f37305f6c438",
+    "logs/c7_board_20261101/c1_20261101_125949/resume.cfg": "b17602f1616a721615b2a06cbf2b1e04f4f84e3f4ca3ab1981d0c58a8b9dba64",
+    "logs/c7_board_20261101/c1_20261101_125949/resume.log": "7c349d7cb3c4a9af19f916578b5c50c5dfb73995a3011ac78bb5c4ac250c55e1",
+    "logs/c7_board_20261101/c1_20261101_125949/run_c7_board_acceptance.py": "133b5c75410fff5be9a97b1d807a3324ccf80a33408dfb62f429af451968ffac",
+    "logs/c7_board_20261101/c1_20261101_125949/uart.log": "12f1218d7dc9060965cdf88f9722d5f03cc4d78e879e5f0e9f26b043fa41fbf4",
+    "logs/c7_board_20261101/c1_20261101_125949/uart_check.json": "f253f7e69ada4a5b914133246a1ad6e8e0ac3780b91a02c71296b268cbcec941",
+    "logs/c7_board_20261101/ddr_probe_bulk_20261101_125948/actual.bin": "5dfbabeedf318bf33c0927c43d7630f51b82f351740301354fa3d7fc51f0132e",
+    "logs/c7_board_20261101/ddr_probe_bulk_20261101_125948/expected.bin": "5dfbabeedf318bf33c0927c43d7630f51b82f351740301354fa3d7fc51f0132e",
+    "logs/c7_board_20261101/ddr_probe_bulk_20261101_125948/openocd.log": "ad4b2426e5f7ec0f39b1320e1ab739ce10890cef163dcdd4133346f961e8f6d8",
+    "logs/c7_board_20261101/ddr_probe_bulk_20261101_125948/probe.cfg": "7f3f7ae4fd21325b949bbfcab9e8ced9282e5dbe5d21289a8ea7af2af2faab62",
+    "logs/c7_board_20261101/ddr_probe_bulk_20261101_125948/result.json": "215e61d418012c41f573c1c80e3bf8d224199100873c5eeeaea463fff6b3a5c1",
+    "logs/c7_board_20261101/ddr_probe_word_20261101_125948/actual.bin": "5dfbabeedf318bf33c0927c43d7630f51b82f351740301354fa3d7fc51f0132e",
+    "logs/c7_board_20261101/ddr_probe_word_20261101_125948/expected.bin": "5dfbabeedf318bf33c0927c43d7630f51b82f351740301354fa3d7fc51f0132e",
+    "logs/c7_board_20261101/ddr_probe_word_20261101_125948/openocd.log": "0262777076a1386894cc2056b0bfe4e963cf8993622bcd328d37e914509ae16c",
+    "logs/c7_board_20261101/ddr_probe_word_20261101_125948/probe.cfg": "f42364f816797c0c57bad19ca6515d2ccca22b01890a88e33422a64ba46294ec",
+    "logs/c7_board_20261101/ddr_probe_word_20261101_125948/result.json": "79b7f3a3e4eae05494c747e79c6fb062edc88197ed2149299f35ce9f43584ef2",
+    "logs/c7_board_20261101/ddr_probe_byte_20261101_125948/actual.bin": "5dfbabeedf318bf33c0927c43d7630f51b82f351740301354fa3d7fc51f0132e",
+    "logs/c7_board_20261101/ddr_probe_byte_20261101_125948/expected.bin": "5dfbabeedf318bf33c0927c43d7630f51b82f351740301354fa3d7fc51f0132e",
+    "logs/c7_board_20261101/ddr_probe_byte_20261101_125948/openocd.log": "c2127f21854d0f13045f0bc6aac5ce4afccbfd47251ae23cdbd4c8d239e979b5",
+    "logs/c7_board_20261101/ddr_probe_byte_20261101_125948/probe.cfg": "4a854ce8567f48321cf0e2231b80aa682049a6d010f92aab59cc7554cb88b634",
+    "logs/c7_board_20261101/ddr_probe_byte_20261101_125948/result.json": "27f8f69c59eaccbe66935ad4685fb5e519c47af5704e335a32bc426ac0e6d949"
+  },
+  "additional_evidence_sha256": {
+    "logs/c7_cpu_lanes_tests.json": "67759d612d131ec14565691db296e040b1ac2d4bdabdbf9ba6007277b81b1f2e",
+    "logs/soc_physical_audit.json": "09cf7cc427693ed770ad1f18def73fe3a0f0df3c975ea8ecf68a707308f202f6",
+    "logs/board_preflight_20261031.json": "a0653d372d4275cc4a10103b44b0c4dd731fef8e16179a280ab7a60c52b70639",
+    "logs/pc_ai/c1_reference.json": "9978a99f102a320473f349d3ec37d4ca4e09d1cbcf8058d907c0935df30cc2f3"
+  }
+}

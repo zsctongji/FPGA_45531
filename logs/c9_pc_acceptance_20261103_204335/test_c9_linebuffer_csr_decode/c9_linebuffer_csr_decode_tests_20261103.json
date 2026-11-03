@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "synthetic_only": true,
+  "hardware_accessed": false,
+  "positive_stale_cleared_case": true,
+  "negative_geometry_cases": 9,
+  "negative_protocol_cases": 6,
+  "source_sha256": {
+    "tools/test_c9_linebuffer_csr_decode.py": "180546e72416193c46caf66cf825832dc8fcd27531061dba5d6fd8494138f629",
+    "tools/check_c9_linebuffer_csr.py": "3105ed269bbc7d90ac5e4abe1b9cffb82ae74d28b2be67c330e658cd3d29de59"
+  }
+}

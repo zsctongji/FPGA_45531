@@ -1,0 +1,217 @@
+{
+  "status": "PASS_OFFLINE_READONLY_DDR_PROBE",
+  "diagnostic_only": true,
+  "board_test_passed": false,
+  "flash_written": false,
+  "controlled_change": "Native CSI VS/HS counts and packet metadata (modulo16 edge counters) replace diagnostic PHY words only; pixel/control/DDR/clock/pin paths unchanged",
+  "timing": {
+    "setup": {
+      "rows": 30,
+      "minimum_slack_ns": 0.061,
+      "violations": []
+    },
+    "hold": {
+      "rows": 30,
+      "minimum_slack_ns": 0.016,
+      "violations": []
+    }
+  },
+  "cdc": {
+    "setup": [
+      {
+        "hierarchy": "soc/c2_full_video/ingress/crossing",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.047,
+        "minimum_slack_ns": 3.953
+      },
+      {
+        "hierarchy": "soc/c2_full_video/ingress/crossing",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.022,
+        "minimum_slack_ns": 7.978
+      },
+      {
+        "hierarchy": "soc/c2_full_video/framebuffer/output_cdc",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.022,
+        "minimum_slack_ns": 7.978
+      },
+      {
+        "hierarchy": "soc/c2_full_video/framebuffer/output_cdc",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 5.387,
+        "maximum_skew_ns": 0.035,
+        "minimum_slack_ns": 5.352
+      },
+      {
+        "hierarchy": "soc/c2_attachment/core/pixels/storage",
+        "pointer": "wgray",
+        "bits": 5,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.025,
+        "minimum_slack_ns": 3.975
+      },
+      {
+        "hierarchy": "soc/c2_attachment/core/pixels/storage",
+        "pointer": "rgray",
+        "bits": 5,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.014,
+        "minimum_slack_ns": 7.986
+      },
+      {
+        "hierarchy": "raw_split/queue",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 16.0,
+        "maximum_skew_ns": 0.033,
+        "minimum_slack_ns": 15.967
+      },
+      {
+        "hierarchy": "raw_split/queue",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.047,
+        "minimum_slack_ns": 7.953
+      },
+      {
+        "hierarchy": "gray_split/queue",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.037,
+        "minimum_slack_ns": 7.963
+      },
+      {
+        "hierarchy": "gray_split/queue",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.066,
+        "minimum_slack_ns": 3.934
+      }
+    ],
+    "hold": [
+      {
+        "hierarchy": "soc/c2_full_video/ingress/crossing",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.026,
+        "minimum_slack_ns": 3.974
+      },
+      {
+        "hierarchy": "soc/c2_full_video/ingress/crossing",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.014,
+        "minimum_slack_ns": 7.986
+      },
+      {
+        "hierarchy": "soc/c2_full_video/framebuffer/output_cdc",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.011,
+        "minimum_slack_ns": 7.989
+      },
+      {
+        "hierarchy": "soc/c2_full_video/framebuffer/output_cdc",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 5.387,
+        "maximum_skew_ns": 0.019,
+        "minimum_slack_ns": 5.368
+      },
+      {
+        "hierarchy": "soc/c2_attachment/core/pixels/storage",
+        "pointer": "wgray",
+        "bits": 5,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.015,
+        "minimum_slack_ns": 3.985
+      },
+      {
+        "hierarchy": "soc/c2_attachment/core/pixels/storage",
+        "pointer": "rgray",
+        "bits": 5,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.008,
+        "minimum_slack_ns": 7.992
+      },
+      {
+        "hierarchy": "raw_split/queue",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 16.0,
+        "maximum_skew_ns": 0.018,
+        "minimum_slack_ns": 15.982
+      },
+      {
+        "hierarchy": "raw_split/queue",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.027,
+        "minimum_slack_ns": 7.973
+      },
+      {
+        "hierarchy": "gray_split/queue",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.021,
+        "minimum_slack_ns": 7.979
+      },
+      {
+        "hierarchy": "gray_split/queue",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.038,
+        "minimum_slack_ns": 3.962
+      }
+    ]
+  },
+  "source_sha256": {
+    "build/c9_packet_compact_image_20261103/physical_soc_core.v": "7c795bb2962f1e3d1fba52bde1e0f564cacd37af10a170847e25cb5ec2987524",
+    "build/c9_packet_compact_image_20261103/soc_physical.peri.xml": "0303170cbe27b86e11b15e490ad5f7fe5bd4ee6bf89acd60d22c1d170a230973",
+    "build/c9_packet_compact_image_20261103/soc_physical.sdc": "53f8baf48c4118283df2c9bcd57a5270516039e64caea6e9296592afe34f7b95",
+    "build/c9_packet_compact_image_20261103/review_timing.tcl": "041f9c91942fa3940f4832b3416a208f8e1f15a9166e7a5bcddbb1e6a7f8e6b2",
+    "build/c9_packet_compact_image_20261103/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol0.bin": "95aa26b9cc41c94dca7543f5c4b48350b566cf9311ea714df17415d549e5aa6e",
+    "build/c9_packet_compact_image_20261103/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol1.bin": "e4ad872f2b3dcb92ec3e7d5860e16bc70177928642cce1c89383a74faf94d393",
+    "build/c9_packet_compact_image_20261103/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol2.bin": "b8c5f31b9b5e5fcea4ad83627e7749ca567fee94bef441a241bad2652a42064e",
+    "build/c9_packet_compact_image_20261103/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol3.bin": "b1be4104ba5dabcdef13ef787d604d39b75dac954d7d1f65728be266bf4b606d",
+    "build/c9_packet_compact_image_20261103/soc_physical_top.sv": "1df20f4345ba24a5ea6e083be745c5b167e4b13ddd57768d0146e121e960edf6",
+    "build/c9_packet_compact_image_20261103/soc_physical.xml": "93c0eb5f26fb7010c16987fa407ad7d46d810056be8d783c6f69bb551e75ea00",
+    "build/c9_packet_compact_image_20261103/bind_cdc.py": "52563ac7c4f27edaf6137943a0718ebbb858658f40fd3c44eb0bfd0c14d899ff",
+    "build/c9_packet_compact_image_20261103/capture_geometry.py": "c60b363187b75e28c18a166024d74de1d86497c9dc2dcb8d5a723ec203fd9f0b",
+    "team_work/03_ai_soc/c9_live/camera_geometry/c9_packet_probe_compact.sv": "1db1e008329f4a06885510fcc41e02b63c72b94cf88405cf6a01eb1fd149a270"
+  },
+  "evidence_sha256": {
+    "build/c9_packet_compact_image_20261103/work_pnr/soc_physical.lbf": "0bf83ed737b7b7aaf9dc253e1666b88080ffcdad2a957c01c74eedb2ccc87a95",
+    "build/c9_packet_compact_image_20261103/outflow/soc_physical.bit": "e6637e93edccaa5232e9a3ed852932e7508d6f17cfac4bd5edb633ce1011ed20",
+    "build/c9_packet_compact_image_20261103/outflow/soc_physical.hex": "09bf9709476a9d20aec1b38d1c41100b650b71fff5d8427c8d2655d20ac40536",
+    "build/c9_packet_compact_image_20261103/outflow/soc_physical.review_timing.rpt": "d01dfe645e336c4c0523dd6ff10405736a4a1d7d0587c248888a441ff127c866",
+    "build/c9_packet_compact_image_20261103/outflow/soc_physical.bus_setup.rpt": "fd888e7b7bd16d7d036eca123d8543173fea66e142eae7cec1e6ae719590f20b",
+    "build/c9_packet_compact_image_20261103/outflow/soc_physical.bus_hold.rpt": "c0d788082f866477941d365d429cacb62c405d7ba8ae967ec31e8ba0184382ab",
+    "build/c9_packet_compact_image_20261103/PACKET_MANIFEST.json": "945b4425a99909ab1642c5616523e03e54c0e24c1fdd32e1ac9e87cfb10dbcfa",
+    "build/c9_camera_geometry_image_20261102/implementation_audit.json": "a9714500ce6585a50388133bb8fa02e639ad01e14b9c1073d659e5d9caa98543",
+    "tools/audit_c9_packet_compact.py": "59f51e463a0431f621e25d768a01e801e82ccfdd196974b99053c2d0aeef9cbf",
+    "tools/prepare_c9_packet_compact.py": "3460a83d82faadeea8eb733573c733010c4668d46da5b06482d6281c7bedfa52",
+    "tools/run_c9_packet_compact.ps1": "4e3888b54c1c64f62f36b267c55b024e417ffa9d2d912ba5297a8243943ee5a1",
+    "logs/c9_packet_compact_tests_20261103.json": "815acac3fe9af427a89a516566627bb2f806d9c9d1bdfd596207d7aa96985750",
+    "build/c9_packet_compact_image_20261103/cdc_binding.json": "4ff8422d80ccc83523674f3197116f0d59c28872e9acf07a389c103aca37e739",
+    "build/c9_packet_compact_image_20261103/capture_geometry.py": "c60b363187b75e28c18a166024d74de1d86497c9dc2dcb8d5a723ec203fd9f0b",
+    "tools/prepare_c9_geometry_capture.py": "be74b81462afb07ad65f5f007be741d035436c45b1331d64f875a917028e2aec"
+  }
+}

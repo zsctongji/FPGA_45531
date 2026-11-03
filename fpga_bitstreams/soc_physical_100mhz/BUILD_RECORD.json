@@ -1,0 +1,77 @@
+{
+  "status": "PASS_C7_CPU_DDR_CACHE_STATIC_TINYML",
+  "jtag_sram_test_only": true,
+  "physical_release_ready": false,
+  "whole_soc_validated": false,
+  "board_cpu_test_passed": true,
+  "board_static_tinyml_passed": true,
+  "external_dma_coherence_validated": false,
+  "flash_boot_validated": false,
+  "flash_written": false,
+  "device": "Ti60F225 / I3",
+  "efinity_version": "2026.1.132",
+  "clock_hz": {
+    "cpu": 100000000,
+    "core": 100000000,
+    "apb": 100000000,
+    "ddr_ck": 400000000
+  },
+  "primary_sta": {
+    "setup": {
+      "rows": 29,
+      "minimum_slack_ns": 0.27,
+      "violations": []
+    },
+    "hold": {
+      "rows": 29,
+      "minimum_slack_ns": 0.023,
+      "violations": []
+    }
+  },
+  "packed_resources": {
+    "XLRs": {
+      "used": 58926,
+      "total": 60800,
+      "percent": 96.92
+    },
+    "Memory Blocks": {
+      "used": 224,
+      "total": 256,
+      "percent": 87.5
+    },
+    "DSP Blocks": {
+      "used": 60,
+      "total": 160,
+      "percent": 37.5
+    },
+    "Global Clocks (GBUF)": {
+      "used": 19,
+      "total": 32,
+      "percent": 59.38
+    }
+  },
+  "artifacts": {
+    "soc_physical.bit": {
+      "bytes": 2826186,
+      "sha256": "dd49ca7f8064a70e52ff1370646e6858c20d6d659249b8b00c126f95e7d33411"
+    },
+    "soc_physical.hex": {
+      "bytes": 2826246,
+      "sha256": "5976ed68f57b7765f669a694fe2d104121cf180a40742b2d4f8a9a53047bd365"
+    }
+  },
+  "board_summary": "logs/c7_board_20261101/summary.json",
+  "board_summary_sha256": "9d9a0b9703b765f36637fb5a548326c6cb22a26a6172f6c616d879f7958a4a38",
+  "source_manifest_sha256": "859b20f5da832a8aea607050aea41fdd965cab50218a71c8682410c8f02a9fa9",
+  "firmware": {
+    "cpu_diag": {
+      "bytes": 3460,
+      "sha256": "bcf96b4f0e9a28b8c11ba6beb1c83ee08385525395e1cf952c53926b765e33a4"
+    },
+    "tinyml_c1": {
+      "bytes": 1416824,
+      "sha256": "73401bb622454d06fd9fdc57ea799a0191cbd852574ccec9442f19006346307e"
+    }
+  },
+  "scope": "Actually tested C7 with live map disabled. SRAM bitstream, CPU DDR/cache foundation and six static TinyML samples verified; not a combined Flash image or full-system release."
+}

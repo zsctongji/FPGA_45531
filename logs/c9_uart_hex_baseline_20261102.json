@@ -1,0 +1,36 @@
+{
+  "status": "FAIL",
+  "scope": "Host format fixtures plus original real PASS/FAIL logs; no new hardware evidence",
+  "tests": [
+    {
+      "name": "original_hardware_pass",
+      "expected_pass": true,
+      "actual_pass": true,
+      "error": ""
+    },
+    {
+      "name": "synthetic_0x_format_only",
+      "expected_pass": true,
+      "actual_pass": false,
+      "error": "Duplicate/invalid pair"
+    },
+    {
+      "name": "original_hardware_missed_scan",
+      "expected_pass": false,
+      "actual_pass": false,
+      "error": "Display underflow/missed scans"
+    },
+    {
+      "name": "same_error_with_0x",
+      "expected_pass": false,
+      "actual_pass": false,
+      "error": "Duplicate/invalid pair"
+    },
+    {
+      "name": "malformed_hex",
+      "expected_pass": false,
+      "actual_pass": false,
+      "error": "Duplicate/invalid pair"
+    }
+  ]
+}

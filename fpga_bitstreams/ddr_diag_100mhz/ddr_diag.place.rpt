@@ -1,0 +1,42 @@
+
+Elitestek FPGA Placement and Routing.
+Version: 2026.1.132 
+Date: Sat Oct 31 23:06:33 2026
+
+Copyright (C) 2013 - 2026 Efinix, Inc. All rights reserved.
+ 
+Family: Titanium 
+Device: Ti60F225
+Top-level Entity Name: ddr_diag
+
+---------- Module Resource Usage Distribution Estimates (begin) ----------
+
+'Module Resource Usage Distribution Estimates' table printed in: outflow\ddr_diag.hier_util.rpt
+
+----------- Module Resource Usage Distribution Estimates (end) ----------
+
+Elapsed time for packing: 0 hours 0 minutes 1 seconds
+---------- Resource Summary (begin) ----------
+Inputs: 47 / 1703 (2.76%)
+Outputs: 173 / 2267 (7.63%)
+Global Clocks (GBUF): 7 / 32 (21.88%)
+Regional Clocks (RBUF): 1 / 32 (3.12%)
+	RBUF: Core: 0 / 16 (0.00%)
+	RBUF: Periphery: 1 / 8 (12.50%)
+	RBUF: Multi-Region: 0 / 8 (0.00%)
+XLRs: 6875 / 60800 (11.31%)
+	XLRs needed for LUT4: 2810 / 60800 (4.62%)
+	XLRs needed for LUT4 + FF: 1336 / 60800 (2.20%)
+	XLRs needed for COMB4: 0 / 60800 (0.00%)
+	XLRs needed for COMB4 + FF: 0 / 60800 (0.00%)
+	XLRs needed for Adder: 239 / 60800 (0.39%)
+	XLRs needed for Adder + FF: 215 / 60800 (0.35%)
+	XLRs needed for SRL8: 696 / 14720 (4.73%)
+	XLRs needed for SRL8 + FF: 0 / 14720 (0.00%)
+	XLRs needed for FF: 1579 / 60800 (2.60%)
+	XLRs needed for Routing: 0 / 60800 (0.00%)
+Memory Blocks: 22 / 256 (8.59%)
+DSP Blocks: 0 / 160 (0.00%)
+---------- Resource Summary (end) ----------
+
+Elapsed time for placement: 0 hours 0 minutes 5 seconds

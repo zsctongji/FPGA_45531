@@ -1,0 +1,25 @@
+{
+  "status": "FAIL_OR_INCOMPLETE_CONTROL",
+  "started": "2026-11-02T18:30:07.621728+08:00",
+  "flash_written": false,
+  "board_test_passed": false,
+  "fpga_image_sha256": "5a579a54ec9fb8b1d8a9ecc367decb42c24478e5c475601b3d0e5dbad88606e1",
+  "implementation_audit_sha256": "158bf9a64621928643e73510a6adecf8ec752f831ccf62842f3eb05fd8dade54",
+  "capture_tool_sha256": "6cc2c2ed6ee6ba37f064f688fef445190282f40f7ea537f83ebfff96b95c4bae",
+  "fpga_configured": true,
+  "uart_check": {
+    "status": "FAIL_LOG",
+    "records": 0,
+    "complete_pass_records": 0,
+    "expected_checked_words": 67108889,
+    "problems": [
+      "Malformed/truncated DDR record",
+      "Two full-capacity PASS records required"
+    ],
+    "last": null,
+    "scope": "Saved UART content only; bind actual bitstream SHA256 and board identity separately"
+  },
+  "uart_sha256": "cbcdd606b6d280c8514666b642cd15b6447af6423f1f892134e500b6e7142704",
+  "c10_restore_passed": true,
+  "finished": "2026-11-02T18:32:36.765495+08:00"
+}

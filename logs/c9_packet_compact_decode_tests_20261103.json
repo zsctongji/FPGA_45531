@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "synthetic_only": true,
+  "hardware_accessed": false,
+  "source_sha256": {
+    "tools/test_c9_packet_compact_decode.py": "eac723413d8f299e26ab22f442e8e188a8a76d23250411fdb9149ec774cafef1",
+    "tools/check_c9_packet_compact.py": "1c6342f42e91d26b945c035276fe150f5d1cac6093a46973f223f3414bbf29b8"
+  }
+}

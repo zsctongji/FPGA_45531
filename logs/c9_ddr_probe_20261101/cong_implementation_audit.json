@@ -1,0 +1,210 @@
+{
+  "status": "PASS_OFFLINE_READONLY_DDR_PROBE",
+  "diagnostic_only": true,
+  "board_test_passed": false,
+  "flash_written": false,
+  "timing": {
+    "setup": {
+      "rows": 30,
+      "minimum_slack_ns": 0.041,
+      "violations": []
+    },
+    "hold": {
+      "rows": 30,
+      "minimum_slack_ns": 0.026,
+      "violations": []
+    }
+  },
+  "cdc": {
+    "setup": [
+      {
+        "hierarchy": "soc/c2_full_video/ingress/crossing",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.017,
+        "minimum_slack_ns": 3.983
+      },
+      {
+        "hierarchy": "soc/c2_full_video/ingress/crossing",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.035,
+        "minimum_slack_ns": 7.965
+      },
+      {
+        "hierarchy": "soc/c2_full_video/framebuffer/output_cdc",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.031,
+        "minimum_slack_ns": 7.969
+      },
+      {
+        "hierarchy": "soc/c2_full_video/framebuffer/output_cdc",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 5.387,
+        "maximum_skew_ns": 0.003,
+        "minimum_slack_ns": 5.384
+      },
+      {
+        "hierarchy": "soc/c2_attachment/core/pixels/storage",
+        "pointer": "wgray",
+        "bits": 5,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.027,
+        "minimum_slack_ns": 3.973
+      },
+      {
+        "hierarchy": "soc/c2_attachment/core/pixels/storage",
+        "pointer": "rgray",
+        "bits": 5,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.027,
+        "minimum_slack_ns": 7.973
+      },
+      {
+        "hierarchy": "raw_split/queue",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 16.0,
+        "maximum_skew_ns": 0.03,
+        "minimum_slack_ns": 15.97
+      },
+      {
+        "hierarchy": "raw_split/queue",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.025,
+        "minimum_slack_ns": 7.975
+      },
+      {
+        "hierarchy": "gray_split/queue",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.03,
+        "minimum_slack_ns": 7.97
+      },
+      {
+        "hierarchy": "gray_split/queue",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.035,
+        "minimum_slack_ns": 3.965
+      }
+    ],
+    "hold": [
+      {
+        "hierarchy": "soc/c2_full_video/ingress/crossing",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.01,
+        "minimum_slack_ns": 3.99
+      },
+      {
+        "hierarchy": "soc/c2_full_video/ingress/crossing",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.019,
+        "minimum_slack_ns": 7.981
+      },
+      {
+        "hierarchy": "soc/c2_full_video/framebuffer/output_cdc",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.018,
+        "minimum_slack_ns": 7.982
+      },
+      {
+        "hierarchy": "soc/c2_full_video/framebuffer/output_cdc",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 5.387,
+        "maximum_skew_ns": 0.002,
+        "minimum_slack_ns": 5.385
+      },
+      {
+        "hierarchy": "soc/c2_attachment/core/pixels/storage",
+        "pointer": "wgray",
+        "bits": 5,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.016,
+        "minimum_slack_ns": 3.984
+      },
+      {
+        "hierarchy": "soc/c2_attachment/core/pixels/storage",
+        "pointer": "rgray",
+        "bits": 5,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.016,
+        "minimum_slack_ns": 7.984
+      },
+      {
+        "hierarchy": "raw_split/queue",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 16.0,
+        "maximum_skew_ns": 0.016,
+        "minimum_slack_ns": 15.984
+      },
+      {
+        "hierarchy": "raw_split/queue",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.015,
+        "minimum_slack_ns": 7.985
+      },
+      {
+        "hierarchy": "gray_split/queue",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.017,
+        "minimum_slack_ns": 7.983
+      },
+      {
+        "hierarchy": "gray_split/queue",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.019,
+        "minimum_slack_ns": 3.981
+      }
+    ]
+  },
+  "source_sha256": {
+    "build/c9_ddr_probe_20261101/physical_soc_core.v": "7c795bb2962f1e3d1fba52bde1e0f564cacd37af10a170847e25cb5ec2987524",
+    "build/c9_ddr_probe_20261101/soc_physical_top.sv": "c1eeef62797df4c41ac2a20533163027d310371142d60c258ca304580a41a93c",
+    "build/c9_ddr_probe_20261101/soc_physical.xml": "c5470e5c6f2322c5bd223a6eefeb7c1d3796a9c06998261656c46fb37cfaa379",
+    "build/c9_ddr_probe_20261101/soc_physical.peri.xml": "0303170cbe27b86e11b15e490ad5f7fe5bd4ee6bf89acd60d22c1d170a230973",
+    "build/c9_ddr_probe_20261101/soc_physical.sdc": "53f8baf48c4118283df2c9bcd57a5270516039e64caea6e9296592afe34f7b95",
+    "team_work/03_ai_soc/c9_live/debug/c9_ddr_probe.sv": "379cd0c11256dc562dcc72c6c224d21e2a4c596f2783c17854fb6bf0e07934b4",
+    "build/c9_ddr_probe_20261101/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol0.bin": "95aa26b9cc41c94dca7543f5c4b48350b566cf9311ea714df17415d549e5aa6e",
+    "build/c9_ddr_probe_20261101/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol1.bin": "e4ad872f2b3dcb92ec3e7d5860e16bc70177928642cce1c89383a74faf94d393",
+    "build/c9_ddr_probe_20261101/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol2.bin": "b8c5f31b9b5e5fcea4ad83627e7749ca567fee94bef441a241bad2652a42064e",
+    "build/c9_ddr_probe_20261101/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol3.bin": "b1be4104ba5dabcdef13ef787d604d39b75dac954d7d1f65728be266bf4b606d"
+  },
+  "evidence_sha256": {
+    "build/c9_ddr_probe_20261101/work_pnr/soc_physical.lbf": "07e6f4785e9c4aa66bf46ff9fd0b97654414b8f6d6f94ee9492e485c8b3ebabb",
+    "build/c9_ddr_probe_20261101/outflow/soc_physical.bit": "0388c6add0b93bf7c73c807e94527d0c2bbe0acc6a7d3f8a3a2174f1a99c7bd5",
+    "build/c9_ddr_probe_20261101/outflow/soc_physical.hex": "fe6baf075bfb95b19842a996ae0dc0d4face6756fb32597adbac900fbd2fcc2b",
+    "build/c9_ddr_probe_20261101/outflow/soc_physical.review_timing.rpt": "dcfa4bd1536eb283c526eda72341f61eb09adad32a9fe56e45cbc3c9cbf01447",
+    "build/c9_ddr_probe_20261101/outflow/soc_physical.bus_setup.rpt": "99cb71937e9c4b75add1c9958a9a12a004336b9d0d7342156905a26317e575ae",
+    "build/c9_ddr_probe_20261101/outflow/soc_physical.bus_hold.rpt": "ffbae9fa062abb06cc6c6fca7e94f9c4d27bc5afebe0fcb60a6ff98b835bdd37",
+    "build/c9_ddr_probe_20261101/PROBE_MANIFEST.json": "20a840430eb1c0ab7a0443c9b75bec8b0feabe30ed67462d870a0d2b8309d3a1",
+    "logs/c9_ddr_probe_rtl.json": "31ca99201c6877f43e478f5410b2247a92d9a151dcb24fdb7d8cb8244de027b8",
+    "tools/audit_c9_ddr_probe.py": "6589fc0f27dc4b29fbef867a871236e5ddf2bcc071c49cc8c705df7c6ebb579c",
+    "tools/prepare_c9_ddr_probe.py": "6dcfd9d012068b85ba2aaa084de3f71f12b9bdd8aff5c9625b7b6a915b9ab915",
+    "tools/run_c9_ddr_probe.ps1": "480e200b8ee0aa8db53151e9f5cd0018e3f21437808c9305d3388ae09d45285c"
+  },
+  "scope": "CPU-independent USER2 status; multi-bit banks are best-effort and must be read repeatedly; no functional control outputs"
+}

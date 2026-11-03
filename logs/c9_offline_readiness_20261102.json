@@ -1,0 +1,100 @@
+{
+  "status": "PASS_OFFLINE_IDENTITY_AND_SAVED_EVIDENCE",
+  "created": "2026-11-02T20:25:34.702118+08:00",
+  "hardware_accessed": false,
+  "board_connection_checked": false,
+  "flash_written": false,
+  "dma_cache_handoff_verified": true,
+  "real_camera_verified": false,
+  "cases": [
+    {
+      "name": "c9_cong",
+      "implementation": "PASS",
+      "hardware_acceptance": "CALIBRATION_INCOMPLETE",
+      "setup_ns": 0.041,
+      "hold_ns": 0.026,
+      "xlrs": 60208,
+      "image_path": "build/c9_ddr_probe_20261101/outflow/soc_physical.bit",
+      "image_sha256": "0388c6add0b93bf7c73c807e94527d0c2bbe0acc6a7d3f8a3a2174f1a99c7bd5",
+      "audit_path": "build/c9_ddr_probe_20261101/implementation_audit.json",
+      "audit_sha256": "890f761194ec23b900f5437602677de7fac84c0c237e4a12ad0ac7f6f37a108c",
+      "board_attempt": "logs/c9_ddr_probe_20261101/20261102_183619/attempt.json",
+      "board_attempt_sha256": "99add09bc2d173ebb02700acee69bfcdecc947b32e257c4fe525fe03ddc5b6c9",
+      "init_state": 23
+    },
+    {
+      "name": "c9_speed",
+      "implementation": "PASS",
+      "hardware_acceptance": "CALIBRATION_INCOMPLETE",
+      "setup_ns": 0.12,
+      "hold_ns": 0.026,
+      "xlrs": 60432,
+      "image_path": "build/c9_ddr_probe_speed_20261101/outflow/soc_physical.bit",
+      "image_sha256": "daecdc09f22f9da10af394049bbf9d2dad2b9b7a07810dd8a5935e6ab29b0f09",
+      "audit_path": "build/c9_ddr_probe_speed_20261101/implementation_audit.json",
+      "audit_sha256": "e45caf9c67b429263aecfe87f7e2edc7148ec46cd5f6d15f00bcb63a66d0cfcc",
+      "board_attempt": "logs/c9_ddr_probe_20261101/20261101_213243/attempt.json",
+      "board_attempt_sha256": "4679d2a02b90fd33c9a4408c616ebf9916f2d63e338b8797c3a1871afa7ac49d",
+      "init_state": 3
+    },
+    {
+      "name": "c9_nopack",
+      "implementation": "PASS",
+      "hardware_acceptance": "PASS_CALIBRATION_ONLY",
+      "setup_ns": 0.254,
+      "hold_ns": 0.026,
+      "xlrs": 60374,
+      "image_path": "build/c9_ddr_probe_nopack_20261101/outflow/soc_physical.bit",
+      "image_sha256": "e780083e22b4383cf2dbf5088a7a3f93e9a81698fda1dcfec30f0169a99a7c04",
+      "audit_path": "build/c9_ddr_probe_nopack_20261101/implementation_audit.json",
+      "audit_sha256": "850123378f8a52a4d42b301752d57d9856997b4464bfa09ca65680ebc0634139",
+      "calibration_attempts": [
+        {
+          "path": "logs/c9_ddr_probe_20261101/20261102_182836/attempt.json",
+          "sha256": "8f19254d64da3db1ea6421366a53b30c661bf46d0944d7b845df5a67e94f4dad"
+        },
+        {
+          "path": "logs/c9_ddr_probe_20261101/20261102_183801/attempt.json",
+          "sha256": "417e46f45ee6c7fd31ec131e2ef7cd4a8cdff6c8fc8c49eb17a4f19e2806866e"
+        }
+      ]
+    },
+    {
+      "name": "c8_comb4_on",
+      "implementation": "PASS",
+      "hardware_acceptance": "FAIL_UART_NO_CAPACITY_PASS",
+      "board_attempt": "logs/c8_comb4_control_20261102/20261102_183007/attempt.json",
+      "board_attempt_sha256": "f8d7aa8a886375e0683ecac44afcacb84168403ee52ea805bbd557c5ef1d2b72",
+      "setup_ns": 0.398,
+      "hold_ns": 0.028,
+      "image_path": "build/c8_comb4_on_20261102/outflow/ddr_diag.bit",
+      "image_sha256": "5a579a54ec9fb8b1d8a9ecc367decb42c24478e5c475601b3d0e5dbad88606e1",
+      "audit_path": "build/c8_comb4_on_20261102/implementation_audit.json",
+      "audit_sha256": "158bf9a64621928643e73510a6adecf8ec752f831ccf62842f3eb05fd8dade54"
+    },
+    {
+      "name": "c9_active_display_fix",
+      "implementation": "PASS",
+      "hardware_acceptance": "PASS_PATTERN_DMA_VIDEO",
+      "setup_ns": 0.134,
+      "hold_ns": 0.027,
+      "image_path": "build/c9_display_fix_20261102/outflow/soc_physical.bit",
+      "image_sha256": "ea542809a0a884fd2d3dbc89a22cdc0d7c891e424bd1cc1179194a0934f5ee6b",
+      "audit_path": "build/c9_display_fix_20261102/implementation_audit.json",
+      "audit_sha256": "bc859f15627193c5d4d6c6da02db015236afc2319537496df7b60b0fa18645fb",
+      "dma_check_sha256": "cac497372497a4f66d28385599cce240435429f9f231cb98e63b34648c33117f"
+    }
+  ],
+  "identity_checks": [
+    "c7_board_diag: frozen firmware and no hardware access",
+    "c9_dma_diag: frozen firmware and no hardware access",
+    "c9_live_person_detect: frozen firmware and no hardware access",
+    "image_tamper: rejected before hardware",
+    "source_tamper: rejected before hardware",
+    "missing_image_binding: rejected before hardware",
+    "pending_audit: rejected before hardware"
+  ],
+  "rtl_evidence_sha256": "31ca99201c6877f43e478f5410b2247a92d9a151dcb24fdb7d8cb8244de027b8",
+  "identity_report_sha256": "c855acd5a983ecd0a899da68e9d5f3d01f350daf55a95c420d23e408adebc4c9",
+  "tool_sha256": "4c085d1c1b356f8bac33c8c832a775871fc2cc5359807006e71ce94631350453"
+}

@@ -1,0 +1,44 @@
+{
+  "status": "PASS_RTL_SIM",
+  "board_test_passed": false,
+  "scope": "Reduced 32-word AXI memory model plus all 24 address-bit probes; no encrypted DDR electrical simulation",
+  "tests": [
+    {
+      "name": "tb_ddr_diag",
+      "status": "PASS",
+      "evidence": [
+        "PASS case=0 state=6 error=00 checked=153",
+        "PASS case=1 state=7 error=05 checked=0",
+        "PASS case=2 state=7 error=03 checked=0",
+        "PASS case=3 state=7 error=04 checked=0",
+        "PASS case=4 state=7 error=04 checked=0",
+        "PASS case=5 state=7 error=01 checked=0",
+        "PASS case=6 state=7 error=02 checked=0",
+        "PASS case=7 state=7 error=05 checked=0",
+        "PASS case=8 state=7 error=03 checked=0",
+        "PASS case=9 state=7 error=04 checked=0",
+        "PASS case=10 state=7 error=05 checked=0",
+        "PASS case=0 state=6 error=00 checked=153",
+        "PASS tb_ddr_diag tests=12 periodic_stalls high_address_alias data_errors cal_loss timeout reset_recovery",
+        "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\08_ddr_diag\\sim\\tb_ddr_diag.sv:54: $finish called at 34470000 (1ps)"
+      ]
+    },
+    {
+      "name": "tb_ddr_status",
+      "status": "PASS",
+      "evidence": [
+        "PASS tb_ddr_status UART records=4 PLL_timeout cal_timeout PASS LED independent_clock",
+        "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\08_ddr_diag\\sim\\tb_ddr_status.sv:34: $finish called at 534795000 (1ps)"
+      ]
+    }
+  ],
+  "uart_parser_cases": 8,
+  "source_sha256": {
+    "projects/08_ddr_diag/rtl/ddr_diag_bist.sv": "3129f59050a678b3ad40a138f7607a649ceac5ccb06ce60d4167a142f2ce1e85",
+    "projects/08_ddr_diag/rtl/ddr_diag_status.sv": "949759a77733c421e31c4f9f3ab902ff8164a2efaf753d622c2b7f6019194dfa",
+    "projects/08_ddr_diag/sim/tb_ddr_diag.sv": "54f0f694311c9573be9d26340582bc1a26430056781123ad1082d524b598393f",
+    "projects/08_ddr_diag/sim/tb_ddr_status.sv": "d0df29ba3c77d97b836173112347eeec6676539108dcbc4bbd550c9bd51d2e73",
+    "tools/check_ddr_uart.py": "35e41ad6b3b81ae689c44a888a3e2585e113d9610cf7ff835bf0896a69f63211",
+    "tools/check_ddr_diag.py": "0c883185448f8bd7814328ccb6689f848c4582114de6b859daa9afaea30cc62d"
+  }
+}

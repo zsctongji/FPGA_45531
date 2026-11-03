@@ -1,0 +1,2 @@
+PASS tb_c2_video geometry=1920x1080 step=20x20 bytes=9216 full_HD=1 success=1 records=1 delayed_eof=1 first_DE_edges=1 time_wraps=1 checks=576 first_source_DE_timestamp A_capture sampler mailbox C2_DDR CPU_AXI APB synthetic_pixels_no_camera
+build/c9_display_c2_20261102/sim/tb_c2_video.sv:653: $finish called at 29716214000 (1ps)

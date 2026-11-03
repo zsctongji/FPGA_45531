@@ -1,0 +1,32 @@
+{
+  "status": "PASS_FLASH_WRITE_AND_TWO_FULL_VERIFICATIONS_COLD_BOOT_PENDING",
+  "started": "2026-11-01T14:35:07.123742+08:00",
+  "flash_write_attempted": true,
+  "flash_written": true,
+  "automatic_cold_boot_passed": false,
+  "plan_sha256": "1cf5f44f4e4f12c1b8fae7f4c4d0368f7c11301961984229492776ad259fc5ed",
+  "expected_flash_sha256": "2b83d24388a887aae9e20638e50352fd2bc4c20dcccb320e001731429148d04d",
+  "private_evidence_dir": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\private_c7_cold_program_20261101\\20261101_143507",
+  "recovery_backup_sha256": "3bd34df462240bbf1057553c07943ff8cf95e820268def68c5242b45b71ba67b",
+  "program_command": [
+    "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1\\python311\\bin\\python.exe",
+    "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\tools\\efinity\\2026.1\\pgm\\bin\\efx_pgm\\ftdi_program.py",
+    "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\build\\private_c7_cold_image_20261101\\c7_preserved.hex",
+    "-m",
+    "jtag_bridge",
+    "--jtag_bridge_mode",
+    "all",
+    "--verify_method",
+    "hostx1",
+    "-u",
+    "ftdi://0x0403:0x6011:0:ff/1",
+    "--address",
+    "0",
+    "--jtag_clock_freq",
+    "1000000"
+  ],
+  "program_returncode": 0,
+  "readback_returncode": 0,
+  "readback_sha256": "2b83d24388a887aae9e20638e50352fd2bc4c20dcccb320e001731429148d04d",
+  "finished": "2026-11-01T14:44:56.248415+08:00"
+}

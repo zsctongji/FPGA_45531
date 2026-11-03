@@ -1,0 +1,10 @@
+{
+  "name": "test_c9_time_progress",
+  "returncode": 0,
+  "reports": [
+    "logs/c9_pc_acceptance_20261103_204335/test_c9_time_progress/test_c9_time_progress_result.json",
+    "logs/c9_pc_acceptance_20261103_204335/test_c9_time_progress/test_c9_time_progress_result.json"
+  ],
+  "script_sha256": "8629049ab4d6ace287a4645fe7dd395963b79046f830111037c87e00450e0614",
+  "hardware_accessed": false
+}

@@ -1,0 +1,83 @@
+{
+  "scope": "Offline tool reports only; no hardware signoff",
+  "physical_release_ready": false,
+  "files": {
+    "soc_physical.pinout.csv": {
+      "original": "projects/07_soc_physical/outflow/soc_physical.pinout.csv",
+      "sha256": "d9bbd27a645304194c84270d9faa69152d113074c857b2eba6ad00e1c975e1c2"
+    },
+    "soc_physical.pt.rpt": {
+      "original": "projects/07_soc_physical/outflow/soc_physical.pt.rpt",
+      "sha256": "f47c1f49ceb916693510bac2450861621014d96e030c8446927b72fdf0f72e15"
+    },
+    "soc_physical.map.rpt": {
+      "original": "projects/07_soc_physical/outflow/soc_physical.map.rpt",
+      "sha256": "2cf3810170f38d26419e561570b5cb09c29cc6243211a62b21c0700d53c2503f"
+    },
+    "soc_physical.place.rpt": {
+      "original": "projects/07_soc_physical/outflow/soc_physical.place.rpt",
+      "sha256": "4880ea18b6686d2283c79b62f1cf5b8cade13a01cac56aebc3a9b292c5c81323"
+    },
+    "soc_physical.route.rpt": {
+      "original": "projects/07_soc_physical/outflow/soc_physical.route.rpt",
+      "sha256": "965219b5f489307ca809558f58e0631d968245f7fdbd1d4d8b5030b4213775e1"
+    },
+    "soc_physical.review_timing.rpt": {
+      "original": "projects/07_soc_physical/outflow/soc_physical.review_timing.rpt",
+      "sha256": "f111dfd71de4459d0bd27725149dc0ff258b097c19d1459d1200315fde002844"
+    },
+    "soc_physical.bus_setup.rpt": {
+      "original": "projects/07_soc_physical/outflow/soc_physical.bus_setup.rpt",
+      "sha256": "f0a51cc41c5dbc148f5b5c2649d2659e6b1798e9334c09bb341eaa56bb3e8a6c"
+    },
+    "soc_physical.bus_hold.rpt": {
+      "original": "projects/07_soc_physical/outflow/soc_physical.bus_hold.rpt",
+      "sha256": "f6392d98dd63659638eeb6435c535740514a2f7cb526f07d34dd3dfcca34483f"
+    },
+    "soc_physical.clocks.rpt": {
+      "original": "projects/07_soc_physical/outflow/soc_physical.clocks.rpt",
+      "sha256": "e64e65ea97332658eae98336605088f0f151c3805f4c0e21bf5ee0087ea9f6b9"
+    }
+  },
+  "exporter_sha256": "4bb13d55806071b4b261643b24cf829609e20f7b1fcbcfe0d6d1015aadf9689c",
+  "cpu225_not_accepted": {
+    "sha256": "52659e72a07fc414235bc7f7b054a7e2322edf9673336faeb65b4a1b79ea3487",
+    "primary_sta": {
+      "setup": {
+        "rows": 29,
+        "minimum_slack_ns": -3.453,
+        "violations": [
+          [
+            "core_clk",
+            "i_sysclk",
+            "0.004",
+            "-1.030"
+          ],
+          [
+            "i_sysclk",
+            "core_clk",
+            "0.004",
+            "-3.453"
+          ],
+          [
+            "i_sysclk",
+            "i_peripheralClk",
+            "0.004",
+            "-1.250"
+          ],
+          [
+            "i_peripheralClk",
+            "i_sysclk",
+            "0.004",
+            "-0.944"
+          ]
+        ]
+      },
+      "hold": {
+        "rows": 29,
+        "minimum_slack_ns": 0.022,
+        "violations": []
+      }
+    }
+  }
+}

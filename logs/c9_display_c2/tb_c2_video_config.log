@@ -1,0 +1,2 @@
+PASS tb_c2_video_config unsupported_geometry_held_in_reset no_false_frame_or_DDR_request
+build/c9_display_c2_20261102/sim/tb_c2_video_config.sv:31: $finish called at 10020000 (1ps)

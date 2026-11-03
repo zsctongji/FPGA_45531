@@ -1,0 +1,11 @@
+{
+  "status": "STOPPED_CONGESTED_ROUTING_NOT_QUALIFIED",
+  "stopped_at": "2026-11-03T13:46:51.948615+08:00",
+  "loaded_to_board": false,
+  "flash_written": false,
+  "xlrs": 60494,
+  "capacity": 60800,
+  "route_log": "build/c9_stage_image_20261103/outflow/soc_physical.route.out",
+  "route_log_sha256": "0663515b263d7ace16a7be442f242f5f121129194d7064821ab3f61e5398d315",
+  "reason": "Use independent lightweight video diagnostic to shorten stage-localization feedback loop; full-image resources near capacity. Not evidence of an unroutable design."
+}

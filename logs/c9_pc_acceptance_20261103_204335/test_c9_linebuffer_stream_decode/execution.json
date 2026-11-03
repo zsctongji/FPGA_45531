@@ -1,0 +1,9 @@
+{
+  "name": "test_c9_linebuffer_stream_decode",
+  "returncode": 0,
+  "reports": [
+    "logs/c9_pc_acceptance_20261103_204335/test_c9_linebuffer_stream_decode/c9_linebuffer_stream_decode_tests_20261103.json"
+  ],
+  "script_sha256": "95c9492779310b451e321b2af31c5f62bd1ba764f1218fa596a99f55ecf61312",
+  "hardware_accessed": false
+}

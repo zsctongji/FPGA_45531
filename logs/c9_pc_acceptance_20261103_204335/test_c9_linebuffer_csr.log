@@ -1,0 +1,16 @@
+PASS tb_csi_capture_gate mode=0 AXI_separate_handshakes_W1C_readback_no_fresh_error_masking
+PASS tb_csi_capture_gate mode=1 AXI_separate_handshakes_W1C_readback_no_fresh_error_masking
+PASS tb_csi_capture_gate mode=2 AXI_separate_handshakes_W1C_readback_no_fresh_error_masking
+PASS tb_csi_capture_gate mode=3 AXI_separate_handshakes_W1C_readback_no_fresh_error_masking
+PASS tb_csi_capture_gate mode=4 AXI_separate_handshakes_W1C_readback_no_fresh_error_masking
+PASS tb_raw10_linebuffer case=0 words=5760 vs=4 errors=00
+PASS tb_raw10_linebuffer case=1 words=0 vs=1 errors=02
+PASS tb_raw10_linebuffer case=2 words=0 vs=1 errors=04
+PASS tb_raw10_linebuffer case=3 words=0 vs=1 errors=08
+PASS tb_raw10_linebuffer case=4 words=1459 vs=1 errors=08
+PASS tb_raw10_linebuffer case=5 words=0 vs=1 errors=40
+PASS tb_raw10_linebuffer case=6 words=479 vs=1 errors=01
+PASS tb_raw10_linebuffer case=7 words=1459 vs=1 errors=10
+PASS tb_raw10_linebuffer case=8 words=5760 vs=4 errors=00
+PASS tb_raw10_linebuffer case=9 words=5760 vs=4 errors=00
+PASS tb_raw10_linebuffer case=10 words=0 vs=1 errors=02

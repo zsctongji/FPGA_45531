@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "tests": [
+    {
+      "name": "tb_c9_control",
+      "returncode": 0,
+      "output": "PASS c9_control checks=35 five_native_domains frozen_bundles backpressure source_lock stopped_clock reset_flush\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\sim\\tb_c9_control.sv:59: $finish called at 4500000 (1ps)\n"
+    },
+    {
+      "name": "tb_c9_pattern",
+      "returncode": 0,
+      "output": "PASS c9_pattern real_A_capture frames=2 samples=10368 closing_VS seeds_3c_c3 no_empty_frame\nC:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\team_work\\03_ai_soc\\c9_live\\sim\\tb_c9_pattern.sv:23: $finish called at 692690000 (1ps)\n"
+    }
+  ],
+  "source_sha256": {
+    "team_work/03_ai_soc/c9_live/rtl/c9_live_control.sv": "eaecc0277031f04ccb2dad755a39ff632a737a633c0af58c4ac65efbc9e95df8",
+    "team_work/03_ai_soc/c9_live/rtl/c9_pattern_source.sv": "17a753b7f88b65e8d22f47eafb1eeb720c0816a3f797aa0033ab1fa51ae101ce",
+    "team_work/03_ai_soc/c9_live/rtl/c9_snapshot_group.sv": "82b2cc6371b033e342cd87d5fd92195f19d29b5a806fc69cade7cc3163fe0288",
+    "team_work/03_ai_soc/c9_live/sim/tb_c9_control.sv": "a435e8446561ccece340c7693786716e2226b7e20f8dfeabd8558c1d14c7fea9",
+    "team_work/03_ai_soc/c9_live/sim/tb_c9_pattern.sv": "98a086fa5761ef211029ccffe0a3e77f17af0fea65405e1d084597448c098382",
+    "projects/06_soc_c2/rtl/c2_cdc_mailbox.sv": "04550a55a2e5fbb824c9d0733f9b07378b0b041222eb3fbc9c6170043e57e7d4",
+    "projects/06_soc_c2/a_side/video_a_capture.v": "6fd4ba3f87ebc42e7ca4e90292da10d1233d8b6cd2b26311cc05cb818e673d57",
+    "projects/06_soc_c2/a_side/video_grid_sampler.v": "9bd066f70ff8778caa7f4f18cfa4709a949b1c61ceb648cd79d015e00d57db84",
+    "tools/test_c7_live_rtl.py": "625fd823be7e735c7111eb6ffd7878d3291fe7f60cdb6685d680dd7e141c9725"
+  }
+}

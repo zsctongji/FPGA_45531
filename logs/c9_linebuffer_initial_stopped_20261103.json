@@ -1,0 +1,9 @@
+{
+  "status": "STOPPED_BEFORE_BOARD_UNSAFE_DIAGNOSTIC_CDC",
+  "loaded_to_board": false,
+  "flash_written": false,
+  "stopped_at": "2026-11-03T16:36:42.320024+08:00",
+  "reason": "Initial candidate connected native-clock diagnostic counters to video-clock snapshot without coherent CDC. Revised candidate retains original video-clock stage data and exposes native counters only through native PHY snapshot.",
+  "initial_top_sha256": "cf4e9081f6abeac7b3824f11b62562d3f2ee21330faf9401bbde130b307226d8",
+  "initial_generator_sha256": "9b8ab72fcc53b13d7588c234f424ffdac2741c9eeb431aa20f266312a27bed07"
+}

@@ -1,0 +1,22 @@
+{
+  "status": "PASS_NO_CUSTOM_ACCELERATOR_OPCODE_IN_EXECUTABLE_SECTIONS",
+  "instruction_count": 720,
+  "cache_invalidate_opcode_0000500f_count": 2,
+  "custom_opcode_addresses": [],
+  "sections": [
+    {
+      "address": "0x1000000",
+      "bytes": 100
+    },
+    {
+      "address": "0x1000064",
+      "bytes": 2780
+    }
+  ],
+  "scope": "Executable RV32 sections only. Board MAP/readback/CPU execution still required.",
+  "source_sha256": {
+    "firmware/c9_camera_geometry/c9_geometry.elf": "233deb30a9f3eb9d712e685b756a1e0fcd19c573e79dd01dc7015fe05ffd54fe",
+    "firmware/c9_camera_geometry/c9_geometry.bin": "f9955a3639543272716f1ef998156f6aae05d297c8841eb7092af8ef57ced9a5",
+    "tools/audit_c9_stage_min_firmware.py": "f3bdb4a90c442fac31cd3d2fd223d6a21e71acc73107451d109b607d386acf16"
+  }
+}

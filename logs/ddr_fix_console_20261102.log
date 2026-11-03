@@ -1,0 +1,47 @@
+{
+  "status": "PASS_C9_DDR_CALIBRATION_CPU_ACCESS",
+  "remedy": "pack-luts-to-comb4=0",
+  "tested_platform": "Ti60F225 / Efinity 2026.1.132",
+  "vendor_root_cause_proven": false,
+  "reproduced_comb4_on_calibration_failure": true,
+  "comb4_off_calibration_passes": [
+    {
+      "attempt": "logs/c9_ddr_probe_20261101/20261102_182836/attempt.json",
+      "init_state": 22,
+      "status": "PASS_CALIBRATION_ONLY"
+    },
+    {
+      "attempt": "logs/c9_ddr_probe_20261101/20261102_183801/attempt.json",
+      "init_state": 22,
+      "status": "PASS_CALIBRATION_ONLY"
+    }
+  ],
+  "independent_c8_comb4_on": "FAIL_UART_NO_FULL_CAPACITY_PASS",
+  "independent_c8_comb4_off": "PASS_256MIB_FOUR_PATTERNS_AND_ADDRESS_PROBES",
+  "c9_cpu_execution_verified": true,
+  "c9_firmware_readback_bytes": 7836,
+  "c9_cpu_address_probe_words": 24,
+  "c9_full_capacity_verified": false,
+  "cache_negative_and_positive_observed": true,
+  "complete_dma_video_acceptance_passed": false,
+  "remaining_failure": {
+    "display_missed_before": 1,
+    "display_missed_after": 1,
+    "display_underflows_after": 0,
+    "axi_read_write_errors_after": [
+      0,
+      0
+    ]
+  },
+  "real_camera_verified": false,
+  "hdmi_picture_verified": false,
+  "c3_present": false,
+  "flash_written": false,
+  "ddr_parameters_changed": false,
+  "calibration_algorithm_changed": false,
+  "acceptance_criteria_changed": false,
+  "fpga_image_sha256": "e780083e22b4383cf2dbf5088a7a3f93e9a81698fda1dcfec30f0169a99a7c04",
+  "final_board": "C10",
+  "final_c10_restore_passed": true,
+  "final_c10_attempt": "logs/c10_warm_boot_20261101/20261102_184015/attempt.json"
+}

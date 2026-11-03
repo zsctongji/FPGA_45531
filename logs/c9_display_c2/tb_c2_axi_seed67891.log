@@ -1,0 +1,2 @@
+PASS tb_c2_axi masters=4 writes=84 reads=84 checks=827 max_request_wait=100 full128_INCR strobes stalls error_routing reset
+build/c9_display_c2_20261102/sim/tb_c2_axi.sv:144: $finish called at 61780000 (1ps)

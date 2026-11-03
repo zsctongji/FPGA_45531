@@ -1,0 +1,16 @@
+{
+  "started": "2026-11-01T12:33:38.557592+08:00",
+  "stage": "C7_JTAG_CPU_PROBE",
+  "image_sha256": "962079f839a2f0348142e87fd83dd841f1534e30de42d71f5edb6de52d1ea26b",
+  "image": "C:\\Users\\16034\\Downloads\\FPGA\\FPGA_2026_T3_P3\\projects\\07_soc_physical\\outflow\\soc_physical.bit",
+  "flash_written": false,
+  "whole_soc_validated": false,
+  "uart": "COM13",
+  "baud": 115200,
+  "dtr": false,
+  "rts": false,
+  "programmer_returncode": 0,
+  "cpu_probe_returncode": 0,
+  "result": "PROBE_COMPLETED",
+  "finished": "2026-11-01T12:33:55.304613+08:00"
+}

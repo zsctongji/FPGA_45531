@@ -1,0 +1,394 @@
+{
+  "status": "PASS_REFERENCE_AUDIT",
+  "checks": 552,
+  "physical_release_ready": false,
+  "board_programmed": false,
+  "implementation_artifacts_present": true,
+  "resources": {
+    "EFX_LUT4": 37116,
+    "EFX_FF": 30404,
+    "EFX_RAM10": 220,
+    "EFX_DSP48": 55,
+    "EFX_ADD": 7249
+  },
+  "pin_contract": {
+    "i_arstn": [
+      "GPIOL_07",
+      "C4",
+      "Input",
+      "3.3 V"
+    ],
+    "integration_arm_n": [
+      "GPIOL_03",
+      "A3",
+      "Input",
+      "3.3 V"
+    ],
+    "c3_scl": [
+      "GPIOL_04",
+      "B3",
+      "Inout",
+      "3.3 V"
+    ],
+    "c3_sda": [
+      "GPIOL_06",
+      "C3",
+      "Inout",
+      "3.3 V"
+    ],
+    "buzzer_sig": [
+      "GPIOL_10",
+      "B5",
+      "Output",
+      "3.3 V"
+    ],
+    "led[0]": [
+      "GPIOR_27",
+      "P13",
+      "Output",
+      "3.3 V"
+    ],
+    "led[1]": [
+      "GPIOR_24",
+      "N13",
+      "Output",
+      "3.3 V"
+    ],
+    "CLK_25M": [
+      "GPIOL_P_08",
+      "J2",
+      "Input",
+      "1.8 V"
+    ],
+    "CLK_27M": [
+      "GPIOL_P_10",
+      "H2",
+      "Input",
+      "1.8 V"
+    ],
+    "uart_tx": [
+      "GPIOR_28",
+      "R14",
+      "Output",
+      "3.3 V"
+    ],
+    "uart_rx": [
+      "GPIOL_02",
+      "R4",
+      "Input",
+      "3.3 V"
+    ],
+    "flash_sclk": [
+      "GPIOL_N_01",
+      "N1",
+      "Output",
+      "1.8 V"
+    ],
+    "flash_ss": [
+      "GPIOL_P_01",
+      "P1",
+      "Output",
+      "1.8 V"
+    ],
+    "flash_d0": [
+      "GPIOL_P_03",
+      "M1",
+      "Inout",
+      "1.8 V"
+    ],
+    "flash_d1": [
+      "GPIOL_N_03",
+      "L1",
+      "Inout",
+      "1.8 V"
+    ],
+    "flash_d2": [
+      "GPIOL_P_04",
+      "H5",
+      "Inout",
+      "1.8 V"
+    ],
+    "flash_d3": [
+      "GPIOL_N_04",
+      "H4",
+      "Inout",
+      "1.8 V"
+    ]
+  },
+  "voltage_observation": {
+    "status": "PASS_USER_REPORTED",
+    "statement": "\u5b9e\u6d4b\u7535\u538b\u7b26\u5408\u9884\u671f",
+    "source": "User report in this conversation",
+    "expected_rails_reported_checked": [
+      "DDR VDD/VDDQ ~1.5V",
+      "DDR VREF/VTT ~0.75V",
+      "FPGA DDR banks ~1.5V",
+      "Flash ~1.8V"
+    ],
+    "exact_readings_V": null,
+    "instrument": null,
+    "raw_measurement_log": null,
+    "independently_measured_by_agent": false,
+    "does_not_imply": [
+      "DDR calibration",
+      "DDR read-write qualification",
+      "Flash read-ID",
+      "cold-boot validation"
+    ]
+  },
+  "packed_resources": {
+    "XLRs": {
+      "used": 58926,
+      "total": 60800,
+      "percent": 96.92
+    },
+    "Memory Blocks": {
+      "used": 224,
+      "total": 256,
+      "percent": 87.5
+    },
+    "DSP Blocks": {
+      "used": 60,
+      "total": 160,
+      "percent": 37.5
+    },
+    "Global Clocks (GBUF)": {
+      "used": 19,
+      "total": 32,
+      "percent": 59.38
+    }
+  },
+  "clock_periods_ns": {
+    "tx_cal_clk_90edge": 2.5,
+    "sdram_clk": 2.5,
+    "rx_cal_clk": 2.5,
+    "tx_cal_clk": 2.5,
+    "clk_100m": 10.0,
+    "hdmi_tx_slow_clk": 6.734,
+    "fb": 18.519,
+    "hdmi_tx_fast_clk": 1.347,
+    "i_mipi_rx_pclk": 20.0,
+    "CLK_5M": 200.0,
+    "pixel2_clk": 10.0,
+    "pixel1_clk": 5.0,
+    "core_clk": 10.0,
+    "i_sysclk": 10.0,
+    "i_peripheralClk": 10.0,
+    "i_fb_clk": 10.0
+  },
+  "open_items": [
+    "Actual PCB/pin mapping, pull-ups and connector orientation need confirmation; DC rails are user-reported within expectation, with exact readings absent.",
+    "Inherited V4 DDR clock/HDMI adjacent-HSIO coupling warning requires physical stress verification.",
+    "External Flash SPI timing/model, camera/HDMI electrical timing and real DDR calibration are not hardware-verified.",
+    "No live CPU/AI execution, real sensor GPIO actuation, or board bandwidth/CDC experiment was performed."
+  ],
+  "primary_sta": {
+    "setup": {
+      "rows": 29,
+      "minimum_slack_ns": 0.27,
+      "violations": []
+    },
+    "hold": {
+      "rows": 29,
+      "minimum_slack_ns": 0.023,
+      "violations": []
+    }
+  },
+  "cdc_skew": {
+    "setup": [
+      {
+        "hierarchy": "soc/c2_full_video/ingress/crossing",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.029,
+        "minimum_slack_ns": 3.971
+      },
+      {
+        "hierarchy": "soc/c2_full_video/ingress/crossing",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.03,
+        "minimum_slack_ns": 7.97
+      },
+      {
+        "hierarchy": "soc/c2_full_video/framebuffer/output_cdc",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.011,
+        "minimum_slack_ns": 7.989
+      },
+      {
+        "hierarchy": "soc/c2_full_video/framebuffer/output_cdc",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 5.387,
+        "maximum_skew_ns": 0.019,
+        "minimum_slack_ns": 5.368
+      },
+      {
+        "hierarchy": "soc/c2_attachment/core/pixels/storage",
+        "pointer": "wgray",
+        "bits": 5,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.046,
+        "minimum_slack_ns": 3.954
+      },
+      {
+        "hierarchy": "soc/c2_attachment/core/pixels/storage",
+        "pointer": "rgray",
+        "bits": 5,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.011,
+        "minimum_slack_ns": 7.989
+      },
+      {
+        "hierarchy": "raw_split/queue",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 16.0,
+        "maximum_skew_ns": 0.035,
+        "minimum_slack_ns": 15.965
+      },
+      {
+        "hierarchy": "raw_split/queue",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.019,
+        "minimum_slack_ns": 7.981
+      },
+      {
+        "hierarchy": "gray_split/queue",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.017,
+        "minimum_slack_ns": 7.983
+      },
+      {
+        "hierarchy": "gray_split/queue",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.036,
+        "minimum_slack_ns": 3.964
+      }
+    ],
+    "hold": [
+      {
+        "hierarchy": "soc/c2_full_video/ingress/crossing",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.016,
+        "minimum_slack_ns": 3.984
+      },
+      {
+        "hierarchy": "soc/c2_full_video/ingress/crossing",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.017,
+        "minimum_slack_ns": 7.983
+      },
+      {
+        "hierarchy": "soc/c2_full_video/framebuffer/output_cdc",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.007,
+        "minimum_slack_ns": 7.993
+      },
+      {
+        "hierarchy": "soc/c2_full_video/framebuffer/output_cdc",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 5.387,
+        "maximum_skew_ns": 0.01,
+        "minimum_slack_ns": 5.377
+      },
+      {
+        "hierarchy": "soc/c2_attachment/core/pixels/storage",
+        "pointer": "wgray",
+        "bits": 5,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.026,
+        "minimum_slack_ns": 3.974
+      },
+      {
+        "hierarchy": "soc/c2_attachment/core/pixels/storage",
+        "pointer": "rgray",
+        "bits": 5,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.007,
+        "minimum_slack_ns": 7.993
+      },
+      {
+        "hierarchy": "raw_split/queue",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 16.0,
+        "maximum_skew_ns": 0.019,
+        "minimum_slack_ns": 15.981
+      },
+      {
+        "hierarchy": "raw_split/queue",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.01,
+        "minimum_slack_ns": 7.99
+      },
+      {
+        "hierarchy": "gray_split/queue",
+        "pointer": "wgray",
+        "bits": 7,
+        "requirement_ns": 8.0,
+        "maximum_skew_ns": 0.01,
+        "minimum_slack_ns": 7.99
+      },
+      {
+        "hierarchy": "gray_split/queue",
+        "pointer": "rgray",
+        "bits": 7,
+        "requirement_ns": 4.0,
+        "maximum_skew_ns": 0.019,
+        "minimum_slack_ns": 3.981
+      }
+    ]
+  },
+  "timing_signoff": "PASS constrained primary setup/hold plus separate uncut CDC skew on the same routed design; external Flash SPI and board electrical timing remain open.",
+  "source_sha256": {
+    "tools/audit_soc_physical.py": "b2b705a70b322a2314cfa3e9b1521030887ed33fa783f2c6d3c4c218cfe5133c"
+  },
+  "evidence_sha256": {
+    "projects/07_soc_physical/soc_physical.peri.xml": "5f30631030553f21289b8889eb3a47ce73c042fafbdb42a05aaa3a9367adab76",
+    "projects/07_soc_physical/soc_physical.sdc": "2d7ad20e36026dd31bffbd936b48c251a042bd37564a5a9895dc1831212004f2",
+    "projects/07_soc_physical/PHYSICAL_MANIFEST.json": "859b20f5da832a8aea607050aea41fdd965cab50218a71c8682410c8f02a9fa9",
+    "projects/07_soc_physical/outflow/soc_physical.pinout.csv": "d9bbd27a645304194c84270d9faa69152d113074c857b2eba6ad00e1c975e1c2",
+    "projects/07_soc_physical/outflow/soc_physical.pt.rpt": "f47c1f49ceb916693510bac2450861621014d96e030c8446927b72fdf0f72e15",
+    "projects/07_soc_physical/outflow/soc_physical.map.rpt": "2cf3810170f38d26419e561570b5cb09c29cc6243211a62b21c0700d53c2503f",
+    "projects/07_soc_physical/outflow/soc_physical.map.v": "eab04b3c5ba0f0b9ea7a0a28f1eb0f48da9a14fce2816cfd06820aa94ebfffd6",
+    "logs/soc_physical_tests.json": "9de26d4b328588d9d2472c870a9121dc907c37f3765a54dda7f3f3ba09b3a669",
+    "logs/physical_c2_selftest.json": "03a55d49e66cfaf09f441d4279ba38ffc4c2f2a238be533ce80553830d01839f",
+    "logs/c7_cpu_lanes_tests.json": "67759d612d131ec14565691db296e040b1ac2d4bdabdbf9ba6007277b81b1f2e",
+    "projects/07_soc_physical/outflow/soc_physical.timing.rpt": "5e7d7a380f6e1a68939a1599650c03af1d05f19cdffb8f1e1becda4084b3b6f0",
+    "projects/07_soc_physical/soc_physical_cdc.sdc": "99902c4202e199937305654535f1da4cb93755207136b85da5f2dd6f9605d7c4",
+    "projects/07_soc_physical/soc_physical_cdc_review.sdc": "c7f9d51e95c73f1938b4ca69fb12e338f73ed3bd92eca21445a419f4d4ced26c",
+    "projects/07_soc_physical/review_timing.tcl": "041f9c91942fa3940f4832b3416a208f8e1f15a9166e7a5bcddbb1e6a7f8e6b2",
+    "projects/07_soc_physical/outflow/soc_physical.review_timing.rpt": "f111dfd71de4459d0bd27725149dc0ff258b097c19d1459d1200315fde002844",
+    "projects/07_soc_physical/outflow/soc_physical.bus_setup.rpt": "f0a51cc41c5dbc148f5b5c2649d2659e6b1798e9334c09bb341eaa56bb3e8a6c",
+    "projects/07_soc_physical/outflow/soc_physical.bus_hold.rpt": "f6392d98dd63659638eeb6435c535740514a2f7cb526f07d34dd3dfcca34483f",
+    "projects/07_soc_physical/outflow/soc_physical.clocks.rpt": "e64e65ea97332658eae98336605088f0f151c3805f4c0e21bf5ee0087ea9f6b9",
+    "projects/07_soc_physical/outflow/soc_physical.place.rpt": "4880ea18b6686d2283c79b62f1cf5b8cade13a01cac56aebc3a9b292c5c81323",
+    "projects/07_soc_physical/outflow/soc_physical.route.rpt": "965219b5f489307ca809558f58e0631d968245f7fdbd1d4d8b5030b4213775e1",
+    "projects/07_soc_physical/work_pnr/soc_physical.lbf": "303d88d6d7a5077fce9bd2ebd37d033493a5d8c8cd00e1e849465ddbb5b5c463",
+    "logs/soc_physical_cdc_binding.json": "10b1cfb78591d3d33a7e3d879d1161d584c949a21f653aac33d8baaf0c573883",
+    "logs/soc_physical_sta_tclsh_check.json": "ae03969b2250e48b3e17ab9126a51c95797357e7fd9f16942cbcd88abd006eb1",
+    "logs/soc_physical_route_build.json": "c64d27de8c746e46c091934068a04a089df30909474114c439b61ac0f6054299",
+    "logs/hardware_identity_20261031.json": "004a2f96ba436e49c28d7719485b5ad2304b50017a19589e9441b56fdf68c346"
+  }
+}
